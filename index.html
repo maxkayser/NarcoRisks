@@ -59,69 +59,101 @@
     <textarea id="summaryText" readonly></textarea>
   </section>
 
-  <script>
-    const risksUrl = 'https://raw.githubusercontent.com/maxkayser/NarkoSafe/bcc90b22e4dd78f34f4076c21aa0100d5701355e/data/risks.json';
-    let allRisks = {};
+<script>
+  const risksUrl = 'https://raw.githubusercontent.com/maxkayser/NarkoSafe/bcc90b22e4dd78f34f4076c21aa0100d5701355e/data/risks.json';
+  let allRisks = {};
 
-    async function loadRisks() {
-      try {
-        const response = await fetch(risksUrl);
-        const data = await response.json();
-        allRisks = data.risks_catalog || data;
-        renderRiskGroups();
-      } catch (error) {
-        document.getElementById('risksOutput').innerText = 'Fehler beim Laden der Risiken.';
-        console.error(error);
+  async function loadRisks() {
+    try {
+      const response = await fetch(risksUrl);
+      const data = await response.json();
+      allRisks = data.risks_catalog || data;
+      renderRiskGroups();
+    } catch (error) {
+      document.getElementById('risksOutput').innerText = 'Fehler beim Laden der Risiken.';
+      console.error(error);
+    }
+  }
+
+  function renderRiskGroups() {
+    const lang = document.getElementById('language').value || 'de';
+    const output = document.getElementById('risksOutput');
+    output.innerHTML = '';
+
+    for (const groupKey in allRisks) {
+      const groupData = allRisks[groupKey];
+      const groupDiv = document.createElement('div');
+      groupDiv.className = 'category';
+      groupDiv.textContent = groupKey.replace(/_/g, ' ').toUpperCase();
+      output.appendChild(groupDiv);
+
+      for (const subKey in groupData) {
+        if (typeof groupData[subKey] === 'object' && !groupData[subKey][lang]) {
+          // nested sub-category
+          const subLabel = document.createElement('label');
+          const checkbox = document.createElement('input');
+          checkbox.type = 'checkbox';
+          checkbox.name = 'riskSubgroups';
+          checkbox.value = `${groupKey}.${subKey}`;
+          subLabel.appendChild(checkbox);
+          subLabel.appendChild(document.createTextNode(' ' + subKey.replace(/_/g, ' ')));
+          output.appendChild(subLabel);
+        } else {
+          // flat risk category (e.g., general risks)
+          const flatLabel = document.createElement('label');
+          const flatCheckbox = document.createElement('input');
+          flatCheckbox.type = 'checkbox';
+          flatCheckbox.name = 'riskSubgroups';
+          flatCheckbox.value = `${groupKey}`;
+          flatLabel.appendChild(flatCheckbox);
+          flatLabel.appendChild(document.createTextNode(' ' + groupKey.replace(/_/g, ' ')));
+          output.appendChild(flatLabel);
+          break; // only once
+        }
       }
     }
+  }
 
-    function renderRiskGroups() {
-      const output = document.getElementById('risksOutput');
-      output.innerHTML = '';
+  function generateSummary() {
+    const lang = document.getElementById('language').value || 'de';
+    const selectedKeys = Array.from(document.querySelectorAll('input[name="riskSubgroups"]:checked')).map(el => el.value);
 
-      for (const groupKey of Object.keys(allRisks)) {
-        const label = document.createElement('label');
-        const checkbox = document.createElement('input');
-        checkbox.type = 'checkbox';
-        checkbox.name = 'riskGroups';
-        checkbox.value = groupKey;
-        label.appendChild(checkbox);
-        label.appendChild(document.createTextNode(' ' + groupKey.replace(/_/g, ' ').toUpperCase()));
-        output.appendChild(label);
+    const result = [];
+
+    for (const path of selectedKeys) {
+      const parts = path.split('.');
+      let ref = allRisks;
+
+      // navigate into JSON structure
+      for (const part of parts) {
+        if (ref[part]) {
+          ref = ref[part];
+        }
       }
-    }
 
-    function generateSummary() {
-      const lang = document.getElementById('language').value || 'de';
-      const selectedGroups = Array.from(document.querySelectorAll('input[name="riskGroups"]:checked')).map(el => el.value);
-
-      const result = [];
-
-      for (const group of selectedGroups) {
-        const groupRisks = allRisks[group];
-        const risks = [];
-
-        function extractEntries(obj) {
-          for (const key in obj) {
-            const val = obj[key];
-            if (val[lang]) {
-              risks.push(val[lang]);
-            } else if (typeof val === 'object') {
-              extractEntries(val);
-            }
+      const risks = [];
+      function extractTexts(obj) {
+        for (const key in obj) {
+          if (typeof obj[key] === 'object' && obj[key][lang]) {
+            risks.push(obj[key][lang]);
+          } else if (typeof obj[key] === 'object') {
+            extractTexts(obj[key]);
           }
         }
-
-        extractEntries(groupRisks);
-        result.push(`${group.replace(/_/g, ' ').toUpperCase()}: ${risks.join(', ')}`);
       }
+      extractTexts(ref);
 
-      const additional = document.getElementById('additionalText').value;
-      document.getElementById('summaryText').value = result.join('\n\n') + '\n\n' + additional;
+      const title = parts.join(' / ').replace(/_/g, ' ');
+      result.push(`${title}: ${risks.join(', ')}`);
     }
 
-    document.getElementById('language').addEventListener('change', renderRiskGroups);
-    window.onload = loadRisks;
-  </script>
+    const additional = document.getElementById('additionalText').value;
+    document.getElementById('summaryText').value = result.join('\n\n') + '\n\n' + additional;
+  }
+
+  document.getElementById('language').addEventListener('change', renderRiskGroups);
+  window.onload = loadRisks;
+</script>
+
 </body>
 </html>
