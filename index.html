@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <title>NarkoSafe</title>
+  <style>
+    body { font-family: sans-serif; margin: 2em; }
+    textarea { width: 100%; height: 150px; margin-top: 10px; }
+    select, input, label { display: block; margin-top: 10px; }
+  </style>
+</head>
+<body>
+  <h1>NarkoSafe</h1>
+  <h2>Teil 1: Patient / Eingriff</h2>
+
+  <label><input type="checkbox" id="elective" checked /> Elektiver Eingriff</label>
+  <label><input type="checkbox" id="adult" checked /> Volljährig</label>
+  <label>Sorgeberechtigte(r): <input type="text" id="guardian" /></label>
+
+  <label>Eingriff:
+    <select id="procedure">
+      <option value="">-- bitte wählen --</option>
+      <option value="knie-op">Knie-OP</option>
+      <option value="lap-gastro">Laparoskopische Gastro-OP</option>
+      <!-- ... weitere Einträge nach Bedarf ... -->
+    </select>
+  </label>
+
+  <label>Lagerung:
+    <select id="position">
+      <option value="">-- bitte wählen --</option>
+      <option value="bauch">Bauch</option>
+      <option value="beachchair">Beachchair</option>
+    </select>
+  </label>
+
+  <label><input type="checkbox" id="allergy" /> Allergie</label>
+  <label><input type="checkbox" id="ambulatory" /> Ambulant</label>
+
+  <label>Sprache:
+    <select id="language">
+      <option value="de" selected>Deutsch</option>
+      <option value="en">English</option>
+      <option value="fr">Français</option>
+    </select>
+  </label>
+
+  <h2>Teil 2: Maßnahmen / Risiken</h2>
+  <label><input type="checkbox" class="measure" value="general_anesthesia" checked /> Vollnarkose (LMA / Tubus)</label>
+  <label><input type="checkbox" class="measure" value="peripheral_iv" checked /> PVK</label>
+  <label><input type="checkbox" class="measure" value="central_venous_catheter" /> ZVK</label>
+  <label><input type="checkbox" class="measure" value="arterial_catheter" /> Arterie</label>
+  <label><input type="checkbox" class="measure" value="bladder_catheter" /> Blasenkatheter</label>
+  <label><input type="checkbox" class="measure" value="monitoring_interventions.tee" /> Magensonde / TEE</label>
+  <label><input type="checkbox" class="measure" value="monitoring_interventions.cell_saver_autotransfusion" /> CellSaver</label>
+  <label><input type="checkbox" class="measure" value="regional_anesthesia.brachial_plexus" /> Regionalverfahren: Axillär Plexus</label>
+
+  <button onclick="generateRisks()">Teil 3: Zusammenfassung erzeugen</button>
+
+  <h2>Zusätzliche Informationen</h2>
+  <textarea id="extraInfo">Der Patient bestätigt auf Nachfrage alles verstanden zu haben, keinen weiteren offenen Fragen zu haben. Der Patient wünscht ausdrücklich die Durchführung der Narkose unter den genannten Risiken. Eine Kopie dieses Dokuments wurde angeboten.</textarea>
+
+  <h2>Alle Risiken (kopierbar)</h2>
+  <textarea id="summary"></textarea>
+  <button onclick="copySummary()">In Zwischenablage kopieren</button>
+
+  <script>
+    let risksData = {};
+
+    async function loadRisks() {
+      const response = await fetch('https://raw.githubusercontent.com/maxkayser/NarkoSafe/bcc90b22e4dd78f34f4076c21aa0100d5701355e/data/risks.json');
+      risksData = await response.json();
+    }
+
+    function getNestedRisks(obj, language) {
+      let list = [];
+      for (const key in obj) {
+        const val = obj[key];
+        if (val[language]) {
+          list.push(val[language]);
+        } else if (typeof val === 'object') {
+          list = list.concat(getNestedRisks(val, language));
+        }
+      }
+      return list;
+    }
+
+    function generateRisks() {
+      const selected = Array.from(document.querySelectorAll('.measure:checked')).map(el => el.value);
+      const lang = document.getElementById('language').value;
+      let result = [];
+
+      for (const key of selected) {
+        const path = key.split('.');
+        let current = risksData;
+        for (const p of path) {
+          if (current[p]) {
+            current = current[p];
+          } else {
+            current = null;
+            break;
+          }
+        }
+        if (current) {
+          const group = key.split('.').slice(-1)[0].replace(/_/g, ' ').toUpperCase();
+          const risks = getNestedRisks(current, lang);
+          result.push(`${group}: ${risks.join(', ')}`);
+        }
+      }
+
+      const extra = document.getElementById('extraInfo').value;
+      document.getElementById('summary').value = result.join('\n\n') + '\n\n' + extra;
+    }
+
+    function copySummary() {
+      const textarea = document.getElementById('summary');
+      textarea.select();
+      document.execCommand('copy');
+    }
+
+    loadRisks();
+  </script>
+</body>
+</html>
