@@ -68,7 +68,13 @@
       const response = await fetch(risksUrl);
       const data = await response.json();
       const rawRoot = data.risks.children[0];
-      allRisks = Object.entries(rawRoot).map(([key, value]) => ({ key, ...value }));
+      allRisks = Object.entries(rawRoot)
+        .filter(([k, v]) => typeof v === 'object' && v.label)
+        .map(([key, value]) => ({
+          key,
+          label: value.label,
+          entries: Object.entries(value).filter(([k]) => k !== 'label')
+        }));
       renderRiskGroups();
     } catch (error) {
       document.getElementById('risksOutput').innerText = 'Fehler beim Laden der Risiken.';
@@ -84,11 +90,10 @@
     for (const group of allRisks) {
       const groupDiv = document.createElement('div');
       groupDiv.className = 'category';
-      groupDiv.textContent = (group.label && group.label[lang]) || group.key;
+      groupDiv.textContent = group.label?.[lang] || group.key;
       output.appendChild(groupDiv);
 
-      const children = Object.entries(group).filter(([k, v]) => k !== 'label' && k !== 'key');
-      for (const [childKey, childValue] of children) {
+      for (const [childKey, childValue] of group.entries) {
         const label = document.createElement('label');
         const checkbox = document.createElement('input');
         checkbox.type = 'checkbox';
@@ -111,9 +116,8 @@
     for (const path of selectedKeys) {
       const [groupKey, childKey] = path.split('.');
       const group = allRisks.find(g => g.key === groupKey);
-      if (!group || !group[childKey]) continue;
-
-      const labelText = group[childKey].label?.[lang] || childKey;
+      const child = group?.entries.find(([k]) => k === childKey);
+      const labelText = child?.[1].label?.[lang] || childKey;
       result.push(labelText);
     }
 
