@@ -359,6 +359,34 @@
               "fr": "Anesthésie péridurale"
             }
           },
+          "regional_catheter": {
+            "blockage_migration": {
+              "label": {
+                "de": "Verstopfung / Katheter-Migration",
+                "en": "Blockage / catheter migration",
+                "fr": "Obstruction / migration du cathéter"
+              }
+            },
+            "catheter_embolism_fragment": {
+              "label": {
+                "de": "Katheterembolie / Teilabriss",
+                "en": "Catheter embolism / fragment",
+                "fr": "Embolie / fragment de cathéter"
+              }
+            },
+            "infection_abscess": {
+              "label": {
+                "de": "Infektion / Abszess",
+                "en": "Infection / abscess",
+                "fr": "Infection / abcès"
+              }
+            },
+            "label": {
+              "de": "Regionalanästhesie-Katheter",
+              "en": "Regional catheter",
+              "fr": "Cathéter régional"
+            }
+          },
           "caudal": {
             "urinary_retention": {
               "label": {
@@ -602,34 +630,6 @@
               "de": "Arterieller Katheter",
               "en": "Arterial catheter",
               "fr": "Cathéter artériel"
-            }
-          },
-          "regional_catheter": {
-            "blockage_migration": {
-              "label": {
-                "de": "Verstopfung / Katheter-Migration",
-                "en": "Blockage / catheter migration",
-                "fr": "Obstruction / migration du cathéter"
-              }
-            },
-            "catheter_embolism_fragment": {
-              "label": {
-                "de": "Katheterembolie / Teilabriss",
-                "en": "Catheter embolism / fragment",
-                "fr": "Embolie / fragment de cathéter"
-              }
-            },
-            "infection_abscess": {
-              "label": {
-                "de": "Infektion / Abszess",
-                "en": "Infection / abscess",
-                "fr": "Infection / abcès"
-              }
-            },
-            "label": {
-              "de": "Regionalanästhesie-Katheter",
-              "en": "Regional catheter",
-              "fr": "Cathéter régional"
             }
           },
           "gastric_tube": {
