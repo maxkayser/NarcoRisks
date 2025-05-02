@@ -9,6 +9,123 @@
       {
         "key": "risks_catalog",
         "general_anesthesia": {
+          "label": {
+            "de": "General anesthesia",
+            "en": "General anesthesia",
+            "fr": "General anesthesia"
+          },
+          "common": {
+            "label": {
+              "de": "Allgemeine Risiken",
+              "en": "Common risks",
+              "fr": "Risques communs"
+            },
+            "hoarseness": {
+              "label": {
+                "de": "Heiserkeit",
+                "en": "Hoarseness",
+                "fr": "Enrouement"
+              }
+            },
+            "dysphagia": {
+              "label": {
+                "de": "Schluckstörung",
+                "en": "Dysphagia",
+                "fr": "Dysphagie"
+              }
+            },
+            "sore_throat": {
+              "label": {
+                "de": "Halsschmerzen",
+                "en": "Sore throat",
+                "fr": "Maux de gorge"
+              }
+            },
+            "hypoxemia": {
+              "label": {
+                "de": "Hypoxie / Sauerstoffmangel",
+                "en": "Hypoxemia",
+                "fr": "Hypoxémie"
+              }
+            },
+            "hemodynamic_instability": {
+              "label": {
+                "de": "Hypo-/Hypertonie, Herzrhythmusstörungen",
+                "en": "Hypo/Hypertension, arrhythmias",
+                "fr": "Hypo/Hypertension, arythmies"
+              }
+            },
+            "awareness": {
+              "label": {
+                "de": "Wachheit unter Narkose",
+                "en": "Intra-operative awareness",
+                "fr": "Conscience per-opératoire"
+              }
+            },
+            "postoperative_nausea_vomiting": {
+              "label": {
+                "de": "Übelkeit / Erbrechen (PONV)",
+                "en": "Post-operative nausea and vomiting",
+                "fr": "Nausées / vomissements post-op."
+              }
+            },
+            "postoperative_delirium_confusion": {
+              "label": {
+                "de": "Postoperatives Delir / Verwirrtheit",
+                "en": "Post-operative delirium / confusion",
+                "fr": "Délire postopératoire / confusion"
+              }
+            },
+            "allergic_reaction_anaphylaxis": {
+              "label": {
+                "de": "Allergische Reaktion / Anaphylaxie",
+                "en": "Allergic reaction / anaphylaxis",
+                "fr": "Réaction allergique / anaphylaxie"
+              }
+            },
+            "corneal_abrasion": {
+              "label": {
+                "de": "Hornhautverletzung",
+                "en": "Corneal abrasion",
+                "fr": "Abrasions cornéennes"
+              }
+            },
+            "positioning_injury": {
+              "label": {
+                "de": "Lagerungsschaden (Nerven, Druckstellen)",
+                "en": "Positioning injury (nerves, pressure)",
+                "fr": "Lésions liées au décubitus"
+              }
+            },
+            "hypothermia_shivering": {
+              "label": {
+                "de": "Hypothermie / Schüttelfrost",
+                "en": "Hypothermia / shivering",
+                "fr": "Hypothermie / frissons"
+              }
+            },
+            "urinary_retention": {
+              "label": {
+                "de": "Harnverhalt",
+                "en": "Urinary retention",
+                "fr": "Rétention urinaire"
+              }
+            },
+            "transfusion_reaction": {
+              "label": {
+                "de": "Transfusionsreaktion",
+                "en": "Transfusion reaction",
+                "fr": "Réaction transfusionnelle"
+              }
+            },
+            "hypoglycemia_hyperglycemia": {
+              "label": {
+                "de": "Hypo-/Hyperglykämie",
+                "en": "Hypo-/hyperglycemia",
+                "fr": "Hypo-/hyperglycémie"
+              }
+            }
+          },
           "aspiration": {
             "label": {
               "de": "Pulmonale Aspiration",
@@ -37,27 +154,6 @@
               "fr": "Lésions dentaires / prothèses"
             }
           },
-          "hoarseness": {
-            "label": {
-              "de": "Heiserkeit",
-              "en": "Hoarseness",
-              "fr": "Enrouement"
-            }
-          },
-          "dysphagia": {
-            "label": {
-              "de": "Schluckstörung",
-              "en": "Dysphagia",
-              "fr": "Dysphagie"
-            }
-          },
-          "sore_throat": {
-            "label": {
-              "de": "Halsschmerzen",
-              "en": "Sore throat",
-              "fr": "Maux de gorge"
-            }
-          },
           "laryngospasm_bronchospasm": {
             "label": {
               "de": "Laryngo-/Bronchospasmus",
@@ -65,25 +161,11 @@
               "fr": "Laryngospasme / bronchospasme"
             }
           },
-          "hypoxemia": {
-            "label": {
-              "de": "Hypoxie / Sauerstoffmangel",
-              "en": "Hypoxemia",
-              "fr": "Hypoxémie"
-            }
-          },
           "hypercapnia": {
             "label": {
               "de": "Hyperkapnie",
               "en": "Hypercapnia",
               "fr": "Hypercapnie"
-            }
-          },
-          "hemodynamic_instability": {
-            "label": {
-              "de": "Hypo-/Hypertonie, Herzrhythmusstörungen",
-              "en": "Hypo/Hypertension, arrhythmias",
-              "fr": "Hypo/Hypertension, arythmies"
             }
           },
           "myocardial_infarction_stroke": {
@@ -100,87 +182,12 @@
               "fr": "Hyperthermie maligne"
             }
           },
-          "awareness": {
-            "label": {
-              "de": "Wachheit unter Narkose",
-              "en": "Intra-operative awareness",
-              "fr": "Conscience per-opératoire"
-            }
-          },
-          "postoperative_nausea_vomiting": {
-            "label": {
-              "de": "Übelkeit / Erbrechen (PONV)",
-              "en": "Post-operative nausea and vomiting",
-              "fr": "Nausées / vomissements post-op."
-            }
-          },
-          "postoperative_delirium_confusion": {
-            "label": {
-              "de": "Postoperatives Delir / Verwirrtheit",
-              "en": "Post-operative delirium / confusion",
-              "fr": "Délire postopératoire / confusion"
-            }
-          },
-          "allergic_reaction_anaphylaxis": {
-            "label": {
-              "de": "Allergische Reaktion / Anaphylaxie",
-              "en": "Allergic reaction / anaphylaxis",
-              "fr": "Réaction allergique / anaphylaxie"
-            }
-          },
-          "corneal_abrasion": {
-            "label": {
-              "de": "Hornhautverletzung",
-              "en": "Corneal abrasion",
-              "fr": "Abrasions cornéennes"
-            }
-          },
           "thromboembolism": {
             "label": {
               "de": "Thrombose / Embolie",
               "en": "Thrombosis / embolism",
               "fr": "Thrombose / embolie"
             }
-          },
-          "positioning_injury": {
-            "label": {
-              "de": "Lagerungsschaden (Nerven, Druckstellen)",
-              "en": "Positioning injury (nerves, pressure)",
-              "fr": "Lésions liées au décubitus"
-            }
-          },
-          "hypothermia_shivering": {
-            "label": {
-              "de": "Hypothermie / Schüttelfrost",
-              "en": "Hypothermia / shivering",
-              "fr": "Hypothermie / frissons"
-            }
-          },
-          "urinary_retention": {
-            "label": {
-              "de": "Harnverhalt",
-              "en": "Urinary retention",
-              "fr": "Rétention urinaire"
-            }
-          },
-          "transfusion_reaction": {
-            "label": {
-              "de": "Transfusionsreaktion",
-              "en": "Transfusion reaction",
-              "fr": "Réaction transfusionnelle"
-            }
-          },
-          "hypoglycemia_hyperglycemia": {
-            "label": {
-              "de": "Hypo-/Hyperglykämie",
-              "en": "Hypo-/hyperglycemia",
-              "fr": "Hypo-/hyperglycémie"
-            }
-          },
-          "label": {
-            "de": "General anesthesia",
-            "en": "General anesthesia",
-            "fr": "General anesthesia"
           }
         },
         "regional_anesthesia": {
