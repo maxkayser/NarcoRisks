@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <title>NarkoSafe</title>
+  <style>
+    body { font-family: sans-serif; padding: 2rem; background: #f9f9f9; }
+    section { margin-bottom: 2rem; padding: 1rem; border: 1px solid #ccc; border-radius: 8px; background: #fff; }
+    h2 { margin-top: 0; }
+    label { display: block; margin: 0.5rem 0; }
+    textarea { width: 100%; height: 120px; }
+    .category { margin-top: 1rem; font-weight: bold; }
+  </style>
+</head>
+<body>
+  <h1>NarkoSafe</h1>
+
+  <section>
+    <h2>Patient / Eingriff</h2>
+    <label><input type="checkbox" id="elective" checked /> Elektiveingriff</label>
+    <label><input type="checkbox" id="adult" checked /> Volljährig</label>
+    <label>Sorgeberechtiger: <input type="text" id="guardianName" /></label>
+    <label>Eingriff:
+      <select id="procedure">
+        <option value="">-- bitte wählen --</option>
+        <option value="knee">Knie-OP</option>
+        <option value="thyroid">Schilddrüsen-OP</option>
+      </select>
+    </label>
+    <label>Lagerung:
+      <select id="position">
+        <option value="">-- bitte wählen --</option>
+        <option value="ruecken">Rücken</option>
+        <option value="bauch">Bauch</option>
+        <option value="beachchair">Beachchair</option>
+      </select>
+    </label>
+    <label><input type="checkbox" id="allergy" /> Allergie</label>
+    <label>Sprache:
+      <select id="language">
+        <option value="de">Deutsch</option>
+        <option value="en">Englisch</option>
+        <option value="fr">Französisch</option>
+      </select>
+    </label>
+  </section>
+
+  <section>
+    <h2>Risiken</h2>
+    <div id="risksOutput">Lade Risiken...</div>
+  </section>
+
+  <section>
+    <h2>Zusammenfassung</h2>
+    <label>Zusätzlicher Text:
+      <textarea id="additionalText">Der Patient bestätigt auf Nachfrage alles verstanden zu haben, keinen weiteren offenen Fragen zu haben. Der Patient wünscht ausdrücklich die Durchführung der Maßnahmen unter den genannten Risiken. Eine Kopie dieses Dokuments wurde angeboten.</textarea>
+    </label>
+    <button onclick="generateSummary()">Zusammenfassung erstellen</button>
+    <textarea id="summaryText" readonly></textarea>
+  </section>
+
+<script>
+  const risksUrl = 'https://example.com/risks_wrapped_correct.json';
+  let allRisks = {};
+
+  async function loadRisks() {
+    try {
+      const response = await fetch(risksUrl);
+      const data = await response.json();
+      allRisks = data.risks.children || [];
+      renderRiskGroups();
+    } catch (error) {
+      document.getElementById('risksOutput').innerText = 'Fehler beim Laden der Risiken.';
+      console.error(error);
+    }
+  }
+
+  function renderRiskGroups() {
+    const lang = document.getElementById('language').value || 'de';
+    const output = document.getElementById('risksOutput');
+    output.innerHTML = '';
+
+    for (const group of allRisks) {
+      const groupDiv = document.createElement('div');
+      groupDiv.className = 'category';
+      groupDiv.textContent = group.label[lang] || group.key;
+      output.appendChild(groupDiv);
+
+      if (Array.isArray(group.children)) {
+        for (const child of group.children) {
+          const label = document.createElement('label');
+          const checkbox = document.createElement('input');
+          checkbox.type = 'checkbox';
+          checkbox.name = 'riskSubgroups';
+          checkbox.value = group.key + '.' + child.key;
+          label.appendChild(checkbox);
+          label.appendChild(document.createTextNode(' ' + (child.label[lang] || child.key)));
+          output.appendChild(label);
+        }
+      }
+    }
+  }
+
+  function generateSummary() {
+    const lang = document.getElementById('language').value || 'de';
+    const selectedKeys = Array.from(document.querySelectorAll('input[name="riskSubgroups"]:checked')).map(el => el.value);
+    const result = [];
+
+    function findNode(pathParts, nodes) {
+      const key = pathParts.shift();
+      const node = nodes.find(n => n.key === key);
+      if (pathParts.length === 0) return node;
+      return findNode(pathParts, node.children || []);
+    }
+
+    for (const path of selectedKeys) {
+      const parts = path.split('.');
+      const node = findNode([...parts], allRisks);
+      if (!node) continue;
+
+      const texts = [];
+      function extractTexts(obj) {
+        if (obj.label && obj.label[lang]) texts.push(obj.label[lang]);
+        if (Array.isArray(obj.children)) {
+          for (const child of obj.children) {
+            extractTexts(child);
+          }
+        }
+      }
+      extractTexts(node);
+
+      result.push(`${node.label[lang] || node.key}: ${texts.join(', ')}`);
+    }
+
+    const additional = document.getElementById('additionalText').value;
+    document.getElementById('summaryText').value = result.join('\n\n') + '\n\n' + additional;
+  }
+
+  document.getElementById('language').addEventListener('change', renderRiskGroups);
+  window.onload = loadRisks;
+</script>
+</body>
+</html>
