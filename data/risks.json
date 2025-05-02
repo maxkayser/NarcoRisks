@@ -354,9 +354,9 @@
               }
             },
             "label": {
-              "de": "Epidural",
-              "en": "Epidural",
-              "fr": "Epidural"
+              "de": "Periduralanästhesie",
+              "en": "Epidural anesthesia",
+              "fr": "Anesthésie péridurale"
             }
           },
           "caudal": {
