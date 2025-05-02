@@ -63,11 +63,22 @@
     </label>
     <button onclick="generateSummary()">Zusammenfassung erstellen</button>
     <textarea id="summaryText" readonly></textarea>
+    <button onclick="copyToClipboard()">In Zwischenablage kopieren</button>
+
   </section>
 
 <script>
   const risksUrl = 'https://raw.githubusercontent.com/maxkayser/NarkoSafe/main/data/risks.json';
   let allRisks = [];
+
+  function copyToClipboard() {
+    const summary = document.getElementById("summaryText");
+    summary.select();
+    summary.setSelectionRange(0, 99999); // For mobile devices
+    document.execCommand("copy");
+    alert("Text wurde in die Zwischenablage kopiert.");
+  }
+
 
   async function loadRisks() {
     try {
