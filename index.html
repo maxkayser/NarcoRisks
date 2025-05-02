@@ -61,13 +61,14 @@
 
 <script>
   const risksUrl = 'https://raw.githubusercontent.com/maxkayser/NarkoSafe/a7c7a3db77bb45a66d8e581d2f4ce9edf102bdf4/data/risks.json';
-  let allRisks = {};
+  let allRisks = [];
 
   async function loadRisks() {
     try {
       const response = await fetch(risksUrl);
       const data = await response.json();
-      allRisks = data.risks.children || [];
+      const rawRoot = data.risks.children[0];
+      allRisks = Object.entries(rawRoot).map(([key, value]) => ({ key, ...value }));
       renderRiskGroups();
     } catch (error) {
       document.getElementById('risksOutput').innerText = 'Fehler beim Laden der Risiken.';
@@ -83,21 +84,20 @@
     for (const group of allRisks) {
       const groupDiv = document.createElement('div');
       groupDiv.className = 'category';
-      groupDiv.textContent = group.label[lang] || group.key;
+      groupDiv.textContent = (group.label && group.label[lang]) || group.key;
       output.appendChild(groupDiv);
 
-      if (Array.isArray(group.children)) {
-        for (const child of group.children) {
-          const label = document.createElement('label');
-          const checkbox = document.createElement('input');
-          checkbox.type = 'checkbox';
-          checkbox.name = 'riskSubgroups';
-          checkbox.value = group.key + '.' + child.key;
-          checkbox.addEventListener('change', generateSummary);
-          label.appendChild(checkbox);
-          label.appendChild(document.createTextNode(' ' + (child.label[lang] || child.key)));
-          output.appendChild(label);
-        }
+      const children = Object.entries(group).filter(([k, v]) => k !== 'label' && k !== 'key');
+      for (const [childKey, childValue] of children) {
+        const label = document.createElement('label');
+        const checkbox = document.createElement('input');
+        checkbox.type = 'checkbox';
+        checkbox.name = 'riskSubgroups';
+        checkbox.value = group.key + '.' + childKey;
+        checkbox.addEventListener('change', generateSummary);
+        label.appendChild(checkbox);
+        label.appendChild(document.createTextNode(' ' + (childValue.label?.[lang] || childKey)));
+        output.appendChild(label);
       }
     }
     generateSummary();
@@ -108,30 +108,13 @@
     const selectedKeys = Array.from(document.querySelectorAll('input[name="riskSubgroups"]:checked')).map(el => el.value);
     const result = [];
 
-    function findNode(pathParts, nodes) {
-      const key = pathParts.shift();
-      const node = nodes.find(n => n.key === key);
-      if (pathParts.length === 0) return node;
-      return findNode(pathParts, node.children || []);
-    }
-
     for (const path of selectedKeys) {
-      const parts = path.split('.');
-      const node = findNode([...parts], allRisks);
-      if (!node) continue;
+      const [groupKey, childKey] = path.split('.');
+      const group = allRisks.find(g => g.key === groupKey);
+      if (!group || !group[childKey]) continue;
 
-      const texts = [];
-      function extractTexts(obj) {
-        if (obj.label && obj.label[lang]) texts.push(obj.label[lang]);
-        if (Array.isArray(obj.children)) {
-          for (const child of obj.children) {
-            extractTexts(child);
-          }
-        }
-      }
-      extractTexts(node);
-
-      result.push(`${node.label[lang] || node.key}: ${texts.join(', ')}`);
+      const labelText = group[childKey].label?.[lang] || childKey;
+      result.push(labelText);
     }
 
     const additional = document.getElementById('additionalText').value;
