@@ -213,7 +213,8 @@
       .join('\n\n');
 
     const additional = document.getElementById('additionalText').value;
-    document.getElementById('summaryText').value = result + '\n\n' + additional;
+    intro = 'Im Rahmen der präoperativen anästhesiologischen Visite wurden die folgenden Risiken unter Berücksichtigung des individuellen Kontextes ausführlich besprochen:';
+    document.getElementById('summaryText').value = intro + '\n\n' + result + '\n\n' + additional;
   }
 
   document.getElementById('language').addEventListener('change', () => {
