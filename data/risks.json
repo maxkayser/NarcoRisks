@@ -780,6 +780,13 @@
                 "fr": "Hémolyse"
               }
             },
+            "transfusion_reaction": {
+              "label": {
+                "de": "Transfusionsreaktion",
+                "en": "Transfusion reaction",
+                "fr": "Réaction transfusionnelle"
+              }
+            },
             "contamination_infection": {
               "label": {
                 "de": "Kontamination / Infektion",
