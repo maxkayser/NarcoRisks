@@ -13,7 +13,7 @@
     .subcategory { margin-left: 1rem; display: none; }
     .toggle::before { content: '\25BA'; display: inline-block; margin-right: 5px; }
     .expanded.toggle::before { content: '\25BC'; }
-    .subgroup-toggle { font-weight: bold; cursor: pointer; margin: 0.5rem 0; }
+    .subgroup-toggle { cursor: pointer; margin: 0.5rem 0; }
   </style>
 </head>
 <body>
@@ -196,8 +196,7 @@
     }
 
     let result = Object.entries(grouped)
-      .map(([subgroup, risks]) => `${subgroup}:
-${risks.join(', ')}`)
+      .map(([subgroup, risks]) => `${subgroup}: ${risks.join(', ')}`)
       .join('\n\n');
 
     const additional = document.getElementById('additionalText').value;
