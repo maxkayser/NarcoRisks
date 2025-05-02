@@ -10,15 +10,15 @@
         "key": "risks_catalog",
         "general_anesthesia": {
           "label": {
-            "de": "General anesthesia",
+            "de": "Allgemeinanästhesie",
             "en": "General anesthesia",
-            "fr": "General anesthesia"
+            "fr": "Anesthésie générale"
           },
           "common": {
             "label": {
               "de": "Allgemeine Risiken",
               "en": "Common risks",
-              "fr": "Risques communs"
+              "fr": "Risques courants"
             },
             "hypoxemia": {
               "label": {
@@ -256,9 +256,9 @@
               }
             },
             "label": {
-              "de": "Common",
-              "en": "Common",
-              "fr": "Common"
+              "de": "Allgemeine Risiken",
+              "en": "Common risks",
+              "fr": "Risques courants"
             }
           },
           "spinal": {
