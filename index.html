@@ -16,7 +16,7 @@
   <h1>NarkoSafe</h1>
 
   <section>
-    <h2>Teil 1: Patient / Eingriff</h2>
+    <h2>Patient / Eingriff</h2>
     <label><input type="checkbox" id="elective" checked /> Elektiveingriff</label>
     <label><input type="checkbox" id="adult" checked /> Volljährig</label>
     <label>Sorgeberechtiger: <input type="text" id="guardianName" /></label>
@@ -46,14 +46,14 @@
   </section>
 
   <section>
-    <h2>Teil 2: Risiken (frei auswählbar)</h2>
+    <h2>Risiken</h2>
     <div id="risksOutput">Lade Risiken...</div>
   </section>
 
   <section>
-    <h2>Teil 3: Zusammenfassung</h2>
+    <h2>Zusammenfassung</h2>
     <label>Zusätzlicher Text:
-      <textarea id="additionalText">Der Patient bestätigt auf Nachfrage alles verstanden zu haben, keinen weiteren offenen Fragen zu haben. Der Patient wünscht ausdrücklich die Durchführung der Narkose unter den genannten Risiken. Eine Kopie dieses Dokuments wurde angeboten.</textarea>
+      <textarea id="additionalText">Der Patient bestätigt auf Nachfrage alles verstanden zu haben, keinen weiteren offenen Fragen zu haben. Der Patient wünscht ausdrücklich die Durchführung der Maßnahmen unter den genannten Risiken. Eine Kopie dieses Dokuments wurde angeboten.</textarea>
     </label>
     <button onclick="generateSummary()">Zusammenfassung erstellen</button>
     <textarea id="summaryText" readonly></textarea>
