@@ -319,9 +319,9 @@
               }
             },
             "label": {
-              "de": "Spinal",
-              "en": "Spinal",
-              "fr": "Spinal"
+              "de": "Spinalanästhesie",
+              "en": "Spinal anesthesia",
+              "fr": "Rachianesthésie"
             }
           },
           "epidural": {
