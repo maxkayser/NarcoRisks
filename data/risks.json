@@ -1,0 +1,936 @@
+{
+  "risks": {
+    "label": {
+      "de": "Label",
+      "en": "Label",
+      "fr": "Label"
+    },
+    "children": [
+      {
+        "key": "risks_catalog",
+        "general_anesthesia": {
+          "aspiration": {
+            "label": {
+              "de": "Pulmonale Aspiration",
+              "en": "Pulmonary aspiration",
+              "fr": "Aspiration pulmonaire"
+            }
+          },
+          "difficult_airway": {
+            "label": {
+              "de": "Schwieriger Atemweg",
+              "en": "Difficult airway",
+              "fr": "Voies aériennes difficiles"
+            }
+          },
+          "airway_trauma": {
+            "label": {
+              "de": "Verletzung von Mund-, Rachen-, Kehlkopf- oder Tracheastrukturen",
+              "en": "Airway trauma (mouth, pharynx, larynx, trachea)",
+              "fr": "Traumatisme des voies aériennes"
+            }
+          },
+          "dental_injury": {
+            "label": {
+              "de": "Zahn- / Prothesenschäden",
+              "en": "Dental injury / prosthesis damage",
+              "fr": "Lésions dentaires / prothèses"
+            }
+          },
+          "hoarseness": {
+            "label": {
+              "de": "Heiserkeit",
+              "en": "Hoarseness",
+              "fr": "Enrouement"
+            }
+          },
+          "dysphagia": {
+            "label": {
+              "de": "Schluckstörung",
+              "en": "Dysphagia",
+              "fr": "Dysphagie"
+            }
+          },
+          "sore_throat": {
+            "label": {
+              "de": "Halsschmerzen",
+              "en": "Sore throat",
+              "fr": "Maux de gorge"
+            }
+          },
+          "laryngospasm_bronchospasm": {
+            "label": {
+              "de": "Laryngo-/Bronchospasmus",
+              "en": "Laryngospasm / bronchospasm",
+              "fr": "Laryngospasme / bronchospasme"
+            }
+          },
+          "hypoxemia": {
+            "label": {
+              "de": "Hypoxie / Sauerstoffmangel",
+              "en": "Hypoxemia",
+              "fr": "Hypoxémie"
+            }
+          },
+          "hypercapnia": {
+            "label": {
+              "de": "Hyperkapnie",
+              "en": "Hypercapnia",
+              "fr": "Hypercapnie"
+            }
+          },
+          "hemodynamic_instability": {
+            "label": {
+              "de": "Hypo-/Hypertonie, Herzrhythmusstörungen",
+              "en": "Hypo/Hypertension, arrhythmias",
+              "fr": "Hypo/Hypertension, arythmies"
+            }
+          },
+          "myocardial_infarction_stroke": {
+            "label": {
+              "de": "Herzinfarkt / Schlaganfall",
+              "en": "Myocardial infarction / stroke",
+              "fr": "Infarctus du myocarde / AVC"
+            }
+          },
+          "malignant_hyperthermia": {
+            "label": {
+              "de": "Maligne Hyperthermie",
+              "en": "Malignant hyperthermia",
+              "fr": "Hyperthermie maligne"
+            }
+          },
+          "awareness": {
+            "label": {
+              "de": "Wachheit unter Narkose",
+              "en": "Intra-operative awareness",
+              "fr": "Conscience per-opératoire"
+            }
+          },
+          "postoperative_nausea_vomiting": {
+            "label": {
+              "de": "Übelkeit / Erbrechen (PONV)",
+              "en": "Post-operative nausea and vomiting",
+              "fr": "Nausées / vomissements post-op."
+            }
+          },
+          "postoperative_delirium_confusion": {
+            "label": {
+              "de": "Postoperatives Delir / Verwirrtheit",
+              "en": "Post-operative delirium / confusion",
+              "fr": "Délire postopératoire / confusion"
+            }
+          },
+          "allergic_reaction_anaphylaxis": {
+            "label": {
+              "de": "Allergische Reaktion / Anaphylaxie",
+              "en": "Allergic reaction / anaphylaxis",
+              "fr": "Réaction allergique / anaphylaxie"
+            }
+          },
+          "corneal_abrasion": {
+            "label": {
+              "de": "Hornhautverletzung",
+              "en": "Corneal abrasion",
+              "fr": "Abrasions cornéennes"
+            }
+          },
+          "thromboembolism": {
+            "label": {
+              "de": "Thrombose / Embolie",
+              "en": "Thrombosis / embolism",
+              "fr": "Thrombose / embolie"
+            }
+          },
+          "positioning_injury": {
+            "label": {
+              "de": "Lagerungsschaden (Nerven, Druckstellen)",
+              "en": "Positioning injury (nerves, pressure)",
+              "fr": "Lésions liées au décubitus"
+            }
+          },
+          "hypothermia_shivering": {
+            "label": {
+              "de": "Hypothermie / Schüttelfrost",
+              "en": "Hypothermia / shivering",
+              "fr": "Hypothermie / frissons"
+            }
+          },
+          "urinary_retention": {
+            "label": {
+              "de": "Harnverhalt",
+              "en": "Urinary retention",
+              "fr": "Rétention urinaire"
+            }
+          },
+          "transfusion_reaction": {
+            "label": {
+              "de": "Transfusionsreaktion",
+              "en": "Transfusion reaction",
+              "fr": "Réaction transfusionnelle"
+            }
+          },
+          "hypoglycemia_hyperglycemia": {
+            "label": {
+              "de": "Hypo-/Hyperglykämie",
+              "en": "Hypo-/hyperglycemia",
+              "fr": "Hypo-/hyperglycémie"
+            }
+          },
+          "label": {
+            "de": "General anesthesia",
+            "en": "General anesthesia",
+            "fr": "General anesthesia"
+          }
+        },
+        "regional_anesthesia": {
+          "common": {
+            "local_anesthetic_systemic_toxicity": {
+              "label": {
+                "de": "Lokalanästhetika-Toxizität (Krampf, Kollaps)",
+                "en": "Local anesthetic systemic toxicity (LAST)",
+                "fr": "Toxicité systémique des anesthésiques locaux"
+              }
+            },
+            "block_failure_conversion": {
+              "label": {
+                "de": "Blockade unzureichend → Umstieg auf Narkose / Rescue-Block",
+                "en": "Block failure → conversion to GA / rescue block",
+                "fr": "Échec de bloc → conversion AG / bloc de secours"
+              }
+            },
+            "nerve_injury": {
+              "label": {
+                "de": "Nervenschädigung",
+                "en": "Nerve injury",
+                "fr": "Lésion nerveuse"
+              }
+            },
+            "hematoma_bleeding": {
+              "label": {
+                "de": "Hämatom / Blutung",
+                "en": "Hematoma / bleeding",
+                "fr": "Hématome / saignement"
+              }
+            },
+            "infection_abscess": {
+              "label": {
+                "de": "Infektion / Abszess",
+                "en": "Infection / abscess",
+                "fr": "Infection / abcès"
+              }
+            },
+            "allergic_reaction": {
+              "label": {
+                "de": "Allergische Reaktion",
+                "en": "Allergic reaction",
+                "fr": "Réaction allergique"
+              }
+            },
+            "hypotension_bradycardia": {
+              "label": {
+                "de": "Hypotonie / Bradykardie",
+                "en": "Hypotension / bradycardia",
+                "fr": "Hypotension / bradycardie"
+              }
+            },
+            "label": {
+              "de": "Common",
+              "en": "Common",
+              "fr": "Common"
+            }
+          },
+          "spinal": {
+            "post_dural_puncture_headache": {
+              "label": {
+                "de": "Postspinaler Kopfschmerz",
+                "en": "Post-dural puncture headache",
+                "fr": "Céphalée post-ponction durale"
+              }
+            },
+            "high_total_spinal": {
+              "label": {
+                "de": "Hoher / totaler Spinalblock",
+                "en": "High / total spinal block",
+                "fr": "Bloc spinal haut / total"
+              }
+            },
+            "spinal_epidural_hematoma": {
+              "label": {
+                "de": "Spinales / epidurales Hämatom",
+                "en": "Spinal / epidural hematoma",
+                "fr": "Hématome spinal / péridural"
+              }
+            },
+            "spinal_epidural_abscess": {
+              "label": {
+                "de": "Spinaler / epiduraler Abszess",
+                "en": "Spinal / epidural abscess",
+                "fr": "Abcès spinal / péridural"
+              }
+            },
+            "meningitis": {
+              "label": {
+                "de": "Meningitis",
+                "en": "Meningitis",
+                "fr": "Méningite"
+              }
+            },
+            "subdural_hygroma": {
+              "label": {
+                "de": "Subdurales Hygrom / Hämatom",
+                "en": "Subdural hygroma / hematoma",
+                "fr": "Hygrome / hématome sous-dural"
+              }
+            },
+            "back_pain": {
+              "label": {
+                "de": "Rückenschmerzen",
+                "en": "Back pain",
+                "fr": "Douleurs dorsales"
+              }
+            },
+            "paraplegia_cauda_equina": {
+              "label": {
+                "de": "Paraplegie / Cauda-Equina-Syndrom",
+                "en": "Paraplegia / cauda equina syndrome",
+                "fr": "Paraplégie / syndrome de la queue de cheval"
+              }
+            },
+            "label": {
+              "de": "Spinal",
+              "en": "Spinal",
+              "fr": "Spinal"
+            }
+          },
+          "epidural": {
+            "catheter_migration_disconnection": {
+              "label": {
+                "de": "Katheter-Verlagerung / -Diskonnektion",
+                "en": "Catheter migration / disconnection",
+                "fr": "Migration / déconnexion du cathéter"
+              }
+            },
+            "accidental_dural_puncture": {
+              "label": {
+                "de": "Unbeabsichtigte Durapunktion",
+                "en": "Accidental dural puncture",
+                "fr": "Ponction dure-mérienne accidentelle"
+              }
+            },
+            "urinary_retention": {
+              "label": {
+                "de": "Harnverhalt",
+                "en": "Urinary retention",
+                "fr": "Rétention urinaire"
+              }
+            },
+            "hypotension": {
+              "label": {
+                "de": "Sympathikusblock → Hypotonie",
+                "en": "Sympathetic block → hypotension",
+                "fr": "Bloc sympathique → hypotension"
+              }
+            },
+            "label": {
+              "de": "Epidural",
+              "en": "Epidural",
+              "fr": "Epidural"
+            }
+          },
+          "caudal": {
+            "urinary_retention": {
+              "label": {
+                "de": "Harnverhalt",
+                "en": "Urinary retention",
+                "fr": "Rétention urinaire"
+              }
+            },
+            "meningitis": {
+              "label": {
+                "de": "Meningitis",
+                "en": "Meningitis",
+                "fr": "Méningite"
+              }
+            },
+            "neurological_deficit": {
+              "label": {
+                "de": "Neurologisches Defizit",
+                "en": "Neurological deficit",
+                "fr": "Déficit neurologique"
+              }
+            },
+            "label": {
+              "de": "Caudal",
+              "en": "Caudal",
+              "fr": "Caudal"
+            }
+          },
+          "truncal_blocks": {
+            "pneumothorax": {
+              "label": {
+                "de": "Pneumothorax",
+                "en": "Pneumothorax",
+                "fr": "Pneumothorax"
+              }
+            },
+            "organ_injury": {
+              "label": {
+                "de": "Organverletzung (Leber, Milz, Darm)",
+                "en": "Organ injury (liver, spleen, bowel)",
+                "fr": "Lésions d'organe (foie, rate, intestin)"
+              }
+            },
+            "label": {
+              "de": "Truncal blocks",
+              "en": "Truncal blocks",
+              "fr": "Truncal blocks"
+            }
+          },
+          "brachial_plexus": {
+            "pneumothorax": {
+              "label": {
+                "de": "Pneumothorax",
+                "en": "Pneumothorax",
+                "fr": "Pneumothorax"
+              }
+            },
+            "phrenic_nerve_palsy": {
+              "label": {
+                "de": "Phrenikusparese",
+                "en": "Phrenic nerve palsy",
+                "fr": "Paralysie du nerf phrénique"
+              }
+            },
+            "horner_syndrome": {
+              "label": {
+                "de": "Horner-Syndrom",
+                "en": "Horner’s syndrome",
+                "fr": "Syndrome de Horner"
+              }
+            },
+            "vocal_cord_palsy": {
+              "label": {
+                "de": "Stimmbandlähmung",
+                "en": "Vocal cord palsy",
+                "fr": "Paralysie des cordes vocales"
+              }
+            },
+            "label": {
+              "de": "Brachial plexus",
+              "en": "Brachial plexus",
+              "fr": "Brachial plexus"
+            }
+          },
+          "label": {
+            "de": "Regional anesthesia",
+            "en": "Regional anesthesia",
+            "fr": "Regional anesthesia"
+          }
+        },
+        "lines_catheters": {
+          "peripheral_iv": {
+            "hematoma_bleeding": {
+              "label": {
+                "de": "Hämatom / Blutung",
+                "en": "Hematoma / bleeding",
+                "fr": "Hématome / saignement"
+              }
+            },
+            "infection_phlebitis": {
+              "label": {
+                "de": "Infektion / Venenentzündung",
+                "en": "Infection / phlebitis",
+                "fr": "Infection / phlébite"
+              }
+            },
+            "thrombosis_embolism": {
+              "label": {
+                "de": "Thrombose / (Luft-)Embolie",
+                "en": "Thrombosis / (air) embolism",
+                "fr": "Thrombose / embolie (air)"
+              }
+            },
+            "extravasation_tissue_necrosis": {
+              "label": {
+                "de": "Paravasat / Gewebenekrose",
+                "en": "Extravasation / tissue necrosis",
+                "fr": "Extravasation / nécrose tissulaire"
+              }
+            },
+            "label": {
+              "de": "Peripheral iv",
+              "en": "Peripheral iv",
+              "fr": "Peripheral iv"
+            }
+          },
+          "central_venous_catheter": {
+            "arterial_puncture": {
+              "label": {
+                "de": "Arterielle Fehlpunktion",
+                "en": "Accidental arterial puncture",
+                "fr": "Ponction artérielle accidentelle"
+              }
+            },
+            "pneumothorax_hemothorax": {
+              "label": {
+                "de": "Pneumothorax / Hämatothorax",
+                "en": "Pneumothorax / hemothorax",
+                "fr": "Pneumothorax / hémothorax"
+              }
+            },
+            "malposition_arrhythmia": {
+              "label": {
+                "de": "Fehllage / Arrhythmie",
+                "en": "Malposition / arrhythmia",
+                "fr": "Mauvaise position / arythmie"
+              }
+            },
+            "bleeding_hematoma": {
+              "label": {
+                "de": "Blutung / Hämatom",
+                "en": "Bleeding / hematoma",
+                "fr": "Saignement / hématome"
+              }
+            },
+            "catheter_thrombosis_embolism": {
+              "label": {
+                "de": "Katheter-Thrombose / Embolie",
+                "en": "Catheter thrombosis / embolism",
+                "fr": "Thrombose / embolie du cathéter"
+              }
+            },
+            "air_embolism": {
+              "label": {
+                "de": "Luftembolie",
+                "en": "Air embolism",
+                "fr": "Embolie gazeuse"
+              }
+            },
+            "infection_sepsis_endocarditis": {
+              "label": {
+                "de": "Infektion / Sepsis / Endokarditis",
+                "en": "Infection / sepsis / endocarditis",
+                "fr": "Infection / sepsis / endocardite"
+              }
+            },
+            "lymph_leak": {
+              "label": {
+                "de": "Lymphfistel / Chylothorax",
+                "en": "Lymph leak / chylothorax",
+                "fr": "Fuite lymphatique / chylothorax"
+              }
+            },
+            "pinch_off_fracture": {
+              "label": {
+                "de": "Pinch-off / Katheterbruch",
+                "en": "Pinch-off / catheter fracture",
+                "fr": "Syndrome de pincement / fracture cathéter"
+              }
+            },
+            "cardiac_perforation_tamponade": {
+              "label": {
+                "de": "Herzperforation / Tamponade",
+                "en": "Cardiac perforation / tamponade",
+                "fr": "Perforation cardiaque / tamponnade"
+              }
+            },
+            "label": {
+              "de": "Central venous catheter",
+              "en": "Central venous catheter",
+              "fr": "Central venous catheter"
+            }
+          },
+          "arterial_catheter": {
+            "vasospasm_ischemia": {
+              "label": {
+                "de": "Vasospasmus / Ischämie",
+                "en": "Vasospasm / ischemia",
+                "fr": "Vasospasme / ischémie"
+              }
+            },
+            "thrombosis_embolism": {
+              "label": {
+                "de": "Thrombose / Embolie",
+                "en": "Thrombosis / embolism",
+                "fr": "Thrombose / embolie"
+              }
+            },
+            "bleeding_pseudoaneurysm": {
+              "label": {
+                "de": "Blutung / Pseudoaneurysma",
+                "en": "Bleeding / pseudoaneurysm",
+                "fr": "Saignement / pseudo-anévrysme"
+              }
+            },
+            "infection": {
+              "label": {
+                "de": "Infektion",
+                "en": "Infection",
+                "fr": "Infection"
+              }
+            },
+            "catheter_fracture_dislocation": {
+              "label": {
+                "de": "Katheterbruch / Dislokation",
+                "en": "Catheter fracture / dislocation",
+                "fr": "Fracture / déplacement du cathéter"
+              }
+            },
+            "label": {
+              "de": "Arterial catheter",
+              "en": "Arterial catheter",
+              "fr": "Arterial catheter"
+            }
+          },
+          "regional_catheter": {
+            "blockage_migration": {
+              "label": {
+                "de": "Verstopfung / Katheter-Migration",
+                "en": "Blockage / catheter migration",
+                "fr": "Obstruction / migration du cathéter"
+              }
+            },
+            "catheter_embolism_fragment": {
+              "label": {
+                "de": "Katheterembolie / Teilabriss",
+                "en": "Catheter embolism / fragment",
+                "fr": "Embolie / fragment de cathéter"
+              }
+            },
+            "infection_abscess": {
+              "label": {
+                "de": "Infektion / Abszess",
+                "en": "Infection / abscess",
+                "fr": "Infection / abcès"
+              }
+            },
+            "label": {
+              "de": "Regional catheter",
+              "en": "Regional catheter",
+              "fr": "Regional catheter"
+            }
+          },
+          "gastric_tube": {
+            "mucosal_injury_bleeding": {
+              "label": {
+                "de": "Schleimhautverletzung / Blutung",
+                "en": "Mucosal injury / bleeding",
+                "fr": "Lésion muqueuse / saignement"
+              }
+            },
+            "misplacement_airway": {
+              "label": {
+                "de": "Fehllage in Atemweg",
+                "en": "Misplacement in airway",
+                "fr": "Mauvais positionnement dans les voies aériennes"
+              }
+            },
+            "infection_sinusitis": {
+              "label": {
+                "de": "Infektion / Sinusitis",
+                "en": "Infection / sinusitis",
+                "fr": "Infection / sinusite"
+              }
+            },
+            "label": {
+              "de": "Gastric tube",
+              "en": "Gastric tube",
+              "fr": "Gastric tube"
+            }
+          },
+          "bladder_catheter": {
+            "uti": {
+              "label": {
+                "de": "Harnwegsinfekt",
+                "en": "Urinary tract infection",
+                "fr": "Infection urinaire"
+              }
+            },
+            "hematuria_bleeding": {
+              "label": {
+                "de": "Hämaturie / Blutung",
+                "en": "Hematuria / bleeding",
+                "fr": "Hématurie / saignement"
+              }
+            },
+            "urethral_injury_stricture": {
+              "label": {
+                "de": "Urethraverletzung / Striktur",
+                "en": "Urethral injury / stricture",
+                "fr": "Lésion urétrale / sténose"
+              }
+            },
+            "epididymitis_infertility": {
+              "label": {
+                "de": "Nebenhodenentzündung / Infertilität",
+                "en": "Epididymitis / infertility",
+                "fr": "Épididymite / infertilité"
+              }
+            },
+            "label": {
+              "de": "Bladder catheter",
+              "en": "Bladder catheter",
+              "fr": "Bladder catheter"
+            }
+          },
+          "intraosseous_access": {
+            "extravasation_compartment": {
+              "label": {
+                "de": "Extravasat / Kompartmentsyndrom",
+                "en": "Extravasation / compartment syndrome",
+                "fr": "Extravasation / syndrome des loges"
+              }
+            },
+            "osteomyelitis": {
+              "label": {
+                "de": "Osteomyelitis",
+                "en": "Osteomyelitis",
+                "fr": "Ostéomyélite"
+              }
+            },
+            "fracture_growth_plate": {
+              "label": {
+                "de": "Fraktur / Epiphysenverletzung",
+                "en": "Fracture / growth plate injury",
+                "fr": "Fracture / atteinte cartilage croissance"
+              }
+            },
+            "fat_bone_marrow_air_embolism": {
+              "label": {
+                "de": "Fett-/Knochenmark-/Luftembolie",
+                "en": "Fat / bone-marrow / air embolism",
+                "fr": "Embolie graisseuse / médullaire / gazeuse"
+              }
+            },
+            "label": {
+              "de": "Intraosseous access",
+              "en": "Intraosseous access",
+              "fr": "Intraosseous access"
+            }
+          },
+          "label": {
+            "de": "Lines catheters",
+            "en": "Lines catheters",
+            "fr": "Lines catheters"
+          }
+        },
+        "monitoring_interventions": {
+          "tee": {
+            "mucosal_bleeding": {
+              "label": {
+                "de": "Schleimhautblutung",
+                "en": "Mucosal bleeding",
+                "fr": "Saignement muqueux"
+              }
+            },
+            "dental_injury": {
+              "label": {
+                "de": "Zahnschaden",
+                "en": "Dental injury",
+                "fr": "Lésion dentaire"
+              }
+            },
+            "pharyngeal_laryngeal_injury": {
+              "label": {
+                "de": "Pharynx/Kehlkopfverletzung",
+                "en": "Pharyngeal / laryngeal injury",
+                "fr": "Lésion pharyngo-laryngée"
+              }
+            },
+            "esophageal_perforation_mediastinitis": {
+              "label": {
+                "de": "Ösophagusperforation / Mediastinitis",
+                "en": "Esophageal perforation / mediastinitis",
+                "fr": "Perforation œsophagienne / médiastinite"
+              }
+            },
+            "label": {
+              "de": "Tee",
+              "en": "Tee",
+              "fr": "Tee"
+            }
+          },
+          "cell_saver_autotransfusion": {
+            "hemolysis": {
+              "label": {
+                "de": "Hämolyse",
+                "en": "Hemolysis",
+                "fr": "Hémolyse"
+              }
+            },
+            "contamination_infection": {
+              "label": {
+                "de": "Kontamination / Infektion",
+                "en": "Contamination / infection",
+                "fr": "Contamination / infection"
+              }
+            },
+            "coagulopathy_dilution": {
+              "label": {
+                "de": "Koagulopathie / Verdünnungseffekte",
+                "en": "Coagulopathy / dilution effects",
+                "fr": "Coagulopathie / effets de dilution"
+              }
+            },
+            "air_fat_microembolism": {
+              "label": {
+                "de": "Mikroembolien (Luft/Fett)",
+                "en": "Micro-embolism (air/fat)",
+                "fr": "Micro-embolie (air/graisse)"
+              }
+            },
+            "label": {
+              "de": "Cell saver autotransfusion",
+              "en": "Cell saver autotransfusion",
+              "fr": "Cell saver autotransfusion"
+            }
+          },
+          "label": {
+            "de": "Monitoring interventions",
+            "en": "Monitoring interventions",
+            "fr": "Monitoring interventions"
+          }
+        },
+        "analgesia_pain_therapy": {
+          "pca_iv": {
+            "respiratory_depression": {
+              "label": {
+                "de": "Atemdepression",
+                "en": "Respiratory depression",
+                "fr": "Dépression respiratoire"
+              }
+            },
+            "nausea_vomiting": {
+              "label": {
+                "de": "Übelkeit / Erbrechen",
+                "en": "Nausea / vomiting",
+                "fr": "Nausées / vomissements"
+              }
+            },
+            "pruritus": {
+              "label": {
+                "de": "Juckreiz",
+                "en": "Pruritus",
+                "fr": "Prurit"
+              }
+            },
+            "constipation": {
+              "label": {
+                "de": "Obstipation",
+                "en": "Constipation",
+                "fr": "Constipation"
+              }
+            },
+            "urinary_retention": {
+              "label": {
+                "de": "Harnverhalt",
+                "en": "Urinary retention",
+                "fr": "Rétention urinaire"
+              }
+            },
+            "sedation_confusion": {
+              "label": {
+                "de": "Sedierung / Verwirrtheit",
+                "en": "Sedation / confusion",
+                "fr": "Sédation / confusion"
+              }
+            },
+            "dependence_tolerance": {
+              "label": {
+                "de": "Abhängigkeit / Toleranz",
+                "en": "Dependence / tolerance",
+                "fr": "Dépendance / tolérance"
+              }
+            },
+            "overdose_error": {
+              "label": {
+                "de": "Überdosierung / Bedienfehler",
+                "en": "Overdose / user error",
+                "fr": "Surdosage / erreur d’utilisation"
+              }
+            },
+            "label": {
+              "de": "Pca iv",
+              "en": "Pca iv",
+              "fr": "Pca iv"
+            }
+          },
+          "pca_epidural": {
+            "respiratory_depression": {
+              "label": {
+                "de": "Atemdepression",
+                "en": "Respiratory depression",
+                "fr": "Dépression respiratoire"
+              }
+            },
+            "nausea_vomiting": {
+              "label": {
+                "de": "Übelkeit / Erbrechen",
+                "en": "Nausea / vomiting",
+                "fr": "Nausées / vomissements"
+              }
+            },
+            "pruritus": {
+              "label": {
+                "de": "Juckreiz",
+                "en": "Pruritus",
+                "fr": "Prurit"
+              }
+            },
+            "motor_block": {
+              "label": {
+                "de": "Motorische Blockade",
+                "en": "Motor block",
+                "fr": "Bloc moteur"
+              }
+            },
+            "urinary_retention": {
+              "label": {
+                "de": "Harnverhalt",
+                "en": "Urinary retention",
+                "fr": "Rétention urinaire"
+              }
+            },
+            "catheter_related_complications": {
+              "label": {
+                "de": "Katheter-Migration / Infektion / Hämatom",
+                "en": "Catheter migration / infection / hematoma",
+                "fr": "Migration cathéter / infection / hématome"
+              }
+            },
+            "hypotension": {
+              "label": {
+                "de": "Hypotonie",
+                "en": "Hypotension",
+                "fr": "Hypotension"
+              }
+            },
+            "sedation_confusion": {
+              "label": {
+                "de": "Sedierung / Verwirrtheit",
+                "en": "Sedation / confusion",
+                "fr": "Sédation / confusion"
+              }
+            },
+            "label": {
+              "de": "Pca epidural",
+              "en": "Pca epidural",
+              "fr": "Pca epidural"
+            }
+          },
+          "label": {
+            "de": "Analgesia pain therapy",
+            "en": "Analgesia pain therapy",
+            "fr": "Analgesia pain therapy"
+          }
+        },
+        "label": {
+          "de": "Risks catalog",
+          "en": "Risks catalog",
+          "fr": "Risks catalog"
+        }
+      }
+    ]
+  }
+}
