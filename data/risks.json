@@ -446,7 +446,7 @@
           "label": {
             "de": "Regional anesthesia",
             "en": "Regional anesthesia",
-            "fr": "Regional anesthesia"
+            "fr": "Anesthésie régionale"
           }
         },
         "lines_catheters": {
@@ -803,7 +803,7 @@
             },
             "label": {
               "de": "Cell Saver / Autotransfusion",
-              "en": "Cell saver autotransfusion",
+              "en": "Cell saver / autotransfusion",
               "fr": "Cell saver / autotransfusion"
             }
           },
@@ -872,7 +872,7 @@
               }
             },
             "label": {
-              "de": "PCA i.v.",
+              "de": "PCA IV",
               "en": "PCA IV",
               "fr": "PCA IV"
             }
@@ -947,9 +947,9 @@
           }
         },
         "label": {
-          "de": "Risks catalog",
-          "en": "Risks catalog",
-          "fr": "Risks catalog"
+          "de": "Risiken",
+          "en": "risks",
+          "fr": "Risques"
         }
       }
     ]
