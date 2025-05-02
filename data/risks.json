@@ -480,9 +480,9 @@
               }
             },
             "label": {
-              "de": "Peripheral iv",
-              "en": "Peripheral iv",
-              "fr": "Peripheral iv"
+              "de": "Periphere Venenverweilkanüle",
+              "en": "Peripheral IV",
+              "fr": "Voie veineuse périphérique"
             }
           },
           "central_venous_catheter": {
@@ -557,9 +557,9 @@
               }
             },
             "label": {
-              "de": "Central venous catheter",
+              "de": "Zentraler Venenkatheter",
               "en": "Central venous catheter",
-              "fr": "Central venous catheter"
+              "fr": "Cathéter veineux central"
             }
           },
           "arterial_catheter": {
@@ -599,9 +599,9 @@
               }
             },
             "label": {
-              "de": "Arterial catheter",
+              "de": "Arterieller Katheter",
               "en": "Arterial catheter",
-              "fr": "Arterial catheter"
+              "fr": "Cathéter artériel"
             }
           },
           "regional_catheter": {
@@ -627,9 +627,9 @@
               }
             },
             "label": {
-              "de": "Regional catheter",
+              "de": "Regionalanästhesie-Katheter",
               "en": "Regional catheter",
-              "fr": "Regional catheter"
+              "fr": "Cathéter régional"
             }
           },
           "gastric_tube": {
@@ -655,9 +655,9 @@
               }
             },
             "label": {
-              "de": "Gastric tube",
+              "de": "Magensonde",
               "en": "Gastric tube",
-              "fr": "Gastric tube"
+              "fr": "Sonde gastrique"
             }
           },
           "bladder_catheter": {
@@ -690,9 +690,9 @@
               }
             },
             "label": {
-              "de": "Bladder catheter",
+              "de": "Blasenkatheter",
               "en": "Bladder catheter",
-              "fr": "Bladder catheter"
+              "fr": "Cathéter vésical"
             }
           },
           "intraosseous_access": {
@@ -725,15 +725,15 @@
               }
             },
             "label": {
-              "de": "Intraosseous access",
+              "de": "Intraossärer Zugang",
               "en": "Intraosseous access",
-              "fr": "Intraosseous access"
+              "fr": "Accès intra-osseux"
             }
           },
           "label": {
-            "de": "Lines catheters",
-            "en": "Lines catheters",
-            "fr": "Lines catheters"
+            "de": "Zugänge und Katheter",
+            "en": "Lines and catheters",
+            "fr": "Accès et cathéters"
           }
         },
         "monitoring_interventions": {
@@ -767,9 +767,9 @@
               }
             },
             "label": {
-              "de": "Tee",
-              "en": "Tee",
-              "fr": "Tee"
+              "de": "TEE",
+              "en": "TEE",
+              "fr": "ETO"
             }
           },
           "cell_saver_autotransfusion": {
@@ -802,15 +802,15 @@
               }
             },
             "label": {
-              "de": "Cell saver autotransfusion",
+              "de": "Cell Saver / Autotransfusion",
               "en": "Cell saver autotransfusion",
-              "fr": "Cell saver autotransfusion"
+              "fr": "Cell saver / autotransfusion"
             }
           },
           "label": {
-            "de": "Monitoring interventions",
+            "de": "Monitoring und Interventionen",
             "en": "Monitoring interventions",
-            "fr": "Monitoring interventions"
+            "fr": "Surveillance et interventions"
           }
         },
         "analgesia_pain_therapy": {
@@ -872,9 +872,9 @@
               }
             },
             "label": {
-              "de": "Pca iv",
-              "en": "Pca iv",
-              "fr": "Pca iv"
+              "de": "PCA i.v.",
+              "en": "PCA IV",
+              "fr": "PCA IV"
             }
           },
           "pca_epidural": {
@@ -935,15 +935,15 @@
               }
             },
             "label": {
-              "de": "Pca epidural",
-              "en": "Pca epidural",
-              "fr": "Pca epidural"
+              "de": "PCA epidural",
+              "en": "PCA epidural",
+              "fr": "PCA épidural"
             }
           },
           "label": {
-            "de": "Analgesia pain therapy",
-            "en": "Analgesia pain therapy",
-            "fr": "Analgesia pain therapy"
+            "de": "Analgesie / Schmerztherapie",
+            "en": "Analgesia / pain therapy",
+            "fr": "Analgésie / traitement de la douleur"
           }
         },
         "label": {
