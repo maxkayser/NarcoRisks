@@ -93,12 +93,14 @@
           checkbox.type = 'checkbox';
           checkbox.name = 'riskSubgroups';
           checkbox.value = group.key + '.' + child.key;
+          checkbox.addEventListener('change', generateSummary);
           label.appendChild(checkbox);
           label.appendChild(document.createTextNode(' ' + (child.label[lang] || child.key)));
           output.appendChild(label);
         }
       }
     }
+    generateSummary();
   }
 
   function generateSummary() {
@@ -137,6 +139,7 @@
   }
 
   document.getElementById('language').addEventListener('change', renderRiskGroups);
+  document.getElementById('additionalText').addEventListener('input', generateSummary);
   window.onload = loadRisks;
 </script>
 </body>
