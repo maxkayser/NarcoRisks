@@ -62,9 +62,30 @@
             },
             "hemodynamic_instability": {
               "label": {
-                "de": "Hypo-/Hypertonie, Herzrhythmusstörungen",
-                "en": "Hypo/Hypertension, arrhythmias",
-                "fr": "Hypo/Hypertension, arythmies"
+                "de": "Hypo-/Hypertonie",
+                "en": "Hypo/Hypertension",
+                "fr": "Hypo/Hypertension"
+              }
+            },
+            "arrhythmias": {
+              "label": {
+                "de": "Herzrhythmusstörungen",
+                "en": "arrhythmias",
+                "fr": "arythmies"
+              }
+            },
+            "cardiac_decompensation": {
+              "label": {
+                "de": "Kardiale Dekompensation / Schock",
+                "en": "Cardiac decompensation / shock",
+                "fr": "Décompensation cardiaque / choc"
+              }
+            },
+            "icu_or_death": {
+              "label": {
+                "de": "Intensivpflichtigkeit / Tod",
+                "en": "ICU admission / death",
+                "fr": "Soins intensifs / décès"
               }
             },
             "myocardial_infarction": {
@@ -72,6 +93,13 @@
                 "de": "Herzinfarkt",
                 "en": "Myocardial infarction",
                 "fr": "Infarctus du myocarde"
+              }
+            },
+            "thromboembolism": {
+              "label": {
+                "de": "Thrombose / Embolie",
+                "en": "Thrombosis / embolism",
+                "fr": "Thrombose / embolie"
               }
             },
             "stroke_tia": {
@@ -114,13 +142,6 @@
                 "de": "Hornhautverletzung",
                 "en": "Corneal abrasion",
                 "fr": "Abrasions cornéennes"
-              }
-            },
-            "thromboembolism": {
-              "label": {
-                "de": "Thrombose / Embolie",
-                "en": "Thrombosis / embolism",
-                "fr": "Thrombose / embolie"
               }
             },
             "positioning_injury": {
