@@ -212,6 +212,13 @@
                 "en": "Laryngospasm / bronchospasm",
                 "fr": "Laryngospasme / bronchospasme"
               }
+            },
+            "awareness": {
+              "label": {
+                "de": "Wachheit unter Narkose (Awareness)",
+                "en": "Awareness under general anaesthesia",
+                "fr": "Conscience pendant l’anesthésie générale"
+              }
             }
           },
           "rsi": {
