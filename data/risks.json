@@ -854,7 +854,7 @@
             },
             "infection": {
               "label": {
-                "de": "Infektionsrisiko an der Punktionsstelle",
+                "de": "Infektion an der Punktionsstelle",
                 "en": "Infection at insertion site",
                 "fr": "Infection au point de ponction"
               }
@@ -883,7 +883,7 @@
             "wrong_injection_site": {
               "label": {
                 "de": "Fehlinjektion (z. B. paravenös, intraarteriell)",
-                "en": "Misplacement of injection (e.g., paravenous, intra-arterial)",
+                "en": "Injection error (e.g., paravenous, intra-arterial)",
                 "fr": "Injection incorrecte (ex. paraveineuse, intra-artérielle)"
               }
             }
@@ -902,61 +902,40 @@
                 "en": "Infection / phlebitis",
                 "fr": "Infection / phlébite"
               }
-            },
-            "thrombosis_embolism": {
-              "label": {
-                "de": "Thrombose / (Luft-)Embolie",
-                "en": "Thrombosis / (air) embolism",
-                "fr": "Thrombose / embolie (air)"
-              }
-            },
-            "extravasation_tissue_necrosis": {
-              "label": {
-                "de": "Paravasat / Gewebenekrose",
-                "en": "Extravasation / tissue necrosis",
-                "fr": "Extravasation / nécrose tissulaire"
-              }
-            },
-            "label": {
-              "de": "Periphere Venenverweilkanüle",
-              "en": "Peripheral IV",
-              "fr": "Voie veineuse périphérique"
             }
           },
           "central_venous_catheter": {
-            "arterial_puncture": {
-              "label": {
-                "de": "Arterielle Fehlpunktion",
-                "en": "Accidental arterial puncture",
-                "fr": "Ponction artérielle accidentelle"
-              }
+            "label": {
+              "de": "Zentral-venöser Zugang (ZVK)",
+              "en": "Central venous catheter (CVC)",
+              "fr": "Cathéter veineux central"
             },
-            "pneumothorax_hemothorax": {
+            "pneumothorax": {
               "label": {
                 "de": "Pneumothorax / Hämatothorax",
                 "en": "Pneumothorax / hemothorax",
                 "fr": "Pneumothorax / hémothorax"
               }
             },
-            "malposition_arrhythmia": {
+            "arrhythmia": {
               "label": {
-                "de": "Fehllage / Arrhythmie",
-                "en": "Malposition / arrhythmia",
-                "fr": "Mauvaise position / arythmie"
+                "de": "Herzrhythmusstörung bei Kathetereinlage",
+                "en": "Arrhythmia during catheter placement",
+                "fr": "Trouble du rythme à la pose du cathéter"
               }
             },
-            "bleeding_hematoma": {
+            "malposition": {
               "label": {
-                "de": "Blutung / Hämatom",
-                "en": "Bleeding / hematoma",
-                "fr": "Saignement / hématome"
+                "de": "Fehllage",
+                "en": "Malposition",
+                "fr": "Mauvaise position"
               }
             },
-            "catheter_thrombosis_embolism": {
+            "arterial_puncture": {
               "label": {
-                "de": "Katheter-Thrombose / Embolie",
-                "en": "Catheter thrombosis / embolism",
-                "fr": "Thrombose / embolie du cathéter"
+                "de": "Arterielle Fehlpunktion",
+                "en": "Accidental arterial puncture",
+                "fr": "Ponction artérielle accidentelle"
               }
             },
             "air_embolism": {
@@ -993,19 +972,26 @@
                 "en": "Cardiac perforation / tamponade",
                 "fr": "Perforation cardiaque / tamponnade"
               }
-            },
-            "label": {
-              "de": "Zentraler Venenkatheter",
-              "en": "Central venous catheter",
-              "fr": "Cathéter veineux central"
             }
           },
           "arterial_catheter": {
+            "label": {
+              "de": "Arterieller Katheter",
+              "en": "Arterial catheter",
+              "fr": "Cathéter artériel"
+            }
             "vasospasm_ischemia": {
               "label": {
                 "de": "Vasospasmus / Ischämie",
                 "en": "Vasospasm / ischemia",
                 "fr": "Vasospasme / ischémie"
+              }
+            },
+            "impaired_perfusion": {
+              "label": {
+                "de": "Durchblutungsstörung",
+                "en": "impaired perfusion",
+                "fr": "trouble circulatoire"
               }
             },
             "thrombosis_embolism": {
@@ -1022,24 +1008,12 @@
                 "fr": "Saignement / pseudo-anévrysme"
               }
             },
-            "infection": {
-              "label": {
-                "de": "Infektion",
-                "en": "Infection",
-                "fr": "Infection"
-              }
-            },
             "catheter_fracture_dislocation": {
               "label": {
                 "de": "Katheterbruch / Dislokation",
                 "en": "Catheter fracture / dislocation",
                 "fr": "Fracture / déplacement du cathéter"
               }
-            },
-            "label": {
-              "de": "Arterieller Katheter",
-              "en": "Arterial catheter",
-              "fr": "Cathéter artériel"
             }
           },
           "gastric_tube": {
