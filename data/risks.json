@@ -143,11 +143,18 @@
               "en": "General anesthesia (full)",
               "fr": "Anesthésie générale (complète)"
             },
-            "aspiration": {
+            "airway_device": {
               "label": {
-                "de": "Pulmonale Aspiration",
-                "en": "Pulmonary aspiration",
-                "fr": "Aspiration pulmonaire"
+                "de": "Atemwegshilfen (zB Tubus, Larynxmaske)",
+                "en": "Airway devices (e.g. endotracheal tube / LMA)",
+                "fr": "Dispositifs de voie respiratoire (ex. tube / masque laryngé)"
+              }
+            },
+            "oropharyngeal_airway": {
+              "label": {
+                "de": "Zusätzliche Atemwegshilfen (z. B. Guedel, Wendl)",
+                "en": "Additional airway aids (e.g., Guedel, nasal airway)",
+                "fr": "Aides respiratoires supplémentaires (ex. Guedel, canule nasale)"
               }
             },
             "difficult_airway": {
@@ -155,6 +162,20 @@
                 "de": "Schwieriger Atemweg",
                 "en": "Difficult airway",
                 "fr": "Voies aériennes difficiles"
+              }
+            },
+            "preoperative_fasting": {
+              "label": {
+                "de": "Nüchternheit (6 h Essen, 2 h klare Flüssigkeit)",
+                "en": "Fasting (6 h solids, 2 h clear liquids"),
+                "fr": "Jeûne (6 h aliments solides / 2 h liquides clairs)"
+              }
+            },
+            "aspiration": {
+              "label": {
+                "de": "Pulmonale Aspiration",
+                "en": "Pulmonary aspiration",
+                "fr": "Aspiration pulmonaire"
               }
             },
             "airway_trauma": {
@@ -190,6 +211,139 @@
                 "de": "Laryngo-/Bronchospasmus",
                 "en": "Laryngospasm / bronchospasm",
                 "fr": "Laryngospasme / bronchospasme"
+              }
+            }
+          },
+          "rsi": {
+            "label": {
+              "de": "Rapid Sequence Induction (RSI/mRSI)",
+              "en": "Rapid Sequence Induction (RSI/mRSI)",
+              "fr": "Induction à séquence rapide (RSI/mRSI)"
+            },
+            "aspiration": {
+              "label": {
+                "de": "Aspirationsgefahr",
+                "en": "Risk of aspiration",
+                "fr": "Risque d’aspiration"
+              }
+            },
+            "traumatic_intubation": {
+              "label": {
+                "de": "Trauma durch Intubation",
+                "en": "Trauma during intubation",
+                "fr": "Traumatisme à l’intubation"
+              }
+            },
+            "apnea_hypoxia": {
+              "label": {
+                "de": "Hypoxie bei Apnoe",
+                "en": "Hypoxia during apnoea",
+                "fr": "Hypoxie liée à l’apnée"
+              }
+            },
+            "hemodynamic_instability": {
+              "label": {
+                "de": "Kreislaufinstabilität",
+                "en": "Hemodynamic instability",
+                "fr": "Instabilité hémodynamique"
+              }
+            }
+          },
+          "awake_fiberoptic": {
+            "label": {
+              "de": "Fiberoptische Wachintubation",
+              "en": "Awake fiberoptic intubation",
+              "fr": "Intubation éveillée par fibroscopie"
+            },
+            "discomfort": {
+              "label": {
+                "de": "Unangenehmes Empfinden trotz Betäubung",
+                "en": "Discomfort despite local anaesthesia",
+                "fr": "Inconfort malgré l’anesthésie locale"
+              }
+            },
+            "cough_laryngospasm": {
+              "label": {
+                "de": "Hustenreiz / Laryngospasmus",
+                "en": "Coughing / laryngospasm",
+                "fr": "Toux / laryngospasme"
+              }
+            },
+            "airway_trauma": {
+              "label": {
+                "de": "Verletzung im Nasen-Rachen-Raum",
+                "en": "Airway trauma (nasal/oral)",
+                "fr": "Lésion des voies aériennes (nez/bouche)"
+              }
+            }
+          },
+          "tracheostomy": {
+            "label": {
+              "de": "Trachealkanüle / Tracheotomie",
+              "en": "Tracheostomy / tracheal cannula",
+              "fr": "Trachéotomie / canule trachéale"
+            },
+            "bleeding": {
+              "label": {
+                "de": "Blutung bei Kanülenanlage",
+                "en": "Bleeding during cannula placement",
+                "fr": "Saignement lors de la mise en place de la canule"
+              }
+            },
+            "misplacement": {
+              "label": {
+                "de": "Fehllage / Kanülenfehlplatzierung",
+                "en": "Misplacement of the tracheal cannula",
+                "fr": "Mauvais positionnement de la canule"
+              }
+            },
+            "infection": {
+              "label": {
+                "de": "Infektion an der Kanülenstelle",
+                "en": "Infection at the cannula site",
+                "fr": "Infection au site de la canule"
+              }
+            },
+            "obstruction": {
+              "label": {
+                "de": "Verlegung / Sekretverstopfung",
+                "en": "Occlusion / mucus blockage",
+                "fr": "Obstruction / bouchon muqueux"
+              }
+            },
+            "dependency": {
+              "label": {
+                "de": "Verlängerte Abhängigkeit von der Kanüle",
+                "en": "Prolonged dependence on cannula",
+                "fr": "Dépendance prolongée à la canule"
+              }
+            },
+            "tracheal_stenosis": {
+              "label": {
+                "de": "Narbenbildung / Trachealverengung",
+                "en": "Scarring / tracheal stenosis",
+                "fr": "Sténose trachéale / cicatrisation"
+              }
+            },
+            "subcutaneous_emphysema": {
+              "label": {
+                "de": "Luftansammlung unter der Haut",
+                "en": "Subcutaneous emphysema",
+                "fr": "Emphysème sous-cutané"
+              }
+            }
+          },
+          "evone": {
+            "label": {
+              "de": "Evone-Beatmung",
+              "en": "Evone ventilation ",
+              "fr": "Ventilation Evone"
+            },
+            "barotrauma": {
+              "label": {
+                "de": "Druckbedingte Lungenschädigung (Barotrauma)",
+                "en": "Pressure-related lung injury (barotrauma)",
+                "fr": "Lésion pulmonaire liée à la pression (barotraumatisme)"
               }
             }
           },
