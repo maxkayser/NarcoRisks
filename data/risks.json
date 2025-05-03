@@ -1,6 +1,6 @@
 {
   "defaults": {
-    "risks.general_anesthesia": true,
+    "risks.general_anesthesia.full": true,
     "risks.lines_catheters.peripheral_iv": true
   },
   "risks": {
