@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="de">
 <head>
@@ -20,6 +21,23 @@
       line-height: 1.5;
       white-space: pre-wrap;
     }
+
+<style>
+  #copyButton {
+    background-color: #3c7dd9;
+    color: white;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  #copyButton:hover {
+    background-color: #2f66b3;
+  }
+</style>
+
 </style>
 
 </head>
@@ -34,6 +52,9 @@
         <option value="en">Englisch</option>
         <option value="fr">Französisch</option>
       </select>
+<div id="staticTextblockCheckboxes" style="margin-top:1em;"></div>
+<div id="textblockToggles"></div>
+
     </label>
     <!--
     <label><input type="checkbox" id="elective" checked /> Elektiveingriff</label>
@@ -92,6 +113,9 @@
       const response = await fetch(risksUrl);
       const data = await response.json();
       textblocks = data.textblocks || {};
+      console.log('[loadRisks] textblocks loaded', textblocks);
+      renderTextblockToggles();
+      renderStaticTextblockCheckboxes();
       const rawRoot = data.risks.children[0];
       allRisks = Object.entries(rawRoot)
         .filter(([k, v]) => typeof v === 'object' && v.label)
@@ -337,7 +361,7 @@ function renderTextblockToggles() {
   container.innerHTML = '';
   Object.keys(textblocks).forEach(key => {
     if (key === 'intro' || key === 'closing') return;
-    const label = textblocks[key][lang] || key;
+    const label = textblocks[key]?.label?.[lang] || key;
     const wrapper = document.createElement('label');
     wrapper.style.display = 'block';
     const checkbox = document.createElement('input');
@@ -421,10 +445,75 @@ document.getElementById('language').addEventListener('change', () => {
   renderTextblockToggles();
 });
 
+
+function renderStaticTextblockCheckboxes() {
+  console.log('[renderStaticTextblockCheckboxes] called');
+  const lang = document.getElementById('language').value || 'de';
+  const container = document.getElementById('staticTextblockCheckboxes');
+  container.innerHTML = '';
+
+  const blocks = [
+    { key: 'teleconsent', label: { de: 'Online-Aufklärung', en: 'Online consent', fr: 'Consentement en ligne' } },
+    { key: 'known_allergy', label: { de: 'Allergie', en: 'Allergy', fr: 'Allergie' } },
+    { key: 'known_difficult_airway', label: { de: 'Schwieriger Atemweg', en: 'Difficult airway', fr: 'Voies respiratoires difficiles' } },
+    { key: 'cardiac_risk', label: { de: 'Kardiales Risiko', en: 'Cardiac risk', fr: 'Risque cardiaque' } },
+    { key: 'coagulation_disorder', label: { de: 'Gerinnungsstörung', en: 'Coagulation disorder', fr: 'Trouble de la coagulation' } },
+    { key: 'anemia', label: { de: 'Anämie', en: 'Anemia', fr: 'Anémie' } },
+    { key: 'polypharmacy', label: { de: 'Polypharmazie', en: 'Polypharmacy', fr: 'Polymédication' } },
+    { key: 'frail_patient', label: { de: 'Gebrechlichkeit', en: 'Frail patient', fr: 'Patient fragile' } },
+    { key: 'minor_guardian_consent', label: { de: 'Minderjährig', en: 'Minor', fr: 'Mineur·e' } }
+  ];
+
+  blocks.forEach(item => {
+    const wrapper = document.createElement('label');
+    wrapper.style.display = 'block';
+    const checkbox = document.createElement('input');
+    checkbox.type = 'checkbox';
+    checkbox.name = 'textblock';
+    checkbox.value = item.key;
+    checkbox.addEventListener('change', generateSummary);
+    wrapper.appendChild(checkbox);
+    wrapper.appendChild(document.createTextNode(' ' + (item.label[lang] || item.key)));
+    container.appendChild(wrapper);
+  });
+}
+
 </script>
 <div id="textblockToggles" style="display: none"></div>
-</script>
+<!--
+function renderStaticTextblockCheckboxes() {
+  console.log('[renderStaticTextblockCheckboxes] called');
+  const lang = document.getElementById('language').value || 'de';
+  const container = document.getElementById('staticTextblockCheckboxes');
+  container.innerHTML = '';
 
+  const blocks = [
+    { key: 'teleconsent', label: { de: 'Online-Aufklärung', en: 'Online consent', fr: 'Consentement en ligne' } },
+    { key: 'known_allergy', label: { de: 'Allergie', en: 'Allergy', fr: 'Allergie' } },
+    { key: 'known_difficult_airway', label: { de: 'Schwieriger Atemweg', en: 'Difficult airway', fr: 'Voies respiratoires difficiles' } },
+    { key: 'cardiac_risk', label: { de: 'Kardiales Risiko', en: 'Cardiac risk', fr: 'Risque cardiaque' } },
+    { key: 'coagulation_disorder', label: { de: 'Gerinnungsstörung', en: 'Coagulation disorder', fr: 'Trouble de la coagulation' } },
+    { key: 'anemia', label: { de: 'Anämie', en: 'Anemia', fr: 'Anémie' } },
+    { key: 'polypharmacy', label: { de: 'Polypharmazie', en: 'Polypharmacy', fr: 'Polymédication' } },
+    { key: 'frail_patient', label: { de: 'Gebrechlichkeit', en: 'Frail patient', fr: 'Patient fragile' } },
+    { key: 'minor_guardian_consent', label: { de: 'Minderjährig', en: 'Minor', fr: 'Mineur·e' } }
+  ];
 
+  blocks.forEach(item => {
+    const wrapper = document.createElement('label');
+    wrapper.style.display = 'block';
+    const checkbox = document.createElement('input');
+    checkbox.type = 'checkbox';
+    checkbox.name = 'textblock';
+    checkbox.value = item.key;
+    checkbox.addEventListener('change', generateSummary);
+    wrapper.appendChild(checkbox);
+    wrapper.appendChild(document.createTextNode(' ' + (item.label[lang] || item.key)));
+    container.appendChild(wrapper);
+  });
+}
+
+/script>
+-->
 </body>
 </html>
