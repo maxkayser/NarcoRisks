@@ -260,6 +260,13 @@
                 "fr": "Hypotension / bradycardie"
               }
             },
+            "nerve_stimulation": {
+              "label": {
+                "de": "Nervenstimulation",
+                "en": "Nerve stimulation",
+                "fr": "Stimulation nerveuse"
+              }
+            },
             "label": {
               "de": "Allgemeine Risiken",
               "en": "Common risks",
@@ -911,7 +918,12 @@
             "fr": "Accès et cathéters"
           }
         },
-        "monitoring_interventions": {
+        "extended_diagnostics": {
+            "label": {
+              "de": "Erweiterte Diagnostik",
+              "en": "Extended diagnostics",
+              "fr": "Examens diagnostiques étendus"
+          },
           "tee": {
             "mucosal_bleeding": {
               "label": {
@@ -946,7 +958,9 @@
               "en": "TEE",
               "fr": "ETO"
             }
-          },
+          }
+        },
+        "blood_management": {
           "transfusion": {
             "label": {
               "de": "Transfusion",
@@ -1067,9 +1081,9 @@
             }
           },
           "label": {
-            "de": "Monitoring und Interventionen",
-            "en": "Monitoring interventions",
-            "fr": "Surveillance et interventions"
+            "de": "Blutungsmanagement",
+            "en": "Blood management",
+            "fr": "Gestion du sang et des produits sanguins"
           }
         },
         "analgesia_pain_therapy": {
