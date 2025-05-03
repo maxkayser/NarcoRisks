@@ -96,7 +96,8 @@
             ...Object.entries(value).filter(([k]) => k !== 'label' && k !== 'common')
           ]
         }));
-      renderRiskGroups();
+      const defaults = data.defaults || {};
+      renderRiskGroups(defaults);
     } catch (error) {
       document.getElementById('risksOutput').innerText = 'Fehler beim Laden der Risiken.';
       console.error(error);
@@ -123,7 +124,7 @@
   }
 
   function deactivateCommonIfUnused(groupKey, entriesContainer) {
-    const nonCommon = entriesContainer.querySelectorAll(`input[value^="${groupKey}."]:not([value^="${groupKey}.common"])`);
+    const nonCommon = entriesContainer.querySelectorAll(`input[value^="${groupKey}.\"]:not([value^="${groupKey}.common"])`);
     const anyChecked = Array.from(nonCommon).some(cb => cb.checked);
     if (!anyChecked) {
       const commonBox = entriesContainer.querySelector(`input[type="checkbox"][value="${groupKey}.common"]`);
@@ -141,7 +142,7 @@
     }
   }
 
-  function renderRiskGroups() {
+  function renderRiskGroups(defaults = {}) {
     const lang = document.getElementById('language').value || 'de';
     const output = document.getElementById('risksOutput');
     output.innerHTML = '';
@@ -201,6 +202,10 @@
             }
           });
 
+          const pathSub = `risks.${group.key}.${subKey}`;
+          const groupPath = `risks.${group.key}`;
+          let activateAllLeafs = false;
+
           for (const [leafKey, leafValue] of Object.entries(subValue)) {
             if (leafKey === 'label') continue;
             const label = document.createElement('label');
@@ -208,27 +213,44 @@
             checkbox.type = 'checkbox';
             checkbox.name = 'riskSubgroups';
             checkbox.value = `${group.key}.${subKey}.${leafKey}`;
-            checkbox.addEventListener('change', (e) => {
-              const all = subgroupContainer.querySelectorAll('input[type=checkbox]');
-              const checked = subgroupContainer.querySelectorAll('input[type=checkbox]:checked');
-              subgroupCheckbox.checked = checked.length > 0;
-              if (e.target.checked && subKey !== 'common') {
-                activateCommonItems(group.key, entriesContainer);
-              } else {
-                deactivateCommonIfUnused(group.key, entriesContainer);
-              }
-              generateSummary();
-            });
+            const pathLeaf = `risks.${group.key}.${subKey}.${leafKey}`;
+            if (defaults[pathLeaf] || defaults[groupPath]) {
+              console.log(`[defaults] aktiviert: ${defaults[pathLeaf] ? pathLeaf : groupPath}`);
+              checkbox.checked = true;
+              if (subKey !== 'common') activateCommonItems(group.key, entriesContainer);
+            }
             label.appendChild(checkbox);
             label.appendChild(document.createTextNode(' ' + (leafValue.label?.[lang] || leafKey)));
             subgroupContainer.appendChild(label);
           }
+
+          // ⚠️ Jetzt nach Erzeugung aller Leafs: Subgruppen-Default?
+          if (defaults[pathSub]) {
+            console.log(`[defaults] aktiviert: ${pathSub}`);
+            subgroupCheckbox.checked = true;
+            const leafCheckboxes = subgroupContainer.querySelectorAll('input[type=checkbox]');
+            leafCheckboxes.forEach(cb => {
+              if (!cb.checked) {
+                cb.checked = true;
+                console.log(`[defaults] mitaktiviert: ${cb.value}`);
+              }
+            });
+            if (subKey !== 'common') activateCommonItems(group.key, entriesContainer);
+          }
+
         } else {
           const label = document.createElement('label');
           const checkbox = document.createElement('input');
           checkbox.type = 'checkbox';
           checkbox.name = 'riskSubgroups';
           checkbox.value = `${group.key}.${subKey}`;
+          const path = `risks.${group.key}.${subKey}`;
+          const groupPath = `risks.${group.key}`;
+          if (defaults[path] || defaults[groupPath]) {
+            console.log(`[defaults] aktiviert: ${defaults[path] ? path : groupPath}`);
+            checkbox.checked = true;
+            if (subKey !== 'common') activateCommonItems(group.key, entriesContainer);
+          }
           checkbox.addEventListener('change', (e) => {
             if (e.target.checked && subKey !== 'common') {
               activateCommonItems(group.key, entriesContainer);
@@ -261,8 +283,8 @@
 
       if (keys.length === 2) {
         const entry = group.entries.find(([k]) => k === keys[1]);
-        subgroupLabel = groupLabel;
-        riskLabel = entry?.[1]?.label?.[lang] || keys[1];
+        subgroupLabel = entry?.[1]?.label?.[lang] || keys[1];
+        riskLabel = subgroupLabel;
       } else if (keys.length === 3) {
         const entry = group.entries.find(([k]) => k === keys[1]);
         subgroupLabel = entry?.[1]?.label?.[lang] || keys[1];
@@ -270,18 +292,23 @@
         riskLabel = child?.label?.[lang] || keys[2];
       }
 
-      if (!grouped[subgroupLabel]) grouped[subgroupLabel] = [];
-      grouped[subgroupLabel].push(riskLabel);
+      if (!grouped[groupLabel]) grouped[groupLabel] = {};
+      if (!grouped[groupLabel][subgroupLabel]) grouped[groupLabel][subgroupLabel] = [];
+      grouped[groupLabel][subgroupLabel].push(riskLabel);
     }
 
     const intro = 'Im Rahmen der präoperativen anästhesiologischen Visite wurden die folgenden Risiken unter Berücksichtigung des individuellen Kontextes ausführlich besprochen:';
-    const additional = document.getElementById('additionalText').value;
+    const additional = document.getElementById('additionalText')?.value || '';
 
-    const result = Object.entries(grouped)
-      .map(([subgroup, risks]) => `${subgroup}: ${risks.join(', ')}`)
-      .join('\n\n');
+    let result = '';
+    for (const [groupLabel, subgroups] of Object.entries(grouped)) {
+      result += `\n\n${groupLabel}\n`;
+      for (const [subLabel, risks] of Object.entries(subgroups)) {
+        result += `${subLabel}: ${risks.join(', ')}\n`;
+      }
+    }
 
-    document.getElementById('summaryText').value = `${intro}\n\n${result}\n\n${additional}`;
+    document.getElementById('summaryText').value = `${intro}${result}\n\n${additional}`;
   }
 
   document.getElementById('language').addEventListener('change', () => {
@@ -296,6 +323,7 @@
   document.getElementById('additionalText').addEventListener('input', generateSummary);
   window.onload = loadRisks;
 </script>
+
 
 </body>
 </html>
