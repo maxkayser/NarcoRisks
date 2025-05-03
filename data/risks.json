@@ -846,6 +846,48 @@
           }
         },
         "lines_catheters": {
+          "common": {
+            "label": {
+              "de": "Allgemeine Risiken von Zugängen / Kathetern",
+              "en": "General risks of lines / catheters",
+              "fr": "Risques généraux des cathéters / voies veineuses"
+            },
+            "infection": {
+              "label": {
+                "de": "Infektionsrisiko an der Punktionsstelle",
+                "en": "Infection at insertion site",
+                "fr": "Infection au point de ponction"
+              }
+            },
+            "bleeding": {
+              "label": {
+                "de": "Blutung / Hämatom",
+                "en": "Bleeding / hematoma",
+                "fr": "Saignement / hématome"
+              }
+            },
+            "misplacement": {
+              "label": {
+                "de": "Fehllage / Fehlpunktion",
+                "en": "Misplacement / malposition",
+                "fr": "Mauvais positionnement / ponction erronée"
+              }
+            },
+            "thrombosis": {
+              "label": {
+                "de": "Thrombose / Gefäßverschluss",
+                "en": "Thrombosis / vessel occlusion",
+                "fr": "Thrombose / occlusion vasculaire"
+              }
+            },
+            "wrong_injection_site": {
+              "label": {
+                "de": "Fehlinjektion (z. B. paravenös, intraarteriell)",
+                "en": "Misplacement of injection (e.g., paravenous, intra-arterial)",
+                "fr": "Injection incorrecte (ex. paraveineuse, intra-artérielle)"
+              }
+            }
+          },
           "peripheral_iv": {
             "hematoma_bleeding": {
               "label": {
