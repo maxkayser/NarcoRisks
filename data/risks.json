@@ -84,9 +84,9 @@
         "en": "Frail patient",
         "fr": "Patient fragile"
       },
-      "de": "Gebrechliche Patient*innen haben ein erhöhtes Risiko für Kreislaufinstabilität, verlangsamte Erholung, delirante Zustände sowie funktionellen Abbau postoperativ. Eine besonders schonende und angepasste Narkoseführung ist erforderlich.",
-      "en": "Frail patients are at increased risk of hemodynamic instability, delayed recovery, delirium, and postoperative functional decline. An adapted and gentle anesthetic approach is required.",
-      "fr": "Les patient·es fragiles présentent un risque accru d’instabilité hémodynamique, de récupération lente, de délire postopératoire et de déclin fonctionnel. Une anesthésie adaptée et douce est nécessaire."
+      "de": "Gebrechliche Patient*innen haben ein erhöhtes Risiko für Kreislaufinstabilität, Delir, Ateminsuffizienz, verzögerte Mobilisation sowie prolongierte postoperativ-rehabilitative Verläufe.",
+      "en": "Frail patients are at increased risk of circulatory instability, delirium, respiratory insufficiency, delayed mobilization, and prolonged postoperative recovery.",
+      "fr": "Les patient·es fragiles présentent un risque accru d’instabilité circulatoire, de délire, d’insuffisance respiratoire, de mobilisation retardée et de récupération postopératoire prolongée."
     },
     "minor_guardian_consent": {
       "label": {
