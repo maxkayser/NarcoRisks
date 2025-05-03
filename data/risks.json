@@ -434,7 +434,7 @@
                 "en": "Peritoneal puncture",
                 "fr": "Ponction péritonéale"
               }
-            },
+            }
           },
           "saphenous_nerve_block": {
             "label": {
@@ -630,7 +630,7 @@
               "de": "Oberst-Block (digitale Leitungsanästhesie)",
               "en": "Oberst block (digital nerve block)",
               "fr": "Bloc digital (technique d’Oberst)"
-            },
+            }
           },
           "interscalene_block": {
             "label": {
@@ -658,8 +658,8 @@
                 "en": "Horner's syndrome (ptosis, miosis, anhidrosis)",
                 "fr": "Syndrome de Horner (ptosis, myosis, anhidrose)"
               }
-            },
-          },
+            }
+          }
         },
         "lines_catheters": {
           "peripheral_iv": {
