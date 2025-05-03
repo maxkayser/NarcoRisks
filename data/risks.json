@@ -954,9 +954,9 @@
               }
             },
             "label": {
-              "de": "TEE",
-              "en": "TEE",
-              "fr": "ETO"
+              "de": "Transösophageale Echokardiographie (TEE)",
+              "en": "Transesophageal Echocardiography (TEE)",
+              "fr": "Échocardiographie transœsophagienne (ETO)"
             }
           }
         },
