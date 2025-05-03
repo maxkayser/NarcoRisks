@@ -387,7 +387,124 @@
               "fr": "Cathéter régional"
             }
           },
-          "caudal": {
+          "peng_block": {
+            "label": {
+              "de": "PENG-Block",
+              "en": "PENG block",
+              "fr": "Bloc PENG"
+            },
+            "nerve_injury": {
+              "label": {
+                "de": "Nervenschädigung (z. B. N. femoralis, N. obturatorius)",
+                "en": "Nerve injury (e.g. femoral, obturator nerve)",
+                "fr": "Lésion nerveuse (ex. nerf fémoral, nerf obturateur)"
+              }
+            },
+            "peritoneal_perforation": {
+              "label": {
+                "de": "Perforation des Peritoneums (selten, anatomisch möglich)",
+                "en": "Peritoneal perforation (rare, anatomically possible)",
+                "fr": "Perforation du péritoine (rare, anatomiquement possible)"
+              }
+            },
+            "quadriceps_weakness": {
+              "label": {
+                "de": "Schwäche des M. quadriceps / Sturzrisiko",
+                "en": "Quadriceps weakness / fall risk",
+                "fr": "Faiblesse du quadriceps / risque de chute"
+              }
+            }
+          },
+          "tap_block": {
+            "label": {
+              "de": "TAP-Block",
+              "en": "TAP block",
+              "fr": "Bloc TAP"
+            },
+            "organ_injury": {
+              "label": {
+                "de": "Organverletzung",
+                "en": "Organ injury",
+                "fr": "Lésion d'organe"
+              }
+            },
+            "peritoneal_puncture": {
+              "label": {
+                "de": "Peritonealpunktion",
+                "en": "Peritoneal puncture",
+                "fr": "Ponction péritonéale"
+              }
+            },
+          },
+          "saphenous_nerve_block": {
+            "label": {
+              "de": "N. saphenus-Block",
+              "en": "Saphenous nerve block",
+              "fr": "Bloc du nerf saphène"
+            },
+            "nerve_injury": {
+              "label": {
+                "de": "Nervenschädigung (z. B. Parästhesien medial am Unterschenkel)",
+                "en": "Nerve injury (e.g. paresthesia on medial lower leg)",
+                "fr": "Lésion nerveuse (ex. paresthésie jambe médiale)"
+              }
+            },
+            "vascular_puncture": {
+              "label": {
+                "de": "Gefäßpunktion / Hämatom (bei Adduktorenkanal-Block)",
+                "en": "Vascular puncture / hematoma (e.g. in adductor canal approach)",
+                "fr": "Ponction vasculaire / hématome (ex. approche canal des adducteurs)"
+              }
+            }
+          },
+          "brachial_plexus_block": {
+            "label": {
+              "de": "Brachialplexusblock (supraklavikulär / infraklavikulär / axillär)",
+              "en": "Brachial plexus block (supraclavicular / infraclavicular / axillary)",
+              "fr": "Bloc plexus brachial (supraclaviculaire / infraclaviculaire / axillaire)"
+            },
+            "pneumothorax": {
+              "label": {
+                "de": "Pneumothorax (insb. supraklavikulär)",
+                "en": "Pneumothorax (especially supraclavicular)",
+                "fr": "Pneumothorax (surtout supraclaviculaire)"
+              }
+            },
+            "phrenic_nerve_palsy": {
+              "label": {
+                "de": "Phrenikusparese (häufig supraklavikulär)",
+                "en": "Phrenic nerve palsy (common with supraclavicular)",
+                "fr": "Paralysie du nerf phrénique (fréquent supraclaviculaire)"
+              }
+            },
+            "nerve_injury": {
+              "label": {
+                "de": "Nervenschädigung (z. B. Plexusschäden, einzelne Äste)",
+                "en": "Nerve injury (e.g. plexus or individual branches)",
+                "fr": "Lésion nerveuse (plexus ou branches isolées)"
+              }
+            },
+            "horner_syndrome": {
+              "label": {
+                "de": "Horner-Syndrom (v. a. supraklavikulär / interskalenär)",
+                "en": "Horner’s syndrome (esp. supraclavicular / interscalene)",
+                "fr": "Syndrome de Horner (surtout supraclaviculaire / interscalénique)"
+              }
+            },
+            "diaphragm_paralysis_risk": {
+              "label": {
+                "de": "Atemeinschränkung durch Zwerchfellparese",
+                "en": "Respiratory compromise due to diaphragmatic paralysis",
+                "fr": "Compromission respiratoire par paralysie diaphragmatique"
+              }
+            }
+          },
+          "saddle_block": {
+            "label": {
+              "de": "Sattelblock",
+              "en": "Saddle block",
+              "fr": "Bloc en selle"
+            },
             "urinary_retention": {
               "label": {
                 "de": "Harnverhalt",
@@ -395,87 +512,154 @@
                 "fr": "Rétention urinaire"
               }
             },
-            "meningitis": {
+            "hypotension": {
               "label": {
-                "de": "Meningitis",
-                "en": "Meningitis",
-                "fr": "Méningite"
+                "de": "Sympathikusblock → Hypotonie",
+                "en": "Sympathetic block → hypotension",
+                "fr": "Bloc sympathique → hypotension"
               }
             },
-            "neurological_deficit": {
+            "post_dural_puncture_headache": {
               "label": {
-                "de": "Neurologisches Defizit",
-                "en": "Neurological deficit",
-                "fr": "Déficit neurologique"
+                "de": "Postspinaler Kopfschmerz",
+                "en": "Post-dural puncture headache",
+                "fr": "Céphalée post-ponction durale"
               }
             },
-            "label": {
-              "de": "Caudal",
-              "en": "Caudal",
-              "fr": "Caudal"
+            "nerve_injury": {
+              "label": {
+                "de": "Nervenschädigung (selten, z. B. Cauda-Equina-Syndrom)",
+                "en": "Nerve injury (rare, e.g. cauda equina syndrome)",
+                "fr": "Lésion nerveuse (rare, ex. syndrome de la queue de cheval)"
+              }
             }
           },
-          "truncal_blocks": {
-            "pneumothorax": {
-              "label": {
-                "de": "Pneumothorax",
-                "en": "Pneumothorax",
-                "fr": "Pneumothorax"
-              }
+          "esp_block": {
+            "label": {
+              "de": "ESP-Block (Erector Spinae Plane)",
+              "en": "ESP block (Erector Spinae Plane)",
+              "fr": "Bloc ESP (Erector Spinae Plane)"
             },
             "organ_injury": {
               "label": {
-                "de": "Organverletzung (Leber, Milz, Darm)",
-                "en": "Organ injury (liver, spleen, bowel)",
-                "fr": "Lésions d'organe (foie, rate, intestin)"
+                "de": "Organverletzung (selten, z. B. Pleurapunktion bei tiefer Nadellage)",
+                "en": "Organ injury (rare, e.g. pleural puncture with deep needle)",
+                "fr": "Lésion d’organe (rare, ex. ponction pleurale aiguille profonde)"
               }
-            },
-            "label": {
-              "de": "Truncal blocks",
-              "en": "Truncal blocks",
-              "fr": "Truncal blocks"
             }
           },
-          "brachial_plexus": {
-            "pneumothorax": {
+          "esp_block": {
+            "label": {
+              "de": "ESP-Block (Erector Spinae Plane)",
+              "en": "ESP block (Erector Spinae Plane)",
+              "fr": "Bloc ESP (Erector Spinae Plane)"
+            },
+            "organ_injury": {
               "label": {
-                "de": "Pneumothorax",
-                "en": "Pneumothorax",
-                "fr": "Pneumothorax"
+                "de": "Organverletzung (selten, z. B. Pleurapunktion bei tiefer Nadellage)",
+                "en": "Organ injury (rare, e.g. pleural puncture with deep needle)",
+                "fr": "Lésion d’organe (rare, ex. ponction pleurale aiguille profonde)"
               }
+            }
+          },
+          "sciatic_nerve_block": {
+            "label": {
+              "de": "N. ischiadicus-Block",
+              "en": "Sciatic nerve block",
+              "fr": "Bloc du nerf sciatique"
+            }
+          },
+          "obturator_nerve_block": {
+            "label": {
+              "de": "N. obturatorius-Block",
+              "en": "Obturator nerve block",
+              "fr": "Bloc du nerf obturateur"
+            },
+            "adductor_weakness": {
+              "label": {
+                "de": "Adduktorenschwäche → Sturzrisiko",
+                "en": "Adductor weakness → fall risk",
+                "fr": "Faiblesse des adducteurs → risque de chute"
+              }
+            }
+          },
+          "femoral_nerve_block": {
+            "label": {
+              "de": "N. femoralis-Block",
+              "en": "Femoral nerve block",
+              "fr": "Bloc du nerf fémoral"
+            },
+            "quadriceps_weakness": {
+              "label": {
+                "de": "Quadricepsparese → Sturzrisiko",
+                "en": "Quadriceps weakness → fall risk",
+                "fr": "Faiblesse du quadriceps → risque de chute"
+              }
+            },
+            "delayed_mobilization": {
+              "label": {
+                "de": "Verzögerte Mobilisation postoperativ",
+                "en": "Delayed postoperative mobilization",
+                "fr": "Mobilisation postopératoire retardée"
+              }
+            }
+          },
+          "ficb_block": {
+            "label": {
+              "de": "Fascia-Iliaca-Compartment-Block (FICB)",
+              "en": "Fascia Iliaca Compartment Block (FICB)",
+              "fr": "Bloc du fascia iliaque (FICB)"
+            },
+            "large_volume_required": {
+              "label": {
+                "de": "Großes Injektionsvolumen nötig → Risiko systemischer Toxizität",
+                "en": "Large injection volume required → risk of systemic toxicity",
+                "fr": "Grand volume requis → risque de toxicité systémique"
+              }
+            },
+            "quadriceps_weakness": {
+              "label": {
+                "de": "Schwäche des M. quadriceps → Sturzgefahr",
+                "en": "Quadriceps weakness → fall risk",
+                "fr": "Faiblesse du quadriceps → risque de chute"
+              }
+            }
+          },
+          "oberst_block": {
+            "label": {
+              "de": "Oberst-Block (digitale Leitungsanästhesie)",
+              "en": "Oberst block (digital nerve block)",
+              "fr": "Bloc digital (technique d’Oberst)"
+            },
+          },
+          "interscalene_block": {
+            "label": {
+              "de": "Interskalenusblock (ISB)",
+              "en": "Interscalene block (ISB)",
+              "fr": "Bloc interscalénique (ISB)"
             },
             "phrenic_nerve_palsy": {
               "label": {
-                "de": "Phrenikusparese",
-                "en": "Phrenic nerve palsy",
-                "fr": "Paralysie du nerf phrénique"
+                "de": "Phrenikusparese (häufig, ipsilaterale Zwerchfelllähmung)",
+                "en": "Phrenic nerve palsy (common, ipsilateral diaphragm paralysis)",
+                "fr": "Paralysie du nerf phrénique (fréquente, hémidiaphragme)"
+              }
+            },
+            "recurrent_laryngeal_nerve_block": {
+              "label": {
+                "de": "Blockade N. laryngeus recurrens → Heiserkeit / Stimmbandlähmung",
+                "en": "Recurrent laryngeal nerve block → hoarseness / vocal cord palsy",
+                "fr": "Bloc du nerf laryngé récurrent → enrouement / paralysie vocale"
               }
             },
             "horner_syndrome": {
               "label": {
-                "de": "Horner-Syndrom",
-                "en": "Horner’s syndrome",
-                "fr": "Syndrome de Horner"
+                "de": "Horner-Syndrom (Ptosis, Miosis, Anhidrose)",
+                "en": "Horner's syndrome (ptosis, miosis, anhidrosis)",
+                "fr": "Syndrome de Horner (ptosis, myosis, anhidrose)"
               }
             },
-            "vocal_cord_palsy": {
-              "label": {
-                "de": "Stimmbandlähmung",
-                "en": "Vocal cord palsy",
-                "fr": "Paralysie des cordes vocales"
-              }
-            },
-            "label": {
-              "de": "Brachial plexus",
-              "en": "Brachial plexus",
-              "fr": "Brachial plexus"
-            }
           },
-          "label": {
-            "de": "Regionalanästhesie",
-            "en": "Regional anesthesia",
-            "fr": "Anesthésie régionale"
-          }
         },
         "lines_catheters": {
           "peripheral_iv": {
