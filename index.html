@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="de">
 <head>
@@ -131,6 +132,8 @@
           const subgroupCheckbox = document.createElement('input');
           subgroupCheckbox.type = 'checkbox';
           subgroupCheckbox.style.marginRight = '0.5rem';
+          subgroupCheckbox.name = "riskSubgroups";
+          subgroupCheckbox.value = `${group.key}.${subKey}.common`;
           subgroupCheckbox.addEventListener('change', () => {
             const subInputs = subgroupContainer.querySelectorAll('input[type=checkbox]');
             subInputs.forEach(cb => cb.checked = subgroupCheckbox.checked);
@@ -160,7 +163,49 @@
             checkbox.type = 'checkbox';
             checkbox.name = 'riskSubgroups';
             checkbox.value = group.key + '.' + subKey + '.' + leafKey;
-            checkbox.addEventListener('change', generateSummary);
+            
+
+
+
+
+
+
+checkbox.addEventListener('change', function () {
+  const val = this.value;
+  const [group, subgroup, key] = val.split('.');
+
+  if (!val.endsWith('.common')) {
+    const subgroupSelector = `input[name='riskSubgroups'][value^='${group}.${subgroup}.']`;
+    const allSubCheckboxes = Array.from(document.querySelectorAll(subgroupSelector));
+    const commonSubCheckbox = allSubCheckboxes.find(cb => cb.value === `${group}.${subgroup}.common`);
+    const others = allSubCheckboxes.filter(cb => cb.value !== `${group}.${subgroup}.common`);
+    const anySubChecked = others.some(cb => cb.checked);
+
+    if (commonSubCheckbox) {
+      if (anySubChecked && !commonSubCheckbox.checked) commonSubCheckbox.checked = true;
+      if (!anySubChecked && commonSubCheckbox.checked) commonSubCheckbox.checked = false;
+    }
+  }
+
+  // Hauptgruppen-Common behandeln
+  const groupCommonCheckbox = document.querySelector(`input[name='riskSubgroups'][value='${group}.common.common']`);
+  if (groupCommonCheckbox) {
+    const allGroupCheckboxes = Array.from(document.querySelectorAll(`input[name='riskSubgroups']`))
+      .filter(cb => cb.value.startsWith(`${group}.`) && !cb.value.endsWith('.common.common') && cb !== groupCommonCheckbox);
+    const anyGroupChecked = allGroupCheckboxes.some(cb => cb.checked);
+    if (anyGroupChecked && !groupCommonCheckbox.checked) groupCommonCheckbox.checked = true;
+    if (!anyGroupChecked && groupCommonCheckbox.checked) groupCommonCheckbox.checked = false;
+  }
+
+  generateSummary();
+});
+
+
+
+
+
+
+
             label.appendChild(checkbox);
             label.appendChild(document.createTextNode(' ' + (leafValue.label?.[lang] || leafKey)));
             subgroupContainer.appendChild(label);
@@ -171,7 +216,49 @@
           checkbox.type = 'checkbox';
           checkbox.name = 'riskSubgroups';
           checkbox.value = group.key + '.' + subKey;
-          checkbox.addEventListener('change', generateSummary);
+          
+
+
+
+
+
+
+checkbox.addEventListener('change', function () {
+  const val = this.value;
+  const [group, subgroup, key] = val.split('.');
+
+  if (!val.endsWith('.common')) {
+    const subgroupSelector = `input[name='riskSubgroups'][value^='${group}.${subgroup}.']`;
+    const allSubCheckboxes = Array.from(document.querySelectorAll(subgroupSelector));
+    const commonSubCheckbox = allSubCheckboxes.find(cb => cb.value === `${group}.${subgroup}.common`);
+    const others = allSubCheckboxes.filter(cb => cb.value !== `${group}.${subgroup}.common`);
+    const anySubChecked = others.some(cb => cb.checked);
+
+    if (commonSubCheckbox) {
+      if (anySubChecked && !commonSubCheckbox.checked) commonSubCheckbox.checked = true;
+      if (!anySubChecked && commonSubCheckbox.checked) commonSubCheckbox.checked = false;
+    }
+  }
+
+  // Hauptgruppen-Common behandeln
+  const groupCommonCheckbox = document.querySelector(`input[name='riskSubgroups'][value='${group}.common.common']`);
+  if (groupCommonCheckbox) {
+    const allGroupCheckboxes = Array.from(document.querySelectorAll(`input[name='riskSubgroups']`))
+      .filter(cb => cb.value.startsWith(`${group}.`) && !cb.value.endsWith('.common.common') && cb !== groupCommonCheckbox);
+    const anyGroupChecked = allGroupCheckboxes.some(cb => cb.checked);
+    if (anyGroupChecked && !groupCommonCheckbox.checked) groupCommonCheckbox.checked = true;
+    if (!anyGroupChecked && groupCommonCheckbox.checked) groupCommonCheckbox.checked = false;
+  }
+
+  generateSummary();
+});
+
+
+
+
+
+
+
           label.appendChild(checkbox);
           label.appendChild(document.createTextNode(' ' + sublabel));
           entriesContainer.appendChild(label);
