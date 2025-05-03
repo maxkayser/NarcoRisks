@@ -1,4 +1,26 @@
 {
+  "textblocks": {
+    "intro": {
+      "de": "Im Rahmen der präoperativen anästhesiologischen Visite wurden die folgenden Risiken unter Berücksichtigung des individuellen Kontextes ausführlich besprochen:",
+      "en": "As part of the preoperative anesthesiology consultation, the following risks were thoroughly discussed, taking into account the individual context:",
+      "fr": "Dans le cadre de la visite préopératoire en anesthésie, les risques suivants ont été discutés en détail en tenant compte du contexte individuel :"
+    },
+    "closing": {
+      "de": "Auf Nachfrage wurde bestätigt, dass alle Inhalte verstanden wurden und keine offenen Fragen bestehen. Die Durchführung der Maßnahmen unter den genannten Risiken ohne weitere Bedenkzeit wird ausdrücklich gewünscht. Eine Kopie dieses Dokuments wurde angeboten.",
+      "en": "It was confirmed upon request that all information was understood and no further questions remain. The procedures under the listed risks are explicitly requested without the need for further reflection. A copy of this document was offered.",
+      "fr": "Il a été confirmé, sur demande, que toutes les informations ont été comprises et qu’aucune question n’est restée sans réponse. La réalisation des mesures avec les risques mentionnés est expressément souhaitée, sans délai de réflexion supplémentaire. Une copie de ce document a été proposée."
+    },
+    "x1": {
+      "de": "Zusätzlicher Aufklärungspunkt 1...",
+      "en": "Additional clarification item 1...",
+      "fr": "Point d’information supplémentaire 1..."
+    },
+    "x2": {
+      "de": "Zusätzlicher Aufklärungspunkt 2...",
+      "en": "Additional clarification item 2...",
+      "fr": "Point d’information supplémentaire 2..."
+    }
+  },
   "defaults": {
     "risks.general_anesthesia.full": true,
     "risks.lines_catheters.peripheral_iv": true
