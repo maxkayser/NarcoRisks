@@ -337,9 +337,9 @@
             },
             "aspiration": {
               "label": {
-                "de": "Aspirationsgefahr",
-                "en": "Risk of aspiration",
-                "fr": "Risque d’aspiration"
+                "de": "Erhöhte Aspirationsgefahr",
+                "en": "Elevated risk of aspiration",
+                "fr": "Risque d’aspiration élevé"
               }
             },
             "traumatic_intubation": {
