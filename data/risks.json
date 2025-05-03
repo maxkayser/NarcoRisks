@@ -11,49 +11,58 @@
       "fr": "Il a été confirmé, sur demande, que toutes les informations ont été comprises et qu’aucune question n’est restée sans réponse. La réalisation des mesures avec les risques mentionnés est expressément souhaitée, sans délai de réflexion supplémentaire. Une copie de ce document a été proposée."
     },
     "teleconsent": {
-      "de": "Die Aufklärung fand im online über die Plattform Doctolib statt.",
+      "label": { "de": "Online-Aufklärung", "en": "Online consent", "fr": "Consentement en ligne" },
+      "de": "Die Aufklärung fand online über die Plattform Doctolib statt.",
       "en": "The informed consent discussion took place online via the Doctolib platform.",
       "fr": "L’information a été donnée en ligne via la plateforme Doctolib."
     },
     "known_allergy": {
-      "de": "Aufgrund einer bekannten Allergie besteht ein erhöhtes Risiko für Arzneimittelreaktionen bis hin zur Anaphylaxie.",
-      "en": "Due to a known allergy, there is an increased risk of drug reactions including anaphylaxis.",
-      "fr": "En raison d’une allergie connue, le risque de réactions médicamenteuses, y compris l’anaphylaxie, est accru."
+      "label": { "de": "Allergie", "en": "Allergy", "fr": "Allergie" },
+      "de": "Bekannte Allergie mit erhöhtem Risiko für Arzneimittelreaktionen bis hin zur Anaphylaxie.",
+      "en": "Known allergy with increased risk of drug reactions including anaphylaxis.",
+      "fr": "Allergie connue avec risque accru de réactions médicamenteuses, y compris anaphylaxie."
     },
     "known_difficult_airway": {
-      "de": "Bei bekannter schwieriger Atemwegssituation besteht ein erhöhtes Risiko für Atemwegskomplikationen.",
-      "en": "A known difficult airway presents an increased risk of airway complications.",
-      "fr": "Une voie respiratoire difficile connue présente un risque accru de complications respiratoires."
+      "label": { "de": "Schwieriger Atemweg", "en": "Difficult airway", "fr": "Voies respiratoires difficiles" },
+      "de": "Bekannter schwieriger Atemweg mit erhöhtem Risiko für Atemwegskomplikationen.",
+      "en": "Known difficult airway with increased risk of airway complications.",
+      "fr": "Voies respiratoires difficiles connues avec risque accru de complications respiratoires."
     },
     "cardiac_risk": {
-      "de": "Bei kardialer Vorerkrankung besteht ein erhöhtes Risiko für Kreislaufkomplikationen wie Rhythmusstörungen oder Ischämie.",
-      "en": "Cardiac comorbidities increase the risk of circulatory complications such as arrhythmias or ischemia.",
-      "fr": "Une pathologie cardiaque préexistante augmente le risque de complications circulatoires telles que troubles du rythme ou ischémie."
+      "label": { "de": "Kardiales Risiko", "en": "Cardiac risk", "fr": "Risque cardiaque" },
+      "de": "Erhöhtes Risiko für Kreislaufkomplikationen wie Rhythmusstörungen oder Ischämie.",
+      "en": "Increased risk of cardiovascular complications like arrhythmias or ischemia.",
+      "fr": "Risque accru de complications cardiovasculaires telles que troubles du rythme ou ischémie."
     },
     "coagulation_disorder": {
-      "de": "Bei Gerinnungsstörung besteht ein erhöhtes Risiko für Blutungs- oder Hämatomkomplikationen.",
-      "en": "Coagulation disorders increase the risk of bleeding or hematoma-related complications.",
-      "fr": "Un trouble de la coagulation accroît le risque de complications hémorragiques ou d’hématome."
+      "label": { "de": "Gerinnungsstörung", "en": "Coagulation disorder", "fr": "Trouble de la coagulation" },
+      "de": "Erhöhtes Blutungsrisiko aufgrund bekannter Gerinnungsstörung.",
+      "en": "Increased bleeding risk due to known coagulation disorder.",
+      "fr": "Risque hémorragique accru dû à un trouble de la coagulation connu."
     },
     "anemia": {
-      "de": "Bei Anämie besteht ein erhöhtes Risiko für Sauerstoffmangel und Kreislaufbelastung.",
-      "en": "Anemia increases the risk of oxygen deficiency and circulatory strain.",
-      "fr": "Une anémie accroît le risque de déficit en oxygène et de surcharge circulatoire."
+      "label": { "de": "Anämie", "en": "Anemia", "fr": "Anémie" },
+      "de": "Anämie mit Risiko für Sauerstoffmangel und Kreislaufbelastung.",
+      "en": "Anemia with risk of oxygen deficiency and circulatory strain.",
+      "fr": "Anémie avec risque de déficit en oxygène et surcharge circulatoire."
     },
     "polypharmacy": {
-      "de": "Bei Polypharmazie bestehen potenzielle Wechselwirkungen mit Narkosemedikamenten.",
-      "en": "Polypharmacy poses potential interactions with anesthetic drugs.",
-      "fr": "La polymédication présente un risque d’interactions avec les agents anesthésiques."
+      "label": { "de": "Polypharmazie", "en": "Polypharmacy", "fr": "Polymédication" },
+      "de": "Polypharmazie mit möglicher Arzneimittelinteraktion.",
+      "en": "Polypharmacy with potential drug interactions.",
+      "fr": "Polymédication avec risque d’interactions médicamenteuses."
     },
     "frail_patient": {
-      "de": "Bei gebrechlichen Patient*innen besteht ein erhöhtes Risiko für Kreislaufinstabilität, Delir oder verzögerte Erholung.",
-      "en": "Frail patients are at increased risk for hemodynamic instability, delirium, or delayed recovery.",
-      "fr": "Les patient·es fragiles présentent un risque accru d’instabilité hémodynamique, de délire ou de récupération retardée."
+      "label": { "de": "Gebrechlichkeit", "en": "Frail patient", "fr": "Patient fragile" },
+      "de": "Gebrechlichkeit mit Risiko für Kreislaufinstabilität oder Delir.",
+      "en": "Frailty with risk of circulatory instability or delirium.",
+      "fr": "Fragilité avec risque d’instabilité hémodynamique ou délire."
     },
     "minor_guardian_consent": {
-      "de": "Da der/die Patient*in minderjährig ist, wurde die Aufklärung mit einer/einem Sorgeberechtigten durchgeführt.",
-      "en": "As the patient is a minor, consent was obtained from a legal guardian.",
-      "fr": "Le/la patient·e étant mineur·e, le consentement a été donné par un représentant légal."
+      "label": { "de": "Minderjährig", "en": "Minor", "fr": "Mineur·e" },
+      "de": "Aufklärung im Beisein einer/eines Sorgeberechtigten, da der/die Patient*in minderjährig ist.",
+      "en": "Consent was obtained in the presence of a legal guardian due to patient being a minor.",
+      "fr": "Consentement donné en présence d’un représentant légal en raison du statut mineur du/de la patient·e."
     }
   },
   "defaults": {
@@ -114,6 +123,13 @@
                 "de": "Kardiale Dekompensation / Schock",
                 "en": "Cardiac decompensation / shock",
                 "fr": "Décompensation cardiaque / choc"
+              }
+            },
+            "organ_failure": {
+              "label": {
+                "de": "Organversagen",
+                "en": "organ failure",
+                "fr": "Défaillance d'organe"
               }
             },
             "icu_or_death": {
