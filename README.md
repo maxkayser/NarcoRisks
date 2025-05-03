@@ -1,7 +1,7 @@
 # NarcoRisks
 ## Interaktive Plattform zu Anästhesieassoziierte Risiken
 
-Diese Plattform bietet eine strukturierte Übersicht über Risiken im Zusammenhang mit Anästhesieverfahren. Ziel ist die Visualisierung klinischer und organisatorischer Gefahrenpotenziale – zur Unterstützung von Forschung, Lehre und Qualitätsmanagement.
+Diese Plattform bietet eine interaktive Visualisierung über Risiken im Zusammenhang mit Anästhesieverfahren.
 
 👉 [Zur Visualisierung](https://maxkayser.github.io/NarcoRisks/)
 
@@ -19,7 +19,7 @@ Diese Plattform bietet eine strukturierte Übersicht über Risiken im Zusammenha
 
 - Fachpersonal in Anästhesie, Intensiv- und OP-Pflege  
 - Medizinstudierende und Auszubildende  
-- Forschende im Bereich Patientensicherheit
+- Forschende im Bereich Patientensicherheit und Qualitätsmanagement
 
 ## Nutzungshinweis
 
