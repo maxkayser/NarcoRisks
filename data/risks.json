@@ -205,6 +205,11 @@
           }
         },
         "regional_anesthesia": {
+          "label": {
+            "de": "Regionalanästhesie",
+            "en": "Regional anesthesia",
+            "fr": "Anesthésie régionale"
+          },
           "common": {
             "local_anesthetic_systemic_toxicity": {
               "label": {
