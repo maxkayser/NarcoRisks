@@ -623,13 +623,6 @@
               }
             }
           },
-          "oberst_block": {
-            "label": {
-              "de": "Oberst-Block (digitale Leitungsanästhesie)",
-              "en": "Oberst block (digital nerve block)",
-              "fr": "Bloc digital (technique d’Oberst)"
-            }
-          },
           "interscalene_block": {
             "label": {
               "de": "Interskalenusblock (ISB)",
