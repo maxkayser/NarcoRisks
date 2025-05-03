@@ -221,6 +221,13 @@
                 "fr": "enrouement"
               }
             },
+            "swallowing_disorder": {
+              "label": {
+                "de": "Schluckstörung / Dysphagie",
+                "en": "Swallowing disorder / dysphagia",
+                "fr": "Trouble de la déglutition / dysphagie"
+              }
+            },
             "tongue_paresthesia": {
               "label": {
                 "de": "Missempfindung / Taubheit der Zunge",
