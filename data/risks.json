@@ -26,6 +26,16 @@
       "en": "For outpatient care, an adult escort was designated for pickup and supervision during the first 24 hours postoperatively, with contact details documented. The availability of medical emergency services at the recovery location (reachable within < 30 minutes) was confirmed. An information leaflet was handed out, detailing the specifics of ambulatory procedures and required behavioral restrictions. Particular emphasis was placed on: no operation of vehicles, no consumption of alcohol or mind-altering substances, and no legal or contractual decisions. Instructions for the event of complications were explained, along with provision of an emergency contact number and address.",
       "fr": "Pour une prise en charge ambulatoire, une personne majeure a été désignée pour l’accompagnement et la surveillance durant les 24 premières heures postopératoires ; ses coordonnées ont été enregistrées. La disponibilité d’une prise en charge médicale d’urgence (< 30 minutes) sur le lieu de convalescence a été confirmée. Une fiche d’information a été remise, incluant les particularités de la chirurgie ambulatoire et les consignes à respecter. Il a notamment été précisé : ne pas conduire, ne pas consommer d’alcool ni de substances psychoactives, ne pas prendre de décisions juridiques ou contractuelles. Les conduites à tenir en cas de complication ont été expliquées et un numéro d’urgence ainsi qu’une adresse de contact ont été communiqués."
     },
+    "emergency_surgery": {
+      "label": {
+        "de": "Notfalloperation",
+        "en": "Emergency surgery",
+        "fr": "Chirurgie en urgence"
+      },
+      "de": "Es handelt sich um eine Notfalloperation mit erhöhtem Risiko für intra- und perioperative Komplikationen.",
+      "en": "This is an emergency surgery with increased risk of intra- and perioperative complications.",
+      "fr": "Il s'agit d'une chirurgie en urgence avec un risque accru de complications per- et peropératoires."
+    },
     "known_allergy": {
       "label": { "de": "Allergie", "en": "Allergy", "fr": "Allergie" },
       "de": "Bekannte Allergie mit erhöhtem Risiko für Arzneimittelreaktionen bis hin zur Anaphylaxie.",
@@ -127,16 +137,6 @@
       "de": "Bei Diabetes mellitus bestehen erhöhte Risiken für Hypo-/Hyperglykämien, Infektionen, Wundheilungsstörungen und perioperative Stoffwechselentgleisungen.",
       "en": "Diabetes mellitus increases the risks of hypo-/hyperglycemia, infection, impaired wound healing, and perioperative metabolic imbalance.",
       "fr": "Le diabète sucré augmente le risque d’hypo-/hyperglycémie, d’infections, de troubles de cicatrisation et de déséquilibre métabolique en périopératoire."
-    },
-    "emergency_surgery": {
-      "label": {
-        "de": "Notfalloperation",
-        "en": "Emergency surgery",
-        "fr": "Chirurgie en urgence"
-      },
-      "de": "Es handelt sich um eine Notfalloperation mit erhöhtem Risiko für intra- und perioperative Komplikationen.",
-      "en": "This is an emergency surgery with increased risk of intra- and perioperative complications.",
-      "fr": "Il s'agit d'une chirurgie en urgence avec un risque accru de complications per- et peropératoires."
     },
     "immunosuppression": {
       "label": {
