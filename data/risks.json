@@ -45,6 +45,27 @@
                 "fr": "Hypo/Hypertension, arythmies"
               }
             },
+            "myocardial_infarction": {
+              "label": {
+                "de": "Herzinfarkt",
+                "en": "Myocardial infarction",
+                "fr": "Infarctus du myocarde"
+              }
+            },
+            "stroke_tia": {
+              "label": {
+                "de": "Schlaganfall / transitorische ischämische Attacke (TIA)",
+                "en": "Stroke / transient ischemic attack (TIA)",
+                "fr": "AVC / attaque ischémique transitoire (AIT)"
+              }
+            },
+            "malignant_hyperthermia": {
+              "label": {
+                "de": "Maligne Hyperthermie",
+                "en": "Malignant hyperthermia",
+                "fr": "Hyperthermie maligne"
+              }
+            },
             "postoperative_nausea_vomiting": {
               "label": {
                 "de": "Übelkeit / Erbrechen (PONV)",
@@ -155,20 +176,6 @@
                 "de": "Laryngo-/Bronchospasmus",
                 "en": "Laryngospasm / bronchospasm",
                 "fr": "Laryngospasme / bronchospasme"
-              }
-            },
-            "myocardial_infarction_stroke": {
-              "label": {
-                "de": "Herzinfarkt / Schlaganfall",
-                "en": "Myocardial infarction / stroke",
-                "fr": "Infarctus du myocarde / AVC"
-              }
-            },
-            "malignant_hyperthermia": {
-              "label": {
-                "de": "Maligne Hyperthermie",
-                "en": "Malignant hyperthermia",
-                "fr": "Hyperthermie maligne"
               }
             }
           },
