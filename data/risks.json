@@ -947,6 +947,83 @@
               "fr": "ETO"
             }
           },
+          "transfusion": {
+            "label": {
+              "de": "Transfusion",
+              "en": "Transfusion",
+              "fr": "Transfusion"
+            },
+            "hemolytic_reaction": {
+              "label": {
+                "de": "Hämolytische Transfusionsreaktion",
+                "en": "Hemolytic transfusion reaction",
+                "fr": "Réaction transfusionnelle hémolytique"
+              }
+            },
+            "non_hemolytic_reaction": {
+              "label": {
+                "de": "Febrile nicht-hämolytische Reaktion",
+                "en": "Febrile non-hemolytic reaction",
+                "fr": "Réaction non hémolytique fébrile"
+              }
+            },
+            "allergic_reaction": {
+              "label": {
+                "de": "Allergische Reaktion / Anaphylaxie",
+                "en": "Allergic reaction / anaphylaxis",
+                "fr": "Réaction allergique / anaphylaxie"
+              }
+            },
+            "transfusion_related_infection": {
+              "label": {
+                "de": "Infektionsübertragung",
+                "en": "Transfusion-transmitted infections",
+                "fr": "Infection post-transfusionnelle"
+              }
+            },
+            "trali": {
+              "label": {
+                "de": "TRALI (Transfusionsassoziierte Lungeninsuffizienz)",
+                "en": "TRALI (Transfusion-related acute lung injury)",
+                "fr": "TRALI (lésion pulmonaire aiguë liée à la transfusion)"
+              }
+            },
+            "taco": {
+              "label": {
+                "de": "TACO (Kreislaufüberlastung durch Transfusion)",
+                "en": "TACO (transfusion-associated circulatory overload)",
+                "fr": "TACO (surcharge circulatoire post-transfusionnelle)"
+              }
+            },
+            "hypothermia": {
+              "label": {
+                "de": "Hypothermie (z. B. bei Massivtransfusion)",
+                "en": "Hypothermia (e.g. during massive transfusion)",
+                "fr": "Hypothermie (ex. lors de transfusion massive)"
+              }
+            },
+            "coagulopathy_dilution": {
+              "label": {
+                "de": "Gerinnungsstörung / Verdünnungseffekt",
+                "en": "Coagulopathy / dilution effect",
+                "fr": "Coagulopathie / effet de dilution"
+              }
+            },
+            "electrolyte_imbalance": {
+              "label": {
+                "de": "Elektrolytentgleisung (z. B. Hyperkaliämie, Hypokalzämie)",
+                "en": "Electrolyte imbalance (e.g. hyperkalemia, hypocalcemia)",
+                "fr": "Déséquilibre électrolytique (ex. hyperkaliémie, hypocalcémie)"
+              }
+            },
+            "ta_gvhd": {
+              "label": {
+                "de": "TA-GvHD (Transfusionsassoziierte GvHD)",
+                "en": "TA-GvHD (Transfusion-associated graft-versus-host disease)",
+                "fr": "TA-GvHD (maladie du greffon contre l'hôte liée à la transfusion)"
+              }
+            }
+          }
           "cell_saver_autotransfusion": {
             "hemolysis": {
               "label": {
