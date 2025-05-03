@@ -54,9 +54,9 @@
         "en": "Coagulation disorder",
         "fr": "Trouble de la coagulation"
       },
-      "de": "Bei bestehender Gerinnungsstörung ist das Risiko für intraoperative Blutungen, Nachblutungen, Hämatome und verzögerte Wundheilung erhöht. Gegebenenfalls ist eine Bluttransfusion oder hämostaseologische Rücksprache erforderlich.",
-      "en": "In case of coagulation disorder, there is an increased risk of intraoperative bleeding, rebleeding, hematomas and impaired wound healing. Blood transfusion or hematological consultation may be required.",
-      "fr": "En cas de trouble de la coagulation, le risque de saignement peropératoire, de récidive hémorragique, d’hématome ou de cicatrisation retardée est accru. Une transfusion ou un avis hémostase peut être nécessaire."
+      "de": "Bei bestehender Gerinnungsstörung ist das Risiko für intraoperative Blutungen, Nachblutungen, Hämatome und verzögerte Wundheilung erhöht. Gegebenenfalls ist eine Bluttransfusion oder die Einleitung spezieller gerinnungstherapeutischer Maßnahmen erforderlich.",
+      "en": "In case of a coagulation disorder, there is an increased risk of intraoperative bleeding, rebleeding, hematomas, and impaired wound healing. If necessary, blood transfusion or targeted hemostatic treatment may be required.",
+      "fr": "En cas de trouble de la coagulation, le risque de saignement peropératoire, de récidive hémorragique, d’hématome ou de cicatrisation retardée est accru. Une transfusion ou la mise en place de mesures thérapeutiques hémostatiques ciblées peut être nécessaire."
     },
     "anemia": {
       "label": {
