@@ -10,15 +10,50 @@
       "en": "It was confirmed upon request that all information was understood and no further questions remain. The procedures under the listed risks are explicitly requested without the need for further reflection. A copy of this document was offered.",
       "fr": "Il a été confirmé, sur demande, que toutes les informations ont été comprises et qu’aucune question n’est restée sans réponse. La réalisation des mesures avec les risques mentionnés est expressément souhaitée, sans délai de réflexion supplémentaire. Une copie de ce document a été proposée."
     },
-    "x1": {
-      "de": "Zusätzlicher Aufklärungspunkt 1...",
-      "en": "Additional clarification item 1...",
-      "fr": "Point d’information supplémentaire 1..."
+    "teleconsent_doctolib": {
+      "de": "Die Aufklärung fand im Vorfeld online über die Plattform Doctolib statt.",
+      "en": "The informed consent discussion took place online in advance via the Doctolib platform.",
+      "fr": "L’information a été donnée au préalable en ligne via la plateforme Doctolib."
     },
-    "x2": {
-      "de": "Zusätzlicher Aufklärungspunkt 2...",
-      "en": "Additional clarification item 2...",
-      "fr": "Point d’information supplémentaire 2..."
+    "known_allergy": {
+      "de": "Aufgrund einer bekannten Allergie besteht ein erhöhtes Risiko für Arzneimittelreaktionen bis hin zur Anaphylaxie.",
+      "en": "Due to a known allergy, there is an increased risk of drug reactions including anaphylaxis.",
+      "fr": "En raison d’une allergie connue, le risque de réactions médicamenteuses, y compris l’anaphylaxie, est accru."
+    },
+    "known_difficult_airway": {
+      "de": "Bei bekannter schwieriger Atemwegssituation besteht ein erhöhtes Risiko für Atemwegskomplikationen.",
+      "en": "A known difficult airway presents an increased risk of airway complications.",
+      "fr": "Une voie respiratoire difficile connue présente un risque accru de complications respiratoires."
+    },
+    "cardiac_risk": {
+      "de": "Bei kardialer Vorerkrankung besteht ein erhöhtes Risiko für Kreislaufkomplikationen wie Rhythmusstörungen oder Ischämie.",
+      "en": "Cardiac comorbidities increase the risk of circulatory complications such as arrhythmias or ischemia.",
+      "fr": "Une pathologie cardiaque préexistante augmente le risque de complications circulatoires telles que troubles du rythme ou ischémie."
+    },
+    "coagulation_disorder": {
+      "de": "Bei Gerinnungsstörung besteht ein erhöhtes Risiko für Blutungs- oder Hämatomkomplikationen.",
+      "en": "Coagulation disorders increase the risk of bleeding or hematoma-related complications.",
+      "fr": "Un trouble de la coagulation accroît le risque de complications hémorragiques ou d’hématome."
+    },
+    "anemia": {
+      "de": "Bei Anämie besteht ein erhöhtes Risiko für Sauerstoffmangel und Kreislaufbelastung.",
+      "en": "Anemia increases the risk of oxygen deficiency and circulatory strain.",
+      "fr": "Une anémie accroît le risque de déficit en oxygène et de surcharge circulatoire."
+    },
+    "polypharmacy": {
+      "de": "Bei Polypharmazie bestehen potenzielle Wechselwirkungen mit Narkosemedikamenten.",
+      "en": "Polypharmacy poses potential interactions with anesthetic drugs.",
+      "fr": "La polymédication présente un risque d’interactions avec les agents anesthésiques."
+    },
+    "frail_patient": {
+      "de": "Bei gebrechlichen Patient*innen besteht ein erhöhtes Risiko für Kreislaufinstabilität, Delir oder verzögerte Erholung.",
+      "en": "Frail patients are at increased risk for hemodynamic instability, delirium, or delayed recovery.",
+      "fr": "Les patient·es fragiles présentent un risque accru d’instabilité hémodynamique, de délire ou de récupération retardée."
+    },
+    "minor_guardian_consent": {
+      "de": "Da der/die Patient*in minderjährig ist, wurde die Aufklärung mit einer/einem Sorgeberechtigten durchgeführt.",
+      "en": "As the patient is a minor, consent was obtained from a legal guardian.",
+      "fr": "Le/la patient·e étant mineur·e, le consentement a été donné par un représentant légal."
     }
   },
   "defaults": {
