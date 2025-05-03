@@ -16,6 +16,16 @@
       "en": "The informed consent discussion took place online via the Doctolib platform.",
       "fr": "L’information a été donnée en ligne via la plateforme Doctolib."
     },
+    "outgoing_patient": {
+      "label": {
+        "de": "Ambulante OP",
+        "en": "Outpatient care",
+        "fr": "Opération ambulatoire"
+      },
+      "de": "Für die ambulante Versorgung wurde eine volljährige Begleitperson zur Abholung und Betreuung in den ersten 24 Stunden nach dem Eingriff benannt und deren Kontaktdaten dokumentiert. Die Verfügbarkeit einer medizinischen Notfallversorgung am postoperativen Aufenthaltsort (< 30 Minuten erreichbar) wurde bestätigt. Ein Merkblatt mit detaillierten Informationen zu den Besonderheiten ambulanter Eingriffe sowie verbindlichen Verhaltensregeln wurde übergeben. Es wurde insbesondere hingewiesen auf: keine aktive Teilnahme am Straßenverkehr, keine Einnahme von Alkohol oder anderen bewusstseinsverändernden Substanzen, keine rechtsverbindlichen Entscheidungen. Verhalten im Falle von Komplikationen wurde erläutert, eine Notfallnummer und eine erreichbare Anschrift wurden übermittelt.",
+      "en": "For outpatient care, an adult escort was designated for pickup and supervision during the first 24 hours postoperatively, with contact details documented. The availability of medical emergency services at the recovery location (reachable within < 30 minutes) was confirmed. An information leaflet was handed out, detailing the specifics of ambulatory procedures and required behavioral restrictions. Particular emphasis was placed on: no operation of vehicles, no consumption of alcohol or mind-altering substances, and no legal or contractual decisions. Instructions for the event of complications were explained, along with provision of an emergency contact number and address.",
+      "fr": "Pour une prise en charge ambulatoire, une personne majeure a été désignée pour l’accompagnement et la surveillance durant les 24 premières heures postopératoires ; ses coordonnées ont été enregistrées. La disponibilité d’une prise en charge médicale d’urgence (< 30 minutes) sur le lieu de convalescence a été confirmée. Une fiche d’information a été remise, incluant les particularités de la chirurgie ambulatoire et les consignes à respecter. Il a notamment été précisé : ne pas conduire, ne pas consommer d’alcool ni de substances psychoactives, ne pas prendre de décisions juridiques ou contractuelles. Les conduites à tenir en cas de complication ont été expliquées et un numéro d’urgence ainsi qu’une adresse de contact ont été communiqués."
+    },
     "known_allergy": {
       "label": { "de": "Allergie", "en": "Allergy", "fr": "Allergie" },
       "de": "Bekannte Allergie mit erhöhtem Risiko für Arzneimittelreaktionen bis hin zur Anaphylaxie.",
@@ -87,16 +97,6 @@
       "de": "Da der/die Patient*in minderjährig ist, wurde die Aufklärung im Beisein einer/eines Sorgeberechtigten durchgeführt. Die Zustimmung erfolgte durch eine vertretungsberechtigte Person.",
       "en": "As the patient is a minor, the informed consent discussion was held in the presence of a legal guardian. Consent was provided by an authorized representative.",
       "fr": "Le/la patient·e étant mineur·e, l’information a été donnée en présence d’un représentant légal. Le consentement a été obtenu auprès de la personne autorisée."
-    },
-    "outgoing_patient": {
-      "label": {
-        "de": "Ambulante OP",
-        "en": "Outpatient care",
-        "fr": "Opération ambulatoire"
-      },
-      "de": "Für die ambulante Versorgung wurde eine volljährige Begleitperson zur Abholung und Betreuung in den ersten 24 Stunden nach dem Eingriff benannt und deren Kontaktdaten dokumentiert. Die Verfügbarkeit einer medizinischen Notfallversorgung am postoperativen Aufenthaltsort (< 30 Minuten erreichbar) wurde bestätigt. Ein Merkblatt mit detaillierten Informationen zu den Besonderheiten ambulanter Eingriffe sowie verbindlichen Verhaltensregeln wurde übergeben. Es wurde insbesondere hingewiesen auf: keine aktive Teilnahme am Straßenverkehr, keine Einnahme von Alkohol oder anderen bewusstseinsverändernden Substanzen, keine rechtsverbindlichen Entscheidungen. Verhalten im Falle von Komplikationen wurde erläutert, eine Notfallnummer und eine erreichbare Anschrift wurden übermittelt.",
-      "en": "For outpatient care, an adult escort was designated for pickup and supervision during the first 24 hours postoperatively, with contact details documented. The availability of medical emergency services at the recovery location (reachable within < 30 minutes) was confirmed. An information leaflet was handed out, detailing the specifics of ambulatory procedures and required behavioral restrictions. Particular emphasis was placed on: no operation of vehicles, no consumption of alcohol or mind-altering substances, and no legal or contractual decisions. Instructions for the event of complications were explained, along with provision of an emergency contact number and address.",
-      "fr": "Pour une prise en charge ambulatoire, une personne majeure a été désignée pour l’accompagnement et la surveillance durant les 24 premières heures postopératoires ; ses coordonnées ont été enregistrées. La disponibilité d’une prise en charge médicale d’urgence (< 30 minutes) sur le lieu de convalescence a été confirmée. Une fiche d’information a été remise, incluant les particularités de la chirurgie ambulatoire et les consignes à respecter. Il a notamment été précisé : ne pas conduire, ne pas consommer d’alcool ni de substances psychoactives, ne pas prendre de décisions juridiques ou contractuelles. Les conduites à tenir en cas de complication ont été expliquées et un numéro d’urgence ainsi qu’une adresse de contact ont été communiqués."
     }
   },
   "defaults": {
