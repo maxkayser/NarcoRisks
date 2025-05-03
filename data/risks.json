@@ -164,6 +164,20 @@
                 "fr": "Traumatisme des voies aériennes"
               }
             },
+            "glottic_injury": {
+              "label": {
+                "de": "Schädigung der Stimmbänder / Heiserkeit",
+                "en": "Vocal cord injury / hoarseness",
+                "fr": "Lésion des cordes vocales / enrouement"
+              }
+            },
+            "tongue_paresthesia": {
+              "label": {
+                "de": "Missempfindung / Taubheit der Zunge",
+                "en": "Tongue paresthesia / numbness",
+                "fr": "Paresthésie / engourdissement de la langue"
+              }
+            },
             "dental_injury": {
               "label": {
                 "de": "Zahn- / Prothesenschäden",
