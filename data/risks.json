@@ -979,6 +979,55 @@
               }
             }
           },
+          "shaldon_catheter": {
+            "label": {
+              "de": "Shaldon-Katheter",
+              "en": "Shaldon catheter",
+              "fr": "Cathéter de Shaldon"
+            },
+            "pneumothorax": {
+              "label": {
+                "de": "Pneumothorax / Hämatothorax",
+                "en": "Pneumothorax / hemothorax",
+                "fr": "Pneumothorax / hémothorax"
+              }
+            },
+            "bleeding": {
+              "label": {
+                "de": "Starke Blutung bei Fehlpunktion",
+                "en": "Severe bleeding due to mispuncture",
+                "fr": "Saignement majeur en cas de ponction ratée"
+              }
+            },
+            "air_embolism": {
+              "label": {
+                "de": "Luftembolie",
+                "en": "Air embolism",
+                "fr": "Embolie gazeuse"
+              }
+            },
+            "local_infection": {
+              "label": {
+                "de": "Infektion an der Punktionsstelle",
+                "en": "Insertion site infection",
+                "fr": "Infection au point de ponction"
+              }
+            },
+            "systemic_infection": {
+              "label": {
+                "de": "Systemische Infektion / Sepsis",
+                "en": "Systemic infection / sepsis",
+                "fr": "Infection systémique / sepsis"
+              }
+            },
+            "vein_trauma": {
+              "label": {
+                "de": "Gefäßverletzung / Dissektion",
+                "en": "Vascular injury / dissection",
+                "fr": "Lésion vasculaire / dissection"
+              }
+            }
+          },
           "arterial_catheter": {
             "label": {
               "de": "Arterieller Katheter",
