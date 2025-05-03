@@ -567,13 +567,6 @@
               }
             },
           },
-          "sciatic_nerve_block": {
-            "label": {
-              "de": "N. ischiadicus-Block",
-              "en": "Sciatic nerve block",
-              "fr": "Bloc du nerf sciatique"
-            }
-          },
           "obturator_nerve_block": {
             "label": {
               "de": "N. obturatorius-Block",
