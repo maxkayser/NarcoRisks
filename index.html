@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="de">
 <head>
@@ -452,7 +451,7 @@ function renderStaticTextblockCheckboxes() {
   const container = document.getElementById('staticTextblockCheckboxes');
   container.innerHTML = '';
 
-  const blocks = [
+  const _blocks = [
     { key: 'teleconsent', label: { de: 'Online-Aufklärung', en: 'Online consent', fr: 'Consentement en ligne' } },
     { key: 'known_allergy', label: { de: 'Allergie', en: 'Allergy', fr: 'Allergie' } },
     { key: 'known_difficult_airway', label: { de: 'Schwieriger Atemweg', en: 'Difficult airway', fr: 'Voies respiratoires difficiles' } },
@@ -480,40 +479,6 @@ function renderStaticTextblockCheckboxes() {
 
 </script>
 <div id="textblockToggles" style="display: none"></div>
-<!--
-function renderStaticTextblockCheckboxes() {
-  console.log('[renderStaticTextblockCheckboxes] called');
-  const lang = document.getElementById('language').value || 'de';
-  const container = document.getElementById('staticTextblockCheckboxes');
-  container.innerHTML = '';
-
-  const blocks = [
-    { key: 'teleconsent', label: { de: 'Online-Aufklärung', en: 'Online consent', fr: 'Consentement en ligne' } },
-    { key: 'known_allergy', label: { de: 'Allergie', en: 'Allergy', fr: 'Allergie' } },
-    { key: 'known_difficult_airway', label: { de: 'Schwieriger Atemweg', en: 'Difficult airway', fr: 'Voies respiratoires difficiles' } },
-    { key: 'cardiac_risk', label: { de: 'Kardiales Risiko', en: 'Cardiac risk', fr: 'Risque cardiaque' } },
-    { key: 'coagulation_disorder', label: { de: 'Gerinnungsstörung', en: 'Coagulation disorder', fr: 'Trouble de la coagulation' } },
-    { key: 'anemia', label: { de: 'Anämie', en: 'Anemia', fr: 'Anémie' } },
-    { key: 'polypharmacy', label: { de: 'Polypharmazie', en: 'Polypharmacy', fr: 'Polymédication' } },
-    { key: 'frail_patient', label: { de: 'Gebrechlichkeit', en: 'Frail patient', fr: 'Patient fragile' } },
-    { key: 'minor_guardian_consent', label: { de: 'Minderjährig', en: 'Minor', fr: 'Mineur·e' } }
-  ];
-
-  blocks.forEach(item => {
-    const wrapper = document.createElement('label');
-    wrapper.style.display = 'block';
-    const checkbox = document.createElement('input');
-    checkbox.type = 'checkbox';
-    checkbox.name = 'textblock';
-    checkbox.value = item.key;
-    checkbox.addEventListener('change', generateSummary);
-    wrapper.appendChild(checkbox);
-    wrapper.appendChild(document.createTextNode(' ' + (item.label[lang] || item.key)));
-    container.appendChild(wrapper);
-  });
-}
-
-/script>
--->
+<span>&copy; 2025 Max Kayser</span>
 </body>
 </html>
