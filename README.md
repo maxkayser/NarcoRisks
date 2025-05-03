@@ -1,33 +1,33 @@
 # NarcoRisks
-## Interaktive Plattform zu Anästhesieassoziierte Risiken
+## Interactive Platform for Anesthesia-Associated Risks
 
-Diese Plattform bietet eine interaktive Visualisierung über Risiken im Zusammenhang mit Anästhesieverfahren.
+This platform provides an interactive visualization of risks associated with anesthesia procedures.
 
-👉 [Zur Visualisierung](https://maxkayser.github.io/NarcoRisks/)
+👉 [Open Visualization](https://maxkayser.github.io/NarcoRisks/)
 
-## Aktuell Verfügbare Sprachen
-**Deutsch | Français | English**  
+## Available Languages
+**Deutsch | Français | English**
 
-## Themenbereiche
+## Covered Topics
 
-- **Allgemeinanästhesie**: Vollnarkose, Analgosedierung  
-- **Regionalanästhesie**: SPA, PDA, CSA, Regionalverfahren obere/untere Extremität, Schmerzkatheter  
-- **Monitoring**: PVK, ZVK, IABP, Shaldon-Katheter, TEE  
-- **Schmerztherapie**: PCIA, Schmerzkatheter
+- **General Anesthesia**: General anesthesia (GA), Analgosedation  
+- **Regional Anesthesia**: Spinal, Epidural, Combined Spinal-Epidural, Upper/Lower limb blocks, Pain catheters  
+- **Monitoring & Access**: Peripheral IV (PIV), Central venous catheter (CVC), Shaldon catheter
+- **Pain Therapy**: PCIA, Epidural pain catheters
 
-## Zielgruppe
+## Target Audience
 
-- Fachpersonal in Anästhesie, Intensiv- und OP-Pflege  
-- Medizinstudierende und Auszubildende  
-- Forschende im Bereich Patientensicherheit und Qualitätsmanagement
+- Professionals in anesthesia, intensive care, and OR nursing  
+- Medical students and trainees  
+- Researchers in patient safety and quality management
 
-## Nutzungshinweis
+## Usage Notice
 
-Diese Plattform basiert auf einer interaktiven Datenvisualisierung (Prototyp) zur Förderung von Risikobewusstsein in der Anästhesie. Sie dient ausschließlich **Forschungs- und Bildungszwecken**.
+This platform is a **prototype for interactive risk visualization** in anesthesiology. It is intended solely for **educational and research purposes** to enhance risk awareness.
 
 ## Disclaimer
 
-> Dieses Projekt stellt **keine medizinische Beratung** dar. Es besteht **keine Haftung** für Entscheidungen, die auf Basis der bereitgestellten Inhalte getroffen werden.
+> This project does **not constitute medical advice**. There is **no liability** for decisions made based on the presented content.
 
 ---
 
