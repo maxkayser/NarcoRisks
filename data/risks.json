@@ -553,19 +553,19 @@
               }
             }
           },
-          "esp_block": {
+          "pecs_block": {
             "label": {
-              "de": "ESP-Block (Erector Spinae Plane)",
-              "en": "ESP block (Erector Spinae Plane)",
-              "fr": "Bloc ESP (Erector Spinae Plane)"
+              "de": "PECS-Block (I/II)",
+              "en": "PECS block (I/II)",
+              "fr": "Bloc PECS (I/II)"
             },
-            "organ_injury": {
+            "pleural_puncture": {
               "label": {
-                "de": "Organverletzung (selten, z. B. Pleurapunktion bei tiefer Nadellage)",
-                "en": "Organ injury (rare, e.g. pleural puncture with deep needle)",
-                "fr": "Lésion d’organe (rare, ex. ponction pleurale aiguille profonde)"
+                "de": "Pleurapunktion / Pneumothorax (selten, bei tiefer Nadellage)",
+                "en": "Pleural puncture / pneumothorax (rare, deep needle)",
+                "fr": "Ponction pleurale / pneumothorax (rare, aiguille profonde)"
               }
-            }
+            },
           },
           "sciatic_nerve_block": {
             "label": {
