@@ -889,6 +889,11 @@
             }
           },
           "peripheral_iv": {
+            "label": {
+              "de": "Peripher-venöser Zugang (PVK)",
+              "en": "Peripheral venous catheter (PVC)",
+              "fr": "Cathéter veineux périphérique"
+            },
             "hematoma_bleeding": {
               "label": {
                 "de": "Hämatom / Blutung",
