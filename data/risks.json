@@ -10,10 +10,10 @@
       "en": "It was confirmed upon request that all information was understood and no further questions remain. The procedures under the listed risks are explicitly requested without the need for further reflection. A copy of this document was offered.",
       "fr": "Il a été confirmé, sur demande, que toutes les informations ont été comprises et qu’aucune question n’est restée sans réponse. La réalisation des mesures avec les risques mentionnés est expressément souhaitée, sans délai de réflexion supplémentaire. Une copie de ce document a été proposée."
     },
-    "teleconsent_doctolib": {
-      "de": "Die Aufklärung fand im Vorfeld online über die Plattform Doctolib statt.",
-      "en": "The informed consent discussion took place online in advance via the Doctolib platform.",
-      "fr": "L’information a été donnée au préalable en ligne via la plateforme Doctolib."
+    "teleconsent": {
+      "de": "Die Aufklärung fand im online über die Plattform Doctolib statt.",
+      "en": "The informed consent discussion took place online via the Doctolib platform.",
+      "fr": "L’information a été donnée en ligne via la plateforme Doctolib."
     },
     "known_allergy": {
       "de": "Aufgrund einer bekannten Allergie besteht ein erhöhtes Risiko für Arzneimittelreaktionen bis hin zur Anaphylaxie.",
