@@ -16,6 +16,16 @@
       "en": "The informed consent discussion took place online via the Doctolib platform.",
       "fr": "L’information a été donnée en ligne via la plateforme Doctolib."
     },
+"combined_consent_anesthesia": {
+  "label": {
+    "de": "Daueraufklärung",
+    "en": "Extended consent",
+    "fr": "Consentement élargi"
+  },
+  "de": "Die Aufklärung erfolgt für den geplanten Eingriff sowie für unmittelbar geplante Folgeeingriffe.",
+  "en": "The consent applies to the planned procedure as well as directly scheduled follow-up procedures.",
+  "fr": "Le consentement s’applique à l’intervention prévue ainsi qu’aux interventions complémentaires immédiatement programmées."
+},
     "outgoing_patient": {
       "label": {
         "de": "Ambulante OP",
