@@ -64,9 +64,9 @@
         "en": "Anemia",
         "fr": "Anémie"
       },
-      "de": "Bei präoperativer Anämie besteht ein erhöhtes Risiko für Gewebehypoxie, Kreislaufbelastung und gegebenenfalls Transfusionsbedarf. Eine sorgfältige hämodynamische Steuerung ist erforderlich.",
-      "en": "Preoperative anemia increases the risk of tissue hypoxia, cardiovascular strain and possibly transfusion requirement. Careful hemodynamic management is essential.",
-      "fr": "Une anémie préopératoire accroît le risque d’hypoxie tissulaire, de surcharge cardiovasculaire et éventuellement de besoin transfusionnel. Une gestion hémodynamique rigoureuse est indispensable."
+      "de": "Bei präoperativer Anämie bestehen erhöhte Risiken für Gewebehypoxie, Kreislaufinstabilität, kardiale Dekompensation sowie die Notwendigkeit einer Bluttransfusion.",
+      "en": "Preoperative anemia increases the risks of tissue hypoxia, circulatory instability, cardiac decompensation, and the potential need for blood transfusion.",
+      "fr": "En cas d’anémie préopératoire, les risques d’hypoxie tissulaire, d’instabilité circulatoire, de décompensation cardiaque et de besoin transfusionnel sont accrus."
     },
     "polypharmacy": {
       "label": {
