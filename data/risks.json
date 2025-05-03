@@ -140,8 +140,8 @@
           "full": {
             "label": {
               "de": "Vollnarkose",
-              "en": "General anesthesia (full)",
-              "fr": "Anesthésie générale (complète)"
+              "en": "General anesthesia",
+              "fr": "Anesthésie générale"
             },
             "airway_device": {
               "label": {
