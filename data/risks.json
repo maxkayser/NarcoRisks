@@ -209,9 +209,16 @@
             },
             "glottic_injury": {
               "label": {
-                "de": "Schädigung der Stimmbänder / Heiserkeit",
-                "en": "Vocal cord injury / hoarseness",
-                "fr": "Lésion des cordes vocales / enrouement"
+                "de": "Irritation / Schädigung der Stimmbänder",
+                "en": "Vocal cord injury / irritation",
+                "fr": "Lésion des cordes vocales / irritation"
+              }
+            },
+            "hoarseness": {
+              "label": {
+                "de": "Heiserkeit",
+                "en": "hoarseness",
+                "fr": "enrouement"
               }
             },
             "tongue_paresthesia": {
