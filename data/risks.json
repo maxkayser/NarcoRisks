@@ -104,9 +104,9 @@
         "en": "Neurological comorbidity",
         "fr": "Comorbidité neurologique"
       },
-      "de": "Bei neurologischen Vorerkrankungen wie Epilepsie, Demenz oder Parkinson besteht ein erhöhtes Risiko für kognitive Verschlechterung, postoperatives Delir oder Wechselwirkungen mit Narkosemitteln.",
-      "en": "Neurological conditions such as epilepsy, dementia, or Parkinson’s disease increase the risk of cognitive deterioration, postoperative delirium, or interactions with anesthetic agents.",
-      "fr": "Les pathologies neurologiques comme l’épilepsie, la démence ou la maladie de Parkinson augmentent le risque de détérioration cognitive, de délire postopératoire ou d’interactions médicamenteuses."
+      "de": "Bei neurologischen Vorerkrankungen besteht ein erhöhtes Risiko für kognitive Verschlechterung, postoperatives Delir oder Wechselwirkungen mit Narkosemitteln.",
+      "en": "Neurological conditions increase the risk of cognitive deterioration, postoperative delirium, or interactions with anesthetic agents.",
+      "fr": "Les pathologies neurologiques augmentent le risque de détérioration cognitive, de délire postopératoire ou d’interactions médicamenteuses."
     },
     "obesity": {
       "label": {
