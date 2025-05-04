@@ -238,6 +238,16 @@
       "en": "Due to an existing language barrier, full information was provided in the presence of a qualified interpreter. The interpreter confirmed on request that all content was translated completely and accurately. The patient was repeatedly asked whether everything was truly understood.",
       "fr": "En raison d'une barrière linguistique, l'explication complète a été réalisée en présence d’un interprète qualifié. Celui-ci a confirmé avoir traduit fidèlement et entièrement tous les contenus. Le patient a été interrogé à plusieurs reprises pour vérifier sa compréhension."
     },
+"refusal_blood_products": {
+  "label": {
+    "de": "Ablehnung von Blutprodukten",
+    "en": "Refusal of blood products",
+    "fr": "Refus des produits sanguins"
+  },
+  "de": "Die Gabe von Blutprodukten wurde aus persönlichen oder religiösen Gründen abgelehnt. Die potenziellen Konsequenzen wurden im Detail besprochen.",
+  "en": "The administration of blood products was declined due to personal or religious beliefs. The potential consequences were discussed in detail.",
+  "fr": "L'administration de produits sanguins a été refusée pour des raisons personnelles ou religieuses. Les conséquences possibles ont été expliquées en détail."
+},
     "minor_guardian_consent": {
       "label": {
         "de": "Minderjährig",
