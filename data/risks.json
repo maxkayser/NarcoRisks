@@ -22,9 +22,9 @@
     "en": "Extended consent",
     "fr": "Consentement élargi"
   },
-  "de": "Die Aufklärung erfolgt für den geplanten Eingriff sowie für unmittelbar geplante Folgeeingriffe.",
-  "en": "The consent applies to the planned procedure as well as directly scheduled follow-up procedures.",
-  "fr": "Le consentement s’applique à l’intervention prévue ainsi qu’aux interventions complémentaires immédiatement programmées."
+  "de": "Daueraufklärung: die Aufklärung erfolgt für den geplanten Eingriff sowie für unmittelbar geplante Folgeeingriffe.",
+  "en": "Extended consent: the consent applies to the planned procedure as well as directly scheduled follow-up procedures.",
+  "fr": "Consentement élargi: le consentement s’applique à l’intervention prévue ainsi qu’aux interventions complémentaires immédiatement programmées."
 },
     "outgoing_patient": {
       "label": {
@@ -188,7 +188,7 @@
       "en": "Liver or kidney dysfunction increases the risk of altered drug metabolism, electrolyte imbalances, and fluid-related complications.",
       "fr": "Une insuffisance hépatique ou rénale augmente le risque d’altération du métabolisme des médicaments, de déséquilibres électrolytiques et de complications liées aux liquides."
     },
-    "interpreter_present": {
+    "interpreter": {
       "label": {
         "de": "Dolmetscher",
         "en": "Interpreter",
@@ -600,9 +600,9 @@
             },
             "barotrauma": {
               "label": {
-                "de": "Druckbedingte Lungenschädigung (Barotrauma)",
-                "en": "Pressure-related lung injury (barotrauma)",
-                "fr": "Lésion pulmonaire liée à la pression (barotraumatisme)"
+                "de": "Barotrauma",
+                "en": "barotrauma",
+                "fr": "barotraumatisme"
               }
             }
           },
@@ -612,55 +612,55 @@
               "en": "Sedation",
               "fr": "Sédation"
             },
-              "inadequate_sedation": {
-                "label": {
-                  "de": "Unzureichende Sedierung",
-                  "en": "Inadequate sedation",
-                  "fr": "Sédation insuffisante"
-                }
-              },
-              "deep_sedation": {
-                "label": {
-                  "de": "Zu tiefe Sedierung (Atemdepression, Vigilanzminderung)",
-                  "en": "Excessive sedation (respiratory depression, reduced alertness)",
-                  "fr": "Sédation trop profonde (dépression respiratoire, vigilance diminuée)"
-                }
-              },
-              "airway_obstruction": {
-                "label": {
-                  "de": "Atemwegsverlegung",
-                  "en": "Airway obstruction",
-                  "fr": "Obstruction des voies respiratoires"
-                }
-              },
-              "hypoventilation": {
-                "label": {
-                  "de": "Hypoventilation",
-                  "en": "hypoventilation",
-                  "fr": "hypoventilation"
-                }
-              },
-              "aspiration_risk": {
-                "label": {
-                  "de": "Aspirationsrisiko bei unzureichender Schutzreflexe",
-                  "en": "Aspiration risk due to impaired protective reflexes",
-                  "fr": "Risque d'aspiration en cas de réflexes protecteurs altérés"
-                }
-              },
-              "paradoxical_reaction": {
-                "label": {
-                  "de": "Paradoxe Reaktion / Erregung",
-                  "en": "Paradoxical reaction / agitation",
-                  "fr": "Réaction paradoxale / agitation"
-                }
-              },
-              "delayed_recovery": {
-                "label": {
-                  "de": "Verzögerte Erholung / Reaktionsfähigkeit",
-                  "en": "Delayed recovery / responsiveness",
-                  "fr": "Récupération retardée / réactivité réduite"
-                }
+            "inadequate_sedation": {
+              "label": {
+                "de": "Unzureichende Sedierung",
+                "en": "Inadequate sedation",
+                "fr": "Sédation insuffisante"
               }
+            },
+            "deep_sedation": {
+              "label": {
+                "de": "Zu tiefe Sedierung (Atemdepression, Vigilanzminderung)",
+                "en": "Excessive sedation (respiratory depression, reduced alertness)",
+                "fr": "Sédation trop profonde (dépression respiratoire, vigilance diminuée)"
+              }
+            },
+            "airway_obstruction": {
+              "label": {
+                "de": "Atemwegsverlegung",
+                "en": "Airway obstruction",
+                "fr": "Obstruction des voies respiratoires"
+              }
+            },
+            "hypoventilation": {
+              "label": {
+                "de": "Hypoventilation",
+                "en": "hypoventilation",
+                "fr": "hypoventilation"
+              }
+            },
+            "aspiration_risk": {
+              "label": {
+                "de": "Aspirationsrisiko bei unzureichender Schutzreflexe",
+                "en": "Aspiration risk due to impaired protective reflexes",
+                "fr": "Risque d'aspiration en cas de réflexes protecteurs altérés"
+              }
+            },
+            "paradoxical_reaction": {
+              "label": {
+                "de": "Paradoxe Reaktion / Erregung",
+                "en": "Paradoxical reaction / agitation",
+                "fr": "Réaction paradoxale / agitation"
+              }
+            },
+            "delayed_recovery": {
+              "label": {
+                "de": "Verzögerte Erholung / Reaktionsfähigkeit",
+                "en": "Delayed recovery / responsiveness",
+                "fr": "Récupération retardée / réactivité réduite"
+              }
+            }
         },
         "regional_anesthesia": {
           "label": {
