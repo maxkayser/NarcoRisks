@@ -16,10 +16,15 @@ NarcoRisks is an interactive, multilingual platform designed to visualize risks 
 
 ## Covered Topics
 
-- **General Anesthesia**: General anesthesia, Analgosedation, Rapid Sequence Induction
-- **Regional Anesthesia**: Spinal, Epidural, Combined Spinal-Epidural, Upper/Lower limb blocks, PENG, TAP, PECS, ISB, Catheters
-- **Monitoring & Access**: Peripheral IV, Central venous catheter, Shaldon catheter, Arterial catheter
-- **Pain Therapy & Analgesia**: PCIA, Epidural analgesia, Regional catheter-based pain control
+**General Anesthesia**: General anesthesia, Analgosedation, Rapid Sequence Induction, Awake fiberoptic intubation, Tracheostomy, Evone ventilation, Jet ventilation, High-flow oxygen therapy, Non-invasive ventilation, Cricothyrotomy
+
+**Regional Anesthesia**: Spinal, Epidural, Combined spinal-epidural, Regional catheters, Brachial plexus block, Femoral nerve block, Saphenous nerve block, TAP block, PENG block, ESP block, PECS block, Saddle block, Obturator nerve block, FICB, Interscalene block
+
+**Monitoring & Access**: Peripheral IV, Central venous catheter, Shaldon catheter, Arterial catheter, Gastric tube, Bladder catheter, Intraosseous access
+
+**Pain Therapy & Analgesia**: PCA IV, PCA epidural, Regional catheter-based analgesia, Epidural pain catheters, Cell saver / autotransfusion
+
+**Diagnostics & Emergencies**: Transesophageal Echocardiography, Blood transfusion, Emergency surgery, Special consent modes (e.g. online, interpreter)
 
 ## Target Audience
 
