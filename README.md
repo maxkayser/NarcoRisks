@@ -1,5 +1,6 @@
 [![Languages](https://img.shields.io/github/languages/top/maxkayser/NarcoRisks)](https://github.com/maxkayser/NarcoRisks)
 [![License](https://img.shields.io/github/license/maxkayser/NarcoRisks)](LICENSE)
+[![License](https://img.shields.io/badge/License-CC--BY--NC%204.0-lightgrey.svg)](LICENSE)
 [![Last Commit](https://img.shields.io/github/last-commit/maxkayser/NarcoRisks)](https://github.com/maxkayser/NarcoRisks/commits/main)
 [![Open Issues](https://img.shields.io/github/issues/maxkayser/NarcoRisks)](https://github.com/maxkayser/NarcoRisks/issues)
 [![GitHub Repo stars](https://img.shields.io/github/stars/maxkayser/NarcoRisks)](https://github.com/maxkayser/NarcoRisks/stargazers)
