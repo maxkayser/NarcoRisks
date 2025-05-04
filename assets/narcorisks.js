@@ -105,6 +105,7 @@ function renderRiskGroups(defaults = {}) {
 
     const entriesContainer = document.createElement('div');
     entriesContainer.className = 'subcategory checkbox-grid';
+    entriesContainer.classList.add('hidden');
     output.appendChild(entriesContainer);
 
     groupDiv.addEventListener('click', () => {
