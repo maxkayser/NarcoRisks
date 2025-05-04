@@ -639,6 +639,11 @@
             "fr": "Anesthésie régionale"
           },
           "common": {
+            "label": {
+              "de": "Allgemeine Risiken",
+              "en": "Common risks",
+              "fr": "Risques courants"
+            },
             "local_anesthetic_systemic_toxicity": {
               "label": {
                 "de": "Lokalanästhetika-Toxizität (Krampf, Kollaps)",
@@ -648,9 +653,16 @@
             },
             "block_failure_conversion": {
               "label": {
-                "de": "Blockade unzureichend → Umstieg auf Narkose / Rescue-Block",
-                "en": "Block failure → conversion to GA / rescue block",
-                "fr": "Échec de bloc → conversion AG / bloc de secours"
+                "de": "Blockade unzureichend → Verfahrenswechsel",
+                "en": "Block failure → conversion to GA",
+                "fr": "Échec de bloc → conversion AG"
+              }
+            },
+            "rescue_block": {
+              "label": {
+                "de": "Rescue-Block",
+                "en": "rescue block",
+                "fr": "bloc de secours"
               }
             },
             "nerve_injury": {
@@ -695,10 +707,12 @@
                 "fr": "Stimulation nerveuse"
               }
             },
-            "label": {
-              "de": "Allgemeine Risiken",
-              "en": "Common risks",
-              "fr": "Risques courants"
+            "sensorimotor_deficit": {
+              "label": {
+                "de": "Sensomotorisches Defizit",
+                "en": "Sensorimotor Deficit",
+                "fr": "Déficit sensori-moteur"
+              }
             }
           },
           "spinal": {
