@@ -30,14 +30,15 @@ NarcoRisks is an interactive, multilingual platform designed to visualize risks 
 ## License
 See the LICENSE file for full details.
 
-## Usage Notice
+## Legal & Disclaimer
 
-This platform is a non-commercial prototype for interactive risk visualization in anesthesiology.
-It is designed solely for educational and research purposes and is not intended for clinical decision-making.
+This project is a non-commercial, educational tool to support medical risk communication. It is **not classified as a medical device**, and **does not replace** formal physician-patient discussions or legal consent procedures.
 
-## Disclaimer
+> Legal and regulatory requirements may vary by country or healthcare system.  
+> **No liability** is assumed for medical, legal, or practical decisions based on this tool.
 
-> This application does not constitute medical advice. The author assumes no liability for clinical or non-clinical decisions based on this content.
+Use is at your own responsibility.
+
 ---
 
 © 2025 – Max Kayser
