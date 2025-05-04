@@ -1,11 +1,8 @@
-# NarcoRisks
-
 [![Languages](https://img.shields.io/github/languages/top/maxkayser/NarcoRisks)](https://github.com/maxkayser/NarcoRisks)
 [![License](https://img.shields.io/github/license/maxkayser/NarcoRisks)](LICENSE)
 [![Last Commit](https://img.shields.io/github/last-commit/maxkayser/NarcoRisks)](https://github.com/maxkayser/NarcoRisks/commits/main)
 [![Open Issues](https://img.shields.io/github/issues/maxkayser/NarcoRisks)](https://github.com/maxkayser/NarcoRisks/issues)
 [![GitHub Repo stars](https://img.shields.io/github/stars/maxkayser/NarcoRisks)](https://github.com/maxkayser/NarcoRisks/stargazers)
-
 
 # NarcoRisks
 ## Interactive Platform for Anesthesia-Associated Risks
@@ -29,6 +26,9 @@ NarcoRisks is an interactive, multilingual platform designed to visualize risks 
 - Professionals in anesthesia, intensive care, and OR nursing  
 - Medical students and trainees  
 - Researchers in patient safety and quality management
+
+## License
+See the LICENSE file for full details.
 
 ## Usage Notice
 
