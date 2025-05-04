@@ -99,7 +99,7 @@ function renderRiskGroups(defaults = {}) {
 
   for (const group of allRisks) {
     const groupDiv = document.createElement('div');
-    groupDiv.className = 'category toggle expanded';
+    groupDiv.className = 'category toggle';
     groupDiv.textContent = group.label?.[lang] || group.key;
     output.appendChild(groupDiv);
 
