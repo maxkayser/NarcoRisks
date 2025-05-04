@@ -808,27 +808,69 @@
               "en": "Cricothyrotomy / emergency tracheotomy",
               "fr": "Cricothyrotomie / trachéotomie d’urgence"
             },
-            "bleeding": {
-              "label": {
-                "de": "Blutung",
-                "en": "Bleeding",
-                "fr": "Saignement"
-              }
-            },
-            "misplacement": {
-              "label": {
-                "de": "Fehllage",
-                "en": "Malposition",
-                "fr": "Mauvais positionnement"
-              }
-            },
-            "injury_adjacent_structures": {
-              "label": {
-                "de": "Verletzung von Nachbarstrukturen",
-                "en": "injury to adjacent structures",
-                "fr": "lésion de structures voisines"
-              }
-            }
+              "bleeding": {
+                "label": {
+                  "de": "Blutung / Gefäßverletzung",
+                  "en": "Bleeding / vascular injury",
+                  "fr": "Saignement / lésion vasculaire"
+                }
+              },
+              "subcutaneous_emphysema": {
+                "label": {
+                  "de": "Luftansammlung unter der Haut (subkutanes Emphysem)",
+                  "en": "Subcutaneous emphysema",
+                  "fr": "Emphysème sous-cutané"
+                }
+              },
+              "misplacement": {
+                "label": {
+                  "de": "Fehllage / falsche Platzierung",
+                  "en": "Misplacement / incorrect placement",
+                  "fr": "Mauvais positionnement"
+                }
+              },
+              "infection": {
+                "label": {
+                  "de": "Infektion / Abszessbildung",
+                  "en": "Infection / abscess formation",
+                  "fr": "Infection / abcès"
+                }
+              },
+              "tracheal_stenosis": {
+                "label": {
+                  "de": "Trachealstenose",
+                  "en": "Tracheal stenosis",
+                  "fr": "Sténose trachéale"
+                }
+              },
+              "tracheoesophageal_fistula": {
+                "label": {
+                  "de": "Tracheoösophageale Fistel",
+                  "en": "Tracheoesophageal fistula",
+                  "fr": "Fistule trachéo-œsophagienne"
+                }
+              },
+              "voice_changes": {
+                "label": {
+                  "de": "Stimmveränderungen / Heiserkeit",
+                  "en": "Voice changes / hoarseness",
+                  "fr": "Changements de voix / enrouement"
+                }
+              },
+              "cosmetic_scarring": {
+                "label": {
+                  "de": "Narbenbildung",
+                  "en": "Cosmetic scarring",
+                  "fr": "Cicatrices inesthétiques"
+                }
+              },
+              "dysphagia": {
+                "label": {
+                  "de": "Schluckstörung (Dysphagie)",
+                  "en": "Swallowing disorder (dysphagia)",
+                  "fr": "Trouble de la déglutition (dysphagie)"
+                }
+              }    
           },
           "difficult_airway": {
             "label": {
