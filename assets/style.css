@@ -1,0 +1,200 @@
+/*!
+ * NarcoRisks - Risk Communication Interface
+ * Author: Max Kayser
+ * GitHub: https://github.com/maxkayser/NarkoSafe
+ * License: MIT
+ * Description: Styling for the interactive anesthesia risk clarification tool.
+ */
+
+:root {
+  --bg: #f9f9f9;
+  --card: #ffffff;
+  --text: #222;
+  --accent: #3c7dd9;
+  --accent-hover: #2f66b3;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+  padding: 1rem;
+}
+
+.container {
+  max-width: 900px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+h1 {
+  font-size: 1.75rem;
+  text-align: center;
+}
+
+section {
+  background: var(--card);
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  margin-bottom: 1.5rem;
+}
+
+h2 {
+  margin-top: 0;
+}
+
+label, select, textarea {
+  font-size: 1rem;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 120px;
+  padding: 0.5rem;
+  width: 100%;
+}
+
+button, #copyButton {
+  background: var(--accent);
+  color: white;
+  border: none;
+  padding: 0.75rem 1.25rem;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover, #copyButton:hover {
+  background: var(--accent-hover);
+}
+
+/* Risk categories like "General Anesthesia", "Regional Anesthesia" */
+.category {
+  font-weight: bold;
+  margin-top: 1rem;
+  cursor: pointer;
+}
+
+.toggle::before {
+  content: '\25BA';
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.expanded.toggle::before {
+  content: '\25BC';
+}
+
+/* Subcategory (e.g., Vollnarkose, Spinal) layout */
+.subcategory.checkbox-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.5rem;
+  margin-left: 1rem;
+}
+
+@media (min-width: 600px) {
+  .subcategory.checkbox-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .subcategory.checkbox-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Subgroup box styling */
+.checkbox-grid label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: #f0f0f0;
+  padding: 0.5rem;
+  border-radius: 6px;
+}
+
+.subgroup-toggle {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: #f0f0f0;
+  padding: 0.5rem;
+  border-radius: 6px;
+  font-weight: 500;
+  box-sizing: border-box;
+  width: 100%;
+  cursor: pointer;
+  margin: 0.75rem 0 0.25rem;
+}
+
+/* Nested subgroup (risks inside each block) */
+.subgroup-toggle + .subcategory {
+  background: #fafafa;
+  border-left: 3px solid #ddd;
+  padding: 0.5rem;
+  border-radius: 6px;
+  margin-bottom: 0.5rem;
+  display: none;
+}
+
+/* Make visible when needed */
+.subgroup-toggle + .subcategory:not(.hidden) {
+  display: block;
+}
+
+/* Individual risk entry */
+.subcategory .checkbox-grid label {
+  margin: 0;
+  padding: 0.25rem 0.5rem;
+  background: transparent;
+  border-radius: 4px;
+}
+
+.hidden {
+  display: none !important;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  body {
+    padding: 0.5rem;
+  }
+
+  h1 {
+    font-size: 1.4rem;
+  }
+
+  section {
+    padding: 0.75rem;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  .container {
+    padding: 0 1rem;
+  }
+}
+
+@media (min-width: 1025px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  .container {
+    padding: 0 2rem;
+  }
+}
