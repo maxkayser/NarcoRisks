@@ -188,6 +188,16 @@
       "en": "Liver or kidney dysfunction increases the risk of altered drug metabolism, electrolyte imbalances, and fluid-related complications.",
       "fr": "Une insuffisance hépatique ou rénale augmente le risque d’altération du métabolisme des médicaments, de déséquilibres électrolytiques et de complications liées aux liquides."
     },
+    "interpreter_present": {
+      "label": {
+        "de": "Dolmetscher",
+        "en": "Interpreter",
+        "fr": "Interprète"
+      },
+      "de": "Aufgrund einer bestehenden Sprachbarriere erfolgte die vollständige Aufklärung im Beisein eines geeigneten Dolmetschers. Dieser versicherte auf Nachfrage, alle Inhalte vollständig und exakt übersetzt zu haben. Es erfolgten mehrfach Rückfragen an die Patientin / den Patienten, ob die Inhalte wirklich richtig verstanden wurden.",
+      "en": "Due to an existing language barrier, full information was provided in the presence of a qualified interpreter. The interpreter confirmed on request that all content was translated completely and accurately. The patient was repeatedly asked whether everything was truly understood.",
+      "fr": "En raison d'une barrière linguistique, l'explication complète a été réalisée en présence d’un interprète qualifié. Celui-ci a confirmé avoir traduit fidèlement et entièrement tous les contenus. Le patient a été interrogé à plusieurs reprises pour vérifier sa compréhension."
+    },
     "minor_guardian_consent": {
       "label": {
         "de": "Minderjährig",
@@ -602,35 +612,55 @@
               "en": "Sedation",
               "fr": "Sédation"
             },
-            "hoarseness": {
-              "label": {
-                "de": "Heiserkeit",
-                "en": "Hoarseness",
-                "fr": "Enrouement"
+              "inadequate_sedation": {
+                "label": {
+                  "de": "Unzureichende Sedierung",
+                  "en": "Inadequate sedation",
+                  "fr": "Sédation insuffisante"
+                }
+              },
+              "deep_sedation": {
+                "label": {
+                  "de": "Zu tiefe Sedierung (Atemdepression, Vigilanzminderung)",
+                  "en": "Excessive sedation (respiratory depression, reduced alertness)",
+                  "fr": "Sédation trop profonde (dépression respiratoire, vigilance diminuée)"
+                }
+              },
+              "airway_obstruction": {
+                "label": {
+                  "de": "Atemwegsverlegung",
+                  "en": "Airway obstruction",
+                  "fr": "Obstruction des voies respiratoires"
+                }
+              },
+              "hypoventilation": {
+                "label": {
+                  "de": "Hypoventilation",
+                  "en": "hypoventilation",
+                  "fr": "hypoventilation"
+                }
+              },
+              "aspiration_risk": {
+                "label": {
+                  "de": "Aspirationsrisiko bei unzureichender Schutzreflexe",
+                  "en": "Aspiration risk due to impaired protective reflexes",
+                  "fr": "Risque d'aspiration en cas de réflexes protecteurs altérés"
+                }
+              },
+              "paradoxical_reaction": {
+                "label": {
+                  "de": "Paradoxe Reaktion / Erregung",
+                  "en": "Paradoxical reaction / agitation",
+                  "fr": "Réaction paradoxale / agitation"
+                }
+              },
+              "delayed_recovery": {
+                "label": {
+                  "de": "Verzögerte Erholung / Reaktionsfähigkeit",
+                  "en": "Delayed recovery / responsiveness",
+                  "fr": "Récupération retardée / réactivité réduite"
+                }
               }
-            },
-            "dysphagia": {
-              "label": {
-                "de": "Schluckstörung",
-                "en": "Dysphagia",
-                "fr": "Dysphagie"
-              }
-            },
-            "sore_throat": {
-              "label": {
-                "de": "Halsschmerzen",
-                "en": "Sore throat",
-                "fr": "Maux de gorge"
-              }
-            },
-            "awareness": {
-              "label": {
-                "de": "Wachheit unter Narkose",
-                "en": "Intra-operative awareness",
-                "fr": "Conscience per-opératoire"
-              }
-            }
-          }
         },
         "regional_anesthesia": {
           "label": {
