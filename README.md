@@ -35,6 +35,9 @@ NarcoRisks is an interactive, multilingual platform designed to visualize risks 
 ## License
 See the LICENSE file for full details.
 
+## Privacy notice
+This tool does not store any data. No personal or health-related information is transmitted to any server. Please do not enter names or sensitive data.
+
 ## Legal & Disclaimer
 
 This project is a non-commercial, educational tool to support medical risk communication. It is **not classified as a medical device**, and **does not replace** formal physician-patient discussions or legal consent procedures.
