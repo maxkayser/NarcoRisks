@@ -16,6 +16,16 @@
       "en": "The informed consent discussion took place online via the Doctolib platform.",
       "fr": "L’information a été donnée en ligne via la plateforme Doctolib."
     },
+"refused_information": {
+  "label": {
+    "de": "Aufklärung verzichtet",
+    "en": "Waiver of detailed information",
+    "fr": "Renonciation à l'information détaillée"
+  },
+  "de": "Eine ausführliche Aufklärung über die geplanten Verfahren und damit verbundenen Risiken wurde angeboten, jedoch vom Patienten/der Patientin ausdrücklich und unmissverständlich abgelehnt. Es bestanden keine Zweifel an der rechtmäßigen und uneingeschränkten Entscheidungsfähigkeit. Der Wille des Patienten/der Patientin wurde respektiert.",
+  "en": "Detailed information about the planned procedures and associated risks was offered, but was explicitly and unequivocally declined by the patient. There were no doubts regarding the patient's legal capacity and decision-making ability. The patient's will was respected.",
+  "fr": "Des informations détaillées sur les procédures prévues et les risques associés ont été proposées, mais ont été expressément et sans équivoque refusées par le/la patient·e. Aucune incertitude quant à la capacité juridique et à la faculté de décision n’a été constatée. La volonté du/de la patient·e a été respectée."
+},
 "combined_consent_anesthesia": {
   "label": {
     "de": "Daueraufklärung",
@@ -52,6 +62,16 @@
       "en": "Known allergy with increased risk of drug reactions including anaphylaxis.",
       "fr": "Allergie connue avec risque accru de réactions médicamenteuses, y compris anaphylaxie."
     },
+"aspiration_risk": {
+  "label": {
+    "de": "Erhöhtes Aspirationsrisiko",
+    "en": "Increased aspiration risk",
+    "fr": "Risque accru d’aspiration"
+  },
+  "de": "Aufgrund bestehender Risikofaktoren (z. B. Refluxkrankheit, Adipositaschirurgie wie Schlauchmagen, Hiatushernie, verzögerte Magenentleerung) besteht ein erhöhtes Risiko einer pulmonalen Aspiration mit potenziell schweren Komplikationen.",
+  "en": "Due to existing risk factors (e.g., GERD, bariatric surgery such as sleeve gastrectomy, hiatal hernia, delayed gastric emptying), there is an increased risk of pulmonary aspiration with potentially serious complications.",
+  "fr": "En raison de facteurs de risque existants (p. ex. RGO, chirurgie bariatrique comme sleeve gastrectomie, hernie hiatale, vidange gastrique retardée), il existe un risque accru d’aspiration pulmonaire avec des complications potentiellement graves."
+},
     "known_difficult_airway": {
       "label": { "de": "Schwieriger Atemweg", "en": "Difficult airway", "fr": "Voies respiratoires difficiles" },
       "de": "Bekannter schwieriger Atemweg mit erhöhtem Risiko für Atemwegskomplikationen.",
@@ -108,6 +128,16 @@
       "en": "Frail patients are at increased risk of circulatory instability, delirium, respiratory insufficiency, delayed mobilization, and prolonged postoperative recovery.",
       "fr": "Les patient·es fragiles présentent un risque accru d’instabilité circulatoire, de délire, d’insuffisance respiratoire, de mobilisation retardée et de récupération postopératoire prolongée."
     },
+"multimorbidity": {
+  "label": {
+    "de": "Multimorbidität",
+    "en": "Multimorbidity",
+    "fr": "Multimorbidité"
+  },
+  "de": "Aufgrund multipler Vorerkrankungen besteht ein erhöhtes Risiko für unerwartete Komplikationen, komplexe Krankheitsverläufe und erschwerte postoperative Erholung.",
+  "en": "Due to multiple pre-existing conditions, there is an increased risk of unexpected complications, complex clinical courses, and prolonged postoperative recovery.",
+  "fr": "En raison de pathologies multiples, le risque de complications inattendues, de parcours cliniques complexes et de convalescence prolongée est accru."
+},
     "osas": {
       "label": {
         "de": "Schlafapnoe",
