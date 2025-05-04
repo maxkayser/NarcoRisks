@@ -96,7 +96,7 @@ button:hover, #copyButton:hover {
 .subcategory.checkbox-grid {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 0.5rem;
+  gap: 0.1rem;
   margin-left: 1rem;
 }
 
@@ -127,7 +127,7 @@ button:hover, #copyButton:hover {
   align-items: center;
   gap: 0.5rem;
   background-color: #f0f0f0;
-  padding: 0.5rem;
+  padding: 0.15rem;
   border-radius: 6px;
   font-weight: 500;
   box-sizing: border-box;
