@@ -579,9 +579,23 @@
             },
             "barotrauma": {
               "label": {
-                "de": "Barotrauma (z. B. Pneumothorax, Mediastinalemphysem)",
-                "en": "Barotrauma (e.g. pneumothorax, mediastinal emphysema)",
-                "fr": "Barotraumatisme (ex. pneumothorax, emphysème médiastinal)"
+                "de": "Barotrauma",
+                "en": "Barotrauma",
+                "fr": "Barotraumatisme"
+              }
+            },
+            "pneumothorax": {
+              "label": {
+                "de": "Pneumothorax",
+                "en": "pneumothorax",
+                "fr": "pneumothorax"
+              }
+            },
+            "mediastinal_emphysema": {
+              "label": {
+                "de": "Mediastinalemphysem",
+                "en": "mediastinal emphysema",
+                "fr": "emphysème médiastinal"
               }
             },
             "co2_retention": {
@@ -593,9 +607,16 @@
             },
             "hypoxemia": {
               "label": {
-                "de": "Hypoxie / unzureichende Oxygenierung",
-                "en": "Hypoxemia / insufficient oxygenation",
-                "fr": "Hypoxémie / oxygénation insuffisante"
+                "de": "Hypoxie",
+                "en": "Hypoxemia",
+                "fr": "Hypoxémie"
+              }
+            },
+            "oxygen_toxicity": {
+              "label": {
+                "de": "Sauerstofftoxizität (bei hoher Flussrate / langer Anwendung)",
+                "en": "Oxygen toxicity (with high flow / prolonged use)",
+                "fr": "Toxicité de l’oxygène (flux élevé / usage prolongé)"
               }
             }
           },
