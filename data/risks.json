@@ -508,6 +508,195 @@
               }
             }
           },
+          "sedation": {
+            "label": {
+              "de": "Analgosedierung",
+              "en": "Sedation",
+              "fr": "Sédation"
+            },
+            "inadequate_sedation": {
+              "label": {
+                "de": "Unzureichende Sedierung",
+                "en": "Inadequate sedation",
+                "fr": "Sédation insuffisante"
+              }
+            },
+            "deep_sedation": {
+              "label": {
+                "de": "Zu tiefe Sedierung (Atemdepression, Vigilanzminderung)",
+                "en": "Excessive sedation (respiratory depression, reduced alertness)",
+                "fr": "Sédation trop profonde (dépression respiratoire, vigilance diminuée)"
+              }
+            },
+            "airway_obstruction": {
+              "label": {
+                "de": "Atemwegsverlegung",
+                "en": "Airway obstruction",
+                "fr": "Obstruction des voies respiratoires"
+              }
+            },
+            "hypoventilation": {
+              "label": {
+                "de": "Hypoventilation",
+                "en": "hypoventilation",
+                "fr": "hypoventilation"
+              }
+            },
+            "aspiration_risk": {
+              "label": {
+                "de": "Aspirationsrisiko bei unzureichender Schutzreflexe",
+                "en": "Aspiration risk due to impaired protective reflexes",
+                "fr": "Risque d'aspiration en cas de réflexes protecteurs altérés"
+              }
+            },
+            "paradoxical_reaction": {
+              "label": {
+                "de": "Paradoxe Reaktion / Erregung",
+                "en": "Paradoxical reaction / agitation",
+                "fr": "Réaction paradoxale / agitation"
+              }
+            },
+            "delayed_recovery": {
+              "label": {
+                "de": "Verzögerte Erholung / Reaktionsfähigkeit",
+                "en": "Delayed recovery / responsiveness",
+                "fr": "Récupération retardée / réactivité réduite"
+              }
+            }
+          }
+        },
+        "airway_techniques": {
+          "label": {
+            "de": "Erweiterte Atemwegstechniken",
+            "en": "Extended airway techniques",
+            "fr": "Techniques des voies aériennes spéciales"
+          },
+          "common": {
+            "label": {
+              "de": "Allgemeine Risiken",
+              "en": "General risks",
+              "fr": "Risques généraux"
+            },
+            "barotrauma": {
+              "label": {
+                "de": "Barotrauma (z. B. Pneumothorax, Mediastinalemphysem)",
+                "en": "Barotrauma (e.g. pneumothorax, mediastinal emphysema)",
+                "fr": "Barotraumatisme (ex. pneumothorax, emphysème médiastinal)"
+              }
+            },
+            "co2_retention": {
+              "label": {
+                "de": "CO₂-Retention / Hyperkapnie",
+                "en": "CO₂ retention / hypercapnia",
+                "fr": "Rétention de CO₂ / hypercapnie"
+              }
+            },
+            "hypoxemia": {
+              "label": {
+                "de": "Hypoxie / unzureichende Oxygenierung",
+                "en": "Hypoxemia / insufficient oxygenation",
+                "fr": "Hypoxémie / oxygénation insuffisante"
+              }
+            }
+          },
+          "jet_ventilation": {
+            "label": {
+              "de": "Jet-Ventilation",
+              "en": "Jet ventilation",
+              "fr": "Ventilation par jet"
+            },
+            "air_leak": {
+              "label": {
+                "de": "Luftleck",
+                "en": "Air leak",
+                "fr": "Fuite d’air"
+              }
+            },
+            "difficulty_monitoring": {
+              "label": {
+                "de": "Erschwerte CO₂-Messung und Beatmungskontrolle",
+                "en": "Limited CO₂ monitoring and ventilation control",
+                "fr": "Contrôle limité du CO₂ et de la ventilation"
+              }
+            }
+          },
+          "flow_controlled_ventilation": {
+            "label": {
+              "de": "Flow-Controlled Ventilation (FCV)",
+              "en": "Flow-Controlled Ventilation (FCV)",
+              "fr": "Ventilation à débit contrôlé (FCV)"
+            },
+            "mucus_obstruction": {
+              "label": {
+                "de": "Sekretverlegung / Tubusokklusion",
+                "en": "Mucus obstruction / tube occlusion",
+                "fr": "Obstruction par mucus / occlusion du tube"
+              }
+            }
+          },
+          "high_flow": {
+            "label": {
+              "de": "High-Flow-Nasenkanüle",
+              "en": "High-flow nasal cannula",
+              "fr": "Canule nasale à haut débit"
+            },
+            "aspiration_risk": {
+              "label": {
+                "de": "Aspirationsrisiko",
+                "en": "Aspiration risk",
+                "fr": "Risque d’aspiration"
+              }
+            },
+            "ineffective_oxygenation": {
+              "label": {
+                "de": "Unzureichende Oxygenierung bei schwerer Hypoventilation",
+                "en": "Insufficient oxygenation in severe hypoventilation",
+                "fr": "Oxygénation insuffisante en cas de forte hypoventilation"
+              }
+            }
+          },
+          "non_invasive_ventilation": {
+            "label": {
+              "de": "Nicht-invasive Beatmung (NIV)",
+              "en": "Non-invasive ventilation (NIV)",
+              "fr": "Ventilation non invasive (VNI)"
+            },
+            "CPAP": {
+              "label": {
+                "de": "CPAP",
+                "en": "CPAP",
+                "fr": "CPAP"
+              }
+            },
+            "BiPAP": {
+              "label": {
+                "de": "BiPAP",
+                "en": "BiPAP",
+                "fr": "BiPAP"
+              }
+            },
+            "pressure_sores": {
+              "label": {
+                "de": "Druckstellen",
+                "en": "Mask-related pressure sores",
+                "fr": "Inconfort"
+              }
+            },
+            "mask_discomfort": {
+              "label": {
+                "de": "Unverträglichkeit der Maske",
+                "en": "discomfort",
+                "fr": "Inconfort"
+              }
+            },
+            "gastric_distension": {
+              "label": {
+                "de": "Magenüberblähung",
+                "en": "Gastric distension",
+                "fr": "Distension gastrique"
+              }
+            }
+          },
           "awake_fiberoptic": {
             "label": {
               "de": "Fiberoptische Wachintubation",
@@ -592,73 +781,87 @@
               }
             }
           },
-          "evone": {
+          "cricothyrotomy": {
             "label": {
-              "de": "Evone-Beatmung",
-              "en": "Evone ventilation ",
-              "fr": "Ventilation Evone"
+              "de": "Koniotomie / Notfalltracheotomie",
+              "en": "Cricothyrotomy / emergency tracheotomy",
+              "fr": "Cricothyrotomie / trachéotomie d’urgence"
             },
-            "barotrauma": {
+            "bleeding": {
               "label": {
-                "de": "Barotrauma",
-                "en": "barotrauma",
-                "fr": "barotraumatisme"
+                "de": "Blutung",
+                "en": "Bleeding",
+                "fr": "Saignement"
+              }
+            },
+            "misplacement": {
+              "label": {
+                "de": "Fehllage",
+                "en": "Malposition",
+                "fr": "Mauvais positionnement"
+              }
+            },
+            "injury_adjacent_structures": {
+              "label": {
+                "de": "Verletzung von Nachbarstrukturen",
+                "en": "injury to adjacent structures",
+                "fr": "lésion de structures voisines"
               }
             }
           },
-          "sedation": {
+          "difficult_airway": {
             "label": {
-              "de": "Analgosedierung",
-              "en": "Sedation",
-              "fr": "Sédation"
+              "de": "Schwieriger Atemweg",
+              "en": "Difficult airway",
+              "fr": "Voies aériennes difficiles"
             },
-            "inadequate_sedation": {
+            "failed_intubation": {
               "label": {
-                "de": "Unzureichende Sedierung",
-                "en": "Inadequate sedation",
-                "fr": "Sédation insuffisante"
+                "de": "Erschwerte / fehlgeschlagene Intubation",
+                "en": "Difficult or failed intubation",
+                "fr": "Intubation difficile ou échouée"
               }
             },
-            "deep_sedation": {
+            "hypoxia": {
               "label": {
-                "de": "Zu tiefe Sedierung (Atemdepression, Vigilanzminderung)",
-                "en": "Excessive sedation (respiratory depression, reduced alertness)",
-                "fr": "Sédation trop profonde (dépression respiratoire, vigilance diminuée)"
+                "de": "Hypoxie",
+                "en": "Hypoxia",
+                "fr": "Hypoxie"
               }
             },
-            "airway_obstruction": {
+            "hypoxic_brain_injury": {
               "label": {
-                "de": "Atemwegsverlegung",
-                "en": "Airway obstruction",
-                "fr": "Obstruction des voies respiratoires"
+                "de": "Hypoxischer Hirnschaden",
+                "en": "Hypoxic brain injury",
+                "fr": "Lésion cérébrale hypoxique"
               }
             },
-            "hypoventilation": {
+            "multiple_attempts": {
               "label": {
-                "de": "Hypoventilation",
-                "en": "hypoventilation",
-                "fr": "hypoventilation"
+                "de": "Mehrfache Intubationsversuche",
+                "en": "Multiple intubation attempts",
+                "fr": "Tentatives d’intubation multiples"
               }
             },
-            "aspiration_risk": {
+            "cicv_situation": {
               "label": {
-                "de": "Aspirationsrisiko bei unzureichender Schutzreflexe",
-                "en": "Aspiration risk due to impaired protective reflexes",
-                "fr": "Risque d'aspiration en cas de réflexes protecteurs altérés"
+                "de": "CICV-Situation (kein Intubations- / Beatmungserfolg möglich)",
+                "en": "CICV situation (cannot intubate, cannot ventilate)",
+                "fr": "Situation CICV (impossible d’intuber ou de ventiler)"
               }
             },
-            "paradoxical_reaction": {
+            "airway_trauma": {
               "label": {
-                "de": "Paradoxe Reaktion / Erregung",
-                "en": "Paradoxical reaction / agitation",
-                "fr": "Réaction paradoxale / agitation"
+                "de": "Verletzung von Zähnen / Schleimhäuten / Stimmbändern",
+                "en": "Injury to teeth / mucosa / vocal cords",
+                "fr": "Lésion des dents / muqueuses / cordes vocales"
               }
             },
-            "delayed_recovery": {
+            "emergency_airway_required": {
               "label": {
-                "de": "Verzögerte Erholung / Reaktionsfähigkeit",
-                "en": "Delayed recovery / responsiveness",
-                "fr": "Récupération retardée / réactivité réduite"
+                "de": "Erforderlichkeit eines Notfallzugangs",
+                "en": "Need for emergency airway access",
+                "fr": "Nécessité d’un accès d’urgence"
               }
             }
           }
