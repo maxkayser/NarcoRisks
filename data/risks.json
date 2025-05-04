@@ -98,6 +98,16 @@
       "en": "Due to preexisting cardiac disease, there is an increased risk of intraoperative hemodynamic instability, arrhythmias, myocardial ischemia up to cardiac arrest. Hypotension and hypoperfusion may occur, carrying the risk of hypoxia or hypoxic brain injury. Intensive care may become necessary.",
       "fr": "En raison d’une pathologie cardiaque préexistante, le risque d’instabilité hémodynamique peropératoire, d’arythmies, d’ischémie myocardique voire d’arrêt cardiaque est accru. Une hypotension ou une hypoperfusion peuvent survenir avec risque d’hypoxie ou de lésion cérébrale hypoxique. Une prise en charge en soins intensifs peut s’avérer nécessaire."
     },
+"refusal_blood_products": {
+  "label": {
+    "de": "Verzicht auf Blutprodukte",
+    "en": "Refusal of blood products",
+    "fr": "Refus des produits sanguins"
+  },
+  "de": "Die Gabe von Blutprodukten wurde ausdrücklich abgelehnt. Dies wurde dokumentiert und bei der medizinischen Planung berücksichtigt.",
+  "en": "The administration of blood products was explicitly refused. This was documented and considered in the medical planning.",
+  "fr": "L'administration de produits sanguins a été explicitement refusée. Cela a été documenté et pris en compte dans la planification médicale."
+},
     "coagulation_disorder": {
       "label": {
         "de": "Gerinnungsstörung",
