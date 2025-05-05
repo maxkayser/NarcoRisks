@@ -98,6 +98,16 @@
       "en": "Due to preexisting cardiac disease, there is an increased risk of intraoperative hemodynamic instability, arrhythmias, myocardial ischemia up to cardiac arrest. Hypotension and hypoperfusion may occur, carrying the risk of hypoxia or hypoxic brain injury. Intensive care may become necessary.",
       "fr": "En raison d’une pathologie cardiaque préexistante, le risque d’instabilité hémodynamique peropératoire, d’arythmies, d’ischémie myocardique voire d’arrêt cardiaque est accru. Une hypotension ou une hypoperfusion peuvent survenir avec risque d’hypoxie ou de lésion cérébrale hypoxique. Une prise en charge en soins intensifs peut s’avérer nécessaire."
     },
+"pacemaker": {
+  "label": {
+    "de": "Herzschrittmacher",
+    "en": "Pacemaker",
+    "fr": "Stimulateur cardiaque"
+  },
+  "de": "Erhöhtes Risiko durch elektromagnetische Störungen oder intraoperative Manipulation bei implantiertem Aggregat.",
+  "en": "Increased risk due to electromagnetic interference or intraoperative manipulation with implanted device.",
+  "fr": "Risque accru d’interférences électromagnétiques ou de manipulation peropératoire avec dispositif implanté."
+},
 "refusal_blood_products": {
   "label": {
     "de": "Verzicht auf Blutprodukte",
