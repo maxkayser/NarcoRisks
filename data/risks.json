@@ -1039,11 +1039,18 @@
                 "fr": "Lésion nerveuse"
               }
             },
-            "hematoma_bleeding": {
+            "hematoma": {
               "label": {
-                "de": "Hämatom / Blutung",
-                "en": "Hematoma / bleeding",
-                "fr": "Hématome / saignement"
+                "de": "Hämatom",
+                "en": "Hematoma",
+                "fr": "Hématome"
+              }
+            },
+            "bleeding": {
+              "label": {
+                "de": "Blutung",
+                "en": "bleeding",
+                "fr": "saignement"
               }
             },
             "infection_abscess": {
@@ -2099,10 +2106,10 @@
           }
         },
         "label": {
-    "de": "Maßnahmenassoziierte Risiken",
-    "en": "Procedure-specific risks",
-    "fr": "Risques liés aux mesures"
-  }
+			"de": "Maßnahmenassoziierte Risiken",
+			"en": "Procedure-specific risks",
+			"fr": "Risques liés aux mesures"
+		}
       }
     ]
   }
