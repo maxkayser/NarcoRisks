@@ -1617,9 +1617,16 @@
             },
             "pneumothorax": {
               "label": {
-                "de": "Pneumothorax / Hämatothorax",
-                "en": "Pneumothorax / hemothorax",
-                "fr": "Pneumothorax / hémothorax"
+                "de": "Pneumothorax",
+                "en": "Pneumothorax",
+                "fr": "Pneumothorax"
+              }
+            },
+            "hemothorax": {
+              "label": {
+                "de": "Hämatothorax",
+                "en": "hemothorax",
+                "fr": "hémothorax"
               }
             },
             "bleeding": {
@@ -2106,10 +2113,10 @@
           }
         },
         "label": {
-			"de": "Maßnahmenassoziierte Risiken",
-			"en": "Procedure-specific risks",
-			"fr": "Risques liés aux mesures"
-		}
+		"de": "Maßnahmenassoziierte Risiken",
+		"en": "Procedure-specific risks",
+		"fr": "Risques liés aux mesures"
+	}
       }
     ]
   }
