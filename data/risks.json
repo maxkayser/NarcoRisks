@@ -1,5 +1,10 @@
 {
   "textblocks": {
+"label": {
+    "de": "Kontextassoziierte Risiken",
+    "en": "Contextual risks",
+    "fr": "Risques contextuels"
+  },
     "intro": {
       "de": "Im Rahmen der präoperativen anästhesiologischen Visite wurden die folgenden Risiken unter Berücksichtigung des individuellen Kontextes ausführlich besprochen:",
       "en": "As part of the preoperative anesthesiology consultation, the following risks were thoroughly discussed, taking into account the individual context:",
@@ -2089,10 +2094,10 @@
           }
         },
         "label": {
-          "de": "Risiken",
-          "en": "Risks",
-          "fr": "Risques"
-        }
+    "de": "Maßnahmenassoziierte Risiken",
+    "en": "Procedure-specific risks",
+    "fr": "Risques liés aux mesures"
+  }
       }
     ]
   }
