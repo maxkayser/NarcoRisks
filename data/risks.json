@@ -1764,34 +1764,55 @@
                 "fr": "Embolie gazeuse"
               }
             },
-            "infection_sepsis_endocarditis": {
-              "label": {
-                "de": "Infektion / Sepsis / Endokarditis",
-                "en": "Infection / sepsis / endocarditis",
-                "fr": "Infection / sepsis / endocardite"
-              }
-            },
-            "lymph_leak": {
-              "label": {
-                "de": "Lymphfistel / Chylothorax",
-                "en": "Lymph leak / chylothorax",
-                "fr": "Fuite lymphatique / chylothorax"
-              }
-            },
-            "pinch_off_fracture": {
-              "label": {
-                "de": "Pinch-off / Katheterbruch",
-                "en": "Pinch-off / catheter fracture",
-                "fr": "Syndrome de pincement / fracture cathéter"
-              }
-            },
-            "cardiac_perforation_tamponade": {
-              "label": {
-                "de": "Herzperforation / Tamponade",
-                "en": "Cardiac perforation / tamponade",
-                "fr": "Perforation cardiaque / tamponnade"
-              }
-            }
+	  	"infection": {
+		  "label": {
+		    "de": "Infektion",
+		    "en": "Infection",
+		    "fr": "Infection"
+		  }
+		},
+		"sepsis": {
+		  "label": {
+		    "de": "Sepsis",
+		    "en": "Sepsis",
+		    "fr": "Sepsis"
+		  }
+		},
+		"endocarditis": {
+		  "label": {
+		    "de": "Endokarditis",
+		    "en": "Endocarditis",
+		    "fr": "Endocardite"
+		  }
+		},
+		"lymph_fistula": {
+		  "label": {
+		    "de": "Lymphfistel",
+		    "en": "Lymphatic fistula",
+		    "fr": "Fistule lymphatique"
+		  }
+		},
+		"chylothorax": {
+		  "label": {
+		    "de": "Chylothorax",
+		    "en": "Chylothorax",
+		    "fr": "Chylothorax"
+		  }
+		},
+		"pinch_off_syndrome": {
+		  "label": {
+		    "de": "Pinch-off-Syndrom",
+		    "en": "Pinch-off syndrome",
+		    "fr": "Syndrome de pincement"
+		  }
+		},
+		"catheter_fracture": {
+		  "label": {
+		    "de": "Katheterbruch",
+		    "en": "Catheter fracture",
+		    "fr": "Fracture du cathéter"
+		  }
+		}		  
           },
           "shaldon_catheter": {
             "label": {
@@ -1815,9 +1836,9 @@
             },
             "bleeding": {
               "label": {
-                "de": "Starke Blutung bei Fehlpunktion",
-                "en": "Severe bleeding due to mispuncture",
-                "fr": "Saignement majeur en cas de ponction ratée"
+                "de": "Starke Blutung",
+                "en": "Severe bleeding",
+                "fr": "Saignement majeur"
               }
             },
             "air_embolism": {
@@ -1855,13 +1876,13 @@
               "en": "Arterial catheter",
               "fr": "Cathéter artériel"
             },
-            "vasospasm_ischemia": {
-              "label": {
-                "de": "Vasospasmus / Ischämie",
-                "en": "Vasospasm / ischemia",
-                "fr": "Vasospasme / ischémie"
-              }
-            },
+            "vasospasm": {
+		  "label": {
+		    "de": "Vasospasmus",
+		    "en": "Vasospasm",
+		    "fr": "Vasospasme"
+		  }
+		},
             "impaired_perfusion": {
               "label": {
                 "de": "Durchblutungsstörung",
@@ -1869,50 +1890,92 @@
                 "fr": "trouble circulatoire"
               }
             },
-            "thrombosis_embolism": {
-              "label": {
-                "de": "Thrombose / Embolie",
-                "en": "Thrombosis / embolism",
-                "fr": "Thrombose / embolie"
-              }
-            },
-            "bleeding_pseudoaneurysm": {
-              "label": {
-                "de": "Blutung / Pseudoaneurysma",
-                "en": "Bleeding / pseudoaneurysm",
-                "fr": "Saignement / pseudo-anévrysme"
-              }
-            },
-            "catheter_fracture_dislocation": {
-              "label": {
-                "de": "Katheterbruch / Dislokation",
-                "en": "Catheter fracture / dislocation",
-                "fr": "Fracture / déplacement du cathéter"
-              }
-            }
+		"ischemia": {
+		  "label": {
+		    "de": "Ischämie",
+		    "en": "Ischemia",
+		    "fr": "Ischémie"
+		  }
+		},
+		"thrombosis": {
+		  "label": {
+		    "de": "Thrombose",
+		    "en": "Thrombosis",
+		    "fr": "Thrombose"
+		  }
+		},
+		"embolism": {
+		  "label": {
+		    "de": "Embolie",
+		    "en": "Embolism",
+		    "fr": "Embolie"
+		  }
+		},
+	  	"bleeding": {
+		  "label": {
+		    "de": "Blutung",
+		    "en": "Bleeding",
+		    "fr": "Saignement"
+		  }
+		},
+		"pseudoaneurysm": {
+		  "label": {
+		    "de": "Pseudoaneurysma",
+		    "en": "Pseudoaneurysm",
+		    "fr": "Pseudo-anévrysme"
+		  }
+		},
+	  	"catheter_fracture": {
+		  "label": {
+		    "de": "Katheterbruch",
+		    "en": "Catheter fracture",
+		    "fr": "Fracture du cathéter"
+		  }
+		},
+		"catheter_dislocation": {
+		  "label": {
+		    "de": "Katheterdislokation",
+		    "en": "Catheter dislocation",
+		    "fr": "Déplacement du cathéter"
+		  }
+		}
           },
           "gastric_tube": {
-            "mucosal_injury_bleeding": {
+		"mucosal_injury": {
+		  "label": {
+		    "de": "Schleimhautverletzung",
+		    "en": "Mucosal injury",
+		    "fr": "Lésion muqueuse"
+		  }
+		},
+		"bleeding": {
+		  "label": {
+		    "de": "Blutung",
+		    "en": "Bleeding",
+		    "fr": "Saignement"
+		  }
+		},
+            "misplacement": {
               "label": {
-                "de": "Schleimhautverletzung / Blutung",
-                "en": "Mucosal injury / bleeding",
-                "fr": "Lésion muqueuse / saignement"
+                "de": "Fehllage",
+                "en": "Misplacement",
+                "fr": "Mauvais positionnement"
               }
             },
-            "misplacement_airway": {
-              "label": {
-                "de": "Fehllage in Atemweg",
-                "en": "Misplacement in airway",
-                "fr": "Mauvais positionnement dans les voies aériennes"
-              }
-            },
-            "infection_sinusitis": {
-              "label": {
-                "de": "Infektion / Sinusitis",
-                "en": "Infection / sinusitis",
-                "fr": "Infection / sinusite"
-              }
-            },
+            	"infection": {
+		  "label": {
+		    "de": "Infektion",
+		    "en": "Infection",
+		    "fr": "Infection"
+		  }
+		},
+		"sinusitis": {
+		  "label": {
+		    "de": "Sinusitis",
+		    "en": "Sinusitis",
+		    "fr": "Sinusite"
+		  }
+		},
             "label": {
               "de": "Magensonde",
               "en": "Gastric tube",
