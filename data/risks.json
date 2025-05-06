@@ -1021,9 +1021,9 @@
               },
               "dysphagia": {
                 "label": {
-                  "de": "Schluckstörung (Dysphagie)",
-                  "en": "Swallowing disorder (dysphagia)",
-                  "fr": "Trouble de la déglutition (dysphagie)"
+                  "de": "Schluckstörung / Dysphagie",
+                  "en": "Swallowing disorder / dysphagia",
+                  "fr": "Trouble de la déglutition / dysphagie"
                 }
               }    
           },
@@ -1098,16 +1098,16 @@
             },
             "local_anesthetic_systemic_toxicity": {
               "label": {
-                "de": "Lokalanästhetika-Toxizität (Krampf, Kollaps)",
-                "en": "Local anesthetic systemic toxicity (LAST)",
+                "de": "Lokalanästhetika-Toxizität",
+                "en": "Local anesthetic systemic toxicity",
                 "fr": "Toxicité systémique des anesthésiques locaux"
               }
             },
             "block_failure_conversion": {
               "label": {
                 "de": "Blockade unzureichend → Verfahrenswechsel",
-                "en": "Block failure → conversion to GA",
-                "fr": "Échec de bloc → conversion AG"
+                "en": "Block failure → conversion",
+                "fr": "Échec de bloc → conversion"
               }
             },
             "rescue_block": {
@@ -1138,11 +1138,18 @@
                 "fr": "saignement"
               }
             },
-            "infection_abscess": {
+            "infection": {
               "label": {
-                "de": "Infektion / Abszess",
-                "en": "Infection / abscess",
-                "fr": "Infection / abcès"
+                "de": "Infektion",
+                "en": "Infection",
+                "fr": "Infection"
+              }
+            },
+            "abscess": {
+              "label": {
+                "de": "Abszess",
+                "en": "abscess",
+                "fr": "abcès"
               }
             },
             "allergic_reaction": {
@@ -1152,11 +1159,18 @@
                 "fr": "Réaction allergique"
               }
             },
-            "hypotension_bradycardia": {
+            "hypotension": {
               "label": {
-                "de": "Hypotonie / Bradykardie",
-                "en": "Hypotension / bradycardia",
-                "fr": "Hypotension / bradycardie"
+                "de": "Hypotonie",
+                "en": "Hypotension",
+                "fr": "Hypotension"
+              }
+            },
+            "bradycardia": {
+              "label": {
+                "de": "Bradykardie",
+                "en": "bradycardia",
+                "fr": "bradycardie"
               }
             },
             "nerve_stimulation": {
@@ -1224,11 +1238,18 @@
                 "fr": "Douleurs dorsales"
               }
             },
-            "paraplegia_cauda_equina": {
+            "paraplegia": {
               "label": {
-                "de": "Paraplegie / Cauda-Equina-Syndrom",
-                "en": "Paraplegia / cauda equina syndrome",
-                "fr": "Paraplégie / syndrome de la queue de cheval"
+                "de": "Paraplegie",
+                "en": "Paraplegia",
+                "fr": "Paraplégie"
+              }
+            },
+            "cauda_equina_syndrome": {
+              "label": {
+                "de": "Cauda-Equina-Syndrom",
+                "en": "cauda equina syndrome",
+                "fr": "syndrome de la queue de cheval"
               }
             },
             "label": {
@@ -1259,11 +1280,11 @@
                 "fr": "Rétention urinaire"
               }
             },
-            "hypotension": {
+            "sympathetic_block": {
               "label": {
-                "de": "Sympathikusblock → Hypotonie",
-                "en": "Sympathetic block → hypotension",
-                "fr": "Bloc sympathique → hypotension"
+                "de": "Sympathikusblock",
+                "en": "Sympathetic block",
+                "fr": "Bloc sympathique"
               }
             },
             "label": {
@@ -1273,25 +1294,39 @@
             }
           },
           "regional_catheter": {
+            "blockage_blockage": {
+              "label": {
+                "de": "Katheter-Verstopfung",
+                "en": "Catheter blockage",
+                "fr": "Obstruction du cathéter"
+              }
+            },
             "blockage_migration": {
               "label": {
-                "de": "Verstopfung / Katheter-Migration",
-                "en": "Blockage / catheter migration",
-                "fr": "Obstruction / migration du cathéter"
+                "de": "Katheter-Migration",
+                "en": "Catheter migration",
+                "fr": "Migration du cathéter"
               }
             },
-            "catheter_embolism_fragment": {
+            "catheter_fragment": {
               "label": {
-                "de": "Katheterembolie / Teilabriss",
-                "en": "Catheter embolism / fragment",
-                "fr": "Embolie / fragment de cathéter"
+                "de": "Katheterabriss",
+                "en": "Catheter fragment",
+                "fr": "Fragment de cathéter"
               }
             },
-            "infection_abscess": {
+            "infection": {
               "label": {
-                "de": "Infektion / Abszess",
-                "en": "Infection / abscess",
-                "fr": "Infection / abcès"
+                "de": "Infektion",
+                "en": "Infection",
+                "fr": "Infection"
+              }
+            },
+            "abscess": {
+              "label": {
+                "de": "Abszess",
+                "en": "abscess",
+                "fr": "abcès"
               }
             },
             "label": {
@@ -1315,9 +1350,9 @@
             },
             "peritoneal_perforation": {
               "label": {
-                "de": "Perforation des Peritoneums (selten, anatomisch möglich)",
-                "en": "Peritoneal perforation (rare, anatomically possible)",
-                "fr": "Perforation du péritoine (rare, anatomiquement possible)"
+                "de": "Perforation des Peritoneums",
+                "en": "Peritoneal perforation",
+                "fr": "Perforation du péritoine"
               }
             },
             "quadriceps_weakness": {
@@ -1378,30 +1413,30 @@
             },
             "pneumothorax": {
               "label": {
-                "de": "Pneumothorax (insb. supraklavikulär)",
-                "en": "Pneumothorax (especially supraclavicular)",
-                "fr": "Pneumothorax (surtout supraclaviculaire)"
+                "de": "Pneumothorax",
+                "en": "Pneumothorax",
+                "fr": "Pneumothorax"
               }
             },
             "phrenic_nerve_palsy": {
               "label": {
-                "de": "Phrenikusparese (häufig supraklavikulär)",
-                "en": "Phrenic nerve palsy (common with supraclavicular)",
-                "fr": "Paralysie du nerf phrénique (fréquent supraclaviculaire)"
+                "de": "Phrenikusparese",
+                "en": "Phrenic nerve palsy",
+                "fr": "Paralysie du nerf phrénique"
               }
             },
             "nerve_injury": {
               "label": {
-                "de": "Nervenschädigung (z. B. Plexusschäden, einzelne Äste)",
+                "de": "Nervenschädigung (insb. Plexusschäden / einzelne Äste)",
                 "en": "Nerve injury (e.g. plexus or individual branches)",
                 "fr": "Lésion nerveuse (plexus ou branches isolées)"
               }
             },
             "horner_syndrome": {
               "label": {
-                "de": "Horner-Syndrom (v. a. supraklavikulär / interskalenär)",
-                "en": "Horner’s syndrome (esp. supraclavicular / interscalene)",
-                "fr": "Syndrome de Horner (surtout supraclaviculaire / interscalénique)"
+                "de": "Horner-Syndrom",
+                "en": "Horner’s syndrome",
+                "fr": "Syndrome de Horner"
               }
             },
             "diaphragm_paralysis_risk": {
@@ -1425,11 +1460,18 @@
                 "fr": "Rétention urinaire"
               }
             },
+            "sympathetic_block": {
+              "label": {
+                "de": "Sympathikusblock",
+                "en": "Sympathetic block",
+                "fr": "Bloc sympathique"
+              }
+            },  
             "hypotension": {
               "label": {
-                "de": "Sympathikusblock → Hypotonie",
-                "en": "Sympathetic block → hypotension",
-                "fr": "Bloc sympathique → hypotension"
+                "de": "Hypotonie",
+                "en": "Hypotension",
+                "fr": "Hypotension"
               }
             },
             "post_dural_puncture_headache": {
@@ -1441,9 +1483,9 @@
             },
             "nerve_injury": {
               "label": {
-                "de": "Nervenschädigung (selten, z. B. Cauda-Equina-Syndrom)",
-                "en": "Nerve injury (rare, e.g. cauda equina syndrome)",
-                "fr": "Lésion nerveuse (rare, ex. syndrome de la queue de cheval)"
+                "de": "Nervenschädigung",
+                "en": "Nerve injury",
+                "fr": "Lésion nerveuse"
               }
             }
           },
