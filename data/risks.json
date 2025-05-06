@@ -1407,9 +1407,16 @@
           },
           "brachial_plexus_block": {
             "label": {
-              "de": "Brachialplexusblock (supraklavikulär / infraklavikulär / axillär)",
-              "en": "Brachial plexus block (supraclavicular / infraclavicular / axillary)",
-              "fr": "Bloc plexus brachial (supraclaviculaire / infraclaviculaire / axillaire)"
+              "de": "Brachialplexusblock",
+              "en": "Brachial plexus block",
+              "fr": "Bloc plexus brachial"
+            },
+            "location": {
+              "label": {
+                "de": "supraklavikulär / infraklavikulär / axillär",
+                "en": "supraclavicular / infraclavicular / axillary",
+                "fr": "supraclaviculaire / infraclaviculaire / axillaire"
+              }
             },
             "pneumothorax": {
               "label": {
@@ -2101,11 +2108,11 @@
                 "fr": "Contamination / infection"
               }
             },
-            "coagulopathy_dilution": {
+            "coagulopathy": {
               "label": {
-                "de": "Koagulopathie / Verdünnungseffekte",
-                "en": "Coagulopathy / dilution effects",
-                "fr": "Coagulopathie / effets de dilution"
+                "de": "Koagulopathie",
+                "en": "Coagulopathy",
+                "fr": "Coagulopathie"
               }
             },
             "air_fat_microembolism": {
@@ -2115,11 +2122,11 @@
                 "fr": "Micro-embolie (air/graisse)"
               }
             },
-            "label": {
-              "de": "Cell Saver / Autotransfusion",
-              "en": "Cell saver / autotransfusion",
-              "fr": "Cell saver / autotransfusion"
-            }
+			"label": {
+			  "de": "Maschinelle Autotransfusion",
+			  "en": "Intraoperative autologous blood salvage",
+			  "fr": "Autotransfusion autologue peropératoire"
+			}
           },
           "label": {
             "de": "Blutungsmanagement",
@@ -2136,11 +2143,18 @@
                 "fr": "Dépression respiratoire"
               }
             },
-            "nausea_vomiting": {
+            "nausea": {
               "label": {
-                "de": "Übelkeit / Erbrechen",
-                "en": "Nausea / vomiting",
-                "fr": "Nausées / vomissements"
+                "de": "Übelkeit",
+                "en": "Nausea",
+                "fr": "Nausées"
+              }
+            },
+            "vomiting": {
+              "label": {
+                "de": "Erbrechen",
+                "en": "Vomiting",
+                "fr": "Vomissements"
               }
             },
             "pruritus": {
@@ -2164,11 +2178,18 @@
                 "fr": "Rétention urinaire"
               }
             },
-            "sedation_confusion": {
+            "sedation": {
               "label": {
-                "de": "Sedierung / Verwirrtheit",
-                "en": "Sedation / confusion",
-                "fr": "Sédation / confusion"
+                "de": "Sedierung",
+                "en": "Sedation",
+                "fr": "Sédation"
+              }
+            },
+            "confusion": {
+              "label": {
+                "de": "Verwirrtheit",
+                "en": "Confusion",
+                "fr": "Confusion"
               }
             },
             "dependence_tolerance": {
@@ -2199,11 +2220,18 @@
                 "fr": "Dépression respiratoire"
               }
             },
-            "nausea_vomiting": {
+            "nausea": {
               "label": {
-                "de": "Übelkeit / Erbrechen",
-                "en": "Nausea / vomiting",
-                "fr": "Nausées / vomissements"
+                "de": "Übelkeit",
+                "en": "Nausea",
+                "fr": "Nausées"
+              }
+            },
+            "vomiting": {
+              "label": {
+                "de": "Erbrechen",
+                "en": "Vomiting",
+                "fr": "Vomissements"
               }
             },
             "pruritus": {
