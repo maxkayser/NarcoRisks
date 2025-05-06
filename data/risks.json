@@ -657,11 +657,25 @@
             },
             "deep_sedation": {
               "label": {
-                "de": "Zu tiefe Sedierung (Atemdepression, Vigilanzminderung)",
-                "en": "Excessive sedation (respiratory depression, reduced alertness)",
-                "fr": "Sédation trop profonde (dépression respiratoire, vigilance diminuée)"
+                "de": "Zu tiefe Sedierung",
+                "en": "Excessive sedation",
+                "fr": "Sédation trop profonde"
               }
             },
+	  	"reduced_alertness": {
+		  "label": {
+		    "de": "Vigilanzminderung",
+		    "en": "Reduced alertness",
+		    "fr": "Vigilance diminuée"
+		  }
+		}
+	  	"respiratory_depression": {
+		  "label": {
+		    "de": "Atemdepression",
+		    "en": "Respiratory depression",
+		    "fr": "Dépression respiratoire"
+		  }
+		},
             "airway_obstruction": {
               "label": {
                 "de": "Atemwegsverlegung",
@@ -676,13 +690,20 @@
                 "fr": "hypoventilation"
               }
             },
-            "aspiration_risk": {
-              "label": {
-                "de": "Aspirationsrisiko bei unzureichender Schutzreflexe",
-                "en": "Aspiration risk due to impaired protective reflexes",
-                "fr": "Risque d'aspiration en cas de réflexes protecteurs altérés"
-              }
-            },
+	  	"aspiration": {
+		  "label": {
+		    "de": "Aspirationsrisiko",
+		    "en": "Aspiration risk",
+		    "fr": "Risque d'aspiration"
+		  }
+		},
+		"impaired_protective_reflexes": {
+		  "label": {
+		    "de": "Gestörte Schutzreflexe",
+		    "en": "Impaired protective reflexes",
+		    "fr": "Réflexes protecteurs altérés"
+		  }
+		},
             "paradoxical_reaction": {
               "label": {
                 "de": "Paradoxe Reaktion / Erregung",
@@ -690,13 +711,21 @@
                 "fr": "Réaction paradoxale / agitation"
               }
             },
-            "delayed_recovery": {
-              "label": {
-                "de": "Verzögerte Erholung / Reaktionsfähigkeit",
-                "en": "Delayed recovery / responsiveness",
-                "fr": "Récupération retardée / réactivité réduite"
-              }
-            }
+	  	"delayed_recovery": {
+		  "label": {
+		    "de": "Verzögerte Erholung",
+		    "en": "Delayed recovery",
+		    "fr": "Récupération retardée"
+		  }
+		},
+		"reduced_responsiveness": {
+		  "label": {
+		    "de": "Verminderte Reaktionsfähigkeit",
+		    "en": "Reduced responsiveness",
+		    "fr": "Réactivité réduite"
+		  }
+		}
+
           }
         },
         "airway_techniques": {
@@ -732,11 +761,11 @@
                 "fr": "emphysème médiastinal"
               }
             },
-            "co2_retention": {
+            "hypercapnia": {
               "label": {
-                "de": "CO₂-Retention / Hyperkapnie",
-                "en": "CO₂ retention / hypercapnia",
-                "fr": "Rétention de CO₂ / hypercapnie"
+                "de": "Hyperkapnie",
+                "en": "Hypercapnia",
+                "fr": "Hypercapnie"
               }
             },
             "hypoxemia": {
