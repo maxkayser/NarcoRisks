@@ -2101,11 +2101,18 @@
                 "fr": "Réaction transfusionnelle"
               }
             },
-            "contamination_infection": {
+            "contamination": {
               "label": {
-                "de": "Kontamination / Infektion",
-                "en": "Contamination / infection",
-                "fr": "Contamination / infection"
+                "de": "Kontamination",
+                "en": "Contamination",
+                "fr": "Contamination"
+              }
+            },
+            "infection_sepsis_endocarditis": {
+              "label": {
+                "de": "Infektion / Sepsis / Endokarditis",
+                "en": "Infection / sepsis / endocarditis",
+                "fr": "Infection / sepsis / endocardite"
               }
             },
             "coagulopathy": {
