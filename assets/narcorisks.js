@@ -357,6 +357,9 @@ function getText(path, lang = "de") {
 }
 
 function applyTranslations(lang) {
+  console.log("[applyTranslations] Lang:", lang);
+  console.log("[applyTranslations] Translations:", translations);
+
   // Textinhalt ersetzen
   document.querySelectorAll("[data-i18n]").forEach(el => {
     const key = el.getAttribute("data-i18n");
