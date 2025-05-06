@@ -34,6 +34,7 @@ async function loadRisks() {
     const response = await fetch(risksUrl);
     const data = await response.json();
 
+    currentLang = document.getElementById('language').value || "de";
     translations = data.translations || {};
     applyTranslations(currentLang);
     
@@ -331,11 +332,13 @@ function renderStaticTextblockCheckboxes() {
 
 // Event bindings
 document.getElementById('language').addEventListener('change', () => {
+  currentLang = document.getElementById('language').value;
+  applyTranslations(currentLang); // 🟢 WICHTIG: hinzufügen!
   document.getElementById('risksTitle').textContent = {
     de: 'Risiken',
     en: 'Risks',
     fr: 'Risques'
-  }[document.getElementById('language').value] || 'Risiken';
+  }[currentLang] || 'Risiken';
   renderRiskGroups();
   renderTextblockToggles();
 });
