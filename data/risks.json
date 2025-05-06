@@ -668,7 +668,7 @@
 		    "en": "Reduced alertness",
 		    "fr": "Vigilance diminuée"
 		  }
-		}
+		},
 	  	"respiratory_depression": {
 		  "label": {
 		    "de": "Atemdepression",
@@ -1653,33 +1653,54 @@
               }
             },
             "bleeding": {
-              "label": {
-                "de": "Blutung / Hämatom",
-                "en": "Bleeding / hematoma",
-                "fr": "Saignement / hématome"
-              }
-            },
-            "misplacement": {
-              "label": {
-                "de": "Fehllage / Fehlpunktion",
-                "en": "Misplacement / malposition",
-                "fr": "Mauvais positionnement / ponction erronée"
-              }
-            },
-            "thrombosis": {
-              "label": {
-                "de": "Thrombose / Gefäßverschluss",
-                "en": "Thrombosis / vessel occlusion",
-                "fr": "Thrombose / occlusion vasculaire"
-              }
-            },
-            "wrong_injection_site": {
-              "label": {
-                "de": "Fehlinjektion (z. B. paravenös, intraarteriell)",
-                "en": "Injection error (e.g., paravenous, intra-arterial)",
-                "fr": "Injection incorrecte (ex. paraveineuse, intra-artérielle)"
-              }
-            }
+		  "label": {
+		    "de": "Blutung",
+		    "en": "Bleeding",
+		    "fr": "Saignement"
+		  }
+		},
+		"hematoma": {
+		  "label": {
+		    "de": "Hämatom",
+		    "en": "Hematoma",
+		    "fr": "Hématome"
+		  }
+		},
+		"catheter_misplacement": {
+		  "label": {
+		    "de": "Katheter-Fehllage",
+		    "en": "Catheter misplacement",
+		    "fr": "Mauvais positionnement du cathéter"
+		  }
+		},
+		"puncture_error": {
+		  "label": {
+		    "de": "Fehlpunktion",
+		    "en": "Puncture error",
+		    "fr": "Ponction erronée"
+		  }
+		},
+		"thrombosis": {
+		  "label": {
+		    "de": "Thrombose",
+		    "en": "Thrombosis",
+		    "fr": "Thrombose"
+		  }
+		},
+		"vessel_occlusion": {
+		  "label": {
+		    "de": "Gefäßverschluss",
+		    "en": "Vessel occlusion",
+		    "fr": "Occlusion vasculaire"
+		  }
+		},
+		"wrong_injection_site": {
+		      "label": {
+			"de": "Fehlinjektion",
+			"en": "Injection error",
+			"fr": "Injection incorrecte"
+		      }
+	    	} 
           },
           "peripheral_iv": {
             "label": {
@@ -1714,13 +1735,27 @@
                 "en": "phlebitis",
                 "fr": "phlébite"
               }
-            }
+            },
+	  	"paravenous_injection": {
+		  "label": {
+		    "de": "Paravenöse Injektion",
+		    "en": "Paravenous injection",
+		    "fr": "Injection paraveineuse"
+		  }
+		},
+		"intraarterial_injection": {
+		  "label": {
+		    "de": "Intraarterielle Injektion",
+		    "en": "Intra-arterial injection",
+		    "fr": "Injection intra-artérielle"
+		  }
+		}
           },
           "central_venous_catheter": {
             "label": {
               "de": "Zentral-venöser Zugang (ZVK)",
               "en": "Central venous catheter (CVC)",
-              "fr": "Cathéter veineux central"
+              "fr": "Cathéter veineux central (CVC)"
             },
             "pneumothorax": {
               "label": {
