@@ -1,68 +1,69 @@
 {
-"language": "de",
-"translations": {
-  "headings": {
-    "title": {
-      "de": "NarcoRisks",
-      "en": "NarcoRisks",
-      "fr": "NarcoRisks"
+  "language": "de",
+  "translations": {
+    "headings": {
+      "title": {
+        "de": "NarcoRisks",
+        "en": "NarcoRisks",
+        "fr": "NarcoRisks"
+      },
+      "context_associated_risks": {
+        "de": "Kontextassoziierte Risiken",
+        "en": "Context-associated risks",
+        "fr": "Risques associés au contexte"
+      },
+      "measures_associated_risks": {
+        "de": "Maßnahmenassoziierte Risiken",
+        "en": "Measure-associated risks",
+        "fr": "Risques associés aux mesures"
+      },
+      "summary": {
+        "de": "Risiken-Zusammenfassung",
+        "en": "Risk summary",
+        "fr": "Résumé des risques"
+      }
     },
-    "context_associated_risks": {
-      "de": "Kontextassoziierte Risiken",
-      "en": "Context-associated risks",
-      "fr": "Risques associés au contexte"
+    "placeholders": {
+      "additional_text": {
+        "de": "Zusätzlicher Text...",
+        "en": "Additional text...",
+        "fr": "Texte supplémentaire..."
+      },
+      "loading_risks": {
+        "de": "Inhalt wird geladen...",
+        "en": "Loading content...",
+        "fr": "Chargement du contenu..."
+      }
     },
-    "measures_associated_risks": {
-      "de": "Maßnahmenassoziierte Risiken",
-      "en": "Measure-associated risks",
-      "fr": "Risques associés aux mesures"
+    "buttons": {
+      "copy": {
+        "de": "In Zwischenablage kopieren",
+        "en": "Copy to clipboard",
+        "fr": "Copier dans le presse-papiers"
+      },
+      "reset": {
+        "de": "Zurücksetzen",
+        "en": "Reset",
+        "fr": "Réinitialiser"
+      }
     },
-    "summary": {
-      "de": "Risiken-Zusammenfassung",
-      "en": "Risk summary",
-      "fr": "Résumé des risques"
-    }
-  },
-  "placeholders": {
-    "additional_text": {
-      "de": "Zusätzlicher Text...",
-      "en": "Additional text...",
-      "fr": "Texte supplémentaire..."
+    "language_selection": {
+      "de": "Sprache",
+      "en": "Language",
+      "fr": "Langue"
     },
-    "loading_risks": {
-      "de": "Inhalt wird geladen...",
-      "en": "Loading content...",
-      "fr": "Chargement du contenu..."
-    }
-  },
-  "buttons": {
-    "copy": {
-      "de": "In Zwischenablage kopieren",
-      "en": "Copy to clipboard",
-      "fr": "Copier dans le presse-papiers"
+    "privacy_notice": {
+      "de": "Hinweis zum Datenschutz: Dieses Tool speichert keine Daten. Es findet keine Übertragung personenbezogener oder gesundheitsbezogener Informationen an Server statt. Geben Sie keine Namen oder sensiblen Daten ein.",
+      "en": "Privacy notice: This tool does not store any data. No personal or health-related information is transmitted to any server. Please do not enter names or sensitive data.",
+      "fr": "Avis de confidentialité : Cet outil ne stocke aucune donnée. Aucune information personnelle ou de santé n'est transmise à un serveur. Veuillez ne pas saisir de noms ni de données sensibles."
     },
-    "reset": {
-      "de": "Zurücksetzen",
-      "en": "Reset",
-      "fr": "Réinitialiser"
-    }
+    "legal_disclaimer": {
+      "de": "Dieses Tool dient ausschließlich der Unterstützung bei der Vorbereitung auf ein ärztliches Aufklärungsgespräch. Es ist kein Medizinprodukt, keine medizinische Beratung und ersetzt keinesfalls eine persönliche ärztliche Untersuchung oder Risikokommunikation. Die Nutzung erfolgt in Eigenverantwortung, insbesondere durch medizinisches Fachpersonal. Der Autor übernimmt keine Gewähr für Richtigkeit, Vollständigkeit oder rechtliche Verwertbarkeit der Inhalte. Eine medizinische, rechtliche oder haftungsrechtliche Verwertung liegt allein im Ermessen der Nutzer. Die rechtliche Zulässigkeit und klinische Anwendbarkeit können je nach Land oder Gesundheitssystem variieren.",
+      "en": "This tool is intended solely to support preparation for medical consent discussions. It is not a medical product, does not provide medical advice, and in no way replaces a personal consultation or risk disclosure by a physician. Use is at your own risk, particularly for healthcare professionals. The author assumes no liability for the accuracy, completeness, or legal applicability of the content. Medical, legal, and clinical use remains the sole responsibility of the user. Legal admissibility and clinical relevance may vary depending on jurisdiction or health system.",
+      "fr": "Cet outil est destiné uniquement à soutenir la préparation à un entretien médical d'information. Il ne constitue ni un dispositif médical, ni un avis médical, et ne remplace en aucun cas une consultation ou une explication des risques effectuée par un professionnel de santé. Son utilisation se fait sous la seule responsabilité de l'utilisateur, notamment pour les professionnels de santé. L’auteur décline toute responsabilité quant à l'exactitude, l'exhaustivité ou la validité juridique du contenu. L’applicabilité légale et clinique peut varier selon les pays ou les systèmes de santé."
+    },
+    
   },
-  "language_selection": {
-    "de": "Sprache",
-    "en": "Language",
-    "fr": "Langue"
-  },
-  "privacy_notice": {
-    "de": "Hinweis zum Datenschutz: Dieses Tool speichert keine Daten. Es findet keine Übertragung personenbezogener oder gesundheitsbezogener Informationen an Server statt. Geben Sie keine Namen oder sensiblen Daten ein.",
-    "en": "Privacy notice: This tool does not store any data. No personal or health-related information is transmitted to any server. Please do not enter names or sensitive data.",
-    "fr": "Avis de confidentialité : Cet outil ne stocke aucune donnée. Aucune information personnelle ou de santé n'est transmise à un serveur. Veuillez ne pas saisir de noms ni de données sensibles."
-  },
-  "legal_disclaimer": {
-    "de": "Dieses Tool dient ausschließlich der Unterstützung bei der Vorbereitung auf ein ärztliches Aufklärungsgespräch. Es ist kein Medizinprodukt, keine medizinische Beratung und ersetzt keinesfalls eine persönliche ärztliche Untersuchung oder Risikokommunikation. Die Nutzung erfolgt in Eigenverantwortung, insbesondere durch medizinisches Fachpersonal. Der Autor übernimmt keine Gewähr für Richtigkeit, Vollständigkeit oder rechtliche Verwertbarkeit der Inhalte. Eine medizinische, rechtliche oder haftungsrechtliche Verwertung liegt allein im Ermessen der Nutzer. Die rechtliche Zulässigkeit und klinische Anwendbarkeit können je nach Land oder Gesundheitssystem variieren.",
-    "en": "This tool is intended solely to support preparation for medical consent discussions. It is not a medical product, does not provide medical advice, and in no way replaces a personal consultation or risk disclosure by a physician. Use is at your own risk, particularly for healthcare professionals. The author assumes no liability for the accuracy, completeness, or legal applicability of the content. Medical, legal, and clinical use remains the sole responsibility of the user. Legal admissibility and clinical relevance may vary depending on jurisdiction or health system.",
-    "fr": "Cet outil est destiné uniquement à soutenir la préparation à un entretien médical d'information. Il ne constitue ni un dispositif médical, ni un avis médical, et ne remplace en aucun cas une consultation ou une explication des risques effectuée par un professionnel de santé. Son utilisation se fait sous la seule responsabilité de l'utilisateur, notamment pour les professionnels de santé. L’auteur décline toute responsabilité quant à l'exactitude, l'exhaustivité ou la validité juridique du contenu. L’applicabilité légale et clinique peut varier selon les pays ou les systèmes de santé."
-  },
-},
   "textblocks": {
     "intro": {
       "de": "Im Rahmen der präoperativen anästhesiologischen Visite wurden die folgenden Risiken unter Berücksichtigung des individuellen Kontextes ausführlich besprochen:",
@@ -75,31 +76,35 @@
       "fr": "Il a été confirmé, sur demande, que toutes les informations ont été comprises et qu’aucune question n’est restée sans réponse. La réalisation des mesures avec les risques mentionnés est expressément souhaitée, sans délai de réflexion supplémentaire. Une copie de ce document a été proposée."
     },
     "teleconsent": {
-      "label": { "de": "Online-Aufklärung", "en": "Online consent", "fr": "Consentement en ligne" },
+      "label": {
+        "de": "Online-Aufklärung",
+        "en": "Online consent",
+        "fr": "Consentement en ligne"
+      },
       "de": "Die Aufklärung fand online über die Plattform Doctolib statt.",
       "en": "The informed consent discussion took place online via the Doctolib platform.",
       "fr": "L’information a été donnée en ligne via la plateforme Doctolib."
     },
-"refused_information": {
-  "label": {
-    "de": "Aufklärung verzichtet",
-    "en": "Waiver of detailed information",
-    "fr": "Renonciation à l'information détaillée"
-  },
-  "de": "Eine ausführliche Aufklärung über die geplanten Verfahren und damit verbundenen Risiken wurde angeboten, jedoch vom Patienten/der Patientin ausdrücklich und unmissverständlich abgelehnt. Es bestanden keine Zweifel an der rechtmäßigen und uneingeschränkten Entscheidungsfähigkeit. Der Wille des Patienten/der Patientin wurde respektiert.",
-  "en": "Detailed information about the planned procedures and associated risks was offered, but was explicitly and unequivocally declined by the patient. There were no doubts regarding the patient's legal capacity and decision-making ability. The patient's will was respected.",
-  "fr": "Des informations détaillées sur les procédures prévues et les risques associés ont été proposées, mais ont été expressément et sans équivoque refusées par le/la patient·e. Aucune incertitude quant à la capacité juridique et à la faculté de décision n’a été constatée. La volonté du/de la patient·e a été respectée."
-},
-"combined_consent_anesthesia": {
-  "label": {
-    "de": "Daueraufklärung",
-    "en": "Extended consent",
-    "fr": "Consentement élargi"
-  },
-  "de": "Daueraufklärung: die Aufklärung erfolgt für den geplanten Eingriff sowie für unmittelbar geplante Folgeeingriffe.",
-  "en": "Extended consent: the consent applies to the planned procedure as well as directly scheduled follow-up procedures.",
-  "fr": "Consentement élargi: le consentement s’applique à l’intervention prévue ainsi qu’aux interventions complémentaires immédiatement programmées."
-},
+    "refused_information": {
+      "label": {
+        "de": "Aufklärung verzichtet",
+        "en": "Waiver of detailed information",
+        "fr": "Renonciation à l'information détaillée"
+      },
+      "de": "Eine ausführliche Aufklärung über die geplanten Verfahren und damit verbundenen Risiken wurde angeboten, jedoch vom Patienten/der Patientin ausdrücklich und unmissverständlich abgelehnt. Es bestanden keine Zweifel an der rechtmäßigen und uneingeschränkten Entscheidungsfähigkeit. Der Wille des Patienten/der Patientin wurde respektiert.",
+      "en": "Detailed information about the planned procedures and associated risks was offered, but was explicitly and unequivocally declined by the patient. There were no doubts regarding the patient's legal capacity and decision-making ability. The patient's will was respected.",
+      "fr": "Des informations détaillées sur les procédures prévues et les risques associés ont été proposées, mais ont été expressément et sans équivoque refusées par le/la patient·e. Aucune incertitude quant à la capacité juridique et à la faculté de décision n’a été constatée. La volonté du/de la patient·e a été respectée."
+    },
+    "combined_consent_anesthesia": {
+      "label": {
+        "de": "Daueraufklärung",
+        "en": "Extended consent",
+        "fr": "Consentement élargi"
+      },
+      "de": "Daueraufklärung: die Aufklärung erfolgt für den geplanten Eingriff sowie für unmittelbar geplante Folgeeingriffe.",
+      "en": "Extended consent: the consent applies to the planned procedure as well as directly scheduled follow-up procedures.",
+      "fr": "Consentement élargi: le consentement s’applique à l’intervention prévue ainsi qu’aux interventions complémentaires immédiatement programmées."
+    },
     "outgoing_patient": {
       "label": {
         "de": "Ambulante OP",
@@ -120,34 +125,42 @@
       "en": "This is an emergency surgery with increased risk of intra- and perioperative complications.",
       "fr": "Il s'agit d'une chirurgie en urgence avec un risque accru de complications per- et peropératoires."
     },
-"time_pressure_consent": {
-  "label": {
-    "de": "Einwilligung unter Zeitdruck",
-    "en": "Consent under time pressure",
-    "fr": "Consentement sous contrainte de temps"
-  },
-  "de": "Die Aufklärung fand unter zeitkritischen Bedingungen statt, da eine notfallmäßige Durchführung erforderlich war. Es wurde dennoch bestmöglich über die Risiken informiert.",
-  "en": "The consent was obtained under time-critical conditions due to emergency circumstances. Efforts were made to inform the patient as comprehensively as possible.",
-  "fr": "Le consentement a été obtenu dans un contexte d’urgence. Les efforts ont été faits pour fournir une information aussi complète que possible."
-},
+    "time_pressure_consent": {
+      "label": {
+        "de": "Einwilligung unter Zeitdruck",
+        "en": "Consent under time pressure",
+        "fr": "Consentement sous contrainte de temps"
+      },
+      "de": "Die Aufklärung fand unter zeitkritischen Bedingungen statt, da eine notfallmäßige Durchführung erforderlich war. Es wurde dennoch bestmöglich über die Risiken informiert.",
+      "en": "The consent was obtained under time-critical conditions due to emergency circumstances. Efforts were made to inform the patient as comprehensively as possible.",
+      "fr": "Le consentement a été obtenu dans un contexte d’urgence. Les efforts ont été faits pour fournir une information aussi complète que possible."
+    },
     "known_allergy": {
-      "label": { "de": "Allergie", "en": "Allergy", "fr": "Allergie" },
+      "label": {
+        "de": "Allergie",
+        "en": "Allergy",
+        "fr": "Allergie"
+      },
       "de": "Bekannte Allergie mit erhöhtem Risiko für Arzneimittelreaktionen bis hin zur Anaphylaxie.",
       "en": "Known allergy with increased risk of drug reactions including anaphylaxis.",
       "fr": "Allergie connue avec risque accru de réactions médicamenteuses, y compris anaphylaxie."
     },
-"aspiration_risk": {
-  "label": {
-    "de": "Erhöhtes Aspirationsrisiko",
-    "en": "Increased aspiration risk",
-    "fr": "Risque accru d’aspiration"
-  },
-  "de": "Aufgrund bestehender Risikofaktoren (z. B. Refluxkrankheit, Adipositaschirurgie wie Schlauchmagen, Hiatushernie, verzögerte Magenentleerung) besteht ein erhöhtes Risiko einer pulmonalen Aspiration mit potenziell schweren Komplikationen.",
-  "en": "Due to existing risk factors (e.g., GERD, bariatric surgery such as sleeve gastrectomy, hiatal hernia, delayed gastric emptying), there is an increased risk of pulmonary aspiration with potentially serious complications.",
-  "fr": "En raison de facteurs de risque existants (p. ex. RGO, chirurgie bariatrique comme sleeve gastrectomie, hernie hiatale, vidange gastrique retardée), il existe un risque accru d’aspiration pulmonaire avec des complications potentiellement graves."
-},
+    "aspiration_risk": {
+      "label": {
+        "de": "Erhöhtes Aspirationsrisiko",
+        "en": "Increased aspiration risk",
+        "fr": "Risque accru d’aspiration"
+      },
+      "de": "Aufgrund bestehender Risikofaktoren (z. B. Refluxkrankheit, Adipositaschirurgie wie Schlauchmagen, Hiatushernie, verzögerte Magenentleerung) besteht ein erhöhtes Risiko einer pulmonalen Aspiration mit potenziell schweren Komplikationen.",
+      "en": "Due to existing risk factors (e.g., GERD, bariatric surgery such as sleeve gastrectomy, hiatal hernia, delayed gastric emptying), there is an increased risk of pulmonary aspiration with potentially serious complications.",
+      "fr": "En raison de facteurs de risque existants (p. ex. RGO, chirurgie bariatrique comme sleeve gastrectomie, hernie hiatale, vidange gastrique retardée), il existe un risque accru d’aspiration pulmonaire avec des complications potentiellement graves."
+    },
     "known_difficult_airway": {
-      "label": { "de": "Schwieriger Atemweg", "en": "Difficult airway", "fr": "Voies respiratoires difficiles" },
+      "label": {
+        "de": "Schwieriger Atemweg",
+        "en": "Difficult airway",
+        "fr": "Voies respiratoires difficiles"
+      },
       "de": "Bekannter schwieriger Atemweg mit erhöhtem Risiko für Atemwegskomplikationen.",
       "en": "Known difficult airway with increased risk of airway complications.",
       "fr": "Voies respiratoires difficiles connues avec risque accru de complications respiratoires."
@@ -162,16 +175,16 @@
       "en": "Due to preexisting cardiac disease, there is an increased risk of intraoperative hemodynamic instability, arrhythmias, myocardial ischemia up to cardiac arrest. Hypotension and hypoperfusion may occur, carrying the risk of hypoxia or hypoxic brain injury. Intensive care may become necessary.",
       "fr": "En raison d’une pathologie cardiaque préexistante, le risque d’instabilité hémodynamique peropératoire, d’arythmies, d’ischémie myocardique voire d’arrêt cardiaque est accru. Une hypotension ou une hypoperfusion peuvent survenir avec risque d’hypoxie ou de lésion cérébrale hypoxique. Une prise en charge en soins intensifs peut s’avérer nécessaire."
     },
-"pacemaker": {
-  "label": {
-    "de": "Herzschrittmacher",
-    "en": "Pacemaker",
-    "fr": "Stimulateur cardiaque"
-  },
-  "de": "Erhöhtes Risiko durch elektromagnetische Störungen oder intraoperative Manipulation bei implantiertem Aggregat.",
-  "en": "Increased risk due to electromagnetic interference or intraoperative manipulation with implanted device.",
-  "fr": "Risque accru d’interférences électromagnétiques ou de manipulation peropératoire avec dispositif implanté."
-},
+    "pacemaker": {
+      "label": {
+        "de": "Herzschrittmacher",
+        "en": "Pacemaker",
+        "fr": "Stimulateur cardiaque"
+      },
+      "de": "Erhöhtes Risiko durch elektromagnetische Störungen oder intraoperative Manipulation bei implantiertem Aggregat.",
+      "en": "Increased risk due to electromagnetic interference or intraoperative manipulation with implanted device.",
+      "fr": "Risque accru d’interférences électromagnétiques ou de manipulation peropératoire avec dispositif implanté."
+    },
     "coagulation_disorder": {
       "label": {
         "de": "Gerinnungsstörung",
@@ -192,16 +205,16 @@
       "en": "Preoperative anemia increases the risks of tissue hypoxia, circulatory instability, cardiac decompensation, and the potential need for blood transfusion.",
       "fr": "En cas d’anémie préopératoire, les risques d’hypoxie tissulaire, d’instabilité circulatoire, de décompensation cardiaque et de besoin transfusionnel sont accrus."
     },
-	  "renal_insufficiency": {
-		  "label": {
-		    "de": "Niereninsuffizienz",
-		    "en": "Renal insufficiency",
-		    "fr": "Insuffisance rénale"
-		  },
-	    "de": "Bei eingeschränkter Nierenfunktion bestehen zusätzliche Risiken: Flüssigkeitsüberlastung, Elektrolytstörungen (z. B. Hyperkaliämie), Azidose, fortschreitendes Organversagen sowie vorübergehende oder dauerhafte Dialysepflicht. Auswahl und Dosierung von Medikamenten können eingeschränkt sein und unterliegen einer individuellen Risiko-Nutzen-Abwägung.",
-	    "en": "Renal impairment entails additional risks: fluid overload, electrolyte disturbances (e.g., hyperkalemia), acidosis, progressive organ failure, and possible temporary or permanent dialysis. Medication selection and dosage may be limited and require individual risk-benefit assessment.",
-	    "fr": "Une insuffisance rénale entraîne des risques supplémentaires : surcharge hydrique, troubles électrolytiques (p. ex. hyperkaliémie), acidose, défaillance organique progressive et éventuellement dialyse temporaire ou permanente. Le choix et le dosage des médicaments peuvent être limités et nécessitent une évaluation individuelle du rapport bénéfice-risque."
-	  },
+    "renal_insufficiency": {
+      "label": {
+        "de": "Niereninsuffizienz",
+        "en": "Renal insufficiency",
+        "fr": "Insuffisance rénale"
+      },
+      "de": "Bei eingeschränkter Nierenfunktion bestehen zusätzliche Risiken: Flüssigkeitsüberlastung, Elektrolytstörungen (z. B. Hyperkaliämie), Azidose, fortschreitendes Organversagen sowie vorübergehende oder dauerhafte Dialysepflicht. Auswahl und Dosierung von Medikamenten können eingeschränkt sein und unterliegen einer individuellen Risiko-Nutzen-Abwägung.",
+      "en": "Renal impairment entails additional risks: fluid overload, electrolyte disturbances (e.g., hyperkalemia), acidosis, progressive organ failure, and possible temporary or permanent dialysis. Medication selection and dosage may be limited and require individual risk-benefit assessment.",
+      "fr": "Une insuffisance rénale entraîne des risques supplémentaires : surcharge hydrique, troubles électrolytiques (p. ex. hyperkaliémie), acidose, défaillance organique progressive et éventuellement dialyse temporaire ou permanente. Le choix et le dosage des médicaments peuvent être limités et nécessitent une évaluation individuelle du rapport bénéfice-risque."
+    },
     "polypharmacy": {
       "label": {
         "de": "Polypharmazie",
@@ -222,16 +235,16 @@
       "en": "Frail patients are at increased risk of circulatory instability, delirium, respiratory insufficiency, delayed mobilization, and prolonged postoperative recovery.",
       "fr": "Les patient·es fragiles présentent un risque accru d’instabilité circulatoire, de délire, d’insuffisance respiratoire, de mobilisation retardée et de récupération postopératoire prolongée."
     },
-"multimorbidity": {
-  "label": {
-    "de": "Multimorbidität",
-    "en": "Multimorbidity",
-    "fr": "Multimorbidité"
-  },
-  "de": "Aufgrund multipler Vorerkrankungen besteht ein erhöhtes Risiko für unerwartete Komplikationen, komplexe Krankheitsverläufe und erschwerte postoperative Erholung.",
-  "en": "Due to multiple pre-existing conditions, there is an increased risk of unexpected complications, complex clinical courses, and prolonged postoperative recovery.",
-  "fr": "En raison de pathologies multiples, le risque de complications inattendues, de parcours cliniques complexes et de convalescence prolongée est accru."
-},
+    "multimorbidity": {
+      "label": {
+        "de": "Multimorbidität",
+        "en": "Multimorbidity",
+        "fr": "Multimorbidité"
+      },
+      "de": "Aufgrund multipler Vorerkrankungen besteht ein erhöhtes Risiko für unerwartete Komplikationen, komplexe Krankheitsverläufe und erschwerte postoperative Erholung.",
+      "en": "Due to multiple pre-existing conditions, there is an increased risk of unexpected complications, complex clinical courses, and prolonged postoperative recovery.",
+      "fr": "En raison de pathologies multiples, le risque de complications inattendues, de parcours cliniques complexes et de convalescence prolongée est accru."
+    },
     "osas": {
       "label": {
         "de": "Schlafapnoe",
@@ -322,16 +335,16 @@
       "en": "Due to an existing language barrier, full information was provided in the presence of a qualified interpreter. The interpreter confirmed on request that all content was translated completely and accurately. The patient was repeatedly asked whether everything was truly understood.",
       "fr": "En raison d'une barrière linguistique, l'explication complète a été réalisée en présence d’un interprète qualifié. Celui-ci a confirmé avoir traduit fidèlement et entièrement tous les contenus. Le patient a été interrogé à plusieurs reprises pour vérifier sa compréhension."
     },
-"refusal_blood_products": {
-  "label": {
-    "de": "Ablehnung von Blutprodukten",
-    "en": "Refusal of blood products",
-    "fr": "Refus des produits sanguins"
-  },
-  "de": "Die Gabe von Blutprodukten wurde aus persönlichen oder religiösen Gründen abgelehnt. Die potenziellen Konsequenzen wurden im Detail besprochen.",
-  "en": "The administration of blood products was declined due to personal or religious beliefs. The potential consequences were discussed in detail.",
-  "fr": "L'administration de produits sanguins a été refusée pour des raisons personnelles ou religieuses. Les conséquences possibles ont été expliquées en détail."
-},
+    "refusal_blood_products": {
+      "label": {
+        "de": "Ablehnung von Blutprodukten",
+        "en": "Refusal of blood products",
+        "fr": "Refus des produits sanguins"
+      },
+      "de": "Die Gabe von Blutprodukten wurde aus persönlichen oder religiösen Gründen abgelehnt. Die potenziellen Konsequenzen wurden im Detail besprochen.",
+      "en": "The administration of blood products was declined due to personal or religious beliefs. The potential consequences were discussed in detail.",
+      "fr": "L'administration de produits sanguins a été refusée pour des raisons personnelles ou religieuses. Les conséquences possibles ont été expliquées en détail."
+    },
     "minor_guardian_consent": {
       "label": {
         "de": "Minderjährig",
@@ -662,20 +675,20 @@
                 "fr": "Sédation trop profonde"
               }
             },
-	  	"reduced_alertness": {
-		  "label": {
-		    "de": "Vigilanzminderung",
-		    "en": "Reduced alertness",
-		    "fr": "Vigilance diminuée"
-		  }
-		},
-	  	"respiratory_depression": {
-		  "label": {
-		    "de": "Atemdepression",
-		    "en": "Respiratory depression",
-		    "fr": "Dépression respiratoire"
-		  }
-		},
+            "reduced_alertness": {
+              "label": {
+                "de": "Vigilanzminderung",
+                "en": "Reduced alertness",
+                "fr": "Vigilance diminuée"
+              }
+            },
+            "respiratory_depression": {
+              "label": {
+                "de": "Atemdepression",
+                "en": "Respiratory depression",
+                "fr": "Dépression respiratoire"
+              }
+            },
             "airway_obstruction": {
               "label": {
                 "de": "Atemwegsverlegung",
@@ -690,20 +703,20 @@
                 "fr": "hypoventilation"
               }
             },
-	  	"aspiration": {
-		  "label": {
-		    "de": "Aspirationsrisiko",
-		    "en": "Aspiration risk",
-		    "fr": "Risque d'aspiration"
-		  }
-		},
-		"impaired_protective_reflexes": {
-		  "label": {
-		    "de": "Gestörte Schutzreflexe",
-		    "en": "Impaired protective reflexes",
-		    "fr": "Réflexes protecteurs altérés"
-		  }
-		},
+            "aspiration": {
+              "label": {
+                "de": "Aspirationsrisiko",
+                "en": "Aspiration risk",
+                "fr": "Risque d'aspiration"
+              }
+            },
+            "impaired_protective_reflexes": {
+              "label": {
+                "de": "Gestörte Schutzreflexe",
+                "en": "Impaired protective reflexes",
+                "fr": "Réflexes protecteurs altérés"
+              }
+            },
             "paradoxical_reaction": {
               "label": {
                 "de": "Paradoxe Reaktion / Erregung",
@@ -711,21 +724,20 @@
                 "fr": "Réaction paradoxale / agitation"
               }
             },
-	  	"delayed_recovery": {
-		  "label": {
-		    "de": "Verzögerte Erholung",
-		    "en": "Delayed recovery",
-		    "fr": "Récupération retardée"
-		  }
-		},
-		"reduced_responsiveness": {
-		  "label": {
-		    "de": "Verminderte Reaktionsfähigkeit",
-		    "en": "Reduced responsiveness",
-		    "fr": "Réactivité réduite"
-		  }
-		}
-
+            "delayed_recovery": {
+              "label": {
+                "de": "Verzögerte Erholung",
+                "en": "Delayed recovery",
+                "fr": "Récupération retardée"
+              }
+            },
+            "reduced_responsiveness": {
+              "label": {
+                "de": "Verminderte Reaktionsfähigkeit",
+                "en": "Reduced responsiveness",
+                "fr": "Réactivité réduite"
+              }
+            }
           }
         },
         "airway_techniques": {
@@ -992,69 +1004,69 @@
               "en": "Cricothyrotomy / emergency tracheotomy",
               "fr": "Cricothyrotomie / trachéotomie d’urgence"
             },
-              "bleeding": {
-                "label": {
-                  "de": "Blutung / Gefäßverletzung",
-                  "en": "Bleeding / vascular injury",
-                  "fr": "Saignement / lésion vasculaire"
-                }
-              },
-              "subcutaneous_emphysema": {
-                "label": {
-                  "de": "Subkutanes Emphysem",
-                  "en": "Subcutaneous emphysema",
-                  "fr": "Emphysème sous-cutané"
-                }
-              },
-              "misplacement": {
-                "label": {
-                  "de": "Fehllage / falsche Platzierung",
-                  "en": "Misplacement / incorrect placement",
-                  "fr": "Mauvais positionnement"
-                }
-              },
-              "infection": {
-                "label": {
-                  "de": "Infektion / Abszessbildung",
-                  "en": "Infection / abscess formation",
-                  "fr": "Infection / abcès"
-                }
-              },
-              "tracheal_stenosis": {
-                "label": {
-                  "de": "Trachealstenose",
-                  "en": "Tracheal stenosis",
-                  "fr": "Sténose trachéale"
-                }
-              },
-              "tracheoesophageal_fistula": {
-                "label": {
-                  "de": "Tracheoösophageale Fistel",
-                  "en": "Tracheoesophageal fistula",
-                  "fr": "Fistule trachéo-œsophagienne"
-                }
-              },
-              "voice_changes": {
-                "label": {
-                  "de": "Stimmveränderungen / Heiserkeit",
-                  "en": "Voice changes / hoarseness",
-                  "fr": "Changements de voix / enrouement"
-                }
-              },
-              "cosmetic_scarring": {
-                "label": {
-                  "de": "Narbenbildung",
-                  "en": "Cosmetic scarring",
-                  "fr": "Cicatrices inesthétiques"
-                }
-              },
-              "dysphagia": {
-                "label": {
-                  "de": "Schluckstörung / Dysphagie",
-                  "en": "Swallowing disorder / dysphagia",
-                  "fr": "Trouble de la déglutition / dysphagie"
-                }
-              }    
+            "bleeding": {
+              "label": {
+                "de": "Blutung / Gefäßverletzung",
+                "en": "Bleeding / vascular injury",
+                "fr": "Saignement / lésion vasculaire"
+              }
+            },
+            "subcutaneous_emphysema": {
+              "label": {
+                "de": "Subkutanes Emphysem",
+                "en": "Subcutaneous emphysema",
+                "fr": "Emphysème sous-cutané"
+              }
+            },
+            "misplacement": {
+              "label": {
+                "de": "Fehllage / falsche Platzierung",
+                "en": "Misplacement / incorrect placement",
+                "fr": "Mauvais positionnement"
+              }
+            },
+            "infection": {
+              "label": {
+                "de": "Infektion / Abszessbildung",
+                "en": "Infection / abscess formation",
+                "fr": "Infection / abcès"
+              }
+            },
+            "tracheal_stenosis": {
+              "label": {
+                "de": "Trachealstenose",
+                "en": "Tracheal stenosis",
+                "fr": "Sténose trachéale"
+              }
+            },
+            "tracheoesophageal_fistula": {
+              "label": {
+                "de": "Tracheoösophageale Fistel",
+                "en": "Tracheoesophageal fistula",
+                "fr": "Fistule trachéo-œsophagienne"
+              }
+            },
+            "voice_changes": {
+              "label": {
+                "de": "Stimmveränderungen / Heiserkeit",
+                "en": "Voice changes / hoarseness",
+                "fr": "Changements de voix / enrouement"
+              }
+            },
+            "cosmetic_scarring": {
+              "label": {
+                "de": "Narbenbildung",
+                "en": "Cosmetic scarring",
+                "fr": "Cicatrices inesthétiques"
+              }
+            },
+            "dysphagia": {
+              "label": {
+                "de": "Schluckstörung / Dysphagie",
+                "en": "Swallowing disorder / dysphagia",
+                "fr": "Trouble de la déglutition / dysphagie"
+              }
+            }
           },
           "difficult_airway": {
             "label": {
@@ -1153,13 +1165,13 @@
                 "fr": "Lésion nerveuse"
               }
             },
-	  	"vascular_injury": {
-		  "label": {
-		    "de": "Gefäßverletzung",
-		    "en": "Vascular injury",
-		    "fr": "Lésion vasculaire"
-		  }
-		},
+            "vascular_injury": {
+              "label": {
+                "de": "Gefäßverletzung",
+                "en": "Vascular injury",
+                "fr": "Lésion vasculaire"
+              }
+            },
             "hematoma": {
               "label": {
                 "de": "Hämatom",
@@ -1216,13 +1228,13 @@
                 "fr": "Stimulation nerveuse"
               }
             },
-	  	"paresthesia": {
-		  "label": {
-		    "de": "Parästhesien",
-		    "en": "Paresthesia",
-		    "fr": "Paresthésies"
-		  }
-		},
+            "paresthesia": {
+              "label": {
+                "de": "Parästhesien",
+                "en": "Paresthesia",
+                "fr": "Paresthésies"
+              }
+            },
             "sensorimotor_deficit": {
               "label": {
                 "de": "Sensomotorisches Defizit",
@@ -1295,13 +1307,13 @@
                 "fr": "syndrome de la queue de cheval"
               }
             },
-			"liquor_leak": {
-			  "label": {
-			    "de": "Liquorleck",
-			    "en": "Cerebrospinal fluid leak",
-			    "fr": "Fuite de liquide céphalorachidien"
-			  }
-			},
+            "liquor_leak": {
+              "label": {
+                "de": "Liquorleck",
+                "en": "Cerebrospinal fluid leak",
+                "fr": "Fuite de liquide céphalorachidien"
+              }
+            },
             "label": {
               "de": "Spinalanästhesie",
               "en": "Spinal anesthesia",
@@ -1337,82 +1349,82 @@
                 "fr": "Bloc sympathique"
               }
             },
-			"liquor_leak": {
-			  "label": {
-			    "de": "Liquorleck",
-			    "en": "Cerebrospinal fluid leak",
-			    "fr": "Fuite de liquide céphalorachidien"
-			  }
-			},
+            "liquor_leak": {
+              "label": {
+                "de": "Liquorleck",
+                "en": "Cerebrospinal fluid leak",
+                "fr": "Fuite de liquide céphalorachidien"
+              }
+            },
             "label": {
               "de": "Periduralanästhesie",
               "en": "Epidural anesthesia",
               "fr": "Anesthésie péridurale"
             }
           },
-		"csa": {
-		  "label": {
-		    "de": "Kontinuierliche Spinalanästhesie (CSA)",
-		    "en": "Continuous spinal anesthesia (CSA)",
-		    "fr": "Anesthésie spinale continue (CSA)"
-		  },
-		  "post_dural_puncture_headache": {
-		    "label": {
-		      "de": "Postspinaler Kopfschmerz",
-		      "en": "Post-dural puncture headache",
-		      "fr": "Céphalée post-ponction durale"
-		    }
-		  },
-		  "spinal_epidural_hematoma": {
-		    "label": {
-		      "de": "Spinales / epidurales Hämatom",
-		      "en": "Spinal / epidural hematoma",
-		      "fr": "Hématome spinal / péridural"
-		    }
-		  },
-		  "spinal_epidural_abscess": {
-		    "label": {
-		      "de": "Spinaler / epiduraler Abszess",
-		      "en": "Spinal / epidural abscess",
-		      "fr": "Abcès spinal / péridural"
-		    }
-		  },
-		  "cauda_equina_syndrome": {
-		    "label": {
-		      "de": "Cauda-Equina-Syndrom",
-		      "en": "Cauda equina syndrome",
-		      "fr": "Syndrome de la queue de cheval"
-		    }
-		  },
-		  "catheter_migration": {
-		    "label": {
-		      "de": "Katheterverlagerung",
-		      "en": "Catheter migration",
-		      "fr": "Migration du cathéter"
-		    }
-		  },
-		  "catheter_fragment": {
-		    "label": {
-		      "de": "Katheterfragment",
-		      "en": "Catheter fragment",
-		      "fr": "Fragment de cathéter"
-		    }
-		  },
-		  "back_pain": {
-		    "label": {
-		      "de": "Rückenschmerzen",
-		      "en": "Back pain",
-		      "fr": "Douleurs dorsales"
-		    }
-		  },
-			"liquor_leak": {
-			  "label": {
-			    "de": "Liquorleck",
-			    "en": "Cerebrospinal fluid leak",
-			    "fr": "Fuite de liquide céphalorachidien"
-			  }
-			}
-	  },
+          "csa": {
+            "label": {
+              "de": "Kontinuierliche Spinalanästhesie (CSA)",
+              "en": "Continuous spinal anesthesia (CSA)",
+              "fr": "Anesthésie spinale continue (CSA)"
+            },
+            "post_dural_puncture_headache": {
+              "label": {
+                "de": "Postspinaler Kopfschmerz",
+                "en": "Post-dural puncture headache",
+                "fr": "Céphalée post-ponction durale"
+              }
+            },
+            "spinal_epidural_hematoma": {
+              "label": {
+                "de": "Spinales / epidurales Hämatom",
+                "en": "Spinal / epidural hematoma",
+                "fr": "Hématome spinal / péridural"
+              }
+            },
+            "spinal_epidural_abscess": {
+              "label": {
+                "de": "Spinaler / epiduraler Abszess",
+                "en": "Spinal / epidural abscess",
+                "fr": "Abcès spinal / péridural"
+              }
+            },
+            "cauda_equina_syndrome": {
+              "label": {
+                "de": "Cauda-Equina-Syndrom",
+                "en": "Cauda equina syndrome",
+                "fr": "Syndrome de la queue de cheval"
+              }
+            },
+            "catheter_migration": {
+              "label": {
+                "de": "Katheterverlagerung",
+                "en": "Catheter migration",
+                "fr": "Migration du cathéter"
+              }
+            },
+            "catheter_fragment": {
+              "label": {
+                "de": "Katheterfragment",
+                "en": "Catheter fragment",
+                "fr": "Fragment de cathéter"
+              }
+            },
+            "back_pain": {
+              "label": {
+                "de": "Rückenschmerzen",
+                "en": "Back pain",
+                "fr": "Douleurs dorsales"
+              }
+            },
+            "liquor_leak": {
+              "label": {
+                "de": "Liquorleck",
+                "en": "Cerebrospinal fluid leak",
+                "fr": "Fuite de liquide céphalorachidien"
+              }
+            }
+          },
           "regional_catheter": {
             "blockage_blockage": {
               "label": {
@@ -1511,12 +1523,12 @@
               "fr": "Bloc du nerf saphène"
             },
             "fall_risk": {
-		  "label": {
-		    "de": "Sturzrisiko",
-		    "en": "Risk of falling",
-		    "fr": "Risque de chute"
-		  }
-	    }
+              "label": {
+                "de": "Sturzrisiko",
+                "en": "Risk of falling",
+                "fr": "Risque de chute"
+              }
+            }
           },
           "brachial_plexus_block": {
             "label": {
@@ -1586,7 +1598,7 @@
                 "en": "Sympathetic block",
                 "fr": "Bloc sympathique"
               }
-            },  
+            },
             "hypotension": {
               "label": {
                 "de": "Hypotonie",
@@ -1615,14 +1627,13 @@
               "en": "ESP block",
               "fr": "Bloc ESP"
             },
-		"organ_injury": {
-		  "label": {
-		    "de": "Organverletzung",
-		    "en": "Organ injury",
-		    "fr": "Lésion d’organe"
-		  }
-		}
-
+            "organ_injury": {
+              "label": {
+                "de": "Organverletzung",
+                "en": "Organ injury",
+                "fr": "Lésion d’organe"
+              }
+            }
           },
           "pecs_block": {
             "label": {
@@ -1700,41 +1711,41 @@
               "en": "Interscalene block (ISB)",
               "fr": "Bloc interscalénique (ISB)"
             },
-	  	"phrenic_nerve_palsy": {
-		  "label": {
-		    "de": "Phrenikusparese (ipsilaterale Zwerchfelllähmung)",
-		    "en": "Phrenic nerve palsy (ipsilateral diaphragm paralysis)",
-		    "fr": "Paralysie du nerf phrénique (paralysie diaphragmatique unilatérale)"
-		  }
-		},
-	  	"dyspnoe": {
-		  "label": {
-		    "de": "Dyspnoe",
-		    "en": "Dyspnea",
-		    "fr": "Dyspnée"
-		  }
-		},
-		"recurrent_laryngeal_nerve_injury": {
-		  "label": {
-		    "de": "Nervenverletzung N. laryngeus recurrens",
-		    "en": "Recurrent laryngeal nerve injury",
-		    "fr": "Lésion du nerf laryngé récurrent"
-		  }
-		},
-		"hoarseness": {
-		  "label": {
-		    "de": "Heiserkeit",
-		    "en": "Hoarseness",
-		    "fr": "Enrouement"
-		  }
-		},
-		"vocal_cord_weakness": {
-		  "label": {
-		    "de": "Stimmbandparese / -lähmung",
-		    "en": "Vocal cord paresis / palsy",
-		    "fr": "Parésie / paralysie des cordes vocales"
-		  }
-		},
+            "phrenic_nerve_palsy": {
+              "label": {
+                "de": "Phrenikusparese (ipsilaterale Zwerchfelllähmung)",
+                "en": "Phrenic nerve palsy (ipsilateral diaphragm paralysis)",
+                "fr": "Paralysie du nerf phrénique (paralysie diaphragmatique unilatérale)"
+              }
+            },
+            "dyspnoe": {
+              "label": {
+                "de": "Dyspnoe",
+                "en": "Dyspnea",
+                "fr": "Dyspnée"
+              }
+            },
+            "recurrent_laryngeal_nerve_injury": {
+              "label": {
+                "de": "Nervenverletzung N. laryngeus recurrens",
+                "en": "Recurrent laryngeal nerve injury",
+                "fr": "Lésion du nerf laryngé récurrent"
+              }
+            },
+            "hoarseness": {
+              "label": {
+                "de": "Heiserkeit",
+                "en": "Hoarseness",
+                "fr": "Enrouement"
+              }
+            },
+            "vocal_cord_weakness": {
+              "label": {
+                "de": "Stimmbandparese / -lähmung",
+                "en": "Vocal cord paresis / palsy",
+                "fr": "Parésie / paralysie des cordes vocales"
+              }
+            },
             "horner_syndrome": {
               "label": {
                 "de": "Horner-Syndrom",
@@ -1759,61 +1770,61 @@
               }
             },
             "bleeding": {
-		  "label": {
-		    "de": "Blutung",
-		    "en": "Bleeding",
-		    "fr": "Saignement"
-		  }
-		},
-		"hematoma": {
-		  "label": {
-		    "de": "Hämatom",
-		    "en": "Hematoma",
-		    "fr": "Hématome"
-		  }
-		},
-		"catheter_misplacement": {
-		  "label": {
-		    "de": "Katheter-Fehllage",
-		    "en": "Catheter misplacement",
-		    "fr": "Mauvais positionnement du cathéter"
-		  }
-		},
-		"puncture_error": {
-		  "label": {
-		    "de": "Fehlpunktion",
-		    "en": "Puncture error",
-		    "fr": "Ponction erronée"
-		  }
-		},
-		"thrombosis": {
-		  "label": {
-		    "de": "Thrombose",
-		    "en": "Thrombosis",
-		    "fr": "Thrombose"
-		  }
-		},
-		"embolism": {
-		  "label": {
-		    "de": "Embolie",
-		    "en": "Embolism",
-		    "fr": "Embolie"
-		  }
-		},
-		"vessel_occlusion": {
-		  "label": {
-		    "de": "Gefäßverschluss",
-		    "en": "Vessel occlusion",
-		    "fr": "Occlusion vasculaire"
-		  }
-		},
-		"wrong_injection_site": {
-		      "label": {
-			"de": "Fehlinjektion",
-			"en": "Injection error",
-			"fr": "Injection incorrecte"
-		      }
-	    	} 
+              "label": {
+                "de": "Blutung",
+                "en": "Bleeding",
+                "fr": "Saignement"
+              }
+            },
+            "hematoma": {
+              "label": {
+                "de": "Hämatom",
+                "en": "Hematoma",
+                "fr": "Hématome"
+              }
+            },
+            "catheter_misplacement": {
+              "label": {
+                "de": "Katheter-Fehllage",
+                "en": "Catheter misplacement",
+                "fr": "Mauvais positionnement du cathéter"
+              }
+            },
+            "puncture_error": {
+              "label": {
+                "de": "Fehlpunktion",
+                "en": "Puncture error",
+                "fr": "Ponction erronée"
+              }
+            },
+            "thrombosis": {
+              "label": {
+                "de": "Thrombose",
+                "en": "Thrombosis",
+                "fr": "Thrombose"
+              }
+            },
+            "embolism": {
+              "label": {
+                "de": "Embolie",
+                "en": "Embolism",
+                "fr": "Embolie"
+              }
+            },
+            "vessel_occlusion": {
+              "label": {
+                "de": "Gefäßverschluss",
+                "en": "Vessel occlusion",
+                "fr": "Occlusion vasculaire"
+              }
+            },
+            "wrong_injection_site": {
+              "label": {
+                "de": "Fehlinjektion",
+                "en": "Injection error",
+                "fr": "Injection incorrecte"
+              }
+            }
           },
           "peripheral_iv": {
             "label": {
@@ -1849,20 +1860,20 @@
                 "fr": "phlébite"
               }
             },
-	  	"paravenous_injection": {
-		  "label": {
-		    "de": "Paravenöse Injektion",
-		    "en": "Paravenous injection",
-		    "fr": "Injection paraveineuse"
-		  }
-		},
-		"intraarterial_injection": {
-		  "label": {
-		    "de": "Intraarterielle Injektion",
-		    "en": "Intra-arterial injection",
-		    "fr": "Injection intra-artérielle"
-		  }
-		}
+            "paravenous_injection": {
+              "label": {
+                "de": "Paravenöse Injektion",
+                "en": "Paravenous injection",
+                "fr": "Injection paraveineuse"
+              }
+            },
+            "intraarterial_injection": {
+              "label": {
+                "de": "Intraarterielle Injektion",
+                "en": "Intra-arterial injection",
+                "fr": "Injection intra-artérielle"
+              }
+            }
           },
           "central_venous_catheter": {
             "label": {
@@ -1912,55 +1923,55 @@
                 "fr": "Embolie gazeuse"
               }
             },
-	  	"infection": {
-		  "label": {
-		    "de": "Infektion",
-		    "en": "Infection",
-		    "fr": "Infection"
-		  }
-		},
-		"sepsis": {
-		  "label": {
-		    "de": "Sepsis",
-		    "en": "Sepsis",
-		    "fr": "Sepsis"
-		  }
-		},
-		"endocarditis": {
-		  "label": {
-		    "de": "Endokarditis",
-		    "en": "Endocarditis",
-		    "fr": "Endocardite"
-		  }
-		},
-		"lymph_fistula": {
-		  "label": {
-		    "de": "Lymphfistel",
-		    "en": "Lymphatic fistula",
-		    "fr": "Fistule lymphatique"
-		  }
-		},
-		"chylothorax": {
-		  "label": {
-		    "de": "Chylothorax",
-		    "en": "Chylothorax",
-		    "fr": "Chylothorax"
-		  }
-		},
-		"pinch_off_syndrome": {
-		  "label": {
-		    "de": "Pinch-off-Syndrom",
-		    "en": "Pinch-off syndrome",
-		    "fr": "Syndrome de pincement"
-		  }
-		},
-		"catheter_fracture": {
-		  "label": {
-		    "de": "Katheterbruch",
-		    "en": "Catheter fracture",
-		    "fr": "Fracture du cathéter"
-		  }
-		}		  
+            "infection": {
+              "label": {
+                "de": "Infektion",
+                "en": "Infection",
+                "fr": "Infection"
+              }
+            },
+            "sepsis": {
+              "label": {
+                "de": "Sepsis",
+                "en": "Sepsis",
+                "fr": "Sepsis"
+              }
+            },
+            "endocarditis": {
+              "label": {
+                "de": "Endokarditis",
+                "en": "Endocarditis",
+                "fr": "Endocardite"
+              }
+            },
+            "lymph_fistula": {
+              "label": {
+                "de": "Lymphfistel",
+                "en": "Lymphatic fistula",
+                "fr": "Fistule lymphatique"
+              }
+            },
+            "chylothorax": {
+              "label": {
+                "de": "Chylothorax",
+                "en": "Chylothorax",
+                "fr": "Chylothorax"
+              }
+            },
+            "pinch_off_syndrome": {
+              "label": {
+                "de": "Pinch-off-Syndrom",
+                "en": "Pinch-off syndrome",
+                "fr": "Syndrome de pincement"
+              }
+            },
+            "catheter_fracture": {
+              "label": {
+                "de": "Katheterbruch",
+                "en": "Catheter fracture",
+                "fr": "Fracture du cathéter"
+              }
+            }
           },
           "shaldon_catheter": {
             "label": {
@@ -2010,20 +2021,20 @@
                 "fr": "Infection systémique / sepsis"
               }
             },
-	  	"vascular_injury": {
-		  "label": {
-		    "de": "Gefäßverletzung",
-		    "en": "Vascular injury",
-		    "fr": "Lésion vasculaire"
-		  }
-		},
-		"vessel_dissection": {
-		  "label": {
-		    "de": "Gefäßdissektion",
-		    "en": "Vessel dissection",
-		    "fr": "Dissection vasculaire"
-		  }
-		}
+            "vascular_injury": {
+              "label": {
+                "de": "Gefäßverletzung",
+                "en": "Vascular injury",
+                "fr": "Lésion vasculaire"
+              }
+            },
+            "vessel_dissection": {
+              "label": {
+                "de": "Gefäßdissektion",
+                "en": "Vessel dissection",
+                "fr": "Dissection vasculaire"
+              }
+            }
           },
           "arterial_catheter": {
             "label": {
@@ -2032,12 +2043,12 @@
               "fr": "Cathéter artériel"
             },
             "vasospasm": {
-		  "label": {
-		    "de": "Vasospasmus",
-		    "en": "Vasospasm",
-		    "fr": "Vasospasme"
-		  }
-		},
+              "label": {
+                "de": "Vasospasmus",
+                "en": "Vasospasm",
+                "fr": "Vasospasme"
+              }
+            },
             "impaired_perfusion": {
               "label": {
                 "de": "Durchblutungsstörung",
@@ -2045,71 +2056,71 @@
                 "fr": "trouble circulatoire"
               }
             },
-		"ischemia": {
-		  "label": {
-		    "de": "Ischämie",
-		    "en": "Ischemia",
-		    "fr": "Ischémie"
-		  }
-		},
-		"thrombosis": {
-		  "label": {
-		    "de": "Thrombose",
-		    "en": "Thrombosis",
-		    "fr": "Thrombose"
-		  }
-		},
-		"embolism": {
-		  "label": {
-		    "de": "Embolie",
-		    "en": "Embolism",
-		    "fr": "Embolie"
-		  }
-		},
-	  	"bleeding": {
-		  "label": {
-		    "de": "Blutung",
-		    "en": "Bleeding",
-		    "fr": "Saignement"
-		  }
-		},
-		"pseudoaneurysm": {
-		  "label": {
-		    "de": "Pseudoaneurysma",
-		    "en": "Pseudoaneurysm",
-		    "fr": "Pseudo-anévrysme"
-		  }
-		},
-	  	"catheter_fracture": {
-		  "label": {
-		    "de": "Katheterbruch",
-		    "en": "Catheter fracture",
-		    "fr": "Fracture du cathéter"
-		  }
-		},
-		"catheter_dislocation": {
-		  "label": {
-		    "de": "Katheterdislokation",
-		    "en": "Catheter dislocation",
-		    "fr": "Déplacement du cathéter"
-		  }
-		}
+            "ischemia": {
+              "label": {
+                "de": "Ischämie",
+                "en": "Ischemia",
+                "fr": "Ischémie"
+              }
+            },
+            "thrombosis": {
+              "label": {
+                "de": "Thrombose",
+                "en": "Thrombosis",
+                "fr": "Thrombose"
+              }
+            },
+            "embolism": {
+              "label": {
+                "de": "Embolie",
+                "en": "Embolism",
+                "fr": "Embolie"
+              }
+            },
+            "bleeding": {
+              "label": {
+                "de": "Blutung",
+                "en": "Bleeding",
+                "fr": "Saignement"
+              }
+            },
+            "pseudoaneurysm": {
+              "label": {
+                "de": "Pseudoaneurysma",
+                "en": "Pseudoaneurysm",
+                "fr": "Pseudo-anévrysme"
+              }
+            },
+            "catheter_fracture": {
+              "label": {
+                "de": "Katheterbruch",
+                "en": "Catheter fracture",
+                "fr": "Fracture du cathéter"
+              }
+            },
+            "catheter_dislocation": {
+              "label": {
+                "de": "Katheterdislokation",
+                "en": "Catheter dislocation",
+                "fr": "Déplacement du cathéter"
+              }
+            }
           },
           "gastric_tube": {
-		"mucosal_injury": {
-		  "label": {
-		    "de": "Schleimhautverletzung",
-		    "en": "Mucosal injury",
-		    "fr": "Lésion muqueuse"
-		  }
-		},
-		"bleeding": {
-		  "label": {
-		    "de": "Blutung",
-		    "en": "Bleeding",
-		    "fr": "Saignement"
-		  }
-		},
+            "mucosal_injury": {
+              "label": {
+                "de": "Schleimhautverletzung",
+                "en": "Mucosal injury",
+                "fr": "Lésion muqueuse"
+              }
+            },
+            "bleeding": {
+              "label": {
+                "de": "Blutung",
+                "en": "Bleeding",
+                "fr": "Saignement"
+              }
+            },
             "misplacement": {
               "label": {
                 "de": "Fehllage",
@@ -2117,20 +2128,20 @@
                 "fr": "Mauvais positionnement"
               }
             },
-            	"infection": {
-		  "label": {
-		    "de": "Infektion",
-		    "en": "Infection",
-		    "fr": "Infection"
-		  }
-		},
-		"sinusitis": {
-		  "label": {
-		    "de": "Sinusitis",
-		    "en": "Sinusitis",
-		    "fr": "Sinusite"
-		  }
-		},
+            "infection": {
+              "label": {
+                "de": "Infektion",
+                "en": "Infection",
+                "fr": "Infection"
+              }
+            },
+            "sinusitis": {
+              "label": {
+                "de": "Sinusitis",
+                "en": "Sinusitis",
+                "fr": "Sinusite"
+              }
+            },
             "label": {
               "de": "Magensonde",
               "en": "Gastric tube",
@@ -2138,76 +2149,76 @@
             }
           },
           "bladder_catheter": {
-		"uti": {
-			"label": {
-				"de": "Harnwegsinfekt",
-				"en": "Urinary tract infection",
-				"fr": "Infection urinaire"
-			}
-		},
-	    	"hematuria": {
-		  "label": {
-		    "de": "Hämaturie",
-		    "en": "Hematuria",
-		    "fr": "Hématurie"
-		  }
-		},
-		"bleeding": {
-		  "label": {
-		    "de": "Blutung",
-		    "en": "Bleeding",
-		    "fr": "Saignement"
-		  }
-		},
-		"urethral_injury": {
-		  "label": {
-		    "de": "Urethraverletzung",
-		    "en": "Urethral injury",
-		    "fr": "Lésion urétrale"
-		  }
-		},
-		"urethral_stricture": {
-		  "label": {
-		    "de": "Urethrastriktur",
-		    "en": "Urethral stricture",
-		    "fr": "Sténose urétrale"
-		  }
-		},
-		"epididymitis": {
-		  "label": {
-		    "de": "Nebenhodenentzündung",
-		    "en": "Epididymitis",
-		    "fr": "Épididymite"
-		  }
-		},
-		"infertility": {
-		  "label": {
-		    "de": "Infertilität",
-		    "en": "Infertility",
-		    "fr": "Infertilité"
-		  }
-		},
-	    "label": {
-	      "de": "Blasenkatheter",
-	      "en": "Bladder catheter",
-	      "fr": "Cathéter vésical"
-	    }
+            "uti": {
+              "label": {
+                "de": "Harnwegsinfekt",
+                "en": "Urinary tract infection",
+                "fr": "Infection urinaire"
+              }
+            },
+            "hematuria": {
+              "label": {
+                "de": "Hämaturie",
+                "en": "Hematuria",
+                "fr": "Hématurie"
+              }
+            },
+            "bleeding": {
+              "label": {
+                "de": "Blutung",
+                "en": "Bleeding",
+                "fr": "Saignement"
+              }
+            },
+            "urethral_injury": {
+              "label": {
+                "de": "Urethraverletzung",
+                "en": "Urethral injury",
+                "fr": "Lésion urétrale"
+              }
+            },
+            "urethral_stricture": {
+              "label": {
+                "de": "Urethrastriktur",
+                "en": "Urethral stricture",
+                "fr": "Sténose urétrale"
+              }
+            },
+            "epididymitis": {
+              "label": {
+                "de": "Nebenhodenentzündung",
+                "en": "Epididymitis",
+                "fr": "Épididymite"
+              }
+            },
+            "infertility": {
+              "label": {
+                "de": "Infertilität",
+                "en": "Infertility",
+                "fr": "Infertilité"
+              }
+            },
+            "label": {
+              "de": "Blasenkatheter",
+              "en": "Bladder catheter",
+              "fr": "Cathéter vésical"
+            }
           },
           "intraosseous_access": {
-		"extravasation": {
-		  "label": {
-		    "de": "Extravasat",
-		    "en": "Extravasation",
-		    "fr": "Extravasation"
-		  }
-		},
-		"compartment_syndrome": {
-		  "label": {
-		    "de": "Kompartmentsyndrom",
-		    "en": "Compartment syndrome",
-		    "fr": "Syndrome des loges"
-		  }
-		},
+            "extravasation": {
+              "label": {
+                "de": "Extravasat",
+                "en": "Extravasation",
+                "fr": "Extravasation"
+              }
+            },
+            "compartment_syndrome": {
+              "label": {
+                "de": "Kompartmentsyndrom",
+                "en": "Compartment syndrome",
+                "fr": "Syndrome des loges"
+              }
+            },
             "osteomyelitis": {
               "label": {
                 "de": "Osteomyelitis",
@@ -2215,20 +2226,20 @@
                 "fr": "Ostéomyélite"
               }
             },
-		"fracture": {
-		  "label": {
-		    "de": "Fraktur",
-		    "en": "Fracture",
-		    "fr": "Fracture"
-		  }
-		},
-		"growth_plate_injury": {
-		  "label": {
-		    "de": "Epiphysenverletzung",
-		    "en": "Growth plate injury",
-		    "fr": "Lésion du cartilage de croissance"
-		  }
-		},
+            "fracture": {
+              "label": {
+                "de": "Fraktur",
+                "en": "Fracture",
+                "fr": "Fracture"
+              }
+            },
+            "growth_plate_injury": {
+              "label": {
+                "de": "Epiphysenverletzung",
+                "en": "Growth plate injury",
+                "fr": "Lésion du cartilage de croissance"
+              }
+            },
             "fat_bone_marrow_air_embolism": {
               "label": {
                 "de": "Fett-/Knochenmark-/Luftembolie",
@@ -2249,10 +2260,10 @@
           }
         },
         "extended_diagnostics": {
-            "label": {
-              "de": "Erweiterte Diagnostik",
-              "en": "Extended diagnostics",
-              "fr": "Examens diagnostiques étendus"
+          "label": {
+            "de": "Erweiterte Diagnostik",
+            "en": "Extended diagnostics",
+            "fr": "Examens diagnostiques étendus"
           },
           "tee": {
             "mucosal_bleeding": {
@@ -2276,20 +2287,20 @@
                 "fr": "Lésion pharyngo-laryngée"
               }
             },
-	  	"esophageal_perforation": {
-		  "label": {
-		    "de": "Ösophagusperforation",
-		    "en": "Esophageal perforation",
-		    "fr": "Perforation œsophagienne"
-		  }
-		},
-		"mediastinitis": {
-		  "label": {
-		    "de": "Mediastinitis",
-		    "en": "Mediastinitis",
-		    "fr": "Médiastinite"
-		  }
-		},
+            "esophageal_perforation": {
+              "label": {
+                "de": "Ösophagusperforation",
+                "en": "Esophageal perforation",
+                "fr": "Perforation œsophagienne"
+              }
+            },
+            "mediastinitis": {
+              "label": {
+                "de": "Mediastinitis",
+                "en": "Mediastinitis",
+                "fr": "Médiastinite"
+              }
+            },
             "label": {
               "de": "Transösophageale Echokardiographie (TEE)",
               "en": "Transesophageal Echocardiography (TEE)",
@@ -2418,11 +2429,11 @@
                 "fr": "Micro-embolie (air/graisse)"
               }
             },
-			"label": {
-			  "de": "Maschinelle Autotransfusion",
-			  "en": "Intraoperative autologous blood salvage",
-			  "fr": "Autotransfusion autologue peropératoire"
-			}
+            "label": {
+              "de": "Maschinelle Autotransfusion",
+              "en": "Intraoperative autologous blood salvage",
+              "fr": "Autotransfusion autologue peropératoire"
+            }
           },
           "label": {
             "de": "Blutungsmanagement",
@@ -2495,20 +2506,20 @@
                 "fr": "Dépendance / tolérance"
               }
             },
-	  	"overdose": {
-		  "label": {
-		    "de": "Überdosierung",
-		    "en": "Overdose",
-		    "fr": "Surdosage"
-		  }
-		},
-	  	"technical_error": {
-		  "label": {
-		    "de": "Technische Störung",
-		    "en": "Technical error",
-		    "fr": "Défaillance technique"
-		  }
-		},
+            "overdose": {
+              "label": {
+                "de": "Überdosierung",
+                "en": "Overdose",
+                "fr": "Surdosage"
+              }
+            },
+            "technical_error": {
+              "label": {
+                "de": "Technische Störung",
+                "en": "Technical error",
+                "fr": "Défaillance technique"
+              }
+            },
             "label": {
               "de": "PCA i.v.",
               "en": "PCA IV",
@@ -2599,10 +2610,10 @@
           }
         },
         "label": {
-		"de": "Maßnahmenassoziierte Risiken",
-		"en": "Procedure-specific risks",
-		"fr": "Risques liés aux mesures"
-	}
+          "de": "Maßnahmenassoziierte Risiken",
+          "en": "Procedure-specific risks",
+          "fr": "Risques liés aux mesures"
+        }
       }
     ]
   }
