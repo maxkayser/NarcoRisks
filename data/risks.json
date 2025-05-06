@@ -1604,9 +1604,9 @@
           },
           "esp_block": {
             "label": {
-              "de": "ESP-Block (Erector Spinae Plane)",
-              "en": "ESP block (Erector Spinae Plane)",
-              "fr": "Bloc ESP (Erector Spinae Plane)"
+              "de": "ESP-Block",
+              "en": "ESP block",
+              "fr": "Bloc ESP"
             },
 		"organ_injury": {
 		  "label": {
