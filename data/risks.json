@@ -1588,18 +1588,32 @@
               "en": "Peripheral venous catheter (PVC)",
               "fr": "Cathéter veineux périphérique"
             },
-            "hematoma_bleeding": {
+            "hematoma": {
               "label": {
-                "de": "Hämatom / Blutung",
-                "en": "Hematoma / bleeding",
-                "fr": "Hématome / saignement"
+                "de": "Hämatom",
+                "en": "Hematoma",
+                "fr": "Hématome"
               }
             },
-            "infection_phlebitis": {
+            "bleeding": {
               "label": {
-                "de": "Infektion / Venenentzündung",
-                "en": "Infection / phlebitis",
-                "fr": "Infection / phlébite"
+                "de": "Blutung",
+                "en": "bleeding",
+                "fr": "saignement"
+              }
+            },
+            "infection": {
+              "label": {
+                "de": "Infektion",
+                "en": "Infection",
+                "fr": "Infection"
+              }
+            },
+            "phlebitis": {
+              "label": {
+                "de": "Venenentzündung",
+                "en": "phlebitis",
+                "fr": "phlébite"
               }
             }
           },
@@ -1611,16 +1625,23 @@
             },
             "pneumothorax": {
               "label": {
-                "de": "Pneumothorax / Hämatothorax",
-                "en": "Pneumothorax / hemothorax",
-                "fr": "Pneumothorax / hémothorax"
+                "de": "Pneumothorax",
+                "en": "Pneumothorax",
+                "fr": "Pneumothorax"
+              }
+            },
+            "hemothorax": {
+              "label": {
+                "de": "Hämatothorax",
+                "en": "hemothorax",
+                "fr": "hémothorax"
               }
             },
             "arrhythmia": {
               "label": {
-                "de": "Herzrhythmusstörung bei Kathetereinlage",
-                "en": "Arrhythmia during catheter placement",
-                "fr": "Trouble du rythme à la pose du cathéter"
+                "de": "Herzrhythmusstörung",
+                "en": "Arrhythmia",
+                "fr": "Trouble du rythme"
               }
             },
             "malposition": {
