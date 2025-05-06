@@ -1891,48 +1891,76 @@
             }
           },
           "bladder_catheter": {
-            "uti": {
-              "label": {
-                "de": "Harnwegsinfekt",
-                "en": "Urinary tract infection",
-                "fr": "Infection urinaire"
-              }
-            },
-            "hematuria_bleeding": {
-              "label": {
-                "de": "Hämaturie / Blutung",
-                "en": "Hematuria / bleeding",
-                "fr": "Hématurie / saignement"
-              }
-            },
-            "urethral_injury_stricture": {
-              "label": {
-                "de": "Urethraverletzung / Striktur",
-                "en": "Urethral injury / stricture",
-                "fr": "Lésion urétrale / sténose"
-              }
-            },
-            "epididymitis_infertility": {
-              "label": {
-                "de": "Nebenhodenentzündung / Infertilität",
-                "en": "Epididymitis / infertility",
-                "fr": "Épididymite / infertilité"
-              }
-            },
-            "label": {
-              "de": "Blasenkatheter",
-              "en": "Bladder catheter",
-              "fr": "Cathéter vésical"
-            }
+		"uti": {
+			"label": {
+				"de": "Harnwegsinfekt",
+				"en": "Urinary tract infection",
+				"fr": "Infection urinaire"
+			}
+		},
+	    	"hematuria": {
+		  "label": {
+		    "de": "Hämaturie",
+		    "en": "Hematuria",
+		    "fr": "Hématurie"
+		  }
+		},
+		"bleeding": {
+		  "label": {
+		    "de": "Blutung",
+		    "en": "Bleeding",
+		    "fr": "Saignement"
+		  }
+		},
+		"urethral_injury": {
+		  "label": {
+		    "de": "Urethraverletzung",
+		    "en": "Urethral injury",
+		    "fr": "Lésion urétrale"
+		  }
+		},
+		"urethral_stricture": {
+		  "label": {
+		    "de": "Urethrastriktur",
+		    "en": "Urethral stricture",
+		    "fr": "Sténose urétrale"
+		  }
+		},
+		"epididymitis": {
+		  "label": {
+		    "de": "Nebenhodenentzündung",
+		    "en": "Epididymitis",
+		    "fr": "Épididymite"
+		  }
+		},
+		"infertility": {
+		  "label": {
+		    "de": "Infertilität",
+		    "en": "Infertility",
+		    "fr": "Infertilité"
+		  }
+		},
+	    "label": {
+	      "de": "Blasenkatheter",
+	      "en": "Bladder catheter",
+	      "fr": "Cathéter vésical"
+	    }
           },
           "intraosseous_access": {
-            "extravasation_compartment": {
-              "label": {
-                "de": "Extravasat / Kompartmentsyndrom",
-                "en": "Extravasation / compartment syndrome",
-                "fr": "Extravasation / syndrome des loges"
-              }
-            },
+		"extravasation": {
+		  "label": {
+		    "de": "Extravasat",
+		    "en": "Extravasation",
+		    "fr": "Extravasation"
+		  }
+		},
+		"compartment_syndrome": {
+		  "label": {
+		    "de": "Kompartmentsyndrom",
+		    "en": "Compartment syndrome",
+		    "fr": "Syndrome des loges"
+		  }
+		},
             "osteomyelitis": {
               "label": {
                 "de": "Osteomyelitis",
@@ -1940,13 +1968,20 @@
                 "fr": "Ostéomyélite"
               }
             },
-            "fracture_growth_plate": {
-              "label": {
-                "de": "Fraktur / Epiphysenverletzung",
-                "en": "Fracture / growth plate injury",
-                "fr": "Fracture / atteinte cartilage croissance"
-              }
-            },
+		"fracture": {
+		  "label": {
+		    "de": "Fraktur",
+		    "en": "Fracture",
+		    "fr": "Fracture"
+		  }
+		},
+		"growth_plate_injury": {
+		  "label": {
+		    "de": "Epiphysenverletzung",
+		    "en": "Growth plate injury",
+		    "fr": "Lésion du cartilage de croissance"
+		  }
+		},
             "fat_bone_marrow_air_embolism": {
               "label": {
                 "de": "Fett-/Knochenmark-/Luftembolie",
@@ -1994,13 +2029,20 @@
                 "fr": "Lésion pharyngo-laryngée"
               }
             },
-            "esophageal_perforation_mediastinitis": {
-              "label": {
-                "de": "Ösophagusperforation / Mediastinitis",
-                "en": "Esophageal perforation / mediastinitis",
-                "fr": "Perforation œsophagienne / médiastinite"
-              }
-            },
+	  	"esophageal_perforation": {
+		  "label": {
+		    "de": "Ösophagusperforation",
+		    "en": "Esophageal perforation",
+		    "fr": "Perforation œsophagienne"
+		  }
+		},
+		"mediastinitis": {
+		  "label": {
+		    "de": "Mediastinitis",
+		    "en": "Mediastinitis",
+		    "fr": "Médiastinite"
+		  }
+		},
             "label": {
               "de": "Transösophageale Echokardiographie (TEE)",
               "en": "Transesophageal Echocardiography (TEE)",
@@ -2206,13 +2248,20 @@
                 "fr": "Dépendance / tolérance"
               }
             },
-            "overdose_error": {
-              "label": {
-                "de": "Überdosierung / Bedienfehler",
-                "en": "Overdose / user error",
-                "fr": "Surdosage / erreur d’utilisation"
-              }
-            },
+	  	"overdose": {
+		  "label": {
+		    "de": "Überdosierung",
+		    "en": "Overdose",
+		    "fr": "Surdosage"
+		  }
+		},
+	  	"technical_error": {
+		  "label": {
+		    "de": "Technische Störung",
+		    "en": "Technical error",
+		    "fr": "Défaillance technique"
+		  }
+		},
             "label": {
               "de": "PCA i.v.",
               "en": "PCA IV",
@@ -2276,11 +2325,18 @@
                 "fr": "Hypotension"
               }
             },
-            "sedation_confusion": {
+            "sedation": {
               "label": {
-                "de": "Sedierung / Verwirrtheit",
-                "en": "Sedation / confusion",
-                "fr": "Sédation / confusion"
+                "de": "Sedierung",
+                "en": "Sedation",
+                "fr": "Sédation"
+              }
+            },
+            "confusion": {
+              "label": {
+                "de": "Verwirrtheit",
+                "en": "Confusion",
+                "fr": "Confusion"
               }
             },
             "label": {
@@ -2290,9 +2346,9 @@
             }
           },
           "label": {
-            "de": "Analgesie / Schmerztherapie",
-            "en": "Analgesia / pain therapy",
-            "fr": "Analgésie / traitement de la douleur"
+            "de": "Schmerztherapie",
+            "en": "Pain therapy",
+            "fr": "Traitement de la douleur"
           }
         },
         "label": {
