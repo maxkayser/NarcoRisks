@@ -1,4 +1,35 @@
 {
+  "language": "de",
+  "translations": {
+    "privacy_notice": {
+      "de": "Hinweis zum Datenschutz: Dieses Tool speichert keine Daten. Es findet keine Übertragung personenbezogener oder gesundheitsbezogener Informationen an Server statt. Geben Sie keine Namen oder sensiblen Daten ein.",
+      "en": "Privacy notice: This tool does not store any data. No personal or health-related information is transmitted to any server. Please do not enter names or sensitive data."
+    },
+    "legal_disclaimer": {
+      "de": "Dieses interaktive Tool dient ausschließlich der Vorbereitung auf das ärztliche Aufklärungsgespräch. Es ersetzt keinesfalls eine persönliche ärztliche Beratung. Die rechtliche Zulässigkeit und medizinische Verwendung können je nach Land oder Gesundheitssystem variieren. Keine Haftung für die Verwendung dieses Tools.",
+      "en": "This interactive tool is solely intended to support preparation for a medical consent discussion. It does not replace individual medical consultation. Legal and clinical applicability may vary by country. No liability is assumed for the use of this tool."
+    },
+    "headings": {
+      "title": {
+        "de": "Maßnahmenassozierte Risiken",
+        "en": "?? Risks"
+      },
+      "summary": {
+        "de": "Risiken Zusammenfassung",
+        "en": "Risks summary"
+      }
+    },
+    "buttons": {
+      "copy": {
+        "de": "In Zwischenablage kopieren",
+        "en": "Copy to clipboard"
+      },
+      "reset": {
+        "de": "Zurücksetzen",
+        "en": "Reset"
+      }
+    }
+  },
   "textblocks": {
     "intro": {
       "de": "Im Rahmen der präoperativen anästhesiologischen Visite wurden die folgenden Risiken unter Berücksichtigung des individuellen Kontextes ausführlich besprochen:",
