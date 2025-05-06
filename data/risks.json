@@ -1,35 +1,68 @@
 {
-  "language": "de",
-  "translations": {
-    "privacy_notice": {
-      "de": "Hinweis zum Datenschutz: Dieses Tool speichert keine Daten. Es findet keine Übertragung personenbezogener oder gesundheitsbezogener Informationen an Server statt. Geben Sie keine Namen oder sensiblen Daten ein.",
-      "en": "Privacy notice: This tool does not store any data. No personal or health-related information is transmitted to any server. Please do not enter names or sensitive data."
+"language": "de",
+"translations": {
+  "headings": {
+    "title": {
+      "de": "NarcoRisks",
+      "en": "NarcoRisks",
+      "fr": "NarcoRisks"
     },
-    "legal_disclaimer": {
-      "de": "Dieses interaktive Tool dient ausschließlich der Vorbereitung auf das ärztliche Aufklärungsgespräch. Es ersetzt keinesfalls eine persönliche ärztliche Beratung. Die rechtliche Zulässigkeit und medizinische Verwendung können je nach Land oder Gesundheitssystem variieren. Keine Haftung für die Verwendung dieses Tools.",
-      "en": "This interactive tool is solely intended to support preparation for a medical consent discussion. It does not replace individual medical consultation. Legal and clinical applicability may vary by country. No liability is assumed for the use of this tool."
+    "context_associated_risks": {
+      "de": "Kontextassoziierte Risiken",
+      "en": "Context-associated risks",
+      "fr": "Risques associés au contexte"
     },
-    "headings": {
-      "title": {
-        "de": "Maßnahmenassozierte Risiken",
-        "en": "?? Risks"
-      },
-      "summary": {
-        "de": "Risiken Zusammenfassung",
-        "en": "Risks summary"
-      }
+    "measures_associated_risks": {
+      "de": "Maßnahmenassoziierte Risiken",
+      "en": "Measure-associated risks",
+      "fr": "Risques associés aux mesures"
     },
-    "buttons": {
-      "copy": {
-        "de": "In Zwischenablage kopieren",
-        "en": "Copy to clipboard"
-      },
-      "reset": {
-        "de": "Zurücksetzen",
-        "en": "Reset"
-      }
+    "summary": {
+      "de": "Risiken-Zusammenfassung",
+      "en": "Risk summary",
+      "fr": "Résumé des risques"
     }
   },
+  "placeholders": {
+    "additional_text": {
+      "de": "Zusätzlicher Text...",
+      "en": "Additional text...",
+      "fr": "Texte supplémentaire..."
+    },
+    "loading_risks": {
+      "de": "Inhalt wird geladen...",
+      "en": "Loading content...",
+      "fr": "Chargement du contenu..."
+    }
+  },
+  "buttons": {
+    "copy": {
+      "de": "In Zwischenablage kopieren",
+      "en": "Copy to clipboard",
+      "fr": "Copier dans le presse-papiers"
+    },
+    "reset": {
+      "de": "Zurücksetzen",
+      "en": "Reset",
+      "fr": "Réinitialiser"
+    }
+  },
+  "language_selection": {
+    "de": "Sprache",
+    "en": "Language",
+    "fr": "Langue"
+  },
+  "privacy_notice": {
+    "de": "Hinweis zum Datenschutz: Dieses Tool speichert keine Daten. Es findet keine Übertragung personenbezogener oder gesundheitsbezogener Informationen an Server statt. Geben Sie keine Namen oder sensiblen Daten ein.",
+    "en": "Privacy notice: This tool does not store any data. No personal or health-related information is transmitted to any server. Please do not enter names or sensitive data.",
+    "fr": "Avis de confidentialité : Cet outil ne stocke aucune donnée. Aucune information personnelle ou de santé n'est transmise à un serveur. Veuillez ne pas saisir de noms ni de données sensibles."
+  },
+  "legal_disclaimer": {
+    "de": "Dieses interaktive Tool dient ausschließlich der Vorbereitung auf das ärztliche Aufklärungsgespräch. Es ersetzt keinesfalls eine persönliche ärztliche Beratung. Die rechtliche Zulässigkeit und medizinische Verwendung können je nach Land oder Gesundheitssystem variieren. Keine Haftung für die Verwendung dieses Tools.",
+    "en": "This interactive tool is solely intended to support preparation for a medical consent discussion. It does not replace individual medical consultation. Legal and clinical applicability may vary by country. No liability is assumed for the use of this tool.",
+    "fr": "Cet outil interactif est uniquement destiné à aider à la préparation de la discussion d'information médicale. Il ne remplace pas une consultation médicale individuelle. La validité légale et clinique peut varier selon le pays. Aucune responsabilité n'est assumée pour l'utilisation de cet outil."
+  }
+},
   "textblocks": {
     "intro": {
       "de": "Im Rahmen der präoperativen anästhesiologischen Visite wurden die folgenden Risiken unter Berücksichtigung des individuellen Kontextes ausführlich besprochen:",
