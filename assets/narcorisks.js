@@ -288,8 +288,8 @@ function generateSummary() {
  * Renders checkboxes for static textblock insertions (e.g. "online consent").
  */
 function renderTextblockToggles() {
-  //const container = document.getElementById('textblockToggles');
-  const container = document.getElementById('ContextRisksContainer');
+  const container = document.getElementById('textblockToggles');
+  //const container = document.getElementById('ContextRisksContainer');
   if (!container || !textblocks) return;
   const lang = document.getElementById('language').value || 'de';
   container.innerHTML = '';
