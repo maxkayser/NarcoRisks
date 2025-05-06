@@ -748,9 +748,9 @@
             },
             "oxygen_toxicity": {
               "label": {
-                "de": "Sauerstofftoxizität (bei hoher Flussrate / langer Anwendung)",
-                "en": "Oxygen toxicity (with high flow / prolonged use)",
-                "fr": "Toxicité de l’oxygène (flux élevé / usage prolongé)"
+                "de": "Sauerstofftoxizität",
+                "en": "Oxygen toxicity",
+                "fr": "Toxicité de l’oxygène"
               }
             }
           },
@@ -865,11 +865,18 @@
                 "fr": "Inconfort malgré l’anesthésie locale"
               }
             },
-            "cough_laryngospasm": {
+            "cough": {
               "label": {
-                "de": "Hustenreiz / Laryngospasmus",
-                "en": "Coughing / laryngospasm",
-                "fr": "Toux / laryngospasme"
+                "de": "Hustenreiz",
+                "en": "Coughing",
+                "fr": "Toux"
+              }
+            },
+            "laryngospasm": {
+              "label": {
+                "de": "Laryngospasmus",
+                "en": "laryngospasm",
+                "fr": "laryngospasme"
               }
             },
             "airway_trauma": {
@@ -888,9 +895,9 @@
             },
             "bleeding": {
               "label": {
-                "de": "Blutung bei Kanülenanlage",
-                "en": "Bleeding during cannula placement",
-                "fr": "Saignement lors de la mise en place de la canule"
+                "de": "Blutung",
+                "en": "Bleeding",
+                "fr": "Saignement"
               }
             },
             "misplacement": {
@@ -907,6 +914,13 @@
                 "fr": "Infection au site de la canule"
               }
             },
+            "pneumonia": {
+              "label": {
+                "de": "Pneumonie",
+                "en": "Pneumonia",
+                "fr": "Pneumonie"
+              }
+            },
             "obstruction": {
               "label": {
                 "de": "Verlegung / Sekretverstopfung",
@@ -921,16 +935,23 @@
                 "fr": "Dépendance prolongée à la canule"
               }
             },
+            "scarring": {
+              "label": {
+                "de": "Narbenbildung",
+                "en": "Scarring",
+                "fr": "cicatrisation"
+              }
+            },
             "tracheal_stenosis": {
               "label": {
-                "de": "Narbenbildung / Trachealverengung",
-                "en": "Scarring / tracheal stenosis",
-                "fr": "Sténose trachéale / cicatrisation"
+                "de": "Trachealverengung",
+                "en": "tracheal stenosis",
+                "fr": "cicatrisation"
               }
             },
             "subcutaneous_emphysema": {
               "label": {
-                "de": "Luftansammlung unter der Haut",
+                "de": "Subkutanes Emphysem",
                 "en": "Subcutaneous emphysema",
                 "fr": "Emphysème sous-cutané"
               }
@@ -951,7 +972,7 @@
               },
               "subcutaneous_emphysema": {
                 "label": {
-                  "de": "Luftansammlung unter der Haut (subkutanes Emphysem)",
+                  "de": "Subkutanes Emphysem",
                   "en": "Subcutaneous emphysema",
                   "fr": "Emphysème sous-cutané"
                 }
