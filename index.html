@@ -21,13 +21,7 @@
 		<option value="en">Englisch</option>
 		<option value="fr">Französisch</option>
 	</select>
-    </label>
-    <h2 data-i18n="headings.context_associated_risks"></h2>
-	  
-	<div id="staticTextblockCheckboxes" class="checkbox-grid" style="margin-top:1em;"></div>
-	<div id="textblockToggles"></div>
-	  
-    <!--
+    </label>    <!--
     <label>Sorgeberechtiger: <input type="text" id="guardianName" /></label>
     <label>Eingriff:
       <select id="procedure">
@@ -46,7 +40,11 @@
     </label>
     -->
   </section>
-
+  <section>
+    <h2 data-i18n="headings.context_associated_risks"></h2>
+	<div id="staticTextblockCheckboxes" class="checkbox-grid" style="margin-top:1em;"></div>
+	<div id="textblockToggles"></div>
+  </section>
   <section>
     <h2 id="risksTitle" data-i18n="headings.measures_associated_risks"></h2>
     <div id="risksOutput" data-i18n="placeholders.loading_risks"></div>
@@ -55,7 +53,6 @@
 	    <textarea id="additionalText" style="height: 40px;" data-i18n-attr="placeholder:placeholders.additional_text"></textarea>
     </label>
   </section>
-
   <section>
     <h2 data-i18n="headings.summary"></h2>
     <textarea id="summaryText" readonly></textarea>
