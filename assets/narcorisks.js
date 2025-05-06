@@ -113,6 +113,11 @@ function renderRiskGroups(defaults = {}) {
     entriesContainer.classList.add('hidden');
     output.appendChild(entriesContainer);
 
+    if (allRisks.indexOf(group) === 0) {
+      entriesContainer.classList.remove('hidden');
+      groupDiv.classList.add('expanded');
+    }
+
     groupDiv.addEventListener('click', () => {
       entriesContainer.classList.toggle('hidden');
       groupDiv.classList.toggle('expanded');
