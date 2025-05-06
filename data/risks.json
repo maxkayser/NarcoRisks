@@ -191,17 +191,16 @@
       "de": "Bei präoperativer Anämie bestehen erhöhte Risiken für Gewebehypoxie, Kreislaufinstabilität, kardiale Dekompensation sowie die Notwendigkeit einer Bluttransfusion.",
       "en": "Preoperative anemia increases the risks of tissue hypoxia, circulatory instability, cardiac decompensation, and the potential need for blood transfusion.",
       "fr": "En cas d’anémie préopératoire, les risques d’hypoxie tissulaire, d’instabilité circulatoire, de décompensation cardiaque et de besoin transfusionnel sont accrus."
-    },
-	  "renal_insufficiency": {
-		  "label": {
-		    "de": "Niereninsuffizienz",
-		    "en": "Renal insufficiency",
-		    "fr": "Insuffisance rénale"
-		  },
-	    "de": "Bei eingeschränkter Nierenfunktion bestehen zusätzliche Risiken: Flüssigkeitsüberlastung, Elektrolytstörungen (z. B. Hyperkaliämie), Azidose, fortschreitendes Organversagen sowie vorübergehende oder dauerhafte Dialysepflicht. Auswahl und Dosierung von Medikamenten können eingeschränkt sein und unterliegen einer individuellen Risiko-Nutzen-Abwägung.",
-	    "en": "Renal impairment entails additional risks: fluid overload, electrolyte disturbances (e.g., hyperkalemia), acidosis, progressive organ failure, and possible temporary or permanent dialysis. Medication selection and dosage may be limited and require individual risk-benefit assessment.",
-	    "fr": "Une insuffisance rénale entraîne des risques supplémentaires : surcharge hydrique, troubles électrolytiques (p. ex. hyperkaliémie), acidose, défaillance organique progressive et éventuellement dialyse temporaire ou permanente. Le choix et le dosage des médicaments peuvent être limités et nécessitent une évaluation individuelle du rapport bénéfice-risque."
-	  },
+    },"renal_insufficiency": {
+  "label": {
+    "de": "Niereninsuffizienz",
+    "en": "Renal insufficiency",
+    "fr": "Insuffisance rénale"
+  },
+  "de": "Bei eingeschränkter Nierenfunktion bestehen zusätzliche Risiken: Flüssigkeitsüberlastung, Elektrolytstörungen (z. B. Hyperkaliämie), Azidose, fortschreitendes Organversagen sowie vorübergehende oder dauerhafte Dialysepflicht. Auswahl und Dosierung von Medikamenten können eingeschränkt sein und unterliegen einer individuellen Risiko-Nutzen-Abwägung.",
+  "en": "Renal impairment entails additional risks: fluid overload, electrolyte disturbances (e.g., hyperkalemia), acidosis, progressive organ failure, and possible temporary or permanent dialysis. Medication selection and dosage may be limited and require individual risk-benefit assessment.",
+  "fr": "Une insuffisance rénale entraîne des risques supplémentaires : surcharge hydrique, troubles électrolytiques (p. ex. hyperkaliémie), acidose, défaillance organique progressive et éventuellement dialyse temporaire ou permanente. Le choix et le dosage des médicaments peuvent être limités et nécessitent une évaluation individuelle du rapport bénéfice-risque."
+},
     "polypharmacy": {
       "label": {
         "de": "Polypharmazie",
