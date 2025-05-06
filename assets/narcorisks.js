@@ -334,11 +334,6 @@ function renderStaticTextblockCheckboxes() {
 document.getElementById('language').addEventListener('change', () => {
   currentLang = document.getElementById('language').value;
   applyTranslations(currentLang); // 🟢 WICHTIG: hinzufügen!
-  //document.getElementById('risksTitle').textContent = {
-  //  de: 'Risiken',
-  //  en: 'Risks',
-  //  fr: 'Risques'
-  //}[currentLang] || 'Risiken';
   renderRiskGroups();
   renderTextblockToggles();
 });
@@ -358,6 +353,33 @@ function getText(path, lang = "de") {
   if (typeof node === "string") return node;
   return node[lang] || node["de"] || Object.values(node)[0];
 }
+
+function resetInputs() {
+  // Alle Checkboxen deaktivieren
+  document.querySelectorAll('input[type="checkbox"]').forEach(cb => {
+    cb.checked = false;
+  });
+
+  // Alle Textareas leeren (außer wenn readonly wie summary)
+  document.querySelectorAll('textarea:not([readonly])').forEach(ta => {
+    ta.value = '';
+  });
+
+  // Alle Selects außer Sprache zurücksetzen
+  document.querySelectorAll('select').forEach(select => {
+    if (select.id !== 'language') {
+      select.selectedIndex = 0;
+    }
+  });
+
+  // Neurendern der Zusammenfassung
+  generateSummary();
+}
+
+document.getElementById('resetButton').addEventListener('click', () => {
+  resetInputs();
+});
+
 
 function applyTranslations(lang) {
   console.log("[applyTranslations] Lang:", lang);
