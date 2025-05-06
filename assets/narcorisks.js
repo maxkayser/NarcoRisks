@@ -33,6 +33,10 @@ async function loadRisks() {
   try {
     const response = await fetch(risksUrl);
     const data = await response.json();
+
+    translations = data.translations || {};
+    applyTranslations(currentLang);
+    
     textblocks = data.textblocks || {};
     console.log('[loadRisks] Loaded textblocks:', textblocks);
 
@@ -337,4 +341,38 @@ document.getElementById('language').addEventListener('change', () => {
 });
 
 document.getElementById('additionalText').addEventListener('input', generateSummary);
+
+let currentLang = "de";  // Default
+let translations = {};   // wird aus data.translations geladen
+
+function getText(path, lang = "de") {
+  const parts = path.split(".");
+  let node = translations;
+  for (const p of parts) {
+    if (node && p in node) node = node[p];
+    else return "";
+  }
+  if (typeof node === "string") return node;
+  return node[lang] || node["de"] || Object.values(node)[0];
+}
+
+function applyTranslations(lang) {
+  // Textinhalt ersetzen
+  document.querySelectorAll("[data-i18n]").forEach(el => {
+    const key = el.getAttribute("data-i18n");
+    const text = getText(key, lang);
+    if (text) el.textContent = text;
+  });
+
+  // Attribute ersetzen (z. B. placeholder)
+  document.querySelectorAll("[data-i18n-attr]").forEach(el => {
+    const attrMap = el.getAttribute("data-i18n-attr").split(",");
+    attrMap.forEach(pair => {
+      const [attr, key] = pair.split(":");
+      const text = getText(key, lang);
+      if (text) el.setAttribute(attr, text);
+    });
+  });
+}
+
 window.onload = loadRisks;
