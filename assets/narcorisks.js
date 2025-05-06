@@ -334,11 +334,11 @@ function renderStaticTextblockCheckboxes() {
 document.getElementById('language').addEventListener('change', () => {
   currentLang = document.getElementById('language').value;
   applyTranslations(currentLang); // 🟢 WICHTIG: hinzufügen!
-  document.getElementById('risksTitle').textContent = {
-    de: 'Risiken',
-    en: 'Risks',
-    fr: 'Risques'
-  }[currentLang] || 'Risiken';
+  //document.getElementById('risksTitle').textContent = {
+  //  de: 'Risiken',
+  //  en: 'Risks',
+  //  fr: 'Risques'
+  //}[currentLang] || 'Risiken';
   renderRiskGroups();
   renderTextblockToggles();
 });
