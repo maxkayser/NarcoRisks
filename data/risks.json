@@ -1288,6 +1288,13 @@
                 "fr": "syndrome de la queue de cheval"
               }
             },
+			"liquor_leak": {
+			  "label": {
+			    "de": "Liquorleck",
+			    "en": "Cerebrospinal fluid leak",
+			    "fr": "Fuite de liquide céphalorachidien"
+			  }
+			},
             "label": {
               "de": "Spinalanästhesie",
               "en": "Spinal anesthesia",
@@ -1323,12 +1330,82 @@
                 "fr": "Bloc sympathique"
               }
             },
+			"liquor_leak": {
+			  "label": {
+			    "de": "Liquorleck",
+			    "en": "Cerebrospinal fluid leak",
+			    "fr": "Fuite de liquide céphalorachidien"
+			  }
+			},
             "label": {
               "de": "Periduralanästhesie",
               "en": "Epidural anesthesia",
               "fr": "Anesthésie péridurale"
             }
           },
+		"csa": {
+		  "label": {
+		    "de": "Kontinuierliche Spinalanästhesie (CSA)",
+		    "en": "Continuous spinal anesthesia (CSA)",
+		    "fr": "Anesthésie spinale continue (CSA)"
+		  },
+		  "post_dural_puncture_headache": {
+		    "label": {
+		      "de": "Postspinaler Kopfschmerz",
+		      "en": "Post-dural puncture headache",
+		      "fr": "Céphalée post-ponction durale"
+		    }
+		  },
+		  "spinal_epidural_hematoma": {
+		    "label": {
+		      "de": "Spinales / epidurales Hämatom",
+		      "en": "Spinal / epidural hematoma",
+		      "fr": "Hématome spinal / péridural"
+		    }
+		  },
+		  "spinal_epidural_abscess": {
+		    "label": {
+		      "de": "Spinaler / epiduraler Abszess",
+		      "en": "Spinal / epidural abscess",
+		      "fr": "Abcès spinal / péridural"
+		    }
+		  },
+		  "cauda_equina_syndrome": {
+		    "label": {
+		      "de": "Cauda-Equina-Syndrom",
+		      "en": "Cauda equina syndrome",
+		      "fr": "Syndrome de la queue de cheval"
+		    }
+		  },
+		  "catheter_migration": {
+		    "label": {
+		      "de": "Katheterverlagerung",
+		      "en": "Catheter migration",
+		      "fr": "Migration du cathéter"
+		    }
+		  },
+		  "catheter_fragment": {
+		    "label": {
+		      "de": "Katheterfragment",
+		      "en": "Catheter fragment",
+		      "fr": "Fragment de cathéter"
+		    }
+		  },
+		  "back_pain": {
+		    "label": {
+		      "de": "Rückenschmerzen",
+		      "en": "Back pain",
+		      "fr": "Douleurs dorsales"
+		    }
+		  },
+			"liquor_leak": {
+			  "label": {
+			    "de": "Liquorleck",
+			    "en": "Cerebrospinal fluid leak",
+			    "fr": "Fuite de liquide céphalorachidien"
+			  }
+			}
+	  },
           "regional_catheter": {
             "blockage_blockage": {
               "label": {
