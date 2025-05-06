@@ -367,16 +367,24 @@ function applyTranslations(lang) {
   document.querySelectorAll("[data-i18n]").forEach(el => {
     const key = el.getAttribute("data-i18n");
     const text = getText(key, lang);
-    if (text) el.textContent = text;
+    if (text) {
+      el.textContent = text;
+    } else {
+      console.warn(`[i18n] Kein Text gefunden für data-i18n="${key}" und Sprache "${lang}"`);
+    }
   });
 
-  // Attribute ersetzen (z. B. placeholder)
+  // Attribute ersetzen
   document.querySelectorAll("[data-i18n-attr]").forEach(el => {
     const attrMap = el.getAttribute("data-i18n-attr").split(",");
     attrMap.forEach(pair => {
       const [attr, key] = pair.split(":");
       const text = getText(key, lang);
-      if (text) el.setAttribute(attr, text);
+      if (text) {
+        el.setAttribute(attr, text);
+      } else {
+        console.warn(`[i18n] Kein Attribut-Text gefunden für ${attr}:${key} und Sprache "${lang}"`);
+      }
     });
   });
 }
