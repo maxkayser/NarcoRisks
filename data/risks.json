@@ -1209,6 +1209,13 @@
                 "fr": "Stimulation nerveuse"
               }
             },
+	  	"paresthesia": {
+		  "label": {
+		    "de": "Parästhesien",
+		    "en": "Paresthesia",
+		    "fr": "Paresthésies"
+		  }
+		},
             "sensorimotor_deficit": {
               "label": {
                 "de": "Sensomotorisches Defizit",
@@ -1419,20 +1426,13 @@
               "en": "Saphenous nerve block",
               "fr": "Bloc du nerf saphène"
             },
-            "nerve_injury": {
-              "label": {
-                "de": "Nervenschädigung (z. B. Parästhesien medial am Unterschenkel)",
-                "en": "Nerve injury (e.g. paresthesia on medial lower leg)",
-                "fr": "Lésion nerveuse (ex. paresthésie jambe médiale)"
-              }
-            },
-            "vascular_puncture": {
-              "label": {
-                "de": "Gefäßpunktion / Hämatom (bei Adduktorenkanal-Block)",
-                "en": "Vascular puncture / hematoma (e.g. in adductor canal approach)",
-                "fr": "Ponction vasculaire / hématome (ex. approche canal des adducteurs)"
-              }
-            }
+            "fall_risk": {
+		  "label": {
+		    "de": "Sturzrisiko",
+		    "en": "Risk of falling",
+		    "fr": "Risque de chute"
+		  }
+	    }
           },
           "brachial_plexus_block": {
             "label": {
@@ -1531,13 +1531,14 @@
               "en": "ESP block (Erector Spinae Plane)",
               "fr": "Bloc ESP (Erector Spinae Plane)"
             },
-            "organ_injury": {
-              "label": {
-                "de": "Organverletzung (selten, z. B. Pleurapunktion bei tiefer Nadellage)",
-                "en": "Organ injury (rare, e.g. pleural puncture with deep needle)",
-                "fr": "Lésion d’organe (rare, ex. ponction pleurale aiguille profonde)"
-              }
-            }
+		"organ_injury": {
+		  "label": {
+		    "de": "Organverletzung",
+		    "en": "Organ injury",
+		    "fr": "Lésion d’organe"
+		  }
+		}
+
           },
           "pecs_block": {
             "label": {
@@ -1615,25 +1616,46 @@
               "en": "Interscalene block (ISB)",
               "fr": "Bloc interscalénique (ISB)"
             },
-            "phrenic_nerve_palsy": {
-              "label": {
-                "de": "Phrenikusparese (häufig, ipsilaterale Zwerchfelllähmung)",
-                "en": "Phrenic nerve palsy (common, ipsilateral diaphragm paralysis)",
-                "fr": "Paralysie du nerf phrénique (fréquente, hémidiaphragme)"
-              }
-            },
-            "recurrent_laryngeal_nerve_block": {
-              "label": {
-                "de": "Blockade N. laryngeus recurrens → Heiserkeit / Stimmbandlähmung",
-                "en": "Recurrent laryngeal nerve block → hoarseness / vocal cord palsy",
-                "fr": "Bloc du nerf laryngé récurrent → enrouement / paralysie vocale"
-              }
-            },
+	  	"phrenic_nerve_palsy": {
+		  "label": {
+		    "de": "Phrenikusparese (ipsilaterale Zwerchfelllähmung)",
+		    "en": "Phrenic nerve palsy (ipsilateral diaphragm paralysis)",
+		    "fr": "Paralysie du nerf phrénique (paralysie diaphragmatique unilatérale)"
+		  }
+		},
+	  	"dyspnoe": {
+		  "label": {
+		    "de": "Dyspnoe",
+		    "en": "Dyspnea",
+		    "fr": "Dyspnée"
+		  }
+		},
+		"recurrent_laryngeal_nerve_injury": {
+		  "label": {
+		    "de": "Nervenverletzung N. laryngeus recurrens",
+		    "en": "Recurrent laryngeal nerve injury",
+		    "fr": "Lésion du nerf laryngé récurrent"
+		  }
+		},
+		"hoarseness": {
+		  "label": {
+		    "de": "Heiserkeit",
+		    "en": "Hoarseness",
+		    "fr": "Enrouement"
+		  }
+		},
+		"vocal_cord_weakness": {
+		  "label": {
+		    "de": "Stimmbandparese / -lähmung",
+		    "en": "Vocal cord paresis / palsy",
+		    "fr": "Parésie / paralysie des cordes vocales"
+		  }
+		},
             "horner_syndrome": {
               "label": {
-                "de": "Horner-Syndrom (Ptosis, Miosis, Anhidrose)",
-                "en": "Horner's syndrome (ptosis, miosis, anhidrosis)",
-                "fr": "Syndrome de Horner (ptosis, myosis, anhidrose)"
+                "de": "Horner-Syndrom",
+                "en": "Horner's syndrome",
+                "fr": "Syndrome de Horner"
               }
             }
           }
@@ -1904,13 +1926,20 @@
                 "fr": "Infection systémique / sepsis"
               }
             },
-            "vein_trauma": {
-              "label": {
-                "de": "Gefäßverletzung / Dissektion",
-                "en": "Vascular injury / dissection",
-                "fr": "Lésion vasculaire / dissection"
-              }
-            }
+	  	"vascular_injury": {
+		  "label": {
+		    "de": "Gefäßverletzung",
+		    "en": "Vascular injury",
+		    "fr": "Lésion vasculaire"
+		  }
+		},
+		"vessel_dissection": {
+		  "label": {
+		    "de": "Gefäßdissektion",
+		    "en": "Vessel dissection",
+		    "fr": "Dissection vasculaire"
+		  }
+		}
           },
           "arterial_catheter": {
             "label": {
