@@ -56,7 +56,6 @@ label, select, textarea {
 textarea {
   width: -webkit-fill-available;
   min-height: 300px;
-  min-height: 150px;
   padding: 1rem;
   font-size: 1rem;
   border: 1px solid #ccc;
