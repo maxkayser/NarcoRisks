@@ -1033,13 +1033,20 @@
                   "fr": "Mauvais positionnement"
                 }
               },
-              "infection": {
-                "label": {
-                  "de": "Infektion / Abszessbildung",
-                  "en": "Infection / abscess formation",
-                  "fr": "Infection / abcès"
-                }
-              },
+	  	"infection": {
+		  "label": {
+		    "de": "Infektion",
+		    "en": "Infection",
+		    "fr": "Infection"
+		  }
+		},
+		"abscess": {
+		  "label": {
+		    "de": "Abszessbildung",
+		    "en": "Abscess formation",
+		    "fr": "Formation d'abcès"
+		  }
+		},
               "tracheal_stenosis": {
                 "label": {
                   "de": "Trachealstenose",
