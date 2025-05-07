@@ -579,25 +579,46 @@
               "en": "General anesthesia",
               "fr": "Anesthésie générale"
             },
-            "airway_device": {
+            "tiva": {
               "label": {
-                "de": "Atemwegshilfen (zB Tubus, Larynxmaske)",
-                "en": "Airway devices (e.g. endotracheal tube / LMA)",
-                "fr": "Dispositifs de voie respiratoire (ex. tube / masque laryngé)"
+                "de": "Totale intravenöse Anästhesie (TIVA)",
+                "fr": "Anesthésie intraveineuse totale (TIVA)",
+                "en": "Total intravenous anesthesia (TIVA)"
+              }
+            },
+            "balanced_anesthesia": {
+              "label": {
+                "de": "Balancierte Anästhesie",
+                "fr": "Anesthésie équilibrée",
+                "en": "Balanced anesthesia"
+              }
+            },
+            "endotracheal_intubation": {
+              "label": {
+                "de": "Endotracheale Intubation",
+                "en": "Endotracheal intubation",
+                "fr": "Intubation endotrachéale"
+              }
+            },
+            "supraglottic_airway": {
+              "label": {
+                "de": "Supraglottische Atemwegshilfe (Larynxmaske / I-gel / Larynxtubus)",
+                "en": "Supraglottic airway device (LMA / I-gel / laryngeal tube)",
+                "fr": "Dispositif supraglottique (masque laryngé / I-gel /tube laryngé)"
               }
             },
             "oropharyngeal_airway": {
               "label": {
-                "de": "Zusätzliche Atemwegshilfen (z. B. Guedel, Wendl)",
-                "en": "Additional airway aids (e.g., Guedel, nasal airway)",
-                "fr": "Aides respiratoires supplémentaires (ex. Guedel, canule nasale)"
+                "de": "Guedel- oder Wendl-Tubus",
+                "en": "Guedel or nasal airway",
+                "fr": "Canule de Guedel ou nasale"
               }
             },
-            "difficult_airway": {
+            "unexpected_difficult_airway": {
               "label": {
-                "de": "Schwieriger Atemweg",
-                "en": "Difficult airway",
-                "fr": "Voies aériennes difficiles"
+                "de": "(Unerwartet) schwieriger Atemweg",
+                "en": "(Unexpected) difficult airway",
+                "fr": "Voies aériennes difficiles (imprévues)"
               }
             },
             "preoperative_fasting": {
