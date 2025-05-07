@@ -581,7 +581,7 @@
             },
             "preoperative_fasting": {
               "label": {
-                "de": "Nüchternheit (6 h Essen / 2 h klare Flüssigkeit)",
+                "de": "Nüchternheit (6 h Essen und Rauchen / 2 h klare Flüssigkeit)",
                 "en": "Fasting (6 h solids / 2 h clear liquids)",
                 "fr": "Jeûne (6 h aliments solides / 2 h liquides clairs)"
               }
