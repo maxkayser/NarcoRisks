@@ -432,6 +432,20 @@
                 "fr": "Choc circulatoire"
               }
             },
+            "heart_failure": {
+              "label": {
+                "de": "Herzversagen",
+                "en": "Heart failure",
+                "fr": "Insuffisance cardiaque"
+              }
+            },  
+            "respiratory_failure": {
+              "label": {
+                "de": "Lungenversagen",
+                "fr": "Insuffisance respiratoire",
+                "en": "Respiratory failure"
+              }
+            },
             "seizure": {
               "label": {
                 "de": "Krampfanfall",
@@ -500,6 +514,13 @@
                 "de": "Allergische Reaktion / Anaphylaxie",
                 "en": "Allergic reaction / anaphylaxis",
                 "fr": "Réaction allergique / anaphylaxie"
+              }
+            },
+            "itching": {
+              "label": {
+                "de": "Juckreiz",
+                "fr": "Démangeaisons",
+                "en": "Itching"
               }
             },
             "corneal_abrasion": {
@@ -1145,6 +1166,13 @@
                 "en": "CICV situation (cannot intubate, cannot ventilate)",
                 "fr": "Situation CICV (impossible d’intuber ou de ventiler)"
               }
+            },  
+            "suffocation": {
+              "label": {
+                "de": "Ersticken",
+                "fr": "Étouffement",
+                "en": "Suffocation"
+              }
             },
             "airway_trauma": {
               "label": {
@@ -1239,9 +1267,9 @@
             },
             "allergic_reaction": {
               "label": {
-                "de": "Allergische Reaktion",
-                "en": "Allergic reaction",
-                "fr": "Réaction allergique"
+                "de": "Allergische Reaktion / Anaphylaxie",
+                "en": "Allergic reaction / anaphylaxis",
+                "fr": "Réaction allergique / anaphylaxie"
               }
             },
             "hypotension": {
@@ -1270,6 +1298,20 @@
                 "de": "Parästhesien",
                 "en": "Paresthesia",
                 "fr": "Paresthésies"
+              }
+            },
+            "numbness": {
+              "label": {
+                "de": "Taubheitsgefühl",
+                "en": "Numbness",
+                "fr": "Engourdissement"
+              }
+            },
+            "paralysis": {
+              "label": {
+                "de": "Lähmungen",
+                "en": "Paralysis",
+                "fr": "Paralysies"
               }
             },
             "sensorimotor_deficit": {
@@ -2590,6 +2632,13 @@
                 "de": "Juckreiz",
                 "en": "Pruritus",
                 "fr": "Prurit"
+              }
+            },
+            "flush": {
+              "label": {
+                "de": "Flush",
+                "fr": "Flush cutanés",
+                "en": "Flush"
               }
             },
             "constipation": {
