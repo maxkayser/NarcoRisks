@@ -1210,11 +1210,11 @@
               }
             }
           },
-          "hno": {
+          "ent_related_risks": {
             "label": {
-              "de": "HNO",
-              "en": "HNO",
-              "fr": "HNO"
+              "de": "HNO-bezogene Anästhesierisiken",
+              "en": "ENT-related anesthesia risks",
+              "fr": "Risques anesthésiques liés à l’ORL"
             },
             "airway_fire": {
               "label": {
