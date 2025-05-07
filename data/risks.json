@@ -1322,13 +1322,41 @@
                 "fr": "syndrome de la queue de cheval"
               }
             },
-			"liquor_leak": {
-			  "label": {
-			    "de": "Liquorleck",
-			    "en": "Cerebrospinal fluid leak",
-			    "fr": "Fuite de liquide céphalorachidien"
-			  }
-			},
+		"liquor_leak": {
+		  "label": {
+		    "de": "Liquorleck",
+		    "en": "Cerebrospinal fluid leak",
+		    "fr": "Fuite de liquide céphalorachidien"
+		  }
+		},
+	  	"fall_risk": {
+		  "label": {
+		    "de": "Sturzrisiko",
+		    "en": "Fall risk",
+		    "fr": "Risque de chute"
+		  }
+		},
+	  	"bladder_bowel_dysfunction": {
+		  "label": {
+		    "de": "Blasen- / Mastdarmstörung",
+		    "en": "Bladder / bowel dysfunction",
+		    "fr": "Troubles vésicaux / rectaux"
+		  }
+		},
+		"urinary_retention": {
+		  "label": {
+		    "de": "Harnverhalt (Blasenkatheter ggf. erforderlich)",
+		    "en": "Urinary retention (bladder catheter may be required)",
+		    "fr": "Rétention urinaire (sonde vésicale parfois nécessaire)"
+		  }
+		},
+		"erectile_dysfunction": {
+		  "label": {
+		    "de": "Erektile Dysfunktion / Impotenz",
+		    "en": "Erectile dysfunction / impotence",
+		    "fr": "Dysfonction érectile / impuissance"
+		  }
+		},
             "label": {
               "de": "Spinalanästhesie",
               "en": "Spinal anesthesia",
@@ -1364,13 +1392,41 @@
                 "fr": "Bloc sympathique"
               }
             },
-			"liquor_leak": {
-			  "label": {
-			    "de": "Liquorleck",
-			    "en": "Cerebrospinal fluid leak",
-			    "fr": "Fuite de liquide céphalorachidien"
-			  }
-			},
+		"liquor_leak": {
+		  "label": {
+		    "de": "Liquorleck",
+		    "en": "Cerebrospinal fluid leak",
+		    "fr": "Fuite de liquide céphalorachidien"
+		  }
+		},
+	  	"fall_risk": {
+		  "label": {
+		    "de": "Sturzrisiko",
+		    "en": "Fall risk",
+		    "fr": "Risque de chute"
+		  }
+		},
+	  	"bladder_bowel_dysfunction": {
+		  "label": {
+		    "de": "Blasen- / Mastdarmstörung",
+		    "en": "Bladder / bowel dysfunction",
+		    "fr": "Troubles vésicaux / rectaux"
+		  }
+		},
+		"urinary_retention": {
+		  "label": {
+		    "de": "Harnverhalt (Blasenkatheter ggf. erforderlich)",
+		    "en": "Urinary retention (bladder catheter may be required)",
+		    "fr": "Rétention urinaire (sonde vésicale parfois nécessaire)"
+		  }
+		},
+		"erectile_dysfunction": {
+		  "label": {
+		    "de": "Erektile Dysfunktion / Impotenz",
+		    "en": "Erectile dysfunction / impotence",
+		    "fr": "Dysfonction érectile / impuissance"
+		  }
+		},
             "label": {
               "de": "Periduralanästhesie",
               "en": "Epidural anesthesia",
@@ -1432,13 +1488,41 @@
 		      "fr": "Douleurs dorsales"
 		    }
 		  },
-			"liquor_leak": {
-			  "label": {
-			    "de": "Liquorleck",
-			    "en": "Cerebrospinal fluid leak",
-			    "fr": "Fuite de liquide céphalorachidien"
-			  }
-			}
+		"liquor_leak": {
+		  "label": {
+		    "de": "Liquorleck",
+		    "en": "Cerebrospinal fluid leak",
+		    "fr": "Fuite de liquide céphalorachidien"
+		  }
+		},
+	  	"fall_risk": {
+		  "label": {
+		    "de": "Sturzrisiko",
+		    "en": "Fall risk",
+		    "fr": "Risque de chute"
+		  }
+		},
+	  	"bladder_bowel_dysfunction": {
+		  "label": {
+		    "de": "Blasen- / Mastdarmstörung",
+		    "en": "Bladder / bowel dysfunction",
+		    "fr": "Troubles vésicaux / rectaux"
+		  }
+		},
+		"urinary_retention": {
+		  "label": {
+		    "de": "Harnverhalt (Blasenkatheter ggf. erforderlich)",
+		    "en": "Urinary retention (bladder catheter may be required)",
+		    "fr": "Rétention urinaire (sonde vésicale parfois nécessaire)"
+		  }
+		},
+		"erectile_dysfunction": {
+		  "label": {
+		    "de": "Erektile Dysfunktion / Impotenz",
+		    "en": "Erectile dysfunction / impotence",
+		    "fr": "Dysfonction érectile / impuissance"
+		  }
+		}
 	  },
           "regional_catheter": {
             "blockage_blockage": {
