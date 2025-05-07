@@ -70,9 +70,9 @@
       "fr": "Dans le cadre de la visite préopératoire en anesthésie, les risques suivants ont été discutés en détail en tenant compte du contexte individuel :"
     },
     "closing": {
-      "de": "Auf Nachfrage wurde bestätigt, dass alle Inhalte verstanden wurden und keine offenen Fragen bestehen. Die Durchführung der Maßnahmen unter den genannten Risiken ohne weitere Bedenkzeit wird ausdrücklich gewünscht. Eine Kopie dieses Dokuments wurde angeboten.",
-      "en": "It was confirmed upon request that all information was understood and no further questions remain. The procedures under the listed risks are explicitly requested without the need for further reflection. A copy of this document was offered.",
-      "fr": "Il a été confirmé, sur demande, que toutes les informations ont été comprises et qu’aucune question n’est restée sans réponse. La réalisation des mesures avec les risques mentionnés est expressément souhaitée, sans délai de réflexion supplémentaire. Une copie de ce document a été proposée."
+      "de": "Auf Nachfrage wurde bestätigt, dass alle Inhalte der anästhesiologischen Aufklärung verstanden wurden und keine offenen Fragen bestehen. Die Durchführung der Maßnahmen unter Berücksichtigung der erläuterten Risiken wird ausdrücklich gewünscht. Eine Kopie der schriftlichen Aufklärungsunterlagen wurde angeboten.",
+      "en": "It was confirmed upon request that all aspects of the anesthesiology-related information were understood and no further questions remain. The procedures, with awareness of the explained risks, are expressly requested. A copy of the written consent materials was offered.",
+      "fr": "Il a été confirmé, sur demande, que tous les éléments de l'information anesthésique ont été compris et qu’aucune question ne restait en suspens. La réalisation des mesures, en connaissance des risques expliqués, est expressément souhaitée. Une copie des documents écrits d'information a été proposée."
     },
     "teleconsent": {
       "label": {
