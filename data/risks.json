@@ -1960,6 +1960,27 @@
                 "fr": "Ponction erronée"
               }
             },
+            "wrong_injection_site": {
+              "label": {
+                "de": "Fehlinjektion",
+                "en": "Injection error",
+                "fr": "Injection incorrecte"
+              }
+            },
+            "tissue_damage": {
+              "label": {
+                "de": "Gewebeschädigung",
+                "fr": "Lésion tissulaire",
+                "en": "Tissue damage"
+              }
+            },
+            "tissue_necrosis": {
+              "label": {
+                "de": "Gewebenekrose",
+                "fr": "Nécrose tissulaire",
+                "en": "Tissue necrosis"
+              }
+            },
             "thrombosis": {
               "label": {
                 "de": "Thrombose",
@@ -1979,13 +2000,6 @@
                 "de": "Gefäßverschluss",
                 "en": "Vessel occlusion",
                 "fr": "Occlusion vasculaire"
-              }
-            },
-            "wrong_injection_site": {
-              "label": {
-                "de": "Fehlinjektion",
-                "en": "Injection error",
-                "fr": "Injection incorrecte"
               }
             }
           },
