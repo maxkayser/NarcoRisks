@@ -595,9 +595,9 @@
             },
             "postop_monitoring": {
               "label": {
-                "de": "Postoperative Überwachung (Aufwachraum, PACU, ICU)",
-                "en": "Postoperative monitoring (recovery room, PACU, ICU)",
-                "fr": "Surveillance postopératoire (salle de réveil, USIP, réanimation)"
+                "de": "Postoperative Überwachung",
+                "en": "Postoperative monitoring",
+                "fr": "Surveillance postopératoire"
               }
             }
           },
