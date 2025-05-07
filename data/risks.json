@@ -571,6 +571,34 @@
                 "en": "Hypo-/hyperglycemia",
                 "fr": "Hypo-/hyperglycémie"
               }
+            },
+            "medication_side_effects": {
+              "label": {
+                "de": "Nebenwirkungen und Risiken verabreichter Medikamente",
+                "en": "Side effects and risks of administered drugs",
+                "fr": "Effets indésirables et risques des médicaments administrés"
+              }
+            },
+            "medication_interactions": {
+              "label": {
+                "de": "Medikamentenwechselwirkungen",
+                "en": "Drug interactions",
+                "fr": "Interactions médicamenteuses"
+              }
+            },
+            "off_label_use": {
+              "label": {
+                "de": "Off-Label Medikamentengabe",
+                "en": "Off-label use",
+                "fr": "Utilisation hors indication autorisée"
+              }
+            },
+            "postop_monitoring": {
+              "label": {
+                "de": "Postoperative Überwachung (Aufwachraum, PACU, ICU)",
+                "en": "Postoperative monitoring (recovery room, PACU, ICU)",
+                "fr": "Surveillance postopératoire (salle de réveil, USIP, réanimation)"
+              }
             }
           },
           "full": {
