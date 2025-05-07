@@ -244,6 +244,16 @@
       "en": "Due to multiple pre-existing conditions, there is an increased risk of unexpected complications, complex clinical courses, and prolonged postoperative recovery.",
       "fr": "En raison de pathologies multiples, le risque de complications inattendues, de parcours cliniques complexes et de convalescence prolongée est accru."
     },
+    "pregnancy": {
+      "label": {
+        "de": "Schwangerschaft",
+        "en": "Pregnancy",
+        "fr": "Grossesse"
+      },
+      "de": "Die Auswirkungen der Anästhesie und Medikation auf Mutter und ungeborenes Kind wurden ausführlich besprochen. Es bestehen erhöhte Risiken für fetale Hypoxie, Frühgeburt oder Fehlgeburt. Auch das Risiko für mütterliche Komplikationen wie schwieriger Atemweg, Aspiration oder Kreislaufinstabilität ist erhöht. Die Auswahl von Verfahren und Medikamenten erfolgte unter besonderer Risiko-Nutzen-Abwägung.",
+      "en": "The effects of anesthesia and medication on both mother and unborn child were thoroughly discussed. There is an increased risk of fetal hypoxia, preterm birth, or miscarriage. Maternal risks such as difficult airway, aspiration, or circulatory instability are also elevated. The choice of procedure and drugs was made with careful risk-benefit consideration.",
+      "fr": "Les effets de l’anesthésie et des médicaments sur la mère et l’enfant à naître ont été discutés en détail. Les risques de souffrance fœtale, d’accouchement prématuré ou de fausse couche sont accrus. Les risques maternels tels que des voies aériennes difficiles, une aspiration ou une instabilité circulatoire sont également augmentés. Le choix des procédures et des médicaments a été fait après une évaluation rigoureuse du rapport bénéfice-risque."
+    },
     "osas": {
       "label": {
         "de": "Schlafapnoe",
