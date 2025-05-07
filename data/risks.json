@@ -451,11 +451,11 @@
                 "fr": "Nausées / vomissements post-op."
               }
             },
-            "postoperative_delirium_confusion": {
+            "postoperative_delirium": {
               "label": {
-                "de": "Postoperatives Delir / Verwirrtheit",
-                "en": "Post-operative delirium / confusion",
-                "fr": "Délire postopératoire / confusion"
+                "de": "Postoperatives Delir",
+                "en": "Post-operative delirium",
+                "fr": "Délire postopératoire"
               }
             },
             "allergic_reaction_anaphylaxis": {
