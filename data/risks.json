@@ -395,13 +395,20 @@
                 "fr": "arythmies"
               }
             },
-            "cardiac_decompensation": {
-              "label": {
-                "de": "Kardiale Dekompensation / Schock",
-                "en": "Cardiac decompensation / shock",
-                "fr": "Décompensation cardiaque / choc"
-              }
-            },
+	  	"cardiac_decompensation": {
+		  "label": {
+		    "de": "Kardiale Dekompensation",
+		    "en": "Cardiac decompensation",
+		    "fr": "Décompensation cardiaque"
+		  }
+		},
+		"shock": {
+		  "label": {
+		    "de": "Schock",
+		    "en": "Circulatory shock",
+		    "fr": "Choc circulatoire"
+		  }
+		},
 	  	"seizure": {
 		  "label": {
 		    "de": "Krampfanfall",
@@ -439,9 +446,9 @@
             },
             "stroke_tia": {
               "label": {
-                "de": "Schlaganfall / transitorische ischämische Attacke (TIA)",
-                "en": "Stroke / transient ischemic attack (TIA)",
-                "fr": "AVC / attaque ischémique transitoire (AIT)"
+                "de": "Schlaganfall / transitorische ischämische Attacke",
+                "en": "Stroke / transient ischemic attack",
+                "fr": "AVC / attaque ischémique transitoire"
               }
             },
             "malignant_hyperthermia": {
