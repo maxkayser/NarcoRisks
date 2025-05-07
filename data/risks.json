@@ -265,11 +265,11 @@
       "label": {
         "de": "Diabetes mellitus",
         "en": "Diabetes mellitus",
-        "fr": "Diabète sucré"
+        "fr": "Diabète"
       },
       "de": "Bei Diabetes mellitus bestehen erhöhte Risiken für Hypo-/Hyperglykämien, Infektionen, Wundheilungsstörungen und perioperative Stoffwechselentgleisungen.",
       "en": "Diabetes mellitus increases the risks of hypo-/hyperglycemia, infection, impaired wound healing, and perioperative metabolic imbalance.",
-      "fr": "Le diabète sucré augmente le risque d’hypo-/hyperglycémie, d’infections, de troubles de cicatrisation et de déséquilibre métabolique en périopératoire."
+      "fr": "Le diabète augmente le risque d’hypo-/hyperglycémie, d’infections, de troubles de cicatrisation et de déséquilibre métabolique en périopératoire."
     },
     "immunosuppression": {
       "label": {
@@ -367,13 +367,13 @@
               "en": "Common risks",
               "fr": "Risques courants"
             },
-            "hypoxemia": {
-              "label": {
-                "de": "Hypoxie / Sauerstoffmangel",
-                "en": "Hypoxemia",
-                "fr": "Hypoxémie"
-              }
-            },
+	  	"hypoxia": {
+		  "label": {
+		    "de": "Hypoxie",
+		    "en": "Hypoxia",
+		    "fr": "Hypoxie"
+		  }
+		},
             "hypercapnia": {
               "label": {
                 "de": "Hyperkapnie",
@@ -402,6 +402,13 @@
                 "fr": "Décompensation cardiaque / choc"
               }
             },
+	  	"seizure": {
+		  "label": {
+		    "de": "Krampfanfall",
+		    "en": "Seizure",
+		    "fr": "Crise convulsive"
+		  }
+		},
             "organ_failure": {
               "label": {
                 "de": "Organversagen",
@@ -447,7 +454,7 @@
             "postoperative_nausea_vomiting": {
               "label": {
                 "de": "Übelkeit / Erbrechen (PONV)",
-                "en": "Post-operative nausea and vomiting",
+                "en": "Post-operative nausea and vomiting (PONV)",
                 "fr": "Nausées / vomissements post-op."
               }
             },
@@ -472,20 +479,27 @@
                 "fr": "Abrasions cornéennes"
               }
             },
-            "positioning_injury": {
+            "positioning_injuries": {
               "label": {
-                "de": "Lagerungsschaden (Nerven, Druckstellen)",
-                "en": "Positioning injury (nerves, pressure)",
+                "de": "Lagerungsschäden",
+                "en": "Positioning injuries",
                 "fr": "Lésions liées au décubitus"
               }
             },
-            "hypothermia_shivering": {
-              "label": {
-                "de": "Hypothermie / Schüttelfrost",
-                "en": "Hypothermia / shivering",
-                "fr": "Hypothermie / frissons"
-              }
-            },
+            "hypothermia": {
+		  "label": {
+		    "de": "Hypothermie",
+		    "en": "Hypothermia",
+		    "fr": "Hypothermie"
+		  }
+		},
+		"shivering": {
+		  "label": {
+		    "de": "Schüttelfrost",
+		    "en": "Shivering",
+		    "fr": "Frissons"
+		  }
+		},
             "urinary_retention": {
               "label": {
                 "de": "Harnverhalt",
