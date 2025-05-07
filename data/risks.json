@@ -1209,6 +1209,34 @@
                 "fr": "Nécessité d’un accès d’urgence"
               }
             }
+          },
+          "hno": {
+            "label": {
+              "de": "HNO",
+              "en": "HNO",
+              "fr": "HNO"
+            },
+            "airway_fire": {
+              "label": {
+                "de": "Atemwegsbrand",
+                "en": "Airway fire",
+                "fr": "Incendie des voies respiratoires"
+              }
+            },
+            "inhalation_trauma": {
+              "label": {
+                "de": "Inhalationstrauma",
+                "en": "Inhalation trauma",
+                "fr": "Traumatisme par inhalation"
+              }
+            },
+            "blood_aspiration_secondary": {
+              "label": {
+                "de": "Blutaspiration",
+                "en": "Blood aspiration",
+                "fr": "Aspiration de sang"
+              }
+            }
           }
         },
         "regional_anesthesia": {
