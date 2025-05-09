@@ -58,6 +58,11 @@ async function loadRisks() {
 
     const defaults = data.defaults || {};
     renderRiskGroups(defaults);
+    
+    if (rawData.procedures) {
+      renderProcedureSelectors(rawData.procedures);
+    }
+
   } catch (error) {
     document.getElementById('risksOutput').innerText = 'Error loading risk data.';
     console.error(error);
@@ -230,6 +235,59 @@ function renderRiskGroups(defaults = {}) {
 
   generateSummary();
 }
+
+function renderProcedureSelectors(procedures) {
+  const lang = currentLang;
+  const deptSelect = document.getElementById("departmentSelect");
+  const procSelect = document.getElementById("procedureSelect");
+
+  // Reset
+  deptSelect.innerHTML = '<option value="">– bitte wählen –</option>';
+  procSelect.innerHTML = '<option value="">– bitte wählen –</option>';
+  procSelect.disabled = true;
+
+  // Fachbereiche befüllen
+  Object.entries(procedures).forEach(([deptKey, deptVal]) => {
+    const opt = document.createElement("option");
+    opt.value = deptKey;
+    opt.textContent = deptVal.label?.[lang] || deptVal.label?.["en"] || deptKey;
+    deptSelect.appendChild(opt);
+  });
+
+  deptSelect.addEventListener("change", () => {
+    const selectedDept = procedures[deptSelect.value];
+    procSelect.innerHTML = '<option value="">– bitte wählen –</option>';
+    procSelect.disabled = !selectedDept;
+
+    if (selectedDept) {
+      Object.entries(selectedDept).forEach(([procKey, procVal]) => {
+        if (procKey === "label") return;
+        const opt = document.createElement("option");
+        opt.value = `${deptSelect.value}.${procKey}`;
+        opt.textContent = procVal.label?.[lang] || procVal.label?.["en"] || procKey;
+        procSelect.appendChild(opt);
+      });
+    }
+  });
+
+  procSelect.addEventListener("change", () => {
+    // Zurücksetzen
+    resetInputs();
+
+    const [deptKey, procKey] = procSelect.value.split(".");
+    const selected = procedures?.[deptKey]?.[procKey];
+    if (!selected || !selected.risks) return;
+
+    // Risiken aktivieren
+    selected.risks.forEach(path => {
+      const checkbox = document.querySelector(`input[value="${path}"]`);
+      if (checkbox) checkbox.checked = true;
+    });
+
+    generateSummary();
+  });
+}
+
 
 /**
  * Generates the risk summary output in structured form.
