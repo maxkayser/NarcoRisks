@@ -7,16 +7,6 @@
         "en": "NarcoRisks",
         "fr": "NarcoRisks"
       },
-      "department": {
-        "de": "Fachbereich:",
-        "en": "Department:",
-        "fr": "Spécialité :"
-      },
-      "procedure": {
-        "de": "Prozedur:",
-        "en": "Procedure:",
-        "fr": "Procédure :"
-      },
       "context_associated_risks": {
         "de": "Kontextassoziierte Risiken",
         "en": "Context-associated risks",
@@ -61,6 +51,16 @@
       "de": "Sprache",
       "en": "Language",
       "fr": "Langue"
+    },
+    "department": {
+      "de": "Fachbereich:",
+      "en": "Department:",
+      "fr": "Spécialité:"
+    },
+    "procedure": {
+      "de": "Prozedur:",
+      "en": "Procedure:",
+      "fr": "Procédure:"
     },
     "privacy_notice": {
       "de": "Hinweis zum Datenschutz: Dieses Tool speichert keine Daten. Es findet keine Übertragung personenbezogener oder gesundheitsbezogener Informationen an Server statt. Geben Sie keine Namen oder sensiblen Daten ein.",
