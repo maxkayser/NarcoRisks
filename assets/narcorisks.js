@@ -59,8 +59,8 @@ async function loadRisks() {
     const defaults = data.defaults || {};
     renderRiskGroups(defaults);
     
-    if (rawData.procedures) {
-      renderProcedureSelectors(rawData.procedures);
+    if (data.procedures) {
+      renderProcedureSelectors(data.procedures);
     }
 
   } catch (error) {
