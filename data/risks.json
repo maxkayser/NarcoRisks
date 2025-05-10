@@ -7,6 +7,16 @@
         "en": "NarcoRisks",
         "fr": "NarcoRisks"
       },
+      "department": {
+        "de": "Fachbereich:",
+        "en": "Department:",
+        "fr": "Spécialité :"
+      },
+      "procedure": {
+        "de": "Prozedur:",
+        "en": "Procedure:",
+        "fr": "Procédure :"
+      },
       "context_associated_risks": {
         "de": "Kontextassoziierte Risiken",
         "en": "Context-associated risks",
