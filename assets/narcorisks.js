@@ -271,14 +271,17 @@ function renderProcedureSelectors(procedures) {
   });
 
   procSelect.addEventListener("change", () => {
+    alert("selected procedure");
     // Zurücksetzen
-    resetInputs();
+    //resetInputs();
+    
 
     const [deptKey, procKey] = procSelect.value.split(".");
     const selected = procedures?.[deptKey]?.[procKey];
     if (!selected || !selected.risks) return;
 
     // Risiken aktivieren
+    alert("activate risks");
     selected.risks.forEach(path => {
       const checkbox = document.querySelector(`input[value="${path}"]`);
       if (checkbox) checkbox.checked = true;
