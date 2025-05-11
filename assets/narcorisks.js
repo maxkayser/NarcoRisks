@@ -601,63 +601,6 @@ function generateSummary() {
 }
 
 
-
-
-function OLD__generateSummary() {
-  const lang = document.getElementById('language').value || 'de';
-  const selectedKeys = Array.from(document.querySelectorAll('input[name="riskSubgroups"]:checked')).map(el => el.value);
-  const grouped = {};
-
-  for (const path of selectedKeys) {
-    const keys = path.split('.');
-    const group = allRisks.find(g => g.key === keys[0]);
-    if (!group) continue;
-    const groupLabel = group.label?.[lang] || keys[0];
-    let subgroupLabel = '';
-    let riskLabel = '';
-
-    if (keys.length === 2) {
-      const entry = group.entries.find(([k]) => k === keys[1]);
-      subgroupLabel = entry?.[1]?.label?.[lang] || keys[1];
-      riskLabel = subgroupLabel;
-    } else if (keys.length === 3) {
-      const entry = group.entries.find(([k]) => k === keys[1]);
-      subgroupLabel = entry?.[1]?.label?.[lang] || keys[1];
-      const child = entry?.[1]?.[keys[2]];
-      riskLabel = child?.label?.[lang] || keys[2];
-    }
-
-    grouped[groupLabel] ??= {};
-    grouped[groupLabel][subgroupLabel] ??= [];
-    grouped[groupLabel][subgroupLabel].push(riskLabel);
-  }
-
-  const intro = textblocks?.intro?.[lang] || '';
-  const closing = textblocks?.closing?.[lang] || '';
-  const additional = document.getElementById('additionalText')?.value || '';
-  const selectedTextblocks = Array.from(document.querySelectorAll('input[name="textblock"]:checked')).map(cb => cb.value);
-
-  let result = intro ? intro + '\n\n' : '';
-
-  for (const [groupLabel, subgroups] of Object.entries(grouped)) {
-    result += `${groupLabel}\n`;
-    for (const [subLabel, risks] of Object.entries(subgroups)) {
-      result += `${subLabel}: ${risks.join(', ')}\n`;
-    }
-    result += '\n';
-  }
-
-  for (const key of selectedTextblocks) {
-    const text = textblocks?.[key]?.[lang];
-    if (text) result += `\n${text}\n`;
-  }
-
-  if (additional.trim()) result += `\n${additional}\n`;
-  if (closing.trim()) result += `\n${closing}`;
-
-  document.getElementById('summaryText').value = result.trim();
-}
-
 /**
  * Renders checkboxes for static textblock insertions (e.g. "online consent").
  */
@@ -709,28 +652,6 @@ function renderTextblockToggles() {
   });
 }
 
-function OLD___renderTextblockToggles() {
-  const container = document.getElementById('textblockToggles');
-  //const container = document.getElementById('ContextRisksContainer');
-  if (!container || !textblocks) return;
-  const lang = document.getElementById('language').value || 'de';
-  container.innerHTML = '';
-  Object.keys(textblocks).forEach(key => {
-    if (key === 'intro' || key === 'closing') return;
-    const label = textblocks[key]?.label?.[lang] || key;
-    const wrapper = document.createElement('label');
-    wrapper.style.display = 'block';
-    const checkbox = document.createElement('input');
-    checkbox.type = 'checkbox';
-    checkbox.name = 'textblock';
-    checkbox.value = key;
-    checkbox.addEventListener('change', generateSummary);
-    wrapper.appendChild(checkbox);
-    wrapper.appendChild(document.createTextNode(' ' + label));
-    container.appendChild(wrapper);
-  });
-}
-
 /**
  * Renders static checkboxes for predefined text blocks (non-dynamic).
  */
@@ -774,25 +695,6 @@ function renderStaticTextblockCheckboxes() {
         groupContainer.appendChild(wrapper);
       });
     }
-  });
-}
-
-function OLD__renderStaticTextblockCheckboxes() {
-  const lang = document.getElementById('language').value || 'de';
-  const container = document.getElementById('staticTextblockCheckboxes');
-  container.innerHTML = '';
-  const blocks = [];
-  blocks.forEach(item => {
-    const wrapper = document.createElement('label');
-    wrapper.style.display = 'block';
-    const checkbox = document.createElement('input');
-    checkbox.type = 'checkbox';
-    checkbox.name = 'textblock';
-    checkbox.value = item.key;
-    checkbox.addEventListener('change', generateSummary);
-    wrapper.appendChild(checkbox);
-    wrapper.appendChild(document.createTextNode(' ' + (item.label[lang] || item.key)));
-    container.appendChild(wrapper);
   });
 }
 
