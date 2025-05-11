@@ -4857,7 +4857,7 @@
           },
           "associated_risks": [
             "contextual_risks.emergency_surgery",
-            "contextual_risks.time_limited_consent",
+            "contextual_risks.time_pressure_consent",
             "contextual_risks.aspiration_risk",
             "general_anesthesia.common",
             "general_anesthesia.full",
@@ -4878,7 +4878,7 @@
           },
           "associated_risks": [
             "contextual_risks.emergency_surgery",
-            "contextual_risks.time_limited_consent",
+            "contextual_risks.time_pressure_consent",
             "contextual_risks.aspiration_risk",
             "general_anesthesia.common",
             "general_anesthesia.full",
@@ -4899,7 +4899,7 @@
           },
           "associated_risks": [
             "contextual_risks.emergency_surgery",
-            "contextual_risks.time_limited_consent",
+            "contextual_risks.time_pressure_consent",
             "general_anesthesia.common",
             "general_anesthesia.full",
             "general_anesthesia.rsi",
@@ -4918,7 +4918,7 @@
           },
           "associated_risks": [
             "contextual_risks.emergency_surgery",
-            "contextual_risks.time_limited_consent",
+            "contextual_risks.time_pressure_consent",
             "general_anesthesia.common",
             "general_anesthesia.full",
             "general_anesthesia.rsi",
@@ -4934,7 +4934,6 @@
           },
           "associated_risks": [
             "contextual_risks.emergency_surgery",
-            "contextual_risks.time_limited_consent",
             "general_anesthesia.common",
             "general_anesthesia.full",
             "general_anesthesia.rsi",
