@@ -499,7 +499,10 @@ function getRiskText(riskKey, lang = 'de') {
 function generateSummary() {
   const lang = document.getElementById("language").value || 'de';
   const selectedTextblocks = Array.from(document.querySelectorAll('input[name="textblock"]:checked')).map(cb => cb.value);
-  const selectedRisks = Array.from(document.querySelectorAll('input[name="riskSubgroups"]:checked')).map(cb => cb.value);
+  const selectedRisks = Array.from(document.querySelectorAll('input[type="checkbox"]:checked'))
+  .map(cb => cb.value)
+  .filter(val => val && val.startsWith('risks.'));
+
 
   let result = "";
 
