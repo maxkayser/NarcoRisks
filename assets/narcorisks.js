@@ -326,9 +326,15 @@ function renderProcedureSelectors() {
 
 
 function findRiskCheckbox(path) {
-  let exact = document.querySelector(`input[value="${path}"]`);
-  if (exact) return exact;
+  // Zuerst: exakte Match bei Subgroup-Checkboxen
+  const subgroup = document.querySelector(`.subgroup-toggle input[type="checkbox"][value="${path}"]`);
+  if (subgroup) return subgroup;
 
+  // Dann: reguläre riskSubgroup-Blätter
+  const input = document.querySelector(`input[name="riskSubgroups"][value="${path}"]`);
+  if (input) return input;
+
+  // Fallback: versuchen, Teilpfad zu matchen
   const all = Array.from(document.querySelectorAll('input[name="riskSubgroups"]'));
   return all.find(cb => cb.value.endsWith(path) || cb.value.includes(path));
 }
