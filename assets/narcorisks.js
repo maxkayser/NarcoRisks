@@ -495,67 +495,111 @@ function getRiskText(riskKey, lang = 'de') {
   return label ? `– ${label}` : '';
 }
 
+
+
+
 function generateSummary() {
-    const summaryParts = {
-        beginning: [],
-        before_measures: [],
-        after_measures: [],
-        end: []
-    };
+  const lang = currentLang || 'de';
 
-    // Collect selected textblocks and sort them into the correct position
-    const selectedTextblocks = [];
+  const summaryParts = {
+    beginning: [],
+    before_measures: [],
+    after_measures: [],
+    end: []
+  };
 
-    Object.entries(textblocks).forEach(([groupKey, group]) => {
-        Object.entries(group.items).forEach(([itemKey, item]) => {
-            const checkbox = document.querySelector(`input[name="textblock"][value="${itemKey}"]`);
-            if (checkbox && checkbox.checked) {
-                selectedTextblocks.push({
-                    key: itemKey,
-                    text: item.text[currentLang],
-                    position: item.position || "before_measures"
-                });
-            }
-        });
-    });
+  // Mapping der JSON-Positionen zu internen Abschnitten
+  const positionMap = {
+    "intro": "beginning",
+    "before": "before_measures",
+    "after": "after_measures",
+    "closing": "end"
+  };
 
-    selectedTextblocks.forEach(tb => {
-        if (summaryParts[tb.position]) {
-            summaryParts[tb.position].push(tb.text);
-        } else {
-            // fallback for unknown positions
-            summaryParts.before_measures.push(tb.text);
+  // TEXTBLOCKS sammeln nach Position
+  Object.entries(textblocks).forEach(([groupKey, group]) => {
+    Object.entries(group.items || {}).forEach(([itemKey, item]) => {
+      const checkbox = document.querySelector(
+        `input[name="textblock"][value="${groupKey}.${itemKey}"]`
+      );
+      if (checkbox?.checked) {
+        const text = item.text?.[lang];
+        const mapped = positionMap[item.position] || "before_measures";
+        if (text && summaryParts[mapped]) {
+          summaryParts[mapped].push(text);
         }
+      }
     });
+  });
 
-    // Collect selected measure-associated risk texts
-    const selectedRisks = [];
+  // RISIKEN gruppieren
+  const grouped = {};
 
-    document.querySelectorAll('input[name="riskSubgroups"]:checked').forEach(input => {
-        const riskPath = input.value.split('.');
-        //let node = risks;
-        let node = risksData.risks.children[0];
+  document.querySelectorAll('input[name="riskSubgroups"]:checked').forEach(input => {
+    const pathParts = input.value.split(".");
+    if (pathParts.length < 2) return;
 
-        for (const part of riskPath) {
-            node = node[part];
-            if (!node) break;
+    const [group, subgroup, leaf] = pathParts;
+    let node = risksData.risks.children[0];
+
+    for (const part of pathParts) {
+      if (!node?.[part]) {
+        node = null;
+        break;
+      }
+      node = node[part];
+    }
+
+    const label = node?.label?.[lang];
+    if (!label) return;
+
+    if (!grouped[group]) grouped[group] = {};
+    const sub = subgroup || "default";
+    if (!grouped[group][sub]) grouped[group][sub] = [];
+    grouped[group][sub].push(label);
+  });
+
+  // RISIKEN-Abschnitt formatieren
+  const formattedRiskText = [];
+
+  for (const [groupKey, subgroups] of Object.entries(grouped)) {
+    const groupLabel = allRisks.find(g => g.key === groupKey)?.label?.[lang] || groupKey;
+    formattedRiskText.push(groupLabel);
+
+    for (const [subKey, labels] of Object.entries(subgroups)) {
+      let subgroupLabel = subKey;
+      if (subKey === "common") {
+        subgroupLabel = translations?.[lang]?.headings?.general_risks || "Allgemeine Risiken";
+      } else {
+        const subgroup = risksData.risks.children[0]?.[groupKey]?.[subKey];
+        if (subgroup?.label?.[lang]) {
+          subgroupLabel = subgroup.label[lang];
         }
-        if (node && node.text && node.text[currentLang]) {
-            selectedRisks.push(node.text[currentLang]);
-        }
-    });
+      }
+      formattedRiskText.push(`${subgroupLabel}: ${labels.join(', ')}`);
+    }
 
-    // Combine all summary parts in the correct order
-    const summary = [
-        ...summaryParts.beginning,
-        ...summaryParts.before_measures,
-        ...selectedRisks,
-        ...summaryParts.after_measures,
-        ...summaryParts.end
-    ].join("\n\n");
+    formattedRiskText.push("");
+  }
 
-    document.getElementById("summaryText").value = summary;
+  // Freitext
+  const additionalText = document.getElementById("additionalText")?.value?.trim();
+  if (additionalText) {
+    summaryParts.end.push(additionalText);
+  }
+
+  // Alles zusammenfügen
+  const fullSummary = [
+    ...summaryParts.beginning,
+    ...summaryParts.before_measures,
+    ...formattedRiskText,
+    ...summaryParts.after_measures,
+    ...summaryParts.end
+  ].join("\n").trim();
+
+  document.getElementById("summaryText").value = fullSummary;
 }
+
 
 
 
