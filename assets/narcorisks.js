@@ -113,11 +113,11 @@ function activateRiskAndChildren(path) {
     // Sichtbarkeit prüfen
     const hiddenAncestor = checkbox.closest('.hidden');
     if (hiddenAncestor) {
-      console.warn(`[activateRiskAndChildren] ⚠️ Checkbox ist DOM-seitig versteckt: ${path}`);
+      console.warn(`[activateRiskAndChildren] Checkbox ist DOM-seitig versteckt: ${path}`);
     }
 
   } else {
-    console.warn(`[activateRiskAndChildren] ❌ Kein <input> mit value="${path}" gefunden.`);
+    console.warn(`[activateRiskAndChildren] Kein <input> mit value="${path}" gefunden.`);
   }
 
   const prefix = `${path}.`;
@@ -140,7 +140,7 @@ function activateRiskAndChildren(path) {
       const entriesContainer = groupDiv.nextElementSibling;
       if (entriesContainer) {
         activateCommonItems(groupKey, entriesContainer);
-        console.log(`[activateRiskAndChildren] ✅ common aktiviert für ${groupKey}`);
+        console.log(`[activateRiskAndChildren] common aktiviert für ${groupKey}`);
       }
       break;
     }
@@ -356,13 +356,13 @@ function handlePresetSelection(key, value) {
   const preset = risksData?.presets?.[key];
   const lang = currentLang || 'de';
   if (!preset) {
-    console.warn(`[Preset] ❌ Kein Preset gefunden für ${key}`);
+    console.warn(`[Preset] Kein Preset gefunden für ${key}`);
     return;
   }
 
   const selected = preset.options?.[value];
   if (!selected) {
-    console.warn(`[Preset] ❌ Keine Option "${value}" für "${key}"`);
+    console.warn(`[Preset] Keine Option "${value}" für "${key}"`);
     return;
   }
 
@@ -374,7 +374,7 @@ function handlePresetSelection(key, value) {
 
     if (input) {
       input.checked = true;
-      console.log(`[PresetSelection] ✅ Direkt aktiviert: ${input.value}`);
+      console.log(`[PresetSelection] Direkt aktiviert: ${input.value}`);
 
       const children = document.querySelectorAll(`input[value^="${input.value}."]`);
       children.forEach(cb => {
@@ -394,7 +394,7 @@ function handlePresetSelection(key, value) {
     } else {
       console.warn(`[PresetSelection] Kein direktes Input-Feld für: ${path}`);
       activateRiskAndChildren(path);  // Fallback
-      console.log(`[PresetSelection] ⚙️ activateRiskAndChildren() als Fallback aufgerufen für: ${path}`);
+      console.log(`[PresetSelection] activateRiskAndChildren() als Fallback aufgerufen für: ${path}`);
     }
   });
 
