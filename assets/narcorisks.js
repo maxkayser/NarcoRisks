@@ -537,6 +537,54 @@ function generateSummary() {
  * Renders checkboxes for static textblock insertions (e.g. "online consent").
  */
 function renderTextblockToggles() {
+  const container = document.getElementById('staticTextblockCheckboxes');
+  if (!container || !textblocks) return;
+  const lang = document.getElementById('language').value || 'de';
+  container.innerHTML = '';
+
+  Object.entries(textblocks).forEach(([groupKey, groupContent]) => {
+    if (!groupContent || typeof groupContent !== 'object') return;
+
+    const groupLabel = groupContent.label?.[lang] || groupKey;
+
+    const groupDiv = document.createElement('div');
+    groupDiv.className = 'category toggle';
+    groupDiv.textContent = groupLabel;
+    container.appendChild(groupDiv);
+
+    const subgroupDiv = document.createElement('div');
+    subgroupDiv.className = 'subcategory checkbox-grid hidden';
+    container.appendChild(subgroupDiv);
+
+    // Auto-expand first group
+    if (container.childElementCount === 2) {
+      groupDiv.classList.add('expanded');
+      subgroupDiv.classList.remove('hidden');
+    }
+
+    groupDiv.addEventListener('click', () => {
+      subgroupDiv.classList.toggle('hidden');
+      groupDiv.classList.toggle('expanded');
+    });
+
+    Object.entries(groupContent).forEach(([key, value]) => {
+      if (key === 'label') return;
+      const checkbox = document.createElement('input');
+      checkbox.type = 'checkbox';
+      checkbox.name = 'textblock';
+      checkbox.value = key;
+      checkbox.addEventListener('change', generateSummary);
+
+      const label = document.createElement('label');
+      label.appendChild(checkbox);
+      const checkboxLabel = value.label?.[lang] || key;
+      label.appendChild(document.createTextNode(' ' + checkboxLabel));
+      subgroupDiv.appendChild(label);
+    });
+  });
+}
+
+function OLD___renderTextblockToggles() {
   const container = document.getElementById('textblockToggles');
   //const container = document.getElementById('ContextRisksContainer');
   if (!container || !textblocks) return;
