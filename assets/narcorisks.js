@@ -101,37 +101,51 @@ function deactivateCommonIfUnused(groupKey, entriesContainer) {
  */
 function activateRiskAndChildren(path) {
   const checkbox = document.querySelector(`input[value="${path}"]`);
+  
   if (checkbox) {
-    checkbox.checked = true;
+    if (!checkbox.checked) {
+      checkbox.checked = true;
+      console.log(`[activateRiskAndChildren] Checkbox aktiviert: ${path}`);
+    } else {
+      console.log(`[activateRiskAndChildren] Bereits aktiviert: ${path}`);
+    }
+
+    // Sichtbarkeit prüfen
+    const hiddenAncestor = checkbox.closest('.hidden');
+    if (hiddenAncestor) {
+      console.warn(`[activateRiskAndChildren] ⚠️ Checkbox ist DOM-seitig versteckt: ${path}`);
+    }
+
   } else {
-    console.warn(`[activateRiskAndChildren] Kein Input-Feld gefunden für: ${path}`);
+    console.warn(`[activateRiskAndChildren] ❌ Kein <input> mit value="${path}" gefunden.`);
   }
 
   const prefix = `${path}.`;
   const children = document.querySelectorAll(`input[value^="${prefix}"]`);
-  children.forEach(cb => cb.checked = true);
+  children.forEach(cb => {
+    if (!cb.checked) {
+      cb.checked = true;
+      console.log(`[activateRiskAndChildren] → Subrisiko aktiviert: ${cb.value}`);
+    }
+  });
 
-  // Common aktivieren...
+  // common aktivieren
   const parts = path.split(".");
   const groupKey = parts[0];
-  const lang = currentLang || 'de';
-
   const allGroups = Array.from(document.querySelectorAll('.category.toggle'));
-  for (const groupDiv of allGroups) {
-    const text = groupDiv.textContent.trim().toLowerCase();
-    const group = allRisks.find(g => g.key === groupKey);
-    const expectedLabel = group?.label?.[lang]?.toLowerCase();
-    const matchesKey = text.includes(groupKey.toLowerCase());
-    const matchesLabel = expectedLabel && text.includes(expectedLabel);
 
-    if (matchesKey || matchesLabel) {
+  for (const groupDiv of allGroups) {
+    const groupText = groupDiv.textContent.trim().toLowerCase();
+    if (groupText.includes(groupKey.toLowerCase())) {
       const entriesContainer = groupDiv.nextElementSibling;
-      activateCommonItems(groupKey, entriesContainer);
+      if (entriesContainer) {
+        activateCommonItems(groupKey, entriesContainer);
+        console.log(`[activateRiskAndChildren] ✅ common aktiviert für ${groupKey}`);
+      }
       break;
     }
   }
 }
-
 
 
 /**
@@ -342,29 +356,32 @@ function handlePresetSelection(key, value) {
   const preset = risksData?.presets?.[key];
   const lang = currentLang || 'de';
   if (!preset) {
-    console.warn(`[Preset] Kein Preset gefunden für ${key}`);
+    console.warn(`[Preset] ❌ Kein Preset gefunden für ${key}`);
     return;
   }
 
   const selected = preset.options?.[value];
   if (!selected) {
-    console.warn(`[Preset] Keine Option "${value}" für "${key}"`);
+    console.warn(`[Preset] ❌ Keine Option "${value}" für "${key}"`);
     return;
   }
 
-  console.log(`[Preset] ${key} selected:`, selected.label?.[lang] || value);
+  console.log(`[Preset] ${key} selected: ${selected.label?.[lang] || value}`);
   const riskPaths = selected.associated_risks || [];
 
   riskPaths.forEach(path => {
     const input = findRiskCheckbox(path);
-  
+
     if (input) {
       input.checked = true;
-  
-      // Unterrisiken aktivieren
-      const children = document.querySelectorAll(`input[name="riskSubgroups"][value^="${input.value}."]`);
-      children.forEach(cb => cb.checked = true);
-  
+      console.log(`[PresetSelection] ✅ Direkt aktiviert: ${input.value}`);
+
+      const children = document.querySelectorAll(`input[value^="${input.value}."]`);
+      children.forEach(cb => {
+        cb.checked = true;
+        console.log(`[PresetSelection]   → Subrisiko aktiviert: ${cb.value}`);
+      });
+
       const groupKey = input.value.split('.')[0];
       const groupDiv = Array.from(document.querySelectorAll('.category.toggle')).find(div =>
         div.textContent.toLowerCase().includes(groupKey.toLowerCase())
@@ -373,38 +390,17 @@ function handlePresetSelection(key, value) {
         const entriesContainer = groupDiv.nextElementSibling;
         activateCommonItems(groupKey, entriesContainer);
       }
-  
-      console.log(`[PresetSelection] Aktiviert Maßnahme-Risiko: ${input.value}`);
-    }
-  
-    // Versuche, path dynamisch zu aktivieren (z.B. wenn input null)
-    else if (risksData?.risks) {
-      const riskKey = path.split('.');
-      if (riskKey.length >= 2) {
-        // Versuche direkt über DOM-Fallback zu aktivieren
-        activateRiskAndChildren(path);
-        console.log(`[PresetSelection] Aktiviert Maßnahme-Risiko (fallback): ${path}`);
-      }
-    }
-  
-    // Falls als Textblock interpretierbar
-    else if (textblocks) {
-      const key = path.split('.').pop();
-      const textblockInput = document.querySelector(`input[name="textblock"][value="${key}"]`);
-      if (textblockInput) {
-        textblockInput.checked = true;
-        console.log(`[PresetSelection] Aktiviert (vorhanden): ${key}`);
-      } else {
-        console.warn(`[PresetSelection] Kein Textblock für: ${path}`);
-      }
+
     } else {
-      console.warn(`[handlePresetSelection] Unbekannter Pfad: ${path}`);
+      console.warn(`[PresetSelection] Kein direktes Input-Feld für: ${path}`);
+      activateRiskAndChildren(path);  // Fallback
+      console.log(`[PresetSelection] ⚙️ activateRiskAndChildren() als Fallback aufgerufen für: ${path}`);
     }
   });
 
-
   generateSummary();
 }
+
 
 
 
