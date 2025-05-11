@@ -5119,9 +5119,9 @@
   "presets": {
     "surgical_urgency": {
       "label": {
-        "de": "OP-Dringlichkeit",
-        "en": "Surgical Urgency",
-        "fr": "Urgence opératoire"
+        "de": "Operative-Dringlichkeitsstufe",
+        "en": "Surgical priority level",
+        "fr": "Niveau de priorité chirurgicale"
       },
       "options": {
         "n0": {
