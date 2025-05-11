@@ -42,6 +42,7 @@ async function loadRisks() {
     renderStaticTextblockCheckboxes();
 
     const rawRoot = data.risks.children[0];
+    risksRoot = rawRoot;
     allRisks = Object.entries(rawRoot)
       .filter(([k, v]) => typeof v === 'object' && v.label)
       .map(([key, value]) => ({
@@ -478,7 +479,93 @@ function renderPresetOptions() {
 /**
  * Generates the risk summary output in structured form.
  */
+/* patched */
+
+let risksRoot = {}; // Wurzel für risiko-spezifischen Zugriff
+
 function getLabelFromRiskKey(riskKey, lang = 'de') {
+  const cleanKey = riskKey.startsWith('risks.') ? riskKey.replace(/^risks\./, '') : riskKey;
+  const path = cleanKey.split('.');
+  let node = risksRoot;
+  for (const part of path) {
+    if (!node || !node[part]) return null;
+    node = node[part];
+  }
+  return node?.label?.[lang] || null;
+}
+
+// replaced by patched generateSummary
+  const lang = document.getElementById("language").value || 'de';
+
+  const selectedTextblocks = Array.from(
+    document.querySelectorAll('input[name="textblock"]:checked')
+  ).map(cb => cb.value);
+
+  const selectedRisks = Array.from(
+    document.querySelectorAll('input[name="riskSubgroups"]:checked')
+  ).map(cb => cb.value);
+
+  let result = "";
+
+  // Textblöcke mit Position: beginning
+  Object.entries(textblocks).forEach(([groupKey, group]) => {
+    Object.entries(group.items || {}).forEach(([itemKey, item]) => {
+      const fullKey = `${groupKey}.${itemKey}`;
+      if (selectedTextblocks.includes(fullKey) && item.position === "beginning") {
+        result += (item.text?.[lang] || "") + "\n\n";
+      }
+    });
+  });
+
+  // Textblöcke mit Position: before_measures
+  Object.entries(textblocks).forEach(([groupKey, group]) => {
+    Object.entries(group.items || {}).forEach(([itemKey, item]) => {
+      const fullKey = `${groupKey}.${itemKey}`;
+      if (selectedTextblocks.includes(fullKey) && item.position === "before_measures") {
+        result += (item.text?.[lang] || "") + "\n\n";
+      }
+    });
+  });
+
+  // Maßnahmenassoziierte Risiken
+  if (selectedRisks.length > 0) {
+    const title = translations?.[lang]?.headings?.measures_associated_risks || "Maßnahmenassoziierte Risiken";
+    result += title + "\n\n";
+    result += selectedRisks
+      .map(risk => getRiskText(risk, lang))
+      .filter(text => !!text)
+      .join('\n') + "\n\n";
+  }
+
+  // Textblöcke mit Position: after_measures
+  Object.entries(textblocks).forEach(([groupKey, group]) => {
+    Object.entries(group.items || {}).forEach(([itemKey, item]) => {
+      const fullKey = `${groupKey}.${itemKey}`;
+      if (selectedTextblocks.includes(fullKey) && item.position === "after_measures") {
+        result += (item.text?.[lang] || "") + "\n\n";
+      }
+    });
+  });
+
+  // Textblöcke mit Position: end
+  Object.entries(textblocks).forEach(([groupKey, group]) => {
+    Object.entries(group.items || {}).forEach(([itemKey, item]) => {
+      const fullKey = `${groupKey}.${itemKey}`;
+      if (selectedTextblocks.includes(fullKey) && item.position === "end") {
+        result += (item.text?.[lang] || "") + "\n\n";
+      }
+    });
+  });
+
+  // Optionaler Freitext
+  const additionalText = document.getElementById("additionalText")?.value;
+  if (additionalText?.trim()) {
+    result += additionalText.trim() + "\n";
+  }
+
+  document.getElementById("summaryText").value = result.trim();
+}
+
   const path = riskKey.split('.');
   let node = risks;
   for (const part of path) {
@@ -492,7 +579,7 @@ function getRiskText(riskKey, lang = 'de') {
   const label = getLabelFromRiskKey(riskKey, lang);
   return label ? `– ${label}` : '';
 }
-function generateSummary() {
+// replaced by patched generateSummary
   const lang = document.getElementById("language").value || 'de';
   let result = "";
 
