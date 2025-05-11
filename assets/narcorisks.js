@@ -480,6 +480,55 @@ function renderPresetOptions() {
  */
 function generateSummary() {
   const lang = document.getElementById('language').value || 'de';
+  const selectedTextblocks = Array.from(document.querySelectorAll('input[name="textblock"]:checked')).map(el => el.value);
+  const selectedRisks = Array.from(document.querySelectorAll('input[name="riskSubgroups"]:checked')).map(el => el.value);
+  const additional = document.getElementById('additionalText').value;
+  let result = '';
+
+  const groupedByPosition = {
+    start: [],
+    before_risks: [],
+    after_risks: [],
+    end: []
+  };
+
+  for (const key of selectedTextblocks) {
+    const [group, item] = key.split('.');
+    const block = textblocks?.[group]?.items?.[item];
+    if (block) {
+      const pos = block.position || 'before_risks';
+      const txt = block.text?.[lang];
+      if (txt) groupedByPosition[pos]?.push(txt);
+    }
+  }
+
+  // Add 'start' blocks
+  result += groupedByPosition.start.join('\n') + '\n';
+
+  // Add 'before_risks' blocks
+  result += groupedByPosition.before_risks.join('\n') + '\n';
+
+  // Add selected risk summaries (e.g., group & label lookup if needed)
+  if (selectedRisks.length) {
+    result += selectedRisks.map(risk => getRiskText(risk, lang)).join('\n') + '\n';
+  }
+
+  // Add 'after_risks' blocks
+  result += groupedByPosition.after_risks.join('\n') + '\n';
+
+  // Add 'end' blocks
+  result += groupedByPosition.end.join('\n') + '\n';
+
+  // Add custom text
+  if (additional) {
+    result += '\n' + additional;
+  }
+
+  document.getElementById('summaryText').value = result.trim();
+}
+
+function OLD__generateSummary() {
+  const lang = document.getElementById('language').value || 'de';
   const selectedKeys = Array.from(document.querySelectorAll('input[name="riskSubgroups"]:checked')).map(el => el.value);
   const grouped = {};
 
