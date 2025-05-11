@@ -480,7 +480,8 @@ function renderPresetOptions() {
  */
 function getLabelFromRiskKey(riskKey, lang = 'de') {
   const path = riskKey.split('.');
-  let node = risks;
+  //let node = risks;
+  let node = risksData.risks.children[0]
 
   for (const part of path) {
     if (!node || !node[part]) return null;
