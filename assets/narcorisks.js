@@ -324,21 +324,19 @@ function renderProcedureSelectors() {
   });
 }
 
-
 function findRiskCheckbox(path) {
-  // Zuerst: exakte Match bei Subgroup-Checkboxen
+  // Subgroup-Checkbox (z. B. lines_catheters.arterial_line)
   const subgroup = document.querySelector(`.subgroup-toggle input[type="checkbox"][value="${path}"]`);
   if (subgroup) return subgroup;
 
-  // Dann: reguläre riskSubgroup-Blätter
-  const input = document.querySelector(`input[name="riskSubgroups"][value="${path}"]`);
-  if (input) return input;
+  // Direkt riskSubgroup
+  const exact = document.querySelector(`input[name="riskSubgroups"][value="${path}"]`);
+  if (exact) return exact;
 
-  // Fallback: versuchen, Teilpfad zu matchen
+  // Fallback auf Subrisiken
   const all = Array.from(document.querySelectorAll('input[name="riskSubgroups"]'));
-  return all.find(cb => cb.value.endsWith(path) || cb.value.includes(path));
+  return all.find(cb => cb.value.startsWith(path + "."));
 }
-
 
 function handlePresetSelection(key, value) {
   const preset = risksData?.presets?.[key];
@@ -361,34 +359,39 @@ function handlePresetSelection(key, value) {
     const input = findRiskCheckbox(path);
   
     if (input) {
-      activateRiskAndChildren(input.value);
+      input.checked = true;
+  
+      // Unterrisiken aktivieren
+      const children = document.querySelectorAll(`input[name="riskSubgroups"][value^="${input.value}."]`);
+      children.forEach(cb => cb.checked = true);
+  
+      const groupKey = input.value.split('.')[0];
+      const groupDiv = Array.from(document.querySelectorAll('.category.toggle')).find(div =>
+        div.textContent.toLowerCase().includes(groupKey.toLowerCase())
+      );
+      if (groupDiv) {
+        const entriesContainer = groupDiv.nextElementSibling;
+        activateCommonItems(groupKey, entriesContainer);
+      }
+  
       console.log(`[PresetSelection] Aktiviert Maßnahme-Risiko: ${input.value}`);
-    } else if (textblocks) {
-      // Kontextuelle Textblöcke (wie "emergency_surgery")
-      const key = path.split('.').pop(); // z. B. "aspiration_risk"
-      let textblockInput = document.querySelector(`input[name="textblock"][value="${key}"]`);
+    }
   
-      if (!textblockInput && textblocks[key]) {
-        const container = document.getElementById('textblockToggles');
-        if (!container) return;
+    // Versuche, path dynamisch zu aktivieren (z.B. wenn input null)
+    else if (risksData?.risks) {
+      const riskKey = path.split('.');
+      if (riskKey.length >= 2) {
+        // Versuche direkt über DOM-Fallback zu aktivieren
+        activateRiskAndChildren(path);
+        console.log(`[PresetSelection] Aktiviert Maßnahme-Risiko (fallback): ${path}`);
+      }
+    }
   
-        const labelText = textblocks[key]?.label?.[lang] || key;
-        const wrapper = document.createElement('label');
-        wrapper.style.display = 'block';
-  
-        textblockInput = document.createElement('input');
-        textblockInput.type = 'checkbox';
-        textblockInput.name = 'textblock';
-        textblockInput.value = key;
-        textblockInput.checked = true;
-        textblockInput.addEventListener('change', generateSummary);
-  
-        wrapper.appendChild(textblockInput);
-        wrapper.appendChild(document.createTextNode(' ' + labelText));
-        container.appendChild(wrapper);
-  
-        console.log(`[PresetSelection] Dynamisch hinzugefügt: ${key}`);
-      } else if (textblockInput) {
+    // Falls als Textblock interpretierbar
+    else if (textblocks) {
+      const key = path.split('.').pop();
+      const textblockInput = document.querySelector(`input[name="textblock"][value="${key}"]`);
+      if (textblockInput) {
         textblockInput.checked = true;
         console.log(`[PresetSelection] Aktiviert (vorhanden): ${key}`);
       } else {
@@ -398,6 +401,7 @@ function handlePresetSelection(key, value) {
       console.warn(`[handlePresetSelection] Unbekannter Pfad: ${path}`);
     }
   });
+
 
   generateSummary();
 }
