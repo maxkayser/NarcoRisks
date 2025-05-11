@@ -55,14 +55,8 @@ async function loadRisks() {
 
     const defaults = data.defaults || {};
     renderRiskGroups(defaults);
-    
-    if (data.procedures) {
-      renderProcedureSelectors(data.procedures);
-    }
-
-    if (data.presets) {
-      renderPresetOptionSelectors(data.presets);
-    }
+    renderProcedureSelectors();
+    renderPresetOptionSelectors();
 
   } catch (error) {
     document.getElementById('risksOutput').innerText = 'Error loading risk data.';
@@ -237,7 +231,10 @@ function renderRiskGroups(defaults = {}) {
   generateSummary();
 }
 
-function renderProcedureSelectors(procedures) {
+function renderProcedureSelectors() {
+  const procedures = risksData?.procedures;
+  if (!procedures) return;
+  
   const lang = currentLang;
   const deptSelect = document.getElementById("departmentSelect");
   const procSelect = document.getElementById("procedureSelect");
@@ -290,7 +287,10 @@ function renderProcedureSelectors(procedures) {
   });
 }
 
-function renderPresetOptionSelectors(presets = {}) {
+function renderPresetOptions() {
+  const presets = risksData?.preset_options;
+  if (!presets) return;
+  
   const lang = document.getElementById('language').value || 'de';
   const container = document.getElementById("presetOptionsContainer"); 
   container.innerHTML = '';
@@ -450,10 +450,9 @@ function renderStaticTextblockCheckboxes() {
   });
 }
 
-// Event bindings
 document.getElementById('language').addEventListener('change', () => {
   currentLang = document.getElementById('language').value;
-  applyTranslations(currentLang); // 🟢 WICHTIG: hinzufügen!
+  applyTranslations(currentLang); 
   renderRiskGroups();
   renderTextblockToggles();
 });
