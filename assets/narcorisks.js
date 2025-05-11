@@ -493,57 +493,88 @@ function getRiskText(riskKey, lang = 'de') {
   return label ? `– ${label}` : '';
 }
 
+
+
 function generateSummary() {
-  const lang = document.getElementById("language").value || "de";
-  const summaryParts = [];
+    const lang = document.getElementById('language').value;
+    let summaryParts = [];
 
-  // Add textblocks by position
-  const positions = ["start", "before_measures", "after_measures", "end"];
-  positions.forEach(position => {
-    Object.values(textblocksData).forEach(group => {
-      if (!group.items) return;
-      Object.entries(group.items).forEach(([key, block]) => {
-        if (block.position === position && selectedTextblocks.includes(key)) {
-          summaryParts.push(block.text?.[lang] || block.text?.["de"] || "");
+    // 1. Intro blocks (position: start)
+    Object.values(allRisks.textblocks).forEach(block => {
+        if (block.position === "start") {
+            Object.entries(block.items).forEach(([key, item]) => {
+                const checkbox = document.querySelector(`input[name="textblock"][value="${key}"]`);
+                if (checkbox?.checked) {
+                    summaryParts.push(item.text[lang]);
+                }
+            });
         }
-      });
-    });
-  });
-
-  // Add structured summary of measure-associated risks
-  const groupedRiskTexts = [];
-
-  // Iterate over each main risk group (e.g., general_anesthesia)
-  Object.entries(risksData).forEach(([groupKey, groupValue]) => {
-    const groupLabel = groupValue.label?.[lang] || groupValue.label?.["de"] || groupKey;
-    let groupText = groupLabel;
-
-    const measures = [];
-
-    // Each subgroup is a measure, e.g., general_anesthesia.common
-    Object.entries(groupValue.items || {}).forEach(([measureKey, measureValue]) => {
-      const selected = selectedRisks.filter(r => r.startsWith(measureKey + "."));
-      if (selected.length === 0) return;
-
-      const measureLabel = measureValue.label?.[lang] || measureValue.label?.["de"] || measureKey;
-      const riskLabels = selected.map(riskKey => {
-        const keyParts = riskKey.split(".");
-        const item = keyParts.reduce((acc, part) => acc?.items?.[part], risksData);
-        return item?.label?.[lang] || item?.label?.["de"] || riskKey;
-      });
-
-      measures.push(`${measureLabel}: ${riskLabels.join(", ")}`);
     });
 
-    if (measures.length > 0) {
-      groupedRiskTexts.push(`${groupText}\n${measures.join("\n")}`);
+    // 2. Textblocks before measures
+    Object.values(allRisks.textblocks).forEach(block => {
+        if (block.position === "before_measures") {
+            Object.entries(block.items).forEach(([key, item]) => {
+                const checkbox = document.querySelector(`input[name="textblock"][value="${key}"]`);
+                if (checkbox?.checked) {
+                    summaryParts.push(item.text[lang]);
+                }
+            });
+        }
+    });
+
+    // 3. Measures-associated risks (formatted hierarchically)
+    let measureParts = [];
+    Object.entries(allRisks.risks).forEach(([groupKey, group]) => {
+        let groupSummary = `${group.label[lang]}\n`;
+        let subgroupParts = [];
+
+        Object.entries(group.items).forEach(([subgroupKey, subgroup]) => {
+            const selectedSubrisks = subgroup.subrisks?.filter(subrisk => {
+                return selectedRisks.has(subrisk.key);
+            }) || [];
+
+            if (selectedSubrisks.length > 0) {
+                const labels = selectedSubrisks.map(r => r.label[lang]);
+                subgroupParts.push(`${subgroup.label[lang]}: ${labels.join(', ')}`);
+            }
+        });
+
+        if (subgroupParts.length > 0) {
+            groupSummary += subgroupParts.join('\n');
+            measureParts.push(groupSummary);
+        }
+    });
+
+    if (measureParts.length > 0) {
+        summaryParts.push(measureParts.join('\n\n'));
     }
-  });
 
-  summaryParts.push(...groupedRiskTexts);
+    // 4. Textblocks after measures
+    Object.values(allRisks.textblocks).forEach(block => {
+        if (block.position === "after_measures") {
+            Object.entries(block.items).forEach(([key, item]) => {
+                const checkbox = document.querySelector(`input[name="textblock"][value="${key}"]`);
+                if (checkbox?.checked) {
+                    summaryParts.push(item.text[lang]);
+                }
+            });
+        }
+    });
 
-  // Join everything into the summary
-  document.getElementById("summaryText").value = summaryParts.join("\n\n");
+    // 5. Closing blocks (position: end)
+    Object.values(allRisks.textblocks).forEach(block => {
+        if (block.position === "end") {
+            Object.entries(block.items).forEach(([key, item]) => {
+                const checkbox = document.querySelector(`input[name="textblock"][value="${key}"]`);
+                if (checkbox?.checked) {
+                    summaryParts.push(item.text[lang]);
+                }
+            });
+        }
+    });
+
+    document.getElementById('summaryText').value = summaryParts.join('\n\n');
 }
 
 
@@ -747,6 +778,7 @@ document.getElementById('language').addEventListener('change', () => {
   applyTranslations(currentLang); 
   renderRiskGroups();
   renderTextblockToggles();
+  renderStaticTextblockCheckboxes();
   renderProcedureSelectors();
   renderPresetOptions();
 });
