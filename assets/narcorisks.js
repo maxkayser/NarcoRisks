@@ -353,13 +353,13 @@ function handlePresetSelection(key, value) {
   const preset = risksData?.presets?.[key];
   const lang = currentLang || 'de';
   if (!preset) {
-    console.warn(`[Preset] Kein Preset gefunden für ${key}`);
+    console.warn(`[Preset] No preset found for key: ${key}`);
     return;
   }
 
   const selected = preset.options?.[value];
   if (!selected) {
-    console.warn(`[Preset] Keine Option "${value}" für "${key}"`);
+    console.warn(`[Preset] No option "${value}" found for preset "${key}"`);
     return;
   }
 
@@ -371,14 +371,12 @@ function handlePresetSelection(key, value) {
 
     if (input) {
       input.checked = true;
-      console.log(`[PresetSelection] Direkt aktiviert: ${input.value}`);
 
-      const children = document.querySelectorAll(`input[value^="${input.value}."]`);
-      children.forEach(cb => {
-        cb.checked = true;
-        console.log(`[PresetSelection]   → Subrisiko aktiviert: ${cb.value}`);
-      });
+      // Also activate children (sub-risks)
+      const children = document.querySelectorAll(`input[name="riskSubgroups"][value^="${input.value}."]`);
+      children.forEach(cb => cb.checked = true);
 
+      // Activate .common items as needed
       const groupKey = input.value.split('.')[0];
       const groupDiv = Array.from(document.querySelectorAll('.category.toggle')).find(div =>
         div.textContent.toLowerCase().includes(groupKey.toLowerCase())
@@ -388,15 +386,33 @@ function handlePresetSelection(key, value) {
         activateCommonItems(groupKey, entriesContainer);
       }
 
+      console.log(`[PresetSelection] Directly activated: ${input.value}`);
+      children.forEach(cb => {
+        console.log(`[PresetSelection]   → Sub-risk activated: ${cb.value}`);
+      });
+
+    } else if (path.startsWith("contextual_risks.")) {
+      // Handle context-associated risks (e.g., emergency_surgery, aspiration_risk)
+      const textblockKey = path.replace("contextual_risks.", "");
+      const textblockCheckbox = document.querySelector(`input[name="textblock"][value="${textblockKey}"]`);
+      if (textblockCheckbox) {
+        textblockCheckbox.checked = true;
+        console.log(`[PresetSelection] Contextual textblock activated: ${textblockKey}`);
+      } else {
+        console.warn(`[PresetSelection] No contextual textblock found for: ${textblockKey}`);
+      }
+
     } else {
-      console.warn(`[PresetSelection] Kein direktes Input-Feld für: ${path}`);
-      activateRiskAndChildren(path);  // Fallback
-      console.log(`[PresetSelection] activateRiskAndChildren() als Fallback aufgerufen für: ${path}`);
+      // Attempt fallback activation if no exact checkbox match
+      console.warn(`[PresetSelection] No direct input field for: ${path}`);
+      activateRiskAndChildren(path);
+      console.log(`[PresetSelection] activateRiskAndChildren() fallback triggered for: ${path}`);
     }
   });
 
   generateSummary();
 }
+
 
 
 
