@@ -353,10 +353,27 @@ function handlePresetSelection(key, value) {
 
   riskPaths.forEach(path => {
     const input = findRiskCheckbox(path);
-
     if (input) {
-      activateRiskAndChildren(input.value);  // wichtig: tatsächlicher Input-Wert (kann abweichen)
-    } else if (textblocks) {
+      // Wenn es eine Gruppen-Checkbox ist (also kein direkt selektierbares Leaf)
+      input.checked = true;
+    
+      // Alle Kinder-Checkboxen aktivieren
+      const children = document.querySelectorAll(`input[name="riskSubgroups"][value^="${input.value}."]`);
+      children.forEach(cb => cb.checked = true);
+    
+      // Falls nicht 'common', Common-Feld aktivieren
+      const groupKey = input.value.split('.')[0];
+      const groupDiv = Array.from(document.querySelectorAll('.category.toggle')).find(div =>
+        div.textContent.toLowerCase().includes(groupKey.toLowerCase())
+      );
+      if (groupDiv) {
+        const entriesContainer = groupDiv.nextElementSibling;
+        activateCommonItems(groupKey, entriesContainer);
+      }
+    
+      console.log(`[PresetSelection] Aktiviert Gruppe: ${input.value}`);
+    }
+    else if (textblocks) {
       // Kontextuelle Textblöcke
       const key = path.split('.').pop();  // extrahiere z. B. "aspiration_risk" aus "contextual_risks.aspiration_risk"
       let textblockInput = document.querySelector(`input[name="textblock"][value="${key}"]`);
