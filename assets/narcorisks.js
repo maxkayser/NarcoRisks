@@ -7,9 +7,6 @@
  * Version: 1.0
  */
 
-/**
- * URL to load risk data from GitHub.
- */
 const risksUrl = 'https://raw.githubusercontent.com/maxkayser/NarkoSafe/main/data/risks.json';
 
 let allRisks = [];
