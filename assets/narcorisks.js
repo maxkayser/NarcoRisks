@@ -278,8 +278,8 @@ function renderProcedureSelectors() {
   const procSelect = document.getElementById("procedureSelect");
 
   // Reset
-  deptSelect.innerHTML = '<option value="">– bitte wählen –</option>';
-  procSelect.innerHTML = '<option value="">– bitte wählen –</option>';
+  deptSelect.innerHTML = '<option value="">–-</option>';
+  procSelect.innerHTML = '<option value="">––</option>';
   procSelect.disabled = true;
 
   // Fachbereiche befüllen
@@ -292,7 +292,7 @@ function renderProcedureSelectors() {
 
   deptSelect.addEventListener("change", () => {
     const selectedDept = procedures[deptSelect.value];
-    procSelect.innerHTML = '<option value="">– bitte wählen –</option>';
+    procSelect.innerHTML = '<option value="">––</option>';
     procSelect.disabled = !selectedDept;
 
     if (selectedDept) {
