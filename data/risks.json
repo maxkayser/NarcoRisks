@@ -1503,9 +1503,16 @@
             },
             "erectile_dysfunction": {
               "label": {
-                "de": "Erektile Dysfunktion / Impotenz",
-                "en": "Erectile dysfunction / impotence",
-                "fr": "Dysfonction érectile / impuissance"
+                "de": "Erektile Dysfunktion",
+                "en": "Erectile dysfunction",
+                "fr": "Dysfonction érectile"
+              }
+            },
+            "impotence": {
+              "label": {
+                "de": "Impotenz",
+                "en": "impotence",
+                "fr": "impuissance"
               }
             },
             "label": {
@@ -1582,6 +1589,118 @@
               "de": "Periduralanästhesie",
               "en": "Epidural anesthesia",
               "fr": "Anesthésie péridurale"
+            }
+          },
+          "cse": {
+            "label": {
+              "de": "Kombinierte Spinal-Periduralanästhesie (CSE)",
+              "en": "Combined Spinal-Epidural Anesthesia (CSE)",
+              "fr": "Anesthésie combinée spinale-péridurale (CSE)"
+            }
+            "post_dural_puncture_headache": {
+              "label": {
+                "de": "Postspinaler Kopfschmerz",
+                "en": "Post-dural puncture headache",
+                "fr": "Céphalée post-ponction durale"
+              }
+            },
+            "high_total_spinal": {
+              "label": {
+                "de": "Hoher / totaler Spinalblock",
+                "en": "High / total spinal block",
+                "fr": "Bloc spinal haut / total"
+              }
+            },
+            "spinal_epidural_hematoma": {
+              "label": {
+                "de": "Spinales / epidurales Hämatom",
+                "en": "Spinal / epidural hematoma",
+                "fr": "Hématome spinal / péridural"
+              }
+            },
+            "spinal_epidural_abscess": {
+              "label": {
+                "de": "Spinaler / epiduraler Abszess",
+                "en": "Spinal / epidural abscess",
+                "fr": "Abcès spinal / péridural"
+              }
+            },
+            "meningitis": {
+              "label": {
+                "de": "Meningitis",
+                "en": "Meningitis",
+                "fr": "Méningite"
+              }
+            },
+            "subdural_hygroma": {
+              "label": {
+                "de": "Subdurales Hygrom / Hämatom",
+                "en": "Subdural hygroma / hematoma",
+                "fr": "Hygrome / hématome sous-dural"
+              }
+            },
+            "back_pain": {
+              "label": {
+                "de": "Rückenschmerzen",
+                "en": "Back pain",
+                "fr": "Douleurs dorsales"
+              }
+            },
+            "paraplegia": {
+              "label": {
+                "de": "Paraplegie",
+                "en": "Paraplegia",
+                "fr": "Paraplégie"
+              }
+            },
+            "cauda_equina_syndrome": {
+              "label": {
+                "de": "Cauda-Equina-Syndrom",
+                "en": "cauda equina syndrome",
+                "fr": "syndrome de la queue de cheval"
+              }
+            },
+            "liquor_leak": {
+              "label": {
+                "de": "Liquorleck",
+                "en": "Cerebrospinal fluid leak",
+                "fr": "Fuite de liquide céphalorachidien"
+              }
+            },
+            "fall_risk": {
+              "label": {
+                "de": "Sturzrisiko",
+                "en": "Fall risk",
+                "fr": "Risque de chute"
+              }
+            },
+            "bladder_bowel_dysfunction": {
+              "label": {
+                "de": "Blasen- / Mastdarmstörung",
+                "en": "Bladder / bowel dysfunction",
+                "fr": "Troubles vésicaux / rectaux"
+              }
+            },
+            "urinary_retention": {
+              "label": {
+                "de": "Harnverhalt (Blasenkatheter ggf. erforderlich)",
+                "en": "Urinary retention (bladder catheter may be required)",
+                "fr": "Rétention urinaire (sonde vésicale parfois nécessaire)"
+              }
+            },
+            "erectile_dysfunction": {
+              "label": {
+                "de": "Erektile Dysfunktion",
+                "en": "Erectile dysfunction",
+                "fr": "Dysfonction érectile"
+              }
+            },
+            "impotence": {
+              "label": {
+                "de": "Impotenz",
+                "en": "impotence",
+                "fr": "impuissance"
+              }
             }
           },
           "csa": {
