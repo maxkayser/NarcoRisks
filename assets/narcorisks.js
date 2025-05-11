@@ -322,6 +322,24 @@ function renderProcedureSelectors() {
   });
 }
 
+function handlePresetSelection(key, value) {
+  const preset = risksData?.preset_options?.[key];
+  const lang = currentLang || 'de';
+  if (!preset) return;
+
+  const selected = preset.options?.[value];
+  if (!selected) return;
+
+  console.log(`[Preset] ${key} selected:`, selected.label?.[lang] || value);
+  const riskPaths = selected.associated_risks || [];
+
+  riskPaths.forEach(path => {
+    activateRiskAndChildren(path);
+  });
+
+  generateSummary();
+}
+
 function renderPresetOptions() {
   const presets = risksData?.presets;
   if (!presets) return;
@@ -350,16 +368,22 @@ function renderPresetOptions() {
     });
 
     select.addEventListener('change', () => {
-      // Zuvor aktivierte Risiken deaktivieren
+      // Zuvor aktivierte Preset-Risiken deaktivieren
       document.querySelectorAll('input[name="riskSubgroups"]').forEach(cb => {
         const path = cb.value;
-        const allRisksPaths = Object.values(presets).flatMap(p =>
-          Object.values(p.options).flatMap(o => o.associated_risks || [])
+        const allPresetPaths = Object.values(risksData.preset_options || {}).flatMap(opt =>
+          Object.values(opt.options || {}).flatMap(conf => conf.associated_risks || [])
         );
-        if (allRisksPaths.includes(path)) {
-          cb.checked = false;
-        }
+        if (allPresetPaths.includes(path)) cb.checked = false;
       });
+    
+      const selectedValue = select.value;
+      if (selectedValue) {
+        handlePresetSelection(key, selectedValue);
+      } else {
+        generateSummary(); // wenn Auswahl zurückgesetzt wurde
+      }
+    });
 
       // Neue aktivieren
       const selectedValue = select.value;
