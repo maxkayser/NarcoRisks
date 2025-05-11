@@ -1005,8 +1005,8 @@
           "common": {
             "label": {
               "de": "Allgemeine Risiken",
-              "en": "General risks",
-              "fr": "Risques généraux"
+              "en": "Common risks",
+              "fr": "Risques courants"
             },
             "barotrauma": {
               "label": {
