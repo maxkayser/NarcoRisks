@@ -323,7 +323,7 @@ function renderProcedureSelectors() {
 }
 
 function handlePresetSelection(key, value) {
-  const preset = risksData?.preset_options?.[key];
+  const preset = risksData?.presets?.[key];
   const lang = currentLang || 'de';
   if (!preset) return;
 
