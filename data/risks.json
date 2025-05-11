@@ -4851,9 +4851,9 @@
       "options": {
         "n0": {
           "label": {
-            "de": "N0 – sofort, ggf. am Aufenthaltsort",
-            "en": "N0 – immediate, at point of care if needed",
-            "fr": "N0 – immédiate, au lieu de soins si nécessaire"
+            "de": "N0 – sofort",
+            "en": "N0 – immediate",
+            "fr": "N0 – immédiate"
           },
           "associated_risks": [
             "contextual_risks.emergency_surgery",
@@ -4865,9 +4865,9 @@
         },
         "n1": {
           "label": {
-            "de": "N1 – Notfall (<1h, unabhängig von Fachdisziplin)",
-            "en": "N1 – emergency (<1h, any specialty)",
-            "fr": "N1 – urgence (<1h, toute spécialité)"
+            "de": "N1 – Notfall (<1h)",
+            "en": "N1 – emergency (<1h)",
+            "fr": "N1 – urgence (<1h)"
           },
           "associated_risks": [
             "contextual_risks.emergency_surgery",
@@ -4879,9 +4879,9 @@
         },
         "n2": {
           "label": {
-            "de": "N2 – bald (<6h, gleiche Fachdisziplin)",
-            "en": "N2 – urgent (<6h, same specialty)",
-            "fr": "N2 – urgent (<6h, même spécialité)"
+            "de": "N2 – bald (<6h)",
+            "en": "N2 – urgent (<6h)",
+            "fr": "N2 – urgent (<6h)"
           },
           "associated_risks": [
             "contextual_risks.emergency_surgery",
@@ -4893,9 +4893,9 @@
         },
         "n3": {
           "label": {
-            "de": "N3 – heute noch (<12h, nach elektivem Programm)",
-            "en": "N3 – same day (<12h, after electives)",
-            "fr": "N3 – aujourd’hui (<12h, après les électifs)"
+            "de": "N3 – heute noch (<12h)",
+            "en": "N3 – same day (<12h)",
+            "fr": "N3 – aujourd’hui (<12h)"
           },
           "associated_risks": [
             "contextual_risks.emergency_surgery",
@@ -4907,9 +4907,9 @@
         },
         "n4": {
           "label": {
-            "de": "N4 – nächster Tag (<24h)",
-            "en": "N4 – next day (<24h)",
-            "fr": "N4 – lendemain (<24h)"
+            "de": "N4 – innerhalb von 24 Stunden",
+            "en": "N4 – within 24 hours",
+            "fr": "N4 – dans les 24 heures"
           },
           "associated_risks": [
             "contextual_risks.emergency_surgery",
