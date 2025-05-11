@@ -480,7 +480,7 @@ function renderPresetOptions() {
  */
 function getLabelFromRiskKey(riskKey, lang = 'de') {
   const path = riskKey.split('.');
-  let node = risksData.risks.children[0];
+  let node = risks;
 
   for (const part of path) {
     if (!node || !node[part]) return null;
@@ -532,7 +532,9 @@ function generateSummary() {
 
     document.querySelectorAll('input[name="riskSubgroups"]:checked').forEach(input => {
         const riskPath = input.value.split('.');
-        let node = risks;
+        //let node = risks;
+        let node = risksData.risks.children[0];
+
         for (const part of riskPath) {
             node = node[part];
             if (!node) break;
