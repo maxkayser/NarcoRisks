@@ -376,7 +376,7 @@ function renderPresetOptions() {
         );
         if (allPresetPaths.includes(path)) cb.checked = false;
       });
-    
+
       const selectedValue = select.value;
       if (selectedValue) {
         handlePresetSelection(key, selectedValue);
