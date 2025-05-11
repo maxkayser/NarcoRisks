@@ -97,6 +97,25 @@ function deactivateCommonIfUnused(groupKey, entriesContainer) {
 }
 
 /**
+ * Aktiviert alle Risiken, inkl. Subrisiken eines gegebenen Pfades.
+ */
+function activateRiskAndChildren(path) {
+  const checkbox = document.querySelector(`input[value="${path}"]`);
+  if (checkbox) checkbox.checked = true;
+
+  const prefix = `${path}.`;
+  const children = document.querySelectorAll(`input[value^="${prefix}"]`);
+  children.forEach(cb => cb.checked = true);
+
+  // Common aktivieren, wenn nicht bereits selektiert
+  const parts = path.split(".");
+  const groupKey = parts[0];
+  const entriesContainer = document.querySelector(`.category.toggle:contains("${groupKey}")`)?.nextElementSibling;
+  if (entriesContainer) activateCommonItems(groupKey, entriesContainer);
+}
+
+
+/**
  * Renders all risk groups, subgroups, and leaf checkboxes dynamically from loaded JSON.
  */
 function renderRiskGroups(defaults = {}) {
@@ -280,10 +299,7 @@ function renderProcedureSelectors() {
     if (!selected || !selected.risks) return;
 
     // Risiken aktivieren
-    selected.risks.forEach(path => {
-      const checkbox = document.querySelector(`input[value="${path}"]`);
-      if (checkbox) checkbox.checked = true;
-    });
+    selected.risks.forEach(activateRiskAndChildren);
 
     generateSummary();
   });
@@ -332,12 +348,9 @@ function renderPresetOptions() {
       const selectedValue = select.value;
       const selectedOption = config.options[selectedValue];
       if (selectedOption?.associated_risks) {
-        selectedOption.associated_risks.forEach(path => {
-          const cb = document.querySelector(`input[value="${path}"]`);
-          if (cb) cb.checked = true;
-        });
+        selectedOption.associated_risks.forEach(activateRiskAndChildren);
       }
-
+      
       generateSummary();
     });
 
