@@ -324,69 +324,77 @@ function renderProcedureSelectors() {
   });
 }
 
+
+function findRiskCheckbox(path) {
+  let exact = document.querySelector(`input[value="${path}"]`);
+  if (exact) return exact;
+
+  const all = Array.from(document.querySelectorAll('input[name="riskSubgroups"]'));
+  return all.find(cb => cb.value.endsWith(path) || cb.value.includes(path));
+}
+
+
 function handlePresetSelection(key, value) {
   const preset = risksData?.presets?.[key];
   const lang = currentLang || 'de';
-  if (!preset) return;
+  if (!preset) {
+    console.warn(`[Preset] Kein Preset gefunden für ${key}`);
+    return;
+  }
 
   const selected = preset.options?.[value];
-  if (!selected) return;
+  if (!selected) {
+    console.warn(`[Preset] Keine Option "${value}" für "${key}"`);
+    return;
+  }
 
   console.log(`[Preset] ${key} selected:`, selected.label?.[lang] || value);
   const riskPaths = selected.associated_risks || [];
 
   riskPaths.forEach(path => {
-    const checkbox = document.querySelector(`input[value="${path}"]`);
-    const isTextblock = textblocks?.[path];
+    const input = findRiskCheckbox(path);
 
-    if (checkbox) {
-      activateRiskAndChildren(path);
+    if (input) {
+      activateRiskAndChildren(input.value);  // wichtig: tatsächlicher Input-Wert (kann abweichen)
+    } else if (textblocks) {
+      // Kontextuelle Textblöcke
+      const key = path.split('.').pop();  // extrahiere z. B. "aspiration_risk" aus "contextual_risks.aspiration_risk"
+      let textblockInput = document.querySelector(`input[name="textblock"][value="${key}"]`);
 
-    } else if (isTextblock) {
-      let textblockInput = document.querySelector(`input[name="textblock"][value="${path}"]`);
-      if (!textblockInput) {
+      if (!textblockInput && textblocks[key]) {
         const container = document.getElementById('textblockToggles');
-        const labelText = textblocks[path]?.label?.[lang] || path;
+        if (!container) return;
+
+        const labelText = textblocks[key]?.label?.[lang] || key;
         const wrapper = document.createElement('label');
         wrapper.style.display = 'block';
 
         textblockInput = document.createElement('input');
         textblockInput.type = 'checkbox';
         textblockInput.name = 'textblock';
-        textblockInput.value = path;
+        textblockInput.value = key;
         textblockInput.checked = true;
         textblockInput.addEventListener('change', generateSummary);
 
         wrapper.appendChild(textblockInput);
         wrapper.appendChild(document.createTextNode(' ' + labelText));
         container.appendChild(wrapper);
-        console.log(`[PresetSelection] Dynamisch hinzugefügt: ${path}`);
-      } else {
+
+        console.log(`[PresetSelection] Dynamisch hinzugefügt: ${key}`);
+      } else if (textblockInput) {
         textblockInput.checked = true;
-        console.log(`[PresetSelection] Aktiviert (vorhanden): ${path}`);
-      }
-
-    } else {
-      // Versuche anhand von Risiko-Datenstruktur zu prüfen
-      const pathParts = path.split(".");
-      let node = risksData?.risks?.children?.[0];
-
-      for (const part of pathParts) {
-        if (!node || typeof node !== "object") break;
-        node = node[part];
-      }
-
-      if (node && typeof node === "object") {
-        console.warn(`[PresetSelection] ${path} ist in JSON definiert, aber nicht im DOM gerendert.`);
-        // Optional: hier könntest du `renderRiskGroups()` aufrufen oder Checkboxen manuell erzeugen.
+        console.log(`[PresetSelection] Aktiviert (vorhanden): ${key}`);
       } else {
-        console.warn(`[PresetSelection] Unbekannter Pfad: ${path}`);
+        console.warn(`[PresetSelection] Kein Textblock für: ${path}`);
       }
+    } else {
+      console.warn(`[handlePresetSelection] Unbekannter Pfad: ${path}`);
     }
   });
 
   generateSummary();
 }
+
 
 
 function renderPresetOptions() {
