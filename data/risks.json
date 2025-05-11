@@ -4869,7 +4869,8 @@
             "lines_catheters.intraosseous_access",
             "lines_catheters.central_venous_catheter",
             "lines_catheters.bladder_catheter",
-            "lines_catheters.gastric_tube"
+            "lines_catheters.gastric_tube",
+            "blood_management.transfusion"
           ]
         },
         "n1": {
@@ -4891,7 +4892,8 @@
             "lines_catheters.shaldon_catheter",
             "lines_catheters.central_venous_catheter",
             "lines_catheters.bladder_catheter",
-            "lines_catheters.gastric_tube"
+            "lines_catheters.gastric_tube",
+            "blood_management.transfusion"
           ]
         },
         "n2": {
@@ -4910,7 +4912,8 @@
             "lines_catheters.peripheral_iv",
             "lines_catheters.arterial_catheter",
             "lines_catheters.central_venous_catheter",
-            "lines_catheters.gastric_tube"
+            "lines_catheters.gastric_tube",
+            "blood_management.transfusion"
           ]
         },
         "n3": {
@@ -5032,7 +5035,8 @@
             "lines_catheters.shaldon_catheter",
             "lines_catheters.intraosseous_access",
             "lines_catheters.bladder_catheter",
-            "lines_catheters.gastric_tube"
+            "lines_catheters.gastric_tube",
+            "blood_management.transfusion"
           ]
         },
         "asa6": {
