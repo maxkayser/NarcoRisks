@@ -60,6 +60,10 @@ async function loadRisks() {
       renderProcedureSelectors(data.procedures);
     }
 
+    if (data.presets) {
+      renderPresetOptionSelectors(data.presets);
+    }
+
   } catch (error) {
     document.getElementById('risksOutput').innerText = 'Error loading risk data.';
     console.error(error);
@@ -283,6 +287,60 @@ function renderProcedureSelectors(procedures) {
     });
 
     generateSummary();
+  });
+}
+
+function renderPresetOptionSelectors(presets = {}) {
+  const lang = document.getElementById('language').value || 'de';
+  const container = document.getElementById("presetOptionsContainer"); 
+  container.innerHTML = '';
+
+  Object.entries(presets).forEach(([key, config]) => {
+    const wrapper = document.createElement('div');
+    wrapper.className = 'preset-group';
+
+    const label = document.createElement('label');
+    label.textContent = config.label?.[lang] || key;
+    wrapper.appendChild(label);
+
+    const select = document.createElement('select');
+    select.id = `preset_${key}`;
+    select.innerHTML = `<option value="">–</option>`;
+
+    Object.entries(config.options).forEach(([optKey, optVal]) => {
+      const option = document.createElement('option');
+      option.value = optKey;
+      option.textContent = optVal.label?.[lang] || optKey;
+      select.appendChild(option);
+    });
+
+    select.addEventListener('change', () => {
+      // Zuvor aktivierte Risiken deaktivieren
+      document.querySelectorAll('input[name="riskSubgroups"]').forEach(cb => {
+        const path = cb.value;
+        const allRisksPaths = Object.values(presets).flatMap(p =>
+          Object.values(p.options).flatMap(o => o.associated_risks || [])
+        );
+        if (allRisksPaths.includes(path)) {
+          cb.checked = false;
+        }
+      });
+
+      // Neue aktivieren
+      const selectedValue = select.value;
+      const selectedOption = config.options[selectedValue];
+      if (selectedOption?.associated_risks) {
+        selectedOption.associated_risks.forEach(path => {
+          const cb = document.querySelector(`input[value="${path}"]`);
+          if (cb) cb.checked = true;
+        });
+      }
+
+      generateSummary();
+    });
+
+    wrapper.appendChild(select);
+    container.appendChild(wrapper);
   });
 }
 
