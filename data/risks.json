@@ -1409,7 +1409,12 @@
               }
             }
           },
-          "spinal": {
+          "spinal": {,
+            "label": {
+              "de": "Spinalanästhesie",
+              "en": "Spinal anesthesia",
+              "fr": "Rachianesthésie"
+            },
             "post_dural_puncture_headache": {
               "label": {
                 "de": "Postspinaler Kopfschmerz",
@@ -1514,11 +1519,6 @@
                 "en": "impotence",
                 "fr": "impuissance"
               }
-            },
-            "label": {
-              "de": "Spinalanästhesie",
-              "en": "Spinal anesthesia",
-              "fr": "Rachianesthésie"
             }
           },
           "epidural": {
@@ -1596,7 +1596,7 @@
               "de": "Kombinierte Spinal-Periduralanästhesie (CSE)",
               "en": "Combined Spinal-Epidural Anesthesia (CSE)",
               "fr": "Anesthésie combinée spinale-péridurale (CSE)"
-            }
+            },
             "post_dural_puncture_headache": {
               "label": {
                 "de": "Postspinaler Kopfschmerz",
