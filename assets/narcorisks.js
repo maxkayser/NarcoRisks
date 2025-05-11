@@ -554,7 +554,7 @@ function generateSummary() {
   }
 
   // === Render textblocks with position "after"
-  Object.values(allRisks.textblocks).forEach(group => {
+  Object.values(allRisks?.textblocks || {}).forEach(group => {
     Object.entries(group.items).forEach(([key, block]) => {
       if (selectedTextblocks.includes(key) && block.position === 'after' && block.text?.[lang]) {
         result += block.text[lang] + '\n\n';
