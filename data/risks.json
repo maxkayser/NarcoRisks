@@ -160,9 +160,9 @@
         "en": "Increased aspiration risk",
         "fr": "Risque accru d’aspiration"
       },
-      "de": "Aufgrund bestehender Risikofaktoren (z. B. Refluxkrankheit, Adipositaschirurgie wie Schlauchmagen, Hiatushernie, verzögerte Magenentleerung) besteht ein erhöhtes Risiko einer pulmonalen Aspiration mit potenziell schweren Komplikationen.",
-      "en": "Due to existing risk factors (e.g., GERD, bariatric surgery such as sleeve gastrectomy, hiatal hernia, delayed gastric emptying), there is an increased risk of pulmonary aspiration with potentially serious complications.",
-      "fr": "En raison de facteurs de risque existants (p. ex. RGO, chirurgie bariatrique comme sleeve gastrectomie, hernie hiatale, vidange gastrique retardée), il existe un risque accru d’aspiration pulmonaire avec des complications potentiellement graves."
+      "de": "Aufgrund vorbekannter Risikofaktoren besteht ein erhöhtes Risiko einer pulmonalen Aspiration mit potenziell schweren Komplikationen.",
+      "en": "Due to existing risk factors, there is an increased risk of pulmonary aspiration with potentially serious complications.",
+      "fr": "En raison de facteurs de risque existants, il existe un risque accru d’aspiration pulmonaire avec des complications potentiellement graves."
     },
     "known_difficult_airway": {
       "label": {
