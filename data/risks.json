@@ -4858,9 +4858,16 @@
           "associated_risks": [
             "contextual_risks.emergency_surgery",
             "contextual_risks.time_limited_consent",
+            "contextual_risks.aspiration_risk",
             "general_anesthesia.common",
             "general_anesthesia.full",
-            "general_anesthesia.rsi"
+            "general_anesthesia.rsi",
+            "lines_catheters.common",            
+            "lines_catheters.peripheral_iv",
+            "lines_catheters.arterial_line",
+            "lines_catheters.urinary_catheter",
+            "lines_catheters.central_venous_line",
+            "lines_catheters.nasogastric_tube"
           ]
         },
         "n1": {
@@ -4872,9 +4879,16 @@
           "associated_risks": [
             "contextual_risks.emergency_surgery",
             "contextual_risks.time_limited_consent",
+            "contextual_risks.aspiration_risk",
             "general_anesthesia.common",
             "general_anesthesia.full",
-            "general_anesthesia.rsi"
+            "general_anesthesia.rsi",
+            "lines_catheters.common",            
+            "lines_catheters.peripheral_iv",
+            "lines_catheters.arterial_line",
+            "lines_catheters.urinary_catheter",
+            "lines_catheters.central_venous_line",
+            "lines_catheters.nasogastric_tube"
           ]
         },
         "n2": {
@@ -4888,7 +4902,12 @@
             "contextual_risks.time_limited_consent",
             "general_anesthesia.common",
             "general_anesthesia.full",
-            "general_anesthesia.rsi"
+            "general_anesthesia.rsi",
+            "lines_catheters.common",            
+            "lines_catheters.peripheral_iv",
+            "lines_catheters.arterial_line",
+            "lines_catheters.central_venous_line",
+            "lines_catheters.nasogastric_tube"
           ]
         },
         "n3": {
@@ -4902,7 +4921,9 @@
             "contextual_risks.time_limited_consent",
             "general_anesthesia.common",
             "general_anesthesia.full",
-            "general_anesthesia.rsi"
+            "general_anesthesia.rsi",
+            "lines_catheters.common",            
+            "lines_catheters.peripheral_iv"
           ]
         },
         "n4": {
@@ -4917,10 +4938,8 @@
             "general_anesthesia.common",
             "general_anesthesia.full",
             "general_anesthesia.rsi",
-            "lines_catheters.arterial_line",
-            "lines_catheters.urinary_catheter",
-            "lines_catheters.central_venous_line",
-            "lines_catheters.nasogastric_tube"
+            "lines_catheters.common",            
+            "lines_catheters.peripheral_iv"
           ]
         },
         "n5": {
@@ -4929,7 +4948,10 @@
             "en": "N5 – elective",
             "fr": "N5 – élective"
           },
-          "associated_risks": []
+          "associated_risks": [
+            "lines_catheters.common",            
+            "lines_catheters.peripheral_iv"
+          ]
         }
       }
     },
@@ -4946,7 +4968,10 @@
             "en": "I – healthy patient",
             "fr": "I – patient en bonne santé"
           },
-          "associated_risks": []
+          "associated_risks": [
+            "lines_catheters.common",   
+            "lines_catheters.peripheral_iv"
+          ]
         },
         "asa2": {
           "label": {
@@ -4963,6 +4988,8 @@
             "fr": "III – maladie avec limitation significative"
           },
           "associated_risks": [
+            "lines_catheters.common",       
+            "lines_catheters.peripheral_iv",     
             "lines_catheters.arterial_line",
             "lines_catheters.central_venous_line"
           ]
@@ -4974,13 +5001,15 @@
             "fr": "IV – maladie menaçant la vie"
           },
           "associated_risks": [
+            "general_anesthesia.common",
+            "general_anesthesia.full",
+            "general_anesthesia.rsi",
+            "lines_catheters.common",            
+            "lines_catheters.peripheral_iv",
             "lines_catheters.arterial_line",
             "lines_catheters.urinary_catheter",
             "lines_catheters.central_venous_line",
-            "lines_catheters.nasogastric_tube",
-            "general_anesthesia.common",
-            "general_anesthesia.full",
-            "general_anesthesia.rsi"
+            "lines_catheters.nasogastric_tube"
           ]
         },
         "asa5": {
@@ -4990,13 +5019,15 @@
             "fr": "V – patient moribond"
           },
           "associated_risks": [
+            "general_anesthesia.common",
+            "general_anesthesia.full",
+            "general_anesthesia.rsi",
+            "lines_catheters.common",
+            "lines_catheters.peripheral_iv",
             "lines_catheters.arterial_line",
             "lines_catheters.urinary_catheter",
             "lines_catheters.central_venous_line",
-            "lines_catheters.nasogastric_tube",
-            "general_anesthesia.common",
-            "general_anesthesia.full",
-            "general_anesthesia.rsi"
+            "lines_catheters.nasogastric_tube"
           ]
         },
         "asa6": {
