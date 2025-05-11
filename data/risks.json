@@ -4050,23 +4050,37 @@
           "fr": "Hystérectomie laparoscopique"
         },
         "risks": [
+          "general_anesthesia.common",
           "general_anesthesia.full",
           "lines_catheters.urinary_catheter",
           "regional_anesthesia.peripheral_catheter",
-          "general_anesthesia.common",
           "regional_anesthesia.common",
           "lines_catheters.common",
           "lines_catheters.peripheral_iv"
         ]
       },
-      "tvt_urogynecologic_procedures": {
+      "tvt_procedure": {
         "label": {
-          "de": "TVT / Urogynäkologische Eingriffe",
-          "en": "TVT / Urogynecologic procedures",
-          "fr": "TVT / Interventions urogynécologiques"
+          "de": "Tension-free Vaginal Tape (TVT)",
+          "en": "Tension-free vaginal tape",
+          "fr": "Bandelette sous-urétrale (TVT)"
         },
         "risks": [
           "general_anesthesia.common",
+          "general_anesthesia.full",
+          "lines_catheters.common",
+          "lines_catheters.peripheral_iv"
+        ]
+      },
+      "other_urogynecologic_procedures": {
+        "label": {
+          "de": "Andere urogynäkologische Eingriffe",
+          "en": "Other urogynecologic procedures",
+          "fr": "Autres interventions urogynécologiques"
+        },
+        "risks": [
+          "general_anesthesia.common",
+          "general_anesthesia.full",
           "lines_catheters.common",
           "lines_catheters.peripheral_iv"
         ]
@@ -4078,10 +4092,10 @@
           "fr": "Plasties lambeaux étendus après ablation"
         },
         "risks": [
+          "general_anesthesia.common",
           "general_anesthesia.full",
           "lines_catheters.urinary_catheter",
           "regional_anesthesia.peripheral_catheter",
-          "general_anesthesia.common",
           "regional_anesthesia.common",
           "lines_catheters.common",
           "lines_catheters.peripheral_iv"
@@ -4101,8 +4115,8 @@
           "fr": "Prothèse totale de l'épaule"
         },
         "risks": [
-          "general_anesthesia.full",
           "general_anesthesia.common",
+          "general_anesthesia.full",
           "lines_catheters.common",
           "lines_catheters.peripheral_iv"
         ]
@@ -4114,10 +4128,12 @@
           "fr": "Prothèse totale de hanche"
         },
         "risks": [
-          "general_anesthesia.full",
-          "lines_catheters.urinary_catheter",
           "general_anesthesia.common",
+          "general_anesthesia.full",
+          "regional_anesthesia.common",
+          "regional_anesthesia.spinal",
           "lines_catheters.common",
+          "lines_catheters.urinary_catheter",
           "lines_catheters.peripheral_iv"
         ]
       },
@@ -4128,8 +4144,10 @@
           "fr": "Prothèse totale du genou"
         },
         "risks": [
-          "general_anesthesia.full",
           "general_anesthesia.common",
+          "general_anesthesia.full",
+          "regional_anesthesia.common",
+          "regional_anesthesia.spinal",
           "lines_catheters.common",
           "lines_catheters.peripheral_iv"
         ]
@@ -4141,11 +4159,11 @@
           "fr": "Fracture du bassin"
         },
         "risks": [
+          "general_anesthesia.common",
           "general_anesthesia.full",
           "lines_catheters.arterial_line",
           "lines_catheters.central_venous_line",
           "lines_catheters.urinary_catheter",
-          "general_anesthesia.common",
           "lines_catheters.common",
           "lines_catheters.peripheral_iv"
         ]
@@ -4157,37 +4175,24 @@
           "fr": "Chirurgie de la scoliose"
         },
         "risks": [
+          "general_anesthesia.common",
           "general_anesthesia.full",
+          "lines_catheters.common",
           "lines_catheters.arterial_line",
           "lines_catheters.central_venous_line",
           "lines_catheters.urinary_catheter",
-          "general_anesthesia.common",
-          "lines_catheters.common",
           "lines_catheters.peripheral_iv"
         ]
       },
-      "shoulder_arthroscopy_arthrolysis": {
+      "shoulder_arthroscopy": {
         "label": {
-          "de": "Schulterarthroskopie bei Arthrolyse",
-          "en": "Shoulder arthroscopy for arthrolysis",
-          "fr": "Arthroscopie de l'épaule pour arthrolyse"
+          "de": "Schulterarthroskopie",
+          "en": "Shoulder arthroscopy",
+          "fr": "Arthroscopie de l'épaule"
         },
         "risks": [
-          "general_anesthesia.full",
           "general_anesthesia.common",
-          "lines_catheters.common",
-          "lines_catheters.peripheral_iv"
-        ]
-      },
-      "other_shoulder_arthroscopies": {
-        "label": {
-          "de": "Weitere Schulterarthroskopien",
-          "en": "Other shoulder arthroscopies",
-          "fr": "Autres arthroscopies de l'épaule"
-        },
-        "risks": [
           "general_anesthesia.full",
-          "general_anesthesia.common",
           "lines_catheters.common",
           "lines_catheters.peripheral_iv"
         ]
@@ -4199,9 +4204,8 @@
           "fr": "Plastie du LCA"
         },
         "risks": [
-          "general_anesthesia.full",
-          "general_anesthesia.full.laryngeal_mask",
           "general_anesthesia.common",
+          "general_anesthesia.full",
           "lines_catheters.common",
           "lines_catheters.peripheral_iv"
         ]
@@ -4213,6 +4217,8 @@
           "fr": "Arthroscopie du genou"
         },
         "risks": [
+          "general_anesthesia.common",
+          "general_anesthesia.full",
           "regional_anesthesia.spinal",
           "regional_anesthesia.common",
           "lines_catheters.common",
@@ -4226,6 +4232,8 @@
           "fr": "Luxation de la rotule"
         },
         "risks": [
+          "general_anesthesia.common",
+          "general_anesthesia.full",
           "regional_anesthesia.spinal",
           "regional_anesthesia.common",
           "lines_catheters.common",
@@ -4239,8 +4247,10 @@
           "fr": "Reconstruction du MPFL"
         },
         "risks": [
-          "regional_anesthesia.spinal",
+          "general_anesthesia.common",
+          "general_anesthesia.full",
           "regional_anesthesia.common",
+          "regional_anesthesia.spinal",
           "lines_catheters.common",
           "lines_catheters.peripheral_iv"
         ]
@@ -4252,10 +4262,9 @@
           "fr": "Prothèse de cheville"
         },
         "risks": [
-          "general_anesthesia.full",
-          "general_anesthesia.full.laryngeal_mask",
-          "regional_anesthesia.spinal",
           "general_anesthesia.common",
+          "general_anesthesia.full",
+          "regional_anesthesia.spinal",
           "regional_anesthesia.common",
           "lines_catheters.common",
           "lines_catheters.peripheral_iv"
@@ -4268,9 +4277,8 @@
           "fr": "Arthrodèse de cheville"
         },
         "risks": [
-          "general_anesthesia.full",
-          "general_anesthesia.full.laryngeal_mask",
           "general_anesthesia.common",
+          "general_anesthesia.full",
           "lines_catheters.common",
           "lines_catheters.peripheral_iv"
         ]
@@ -4282,6 +4290,8 @@
           "fr": "Fracture de la cheville"
         },
         "risks": [
+          "general_anesthesia.common",
+          "general_anesthesia.full",
           "regional_anesthesia.spinal",
           "regional_anesthesia.common",
           "lines_catheters.common",
@@ -4295,6 +4305,8 @@
           "fr": "Chirurgie du hallux valgus"
         },
         "risks": [
+          "general_anesthesia.common",
+          "general_anesthesia.full",
           "regional_anesthesia.spinal",
           "regional_anesthesia.common",
           "lines_catheters.common",
@@ -4308,8 +4320,8 @@
           "fr": "Arthroscopie de l'épaule pour instabilité"
         },
         "risks": [
-          "general_anesthesia.full",
           "general_anesthesia.common",
+          "general_anesthesia.full",
           "lines_catheters.common",
           "lines_catheters.peripheral_iv"
         ]
@@ -4328,11 +4340,11 @@
           "fr": "Néphrectomie partielle laparoscopique"
         },
         "risks": [
+          "general_anesthesia.common",
           "general_anesthesia.full",
           "lines_catheters.arterial_line",
           "lines_catheters.central_venous_line",
           "regional_anesthesia.tap_block",
-          "general_anesthesia.common",
           "regional_anesthesia.common",
           "lines_catheters.common",
           "lines_catheters.peripheral_iv"
@@ -4345,10 +4357,10 @@
           "fr": "Néphrectomie avec thrombus cave sans CEC"
         },
         "risks": [
+          "general_anesthesia.common",
           "general_anesthesia.full",
           "lines_catheters.arterial_line",
           "lines_catheters.central_venous_line",
-          "general_anesthesia.common",
           "lines_catheters.common",
           "lines_catheters.peripheral_iv"
         ]
@@ -4373,12 +4385,12 @@
           "fr": "Transplantation rénale"
         },
         "risks": [
-          "general_anesthesia.full",
-          "lines_catheters.central_venous_line",
-          "regional_anesthesia.tap_block",
           "general_anesthesia.common",
+          "general_anesthesia.full",
+          "regional_anesthesia.tap_block",
           "regional_anesthesia.common",
           "lines_catheters.common",
+          "lines_catheters.central_venous_line",
           "lines_catheters.peripheral_iv"
         ]
       },
@@ -4389,9 +4401,8 @@
           "fr": "Chirurgie de l'incontinence"
         },
         "risks": [
-          "general_anesthesia.full",
-          "general_anesthesia.full.laryngeal_mask",
           "general_anesthesia.common",
+          "general_anesthesia.full",
           "lines_catheters.common",
           "lines_catheters.peripheral_iv"
         ]
@@ -4403,6 +4414,8 @@
           "fr": "Néphrectomie ouverte avec thrombus cave et CEC planifiée"
         },
         "risks": [
+          "general_anesthesia.common",
+          "general_anesthesia.full",
           "lines_catheters.arterial_line",
           "lines_catheters.central_venous_line",
           "monitoring.transesophageal_echo",
@@ -4417,9 +4430,9 @@
           "fr": "Pyéloplastie laparoscopique"
         },
         "risks": [
+          "general_anesthesia.common",
           "general_anesthesia.full",
           "lines_catheters.nasogastric_tube",
-          "general_anesthesia.common",
           "lines_catheters.common",
           "lines_catheters.peripheral_iv"
         ]
@@ -4431,8 +4444,8 @@
           "fr": "Uréterolithotomie laparoscopique"
         },
         "risks": [
-          "general_anesthesia.full",
           "general_anesthesia.common",
+          "general_anesthesia.full",
           "lines_catheters.common",
           "lines_catheters.peripheral_iv"
         ]
@@ -4444,12 +4457,12 @@
           "fr": "Prostatectomie radicale"
         },
         "risks": [
+          "general_anesthesia.common",
           "general_anesthesia.full",
           "lines_catheters.arterial_line",
           "lines_catheters.urinary_catheter",
           "regional_anesthesia.peripheral_catheter",
           "regional_anesthesia.tap_block",
-          "general_anesthesia.common",
           "regional_anesthesia.common",
           "lines_catheters.common",
           "lines_catheters.peripheral_iv"
@@ -4462,13 +4475,13 @@
           "fr": "Autres chirurgies urologiques oncologiques"
         },
         "risks": [
+          "general_anesthesia.common",
           "general_anesthesia.full",
           "lines_catheters.arterial_line",
           "lines_catheters.central_venous_line",
           "lines_catheters.nasogastric_tube",
           "lines_catheters.urinary_catheter",
           "regional_anesthesia.peripheral_catheter",
-          "general_anesthesia.common",
           "regional_anesthesia.common",
           "lines_catheters.common",
           "lines_catheters.peripheral_iv"
@@ -4481,11 +4494,11 @@
           "fr": "Néphrectomie donneur vivant"
         },
         "risks": [
+          "general_anesthesia.common",
           "general_anesthesia.full",
           "lines_catheters.urinary_catheter",
           "regional_anesthesia.peripheral_catheter",
           "regional_anesthesia.tap_block",
-          "general_anesthesia.common",
           "regional_anesthesia.common",
           "lines_catheters.common",
           "lines_catheters.peripheral_iv"
@@ -4505,9 +4518,9 @@
           "fr": "Reconstruction mammaire"
         },
         "risks": [
+          "general_anesthesia.common",
           "general_anesthesia.full",
           "regional_anesthesia.pecs_block",
-          "general_anesthesia.common",
           "regional_anesthesia.common",
           "lines_catheters.common",
           "lines_catheters.peripheral_iv"
@@ -4520,9 +4533,9 @@
           "fr": "Réduction mammaire"
         },
         "risks": [
+          "general_anesthesia.common",
           "general_anesthesia.full",
           "regional_anesthesia.pecs_block",
-          "general_anesthesia.common",
           "regional_anesthesia.common",
           "lines_catheters.common",
           "lines_catheters.peripheral_iv"
@@ -4535,10 +4548,9 @@
           "fr": "Mastectomie"
         },
         "risks": [
-          "general_anesthesia.full",
-          "general_anesthesia.full.laryngeal_mask",
-          "regional_anesthesia.pecs_block",
           "general_anesthesia.common",
+          "general_anesthesia.full",
+          "regional_anesthesia.pecs_block",
           "regional_anesthesia.common",
           "lines_catheters.common",
           "lines_catheters.peripheral_iv"
@@ -4551,9 +4563,8 @@
           "fr": "Exérèse diagnostique mammaire"
         },
         "risks": [
-          "general_anesthesia.full",
-          "general_anesthesia.full.laryngeal_mask",
           "general_anesthesia.common",
+          "general_anesthesia.full",
           "lines_catheters.common",
           "lines_catheters.peripheral_iv"
         ]
@@ -4565,10 +4576,10 @@
           "fr": "Reconstruction par lambeau DIEP"
         },
         "risks": [
+          "general_anesthesia.common",
           "general_anesthesia.full",
           "lines_catheters.arterial_line",
           "lines_catheters.urinary_catheter",
-          "general_anesthesia.common",
           "lines_catheters.common",
           "lines_catheters.peripheral_iv"
         ]
@@ -4587,6 +4598,8 @@
           "fr": "Révision utérine"
         },
         "risks": [
+          "general_anesthesia.common",
+          "general_anesthesia.full",
           "lines_catheters.urinary_catheter",
           "regional_anesthesia.peripheral_catheter",
           "regional_anesthesia.spinal",
@@ -4602,6 +4615,8 @@
           "fr": "Accouchement par forceps"
         },
         "risks": [
+          "general_anesthesia.common",
+          "general_anesthesia.full",
           "lines_catheters.urinary_catheter",
           "regional_anesthesia.peripheral_catheter",
           "regional_anesthesia.spinal",
@@ -4617,8 +4632,9 @@
           "fr": "Césarienne en urgence"
         },
         "risks": [
-          "general_anesthesia.full",
           "general_anesthesia.common",
+          "general_anesthesia.full",
+          "general_anesthesia.rsi",
           "lines_catheters.common",
           "lines_catheters.peripheral_iv"
         ]
@@ -4630,6 +4646,9 @@
           "fr": "Césarienne élective/urgente"
         },
         "risks": [
+          "general_anesthesia.common",
+          "general_anesthesia.full",
+          "general_anesthesia.rsi",
           "regional_anesthesia.spinal",
           "regional_anesthesia.common",
           "lines_catheters.common",
@@ -4643,6 +4662,8 @@
           "fr": "Interruption de grossesse"
         },
         "risks": [
+          "general_anesthesia.common",
+          "general_anesthesia.full",
           "lines_catheters.urinary_catheter",
           "regional_anesthesia.peripheral_catheter",
           "regional_anesthesia.spinal",
@@ -4658,6 +4679,9 @@
           "fr": "Gestion de la douleur du travail"
         },
         "risks": [
+          "general_anesthesia.common",
+          "general_anesthesia.full",
+          "general_anesthesia.rsi",
           "regional_anesthesia.epidural",
           "regional_anesthesia.common",
           "lines_catheters.common",
@@ -4684,11 +4708,11 @@
           "fr": "Hémorragie péri-/post-partum"
         },
         "risks": [
-          "general_anesthesia.full",
           "lines_catheters.urinary_catheter",
           "regional_anesthesia.epidural",
           "regional_anesthesia.peripheral_catheter",
           "general_anesthesia.common",
+          "general_anesthesia.full",
           "regional_anesthesia.common",
           "lines_catheters.common",
           "lines_catheters.peripheral_iv"
@@ -4722,7 +4746,6 @@
         },
         "risks": [
           "general_anesthesia.full",
-          "general_anesthesia.full.laryngeal_mask",
           "general_anesthesia.common",
           "lines_catheters.common",
           "lines_catheters.peripheral_iv"
@@ -4737,12 +4760,13 @@
       },
       "electroconvulsive_therapy": {
         "label": {
-          "de": "EKT (Elektrokrampftherapie)",
-          "en": "ECT (Electroconvulsive Therapy)",
-          "fr": "ECT (Électroconvulsivothérapie)"
+          "de": "Elektrokrampftherapie (EKT)",
+          "en": "Electroconvulsive Therapy (ECT)",
+          "fr": "Électroconvulsivothérapie (ECT)"
         },
         "risks": [
           "general_anesthesia.common",
+          "general_anesthesia.full",
           "lines_catheters.common",
           "lines_catheters.peripheral_iv"
         ]
@@ -4762,6 +4786,8 @@
         },
         "risks": [
           "general_anesthesia.common",
+          "general_anesthesia.full",
+          "general_anesthesia.sedation",
           "lines_catheters.common",
           "lines_catheters.peripheral_iv"
         ]
@@ -4781,6 +4807,7 @@
         },
         "risks": [
           "general_anesthesia.common",
+          "general_anesthesia.full",
           "lines_catheters.common",
           "lines_catheters.peripheral_iv"
         ]
@@ -4793,6 +4820,7 @@
         },
         "risks": [
           "general_anesthesia.common",
+          "general_anesthesia.full",
           "lines_catheters.common",
           "lines_catheters.peripheral_iv"
         ]
@@ -4805,7 +4833,6 @@
         },
         "risks": [
           "general_anesthesia.full",
-          "general_anesthesia.full.laryngeal_mask",
           "general_anesthesia.common",
           "lines_catheters.common",
           "lines_catheters.peripheral_iv"
