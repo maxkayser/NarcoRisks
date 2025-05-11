@@ -105,7 +105,7 @@
             "en": "The informed consent discussion took place online via the Doctolib platform.",
             "fr": "L’information a été donnée en ligne via la plateforme Doctolib."
           },
-          "position": "before_risks"
+          "position": "after_risks"
         },
         "interpreter": {
           "label": {
@@ -114,11 +114,11 @@
             "fr": "Interprète"
           },
           "text": {
-            "de": "Aufgrund einer bestehenden Sprachbarriere erfolgte die vollständige Aufklärung im Beisein eines geeigneten Dolmetschers...",
-            "en": "Due to an existing language barrier, full information was provided in the presence of a qualified interpreter...",
-            "fr": "En raison d'une barrière linguistique, l'explication complète a été réalisée en présence d’un interprète qualifié..."
+            "de": "Aufgrund einer bestehenden Sprachbarriere erfolgte die vollständige Aufklärung im Beisein eines geeigneten Dolmetschers. Dieser versicherte auf Nachfrage, alle Inhalte vollständig und exakt übersetzt zu haben. Es erfolgten mehrfach Rückfragen an die Patientin / den Patienten, ob die Inhalte wirklich richtig verstanden wurden.",
+            "en": "Due to an existing language barrier, full information was provided in the presence of a qualified interpreter. The interpreter confirmed on request that all content was translated completely and accurately. The patient was repeatedly asked whether everything was truly understood.",
+            "fr": "En raison d'une barrière linguistique, l'explication complète a été réalisée en présence d’un interprète qualifié. Celui-ci a confirmé avoir traduit fidèlement et entièrement tous les contenus. Le patient a été interrogé à plusieurs reprises pour vérifier sa compréhension."
           },
-          "position": "before_risks"
+          "position": "after_risks"
         },
         "closing": {
           "label": {
