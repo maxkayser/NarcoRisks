@@ -339,15 +339,12 @@ function renderProcedureSelectors() {
 }
 
 function findRiskCheckbox(path) {
-  // Subgroup-Checkbox (z. B. lines_catheters.arterial_line)
   const subgroup = document.querySelector(`.subgroup-toggle input[type="checkbox"][value="${path}"]`);
   if (subgroup) return subgroup;
 
-  // Direkt riskSubgroup
   const exact = document.querySelector(`input[name="riskSubgroups"][value="${path}"]`);
   if (exact) return exact;
 
-  // Fallback auf Subrisiken
   const all = Array.from(document.querySelectorAll('input[name="riskSubgroups"]'));
   return all.find(cb => cb.value.startsWith(path + "."));
 }
