@@ -290,7 +290,7 @@ function renderProcedureSelectors() {
 }
 
 function renderPresetOptions() {
-  const presets = risksData?.preset_options;
+  const presets = risksData?.presets;
   if (!presets) return;
   
   const lang = document.getElementById('language').value || 'de';
