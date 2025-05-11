@@ -3332,14 +3332,14 @@
     "vascular_surgery": {
       "label": {
         "de": "Gefäßchirurgie",
-        "en": "vascular surgery",
+        "en": "Vascular surgery",
         "fr": "Chirurgie vasculaire"
       },
-      "op_bei_bauch_aorten_aneurysma_offen": {
+      "open_abdominal_aortic_aneurysm_repair": {
         "label": {
-          "de": "OP bei Bauch-Aorten-Aneurysma ,offen",
-          "en": "op bei bauch-aorten-aneurysma ,offen",
-          "fr": "Op bei bauch-aorten-aneurysma ,offen"
+          "de": "Offene Operation bei Bauchaortenaneurysma",
+          "en": "Open abdominal aortic aneurysm repair",
+          "fr": "Réparation ouverte d’anévrisme de l’aorte abdominale"
         },
         "risks": [
           "general_anesthesia.full",
@@ -3348,129 +3348,161 @@
           "lines_catheters.urinary_catheter",
           "monitoring.transesophageal_echo",
           "regional_anesthesia.epidural",
-          "regional_anesthesia.peripheral_catheter"
+          "regional_anesthesia.peripheral_catheter",
+          "general_anesthesia.common",
+          "regional_anesthesia.common",
+          "lines_catheters.common",
+          "lines_catheters.peripheral_iv"
         ]
       },
-      "aorten_stent_evar": {
+      "endovascular_aneurysm_repair": {
         "label": {
-          "de": "Aorten-stent EVAR",
-          "en": "aorten-stent evar",
-          "fr": "Aorten-stent evar"
-        },
-        "risks": [
-          "general_anesthesia.full",
-          "lines_catheters.arterial_line",
-          "lines_catheters.urinary_catheter"
-        ]
-      },
-      "carotis_op": {
-        "label": {
-          "de": "Carotis-OP",
-          "en": "carotis-op",
-          "fr": "Carotis-op"
+          "de": "Endovaskuläres Aneurysma-Repair (EVAR)",
+          "en": "Endovascular aneurysm repair (EVAR)",
+          "fr": "Réparation endovasculaire d’anévrisme (EVAR)"
         },
         "risks": [
           "general_anesthesia.full",
           "lines_catheters.arterial_line",
           "lines_catheters.urinary_catheter",
-          "regional_anesthesia.spinal"
+          "general_anesthesia.common",
+          "lines_catheters.common",
+          "lines_catheters.peripheral_iv"
         ]
       },
-      "dialyseshunt_op_revisionen": {
+      "carotid_endarterectomy": {
         "label": {
-          "de": "Dialyseshunt-OP/-Revisionen",
-          "en": "dialyseshunt-op/-revisionen",
-          "fr": "Dialyseshunt-op/-revisionen"
-        },
-        "risks": [
-          "regional_anesthesia.spinal"
-        ]
-      },
-      "varizen_stripping": {
-        "label": {
-          "de": "Varizen-Stripping",
-          "en": "varizen-stripping",
-          "fr": "Varizen-stripping"
+          "de": "Carotis-Endarteriektomie",
+          "en": "Carotid endarterectomy",
+          "fr": "Endartériectomie carotidienne"
         },
         "risks": [
           "general_anesthesia.full",
-          "general_anesthesia.full.laryngeal_mask"
+          "lines_catheters.arterial_line",
+          "lines_catheters.urinary_catheter",
+          "regional_anesthesia.spinal",
+          "general_anesthesia.common",
+          "regional_anesthesia.common",
+          "lines_catheters.common",
+          "lines_catheters.peripheral_iv"
         ]
       },
-      "implantation_baro_stimulator": {
+      "dialysis_shunt_surgery": {
         "label": {
-          "de": "Implantation Baro-Stimulator",
-          "en": "implantation baro-stimulator",
-          "fr": "Implantation baro-stimulator"
+          "de": "Dialyseshunt-Operation oder -Revision",
+          "en": "Dialysis shunt surgery or revision",
+          "fr": "Chirurgie ou révision de shunt de dialyse"
+        },
+        "risks": [
+          "regional_anesthesia.spinal",
+          "regional_anesthesia.common",
+          "lines_catheters.common",
+          "lines_catheters.peripheral_iv"
+        ]
+      },
+      "varicose_vein_stripping": {
+        "label": {
+          "de": "Varizenstripping",
+          "en": "Varicose vein stripping",
+          "fr": "Stripping des varices"
+        },
+        "risks": [
+          "general_anesthesia.full",
+          "general_anesthesia.full.laryngeal_mask",
+          "general_anesthesia.common",
+          "lines_catheters.common",
+          "lines_catheters.peripheral_iv"
+        ]
+      },
+      "baroreceptor_stimulator_implantation": {
+        "label": {
+          "de": "Implantation eines Barorezeptor-Stimulators",
+          "en": "Baroreceptor stimulator implantation",
+          "fr": "Implantation d’un stimulateur barorécepteur"
         },
         "risks": [
           "general_anesthesia.full",
           "lines_catheters.arterial_line",
           "lines_catheters.central_venous_line",
-          "regional_anesthesia.spinal"
+          "regional_anesthesia.spinal",
+          "general_anesthesia.common",
+          "regional_anesthesia.common",
+          "lines_catheters.common",
+          "lines_catheters.peripheral_iv"
         ]
       },
-      "pavk_periph_bypasse_thrombectomie": {
+      "peripheral_bypass_or_thrombectomy": {
         "label": {
-          "de": "PAVK - periph. Bypässe / Thrombectomie",
-          "en": "pavk - periph. bypässe / thrombectomie",
-          "fr": "Pavk - periph. bypässe / thrombectomie"
+          "de": "Periphere Bypass-Operation oder Thrombektomie",
+          "en": "Peripheral bypass surgery or thrombectomy",
+          "fr": "Pontage périphérique ou thrombectomie"
         },
         "risks": [
           "general_anesthesia.full",
           "lines_catheters.arterial_line",
           "lines_catheters.central_venous_line",
           "lines_catheters.urinary_catheter",
-          "regional_anesthesia.peripheral_catheter"
+          "regional_anesthesia.peripheral_catheter",
+          "general_anesthesia.common",
+          "regional_anesthesia.common",
+          "lines_catheters.common",
+          "lines_catheters.peripheral_iv"
         ]
       }
     },
-    "herzchirurgie": {
+    "cardiac_surgery": {
       "label": {
         "de": "Herzchirurgie",
-        "en": "herzchirurgie",
-        "fr": "Herzchirurgie"
+        "en": "Cardiac surgery",
+        "fr": "Chirurgie cardiaque"
       },
-      "cabg": {
+      "coronary_artery_bypass_graft": {
         "label": {
-          "de": "CABG",
-          "en": "cabg",
-          "fr": "Cabg"
+          "de": "Koronararterien-Bypass (CABG)",
+          "en": "Coronary artery bypass graft (CABG)",
+          "fr": "Pontage aorto-coronarien (CABG)"
         },
         "risks": [
           "general_anesthesia.full",
           "lines_catheters.arterial_line",
           "lines_catheters.central_venous_line",
           "lines_catheters.urinary_catheter",
-          "monitoring.transesophageal_echo"
+          "monitoring.transesophageal_echo",
+          "general_anesthesia.common",
+          "lines_catheters.common",
+          "lines_catheters.peripheral_iv"
         ]
       }
     },
-    "thoraxchirurgie": {
+    "thoracic_surgery": {
       "label": {
         "de": "Thoraxchirurgie",
-        "en": "thoraxchirurgie",
-        "fr": "Thoraxchirurgie"
+        "en": "Thoracic surgery",
+        "fr": "Chirurgie thoracique"
       },
-      "vats_unipartal_triportal": {
+      "video_assisted_thoracoscopic_surgery": {
         "label": {
-          "de": "VATS (unipartal, triportal)",
-          "en": "vats (unipartal, triportal)",
-          "fr": "Vats (unipartal, triportal)"
+          "de": "Videoassistierte Thorakoskopie (uni-/triportal)",
+          "en": "Video-assisted thoracoscopic surgery (uni-/triportal)",
+          "fr": "Chirurgie thoracoscopique assistée par vidéo (uni-/triportale)"
         },
         "risks": [
           "general_anesthesia.full",
           "general_anesthesia.full.double_lumen",
           "lines_catheters.arterial_line",
           "lines_catheters.urinary_catheter",
-          "regional_anesthesia.peripheral_catheter"
+          "regional_anesthesia.peripheral_catheter",
+          "general_anesthesia.common",
+          "regional_anesthesia.common",
+          "lines_catheters.common",
+          "lines_catheters.peripheral_iv"
         ]
       },
-      "thorakotomie": {
+      "thoracotomy": {
         "label": {
           "de": "Thorakotomie",
-          "en": "thorakotomie",
-          "fr": "Thorakotomie"
+          "en": "Thoracotomy",
+          "fr": "Thoracotomie"
         },
         "risks": [
           "general_anesthesia.full",
@@ -3479,373 +3511,456 @@
           "lines_catheters.central_venous_line",
           "lines_catheters.urinary_catheter",
           "regional_anesthesia.epidural",
-          "regional_anesthesia.peripheral_catheter"
+          "regional_anesthesia.peripheral_catheter",
+          "general_anesthesia.common",
+          "regional_anesthesia.common",
+          "lines_catheters.common",
+          "lines_catheters.peripheral_iv"
         ]
       },
-      "thymectomie_thoracoscopisch_da_vinci": {
+      "thoracoscopic_thymectomy_da_vinci": {
         "label": {
-          "de": "Thymectomie (thoracoscopisch / Da Vinci)",
-          "en": "thymectomie (thoracoscopisch / da vinci)",
-          "fr": "Thymectomie (thoracoscopisch / da vinci)"
+          "de": "Thorakoskopische Thymektomie (Da Vinci)",
+          "en": "Thoracoscopic thymectomy (Da Vinci)",
+          "fr": "Thymectomie thoracoscopique (Da Vinci)"
         },
         "risks": [
           "general_anesthesia.full",
           "general_anesthesia.full.double_lumen",
           "general_anesthesia.full.tiva",
           "lines_catheters.arterial_line",
-          "lines_catheters.urinary_catheter"
+          "lines_catheters.urinary_catheter",
+          "general_anesthesia.common",
+          "lines_catheters.common",
+          "lines_catheters.peripheral_iv"
         ]
       }
     },
-    "neurochirurgie": {
+    "neurosurgery": {
       "label": {
         "de": "Neurochirurgie",
-        "en": "neurochirurgie",
+        "en": "Neurosurgery",
         "fr": "Neurochirurgie"
       },
-      "sta_mca_bypass": {
+      "sta_to_mca_bypass": {
         "label": {
-          "de": "STA-MCA Bypass",
-          "en": "sta-mca bypass",
-          "fr": "Sta-mca bypass"
+          "de": "STA-MCA-Bypass",
+          "en": "STA to MCA bypass",
+          "fr": "Pontage STA-MCA"
         },
         "risks": [
           "general_anesthesia.full",
           "lines_catheters.peripheral_iv",
-          "lines_catheters.urinary_catheter"
+          "lines_catheters.urinary_catheter",
+          "general_anesthesia.common",
+          "lines_catheters.common"
         ]
       },
       "high_flow_bypass": {
         "label": {
-          "de": "High-Flow Bypass",
-          "en": "high-flow bypass",
-          "fr": "High-flow bypass"
+          "de": "High-Flow-Bypass",
+          "en": "High-flow bypass",
+          "fr": "Pontage à haut débit"
         },
         "risks": [
           "general_anesthesia.full",
           "lines_catheters.peripheral_iv",
-          "lines_catheters.urinary_catheter"
+          "lines_catheters.urinary_catheter",
+          "general_anesthesia.common",
+          "lines_catheters.common"
         ]
       },
-      "av_malformationen": {
+      "arteriovenous_malformations": {
         "label": {
           "de": "AV-Malformationen",
-          "en": "av-malformationen",
-          "fr": "Av-malformationen"
+          "en": "Arteriovenous malformations",
+          "fr": "Malformations artério-veineuses"
         },
         "risks": [
           "general_anesthesia.full",
           "lines_catheters.central_venous_line",
           "lines_catheters.peripheral_iv",
-          "lines_catheters.urinary_catheter"
+          "lines_catheters.urinary_catheter",
+          "general_anesthesia.common",
+          "lines_catheters.common"
         ]
       },
-      "aneurysmaclipping": {
+      "aneurysm_clipping": {
         "label": {
-          "de": "Aneurysmaclipping",
-          "en": "aneurysmaclipping",
-          "fr": "Aneurysmaclipping"
+          "de": "Aneurysma-Clipping",
+          "en": "Aneurysm clipping",
+          "fr": "Clippage d'anévrisme"
         },
         "risks": [
           "general_anesthesia.full",
           "lines_catheters.central_venous_line",
           "lines_catheters.peripheral_iv",
-          "lines_catheters.urinary_catheter"
+          "lines_catheters.urinary_catheter",
+          "general_anesthesia.common",
+          "lines_catheters.common"
         ]
       },
-      "supratentorielle_tumore": {
+      "supratentorial_tumors": {
         "label": {
-          "de": "Supratentorielle Tumore",
-          "en": "supratentorielle tumore",
-          "fr": "Supratentorielle tumore"
+          "de": "Supratentorielle Tumoren",
+          "en": "Supratentorial tumors",
+          "fr": "Tumeurs supratentorielles"
         },
         "risks": [
           "general_anesthesia.full",
           "lines_catheters.central_venous_line",
           "lines_catheters.peripheral_iv",
-          "lines_catheters.urinary_catheter"
+          "lines_catheters.urinary_catheter",
+          "general_anesthesia.common",
+          "lines_catheters.common"
         ]
       },
-      "infratentorielle_tumore": {
+      "infratentorial_tumors": {
         "label": {
-          "de": "Infratentorielle Tumore",
-          "en": "infratentorielle tumore",
-          "fr": "Infratentorielle tumore"
+          "de": "Infratentorielle Tumoren",
+          "en": "Infratentorial tumors",
+          "fr": "Tumeurs infratentorielles"
         },
         "risks": [
           "general_anesthesia.full",
           "lines_catheters.central_venous_line",
           "lines_catheters.peripheral_iv",
-          "lines_catheters.urinary_catheter"
+          "lines_catheters.urinary_catheter",
+          "general_anesthesia.common",
+          "lines_catheters.common"
         ]
       },
-      "akustikusneurinom_akn": {
+      "acoustic_neurinoma": {
         "label": {
-          "de": "Akustikusneurinom (AKN)",
-          "en": "akustikusneurinom (akn)",
-          "fr": "Akustikusneurinom (akn)"
+          "de": "Akustikusneurinom",
+          "en": "Acoustic neuroma",
+          "fr": "Neurinome de l'acoustique"
         },
         "risks": [
           "general_anesthesia.full",
           "lines_catheters.peripheral_iv",
-          "lines_catheters.urinary_catheter"
+          "lines_catheters.urinary_catheter",
+          "general_anesthesia.common",
+          "lines_catheters.common"
         ]
       },
-      "wachkraniotomie": {
+      "awake_craniotomy": {
         "label": {
           "de": "Wachkraniotomie",
-          "en": "wachkraniotomie",
-          "fr": "Wachkraniotomie"
+          "en": "Awake craniotomy",
+          "fr": "Craniotomie éveillée"
         },
         "risks": [
           "lines_catheters.peripheral_iv",
-          "lines_catheters.urinary_catheter"
+          "lines_catheters.urinary_catheter",
+          "lines_catheters.common"
         ]
       },
-      "eilf_dekompressionen": {
+      "spinal_decompression": {
         "label": {
-          "de": "EILF, Dekompressionen",
-          "en": "eilf, dekompressionen",
-          "fr": "Eilf, dekompressionen"
+          "de": "Dekompressionen (inkl. EILF)",
+          "en": "Spinal decompression (incl. EILF)",
+          "fr": "Décompression spinale (y c. EILF)"
         },
         "risks": [
           "general_anesthesia.full",
           "lines_catheters.peripheral_iv",
-          "lines_catheters.urinary_catheter"
+          "lines_catheters.urinary_catheter",
+          "general_anesthesia.common",
+          "lines_catheters.common"
         ]
       },
-      "komplexe_ws_eingriffe": {
+      "complex_spine_surgery": {
         "label": {
-          "de": "Komplexe WS-Eingriffe",
-          "en": "komplexe ws-eingriffe",
-          "fr": "Komplexe ws-eingriffe"
+          "de": "Komplexe Wirbelsäuleneingriffe",
+          "en": "Complex spine surgery",
+          "fr": "Chirurgie complexe de la colonne"
         },
         "risks": [
           "general_anesthesia.full",
           "lines_catheters.central_venous_line",
           "lines_catheters.peripheral_iv",
-          "lines_catheters.urinary_catheter"
+          "lines_catheters.urinary_catheter",
+          "general_anesthesia.common",
+          "lines_catheters.common"
         ]
       },
       "vp_shunt": {
         "label": {
-          "de": "VP-Shunt",
-          "en": "vp-shunt",
-          "fr": "Vp-shunt"
+          "de": "Ventrikuloperitonealer Shunt (VP-Shunt)",
+          "en": "Ventriculoperitoneal shunt (VP shunt)",
+          "fr": "Shunt ventriculo-péritonéal (VP shunt)"
         },
         "risks": [
           "general_anesthesia.full",
-          "lines_catheters.peripheral_iv"
+          "lines_catheters.peripheral_iv",
+          "general_anesthesia.common",
+          "lines_catheters.common"
         ]
       },
-      "activa_pc_wechsel": {
+      "activa_pc_exchange": {
         "label": {
-          "de": "Activa PC Wechsel",
-          "en": "activa pc wechsel",
-          "fr": "Activa pc wechsel"
+          "de": "Wechsel Activa PC",
+          "en": "Activa PC exchange",
+          "fr": "Remplacement Activa PC"
         },
         "risks": [
           "general_anesthesia.full",
-          "lines_catheters.peripheral_iv"
+          "lines_catheters.peripheral_iv",
+          "general_anesthesia.common",
+          "lines_catheters.common"
         ]
       },
-      "tiefe_hirnstimulation_ohne_wachkraniotomie": {
+      "deep_brain_stimulation_without_awake": {
         "label": {
           "de": "Tiefe Hirnstimulation ohne Wachkraniotomie",
-          "en": "tiefe hirnstimulation ohne wachkraniotomie",
-          "fr": "Tiefe hirnstimulation ohne wachkraniotomie"
+          "en": "Deep brain stimulation without awake craniotomy",
+          "fr": "Stimulation cérébrale profonde sans craniotomie éveillée"
         },
         "risks": [
           "general_anesthesia.full",
           "lines_catheters.peripheral_iv",
-          "lines_catheters.urinary_catheter"
+          "lines_catheters.urinary_catheter",
+          "general_anesthesia.common",
+          "lines_catheters.common"
         ]
       },
-      "hypophysenresektion": {
+      "pituitary_resection": {
         "label": {
           "de": "Hypophysenresektion",
-          "en": "hypophysenresektion",
-          "fr": "Hypophysenresektion"
+          "en": "Pituitary resection",
+          "fr": "Résection hypophysaire"
         },
         "risks": [
           "general_anesthesia.full",
           "lines_catheters.peripheral_iv",
-          "lines_catheters.urinary_catheter"
+          "lines_catheters.urinary_catheter",
+          "general_anesthesia.common",
+          "lines_catheters.common"
         ]
       },
-      "groe_meningeome": {
+      "large_meningiomas": {
         "label": {
           "de": "Große Meningeome",
-          "en": "große meningeome",
-          "fr": "Große meningeome"
+          "en": "Large meningiomas",
+          "fr": "Méningiomes volumineux"
         },
         "risks": [
           "general_anesthesia.full",
           "lines_catheters.central_venous_line",
           "lines_catheters.peripheral_iv",
-          "lines_catheters.urinary_catheter"
+          "lines_catheters.urinary_catheter",
+          "general_anesthesia.common",
+          "lines_catheters.common"
         ]
       }
     },
-    "hno_phoniatrie": {
+    "ent_phoniatrics": {
       "label": {
         "de": "HNO / Phoniatrie",
-        "en": "hno / phoniatrie",
-        "fr": "Hno / phoniatrie"
+        "en": "ENT / Phoniatrics",
+        "fr": "ORL / Phoniatrie"
       },
-      "akute_blutung_im_hno_bereich": {
+      "acute_bleeding_ent_area": {
         "label": {
           "de": "Akute Blutung im HNO-Bereich",
-          "en": "akute blutung im hno-bereich",
-          "fr": "Akute blutung im hno-bereich"
+          "en": "Acute bleeding in ENT area",
+          "fr": "Saignement aigu en ORL"
         },
         "risks": [
           "general_anesthesia.full",
           "general_anesthesia.full.rsi",
-          "regional_anesthesia.spinal"
+          "regional_anesthesia.spinal",
+          "general_anesthesia.common",
+          "regional_anesthesia.common",
+          "lines_catheters.common",
+          "lines_catheters.peripheral_iv"
         ]
       },
-      "adenotomie_paracentese": {
+      "adenoidectomy_paracentesis": {
         "label": {
-          "de": "Adenotomie, Paracentese",
-          "en": "adenotomie, paracentese",
-          "fr": "Adenotomie, paracentese"
+          "de": "Adenotomie, Parazentese",
+          "en": "Adenoidectomy, paracentesis",
+          "fr": "Adénoïdectomie, paracentèse"
         },
         "risks": [
           "general_anesthesia.full",
-          "general_anesthesia.full.laryngeal_mask"
+          "general_anesthesia.full.laryngeal_mask",
+          "general_anesthesia.common",
+          "lines_catheters.common",
+          "lines_catheters.peripheral_iv"
         ]
       },
-      "te": {
+      "tonsillectomy": {
         "label": {
-          "de": "TE",
-          "en": "te",
-          "fr": "Te"
+          "de": "Tonsillektomie",
+          "en": "Tonsillectomy",
+          "fr": "Amygdalectomie"
         },
         "risks": [
-          "general_anesthesia.full"
+          "general_anesthesia.full",
+          "general_anesthesia.common",
+          "lines_catheters.common",
+          "lines_catheters.peripheral_iv"
         ]
       },
-      "mikrolaryngoscopie_panendoscopie": {
+      "microlaryngoscopy_panendoscopy": {
         "label": {
-          "de": "Mikrolaryngoscopie, Panendoscopie",
-          "en": "mikrolaryngoscopie, panendoscopie",
-          "fr": "Mikrolaryngoscopie, panendoscopie"
+          "de": "Mikrolaryngoskopie, Panendoskopie",
+          "en": "Microlaryngoscopy, panendoscopy",
+          "fr": "Microlaryngoscopie, panendoscopie"
         },
         "risks": [
           "general_anesthesia.full",
           "general_anesthesia.full.endotracheal_intubation",
-          "regional_anesthesia.spinal"
+          "regional_anesthesia.spinal",
+          "general_anesthesia.common",
+          "regional_anesthesia.common",
+          "lines_catheters.common",
+          "lines_catheters.peripheral_iv"
         ]
       },
-      "ohr_ops": {
+      "ear_surgery": {
         "label": {
-          "de": "Ohr-OPs",
-          "en": "ohr-ops",
-          "fr": "Ohr-ops"
-        },
-        "risks": [
-          "general_anesthesia.full"
-        ]
-      },
-      "nasenrachen_fibrom": {
-        "label": {
-          "de": "Nasenrachen-Fibrom",
-          "en": "nasenrachen-fibrom",
-          "fr": "Nasenrachen-fibrom"
+          "de": "Ohroperationen",
+          "en": "Ear surgery",
+          "fr": "Chirurgie de l'oreille"
         },
         "risks": [
           "general_anesthesia.full",
-          "lines_catheters.arterial_line",
-          "lines_catheters.central_venous_line"
+          "general_anesthesia.common",
+          "lines_catheters.common",
+          "lines_catheters.peripheral_iv"
         ]
       },
-      "stent_einlage": {
+      "nasopharyngeal_fibroma": {
         "label": {
-          "de": "Stent-Einlage",
-          "en": "stent-einlage",
-          "fr": "Stent-einlage"
-        },
-        "risks": [
-          "general_anesthesia.full",
-          "lines_catheters.arterial_line"
-        ]
-      },
-      "hno_tumor_ops": {
-        "label": {
-          "de": "HNO-Tumor OPs",
-          "en": "hno-tumor ops",
-          "fr": "Hno-tumor ops"
+          "de": "Nasenrachenfibrom",
+          "en": "Nasopharyngeal fibroma",
+          "fr": "Fibrome nasopharyngé"
         },
         "risks": [
           "general_anesthesia.full",
           "lines_catheters.arterial_line",
           "lines_catheters.central_venous_line",
-          "lines_catheters.urinary_catheter"
+          "general_anesthesia.common",
+          "lines_catheters.common",
+          "lines_catheters.peripheral_iv"
         ]
       },
-      "radikale_neck_dissection_laryngektomie": {
+      "stent_placement": {
         "label": {
-          "de": "Radikale Neck Dissection / Laryngektomie",
-          "en": "radikale neck dissection / laryngektomie",
-          "fr": "Radikale neck dissection / laryngektomie"
+          "de": "Stenteinlage",
+          "en": "Stent placement",
+          "fr": "Pose de stent"
         },
         "risks": [
           "general_anesthesia.full",
           "lines_catheters.arterial_line",
-          "lines_catheters.central_venous_line",
-          "lines_catheters.urinary_catheter"
+          "general_anesthesia.common",
+          "lines_catheters.common",
+          "lines_catheters.peripheral_iv"
         ]
       },
-      "fess_nebenhohlen_op_septumplastik": {
+      "ent_tumor_surgery": {
         "label": {
-          "de": "FESS / Nebenhöhlen-OP / Septumplastik",
-          "en": "fess / nebenhöhlen-op / septumplastik",
-          "fr": "Fess / nebenhöhlen-op / septumplastik"
-        },
-        "risks": [
-          "general_anesthesia.full"
-        ]
-      }
-    },
-    "gyn_kologie": {
-      "label": {
-        "de": "Gynäkologie",
-        "en": "gynaekologie",
-        "fr": "Gynäkologie"
-      },
-      "exenteration": {
-        "label": {
-          "de": "Exenteration",
-          "en": "exenteration",
-          "fr": "Exenteration"
+          "de": "HNO-Tumoroperationen",
+          "en": "ENT tumor surgery",
+          "fr": "Chirurgie des tumeurs ORL"
         },
         "risks": [
           "general_anesthesia.full",
           "lines_catheters.arterial_line",
           "lines_catheters.central_venous_line",
           "lines_catheters.urinary_catheter",
-          "regional_anesthesia.epidural",
-          "regional_anesthesia.peripheral_catheter"
+          "general_anesthesia.common",
+          "lines_catheters.common",
+          "lines_catheters.peripheral_iv"
         ]
       },
-      "gyn_ops_klein": {
+      "radical_neck_dissection": {
         "label": {
-          "de": "Gyn-OPs klein",
-          "en": "gyn-ops klein",
-          "fr": "Gyn-ops klein"
+          "de": "Radikale Neck-Dissektion",
+          "en": "Radical neck dissection",
+          "fr": "Curage cervical radical"
         },
         "risks": [
           "general_anesthesia.full",
-          "general_anesthesia.full.laryngeal_mask",
-          "regional_anesthesia.spinal"
+          "lines_catheters.arterial_line",
+          "lines_catheters.central_venous_line",
+          "lines_catheters.urinary_catheter",
+          "general_anesthesia.common",
+          "lines_catheters.common",
+          "lines_catheters.peripheral_iv"
         ]
       },
-      "wertheim_op": {
+      "laryngectomy": {
         "label": {
-          "de": "Wertheim-Op",
-          "en": "wertheim-op",
-          "fr": "Wertheim-op"
+          "de": "Laryngektomie",
+          "en": "Laryngectomy",
+          "fr": "Laryngectomie"
+        },
+        "risks": [
+          "general_anesthesia.full",
+          "lines_catheters.arterial_line",
+          "lines_catheters.central_venous_line",
+          "lines_catheters.urinary_catheter",
+          "general_anesthesia.common",
+          "lines_catheters.common",
+          "lines_catheters.peripheral_iv"
+        ]
+      },
+      "fess": {
+        "label": {
+          "de": "FESS",
+          "en": "FESS",
+          "fr": "FESS"
+        },
+        "risks": [
+          "general_anesthesia.full",
+          "general_anesthesia.common",
+          "lines_catheters.common",
+          "lines_catheters.peripheral_iv"
+        ]
+      },
+      "sinus_surgery": {
+        "label": {
+          "de": "Nasennebenhöhlenoperation",
+          "en": "Sinus surgery",
+          "fr": "Chirurgie des sinus"
+        },
+        "risks": [
+          "general_anesthesia.full",
+          "general_anesthesia.common",
+          "lines_catheters.common",
+          "lines_catheters.peripheral_iv"
+        ]
+      },
+      "septoplasty": {
+        "label": {
+          "de": "Septumplastik",
+          "en": "Septoplasty",
+          "fr": "Septoplastie"
+        },
+        "risks": [
+          "general_anesthesia.full",
+          "general_anesthesia.common",
+          "lines_catheters.common",
+          "lines_catheters.peripheral_iv"
+        ]
+      }
+    },
+    "gynecology": {
+      "label": {
+        "de": "Gynäkologie",
+        "en": "Gynecology",
+        "fr": "Gynécologie"
+      },
+      "exenteration": {
+        "label": {
+          "de": "Exenteration",
+          "en": "Exenteration",
+          "fr": "Exentération"
         },
         "risks": [
           "general_anesthesia.full",
@@ -3854,326 +3969,484 @@
           "lines_catheters.urinary_catheter",
           "regional_anesthesia.epidural",
           "regional_anesthesia.peripheral_catheter",
-          "regional_anesthesia.spinal"
+          "general_anesthesia.common",
+          "regional_anesthesia.common",
+          "lines_catheters.common",
+          "lines_catheters.peripheral_iv"
         ]
       },
-      "hysterektomie_abdominal_vaginal_laparoskopisch": {
+      "minor_gynecologic_surgery": {
         "label": {
-          "de": "Hysterektomie (abdominal/vaginal/laparoskopisch)",
-          "en": "hysterektomie (abdominal/vaginal/laparoskopisch)",
-          "fr": "Hysterektomie (abdominal/vaginal/laparoskopisch)"
+          "de": "Kleine gynäkologische Eingriffe",
+          "en": "Minor gynecologic surgery",
+          "fr": "Chirurgie gynécologique mineure"
+        },
+        "risks": [
+          "general_anesthesia.full",
+          "general_anesthesia.full.laryngeal_mask",
+          "regional_anesthesia.spinal",
+          "general_anesthesia.common",
+          "regional_anesthesia.common",
+          "lines_catheters.common",
+          "lines_catheters.peripheral_iv"
+        ]
+      },
+      "wertheim_operation": {
+        "label": {
+          "de": "Wertheim-Operation",
+          "en": "Wertheim operation",
+          "fr": "Opération de Wertheim"
+        },
+        "risks": [
+          "general_anesthesia.full",
+          "lines_catheters.arterial_line",
+          "lines_catheters.central_venous_line",
+          "lines_catheters.urinary_catheter",
+          "regional_anesthesia.epidural",
+          "regional_anesthesia.peripheral_catheter",
+          "regional_anesthesia.spinal",
+          "general_anesthesia.common",
+          "regional_anesthesia.common",
+          "lines_catheters.common",
+          "lines_catheters.peripheral_iv"
+        ]
+      },
+      "abdominal_hysterectomy": {
+        "label": {
+          "de": "Abdominale Hysterektomie",
+          "en": "Abdominal hysterectomy",
+          "fr": "Hystérectomie abdominale"
         },
         "risks": [
           "general_anesthesia.full",
           "lines_catheters.urinary_catheter",
-          "regional_anesthesia.peripheral_catheter"
+          "regional_anesthesia.peripheral_catheter",
+          "general_anesthesia.common",
+          "regional_anesthesia.common",
+          "lines_catheters.common",
+          "lines_catheters.peripheral_iv"
         ]
       },
-      "tvt_uro_gyn_eingriffe": {
+      "vaginal_hysterectomy": {
         "label": {
-          "de": "TVT / Uro-gyn. Eingriffe",
-          "en": "tvt / uro-gyn. eingriffe",
-          "fr": "Tvt / uro-gyn. eingriffe"
+          "de": "Vaginale Hysterektomie",
+          "en": "Vaginal hysterectomy",
+          "fr": "Hystérectomie vaginale"
         },
-        "risks": []
+        "risks": [
+          "general_anesthesia.full",
+          "lines_catheters.urinary_catheter",
+          "regional_anesthesia.peripheral_catheter",
+          "general_anesthesia.common",
+          "regional_anesthesia.common",
+          "lines_catheters.common",
+          "lines_catheters.peripheral_iv"
+        ]
       },
-      "groe_lappenplastiken_nach_ablatio": {
+      "laparoscopic_hysterectomy": {
+        "label": {
+          "de": "Laparoskopische Hysterektomie",
+          "en": "Laparoscopic hysterectomy",
+          "fr": "Hystérectomie laparoscopique"
+        },
+        "risks": [
+          "general_anesthesia.full",
+          "lines_catheters.urinary_catheter",
+          "regional_anesthesia.peripheral_catheter",
+          "general_anesthesia.common",
+          "regional_anesthesia.common",
+          "lines_catheters.common",
+          "lines_catheters.peripheral_iv"
+        ]
+      },
+      "tvt_urogynecologic_procedures": {
+        "label": {
+          "de": "TVT / Urogynäkologische Eingriffe",
+          "en": "TVT / Urogynecologic procedures",
+          "fr": "TVT / Interventions urogynécologiques"
+        },
+        "risks": [
+          "general_anesthesia.common",
+          "lines_catheters.common",
+          "lines_catheters.peripheral_iv"
+        ]
+      },
+      "large_flap_reconstruction_post_mastectomy": {
         "label": {
           "de": "Große Lappenplastiken nach Ablatio",
-          "en": "große lappenplastiken nach ablatio",
-          "fr": "Große lappenplastiken nach ablatio"
+          "en": "Large flap reconstructions after mastectomy",
+          "fr": "Plasties lambeaux étendus après ablation"
         },
         "risks": [
           "general_anesthesia.full",
           "lines_catheters.urinary_catheter",
-          "regional_anesthesia.peripheral_catheter"
+          "regional_anesthesia.peripheral_catheter",
+          "general_anesthesia.common",
+          "regional_anesthesia.common",
+          "lines_catheters.common",
+          "lines_catheters.peripheral_iv"
         ]
       }
     },
     "orthopedics": {
       "label": {
         "de": "Orthopädie",
-        "en": "orthopedics",
+        "en": "Orthopedics",
         "fr": "Orthopédie"
       },
-      "schulter_tep": {
+      "shoulder_replacement": {
         "label": {
-          "de": "Schulter-TEP",
-          "en": "schulter-tep",
-          "fr": "Schulter-tep"
-        },
-        "risks": [
-          "general_anesthesia.full"
-        ]
-      },
-      "h_tep": {
-        "label": {
-          "de": "H-TEP",
-          "en": "h-tep",
-          "fr": "H-tep"
+          "de": "Schulter-Totalendoprothese",
+          "en": "Shoulder replacement",
+          "fr": "Prothèse totale de l'épaule"
         },
         "risks": [
           "general_anesthesia.full",
-          "lines_catheters.urinary_catheter"
+          "general_anesthesia.common",
+          "lines_catheters.common",
+          "lines_catheters.peripheral_iv"
         ]
       },
-      "k_tep": {
+      "hip_replacement": {
         "label": {
-          "de": "K-TEP",
-          "en": "k-tep",
-          "fr": "K-tep"
-        },
-        "risks": [
-          "general_anesthesia.full"
-        ]
-      },
-      "becken_fraktur": {
-        "label": {
-          "de": "Becken-Fraktur",
-          "en": "becken-fraktur",
-          "fr": "Becken-fraktur"
+          "de": "Hüft-Totalendoprothese",
+          "en": "Hip replacement",
+          "fr": "Prothèse totale de hanche"
         },
         "risks": [
           "general_anesthesia.full",
-          "lines_catheters.arterial_line",
-          "lines_catheters.central_venous_line",
-          "lines_catheters.urinary_catheter"
+          "lines_catheters.urinary_catheter",
+          "general_anesthesia.common",
+          "lines_catheters.common",
+          "lines_catheters.peripheral_iv"
         ]
       },
-      "skoliose_ops": {
+      "knee_replacement": {
         "label": {
-          "de": "Skoliose OPs",
-          "en": "skoliose ops",
-          "fr": "Skoliose ops"
+          "de": "Knie-Totalendoprothese",
+          "en": "Knee replacement",
+          "fr": "Prothèse totale du genou"
+        },
+        "risks": [
+          "general_anesthesia.full",
+          "general_anesthesia.common",
+          "lines_catheters.common",
+          "lines_catheters.peripheral_iv"
+        ]
+      },
+      "pelvic_fracture": {
+        "label": {
+          "de": "Beckenfraktur",
+          "en": "Pelvic fracture",
+          "fr": "Fracture du bassin"
         },
         "risks": [
           "general_anesthesia.full",
           "lines_catheters.arterial_line",
           "lines_catheters.central_venous_line",
-          "lines_catheters.urinary_catheter"
+          "lines_catheters.urinary_catheter",
+          "general_anesthesia.common",
+          "lines_catheters.common",
+          "lines_catheters.peripheral_iv"
         ]
       },
-      "s_ask_bei_schulter_arthrolyse": {
+      "scoliosis_surgery": {
         "label": {
-          "de": "S- ASK bei Schulter-Arthrolyse",
-          "en": "s- ask bei schulter-arthrolyse",
-          "fr": "S- ask bei schulter-arthrolyse"
-        },
-        "risks": [
-          "general_anesthesia.full"
-        ]
-      },
-      "sonstige_s_ask": {
-        "label": {
-          "de": "Sonstige S- ASK",
-          "en": "sonstige s- ask",
-          "fr": "Sonstige s- ask"
-        },
-        "risks": [
-          "general_anesthesia.full"
-        ]
-      },
-      "kreuzband_plastik": {
-        "label": {
-          "de": "Kreuzband-Plastik",
-          "en": "kreuzband-plastik",
-          "fr": "Kreuzband-plastik"
+          "de": "Skolioseoperationen",
+          "en": "Scoliosis surgery",
+          "fr": "Chirurgie de la scoliose"
         },
         "risks": [
           "general_anesthesia.full",
-          "general_anesthesia.full.laryngeal_mask"
+          "lines_catheters.arterial_line",
+          "lines_catheters.central_venous_line",
+          "lines_catheters.urinary_catheter",
+          "general_anesthesia.common",
+          "lines_catheters.common",
+          "lines_catheters.peripheral_iv"
         ]
       },
-      "knie_arthroscopie": {
+      "shoulder_arthroscopy_arthrolysis": {
         "label": {
-          "de": "Knie-Arthroscopie",
-          "en": "knie-arthroscopie",
-          "fr": "Knie-arthroscopie"
+          "de": "Schulterarthroskopie bei Arthrolyse",
+          "en": "Shoulder arthroscopy for arthrolysis",
+          "fr": "Arthroscopie de l'épaule pour arthrolyse"
         },
         "risks": [
-          "regional_anesthesia.spinal"
+          "general_anesthesia.full",
+          "general_anesthesia.common",
+          "lines_catheters.common",
+          "lines_catheters.peripheral_iv"
         ]
       },
-      "patella_luxation_mpfl": {
+      "other_shoulder_arthroscopies": {
         "label": {
-          "de": "Patella-Luxation/ MPFL",
-          "en": "patella-luxation/ mpfl",
-          "fr": "Patella-luxation/ mpfl"
+          "de": "Weitere Schulterarthroskopien",
+          "en": "Other shoulder arthroscopies",
+          "fr": "Autres arthroscopies de l'épaule"
         },
         "risks": [
-          "regional_anesthesia.spinal"
+          "general_anesthesia.full",
+          "general_anesthesia.common",
+          "lines_catheters.common",
+          "lines_catheters.peripheral_iv"
         ]
       },
-      "osg_tep": {
+      "acl_reconstruction": {
         "label": {
-          "de": "OSG-TEP",
-          "en": "osg-tep",
-          "fr": "Osg-tep"
+          "de": "Kreuzbandplastik",
+          "en": "ACL reconstruction",
+          "fr": "Plastie du LCA"
         },
         "risks": [
           "general_anesthesia.full",
           "general_anesthesia.full.laryngeal_mask",
-          "regional_anesthesia.spinal"
+          "general_anesthesia.common",
+          "lines_catheters.common",
+          "lines_catheters.peripheral_iv"
         ]
       },
-      "osg_arthrodese": {
+      "knee_arthroscopy": {
         "label": {
-          "de": "OSG-Arthrodese",
-          "en": "osg-arthrodese",
-          "fr": "Osg-arthrodese"
+          "de": "Kniearthroskopie",
+          "en": "Knee arthroscopy",
+          "fr": "Arthroscopie du genou"
+        },
+        "risks": [
+          "regional_anesthesia.spinal",
+          "regional_anesthesia.common",
+          "lines_catheters.common",
+          "lines_catheters.peripheral_iv"
+        ]
+      },
+      "patellar_dislocation_mpfl": {
+        "label": {
+          "de": "Patellaluxation / MPFL-Rekonstruktion",
+          "en": "Patellar dislocation / MPFL",
+          "fr": "Luxation de la rotule / MPFL"
+        },
+        "risks": [
+          "regional_anesthesia.spinal",
+          "regional_anesthesia.common",
+          "lines_catheters.common",
+          "lines_catheters.peripheral_iv"
+        ]
+      },
+      "ankle_replacement": {
+        "label": {
+          "de": "OSG-Prothese",
+          "en": "Ankle replacement",
+          "fr": "Prothèse de cheville"
         },
         "risks": [
           "general_anesthesia.full",
-          "general_anesthesia.full.laryngeal_mask"
+          "general_anesthesia.full.laryngeal_mask",
+          "regional_anesthesia.spinal",
+          "general_anesthesia.common",
+          "regional_anesthesia.common",
+          "lines_catheters.common",
+          "lines_catheters.peripheral_iv"
         ]
       },
-      "osg_fraktur": {
+      "ankle_arthrodesis": {
+        "label": {
+          "de": "OSG-Arthrodese",
+          "en": "Ankle arthrodesis",
+          "fr": "Arthrodèse de cheville"
+        },
+        "risks": [
+          "general_anesthesia.full",
+          "general_anesthesia.full.laryngeal_mask",
+          "general_anesthesia.common",
+          "lines_catheters.common",
+          "lines_catheters.peripheral_iv"
+        ]
+      },
+      "ankle_fracture": {
         "label": {
           "de": "OSG-Fraktur",
-          "en": "osg-fraktur",
-          "fr": "Osg-fraktur"
+          "en": "Ankle fracture",
+          "fr": "Fracture de la cheville"
         },
         "risks": [
-          "regional_anesthesia.spinal"
+          "regional_anesthesia.spinal",
+          "regional_anesthesia.common",
+          "lines_catheters.common",
+          "lines_catheters.peripheral_iv"
         ]
       },
-      "hallux_valgus_op": {
+      "hallux_valgus_surgery": {
         "label": {
-          "de": "Hallux valgus-OP",
-          "en": "hallux valgus-op",
-          "fr": "Hallux valgus-op"
+          "de": "Hallux valgus Operation",
+          "en": "Hallux valgus surgery",
+          "fr": "Chirurgie du hallux valgus"
         },
         "risks": [
-          "regional_anesthesia.spinal"
+          "regional_anesthesia.spinal",
+          "regional_anesthesia.common",
+          "lines_catheters.common",
+          "lines_catheters.peripheral_iv"
         ]
       },
-      "s_ask_bei_schulterinstabilitat": {
+      "shoulder_arthroscopy_instability": {
         "label": {
-          "de": "S- ASK bei Schulterinstabilität",
-          "en": "s- ask bei schulterinstabilität",
-          "fr": "S- ask bei schulterinstabilität"
+          "de": "Schulterarthroskopie bei Instabilität",
+          "en": "Shoulder arthroscopy for instability",
+          "fr": "Arthroscopie de l'épaule pour instabilité"
         },
         "risks": [
-          "general_anesthesia.full"
+          "general_anesthesia.full",
+          "general_anesthesia.common",
+          "lines_catheters.common",
+          "lines_catheters.peripheral_iv"
         ]
       }
     },
     "urology": {
       "label": {
         "de": "Urologie",
-        "en": "urology",
+        "en": "Urology",
         "fr": "Urologie"
       },
-      "lap_nierenteilresektion": {
+      "laparoscopic_partial_nephrectomy": {
         "label": {
-          "de": "Lap. Nierenteilresektion",
-          "en": "lap. nierenteilresektion",
-          "fr": "Lap. nierenteilresektion"
+          "de": "Laparoskopische Nierenteilresektion",
+          "en": "Laparoscopic partial nephrectomy",
+          "fr": "Néphrectomie partielle laparoscopique"
         },
         "risks": [
           "general_anesthesia.full",
           "lines_catheters.arterial_line",
           "lines_catheters.central_venous_line",
-          "regional_anesthesia.tap_block"
+          "regional_anesthesia.tap_block",
+          "general_anesthesia.common",
+          "regional_anesthesia.common",
+          "lines_catheters.common",
+          "lines_catheters.peripheral_iv"
         ]
       },
-      "nephrektomie_mit_cava_zapfen_ohne_hlm": {
+      "nephrectomy_with_ivc_thrombus_no_cpb": {
         "label": {
           "de": "Nephrektomie mit Cava-Zapfen ohne HLM",
-          "en": "nephrektomie mit cava-zapfen ohne hlm",
-          "fr": "Nephrektomie mit cava-zapfen ohne hlm"
+          "en": "Nephrectomy with IVC thrombus without CPB",
+          "fr": "Néphrectomie avec thrombus cave sans CEC"
         },
         "risks": [
           "general_anesthesia.full",
           "lines_catheters.arterial_line",
-          "lines_catheters.central_venous_line"
+          "lines_catheters.central_venous_line",
+          "general_anesthesia.common",
+          "lines_catheters.common",
+          "lines_catheters.peripheral_iv"
         ]
       },
-      "da_vinci_prostatektomie": {
+      "da_vinci_prostatectomy": {
         "label": {
           "de": "Da Vinci Prostatektomie",
-          "en": "da vinci prostatektomie",
-          "fr": "Da vinci prostatektomie"
+          "en": "Da Vinci prostatectomy",
+          "fr": "Prostatectomie Da Vinci"
         },
         "risks": [
-          "general_anesthesia.full"
+          "general_anesthesia.full",
+          "general_anesthesia.common",
+          "lines_catheters.common",
+          "lines_catheters.peripheral_iv"
         ]
       },
-      "ntx": {
+      "renal_transplantation": {
         "label": {
-          "de": "NTX",
-          "en": "ntx",
-          "fr": "Ntx"
+          "de": "Nierentransplantation",
+          "en": "Renal transplantation",
+          "fr": "Transplantation rénale"
         },
         "risks": [
           "general_anesthesia.full",
           "lines_catheters.central_venous_line",
-          "regional_anesthesia.tap_block"
+          "regional_anesthesia.tap_block",
+          "general_anesthesia.common",
+          "regional_anesthesia.common",
+          "lines_catheters.common",
+          "lines_catheters.peripheral_iv"
         ]
       },
-      "inkontinenzoperationen": {
+      "incontinence_surgery": {
         "label": {
           "de": "Inkontinenzoperationen",
-          "en": "inkontinenzoperationen",
-          "fr": "Inkontinenzoperationen"
+          "en": "Incontinence surgery",
+          "fr": "Chirurgie de l'incontinence"
         },
         "risks": [
           "general_anesthesia.full",
-          "general_anesthesia.full.laryngeal_mask"
+          "general_anesthesia.full.laryngeal_mask",
+          "general_anesthesia.common",
+          "lines_catheters.common",
+          "lines_catheters.peripheral_iv"
         ]
       },
-      "nephrektomie_offen_mit_cava_zapfen_und_geplanter_hlm": {
+      "open_nephrectomy_ivc_thrombus_cpb": {
         "label": {
-          "de": "Nephrektomie offen mit Cava-Zapfen und geplanter HLM",
-          "en": "nephrektomie offen mit cava-zapfen und geplanter hlm",
-          "fr": "Nephrektomie offen mit cava-zapfen und geplanter hlm"
+          "de": "Offene Nephrektomie mit Cava-Zapfen und geplanter HLM",
+          "en": "Open nephrectomy with IVC thrombus and planned CPB",
+          "fr": "Néphrectomie ouverte avec thrombus cave et CEC planifiée"
         },
         "risks": [
           "lines_catheters.arterial_line",
           "lines_catheters.central_venous_line",
-          "monitoring.transesophageal_echo"
+          "monitoring.transesophageal_echo",
+          "lines_catheters.common",
+          "lines_catheters.peripheral_iv"
         ]
       },
-      "lap_nierenbeckenplastik": {
+      "laparoscopic_pyeloplasty": {
         "label": {
-          "de": "Lap. Nierenbeckenplastik",
-          "en": "lap. nierenbeckenplastik",
-          "fr": "Lap. nierenbeckenplastik"
+          "de": "Laparoskopische Nierenbeckenplastik",
+          "en": "Laparoscopic pyeloplasty",
+          "fr": "Pyéloplastie laparoscopique"
         },
         "risks": [
           "general_anesthesia.full",
-          "lines_catheters.nasogastric_tube"
+          "lines_catheters.nasogastric_tube",
+          "general_anesthesia.common",
+          "lines_catheters.common",
+          "lines_catheters.peripheral_iv"
         ]
       },
-      "lap_ureterolithotomie": {
+      "laparoscopic_ureterolithotomy": {
         "label": {
-          "de": "Lap Ureterolithotomie",
-          "en": "lap ureterolithotomie",
-          "fr": "Lap ureterolithotomie"
+          "de": "Laparoskopische Ureterolithotomie",
+          "en": "Laparoscopic ureterolithotomy",
+          "fr": "Uréterolithotomie laparoscopique"
         },
         "risks": [
-          "general_anesthesia.full"
+          "general_anesthesia.full",
+          "general_anesthesia.common",
+          "lines_catheters.common",
+          "lines_catheters.peripheral_iv"
         ]
       },
-      "radikale_prostatektomie": {
+      "radical_prostatectomy": {
         "label": {
           "de": "Radikale Prostatektomie",
-          "en": "radikale prostatektomie",
-          "fr": "Radikale prostatektomie"
+          "en": "Radical prostatectomy",
+          "fr": "Prostatectomie radicale"
         },
         "risks": [
           "general_anesthesia.full",
           "lines_catheters.arterial_line",
           "lines_catheters.urinary_catheter",
           "regional_anesthesia.peripheral_catheter",
-          "regional_anesthesia.tap_block"
+          "regional_anesthesia.tap_block",
+          "general_anesthesia.common",
+          "regional_anesthesia.common",
+          "lines_catheters.common",
+          "lines_catheters.peripheral_iv"
         ]
       },
-      "sonst_urolog_karzinomchirurgie": {
+      "other_oncologic_urologic_surgery": {
         "label": {
-          "de": "Sonst. Urolog. Karzinomchirurgie",
-          "en": "sonst. urolog. karzinomchirurgie",
-          "fr": "Sonst. urolog. karzinomchirurgie"
+          "de": "Sonstige urologische Karzinomchirurgie",
+          "en": "Other oncologic urologic surgery",
+          "fr": "Autres chirurgies urologiques oncologiques"
         },
         "risks": [
           "general_anesthesia.full",
@@ -4181,254 +4454,350 @@
           "lines_catheters.central_venous_line",
           "lines_catheters.nasogastric_tube",
           "lines_catheters.urinary_catheter",
-          "regional_anesthesia.peripheral_catheter"
+          "regional_anesthesia.peripheral_catheter",
+          "general_anesthesia.common",
+          "regional_anesthesia.common",
+          "lines_catheters.common",
+          "lines_catheters.peripheral_iv"
         ]
       },
-      "lebend_nieren_spende": {
+      "living_donor_nephrectomy": {
         "label": {
-          "de": "Lebend-Nieren-Spende",
-          "en": "lebend-nieren-spende",
-          "fr": "Lebend-nieren-spende"
+          "de": "Lebendnierenspende",
+          "en": "Living donor nephrectomy",
+          "fr": "Néphrectomie donneur vivant"
         },
         "risks": [
           "general_anesthesia.full",
           "lines_catheters.urinary_catheter",
           "regional_anesthesia.peripheral_catheter",
-          "regional_anesthesia.tap_block"
+          "regional_anesthesia.tap_block",
+          "general_anesthesia.common",
+          "regional_anesthesia.common",
+          "lines_catheters.common",
+          "lines_catheters.peripheral_iv"
         ]
       }
     },
-    "mammachirurgie": {
+    "mammary_surgery": {
       "label": {
         "de": "Mammachirurgie",
-        "en": "mammachirurgie",
-        "fr": "Mammachirurgie"
+        "en": "Breast surgery",
+        "fr": "Chirurgie mammaire"
       },
-      "mamma_aufbau_plastik": {
+      "breast_reconstruction": {
         "label": {
-          "de": "Mamma-Aufbau-Plastik",
-          "en": "mamma-aufbau-plastik",
-          "fr": "Mamma-aufbau-plastik"
+          "de": "Mamma-Aufbauplastik",
+          "en": "Breast reconstruction",
+          "fr": "Reconstruction mammaire"
         },
         "risks": [
           "general_anesthesia.full",
-          "regional_anesthesia.pecs_block"
+          "regional_anesthesia.pecs_block",
+          "general_anesthesia.common",
+          "regional_anesthesia.common",
+          "lines_catheters.common",
+          "lines_catheters.peripheral_iv"
         ]
       },
-      "mamma_reduktions_plastik": {
+      "breast_reduction": {
         "label": {
-          "de": "Mamma-Reduktions-Plastik",
-          "en": "mamma-reduktions-plastik",
-          "fr": "Mamma-reduktions-plastik"
+          "de": "Mamma-Reduktionsplastik",
+          "en": "Breast reduction",
+          "fr": "Réduction mammaire"
         },
         "risks": [
           "general_anesthesia.full",
-          "regional_anesthesia.pecs_block"
+          "regional_anesthesia.pecs_block",
+          "general_anesthesia.common",
+          "regional_anesthesia.common",
+          "lines_catheters.common",
+          "lines_catheters.peripheral_iv"
         ]
       },
-      "mastektomie": {
+      "mastectomy": {
         "label": {
           "de": "Mastektomie",
-          "en": "mastektomie",
-          "fr": "Mastektomie"
+          "en": "Mastectomy",
+          "fr": "Mastectomie"
         },
         "risks": [
           "general_anesthesia.full",
           "general_anesthesia.full.laryngeal_mask",
-          "regional_anesthesia.pecs_block"
+          "regional_anesthesia.pecs_block",
+          "general_anesthesia.common",
+          "regional_anesthesia.common",
+          "lines_catheters.common",
+          "lines_catheters.peripheral_iv"
         ]
       },
-      "mamma_de": {
+      "diagnostic_excision": {
         "label": {
-          "de": "Mamma-DE",
-          "en": "mamma-de",
-          "fr": "Mamma-de"
+          "de": "Mamma-Diagnostische Exzision",
+          "en": "Diagnostic excision",
+          "fr": "Exérèse diagnostique mammaire"
         },
         "risks": [
           "general_anesthesia.full",
-          "general_anesthesia.full.laryngeal_mask"
+          "general_anesthesia.full.laryngeal_mask",
+          "general_anesthesia.common",
+          "lines_catheters.common",
+          "lines_catheters.peripheral_iv"
         ]
       },
-      "diep_flap": {
+      "diep_flap_reconstruction": {
         "label": {
-          "de": "DIEP- Flap",
-          "en": "diep- flap",
-          "fr": "Diep- flap"
+          "de": "DIEP-Flap-Rekonstruktion",
+          "en": "DIEP flap reconstruction",
+          "fr": "Reconstruction par lambeau DIEP"
         },
         "risks": [
           "general_anesthesia.full",
           "lines_catheters.arterial_line",
-          "lines_catheters.urinary_catheter"
+          "lines_catheters.urinary_catheter",
+          "general_anesthesia.common",
+          "lines_catheters.common",
+          "lines_catheters.peripheral_iv"
         ]
       }
     },
-    "geburtshilfe": {
+    "obstetrics": {
       "label": {
         "de": "Geburtshilfe",
-        "en": "geburtshilfe",
-        "fr": "Geburtshilfe"
+        "en": "Obstetrics",
+        "fr": "Obstétrique"
       },
-      "aus_nachtastung": {
+      "manual_placental_removal": {
         "label": {
           "de": "Aus-/Nachtastung",
-          "en": "aus-/nachtastung",
-          "fr": "Aus-/nachtastung"
+          "en": "Manual placental removal",
+          "fr": "Révision utérine"
         },
         "risks": [
           "lines_catheters.urinary_catheter",
           "regional_anesthesia.peripheral_catheter",
-          "regional_anesthesia.spinal"
+          "regional_anesthesia.spinal",
+          "regional_anesthesia.common",
+          "lines_catheters.common",
+          "lines_catheters.peripheral_iv"
         ]
       },
-      "forceps": {
+      "forceps_delivery": {
         "label": {
           "de": "Forceps",
-          "en": "forceps",
-          "fr": "Forceps"
+          "en": "Forceps delivery",
+          "fr": "Accouchement par forceps"
         },
         "risks": [
           "lines_catheters.urinary_catheter",
           "regional_anesthesia.peripheral_catheter",
-          "regional_anesthesia.spinal"
+          "regional_anesthesia.spinal",
+          "regional_anesthesia.common",
+          "lines_catheters.common",
+          "lines_catheters.peripheral_iv"
         ]
       },
-      "cito_sectio": {
+      "emergency_c_section": {
         "label": {
           "de": "Cito-Sectio",
-          "en": "cito-sectio",
-          "fr": "Cito-sectio"
+          "en": "Emergency C-section",
+          "fr": "Césarienne en urgence"
         },
         "risks": [
-          "general_anesthesia.full"
+          "general_anesthesia.full",
+          "general_anesthesia.common",
+          "lines_catheters.common",
+          "lines_catheters.peripheral_iv"
         ]
       },
-      "elektive_eilige_sectio": {
+      "elective_urgent_c_section": {
         "label": {
-          "de": "Elektive/ eilige Sectio",
-          "en": "elektive/ eilige sectio",
-          "fr": "Elektive/ eilige sectio"
+          "de": "Elektive/eilige Sectio",
+          "en": "Elective/urgent C-section",
+          "fr": "Césarienne élective/urgente"
         },
         "risks": [
-          "regional_anesthesia.spinal"
+          "regional_anesthesia.spinal",
+          "regional_anesthesia.common",
+          "lines_catheters.common",
+          "lines_catheters.peripheral_iv"
         ]
       },
-      "schwangerschaftsabbruch": {
+      "pregnancy_termination": {
         "label": {
           "de": "Schwangerschaftsabbruch",
-          "en": "schwangerschaftsabbruch",
-          "fr": "Schwangerschaftsabbruch"
+          "en": "Pregnancy termination",
+          "fr": "Interruption de grossesse"
         },
         "risks": [
           "lines_catheters.urinary_catheter",
           "regional_anesthesia.peripheral_catheter",
-          "regional_anesthesia.spinal"
+          "regional_anesthesia.spinal",
+          "regional_anesthesia.common",
+          "lines_catheters.common",
+          "lines_catheters.peripheral_iv"
         ]
       },
-      "wehenschmerz": {
+      "labor_pain_management": {
         "label": {
           "de": "Wehenschmerz",
-          "en": "wehenschmerz",
-          "fr": "Wehenschmerz"
+          "en": "Labor pain management",
+          "fr": "Gestion de la douleur du travail"
         },
         "risks": [
-          "regional_anesthesia.epidural"
+          "regional_anesthesia.epidural",
+          "regional_anesthesia.common",
+          "lines_catheters.common",
+          "lines_catheters.peripheral_iv"
         ]
       },
       "cerclage_fmtv": {
         "label": {
           "de": "Cerclage FMTV",
-          "en": "cerclage fmtv",
-          "fr": "Cerclage fmtv"
+          "en": "Cerclage FMTV",
+          "fr": "Cerclage FMTV"
         },
         "risks": [
-          "regional_anesthesia.spinal"
+          "regional_anesthesia.spinal",
+          "regional_anesthesia.common",
+          "lines_catheters.common",
+          "lines_catheters.peripheral_iv"
         ]
       },
-      "peri_postpartale_blutung": {
+      "postpartum_hemorrhage": {
         "label": {
           "de": "Peri-/postpartale Blutung",
-          "en": "peri-/postpartale blutung",
-          "fr": "Peri-/postpartale blutung"
+          "en": "Peri-/postpartum hemorrhage",
+          "fr": "Hémorragie péri-/post-partum"
         },
         "risks": [
           "general_anesthesia.full",
           "lines_catheters.urinary_catheter",
           "regional_anesthesia.epidural",
-          "regional_anesthesia.peripheral_catheter"
+          "regional_anesthesia.peripheral_catheter",
+          "general_anesthesia.common",
+          "regional_anesthesia.common",
+          "lines_catheters.common",
+          "lines_catheters.peripheral_iv"
         ]
       },
-      "auere_wendung_ve": {
+      "external_cephalic_version": {
         "label": {
           "de": "Äußere Wendung, VE",
-          "en": "äußere wendung, ve",
-          "fr": "Äußere wendung, ve"
+          "en": "External cephalic version, VE",
+          "fr": "Version par manœuvres externes, VE"
         },
         "risks": [
-          "general_anesthesia.full"
+          "general_anesthesia.full",
+          "general_anesthesia.common",
+          "lines_catheters.common",
+          "lines_catheters.peripheral_iv"
         ]
       }
     },
-    "aussenkliniken": {
+    "dermatology": {
       "label": {
-        "de": "Aussenkliniken",
-        "en": "aussenkliniken",
-        "fr": "Aussenkliniken"
+        "de": "Dermatologie",
+        "en": "Dermatology",
+        "fr": "Dermatologie"
       },
-      "dermatologie": {
+      "dermatologic_surgery": {
         "label": {
-          "de": "Dermatologie",
-          "en": "dermatologie",
-          "fr": "Dermatologie"
+          "de": "Dermatologische Eingriffe",
+          "en": "Dermatologic procedures",
+          "fr": "Interventions dermatologiques"
         },
         "risks": [
           "general_anesthesia.full",
-          "general_anesthesia.full.laryngeal_mask"
+          "general_anesthesia.full.laryngeal_mask",
+          "general_anesthesia.common",
+          "lines_catheters.common",
+          "lines_catheters.peripheral_iv"
+        ]
+      }
+    },
+    "psychiatry": {
+      "label": {
+        "de": "Psychiatrie",
+        "en": "Psychiatry",
+        "fr": "Psychiatrie"
+      },
+      "electroconvulsive_therapy": {
+        "label": {
+          "de": "EKT (Elektrokrampftherapie)",
+          "en": "ECT (Electroconvulsive Therapy)",
+          "fr": "ECT (Électroconvulsivothérapie)"
+        },
+        "risks": [
+          "general_anesthesia.common",
+          "lines_catheters.common",
+          "lines_catheters.peripheral_iv"
+        ]
+      }
+    },
+    "gastroenterology": {
+      "label": {
+        "de": "Gastroenterologie",
+        "en": "Gastroenterology",
+        "fr": "Gastroentérologie"
+      },
+      "endoscopic_rfa": {
+        "label": {
+          "de": "Endoskopische RFA",
+          "en": "Endoscopic RFA",
+          "fr": "RFA endoscopique"
+        },
+        "risks": [
+          "general_anesthesia.common",
+          "lines_catheters.common",
+          "lines_catheters.peripheral_iv"
+        ]
+      }
+    },
+    "cardiology": {
+      "label": {
+        "de": "Kardiologie",
+        "en": "Cardiology",
+        "fr": "Cardiologie"
+      },
+      "aicd_implantation": {
+        "label": {
+          "de": "AICD-Implantation",
+          "en": "AICD implantation",
+          "fr": "Implantation de DAI"
+        },
+        "risks": [
+          "general_anesthesia.common",
+          "lines_catheters.common",
+          "lines_catheters.peripheral_iv"
         ]
       },
-      "psychiatrie_ekt": {
-        "label": {
-          "de": "Psychiatrie : EKT",
-          "en": "psychiatrie : ekt",
-          "fr": "Psychiatrie : ekt"
-        },
-        "risks": []
-      },
-      "endoskopie_rfa": {
-        "label": {
-          "de": "Endoskopie: RFA",
-          "en": "endoskopie: rfa",
-          "fr": "Endoskopie: rfa"
-        },
-        "risks": []
-      },
-      "aicd": {
-        "label": {
-          "de": "AICD",
-          "en": "aicd",
-          "fr": "Aicd"
-        },
-        "risks": []
-      },
-      "kardioversion": {
+      "cardioversion": {
         "label": {
           "de": "Kardioversion",
-          "en": "kardioversion",
-          "fr": "Kardioversion"
+          "en": "Cardioversion",
+          "fr": "Cardioversion"
         },
-        "risks": []
+        "risks": [
+          "general_anesthesia.common",
+          "lines_catheters.common",
+          "lines_catheters.peripheral_iv"
+        ]
       },
-      "vorhofohrverschluss_pfo_verschluss": {
+      "left_atrial_appendage_closure": {
         "label": {
-          "de": "Vorhofohrverschluss; PFO-Verschluss",
-          "en": "vorhofohrverschluss; pfo-verschluss",
-          "fr": "Vorhofohrverschluss; pfo-verschluss"
+          "de": "Vorhofohrverschluss / PFO-Verschluss",
+          "en": "LAA / PFO closure",
+          "fr": "Fermeture de l'auricule / FOP"
         },
         "risks": [
           "general_anesthesia.full",
-          "general_anesthesia.full.laryngeal_mask"
+          "general_anesthesia.full.laryngeal_mask",
+          "general_anesthesia.common",
+          "lines_catheters.common",
+          "lines_catheters.peripheral_iv"
         ]
       }
     }
   }
 }
-
