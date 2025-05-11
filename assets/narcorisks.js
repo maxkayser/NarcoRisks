@@ -101,22 +101,24 @@ function deactivateCommonIfUnused(groupKey, entriesContainer) {
  */
 function activateRiskAndChildren(path) {
   const checkbox = document.querySelector(`input[value="${path}"]`);
-  if (checkbox) checkbox.checked = true;
+  if (checkbox) {
+    checkbox.checked = true;
+  } else {
+    console.warn(`[activateRiskAndChildren] Kein Input-Feld gefunden für: ${path}`);
+  }
 
   const prefix = `${path}.`;
   const children = document.querySelectorAll(`input[value^="${prefix}"]`);
   children.forEach(cb => cb.checked = true);
 
-  // Common aktivieren, wenn nicht bereits selektiert
+  // Common aktivieren...
   const parts = path.split(".");
   const groupKey = parts[0];
   const lang = currentLang || 'de';
 
-  // Versuche anhand von key ODER lokalisiertem label zu matchen
   const allGroups = Array.from(document.querySelectorAll('.category.toggle'));
   for (const groupDiv of allGroups) {
     const text = groupDiv.textContent.trim().toLowerCase();
-
     const group = allRisks.find(g => g.key === groupKey);
     const expectedLabel = group?.label?.[lang]?.toLowerCase();
     const matchesKey = text.includes(groupKey.toLowerCase());
