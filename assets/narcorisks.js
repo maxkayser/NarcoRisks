@@ -613,6 +613,49 @@ function renderStaticTextblockCheckboxes() {
   const lang = document.getElementById('language').value || 'de';
   const container = document.getElementById('staticTextblockCheckboxes');
   container.innerHTML = '';
+
+  if (!textblocks) return;
+
+  Object.entries(textblocks).forEach(([groupKey, group]) => {
+    const groupLabel = group?.label?.[lang] || groupKey;
+
+    const groupHeader = document.createElement('div');
+    groupHeader.className = 'category toggle';
+    groupHeader.textContent = groupLabel;
+    container.appendChild(groupHeader);
+
+    const groupContainer = document.createElement('div');
+    groupContainer.className = 'subcategory checkbox-grid';
+    groupContainer.classList.add('hidden');
+    container.appendChild(groupContainer);
+
+    groupHeader.addEventListener('click', () => {
+      groupContainer.classList.toggle('hidden');
+      groupHeader.classList.toggle('expanded');
+    });
+
+    if (group.items) {
+      Object.entries(group.items).forEach(([itemKey, itemData]) => {
+        const label = itemData.label?.[lang] || itemKey;
+        const checkbox = document.createElement('input');
+        checkbox.type = 'checkbox';
+        checkbox.name = 'textblock';
+        checkbox.value = `${groupKey}.${itemKey}`;
+        checkbox.addEventListener('change', generateSummary);
+
+        const wrapper = document.createElement('label');
+        wrapper.appendChild(checkbox);
+        wrapper.appendChild(document.createTextNode(' ' + label));
+        groupContainer.appendChild(wrapper);
+      });
+    }
+  });
+}
+
+function OLD__renderStaticTextblockCheckboxes() {
+  const lang = document.getElementById('language').value || 'de';
+  const container = document.getElementById('staticTextblockCheckboxes');
+  container.innerHTML = '';
   const blocks = [];
   blocks.forEach(item => {
     const wrapper = document.createElement('label');
