@@ -494,6 +494,8 @@ function getRiskText(riskKey, lang = 'de') {
 }
 
 function generateSummary() {
+    
+  const risks = risksData?.risks;  // Ensures risks is defined
     const summaryParts = {
         beginning: [],
         before_measures: [],
