@@ -380,20 +380,12 @@ function renderPresetOptions() {
       const selectedValue = select.value;
       if (selectedValue) {
         handlePresetSelection(key, selectedValue);
-      } else {
-        generateSummary(); // wenn Auswahl zurückgesetzt wurde
+      } 
+      else {
+        generateSummary();
       }
     });
 
-      // Neue aktivieren
-      const selectedValue = select.value;
-      const selectedOption = config.options[selectedValue];
-      if (selectedOption?.associated_risks) {
-        selectedOption.associated_risks.forEach(activateRiskAndChildren);
-      }
-      
-      generateSummary();
-    });
 
     wrapper.appendChild(select);
     container.appendChild(wrapper);
