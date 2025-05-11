@@ -91,7 +91,8 @@
             "de": "Im Rahmen der präoperativen anästhesiologischen Visite wurden die folgenden Risiken unter Berücksichtigung des individuellen Kontextes ausführlich besprochen.",
             "en": "As part of the preoperative anesthesiology consultation, the following risks were thoroughly discussed, taking into account the individual context.",
             "fr": "Dans le cadre de la visite préopératoire en anesthésie, les risques suivants ont été discutés en détail en tenant compte du contexte individuel."
-          }
+          },
+          "position": "start"
         },
         "teleconsent": {
           "label": {
@@ -103,7 +104,8 @@
             "de": "Die Aufklärung fand online über die Plattform Doctolib statt.",
             "en": "The informed consent discussion took place online via the Doctolib platform.",
             "fr": "L’information a été donnée en ligne via la plateforme Doctolib."
-          }
+          },
+          "position": "before_risks"
         },
         "interpreter": {
           "label": {
@@ -115,7 +117,8 @@
             "de": "Aufgrund einer bestehenden Sprachbarriere erfolgte die vollständige Aufklärung im Beisein eines geeigneten Dolmetschers...",
             "en": "Due to an existing language barrier, full information was provided in the presence of a qualified interpreter...",
             "fr": "En raison d'une barrière linguistique, l'explication complète a été réalisée en présence d’un interprète qualifié..."
-          }
+          },
+          "position": "before_risks"
         },
         "closing": {
           "label": {
@@ -127,7 +130,8 @@
             "de": "Auf Nachfrage wurde bestätigt, dass alle Inhalte der anästhesiologischen Aufklärung verstanden wurden...",
             "en": "It was confirmed upon request that all aspects of the anesthesiology-related information were understood...",
             "fr": "Il a été confirmé, sur demande, que tous les éléments de l'information anesthésique ont été compris..."
-          }
+          },
+          "position": "end"
         }
       }
     },
@@ -148,7 +152,8 @@
             "de": "Es besteht ein erhöhtes Risiko für eine pulmonale Aspiration...",
             "en": "There is an increased risk of pulmonary aspiration...",
             "fr": "Il existe un risque accru d'aspiration pulmonaire..."
-          }
+          },
+          "position": "before_risks"
         },
         "known_difficult_airway": {
           "label": {
@@ -160,7 +165,8 @@
             "de": "Ein schwieriger Atemweg wurde bereits in der Vergangenheit festgestellt...",
             "en": "A difficult airway has been previously identified...",
             "fr": "Des voies respiratoires difficiles ont été identifiées par le passé..."
-          }
+          },
+          "position": "before_risks"
         }
       }
     },
@@ -181,7 +187,8 @@
             "de": "Eine ausführliche Aufklärung wurde angeboten, jedoch vom Patienten abgelehnt...",
             "en": "Detailed information was offered, but declined by the patient...",
             "fr": "Des informations détaillées ont été proposées, mais refusées par le patient..."
-          }
+          },
+          "position": "before_risks"
         },
         "refusal_blood_products": {
           "label": {
@@ -193,7 +200,8 @@
             "de": "Die Gabe von Blutprodukten wurde abgelehnt. Die Konsequenzen wurden erklärt.",
             "en": "The use of blood products was refused. Consequences were explained.",
             "fr": "L'utilisation de produits sanguins a été refusée. Les conséquences ont été expliquées."
-          }
+          },
+          "position": "before_risks"
         },
         "minor_guardian_consent": {
           "label": {
@@ -205,7 +213,8 @@
             "de": "Aufklärung im Beisein eines Sorgeberechtigten durchgeführt...",
             "en": "Informed consent conducted in presence of a guardian...",
             "fr": "Information réalisée en présence d’un représentant légal..."
-          }
+          },
+          "position": "before_risks"
         }
       }
     }
