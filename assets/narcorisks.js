@@ -494,62 +494,91 @@ function getRiskText(riskKey, lang = 'de') {
 }
 
 function generateSummary() {
-  const currentLang = document.getElementById("language")?.value || "de";
-  const summaryParts = [];
+  const lang = document.getElementById("language").value || "de";
+  let summaryParts = [];
 
-  const selectedTextblocks = [];
-
-  // Iterate through grouped textblocks (organizational, medical_conditions, legal_ethical)
-  Object.entries(textblocks).forEach(([groupKey, group]) => {
-    Object.entries(group.items).forEach(([itemKey, item]) => {
-      const fullKey = `${groupKey}.${itemKey}`;
-      const checkbox = document.querySelector(`input[name="textblock"][value="${fullKey}"]`);
-      if (checkbox && checkbox.checked) {
-        selectedTextblocks.push({
-          key: fullKey,
-          text: item.text[currentLang],
-          position: item.position || "before_measures" // default fallback
-        });
+  // Intro textblock(s) – position: beginning
+  Object.values(risksData.textblocks).forEach(group => {
+    Object.entries(group.items).forEach(([key, block]) => {
+      if (block.position === "intro" && document.querySelector(`input[name="textblock"][value="${key}"]`)?.checked) {
+        if (block.text?.[lang]) {
+          summaryParts.push(block.text[lang]);
+        }
       }
     });
   });
 
-  // Sort selected textblocks by position
-  const sortedTextblocks = {
-    intro: [],
-    before_measures: [],
-    after_measures: [],
-    closing: []
-  };
-
-  selectedTextblocks.forEach(tb => {
-    if (tb.position === "intro") sortedTextblocks.intro.push(tb.text);
-    else if (tb.position === "after_measures") sortedTextblocks.after_measures.push(tb.text);
-    else if (tb.position === "closing") sortedTextblocks.closing.push(tb.text);
-    else sortedTextblocks.before_measures.push(tb.text); // default
+  // Textblocks with position: before_measures
+  Object.values(risksData.textblocks).forEach(group => {
+    Object.entries(group.items).forEach(([key, block]) => {
+      if (block.position === "before_measures" && document.querySelector(`input[name="textblock"][value="${key}"]`)?.checked) {
+        if (block.text?.[lang]) {
+          summaryParts.push(block.text[lang]);
+        }
+      }
+    });
   });
 
-  // Concatenate in logical order
-  summaryParts.push(...sortedTextblocks.intro);
-  summaryParts.push(...sortedTextblocks.before_measures);
-
-  // Measures-associated risks (checked risk checkboxes)
-  const selectedRiskLabels = [];
-  document.querySelectorAll('input[name="riskSubgroups"]:checked').forEach(cb => {
-    const label = cb.parentElement.textContent.trim();
-    if (label) selectedRiskLabels.push(label);
+  // Measure-associated risks grouped
+  let measureRisks = [];
+  document.querySelectorAll("input[name='riskSubgroups']:checked").forEach(input => {
+    measureRisks.push(input.getAttribute("value"));
   });
 
-  if (selectedRiskLabels.length > 0) {
-    summaryParts.push(selectedRiskLabels.join(", ") + ".");
+  let groupedRiskText = [];
+
+  Object.entries(risksData.risks).forEach(([groupKey, group]) => {
+    let groupLines = [];
+    Object.entries(group).forEach(([subKey, sub]) => {
+      const fullKey = `${groupKey}.${subKey}`;
+      if (measureRisks.includes(fullKey)) {
+        let subRisks = [];
+        Object.entries(sub).forEach(([riskKey, riskText]) => {
+          const fullRiskKey = `${groupKey}.${subKey}.${riskKey}`;
+          if (measureRisks.includes(fullRiskKey)) {
+            subRisks.push(riskText[lang] || riskText["de"]);
+          }
+        });
+        if (subRisks.length > 0) {
+          groupLines.push(`${translations[groupKey]?.[lang] || groupKey} – ${translations[subKey]?.[lang] || subKey}: ${subRisks.join(", ")}`);
+        }
+      }
+    });
+    if (groupLines.length > 0) {
+      groupedRiskText.push(groupLines.join("\n"));
+    }
+  });
+
+  if (groupedRiskText.length > 0) {
+    summaryParts.push(groupedRiskText.join("\n\n"));
   }
 
-  summaryParts.push(...sortedTextblocks.after_measures);
-  summaryParts.push(...sortedTextblocks.closing);
+  // Textblocks with position: after_measures
+  Object.values(risksData.textblocks).forEach(group => {
+    Object.entries(group.items).forEach(([key, block]) => {
+      if (block.position === "after_measures" && document.querySelector(`input[name="textblock"][value="${key}"]`)?.checked) {
+        if (block.text?.[lang]) {
+          summaryParts.push(block.text[lang]);
+        }
+      }
+    });
+  });
 
-  // Set final summary
-  document.getElementById("summaryText").value = summaryParts.join("\n\n");
+  // Closing textblock(s) – position: end
+  Object.values(risksData.textblocks).forEach(group => {
+    Object.entries(group.items).forEach(([key, block]) => {
+      if (block.position === "closing" && document.querySelector(`input[name="textblock"][value="${key}"]`)?.checked) {
+        if (block.text?.[lang]) {
+          summaryParts.push(block.text[lang]);
+        }
+      }
+    });
+  });
+
+  const summaryText = summaryParts.join("\n\n");
+  document.getElementById("summaryText").value = summaryText;
 }
+
 
 
 function OLD__generateSummary() {
