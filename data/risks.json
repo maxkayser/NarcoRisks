@@ -137,9 +137,9 @@
     },
     "medical_conditions": {
       "label": {
-        "de": "Vorerkrankungen / medizinische Risiken",
-        "en": "Pre-existing Conditions / Medical Risks",
-        "fr": "Antécédents médicaux / Risques médicaux"
+        "de": "Vorerkrankungen",
+        "en": "Pre-existing Conditions",
+        "fr": "Antécédents médicaux"
       },
       "items": {
         "aspiration_risk": {
@@ -172,9 +172,9 @@
     },
     "legal_ethical": {
       "label": {
-        "de": "Medikolegal / rechtlich-ethisch",
-        "en": "Medico-legal / Ethical",
-        "fr": "Médico-légal / Éthique"
+        "de": "Medikolegale Besonderheiten",
+        "en": "Medico-legal particularities",
+        "fr": "Particularités médico-légales"
       },
       "items": {
         "refused_information": {
