@@ -1893,9 +1893,16 @@
             },
             "pleural_puncture": {
               "label": {
-                "de": "Pleurapunktion / Pneumothorax (selten, bei tiefer Nadellage)",
-                "en": "Pleural puncture / pneumothorax (rare, deep needle)",
-                "fr": "Ponction pleurale / pneumothorax (rare, aiguille profonde)"
+                "de": "Pleurapunktion",
+                "en": "Pleural puncture",
+                "fr": "Ponction pleurale"
+              }
+            },
+            "pneumothorax": {
+              "label": {
+                "de": "Pneumothorax",
+                "en": "Pneumothorax",
+                "fr": "Pneumothorax"
               }
             }
           },
@@ -4522,6 +4529,7 @@
           "general_anesthesia.common",
           "general_anesthesia.full",
           "regional_anesthesia.pecs_block",
+          "regional_anesthesia.esp_block",
           "regional_anesthesia.common",
           "lines_catheters.common",
           "lines_catheters.peripheral_iv"
@@ -4537,6 +4545,7 @@
           "general_anesthesia.common",
           "general_anesthesia.full",
           "regional_anesthesia.pecs_block",
+          "regional_anesthesia.esp_block",
           "regional_anesthesia.common",
           "lines_catheters.common",
           "lines_catheters.peripheral_iv"
@@ -4552,6 +4561,7 @@
           "general_anesthesia.common",
           "general_anesthesia.full",
           "regional_anesthesia.pecs_block",
+          "regional_anesthesia.esp_block",
           "regional_anesthesia.common",
           "lines_catheters.common",
           "lines_catheters.peripheral_iv"
