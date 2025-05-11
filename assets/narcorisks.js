@@ -353,50 +353,34 @@ function handlePresetSelection(key, value) {
 
   riskPaths.forEach(path => {
     const input = findRiskCheckbox(path);
+  
     if (input) {
-      // Wenn es eine Gruppen-Checkbox ist (also kein direkt selektierbares Leaf)
-      input.checked = true;
-    
-      // Alle Kinder-Checkboxen aktivieren
-      const children = document.querySelectorAll(`input[name="riskSubgroups"][value^="${input.value}."]`);
-      children.forEach(cb => cb.checked = true);
-    
-      // Falls nicht 'common', Common-Feld aktivieren
-      const groupKey = input.value.split('.')[0];
-      const groupDiv = Array.from(document.querySelectorAll('.category.toggle')).find(div =>
-        div.textContent.toLowerCase().includes(groupKey.toLowerCase())
-      );
-      if (groupDiv) {
-        const entriesContainer = groupDiv.nextElementSibling;
-        activateCommonItems(groupKey, entriesContainer);
-      }
-    
-      console.log(`[PresetSelection] Aktiviert Gruppe: ${input.value}`);
-    }
-    else if (textblocks) {
-      // Kontextuelle Textblöcke
-      const key = path.split('.').pop();  // extrahiere z. B. "aspiration_risk" aus "contextual_risks.aspiration_risk"
+      activateRiskAndChildren(input.value);
+      console.log(`[PresetSelection] Aktiviert Maßnahme-Risiko: ${input.value}`);
+    } else if (textblocks) {
+      // Kontextuelle Textblöcke (wie "emergency_surgery")
+      const key = path.split('.').pop(); // z. B. "aspiration_risk"
       let textblockInput = document.querySelector(`input[name="textblock"][value="${key}"]`);
-
+  
       if (!textblockInput && textblocks[key]) {
         const container = document.getElementById('textblockToggles');
         if (!container) return;
-
+  
         const labelText = textblocks[key]?.label?.[lang] || key;
         const wrapper = document.createElement('label');
         wrapper.style.display = 'block';
-
+  
         textblockInput = document.createElement('input');
         textblockInput.type = 'checkbox';
         textblockInput.name = 'textblock';
         textblockInput.value = key;
         textblockInput.checked = true;
         textblockInput.addEventListener('change', generateSummary);
-
+  
         wrapper.appendChild(textblockInput);
         wrapper.appendChild(document.createTextNode(' ' + labelText));
         container.appendChild(wrapper);
-
+  
         console.log(`[PresetSelection] Dynamisch hinzugefügt: ${key}`);
       } else if (textblockInput) {
         textblockInput.checked = true;
