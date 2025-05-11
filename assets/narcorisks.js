@@ -479,15 +479,12 @@ function renderPresetOptions() {
  * Generates the risk summary output in structured form.
  */
 function getLabelFromRiskKey(riskKey, lang = 'de') {
-  const cleanKey = riskKey.startsWith('risks.') ? riskKey.replace(/^risks\./, '') : riskKey;
-  const path = cleanKey.split('.');
-  let node = risksRoot;
-
+  const path = riskKey.split('.');
+  let node = risks;
   for (const part of path) {
-    if (!node || typeof node !== 'object' || !node[part]) return null;
+    if (!node || !node[part]) return null;
     node = node[part];
   }
-
   return node?.label?.[lang] || null;
 }
 
@@ -495,27 +492,14 @@ function getRiskText(riskKey, lang = 'de') {
   const label = getLabelFromRiskKey(riskKey, lang);
   return label ? `– ${label}` : '';
 }
-
-
-
 function generateSummary() {
   const lang = document.getElementById("language").value || 'de';
-
-  const selectedTextblocks = Array.from(
-    document.querySelectorAll('input[name="textblock"]:checked')
-  ).map(cb => cb.value);
-
-  const selectedRisks = Array.from(
-    document.querySelectorAll('input[name="riskSubgroups"]:checked')
-  ).map(cb => cb.value);
-  
   let result = "";
 
   // Add textblocks with position: "beginning"
   Object.entries(textblocks).forEach(([groupKey, group]) => {
     Object.entries(group.items).forEach(([itemKey, item]) => {
-      const fullKey = `${groupKey}.${itemKey}`;
-      if (selectedTextblocks.includes(fullKey) && item.position === "beginning") {
+      if (selectedTextblocks.includes(itemKey) && item.position === "beginning") {
         result += (item.text?.[lang] || "") + "\n\n";
       }
     });
@@ -524,8 +508,7 @@ function generateSummary() {
   // Add textblocks with position: "before_measures"
   Object.entries(textblocks).forEach(([groupKey, group]) => {
     Object.entries(group.items).forEach(([itemKey, item]) => {
-      const fullKey = `${groupKey}.${itemKey}`;
-      if (selectedTextblocks.includes(fullKey) && item.position === "before_measures") {
+      if (selectedTextblocks.includes(itemKey) && item.position === "before_measures") {
         result += (item.text?.[lang] || "") + "\n\n";
       }
     });
@@ -544,8 +527,7 @@ function generateSummary() {
   // Add textblocks with position: "after_measures"
   Object.entries(textblocks).forEach(([groupKey, group]) => {
     Object.entries(group.items).forEach(([itemKey, item]) => {
-      const fullKey = `${groupKey}.${itemKey}`;
-      if (selectedTextblocks.includes(fullKey) && item.position === "after_measures") {
+      if (selectedTextblocks.includes(itemKey) && item.position === "after_measures") {
         result += (item.text?.[lang] || "") + "\n\n";
       }
     });
@@ -554,8 +536,7 @@ function generateSummary() {
   // Add textblocks with position: "end"
   Object.entries(textblocks).forEach(([groupKey, group]) => {
     Object.entries(group.items).forEach(([itemKey, item]) => {
-      const fullKey = `${groupKey}.${itemKey}`;
-      if (selectedTextblocks.includes(fullKey) && item.position === "end") {
+      if (selectedTextblocks.includes(itemKey) && item.position === "end") {
         result += (item.text?.[lang] || "") + "\n\n";
       }
     });
@@ -569,8 +550,6 @@ function generateSummary() {
 
   document.getElementById("summaryText").value = result.trim();
 }
-
-
 
 
 function OLD__generateSummary() {
@@ -771,7 +750,6 @@ document.getElementById('language').addEventListener('change', () => {
   applyTranslations(currentLang); 
   renderRiskGroups();
   renderTextblockToggles();
-  renderStaticTextblockCheckboxes();
   renderProcedureSelectors();
   renderPresetOptions();
 });
