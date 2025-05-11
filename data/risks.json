@@ -105,7 +105,7 @@
             "en": "The informed consent discussion took place online via the Doctolib platform.",
             "fr": "L’information a été donnée en ligne via la plateforme Doctolib."
           },
-          "position": "after_measures"
+          "position": "after"
         },
         "interpreter": {
           "label": {
@@ -118,7 +118,7 @@
             "en": "Due to an existing language barrier, full information was provided in the presence of a qualified interpreter. The interpreter confirmed on request that all content was translated completely and accurately. The patient was repeatedly asked whether everything was truly understood.",
             "fr": "En raison d'une barrière linguistique, l'explication complète a été réalisée en présence d’un interprète qualifié. Celui-ci a confirmé avoir traduit fidèlement et entièrement tous les contenus. Le patient a été interrogé à plusieurs reprises pour vérifier sa compréhension."
           },
-          "position": "after_measures"
+          "position": "after"
         },
         "closing": {
           "label": {
@@ -153,7 +153,7 @@
             "en": "There is an increased risk of pulmonary aspiration...",
             "fr": "Il existe un risque accru d'aspiration pulmonaire..."
           },
-          "position": "before_measures"
+          "position": "before"
         },
         "known_difficult_airway": {
           "label": {
@@ -166,7 +166,7 @@
             "en": "A difficult airway has been previously identified...",
             "fr": "Des voies respiratoires difficiles ont été identifiées par le passé..."
           },
-          "position": "before_measures"
+          "position": "before"
         }
       }
     },
@@ -188,7 +188,7 @@
             "en": "Detailed information was offered, but declined by the patient...",
             "fr": "Des informations détaillées ont été proposées, mais refusées par le patient..."
           },
-          "position": "before_measures"
+          "position": "before"
         },
         "refusal_blood_products": {
           "label": {
@@ -201,7 +201,7 @@
             "en": "The use of blood products was refused. Consequences were explained.",
             "fr": "L'utilisation de produits sanguins a été refusée. Les conséquences ont été expliquées."
           },
-          "position": "before_measures"
+          "position": "before"
         },
         "minor_guardian_consent": {
           "label": {
@@ -214,7 +214,7 @@
             "en": "Informed consent conducted in presence of a guardian...",
             "fr": "Information réalisée en présence d’un représentant légal..."
           },
-          "position": "before_measures"
+          "position": "before"
         }
       }
     }
