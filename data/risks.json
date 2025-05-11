@@ -2907,7 +2907,7 @@
           "regional_anesthesia.epidural",
           "regional_anesthesia.peripheral_catheter",
           "regional_anesthesia.common",
-          "lines_catheters.arterial_line",
+          "lines_catheters.arterial_catheter",
           "lines_catheters.central_venous_catheter",
           "lines_catheters.gastric_tube",
           "lines_catheters.bladder_catheter",
@@ -2926,7 +2926,7 @@
           "general_anesthesia.full",
           "regional_anesthesia.tap_block",
           "regional_anesthesia.common",
-          "lines_catheters.arterial_line",
+          "lines_catheters.arterial_catheter",
           "lines_catheters.central_venous_catheter",
           "lines_catheters.gastric_tube",
           "lines_catheters.bladder_catheter",
@@ -2945,7 +2945,7 @@
           "general_anesthesia.full",
           "regional_anesthesia.tap_block",
           "regional_anesthesia.common",
-          "lines_catheters.arterial_line",
+          "lines_catheters.arterial_catheter",
           "lines_catheters.central_venous_catheter",
           "lines_catheters.gastric_tube",
           "lines_catheters.bladder_catheter",
@@ -2964,7 +2964,7 @@
           "general_anesthesia.full",
           "lines_catheters.common",
           "lines_catheters.peripheral_iv",
-          "lines_catheters.arterial_line",
+          "lines_catheters.arterial_catheter",
           "lines_catheters.central_venous_catheter",
           "lines_catheters.gastric_tube",
           "lines_catheters.bladder_catheter",
@@ -2984,7 +2984,7 @@
           "general_anesthesia.full",
           "lines_catheters.common",
           "lines_catheters.peripheral_iv",
-          "lines_catheters.arterial_line",
+          "lines_catheters.arterial_catheter",
           "lines_catheters.central_venous_catheter",
           "lines_catheters.gastric_tube",
           "lines_catheters.bladder_catheter",
@@ -3058,7 +3058,7 @@
         },
         "risks": [
           "general_anesthesia.full",
-          "lines_catheters.arterial_line",
+          "lines_catheters.arterial_catheter",
           "lines_catheters.bladder_catheter",
           "regional_anesthesia.peripheral_catheter",
           "general_anesthesia.common",
@@ -3076,7 +3076,7 @@
         "risks": [
           "general_anesthesia.full",
           "general_anesthesia.full.rsi",
-          "lines_catheters.arterial_line",
+          "lines_catheters.arterial_catheter",
           "lines_catheters.gastric_tube",
           "regional_anesthesia.spinal",
           "general_anesthesia.common",
@@ -3109,7 +3109,7 @@
         },
         "risks": [
           "general_anesthesia.full",
-          "lines_catheters.arterial_line",
+          "lines_catheters.arterial_catheter",
           "lines_catheters.central_venous_catheter",
           "lines_catheters.gastric_tube",
           "lines_catheters.bladder_catheter",
@@ -3130,7 +3130,7 @@
         "risks": [
           "general_anesthesia.full",
           "general_anesthesia.full.rsi",
-          "lines_catheters.arterial_line",
+          "lines_catheters.arterial_catheter",
           "lines_catheters.gastric_tube",
           "regional_anesthesia.spinal",
           "general_anesthesia.common",
@@ -3147,7 +3147,7 @@
         },
         "risks": [
           "general_anesthesia.full",
-          "lines_catheters.arterial_line",
+          "lines_catheters.arterial_catheter",
           "lines_catheters.gastric_tube",
           "lines_catheters.bladder_catheter",
           "regional_anesthesia.epidural",
@@ -3166,7 +3166,7 @@
         },
         "risks": [
           "general_anesthesia.full",
-          "lines_catheters.arterial_line",
+          "lines_catheters.arterial_catheter",
           "lines_catheters.central_venous_catheter",
           "lines_catheters.gastric_tube",
           "lines_catheters.bladder_catheter",
@@ -3187,7 +3187,7 @@
         "risks": [
           "general_anesthesia.full",
           "general_anesthesia.full.double_lumen",
-          "lines_catheters.arterial_line",
+          "lines_catheters.arterial_catheter",
           "lines_catheters.central_venous_catheter",
           "lines_catheters.gastric_tube",
           "lines_catheters.bladder_catheter",
@@ -3207,7 +3207,7 @@
         },
         "risks": [
           "general_anesthesia.full",
-          "lines_catheters.arterial_line",
+          "lines_catheters.arterial_catheter",
           "lines_catheters.central_venous_catheter",
           "lines_catheters.gastric_tube",
           "lines_catheters.bladder_catheter",
@@ -3240,7 +3240,7 @@
         },
         "risks": [
           "general_anesthesia.full",
-          "lines_catheters.arterial_line",
+          "lines_catheters.arterial_catheter",
           "lines_catheters.central_venous_catheter",
           "lines_catheters.bladder_catheter",
           "regional_anesthesia.epidural",
@@ -3287,7 +3287,7 @@
         },
         "risks": [
           "general_anesthesia.full",
-          "lines_catheters.arterial_line",
+          "lines_catheters.arterial_catheter",
           "lines_catheters.central_venous_catheter",
           "lines_catheters.bladder_catheter",
           "regional_anesthesia.peripheral_catheter",
@@ -3305,7 +3305,7 @@
         },
         "risks": [
           "general_anesthesia.full",
-          "lines_catheters.arterial_line",
+          "lines_catheters.arterial_catheter",
           "lines_catheters.central_venous_catheter",
           "lines_catheters.bladder_catheter",
           "regional_anesthesia.peripheral_catheter",
@@ -3344,7 +3344,7 @@
         },
         "risks": [
           "general_anesthesia.full",
-          "lines_catheters.arterial_line",
+          "lines_catheters.arterial_catheter",
           "lines_catheters.central_venous_catheter",
           "lines_catheters.bladder_catheter",
           "monitoring.transesophageal_echo",
@@ -3364,7 +3364,7 @@
         },
         "risks": [
           "general_anesthesia.full",
-          "lines_catheters.arterial_line",
+          "lines_catheters.arterial_catheter",
           "lines_catheters.bladder_catheter",
           "general_anesthesia.common",
           "lines_catheters.common",
@@ -3379,7 +3379,7 @@
         },
         "risks": [
           "general_anesthesia.full",
-          "lines_catheters.arterial_line",
+          "lines_catheters.arterial_catheter",
           "lines_catheters.bladder_catheter",
           "regional_anesthesia.spinal",
           "general_anesthesia.common",
@@ -3423,7 +3423,7 @@
         },
         "risks": [
           "general_anesthesia.full",
-          "lines_catheters.arterial_line",
+          "lines_catheters.arterial_catheter",
           "lines_catheters.central_venous_catheter",
           "regional_anesthesia.spinal",
           "general_anesthesia.common",
@@ -3440,7 +3440,7 @@
         },
         "risks": [
           "general_anesthesia.full",
-          "lines_catheters.arterial_line",
+          "lines_catheters.arterial_catheter",
           "lines_catheters.central_venous_catheter",
           "lines_catheters.bladder_catheter",
           "regional_anesthesia.peripheral_catheter",
@@ -3465,7 +3465,7 @@
         },
         "risks": [
           "general_anesthesia.full",
-          "lines_catheters.arterial_line",
+          "lines_catheters.arterial_catheter",
           "lines_catheters.central_venous_catheter",
           "lines_catheters.bladder_catheter",
           "monitoring.transesophageal_echo",
@@ -3490,7 +3490,7 @@
         "risks": [
           "general_anesthesia.full",
           "general_anesthesia.full.double_lumen",
-          "lines_catheters.arterial_line",
+          "lines_catheters.arterial_catheter",
           "lines_catheters.bladder_catheter",
           "regional_anesthesia.peripheral_catheter",
           "general_anesthesia.common",
@@ -3508,7 +3508,7 @@
         "risks": [
           "general_anesthesia.full",
           "general_anesthesia.full.double_lumen",
-          "lines_catheters.arterial_line",
+          "lines_catheters.arterial_catheter",
           "lines_catheters.central_venous_catheter",
           "lines_catheters.bladder_catheter",
           "regional_anesthesia.epidural",
@@ -3529,7 +3529,7 @@
           "general_anesthesia.full",
           "general_anesthesia.full.double_lumen",
           "general_anesthesia.full.tiva",
-          "lines_catheters.arterial_line",
+          "lines_catheters.arterial_catheter",
           "lines_catheters.bladder_catheter",
           "general_anesthesia.common",
           "lines_catheters.common",
@@ -3842,7 +3842,7 @@
         },
         "risks": [
           "general_anesthesia.full",
-          "lines_catheters.arterial_line",
+          "lines_catheters.arterial_catheter",
           "lines_catheters.central_venous_catheter",
           "general_anesthesia.common",
           "lines_catheters.common",
@@ -3857,7 +3857,7 @@
         },
         "risks": [
           "general_anesthesia.full",
-          "lines_catheters.arterial_line",
+          "lines_catheters.arterial_catheter",
           "general_anesthesia.common",
           "lines_catheters.common",
           "lines_catheters.peripheral_iv"
@@ -3871,7 +3871,7 @@
         },
         "risks": [
           "general_anesthesia.full",
-          "lines_catheters.arterial_line",
+          "lines_catheters.arterial_catheter",
           "lines_catheters.central_venous_catheter",
           "lines_catheters.bladder_catheter",
           "general_anesthesia.common",
@@ -3887,7 +3887,7 @@
         },
         "risks": [
           "general_anesthesia.full",
-          "lines_catheters.arterial_line",
+          "lines_catheters.arterial_catheter",
           "lines_catheters.central_venous_catheter",
           "lines_catheters.bladder_catheter",
           "general_anesthesia.common",
@@ -3903,7 +3903,7 @@
         },
         "risks": [
           "general_anesthesia.full",
-          "lines_catheters.arterial_line",
+          "lines_catheters.arterial_catheter",
           "lines_catheters.central_venous_catheter",
           "lines_catheters.bladder_catheter",
           "general_anesthesia.common",
@@ -3965,7 +3965,7 @@
         },
         "risks": [
           "general_anesthesia.full",
-          "lines_catheters.arterial_line",
+          "lines_catheters.arterial_catheter",
           "lines_catheters.central_venous_catheter",
           "lines_catheters.bladder_catheter",
           "regional_anesthesia.epidural",
@@ -4000,7 +4000,7 @@
         },
         "risks": [
           "general_anesthesia.full",
-          "lines_catheters.arterial_line",
+          "lines_catheters.arterial_catheter",
           "lines_catheters.central_venous_catheter",
           "lines_catheters.bladder_catheter",
           "regional_anesthesia.epidural",
@@ -4162,7 +4162,7 @@
         "risks": [
           "general_anesthesia.common",
           "general_anesthesia.full",
-          "lines_catheters.arterial_line",
+          "lines_catheters.arterial_catheter",
           "lines_catheters.central_venous_catheter",
           "lines_catheters.bladder_catheter",
           "lines_catheters.common",
@@ -4179,7 +4179,7 @@
           "general_anesthesia.common",
           "general_anesthesia.full",
           "lines_catheters.common",
-          "lines_catheters.arterial_line",
+          "lines_catheters.arterial_catheter",
           "lines_catheters.central_venous_catheter",
           "lines_catheters.bladder_catheter",
           "lines_catheters.peripheral_iv"
@@ -4343,7 +4343,7 @@
         "risks": [
           "general_anesthesia.common",
           "general_anesthesia.full",
-          "lines_catheters.arterial_line",
+          "lines_catheters.arterial_catheter",
           "lines_catheters.central_venous_catheter",
           "regional_anesthesia.tap_block",
           "regional_anesthesia.common",
@@ -4360,7 +4360,7 @@
         "risks": [
           "general_anesthesia.common",
           "general_anesthesia.full",
-          "lines_catheters.arterial_line",
+          "lines_catheters.arterial_catheter",
           "lines_catheters.central_venous_catheter",
           "lines_catheters.common",
           "lines_catheters.peripheral_iv"
@@ -4417,7 +4417,7 @@
         "risks": [
           "general_anesthesia.common",
           "general_anesthesia.full",
-          "lines_catheters.arterial_line",
+          "lines_catheters.arterial_catheter",
           "lines_catheters.central_venous_catheter",
           "monitoring.transesophageal_echo",
           "lines_catheters.common",
@@ -4460,7 +4460,7 @@
         "risks": [
           "general_anesthesia.common",
           "general_anesthesia.full",
-          "lines_catheters.arterial_line",
+          "lines_catheters.arterial_catheter",
           "lines_catheters.bladder_catheter",
           "regional_anesthesia.peripheral_catheter",
           "regional_anesthesia.tap_block",
@@ -4478,7 +4478,7 @@
         "risks": [
           "general_anesthesia.common",
           "general_anesthesia.full",
-          "lines_catheters.arterial_line",
+          "lines_catheters.arterial_catheter",
           "lines_catheters.central_venous_catheter",
           "lines_catheters.gastric_tube",
           "lines_catheters.bladder_catheter",
@@ -4579,7 +4579,7 @@
         "risks": [
           "general_anesthesia.common",
           "general_anesthesia.full",
-          "lines_catheters.arterial_line",
+          "lines_catheters.arterial_catheter",
           "lines_catheters.bladder_catheter",
           "lines_catheters.common",
           "lines_catheters.peripheral_iv"
@@ -4864,7 +4864,7 @@
             "general_anesthesia.rsi",
             "lines_catheters.common",            
             "lines_catheters.peripheral_iv",
-            "lines_catheters.arterial_line",
+            "lines_catheters.arterial_catheter",
             "lines_catheters.shaldon_catheter",
             "lines_catheters.intraosseous_access",
             "lines_catheters.central_venous_catheter",
@@ -4887,7 +4887,7 @@
             "general_anesthesia.rsi",
             "lines_catheters.common",            
             "lines_catheters.peripheral_iv",
-            "lines_catheters.arterial_line",
+            "lines_catheters.arterial_catheter",
             "lines_catheters.shaldon_catheter",
             "lines_catheters.central_venous_catheter",
             "lines_catheters.bladder_catheter",
@@ -4908,7 +4908,7 @@
             "general_anesthesia.rsi",
             "lines_catheters.common",            
             "lines_catheters.peripheral_iv",
-            "lines_catheters.arterial_line",
+            "lines_catheters.arterial_catheter",
             "lines_catheters.central_venous_catheter",
             "lines_catheters.gastric_tube"
           ]
@@ -4992,7 +4992,7 @@
           "associated_risks": [
             "lines_catheters.common",       
             "lines_catheters.peripheral_iv",     
-            "lines_catheters.arterial_line",
+            "lines_catheters.arterial_catheter",
             "lines_catheters.central_venous_catheter"
           ]
         },
@@ -5008,7 +5008,7 @@
             "general_anesthesia.rsi",
             "lines_catheters.common",            
             "lines_catheters.peripheral_iv",
-            "lines_catheters.arterial_line",
+            "lines_catheters.arterial_catheter",
             "lines_catheters.bladder_catheter",
             "lines_catheters.central_venous_catheter",
             "lines_catheters.shaldon_catheter",
@@ -5027,7 +5027,7 @@
             "general_anesthesia.rsi",
             "lines_catheters.common",
             "lines_catheters.peripheral_iv",
-            "lines_catheters.arterial_line",
+            "lines_catheters.arterial_catheter",
             "lines_catheters.central_venous_catheter",
             "lines_catheters.shaldon_catheter",
             "lines_catheters.intraosseous_access",
