@@ -495,81 +495,68 @@ function getRiskText(riskKey, lang = 'de') {
 
 
 function generateSummary() {
-  const lang = document.getElementById('language').value || 'de';
-  const selectedKeys = Array.from(document.querySelectorAll('input[name="riskSubgroups"]:checked')).map(el => el.value);
-  const selectedTextblocks = Array.from(document.querySelectorAll('input[name="textblock"]:checked')).map(cb => cb.value);
-  const additional = document.getElementById('additionalText')?.value || '';
+  const lang = document.getElementById("language").value || 'de';
+  let result = "";
 
-  let result = '';
-
-  const intro = textblocks?.intro?.[lang];
-  const closing = textblocks?.closing?.[lang];
-
-  if (intro) result += intro + '\n\n';
-
-  // === Render textblocks with position "before"
-  Object.values(allRisks?.textblocks || {}).forEach(group => {
-    Object.entries(group.items).forEach(([key, block]) => {
-      if (selectedTextblocks.includes(key) && block.position === 'before' && block.text?.[lang]) {
-        result += block.text[lang] + '\n\n';
+  // Add textblocks with position: "beginning"
+  Object.entries(textblocks).forEach(([groupKey, group]) => {
+    Object.entries(group.items).forEach(([itemKey, item]) => {
+      const fullKey = `${groupKey}.${itemKey}`;
+      if (selectedTextblocks.includes(fullKey) && item.position === "beginning") {
+        result += (item.text?.[lang] || "") + "\n\n";
       }
     });
   });
 
-  // === Maßnahmenassoziierte Risiken – gruppiert darstellen
-  const grouped = {};
-
-  for (const path of selectedKeys) {
-    const keys = path.split('.');
-    const group = allRisks.find(g => g.key === keys[0]);
-    if (!group) continue;
-
-    const groupLabel = group.label?.[lang] || keys[0];
-    let subgroupLabel = '';
-    let riskLabel = '';
-
-    if (keys.length === 2) {
-      const entry = group.entries.find(([k]) => k === keys[1]);
-      subgroupLabel = entry?.[1]?.label?.[lang] || keys[1];
-      riskLabel = subgroupLabel;
-    } else if (keys.length === 3) {
-      const entry = group.entries.find(([k]) => k === keys[1]);
-      subgroupLabel = entry?.[1]?.label?.[lang] || keys[1];
-      const child = entry?.[1]?.[keys[2]];
-      riskLabel = child?.label?.[lang] || keys[2];
-    }
-
-    if (!grouped[groupLabel]) grouped[groupLabel] = {};
-    if (!grouped[groupLabel][subgroupLabel]) grouped[groupLabel][subgroupLabel] = new Set();
-    grouped[groupLabel][subgroupLabel].add(riskLabel);
-  }
-
-  for (const [groupLabel, subgroups] of Object.entries(grouped)) {
-    result += `${groupLabel}\n`;
-    for (const [subLabel, risksSet] of Object.entries(subgroups)) {
-      const risks = Array.from(risksSet).sort();
-      result += `${subLabel}: ${risks.join(', ')}\n`;
-    }
-    result += '\n';
-  }
-
-  // === Render textblocks with position "after"
-  Object.values(allRisks?.textblocks || {}).forEach(group => {
-    Object.entries(group.items).forEach(([key, block]) => {
-      if (selectedTextblocks.includes(key) && block.position === 'after' && block.text?.[lang]) {
-        result += block.text[lang] + '\n\n';
+  // Add textblocks with position: "before_measures"
+  Object.entries(textblocks).forEach(([groupKey, group]) => {
+    Object.entries(group.items).forEach(([itemKey, item]) => {
+      const fullKey = `${groupKey}.${itemKey}`;
+      if (selectedTextblocks.includes(fullKey) && item.position === "before_measures") {
+        result += (item.text?.[lang] || "") + "\n\n";
       }
     });
   });
 
-  // === Add custom text
-  if (additional.trim()) result += `${additional.trim()}\n\n`;
+  // Insert measure-associated risks
+  if (selectedRisks.length > 0) {
+    const title = translations?.[lang]?.headings?.measures_associated_risks || "Maßnahmenassoziierte Risiken";
+    result += title + "\n\n";
+    result += selectedRisks
+      .map(risk => getRiskText(risk, lang))
+      .filter(text => !!text)
+      .join('\n') + "\n\n";
+  }
 
-  // === Render closing
-  if (closing) result += closing;
+  // Add textblocks with position: "after_measures"
+  Object.entries(textblocks).forEach(([groupKey, group]) => {
+    Object.entries(group.items).forEach(([itemKey, item]) => {
+      const fullKey = `${groupKey}.${itemKey}`;
+      if (selectedTextblocks.includes(fullKey) && item.position === "after_measures") {
+        result += (item.text?.[lang] || "") + "\n\n";
+      }
+    });
+  });
 
-  document.getElementById('summaryText').value = result.trim();
+  // Add textblocks with position: "end"
+  Object.entries(textblocks).forEach(([groupKey, group]) => {
+    Object.entries(group.items).forEach(([itemKey, item]) => {
+      const fullKey = `${groupKey}.${itemKey}`;
+      if (selectedTextblocks.includes(fullKey) && item.position === "end") {
+        result += (item.text?.[lang] || "") + "\n\n";
+      }
+    });
+  });
+
+  // Add optional free text
+  const additionalText = document.getElementById("additionalText")?.value;
+  if (additionalText?.trim()) {
+    result += additionalText.trim() + "\n";
+  }
+
+  document.getElementById("summaryText").value = result.trim();
 }
+
 
 
 
