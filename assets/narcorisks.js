@@ -478,54 +478,79 @@ function renderPresetOptions() {
 /**
  * Generates the risk summary output in structured form.
  */
-function generateSummary() {
-  const lang = document.getElementById('language').value || 'de';
-  const selectedTextblocks = Array.from(document.querySelectorAll('input[name="textblock"]:checked')).map(el => el.value);
-  const selectedRisks = Array.from(document.querySelectorAll('input[name="riskSubgroups"]:checked')).map(el => el.value);
-  const additional = document.getElementById('additionalText').value;
-  let result = '';
-
-  const groupedByPosition = {
-    start: [],
-    before_risks: [],
-    after_risks: [],
-    end: []
-  };
-
-  for (const key of selectedTextblocks) {
-    const [group, item] = key.split('.');
-    const block = textblocks?.[group]?.items?.[item];
-    if (block) {
-      const pos = block.position || 'before_risks';
-      const txt = block.text?.[lang];
-      if (txt) groupedByPosition[pos]?.push(txt);
-    }
+function getLabelFromRiskKey(riskKey, lang = 'de') {
+  const path = riskKey.split('.');
+  let node = risks;
+  for (const part of path) {
+    if (!node || !node[part]) return null;
+    node = node[part];
   }
-
-  // Add 'start' blocks
-  result += groupedByPosition.start.join('\n') + '\n';
-
-  // Add 'before_risks' blocks
-  result += groupedByPosition.before_risks.join('\n') + '\n';
-
-  // Add selected risk summaries (e.g., group & label lookup if needed)
-  if (selectedRisks.length) {
-    result += selectedRisks.map(risk => getRiskText(risk, lang)).join('\n') + '\n';
-  }
-
-  // Add 'after_risks' blocks
-  result += groupedByPosition.after_risks.join('\n') + '\n';
-
-  // Add 'end' blocks
-  result += groupedByPosition.end.join('\n') + '\n';
-
-  // Add custom text
-  if (additional) {
-    result += '\n' + additional;
-  }
-
-  document.getElementById('summaryText').value = result.trim();
+  return node?.label?.[lang] || null;
 }
+
+function getRiskText(riskKey, lang = 'de') {
+  const label = getLabelFromRiskKey(riskKey, lang);
+  return label ? `– ${label}` : '';
+}
+function generateSummary() {
+  const lang = document.getElementById("language").value || 'de';
+  let result = "";
+
+  // Add textblocks with position: "beginning"
+  Object.entries(textblocks).forEach(([groupKey, group]) => {
+    Object.entries(group.items).forEach(([itemKey, item]) => {
+      if (selectedTextblocks.includes(itemKey) && item.position === "beginning") {
+        result += (item.text?.[lang] || "") + "\n\n";
+      }
+    });
+  });
+
+  // Add textblocks with position: "before_measures"
+  Object.entries(textblocks).forEach(([groupKey, group]) => {
+    Object.entries(group.items).forEach(([itemKey, item]) => {
+      if (selectedTextblocks.includes(itemKey) && item.position === "before_measures") {
+        result += (item.text?.[lang] || "") + "\n\n";
+      }
+    });
+  });
+
+  // Insert measure-associated risks
+  if (selectedRisks.length > 0) {
+    const title = translations?.[lang]?.headings?.measures_associated_risks || "Maßnahmenassoziierte Risiken";
+    result += title + "\n\n";
+    result += selectedRisks
+      .map(risk => getRiskText(risk, lang))
+      .filter(text => !!text)
+      .join('\n') + "\n\n";
+  }
+
+  // Add textblocks with position: "after_measures"
+  Object.entries(textblocks).forEach(([groupKey, group]) => {
+    Object.entries(group.items).forEach(([itemKey, item]) => {
+      if (selectedTextblocks.includes(itemKey) && item.position === "after_measures") {
+        result += (item.text?.[lang] || "") + "\n\n";
+      }
+    });
+  });
+
+  // Add textblocks with position: "end"
+  Object.entries(textblocks).forEach(([groupKey, group]) => {
+    Object.entries(group.items).forEach(([itemKey, item]) => {
+      if (selectedTextblocks.includes(itemKey) && item.position === "end") {
+        result += (item.text?.[lang] || "") + "\n\n";
+      }
+    });
+  });
+
+  // Add optional free text
+  const additionalText = document.getElementById("additionalText")?.value;
+  if (additionalText?.trim()) {
+    result += additionalText.trim() + "\n";
+  }
+
+  document.getElementById("summaryText").value = result.trim();
+}
+
 
 function OLD__generateSummary() {
   const lang = document.getElementById('language').value || 'de';
