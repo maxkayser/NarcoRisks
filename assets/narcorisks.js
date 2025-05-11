@@ -479,13 +479,15 @@ function renderPresetOptions() {
  * Generates the risk summary output in structured form.
  */
 function getLabelFromRiskKey(riskKey, lang = 'de') {
-  const path = riskKey.split('.');
-  //let node = risks;
-  let node = risksData.risks;
+  const cleanKey = riskKey.startsWith('risks.') ? riskKey.replace(/^risks\./, '') : riskKey;
+  const path = cleanKey.split('.');
+  let node = risksRoot;
+
   for (const part of path) {
-    if (!node || !node[part]) return null;
+    if (!node || typeof node !== 'object' || !node[part]) return null;
     node = node[part];
   }
+
   return node?.label?.[lang] || null;
 }
 
