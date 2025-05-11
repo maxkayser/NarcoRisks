@@ -4840,5 +4840,174 @@
         ]
       }
     }
+  },
+  "preset_options": {
+    "surgical_urgency": {
+      "label": {
+        "de": "OP-Dringlichkeit",
+        "en": "Surgical Urgency",
+        "fr": "Urgence opératoire"
+      },
+      "options": {
+        "n0": {
+          "label": {
+            "de": "N0 – sofort, ggf. am Aufenthaltsort",
+            "en": "N0 – immediate, at point of care if needed",
+            "fr": "N0 – immédiate, au lieu de soins si nécessaire"
+          },
+          "associated_risks": [
+            "contextual_risks.emergency_surgery",
+            "contextual_risks.time_limited_consent",
+            "general_anesthesia.common",
+            "general_anesthesia.full",
+            "general_anesthesia.rsi"
+          ]
+        },
+        "n1": {
+          "label": {
+            "de": "N1 – Notfall (<1h, unabhängig von Fachdisziplin)",
+            "en": "N1 – emergency (<1h, any specialty)",
+            "fr": "N1 – urgence (<1h, toute spécialité)"
+          },
+          "associated_risks": [
+            "contextual_risks.emergency_surgery",
+            "contextual_risks.time_limited_consent",
+            "general_anesthesia.common",
+            "general_anesthesia.full",
+            "general_anesthesia.rsi"
+          ]
+        },
+        "n2": {
+          "label": {
+            "de": "N2 – bald (<6h, gleiche Fachdisziplin)",
+            "en": "N2 – urgent (<6h, same specialty)",
+            "fr": "N2 – urgent (<6h, même spécialité)"
+          },
+          "associated_risks": [
+            "contextual_risks.emergency_surgery",
+            "contextual_risks.time_limited_consent",
+            "general_anesthesia.common",
+            "general_anesthesia.full",
+            "general_anesthesia.rsi"
+          ]
+        },
+        "n3": {
+          "label": {
+            "de": "N3 – heute noch (<12h, nach elektivem Programm)",
+            "en": "N3 – same day (<12h, after electives)",
+            "fr": "N3 – aujourd’hui (<12h, après les électifs)"
+          },
+          "associated_risks": [
+            "contextual_risks.emergency_surgery",
+            "contextual_risks.time_limited_consent",
+            "general_anesthesia.common",
+            "general_anesthesia.full",
+            "general_anesthesia.rsi"
+          ]
+        },
+        "n4": {
+          "label": {
+            "de": "N4 – nächster Tag (<24h)",
+            "en": "N4 – next day (<24h)",
+            "fr": "N4 – lendemain (<24h)"
+          },
+          "associated_risks": [
+            "contextual_risks.emergency_surgery",
+            "contextual_risks.time_limited_consent",
+            "general_anesthesia.common",
+            "general_anesthesia.full",
+            "general_anesthesia.rsi",
+            "lines_catheters.arterial_line",
+            "lines_catheters.urinary_catheter",
+            "lines_catheters.central_venous_line",
+            "lines_catheters.nasogastric_tube"
+          ]
+        },
+        "n5": {
+          "label": {
+            "de": "N5 – elektiv",
+            "en": "N5 – elective",
+            "fr": "N5 – élective"
+          },
+          "associated_risks": []
+        }
+      }
+    },
+    "asa_status": {
+      "label": {
+        "de": "ASA-Status",
+        "en": "ASA Status",
+        "fr": "Statut ASA"
+      },
+      "options": {
+        "asa1": {
+          "label": {
+            "de": "ASA I – gesunder Patient",
+            "en": "ASA I – healthy patient",
+            "fr": "ASA I – patient en bonne santé"
+          },
+          "associated_risks": []
+        },
+        "asa2": {
+          "label": {
+            "de": "ASA II – geringfügige Erkrankung ohne Einschränkungen",
+            "en": "ASA II – mild disease without limitations",
+            "fr": "ASA II – maladie mineure sans limitations"
+          },
+          "associated_risks": []
+        },
+        "asa3": {
+          "label": {
+            "de": "ASA III – Erkrankung mit deutlicher Beeinträchtigung",
+            "en": "ASA III – disease with significant limitation",
+            "fr": "ASA III – maladie avec limitation significative"
+          },
+          "associated_risks": [
+            "lines_catheters.arterial_line",
+            "lines_catheters.central_venous_line"
+          ]
+        },
+        "asa4": {
+          "label": {
+            "de": "ASA IV – lebensbedrohliche Erkrankung",
+            "en": "ASA IV – life-threatening disease",
+            "fr": "ASA IV – maladie menaçant la vie"
+          },
+          "associated_risks": [
+            "lines_catheters.arterial_line",
+            "lines_catheters.urinary_catheter",
+            "lines_catheters.central_venous_line",
+            "lines_catheters.nasogastric_tube",
+            "general_anesthesia.common",
+            "general_anesthesia.full",
+            "general_anesthesia.rsi"
+          ]
+        },
+        "asa5": {
+          "label": {
+            "de": "ASA V – moribunder Patient",
+            "en": "ASA V – moribund patient",
+            "fr": "ASA V – patient moribond"
+          },
+          "associated_risks": [
+            "lines_catheters.arterial_line",
+            "lines_catheters.urinary_catheter",
+            "lines_catheters.central_venous_line",
+            "lines_catheters.nasogastric_tube",
+            "general_anesthesia.common",
+            "general_anesthesia.full",
+            "general_anesthesia.rsi"
+          ]
+        },
+        "asa6": {
+          "label": {
+            "de": "ASA VI – hirntoter Organspender",
+            "en": "ASA VI – brain-dead organ donor",
+            "fr": "ASA VI – donneur en mort cérébrale"
+          },
+          "associated_risks": []
+        }
+      }
+    }
   }
 }
