@@ -18,9 +18,9 @@
         "fr": "Risques associés aux mesures"
       },
       "summary": {
-        "de": "Risiken-Zusammenfassung",
-        "en": "Risk summary",
-        "fr": "Résumé des risques"
+        "de": "Zusammenfassung",
+        "en": "Summary",
+        "fr": "Résumé"
       }
     },
     "placeholders": {
