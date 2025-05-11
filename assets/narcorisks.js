@@ -327,20 +327,41 @@ function renderProcedureSelectors() {
 function handlePresetSelection(key, value) {
   const preset = risksData?.presets?.[key];
   const lang = currentLang || 'de';
-  if (!preset) return;
+  if (!preset) {
+    console.warn(`[Preset] Kein Preset gefunden für ${key}`);
+    return;
+  }
 
   const selected = preset.options?.[value];
-  if (!selected) return;
+  if (!selected) {
+    console.warn(`[Preset] Keine Option "${value}" für "${key}"`);
+    return;
+  }
 
   console.log(`[Preset] ${key} selected:`, selected.label?.[lang] || value);
   const riskPaths = selected.associated_risks || [];
 
   riskPaths.forEach(path => {
-    activateRiskAndChildren(path);
+    const input = document.querySelector(`input[value="${path}"]`);
+    if (input) {
+      // normales Risiko: Checkbox aktivieren
+      activateRiskAndChildren(path);
+    } else if (textblocks?.[path]) {
+      // Kontextuelles Risiko: Textblock-Checkbox aktivieren
+      const textblockInput = document.querySelector(`input[name="textblock"][value="${path}"]`);
+      if (textblockInput) {
+        textblockInput.checked = true;
+      } else {
+        console.warn(`[handlePresetSelection] Kein Textblock-Input für: ${path}`);
+      }
+    } else {
+      console.warn(`[handlePresetSelection] Pfad nicht gefunden: ${path}`);
+    }
   });
 
   generateSummary();
 }
+
 
 function renderPresetOptions() {
   const presets = risksData?.presets;
