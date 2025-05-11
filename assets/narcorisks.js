@@ -492,64 +492,67 @@ function getRiskText(riskKey, lang = 'de') {
   const label = getLabelFromRiskKey(riskKey, lang);
   return label ? `– ${label}` : '';
 }
+
 function generateSummary() {
-  const lang = document.getElementById("language").value || 'de';
-  let result = "";
+    const summaryParts = {
+        beginning: [],
+        before_measures: [],
+        after_measures: [],
+        end: []
+    };
 
-  // Add textblocks with position: "beginning"
-  Object.entries(textblocks).forEach(([groupKey, group]) => {
-    Object.entries(group.items).forEach(([itemKey, item]) => {
-      if (selectedTextblocks.includes(itemKey) && item.position === "beginning") {
-        result += (item.text?.[lang] || "") + "\n\n";
-      }
+    // Collect selected textblocks and sort them into the correct position
+    const selectedTextblocks = [];
+
+    Object.entries(textblocks).forEach(([groupKey, group]) => {
+        Object.entries(group.items).forEach(([itemKey, item]) => {
+            const checkbox = document.querySelector(`input[name="textblock"][value="${itemKey}"]`);
+            if (checkbox && checkbox.checked) {
+                selectedTextblocks.push({
+                    key: itemKey,
+                    text: item.text[currentLang],
+                    position: item.position || "before_measures"
+                });
+            }
+        });
     });
-  });
 
-  // Add textblocks with position: "before_measures"
-  Object.entries(textblocks).forEach(([groupKey, group]) => {
-    Object.entries(group.items).forEach(([itemKey, item]) => {
-      if (selectedTextblocks.includes(itemKey) && item.position === "before_measures") {
-        result += (item.text?.[lang] || "") + "\n\n";
-      }
+    selectedTextblocks.forEach(tb => {
+        if (summaryParts[tb.position]) {
+            summaryParts[tb.position].push(tb.text);
+        } else {
+            // fallback for unknown positions
+            summaryParts.before_measures.push(tb.text);
+        }
     });
-  });
 
-  // Insert measure-associated risks
-  if (selectedRisks.length > 0) {
-    const title = translations?.[lang]?.headings?.measures_associated_risks || "Maßnahmenassoziierte Risiken";
-    result += title + "\n\n";
-    result += selectedRisks
-      .map(risk => getRiskText(risk, lang))
-      .filter(text => !!text)
-      .join('\n') + "\n\n";
-  }
+    // Collect selected measure-associated risk texts
+    const selectedRisks = [];
 
-  // Add textblocks with position: "after_measures"
-  Object.entries(textblocks).forEach(([groupKey, group]) => {
-    Object.entries(group.items).forEach(([itemKey, item]) => {
-      if (selectedTextblocks.includes(itemKey) && item.position === "after_measures") {
-        result += (item.text?.[lang] || "") + "\n\n";
-      }
+    document.querySelectorAll('input[name="riskSubgroups"]:checked').forEach(input => {
+        const riskPath = input.value.split('.');
+        let node = risks;
+        for (const part of riskPath) {
+            node = node[part];
+            if (!node) break;
+        }
+        if (node && node.text && node.text[currentLang]) {
+            selectedRisks.push(node.text[currentLang]);
+        }
     });
-  });
 
-  // Add textblocks with position: "end"
-  Object.entries(textblocks).forEach(([groupKey, group]) => {
-    Object.entries(group.items).forEach(([itemKey, item]) => {
-      if (selectedTextblocks.includes(itemKey) && item.position === "end") {
-        result += (item.text?.[lang] || "") + "\n\n";
-      }
-    });
-  });
+    // Combine all summary parts in the correct order
+    const summary = [
+        ...summaryParts.beginning,
+        ...summaryParts.before_measures,
+        ...selectedRisks,
+        ...summaryParts.after_measures,
+        ...summaryParts.end
+    ].join("\n\n");
 
-  // Add optional free text
-  const additionalText = document.getElementById("additionalText")?.value;
-  if (additionalText?.trim()) {
-    result += additionalText.trim() + "\n";
-  }
-
-  document.getElementById("summaryText").value = result.trim();
+    document.getElementById("summaryText").value = summary;
 }
+
 
 
 function OLD__generateSummary() {
