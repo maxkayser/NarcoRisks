@@ -8,7 +8,7 @@
  */
 
 const risksUrl = 'https://raw.githubusercontent.com/maxkayser/NarkoSafe/main/data/risks.json';
-
+let risksData = {};
 let allRisks = [];
 
 /**
@@ -52,6 +52,8 @@ async function loadRisks() {
           ...Object.entries(value).filter(([k]) => k !== 'label' && k !== 'common')
         ]
       }));
+
+    risksData = data;
 
     const defaults = data.defaults || {};
     renderRiskGroups(defaults);
