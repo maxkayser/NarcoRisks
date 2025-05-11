@@ -4942,25 +4942,25 @@
       "options": {
         "asa1": {
           "label": {
-            "de": "ASA I – gesunder Patient",
-            "en": "ASA I – healthy patient",
-            "fr": "ASA I – patient en bonne santé"
+            "de": "I – gesunder Patient",
+            "en": "I – healthy patient",
+            "fr": "I – patient en bonne santé"
           },
           "associated_risks": []
         },
         "asa2": {
           "label": {
-            "de": "ASA II – geringfügige Erkrankung ohne Einschränkungen",
-            "en": "ASA II – mild disease without limitations",
-            "fr": "ASA II – maladie mineure sans limitations"
+            "de": "II – geringfügige Erkrankung ohne Einschränkungen",
+            "en": "II – mild disease without limitations",
+            "fr": "II – maladie mineure sans limitations"
           },
           "associated_risks": []
         },
         "asa3": {
           "label": {
-            "de": "ASA III – Erkrankung mit deutlicher Beeinträchtigung",
-            "en": "ASA III – disease with significant limitation",
-            "fr": "ASA III – maladie avec limitation significative"
+            "de": "III – Erkrankung mit deutlicher Beeinträchtigung",
+            "en": "III – disease with significant limitation",
+            "fr": "III – maladie avec limitation significative"
           },
           "associated_risks": [
             "lines_catheters.arterial_line",
@@ -4969,9 +4969,9 @@
         },
         "asa4": {
           "label": {
-            "de": "ASA IV – lebensbedrohliche Erkrankung",
-            "en": "ASA IV – life-threatening disease",
-            "fr": "ASA IV – maladie menaçant la vie"
+            "de": "IV – lebensbedrohliche Erkrankung",
+            "en": "IV – life-threatening disease",
+            "fr": "IV – maladie menaçant la vie"
           },
           "associated_risks": [
             "lines_catheters.arterial_line",
@@ -4985,9 +4985,9 @@
         },
         "asa5": {
           "label": {
-            "de": "ASA V – moribunder Patient",
-            "en": "ASA V – moribund patient",
-            "fr": "ASA V – patient moribond"
+            "de": "V – moribunder Patient",
+            "en": "V – moribund patient",
+            "fr": "V – patient moribond"
           },
           "associated_risks": [
             "lines_catheters.arterial_line",
@@ -5001,9 +5001,9 @@
         },
         "asa6": {
           "label": {
-            "de": "ASA VI – hirntoter Organspender",
-            "en": "ASA VI – brain-dead organ donor",
-            "fr": "ASA VI – donneur en mort cérébrale"
+            "de": "VI – hirntoter Organspender",
+            "en": "VI – brain-dead organ donor",
+            "fr": "VI – donneur en mort cérébrale"
           },
           "associated_risks": []
         }
