@@ -2902,15 +2902,15 @@
           "fr": "Résection de l’intestin grêle"
         },
         "risks": [
+          "general_anesthesia.common",
           "general_anesthesia.full",
+          "regional_anesthesia.epidural",
+          "regional_anesthesia.peripheral_catheter",
+          "regional_anesthesia.common",
           "lines_catheters.arterial_line",
           "lines_catheters.central_venous_line",
           "lines_catheters.nasogastric_tube",
           "lines_catheters.urinary_catheter",
-          "regional_anesthesia.epidural",
-          "regional_anesthesia.peripheral_catheter",
-          "general_anesthesia.common",
-          "regional_anesthesia.common",
           "lines_catheters.common",
           "lines_catheters.peripheral_iv"
         ]
@@ -2922,14 +2922,14 @@
           "fr": "Sleeve gastrectomie"
         },
         "risks": [
+          "general_anesthesia.common",
           "general_anesthesia.full",
+          "regional_anesthesia.tap_block",
+          "regional_anesthesia.common",
           "lines_catheters.arterial_line",
           "lines_catheters.central_venous_line",
           "lines_catheters.nasogastric_tube",
           "lines_catheters.urinary_catheter",
-          "regional_anesthesia.tap_block",
-          "general_anesthesia.common",
-          "regional_anesthesia.common",
           "lines_catheters.common",
           "lines_catheters.peripheral_iv"
         ]
@@ -2941,14 +2941,14 @@
           "fr": "Bypass gastrique"
         },
         "risks": [
+          "general_anesthesia.common",
           "general_anesthesia.full",
+          "regional_anesthesia.tap_block",
+          "regional_anesthesia.common",
           "lines_catheters.arterial_line",
           "lines_catheters.central_venous_line",
           "lines_catheters.nasogastric_tube",
           "lines_catheters.urinary_catheter",
-          "regional_anesthesia.tap_block",
-          "general_anesthesia.common",
-          "regional_anesthesia.common",
           "lines_catheters.common",
           "lines_catheters.peripheral_iv"
         ]
@@ -2960,17 +2960,17 @@
           "fr": "Chirurgie cytoréductrice"
         },
         "risks": [
+          "general_anesthesia.common",
           "general_anesthesia.full",
+          "lines_catheters.common",
+          "lines_catheters.peripheral_iv",
           "lines_catheters.arterial_line",
           "lines_catheters.central_venous_line",
           "lines_catheters.nasogastric_tube",
           "lines_catheters.urinary_catheter",
           "regional_anesthesia.epidural",
           "regional_anesthesia.peripheral_catheter",
-          "general_anesthesia.common",
-          "regional_anesthesia.common",
-          "lines_catheters.common",
-          "lines_catheters.peripheral_iv"
+          "regional_anesthesia.common"
         ]
       },
       "hipec": {
@@ -2980,17 +2980,17 @@
           "fr": "Chimiothérapie intrapéritonéale hyperthermique"
         },
         "risks": [
+          "general_anesthesia.common",
           "general_anesthesia.full",
+          "lines_catheters.common",
+          "lines_catheters.peripheral_iv",
           "lines_catheters.arterial_line",
           "lines_catheters.central_venous_line",
           "lines_catheters.nasogastric_tube",
           "lines_catheters.urinary_catheter",
           "regional_anesthesia.epidural",
           "regional_anesthesia.peripheral_catheter",
-          "general_anesthesia.common",
-          "regional_anesthesia.common",
-          "lines_catheters.common",
-          "lines_catheters.peripheral_iv"
+          "regional_anesthesia.common"
         ]
       },
       "laparoscopic_colectomy": {
@@ -3000,10 +3000,10 @@
           "fr": "Colectomie laparoscopique"
         },
         "risks": [
+          "general_anesthesia.common",
           "general_anesthesia.full",
           "lines_catheters.nasogastric_tube",
           "general_anesthesia.common",
-          "lines_catheters.common",
           "lines_catheters.peripheral_iv"
         ]
       },
@@ -3014,9 +3014,10 @@
           "fr": "Appendicectomie"
         },
         "risks": [
-          "general_anesthesia.full",
-          "lines_catheters.nasogastric_tube",
           "general_anesthesia.common",
+          "general_anesthesia.full",
+          "general_anesthesia.rsi",
+          "lines_catheters.nasogastric_tube",
           "lines_catheters.common",
           "lines_catheters.peripheral_iv"
         ]
