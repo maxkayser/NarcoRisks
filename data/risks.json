@@ -4109,7 +4109,7 @@
       },
       "hip_replacement": {
         "label": {
-          "de": "Hüft-Totalendoprothese",
+          "de": "Hüft-Totalendoprothese (H-TEP)",
           "en": "Hip replacement",
           "fr": "Prothèse totale de hanche"
         },
@@ -4123,7 +4123,7 @@
       },
       "knee_replacement": {
         "label": {
-          "de": "Knie-Totalendoprothese",
+          "de": "Knie-Totalendoprothese (K-TEP)",
           "en": "Knee replacement",
           "fr": "Prothèse totale du genou"
         },
@@ -4219,11 +4219,24 @@
           "lines_catheters.peripheral_iv"
         ]
       },
-      "patellar_dislocation_mpfl": {
+      "patellar_dislocation": {
         "label": {
-          "de": "Patellaluxation / MPFL-Rekonstruktion",
-          "en": "Patellar dislocation / MPFL",
-          "fr": "Luxation de la rotule / MPFL"
+          "de": "Patellaluxation",
+          "en": "Patellar dislocation",
+          "fr": "Luxation de la rotule"
+        },
+        "risks": [
+          "regional_anesthesia.spinal",
+          "regional_anesthesia.common",
+          "lines_catheters.common",
+          "lines_catheters.peripheral_iv"
+        ]
+      },
+      "mpfl_reconstruction": {
+        "label": {
+          "de": "MPFL-Rekonstruktion",
+          "en": "MPFL reconstruction",
+          "fr": "Reconstruction du MPFL"
         },
         "risks": [
           "regional_anesthesia.spinal",
