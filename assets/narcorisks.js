@@ -508,7 +508,7 @@ function generateSummary() {
   if (intro) result += intro + '\n\n';
 
   // === Render textblocks with position "before"
-  Object.values(allRisks.textblocks).forEach(group => {
+  Object.values(allRisks?.textblocks || {}).forEach(group => {
     Object.entries(group.items).forEach(([key, block]) => {
       if (selectedTextblocks.includes(key) && block.position === 'before' && block.text?.[lang]) {
         result += block.text[lang] + '\n\n';
