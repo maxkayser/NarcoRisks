@@ -494,8 +494,12 @@ function getRiskText(riskKey, lang = 'de') {
 }
 
 
+
 function generateSummary() {
   const lang = document.getElementById("language").value || 'de';
+  const selectedTextblocks = Array.from(document.querySelectorAll('input[name="textblock"]:checked')).map(cb => cb.value);
+  const selectedRisks = Array.from(document.querySelectorAll('input[name="riskSubgroups"]:checked')).map(cb => cb.value);
+
   let result = "";
 
   // Add textblocks with position: "beginning"
@@ -556,7 +560,6 @@ function generateSummary() {
 
   document.getElementById("summaryText").value = result.trim();
 }
-
 
 
 
