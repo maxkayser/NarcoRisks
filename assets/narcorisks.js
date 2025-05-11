@@ -327,37 +327,25 @@ function renderProcedureSelectors() {
 function handlePresetSelection(key, value) {
   const preset = risksData?.presets?.[key];
   const lang = currentLang || 'de';
-  if (!preset) {
-    console.warn(`[Preset] Kein Preset gefunden für ${key}`);
-    return;
-  }
+  if (!preset) return;
 
   const selected = preset.options?.[value];
-  if (!selected) {
-    console.warn(`[Preset] Keine Option "${value}" für "${key}"`);
-    return;
-  }
+  if (!selected) return;
 
   console.log(`[Preset] ${key} selected:`, selected.label?.[lang] || value);
   const riskPaths = selected.associated_risks || [];
 
   riskPaths.forEach(path => {
-    const input = document.querySelector(`input[value="${path}"]`);
+    const checkbox = document.querySelector(`input[value="${path}"]`);
+    const isTextblock = textblocks?.[path];
 
-    if (input) {
-      // regulärer Risiko-Pfad
+    if (checkbox) {
       activateRiskAndChildren(path);
 
-    } else if (textblocks?.[path]) {
-      // kontextassoziierter Pfad (Textblock)
-
+    } else if (isTextblock) {
       let textblockInput = document.querySelector(`input[name="textblock"][value="${path}"]`);
-      
-      // Dynamisch erzeugen, falls nicht existiert
       if (!textblockInput) {
         const container = document.getElementById('textblockToggles');
-        if (!container) return;
-
         const labelText = textblocks[path]?.label?.[lang] || path;
         const wrapper = document.createElement('label');
         wrapper.style.display = 'block';
@@ -372,7 +360,6 @@ function handlePresetSelection(key, value) {
         wrapper.appendChild(textblockInput);
         wrapper.appendChild(document.createTextNode(' ' + labelText));
         container.appendChild(wrapper);
-
         console.log(`[PresetSelection] Dynamisch hinzugefügt: ${path}`);
       } else {
         textblockInput.checked = true;
@@ -380,7 +367,21 @@ function handlePresetSelection(key, value) {
       }
 
     } else {
-      console.warn(`[handlePresetSelection] Unbekannter Pfad: ${path}`);
+      // Versuche anhand von Risiko-Datenstruktur zu prüfen
+      const pathParts = path.split(".");
+      let node = risksData?.risks?.children?.[0];
+
+      for (const part of pathParts) {
+        if (!node || typeof node !== "object") break;
+        node = node[part];
+      }
+
+      if (node && typeof node === "object") {
+        console.warn(`[PresetSelection] ${path} ist in JSON definiert, aber nicht im DOM gerendert.`);
+        // Optional: hier könntest du `renderRiskGroups()` aufrufen oder Checkboxen manuell erzeugen.
+      } else {
+        console.warn(`[PresetSelection] Unbekannter Pfad: ${path}`);
+      }
     }
   });
 
