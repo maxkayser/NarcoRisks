@@ -494,67 +494,62 @@ function getRiskText(riskKey, lang = 'de') {
 }
 
 function generateSummary() {
-    
-  const risks = risksData?.risks;  // Ensures risks is defined
-    const summaryParts = {
-        beginning: [],
-        before_measures: [],
-        after_measures: [],
-        end: []
-    };
+  const currentLang = document.getElementById("language")?.value || "de";
+  const summaryParts = [];
 
-    // Collect selected textblocks and sort them into the correct position
-    const selectedTextblocks = [];
+  const selectedTextblocks = [];
 
-    Object.entries(textblocks).forEach(([groupKey, group]) => {
-        Object.entries(group.items).forEach(([itemKey, item]) => {
-            const checkbox = document.querySelector(`input[name="textblock"][value="${itemKey}"]`);
-            if (checkbox && checkbox.checked) {
-                selectedTextblocks.push({
-                    key: itemKey,
-                    text: item.text[currentLang],
-                    position: item.position || "before_measures"
-                });
-            }
+  // Iterate through grouped textblocks (organizational, medical_conditions, legal_ethical)
+  Object.entries(textblocks).forEach(([groupKey, group]) => {
+    Object.entries(group.items).forEach(([itemKey, item]) => {
+      const fullKey = `${groupKey}.${itemKey}`;
+      const checkbox = document.querySelector(`input[name="textblock"][value="${fullKey}"]`);
+      if (checkbox && checkbox.checked) {
+        selectedTextblocks.push({
+          key: fullKey,
+          text: item.text[currentLang],
+          position: item.position || "before_measures" // default fallback
         });
+      }
     });
+  });
 
-    selectedTextblocks.forEach(tb => {
-        if (summaryParts[tb.position]) {
-            summaryParts[tb.position].push(tb.text);
-        } else {
-            // fallback for unknown positions
-            summaryParts.before_measures.push(tb.text);
-        }
-    });
+  // Sort selected textblocks by position
+  const sortedTextblocks = {
+    intro: [],
+    before_measures: [],
+    after_measures: [],
+    closing: []
+  };
 
-    // Collect selected measure-associated risk texts
-    const selectedRisks = [];
+  selectedTextblocks.forEach(tb => {
+    if (tb.position === "intro") sortedTextblocks.intro.push(tb.text);
+    else if (tb.position === "after_measures") sortedTextblocks.after_measures.push(tb.text);
+    else if (tb.position === "closing") sortedTextblocks.closing.push(tb.text);
+    else sortedTextblocks.before_measures.push(tb.text); // default
+  });
 
-    document.querySelectorAll('input[name="riskSubgroups"]:checked').forEach(input => {
-        const riskPath = input.value.split('.');
-        let node = risks;
-        for (const part of riskPath) {
-            node = node[part];
-            if (!node) break;
-        }
-        if (node && node.text && node.text[currentLang]) {
-            selectedRisks.push(node.text[currentLang]);
-        }
-    });
+  // Concatenate in logical order
+  summaryParts.push(...sortedTextblocks.intro);
+  summaryParts.push(...sortedTextblocks.before_measures);
 
-    // Combine all summary parts in the correct order
-    const summary = [
-        ...summaryParts.beginning,
-        ...summaryParts.before_measures,
-        ...selectedRisks,
-        ...summaryParts.after_measures,
-        ...summaryParts.end
-    ].join("\n\n");
+  // Measures-associated risks (checked risk checkboxes)
+  const selectedRiskLabels = [];
+  document.querySelectorAll('input[name="riskSubgroups"]:checked').forEach(cb => {
+    const label = cb.parentElement.textContent.trim();
+    if (label) selectedRiskLabels.push(label);
+  });
 
-    document.getElementById("summaryText").value = summary;
+  if (selectedRiskLabels.length > 0) {
+    summaryParts.push(selectedRiskLabels.join(", ") + ".");
+  }
+
+  summaryParts.push(...sortedTextblocks.after_measures);
+  summaryParts.push(...sortedTextblocks.closing);
+
+  // Set final summary
+  document.getElementById("summaryText").value = summaryParts.join("\n\n");
 }
-
 
 
 function OLD__generateSummary() {
