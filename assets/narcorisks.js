@@ -343,19 +343,44 @@ function handlePresetSelection(key, value) {
 
   riskPaths.forEach(path => {
     const input = document.querySelector(`input[value="${path}"]`);
+
     if (input) {
-      // normales Risiko: Checkbox aktivieren
+      // regulärer Risiko-Pfad
       activateRiskAndChildren(path);
+
     } else if (textblocks?.[path]) {
-      // Kontextuelles Risiko: Textblock-Checkbox aktivieren
-      const textblockInput = document.querySelector(`input[name="textblock"][value="${path}"]`);
-      if (textblockInput) {
+      // kontextassoziierter Pfad (Textblock)
+
+      let textblockInput = document.querySelector(`input[name="textblock"][value="${path}"]`);
+      
+      // Dynamisch erzeugen, falls nicht existiert
+      if (!textblockInput) {
+        const container = document.getElementById('textblockToggles');
+        if (!container) return;
+
+        const labelText = textblocks[path]?.label?.[lang] || path;
+        const wrapper = document.createElement('label');
+        wrapper.style.display = 'block';
+
+        textblockInput = document.createElement('input');
+        textblockInput.type = 'checkbox';
+        textblockInput.name = 'textblock';
+        textblockInput.value = path;
         textblockInput.checked = true;
+        textblockInput.addEventListener('change', generateSummary);
+
+        wrapper.appendChild(textblockInput);
+        wrapper.appendChild(document.createTextNode(' ' + labelText));
+        container.appendChild(wrapper);
+
+        console.log(`[PresetSelection] Dynamisch hinzugefügt: ${path}`);
       } else {
-        console.warn(`[handlePresetSelection] Kein Textblock-Input für: ${path}`);
+        textblockInput.checked = true;
+        console.log(`[PresetSelection] Aktiviert (vorhanden): ${path}`);
       }
+
     } else {
-      console.warn(`[handlePresetSelection] Pfad nicht gefunden: ${path}`);
+      console.warn(`[handlePresetSelection] Unbekannter Pfad: ${path}`);
     }
   });
 
