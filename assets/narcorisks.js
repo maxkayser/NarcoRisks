@@ -58,7 +58,7 @@ async function loadRisks() {
     const defaults = data.defaults || {};
     renderRiskGroups(defaults);
     renderProcedureSelectors();
-    renderPresetOptionSelectors();
+    renderPresetOptions();
 
   } catch (error) {
     document.getElementById('risksOutput').innerText = 'Error loading risk data.';
