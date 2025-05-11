@@ -4875,9 +4875,9 @@
         },
         "n1": {
           "label": {
-            "de": "N1 – Notfall (<1h)",
-            "en": "N1 – emergency (<1h)",
-            "fr": "N1 – urgence (<1h)"
+            "de": "N1 – Notfall, innerhalb von 1 Stunde",
+            "en": "N1 – emergency, within 1 hour",
+            "fr": "N1 – urgence, dans moins d'une heure"
           },
           "associated_risks": [
             "contextual_risks.emergency_surgery",
@@ -4898,9 +4898,9 @@
         },
         "n2": {
           "label": {
-            "de": "N2 – bald (<6h)",
-            "en": "N2 – urgent (<6h)",
-            "fr": "N2 – urgent (<6h)"
+            "de": "N2 – innerhalb von 6 Stunden",
+            "en": "N2 – within 6 hours",
+            "fr": "N2 – dans les 6 heures"
           },
           "associated_risks": [
             "contextual_risks.emergency_surgery",
@@ -4918,9 +4918,9 @@
         },
         "n3": {
           "label": {
-            "de": "N3 – heute noch (<12h)",
-            "en": "N3 – same day (<12h)",
-            "fr": "N3 – aujourd’hui (<12h)"
+            "de": "N3 – innerhalb von 12 Stunden",
+            "en": "N3 – within 12 hours",
+            "fr": "N3 – dans les 12 heures"
           },
           "associated_risks": [
             "contextual_risks.emergency_surgery",
