@@ -2889,17 +2889,17 @@
     ]
   },
   "procedures": {
-    "abdominalchirurgie": {
+    "abdominal_surgery": {
       "label": {
         "de": "Abdominalchirurgie",
-        "en": "abdominalchirurgie",
-        "fr": "Abdominalchirurgie"
+        "en": "Abdominal surgery",
+        "fr": "Chirurgie abdominale"
       },
-      "dunndarmteilresektion": {
+      "small_bowel_resection": {
         "label": {
           "de": "Dünndarmteilresektion",
-          "en": "dünndarmteilresektion",
-          "fr": "Dünndarmteilresektion"
+          "en": "Small bowel resection",
+          "fr": "Résection de l’intestin grêle"
         },
         "risks": [
           "general_anesthesia.full",
@@ -2908,14 +2908,18 @@
           "lines_catheters.nasogastric_tube",
           "lines_catheters.urinary_catheter",
           "regional_anesthesia.epidural",
-          "regional_anesthesia.peripheral_catheter"
+          "regional_anesthesia.peripheral_catheter",
+          "general_anesthesia.common",
+          "regional_anesthesia.common",
+          "lines_catheters.common",
+          "lines_catheters.peripheral_iv"
         ]
       },
       "gastric_sleeve": {
         "label": {
           "de": "Gastric Sleeve",
-          "en": "gastric sleeve",
-          "fr": "Gastric sleeve"
+          "en": "Gastric sleeve",
+          "fr": "Sleeve gastrectomie"
         },
         "risks": [
           "general_anesthesia.full",
@@ -2923,14 +2927,18 @@
           "lines_catheters.central_venous_line",
           "lines_catheters.nasogastric_tube",
           "lines_catheters.urinary_catheter",
-          "regional_anesthesia.tap_block"
+          "regional_anesthesia.tap_block",
+          "general_anesthesia.common",
+          "regional_anesthesia.common",
+          "lines_catheters.common",
+          "lines_catheters.peripheral_iv"
         ]
       },
       "gastric_bypass": {
         "label": {
           "de": "Gastric Bypass",
-          "en": "gastric bypass",
-          "fr": "Gastric bypass"
+          "en": "Gastric bypass",
+          "fr": "Bypass gastrique"
         },
         "risks": [
           "general_anesthesia.full",
@@ -2938,9 +2946,14 @@
           "lines_catheters.central_venous_line",
           "lines_catheters.nasogastric_tube",
           "lines_catheters.urinary_catheter",
-          "regional_anesthesia.tap_block"
+          "regional_anesthesia.tap_block",
+          "general_anesthesia.common",
+          "regional_anesthesia.common",
+          "lines_catheters.common",
+          "lines_catheters.peripheral_iv"
         ]
       },
+        
       "crs_hipec": {
         "label": {
           "de": "CRS + HIPEC",
