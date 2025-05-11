@@ -497,12 +497,33 @@ function getRiskText(riskKey, lang = 'de') {
 function generateSummary() {
   const lang = document.getElementById('language').value || 'de';
   const selectedKeys = Array.from(document.querySelectorAll('input[name="riskSubgroups"]:checked')).map(el => el.value);
+  const selectedTextblocks = Array.from(document.querySelectorAll('input[name="textblock"]:checked')).map(cb => cb.value);
+  const additional = document.getElementById('additionalText')?.value || '';
+
+  let result = '';
+
+  const intro = textblocks?.intro?.[lang];
+  const closing = textblocks?.closing?.[lang];
+
+  if (intro) result += intro + '\n\n';
+
+  // === Render textblocks with position "before"
+  Object.values(allRisks.textblocks).forEach(group => {
+    Object.entries(group.items).forEach(([key, block]) => {
+      if (selectedTextblocks.includes(key) && block.position === 'before' && block.text?.[lang]) {
+        result += block.text[lang] + '\n\n';
+      }
+    });
+  });
+
+  // === Maßnahmenassoziierte Risiken – gruppiert darstellen
   const grouped = {};
 
   for (const path of selectedKeys) {
     const keys = path.split('.');
     const group = allRisks.find(g => g.key === keys[0]);
     if (!group) continue;
+
     const groupLabel = group.label?.[lang] || keys[0];
     let subgroupLabel = '';
     let riskLabel = '';
@@ -523,48 +544,32 @@ function generateSummary() {
     grouped[groupLabel][subgroupLabel].add(riskLabel);
   }
 
-  const intro = textblocks?.intro?.[lang] || '';
-  const closing = textblocks?.closing?.[lang] || '';
-  const additional = document.getElementById('additionalText')?.value || '';
-  const selectedTextblocks = Array.from(document.querySelectorAll('input[name="textblock"]:checked')).map(cb => cb.value);
-
-  let result = intro ? intro + '\n\n' : '';
-
-  // Textblocks before risks
-  for (const key of selectedTextblocks) {
-    const block = textblocks?.[key];
-    if (block?.position === 'before' && block?.text?.[lang]) {
-      result += block.text[lang] + '\n\n';
-    }
-  }
-
-  // Maßnahmenassoziierte Risiken: gruppiert und formatiert
   for (const [groupLabel, subgroups] of Object.entries(grouped)) {
-    result += `${groupLabel}\n\n`;
+    result += `${groupLabel}\n`;
     for (const [subLabel, risksSet] of Object.entries(subgroups)) {
-      const risks = Array.from(risksSet);
+      const risks = Array.from(risksSet).sort();
       result += `${subLabel}: ${risks.join(', ')}\n`;
     }
     result += '\n';
   }
 
-  // Textblocks after risks
-  for (const key of selectedTextblocks) {
-    const block = textblocks?.[key];
-    if (block?.position === 'after' && block?.text?.[lang]) {
-      result += '\n' + block.text[lang] + '\n';
-    }
-  }
+  // === Render textblocks with position "after"
+  Object.values(allRisks.textblocks).forEach(group => {
+    Object.entries(group.items).forEach(([key, block]) => {
+      if (selectedTextblocks.includes(key) && block.position === 'after' && block.text?.[lang]) {
+        result += block.text[lang] + '\n\n';
+      }
+    });
+  });
 
-  // Additional note
-  if (additional.trim()) result += `\n${additional.trim()}\n`;
+  // === Add custom text
+  if (additional.trim()) result += `${additional.trim()}\n\n`;
 
-  // Closing
-  if (closing.trim()) result += `\n${closing.trim()}`;
+  // === Render closing
+  if (closing) result += closing;
 
   document.getElementById('summaryText').value = result.trim();
 }
-
 
 
 
