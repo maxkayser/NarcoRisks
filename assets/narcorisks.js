@@ -455,6 +455,8 @@ document.getElementById('language').addEventListener('change', () => {
   applyTranslations(currentLang); 
   renderRiskGroups();
   renderTextblockToggles();
+  renderProcedureSelectors();
+  renderPresetOptions();
 });
 
 document.getElementById('additionalText').addEventListener('input', generateSummary);
