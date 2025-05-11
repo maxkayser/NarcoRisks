@@ -342,8 +342,13 @@ function handlePresetSelection(key, value) {
 
 function renderPresetOptions() {
   const presets = risksData?.presets;
-  if (!presets) return;
-  
+  if (!presets) {
+    console.warn("[PresetOptions] Keine preset_options in JSON gefunden.");
+    return;
+  }
+
+  console.log("[PresetOptions] Lade Presets:", Object.keys(presets));
+
   const lang = document.getElementById('language').value || 'de';
   const container = document.getElementById("presetOptionsContainer"); 
   container.innerHTML = '';
@@ -368,10 +373,10 @@ function renderPresetOptions() {
     });
 
     select.addEventListener('change', () => {
-      // Zuvor aktivierte Preset-Risiken deaktivieren
+      // Vorherige Risiken deaktivieren
       document.querySelectorAll('input[name="riskSubgroups"]').forEach(cb => {
         const path = cb.value;
-        const allPresetPaths = Object.values(risksData.preset_options || {}).flatMap(opt =>
+        const allPresetPaths = Object.values(presets).flatMap(opt =>
           Object.values(opt.options || {}).flatMap(conf => conf.associated_risks || [])
         );
         if (allPresetPaths.includes(path)) cb.checked = false;
@@ -379,10 +384,10 @@ function renderPresetOptions() {
 
       const selectedValue = select.value;
       if (selectedValue) {
+        console.log(`[PresetSelection] ${key} => ${selectedValue}`);
         handlePresetSelection(key, selectedValue);
-      } 
-      else {
-        generateSummary();
+      } else {
+        generateSummary(); // reset fallback
       }
     });
 
