@@ -2953,12 +2953,11 @@
           "lines_catheters.peripheral_iv"
         ]
       },
-        
-      "crs_hipec": {
+      "cytoreductive_surgery": {
         "label": {
-          "de": "CRS + HIPEC",
-          "en": "crs + hipec",
-          "fr": "Crs + hipec"
+          "de": "Zytoreduktive Chirurgie",
+          "en": "Cytoreductive surgery",
+          "fr": "Chirurgie cytoréductrice"
         },
         "risks": [
           "general_anesthesia.full",
@@ -2967,48 +2966,110 @@
           "lines_catheters.nasogastric_tube",
           "lines_catheters.urinary_catheter",
           "regional_anesthesia.epidural",
-          "regional_anesthesia.peripheral_catheter"
+          "regional_anesthesia.peripheral_catheter",
+          "general_anesthesia.common",
+          "regional_anesthesia.common",
+          "lines_catheters.common",
+          "lines_catheters.peripheral_iv"
         ]
       },
-      "abd_lsc_cce_ae_lh": {
+      "hipec": {
         "label": {
-          "de": "Abd. Lsc. (CCE, AE, LH)",
-          "en": "abd. lsc. (cce, ae, lh)",
-          "fr": "Abd. lsc. (cce, ae, lh)"
+          "de": "Hypertherme intraperitoneale Chemotherapie",
+          "en": "Hyperthermic intraperitoneal chemotherapy",
+          "fr": "Chimiothérapie intrapéritonéale hyperthermique"
         },
         "risks": [
           "general_anesthesia.full",
-          "lines_catheters.nasogastric_tube"
+          "lines_catheters.arterial_line",
+          "lines_catheters.central_venous_line",
+          "lines_catheters.nasogastric_tube",
+          "lines_catheters.urinary_catheter",
+          "regional_anesthesia.epidural",
+          "regional_anesthesia.peripheral_catheter",
+          "general_anesthesia.common",
+          "regional_anesthesia.common",
+          "lines_catheters.common",
+          "lines_catheters.peripheral_iv"
         ]
       },
-      "leistenhernien_plug_patch": {
+      "laparoscopic_colectomy": {
         "label": {
-          "de": "Leistenhernien (Plug & Patch)",
-          "en": "leistenhernien (plug & patch)",
-          "fr": "Leistenhernien (plug & patch)"
+          "de": "Laparoskopische Kolektomie",
+          "en": "Laparoscopic colectomy",
+          "fr": "Colectomie laparoscopique"
         },
         "risks": [
           "general_anesthesia.full",
-          "general_anesthesia.full.laryngeal_mask"
+          "lines_catheters.nasogastric_tube",
+          "general_anesthesia.common",
+          "lines_catheters.common",
+          "lines_catheters.peripheral_iv"
         ]
       },
-      "inguinale_iliakale_lad": {
+      "appendectomy": {
         "label": {
-          "de": "Inguinale/ Iliakale LAD",
-          "en": "inguinale/ iliakale lad",
-          "fr": "Inguinale/ iliakale lad"
+          "de": "Appendektomie",
+          "en": "Appendectomy",
+          "fr": "Appendicectomie"
+        },
+        "risks": [
+          "general_anesthesia.full",
+          "lines_catheters.nasogastric_tube",
+          "general_anesthesia.common",
+          "lines_catheters.common",
+          "lines_catheters.peripheral_iv"
+        ]
+      },
+      "laparoscopic_hysterectomy": {
+        "label": {
+          "de": "Laparoskopische Hysterektomie",
+          "en": "Laparoscopic hysterectomy",
+          "fr": "Hystérectomie laparoscopique"
+        },
+        "risks": [
+          "general_anesthesia.full",
+          "lines_catheters.nasogastric_tube",
+          "general_anesthesia.common",
+          "lines_catheters.common",
+          "lines_catheters.peripheral_iv"
+        ]
+      },
+      "inguinal_hernia_repair": {
+        "label": {
+          "de": "Leistenhernienversorgung (Plug & Patch)",
+          "en": "Inguinal hernia repair (plug & patch)",
+          "fr": "Réparation hernie inguinale (plug & patch)"
+        },
+        "risks": [
+          "general_anesthesia.full",
+          "general_anesthesia.full.laryngeal_mask",
+          "general_anesthesia.common",
+          "lines_catheters.common",
+          "lines_catheters.peripheral_iv"
+        ]
+      },
+      "inguinal_iliac_lymph_node_dissection": {
+        "label": {
+          "de": "Lymphknoten-Dissektion (Inguinal/Iliakal)",
+          "en": "Lymph node dissection (inguinal/iliac)",
+          "fr": "Curage ganglionnaire (inguinal/iliaque)"
         },
         "risks": [
           "general_anesthesia.full",
           "lines_catheters.arterial_line",
           "lines_catheters.urinary_catheter",
-          "regional_anesthesia.peripheral_catheter"
+          "regional_anesthesia.peripheral_catheter",
+          "general_anesthesia.common",
+          "regional_anesthesia.common",
+          "lines_catheters.common",
+          "lines_catheters.peripheral_iv"
         ]
       },
       "laparoscopic_fundoplication": {
         "label": {
-          "de": "Fundoplicatio (lap.)",
-          "en": "laparoscopic fundoplication",
+          "de": "Laparoskopische Fundoplicatio",
+          "en": "Laparoscopic fundoplication",
           "fr": "Fundoplicature laparoscopique"
         },
         "risks": [
@@ -3016,25 +3077,33 @@
           "general_anesthesia.full.rsi",
           "lines_catheters.arterial_line",
           "lines_catheters.nasogastric_tube",
-          "regional_anesthesia.spinal"
+          "regional_anesthesia.spinal",
+          "general_anesthesia.common",
+          "regional_anesthesia.common",
+          "lines_catheters.common",
+          "lines_catheters.peripheral_iv"
         ]
       },
-      "ops_im_analbereich": {
+      "anal_region_operations": {
         "label": {
-          "de": "OPs im Analbereich",
-          "en": "ops im analbereich",
-          "fr": "Ops im analbereich"
+          "de": "Operationen im Analbereich",
+          "en": "Anal region surgeries",
+          "fr": "Interventions dans la région anale"
         },
         "risks": [
           "general_anesthesia.full",
           "general_anesthesia.full.laryngeal_mask",
-          "regional_anesthesia.spinal"
+          "regional_anesthesia.spinal",
+          "general_anesthesia.common",
+          "regional_anesthesia.common",
+          "lines_catheters.common",
+          "lines_catheters.peripheral_iv"
         ]
       },
       "gastrectomy": {
         "label": {
           "de": "Gastrektomie",
-          "en": "gastrectomy",
+          "en": "Gastrectomy",
           "fr": "Gastrectomie"
         },
         "risks": [
@@ -3044,28 +3113,36 @@
           "lines_catheters.nasogastric_tube",
           "lines_catheters.urinary_catheter",
           "regional_anesthesia.epidural",
-          "regional_anesthesia.peripheral_catheter"
+          "regional_anesthesia.peripheral_catheter",
+          "general_anesthesia.common",
+          "regional_anesthesia.common",
+          "lines_catheters.common",
+          "lines_catheters.peripheral_iv"
         ]
       },
-      "bariatrische_chirurgie_banding": {
+      "bariatric_surgery_banding": {
         "label": {
-          "de": "Bariatrische Chirurgie - Banding",
-          "en": "bariatrische chirurgie - banding",
-          "fr": "Bariatrische chirurgie - banding"
+          "de": "Bariatrische Chirurgie – Banding",
+          "en": "Bariatric surgery – banding",
+          "fr": "Chirurgie bariatrique – banding"
         },
         "risks": [
           "general_anesthesia.full",
           "general_anesthesia.full.rsi",
           "lines_catheters.arterial_line",
           "lines_catheters.nasogastric_tube",
-          "regional_anesthesia.spinal"
+          "regional_anesthesia.spinal",
+          "general_anesthesia.common",
+          "regional_anesthesia.common",
+          "lines_catheters.common",
+          "lines_catheters.peripheral_iv"
         ]
       },
-      "colorektale_chirurgie": {
+      "colorectal_surgery": {
         "label": {
-          "de": "Colorektale Chirurgie",
-          "en": "colorektale chirurgie",
-          "fr": "Colorektale chirurgie"
+          "de": "Kolorektale Chirurgie",
+          "en": "Colorectal surgery",
+          "fr": "Chirurgie colorectale"
         },
         "risks": [
           "general_anesthesia.full",
@@ -3073,14 +3150,18 @@
           "lines_catheters.nasogastric_tube",
           "lines_catheters.urinary_catheter",
           "regional_anesthesia.epidural",
-          "regional_anesthesia.peripheral_catheter"
+          "regional_anesthesia.peripheral_catheter",
+          "general_anesthesia.common",
+          "regional_anesthesia.common",
+          "lines_catheters.common",
+          "lines_catheters.peripheral_iv"
         ]
       },
-      "leberteil_resektion": {
+      "liver_resection": {
         "label": {
-          "de": "Leberteil-Resektion",
-          "en": "leberteil-resektion",
-          "fr": "Leberteil-resektion"
+          "de": "Leberteilresektion",
+          "en": "Liver resection",
+          "fr": "Résection hépatique partielle"
         },
         "risks": [
           "general_anesthesia.full",
@@ -3089,14 +3170,18 @@
           "lines_catheters.nasogastric_tube",
           "lines_catheters.urinary_catheter",
           "regional_anesthesia.epidural",
-          "regional_anesthesia.peripheral_catheter"
+          "regional_anesthesia.peripheral_catheter",
+          "general_anesthesia.common",
+          "regional_anesthesia.common",
+          "lines_catheters.common",
+          "lines_catheters.peripheral_iv"
         ]
       },
-      "osophagus_resektion": {
+      "esophagectomy": {
         "label": {
-          "de": "Ösophagus-Resektion",
-          "en": "ösophagus-resektion",
-          "fr": "Ösophagus-resektion"
+          "de": "Ösophagusresektion",
+          "en": "Esophagectomy",
+          "fr": "Œsophagectomie"
         },
         "risks": [
           "general_anesthesia.full",
@@ -3106,14 +3191,18 @@
           "lines_catheters.nasogastric_tube",
           "lines_catheters.urinary_catheter",
           "regional_anesthesia.epidural",
-          "regional_anesthesia.peripheral_catheter"
+          "regional_anesthesia.peripheral_catheter",
+          "general_anesthesia.common",
+          "regional_anesthesia.common",
+          "lines_catheters.common",
+          "lines_catheters.peripheral_iv"
         ]
       },
-      "pankreas_ops": {
+      "pancreatic_surgery": {
         "label": {
-          "de": "Pankreas-OPs",
-          "en": "pankreas-ops",
-          "fr": "Pankreas-ops"
+          "de": "Pankreasoperationen",
+          "en": "Pancreatic surgery",
+          "fr": "Chirurgie pancréatique"
         },
         "risks": [
           "general_anesthesia.full",
@@ -3122,24 +3211,31 @@
           "lines_catheters.nasogastric_tube",
           "lines_catheters.urinary_catheter",
           "regional_anesthesia.epidural",
-          "regional_anesthesia.peripheral_catheter"
+          "regional_anesthesia.peripheral_catheter",
+          "general_anesthesia.common",
+          "regional_anesthesia.common",
+          "lines_catheters.common",
+          "lines_catheters.peripheral_iv"
         ]
       },
-      "nabelhernie": {
+      "umbilical_hernia": {
         "label": {
           "de": "Nabelhernie",
-          "en": "nabelhernie",
-          "fr": "Nabelhernie"
+          "en": "Umbilical hernia",
+          "fr": "Hernie ombilicale"
         },
         "risks": [
-          "general_anesthesia.full"
+          "general_anesthesia.full",
+          "general_anesthesia.common",
+          "lines_catheters.common",
+          "lines_catheters.peripheral_iv"
         ]
       },
-      "narbenhernie_ipom": {
+      "incisional_hernia_ipom": {
         "label": {
           "de": "Narbenhernie (IPOM)",
-          "en": "narbenhernie (ipom)",
-          "fr": "Narbenhernie (ipom)"
+          "en": "Incisional hernia (IPOM)",
+          "fr": "Hernie incisionnelle (IPOM)"
         },
         "risks": [
           "general_anesthesia.full",
@@ -3148,53 +3244,88 @@
           "lines_catheters.urinary_catheter",
           "regional_anesthesia.epidural",
           "regional_anesthesia.peripheral_catheter",
-          "regional_anesthesia.tap_block"
+          "regional_anesthesia.tap_block",
+          "general_anesthesia.common",
+          "regional_anesthesia.common",
+          "lines_catheters.common",
+          "lines_catheters.peripheral_iv"
         ]
       },
-      "schilddrusen_ops": {
+      "thyroid_surgery": {
         "label": {
-          "de": "Schilddrüsen-OPs",
-          "en": "schilddrüsen-ops",
-          "fr": "Schilddrüsen-ops"
+          "de": "Schilddrüsenoperationen",
+          "en": "Thyroid surgery",
+          "fr": "Chirurgie thyroïdienne"
         },
         "risks": [
           "general_anesthesia.full",
-          "general_anesthesia.full.endotracheal_intubation"
+          "general_anesthesia.full.endotracheal_intubation",
+          "general_anesthesia.common",
+          "lines_catheters.common",
+          "lines_catheters.peripheral_iv"
         ]
       },
-      "nebenschilddruse": {
+      "parathyroid_surgery": {
         "label": {
-          "de": "Nebenschilddrüse",
-          "en": "nebenschilddrüse",
-          "fr": "Nebenschilddrüse"
+          "de": "Nebenschilddrüsenoperation",
+          "en": "Parathyroid surgery",
+          "fr": "Chirurgie des glandes parathyroïdes"
         },
         "risks": [
-          "general_anesthesia.full"
+          "general_anesthesia.full",
+          "general_anesthesia.common",
+          "lines_catheters.common",
+          "lines_catheters.peripheral_iv"
         ]
       },
-      "lad_und_extremitaten_perfusion": {
+      "limb_perfusion": {
         "label": {
-          "de": "LAD und Extremitäten-Perfusion",
-          "en": "lad und extremitäten-perfusion",
-          "fr": "Lad und extremitäten-perfusion"
+          "de": "Extremitäten-Perfusion",
+          "en": "Limb perfusion",
+          "fr": "Perfusion des membres"
         },
         "risks": [
           "general_anesthesia.full",
           "lines_catheters.arterial_line",
           "lines_catheters.central_venous_line",
           "lines_catheters.urinary_catheter",
-          "regional_anesthesia.peripheral_catheter"
+          "regional_anesthesia.peripheral_catheter",
+          "general_anesthesia.common",
+          "regional_anesthesia.common",
+          "lines_catheters.common",
+          "lines_catheters.peripheral_iv"
         ]
       },
-      "axillare_lad": {
+      "lymph_node_dissection": {
         "label": {
-          "de": "Axilläre LAD",
-          "en": "axilläre lad",
-          "fr": "Axilläre lad"
+          "de": "Lymphknotendissektion",
+          "en": "Lymph node dissection",
+          "fr": "Curage ganglionnaire"
         },
         "risks": [
           "general_anesthesia.full",
-          "general_anesthesia.full.laryngeal_mask"
+          "lines_catheters.arterial_line",
+          "lines_catheters.central_venous_line",
+          "lines_catheters.urinary_catheter",
+          "regional_anesthesia.peripheral_catheter",
+          "general_anesthesia.common",
+          "regional_anesthesia.common",
+          "lines_catheters.common",
+          "lines_catheters.peripheral_iv"
+        ]
+      },
+      "axillary_lymph_node_dissection": {
+        "label": {
+          "de": "Axilläre Lymphknotendissektion",
+          "en": "Axillary lymph node dissection",
+          "fr": "Curage ganglionnaire axillaire"
+        },
+        "risks": [
+          "general_anesthesia.full",
+          "general_anesthesia.full.laryngeal_mask",
+          "general_anesthesia.common",
+          "lines_catheters.common",
+          "lines_catheters.peripheral_iv"
         ]
       }
     },
