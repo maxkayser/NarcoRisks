@@ -110,9 +110,26 @@ function activateRiskAndChildren(path) {
   // Common aktivieren, wenn nicht bereits selektiert
   const parts = path.split(".");
   const groupKey = parts[0];
-  const entriesContainer = document.querySelector(`.category.toggle:contains("${groupKey}")`)?.nextElementSibling;
-  if (entriesContainer) activateCommonItems(groupKey, entriesContainer);
+  const lang = currentLang || 'de';
+
+  // Versuche anhand von key ODER lokalisiertem label zu matchen
+  const allGroups = Array.from(document.querySelectorAll('.category.toggle'));
+  for (const groupDiv of allGroups) {
+    const text = groupDiv.textContent.trim().toLowerCase();
+
+    const group = allRisks.find(g => g.key === groupKey);
+    const expectedLabel = group?.label?.[lang]?.toLowerCase();
+    const matchesKey = text.includes(groupKey.toLowerCase());
+    const matchesLabel = expectedLabel && text.includes(expectedLabel);
+
+    if (matchesKey || matchesLabel) {
+      const entriesContainer = groupDiv.nextElementSibling;
+      activateCommonItems(groupKey, entriesContainer);
+      break;
+    }
+  }
 }
+
 
 
 /**
