@@ -639,15 +639,17 @@ function renderTextblockToggles() {
 
     Object.entries(groupContent).forEach(([key, value]) => {
       if (key === 'label') return;
+      
       const checkbox = document.createElement('input');
       checkbox.type = 'checkbox';
       checkbox.name = 'textblock';
       checkbox.value = `${groupKey}.${key}`;
       checkbox.addEventListener('change', generateSummary);
-
-      if (risksData?.defaults?.[`textblock.${groupKey}.${key}`]) {
+      
+      const fullKey = `textblock.${groupKey}.${key}`;
+      if (risksData?.defaults?.[fullKey]) {
         checkbox.checked = true;
-        console.log(`[Defaults] Activated default textblock: textblock.${groupKey}.${key}`);
+        console.log(`[Defaults] Activated textblock via renderTextblockToggles: ${fullKey}`);
       }
 
       const label = document.createElement('label');
@@ -691,16 +693,18 @@ function renderStaticTextblockCheckboxes() {
     if (group.items) {
       Object.entries(group.items).forEach(([itemKey, itemData]) => {
         const label = itemData.label?.[lang] || itemKey;
+        
         const checkbox = document.createElement('input');
         checkbox.type = 'checkbox';
         checkbox.name = 'textblock';
         checkbox.value = `${groupKey}.${itemKey}`;
         checkbox.addEventListener('change', generateSummary);
-
         
-        if (risksData?.defaults?.[`textblock.${groupKey}.${itemKey}`]) {
+        // CHECK FOR DEFAULTS: Full qualified key match
+        const defaultKey = `textblock.${groupKey}.${itemKey}`;
+        if (risksData?.defaults?.[defaultKey]) {
           checkbox.checked = true;
-          console.log(`[Defaults] Activated default textblock: textblock.${groupKey}.${itemKey}`);
+          console.log(`[Defaults] Activated default textblock: ${defaultKey}`);
         }
 
         const wrapper = document.createElement('label');
