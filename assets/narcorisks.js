@@ -714,29 +714,27 @@ function renderTextblockToggles() {
       groupDiv.classList.toggle('expanded');
     });
 
-    Object.entries(groupContent).forEach(([key, value]) => {
-      if (key === 'label') return;
-      
+    Object.entries(groupContent.items || {}).forEach(([itemKey, item]) => {
       const checkbox = document.createElement('input');
       checkbox.type = 'checkbox';
       checkbox.name = 'textblock';
-      checkbox.value = `${groupKey}.${key}`;
+      checkbox.value = `${groupKey}.${itemKey}`;
       checkbox.addEventListener('change', generateSummary);
-      
-      const fullKey = `textblock.${groupKey}.${key}`;
-      if (risksData?.defaults?.[fullKey]) {
+
+      const fullKey = `textblock.${groupKey}.${itemKey}`;
+      if (risksData?.defaults?.[fullKey] || item.default === true) {
         checkbox.checked = true;
-        console.log(`[Defaults] Activated textblock via renderTextblockToggles: ${fullKey}`);
+        console.log(`[Defaults] Activated textblock: ${fullKey}`);
       }
 
       const label = document.createElement('label');
       label.appendChild(checkbox);
-      const checkboxLabel = value.label?.[lang] || key;
-      label.appendChild(document.createTextNode(' ' + checkboxLabel));
+      label.appendChild(document.createTextNode(' ' + (item.label?.[lang] || itemKey)));
       subgroupDiv.appendChild(label);
     });
   });
 }
+
 
 
 /**
