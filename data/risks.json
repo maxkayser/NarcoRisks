@@ -207,6 +207,19 @@
         "fr": "Antécédents médicaux"
       },
       "items": {
+        "known_allergy": {
+          "label": {
+            "de": "Allergie",
+            "en": "Allergy",
+            "fr": "Allergie"
+          },
+          "text": {
+            "de": "Bekannte Allergie mit erhöhtem Risiko für Arzneimittelreaktionen bis hin zur Anaphylaxie.",
+            "en": "Known allergy with increased risk of drug reactions including anaphylaxis.",
+            "fr": "Allergie connue avec risque accru de réactions médicamenteuses, y compris anaphylaxie."
+          },
+          "position": "after"
+        },
         "aspiration_risk": {
           "label": {
             "de": "Erhöhtes Aspirationsrisiko",
@@ -233,19 +246,6 @@
           },
           "position": "after"
         },
-        "known_allergy": {
-          "label": {
-            "de": "Allergie",
-            "en": "Allergy",
-            "fr": "Allergie"
-          },
-          "text": {
-            "de": "Bekannte Allergie mit erhöhtem Risiko für Arzneimittelreaktionen bis hin zur Anaphylaxie.",
-            "en": "Known allergy with increased risk of drug reactions including anaphylaxis.",
-            "fr": "Allergie connue avec risque accru de réactions médicamenteuses, y compris anaphylaxie."
-          },
-          "position": "after"
-        },
         "cardiac_risk": {
           "label": {
             "de": "Kardiales Risiko",
@@ -269,6 +269,204 @@
             "de": "Erhöhtes Risiko durch elektromagnetische Störungen oder intraoperative Manipulation bei implantiertem Aggregat.",
             "en": "Increased risk due to electromagnetic interference or intraoperative manipulation with implanted device.",
             "fr": "Risque accru d’interférences électromagnétiques ou de manipulation peropératoire avec dispositif implanté."
+          },
+          "position": "after"
+        },
+
+
+        
+        "coagulation_disorder": {
+          "label": {
+            "de": "Gerinnungsstörung",
+            "en": "Coagulation disorder",
+            "fr": "Trouble de la coagulation"
+          },
+          "text": {
+            "de": "Bei bestehender Gerinnungsstörung ist das Risiko für intraoperative Blutungen, Nachblutungen, Hämatome und verzögerte Wundheilung erhöht. Gegebenenfalls ist eine Bluttransfusion oder die Einleitung spezieller gerinnungstherapeutischer Maßnahmen erforderlich.",
+            "en": "In case of a coagulation disorder, there is an increased risk of intraoperative bleeding, rebleeding, hematomas, and impaired wound healing. If necessary, blood transfusion or targeted hemostatic treatment may be required.",
+            "fr": "En cas de trouble de la coagulation, le risque de saignement peropératoire, de récidive hémorragique, d’hématome ou de cicatrisation retardée est accru. Une transfusion ou la mise en place de mesures thérapeutiques hémostatiques ciblées peut être nécessaire."
+          },
+          "position": "after"
+        },
+        "anemia": {
+          "label": {
+            "de": "Anämie",
+            "en": "Anemia",
+            "fr": "Anémie"
+          },
+          "text": {
+            "de": "Bei präoperativer Anämie bestehen erhöhte Risiken für Gewebehypoxie, Kreislaufinstabilität, kardiale Dekompensation sowie die Notwendigkeit einer Bluttransfusion.",
+            "en": "Preoperative anemia increases the risks of tissue hypoxia, circulatory instability, cardiac decompensation, and the potential need for blood transfusion.",
+            "fr": "En cas d’anémie préopératoire, les risques d’hypoxie tissulaire, d’instabilité circulatoire, de décompensation cardiaque et de besoin transfusionnel sont accrus."
+          },
+          "position": "after"
+        },
+        "renal_insufficiency": {
+          "label": {
+            "de": "Niereninsuffizienz",
+            "en": "Renal insufficiency",
+            "fr": "Insuffisance rénale"
+          },
+          "text": {
+            "de": "Bei eingeschränkter Nierenfunktion bestehen zusätzliche Risiken: Flüssigkeitsüberlastung, Elektrolytstörungen (z. B. Hyperkaliämie), Azidose, fortschreitendes Organversagen sowie vorübergehende oder dauerhafte Dialysepflicht. Auswahl und Dosierung von Medikamenten können eingeschränkt sein und unterliegen einer individuellen Risiko-Nutzen-Abwägung.",
+            "en": "Renal impairment entails additional risks: fluid overload, electrolyte disturbances (e.g., hyperkalemia), acidosis, progressive organ failure, and possible temporary or permanent dialysis. Medication selection and dosage may be limited and require individual risk-benefit assessment.",
+            "fr": "Une insuffisance rénale entraîne des risques supplémentaires : surcharge hydrique, troubles électrolytiques (p. ex. hyperkaliémie), acidose, défaillance organique progressive et éventuellement dialyse temporaire ou permanente. Le choix et le dosage des médicaments peuvent être limités et nécessitent une évaluation individuelle du rapport bénéfice-risque."
+          },
+          "position": "after"
+        },
+        "polypharmacy": {
+          "label": {
+            "de": "Polypharmazie",
+            "en": "Polypharmacy",
+            "fr": "Polymédication"
+          },
+          "text": {
+            "de": "Bei Einnahme mehrerer Medikamente (Polypharmazie) besteht ein erhöhtes Risiko für Arzneimittelinteraktionen, veränderte Wirkspiegel oder unerwartete Nebenwirkungen unter Anästhesie.",
+            "en": "Polypharmacy increases the risk of drug interactions, altered drug levels or unexpected side effects under anesthesia.",
+            "fr": "La polymédication augmente le risque d’interactions, de modifications des concentrations ou d’effets indésirables inattendus sous anesthésie."
+          },
+          "position": "after"
+        },
+        "frail_patient": {
+          "label": {
+            "de": "Gebrechlichkeit",
+            "en": "Frail patient",
+            "fr": "Patient fragile"
+          },
+          "text": {
+            "de": "Gebrechliche Patient*innen haben ein erhöhtes Risiko für Kreislaufinstabilität, Delir, Ateminsuffizienz, verzögerte Mobilisation sowie prolongierte postoperativ-rehabilitative Verläufe.",
+            "en": "Frail patients are at increased risk of circulatory instability, delirium, respiratory insufficiency, delayed mobilization, and prolonged postoperative recovery.",
+            "fr": "Les patient·es fragiles présentent un risque accru d’instabilité circulatoire, de délire, d’insuffisance respiratoire, de mobilisation retardée et de récupération postopératoire prolongée."
+          },
+          "position": "after"
+        },
+        "multimorbidity": {
+          "label": {
+            "de": "Multimorbidität",
+            "en": "Multimorbidity",
+            "fr": "Multimorbidité"
+          },
+          "text": {
+            "de": "Aufgrund multipler Vorerkrankungen besteht ein erhöhtes Risiko für unerwartete Komplikationen, komplexe Krankheitsverläufe und erschwerte postoperative Erholung.",
+            "en": "Due to multiple pre-existing conditions, there is an increased risk of unexpected complications, complex clinical courses, and prolonged postoperative recovery.",
+            "fr": "En raison de pathologies multiples, le risque de complications inattendues, de parcours cliniques complexes et de convalescence prolongée est accru."
+          },
+          "position": "after"
+        },
+        "pregnancy": {
+          "label": {
+            "de": "Schwangerschaft",
+            "en": "Pregnancy",
+            "fr": "Grossesse"
+          },
+          "text": {
+            "de": "Die Auswirkungen der Anästhesie und Medikation auf Mutter und ungeborenes Kind wurden ausführlich besprochen. Es bestehen erhöhte Risiken für fetale Hypoxie, Frühgeburt oder Fehlgeburt. Auch das Risiko für mütterliche Komplikationen wie schwieriger Atemweg, Aspiration oder Kreislaufinstabilität ist erhöht. Die Auswahl von Verfahren und Medikamenten erfolgte unter besonderer Risiko-Nutzen-Abwägung.",
+            "en": "The effects of anesthesia and medication on both mother and unborn child were thoroughly discussed. There is an increased risk of fetal hypoxia, preterm birth, or miscarriage. Maternal risks such as difficult airway, aspiration, or circulatory instability are also elevated. The choice of procedure and drugs was made with careful risk-benefit consideration.",
+            "fr": "Les effets de l’anesthésie et des médicaments sur la mère et l’enfant à naître ont été discutés en détail. Les risques de souffrance fœtale, d’accouchement prématuré ou de fausse couche sont accrus. Les risques maternels tels que des voies aériennes difficiles, une aspiration ou une instabilité circulatoire sont également augmentés. Le choix des procédures et des médicaments a été fait après une évaluation rigoureuse du rapport bénéfice-risque."
+          },
+          "position": "after"
+        },
+        "osas": {
+          "label": {
+            "de": "Schlafapnoe",
+            "en": "Sleep apnea",
+            "fr": "Apnée du sommeil"
+          },
+          "text": {
+            "de": "Bei vorliegender obstruktiver Schlafapnoe besteht ein erhöhtes Risiko für Atemdepression, schwieriges Atemwegsmanagement und postoperative Hypoventilation – insbesondere bei Gabe opioidhaltiger Medikamente.",
+            "en": "In patients with obstructive sleep apnea, there is an increased risk of respiratory depression, difficult airway control, and postoperative hypoventilation, especially when opioids are used.",
+            "fr": "En cas d’apnée obstructive du sommeil, le risque de dépression respiratoire, de gestion difficile des voies respiratoires et d’hypoventilation postopératoire est accru, notamment en cas d’opioïdes."
+          },
+          "position": "after"
+        },
+        "neurological_risk": {
+          "label": {
+            "de": "Neurologische Vorerkrankung",
+            "en": "Neurological comorbidity",
+            "fr": "Comorbidité neurologique"
+          },
+          "text": {
+            "de": "Bei neurologischen Vorerkrankungen besteht ein erhöhtes Risiko für kognitive Verschlechterung, postoperatives Delir oder Wechselwirkungen mit Narkosemitteln.",
+            "en": "Neurological conditions increase the risk of cognitive deterioration, postoperative delirium, or interactions with anesthetic agents.",
+            "fr": "Les pathologies neurologiques augmentent le risque de détérioration cognitive, de délire postopératoire ou d’interactions médicamenteuses."
+          },
+          "position": "after"
+        },
+        "obesity": {
+          "label": {
+            "de": "Adipositas",
+            "en": "Obesity",
+            "fr": "Obésité"
+          },
+          "text": {
+            "de": "Bei Adipositas bestehen erhöhte Risiken für einen schwierigen Atemweg, erschwerte Gefäßpunktionen, Atemdepression und kardiopulmonale Komplikationen.",
+            "en": "Obesity increases the risk of difficult airway, challenging vascular access, respiratory depression, and cardiopulmonary complications.",
+            "fr": "L’obésité accroît le risque de voie respiratoire difficile, d’accès vasculaire compliqué, de dépression respiratoire et de complications cardiopulmonaires."
+          },
+          "position": "after"
+        },
+        "diabetes": {
+          "label": {
+            "de": "Diabetes mellitus",
+            "en": "Diabetes mellitus",
+            "fr": "Diabète"
+          },
+          "text": {
+            "de": "Bei Diabetes mellitus bestehen erhöhte Risiken für Hypo-/Hyperglykämien, Infektionen, Wundheilungsstörungen und perioperative Stoffwechselentgleisungen.",
+            "en": "Diabetes mellitus increases the risks of hypo-/hyperglycemia, infection, impaired wound healing, and perioperative metabolic imbalance.",
+            "fr": "Le diabète augmente le risque d’hypo-/hyperglycémie, d’infections, de troubles de cicatrisation et de déséquilibre métabolique en périopératoire."
+          },
+          "position": "after"
+        },
+        "immunosuppression": {
+          "label": {
+            "de": "Immunsuppression",
+            "en": "Immunosuppression",
+            "fr": "Immunosuppression"
+          },
+          "text": {
+            "de": "Bei bestehender Immunsuppression oder Chemotherapie ist das Risiko für Infektionen, verzögerte Wundheilung und atypische Komplikationsverläufe erhöht.",
+            "en": "Immunosuppression or chemotherapy increases the risk of infections, impaired wound healing, and atypical complication patterns.",
+            "fr": "L’immunosuppression ou la chimiothérapie augmente le risque d’infections, de retard de cicatrisation et de complications atypiques."
+          },
+          "position": "after"
+        },
+        "chronic_pain_opioids": {
+          "label": {
+            "de": "Chronischer Schmerz / Opioide",
+            "en": "Chronic pain / Opioids",
+            "fr": "Douleur chronique / Opioïdes"
+          },
+          "text": {
+            "de": "Bei chronischem Schmerzsyndrom oder bestehender Opioidabhängigkeit besteht ein erhöhtes Risiko für Toleranzentwicklung, unzureichende Schmerztherapie und prolongierte Erholungsphasen.",
+            "en": "Chronic pain or opioid dependency increases the risk of tolerance, inadequate pain control, and prolonged recovery.",
+            "fr": "La douleur chronique ou la dépendance aux opioïdes augmente le risque de tolérance, de prise en charge insuffisante de la douleur et de récupération prolongée."
+          },
+          "position": "after"
+        },
+        "psychiatric_disorder": {
+          "label": {
+            "de": "Psychiatrische Erkrankung",
+            "en": "Psychiatric condition",
+            "fr": "Trouble psychiatrique"
+          },
+          "text": {
+            "de": "Bei psychiatrischen Vorerkrankungen ist das Risiko für postoperatives Delir, Stressreaktionen oder unerwartete psychische Dekompensation erhöht.",
+            "en": "Psychiatric conditions increase the risk of postoperative delirium, stress reactions, or unexpected psychological decompensation.",
+            "fr": "Les antécédents psychiatriques augmentent le risque de délire postopératoire, de réactions au stress ou de décompensation psychologique inattendue."
+          },
+          "position": "after"
+        },
+        "hepatic_renal_impairment": {
+          "label": {
+            "de": "Leber-/Niereninsuffizienz",
+            "en": "Hepatic/Renal impairment",
+            "fr": "Insuffisance hépatique/rénale"
+          },
+          "text": {
+            "de": "Bei Leber- oder Nierenfunktionsstörungen besteht ein erhöhtes Risiko für veränderte Arzneimittelwirkung, Elektrolytstörungen und Komplikationen im Flüssigkeitshaushalt.",
+            "en": "Liver or kidney dysfunction increases the risk of altered drug metabolism, electrolyte imbalances, and fluid-related complications.",
+            "fr": "Une insuffisance hépatique ou rénale augmente le risque d’altération du métabolisme des médicaments, de déséquilibres électrolytiques et de complications liées aux liquides."
           },
           "position": "after"
         }
@@ -324,156 +522,6 @@
     }
   },
   "textblocks_OLD": {
-    "coagulation_disorder": {
-      "label": {
-        "de": "Gerinnungsstörung",
-        "en": "Coagulation disorder",
-        "fr": "Trouble de la coagulation"
-      },
-      "de": "Bei bestehender Gerinnungsstörung ist das Risiko für intraoperative Blutungen, Nachblutungen, Hämatome und verzögerte Wundheilung erhöht. Gegebenenfalls ist eine Bluttransfusion oder die Einleitung spezieller gerinnungstherapeutischer Maßnahmen erforderlich.",
-      "en": "In case of a coagulation disorder, there is an increased risk of intraoperative bleeding, rebleeding, hematomas, and impaired wound healing. If necessary, blood transfusion or targeted hemostatic treatment may be required.",
-      "fr": "En cas de trouble de la coagulation, le risque de saignement peropératoire, de récidive hémorragique, d’hématome ou de cicatrisation retardée est accru. Une transfusion ou la mise en place de mesures thérapeutiques hémostatiques ciblées peut être nécessaire."
-    },
-    "anemia": {
-      "label": {
-        "de": "Anämie",
-        "en": "Anemia",
-        "fr": "Anémie"
-      },
-      "de": "Bei präoperativer Anämie bestehen erhöhte Risiken für Gewebehypoxie, Kreislaufinstabilität, kardiale Dekompensation sowie die Notwendigkeit einer Bluttransfusion.",
-      "en": "Preoperative anemia increases the risks of tissue hypoxia, circulatory instability, cardiac decompensation, and the potential need for blood transfusion.",
-      "fr": "En cas d’anémie préopératoire, les risques d’hypoxie tissulaire, d’instabilité circulatoire, de décompensation cardiaque et de besoin transfusionnel sont accrus."
-    },
-    "renal_insufficiency": {
-      "label": {
-        "de": "Niereninsuffizienz",
-        "en": "Renal insufficiency",
-        "fr": "Insuffisance rénale"
-      },
-      "de": "Bei eingeschränkter Nierenfunktion bestehen zusätzliche Risiken: Flüssigkeitsüberlastung, Elektrolytstörungen (z. B. Hyperkaliämie), Azidose, fortschreitendes Organversagen sowie vorübergehende oder dauerhafte Dialysepflicht. Auswahl und Dosierung von Medikamenten können eingeschränkt sein und unterliegen einer individuellen Risiko-Nutzen-Abwägung.",
-      "en": "Renal impairment entails additional risks: fluid overload, electrolyte disturbances (e.g., hyperkalemia), acidosis, progressive organ failure, and possible temporary or permanent dialysis. Medication selection and dosage may be limited and require individual risk-benefit assessment.",
-      "fr": "Une insuffisance rénale entraîne des risques supplémentaires : surcharge hydrique, troubles électrolytiques (p. ex. hyperkaliémie), acidose, défaillance organique progressive et éventuellement dialyse temporaire ou permanente. Le choix et le dosage des médicaments peuvent être limités et nécessitent une évaluation individuelle du rapport bénéfice-risque."
-    },
-    "polypharmacy": {
-      "label": {
-        "de": "Polypharmazie",
-        "en": "Polypharmacy",
-        "fr": "Polymédication"
-      },
-      "de": "Bei Einnahme mehrerer Medikamente (Polypharmazie) besteht ein erhöhtes Risiko für Arzneimittelinteraktionen, veränderte Wirkspiegel oder unerwartete Nebenwirkungen unter Anästhesie.",
-      "en": "Polypharmacy increases the risk of drug interactions, altered drug levels or unexpected side effects under anesthesia.",
-      "fr": "La polymédication augmente le risque d’interactions, de modifications des concentrations ou d’effets indésirables inattendus sous anesthésie."
-    },
-    "frail_patient": {
-      "label": {
-        "de": "Gebrechlichkeit",
-        "en": "Frail patient",
-        "fr": "Patient fragile"
-      },
-      "de": "Gebrechliche Patient*innen haben ein erhöhtes Risiko für Kreislaufinstabilität, Delir, Ateminsuffizienz, verzögerte Mobilisation sowie prolongierte postoperativ-rehabilitative Verläufe.",
-      "en": "Frail patients are at increased risk of circulatory instability, delirium, respiratory insufficiency, delayed mobilization, and prolonged postoperative recovery.",
-      "fr": "Les patient·es fragiles présentent un risque accru d’instabilité circulatoire, de délire, d’insuffisance respiratoire, de mobilisation retardée et de récupération postopératoire prolongée."
-    },
-    "multimorbidity": {
-      "label": {
-        "de": "Multimorbidität",
-        "en": "Multimorbidity",
-        "fr": "Multimorbidité"
-      },
-      "de": "Aufgrund multipler Vorerkrankungen besteht ein erhöhtes Risiko für unerwartete Komplikationen, komplexe Krankheitsverläufe und erschwerte postoperative Erholung.",
-      "en": "Due to multiple pre-existing conditions, there is an increased risk of unexpected complications, complex clinical courses, and prolonged postoperative recovery.",
-      "fr": "En raison de pathologies multiples, le risque de complications inattendues, de parcours cliniques complexes et de convalescence prolongée est accru."
-    },
-    "pregnancy": {
-      "label": {
-        "de": "Schwangerschaft",
-        "en": "Pregnancy",
-        "fr": "Grossesse"
-      },
-      "de": "Die Auswirkungen der Anästhesie und Medikation auf Mutter und ungeborenes Kind wurden ausführlich besprochen. Es bestehen erhöhte Risiken für fetale Hypoxie, Frühgeburt oder Fehlgeburt. Auch das Risiko für mütterliche Komplikationen wie schwieriger Atemweg, Aspiration oder Kreislaufinstabilität ist erhöht. Die Auswahl von Verfahren und Medikamenten erfolgte unter besonderer Risiko-Nutzen-Abwägung.",
-      "en": "The effects of anesthesia and medication on both mother and unborn child were thoroughly discussed. There is an increased risk of fetal hypoxia, preterm birth, or miscarriage. Maternal risks such as difficult airway, aspiration, or circulatory instability are also elevated. The choice of procedure and drugs was made with careful risk-benefit consideration.",
-      "fr": "Les effets de l’anesthésie et des médicaments sur la mère et l’enfant à naître ont été discutés en détail. Les risques de souffrance fœtale, d’accouchement prématuré ou de fausse couche sont accrus. Les risques maternels tels que des voies aériennes difficiles, une aspiration ou une instabilité circulatoire sont également augmentés. Le choix des procédures et des médicaments a été fait après une évaluation rigoureuse du rapport bénéfice-risque."
-    },
-    "osas": {
-      "label": {
-        "de": "Schlafapnoe",
-        "en": "Sleep apnea",
-        "fr": "Apnée du sommeil"
-      },
-      "de": "Bei vorliegender obstruktiver Schlafapnoe besteht ein erhöhtes Risiko für Atemdepression, schwieriges Atemwegsmanagement und postoperative Hypoventilation – insbesondere bei Gabe opioidhaltiger Medikamente.",
-      "en": "In patients with obstructive sleep apnea, there is an increased risk of respiratory depression, difficult airway control, and postoperative hypoventilation, especially when opioids are used.",
-      "fr": "En cas d’apnée obstructive du sommeil, le risque de dépression respiratoire, de gestion difficile des voies respiratoires et d’hypoventilation postopératoire est accru, notamment en cas d’opioïdes."
-    },
-    "neurological_risk": {
-      "label": {
-        "de": "Neurologische Vorerkrankung",
-        "en": "Neurological comorbidity",
-        "fr": "Comorbidité neurologique"
-      },
-      "de": "Bei neurologischen Vorerkrankungen besteht ein erhöhtes Risiko für kognitive Verschlechterung, postoperatives Delir oder Wechselwirkungen mit Narkosemitteln.",
-      "en": "Neurological conditions increase the risk of cognitive deterioration, postoperative delirium, or interactions with anesthetic agents.",
-      "fr": "Les pathologies neurologiques augmentent le risque de détérioration cognitive, de délire postopératoire ou d’interactions médicamenteuses."
-    },
-    "obesity": {
-      "label": {
-        "de": "Adipositas",
-        "en": "Obesity",
-        "fr": "Obésité"
-      },
-      "de": "Bei Adipositas bestehen erhöhte Risiken für einen schwierigen Atemweg, erschwerte Gefäßpunktionen, Atemdepression und kardiopulmonale Komplikationen.",
-      "en": "Obesity increases the risk of difficult airway, challenging vascular access, respiratory depression, and cardiopulmonary complications.",
-      "fr": "L’obésité accroît le risque de voie respiratoire difficile, d’accès vasculaire compliqué, de dépression respiratoire et de complications cardiopulmonaires."
-    },
-    "diabetes": {
-      "label": {
-        "de": "Diabetes mellitus",
-        "en": "Diabetes mellitus",
-        "fr": "Diabète"
-      },
-      "de": "Bei Diabetes mellitus bestehen erhöhte Risiken für Hypo-/Hyperglykämien, Infektionen, Wundheilungsstörungen und perioperative Stoffwechselentgleisungen.",
-      "en": "Diabetes mellitus increases the risks of hypo-/hyperglycemia, infection, impaired wound healing, and perioperative metabolic imbalance.",
-      "fr": "Le diabète augmente le risque d’hypo-/hyperglycémie, d’infections, de troubles de cicatrisation et de déséquilibre métabolique en périopératoire."
-    },
-    "immunosuppression": {
-      "label": {
-        "de": "Immunsuppression",
-        "en": "Immunosuppression",
-        "fr": "Immunosuppression"
-      },
-      "de": "Bei bestehender Immunsuppression oder Chemotherapie ist das Risiko für Infektionen, verzögerte Wundheilung und atypische Komplikationsverläufe erhöht.",
-      "en": "Immunosuppression or chemotherapy increases the risk of infections, impaired wound healing, and atypical complication patterns.",
-      "fr": "L’immunosuppression ou la chimiothérapie augmente le risque d’infections, de retard de cicatrisation et de complications atypiques."
-    },
-    "chronic_pain_opioids": {
-      "label": {
-        "de": "Chronischer Schmerz / Opioide",
-        "en": "Chronic pain / Opioids",
-        "fr": "Douleur chronique / Opioïdes"
-      },
-      "de": "Bei chronischem Schmerzsyndrom oder bestehender Opioidabhängigkeit besteht ein erhöhtes Risiko für Toleranzentwicklung, unzureichende Schmerztherapie und prolongierte Erholungsphasen.",
-      "en": "Chronic pain or opioid dependency increases the risk of tolerance, inadequate pain control, and prolonged recovery.",
-      "fr": "La douleur chronique ou la dépendance aux opioïdes augmente le risque de tolérance, de prise en charge insuffisante de la douleur et de récupération prolongée."
-    },
-    "psychiatric_disorder": {
-      "label": {
-        "de": "Psychiatrische Erkrankung",
-        "en": "Psychiatric condition",
-        "fr": "Trouble psychiatrique"
-      },
-      "de": "Bei psychiatrischen Vorerkrankungen ist das Risiko für postoperatives Delir, Stressreaktionen oder unerwartete psychische Dekompensation erhöht.",
-      "en": "Psychiatric conditions increase the risk of postoperative delirium, stress reactions, or unexpected psychological decompensation.",
-      "fr": "Les antécédents psychiatriques augmentent le risque de délire postopératoire, de réactions au stress ou de décompensation psychologique inattendue."
-    },
-    "hepatic_renal_impairment": {
-      "label": {
-        "de": "Leber-/Niereninsuffizienz",
-        "en": "Hepatic/Renal impairment",
-        "fr": "Insuffisance hépatique/rénale"
-      },
-      "de": "Bei Leber- oder Nierenfunktionsstörungen besteht ein erhöhtes Risiko für veränderte Arzneimittelwirkung, Elektrolytstörungen und Komplikationen im Flüssigkeitshaushalt.",
-      "en": "Liver or kidney dysfunction increases the risk of altered drug metabolism, electrolyte imbalances, and fluid-related complications.",
-      "fr": "Une insuffisance hépatique ou rénale augmente le risque d’altération du métabolisme des médicaments, de déséquilibres électrolytiques et de complications liées aux liquides."
-    },
     "interpreter": {
       "label": {
         "de": "Dolmetscher",
