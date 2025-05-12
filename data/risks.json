@@ -94,6 +94,19 @@
           },
           "position": "intro"
         },
+        "closing": {
+          "label": {
+            "de": "Schlussbemerkung",
+            "en": "Concluding remarks",
+            "fr": "Remarques finales"
+          },
+          "text": {
+            "de": "Auf Nachfrage wurde bestätigt, dass alle Inhalte der anästhesiologischen Aufklärung verstanden wurden und keine offenen Fragen bestehen. Die Durchführung der Maßnahmen unter Berücksichtigung der erläuterten Risiken wird ausdrücklich gewünscht. Eine Kopie der schriftlichen Aufklärungsunterlagen wurde angeboten.",
+            "en": "It was confirmed upon request that all aspects of the anesthesiology-related information were understood and no further questions remain. The procedures, with awareness of the explained risks, are expressly requested. A copy of the written consent materials was offered.",
+            "fr": "Il a été confirmé, sur demande, que tous les éléments de l'information anesthésique ont été compris et qu’aucune question ne restait en suspens. La réalisation des mesures, en connaissance des risques expliqués, est expressément souhaitée. Une copie des documents écrits d'information a été proposée."
+          },
+          "position": "closing"
+        },
         "teleconsent": {
           "label": {
             "de": "Online-Aufklärung",
@@ -172,8 +185,6 @@
           },
           "position": "before"
         },
-        
-        
         "interpreter": {
           "label": {
             "de": "Dolmetscher",
@@ -186,19 +197,6 @@
             "fr": "En raison d'une barrière linguistique, l'explication complète a été réalisée en présence d’un interprète qualifié. Celui-ci a confirmé avoir traduit fidèlement et entièrement tous les contenus. Le patient a été interrogé à plusieurs reprises pour vérifier sa compréhension."
           },
           "position": "after"
-        },
-        "closing": {
-          "label": {
-            "de": "Abschluss",
-            "en": "Closing",
-            "fr": "Conclusion"
-          },
-          "text": {
-            "de": "Auf Nachfrage wurde bestätigt, dass alle Inhalte der anästhesiologischen Aufklärung verstanden wurden und keine offenen Fragen bestehen. Die Durchführung der Maßnahmen unter Berücksichtigung der erläuterten Risiken wird ausdrücklich gewünscht. Eine Kopie der schriftlichen Aufklärungsunterlagen wurde angeboten.",
-            "en": "It was confirmed upon request that all aspects of the anesthesiology-related information were understood and no further questions remain. The procedures, with awareness of the explained risks, are expressly requested. A copy of the written consent materials was offered.",
-            "fr": "Il a été confirmé, sur demande, que tous les éléments de l'information anesthésique ont été compris et qu’aucune question ne restait en suspens. La réalisation des mesures, en connaissance des risques expliqués, est expressément souhaitée. Une copie des documents écrits d'information a été proposée."
-          },
-          "position": "closing"
         }
       }
     },
