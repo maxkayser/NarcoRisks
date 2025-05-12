@@ -743,40 +743,58 @@ function renderTextblockToggles() {
  * Renders static checkboxes for predefined text blocks (non-dynamic).
  */
 function renderStaticTextblockCheckboxes() {
-  const lang = currentLang || 'de';
+  const lang = document.getElementById('language').value || 'de';
   const container = document.getElementById('staticTextblockCheckboxes');
   container.innerHTML = '';
 
-  const textblocks = risksData?.textblocks || {};
+  if (!textblocks) return;
 
   Object.entries(textblocks).forEach(([groupKey, group]) => {
-    const items = group.items || {};
+    const groupLabel = group?.label?.[lang] || groupKey;
 
-    Object.entries(items).forEach(([itemKey, item]) => {
-      const labelEl = document.createElement('label');
-      labelEl.style.display = 'flex';
-      labelEl.style.alignItems = 'center';
-      labelEl.style.fontWeight = 'normal';
-      labelEl.style.gap = '0.5em';
+    const groupHeader = document.createElement('div');
+    groupHeader.className = 'category toggle';
+    groupHeader.textContent = groupLabel;
+    container.appendChild(groupHeader);
 
-      const checkbox = document.createElement('input');
-      checkbox.type = 'checkbox';
-      checkbox.name = 'textblocks';
-      checkbox.value = `textblock.${groupKey}.${itemKey}`;
-      
-      checkbox.checked = !!item.default;
+    const groupContainer = document.createElement('div');
+    groupContainer.className = 'subcategory checkbox-grid';
+    groupContainer.classList.add('hidden');
+    container.appendChild(groupContainer);
 
-      checkbox.addEventListener('change', generateSummary);
-
-      const labelText = item.label?.[lang] || itemKey;
-      labelEl.appendChild(checkbox);
-      labelEl.appendChild(document.createTextNode(' ' + labelText));
-
-      container.appendChild(labelEl);
+    groupHeader.addEventListener('click', () => {
+      groupContainer.classList.toggle('hidden');
+      groupHeader.classList.toggle('expanded');
     });
-  });
 
-  generateSummary();
+    if (group.items) {
+      Object.entries(group.items).forEach(([itemKey, itemData]) => {
+        const label = itemData.label?.[lang] || itemKey;
+        const checkbox = document.createElement('input');
+        checkbox.type = 'checkbox';
+        checkbox.name = 'textblock';
+        checkbox.value = `${groupKey}.${itemKey}`;
+        checkbox.addEventListener('change', generateSummary);
+
+        const fullKey = `${groupKey}.${itemKey}`;
+        const altKey = `textblock.${groupKey}.${itemKey}`;
+
+        const isDefault =
+          risksData?.defaults?.[fullKey] ||
+          risksData?.defaults?.[altKey];
+
+        if (isDefault) {
+          checkbox.checked = true;
+          console.log(`[Defaults] Activated textblock default: ${altKey}`);
+        }
+
+        const wrapper = document.createElement('label');
+        wrapper.appendChild(checkbox);
+        wrapper.appendChild(document.createTextNode(' ' + label));
+        groupContainer.appendChild(wrapper);
+      });
+    }
+  });
 }
 
 
