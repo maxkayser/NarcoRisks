@@ -693,18 +693,22 @@ function renderStaticTextblockCheckboxes() {
     if (group.items) {
       Object.entries(group.items).forEach(([itemKey, itemData]) => {
         const label = itemData.label?.[lang] || itemKey;
-        
         const checkbox = document.createElement('input');
         checkbox.type = 'checkbox';
         checkbox.name = 'textblock';
         checkbox.value = `${groupKey}.${itemKey}`;
         checkbox.addEventListener('change', generateSummary);
-        
-        // CHECK FOR DEFAULTS: Full qualified key match
-        const defaultKey = `textblock.${groupKey}.${itemKey}`;
-        if (risksData?.defaults?.[defaultKey]) {
+
+        const fullKey = `${groupKey}.${itemKey}`;
+        const altKey = `textblock.${groupKey}.${itemKey}`;
+
+        const isDefault =
+          risksData?.defaults?.[fullKey] ||
+          risksData?.defaults?.[altKey];
+
+        if (isDefault) {
           checkbox.checked = true;
-          console.log(`[Defaults] Activated default textblock: ${defaultKey}`);
+          console.log(`[Defaults] Activated textblock default: ${altKey}`);
         }
 
         const wrapper = document.createElement('label');
