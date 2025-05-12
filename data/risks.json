@@ -875,9 +875,9 @@
             },
             "swallowing_disorder": {
               "label": {
-                "de": "Schluckstörung / Dysphagie",
-                "en": "Swallowing disorder / dysphagia",
-                "fr": "Trouble de la déglutition / dysphagie"
+                "de": "Schluckstörung",
+                "en": "Swallowing disorder",
+                "fr": "Trouble de la déglutition"
               }
             },
             "tongue_paresthesia": {
