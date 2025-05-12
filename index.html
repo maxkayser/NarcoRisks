@@ -87,6 +87,37 @@
     grid-template-columns: 1fr;
   }
 }
+		
+#summaryText.scrollbox {
+  max-height: 300px;
+  overflow-y: auto;
+  border: 1px solid #ccc;
+  padding: 1em;
+  background: #fff;
+  line-height: 1.5;
+  font-size: 1rem;
+  white-space: normal;
+}
+
+#summaryText p {
+  margin: 0 0 0.5em 0; /* nur minimaler Abstand unten */
+  padding: 0;
+}
+
+#summaryText ul {
+  margin: 0.3em 0 0.5em 1.2em; /* leicht eingerückt, aber kompakt */
+  padding-left: 1em;
+  list-style-type: disc;
+}
+
+#summaryText li {
+  margin: 0.2em 0;
+  padding: 0;
+}
+
+#summaryText b {
+  font-weight: 600;
+}
 
 	</style>
   </section>
@@ -101,19 +132,8 @@
   <section>
 	<h2 data-i18n="headings.summary"></h2>
 	<div id="summaryText" class="scrollbox"></div>
-	  <style>
-		  .scrollbox {
-			  max-height: 300px;
-			  overflow-y: auto;
-			  border: 1px solid #ccc;
-			  padding: 1em;
-			  white-space: pre-wrap;
-		}
-	  </style>
-	<!--<textarea id="OLD_summaryText" readonly></textarea>-->
 	<button onclick="copyToClipboard()" id="copyButton" data-i18n="buttons.copy"></button>
 	<button id="resetButton" data-i18n="buttons.reset"></button>
-
   </section>
 <div id="textblockToggles" style="display: none"></div>
 <span style="white-space: normal; overflow-wrap: break-word; margin-top:1em; font-size:0.8em; color:#666" data-i18n="privacy_notice"></span>
