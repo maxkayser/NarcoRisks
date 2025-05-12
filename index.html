@@ -13,14 +13,12 @@
 <body>
   <h1 data-i18n="headings.title">NarcoRisks</h1>
   <section>
-    <label>
-	<span data-i18n="language_selection"></span>
+	<label for="language" data-i18n="language_selection"></label>
 	<select id="language">
 		<option value="de">Deutsch</option>
 		<option value="en">Englisch</option>
 		<option value="fr">Französisch</option>
-	</select>
-    </label>    
+	</select>   
   	<div id="procedureSelection">
 	  <label for="departmentSelect" data-i18n="department"></label>
 	  <select id="departmentSelect"></select>
@@ -119,6 +117,35 @@
   font-weight: 600;
 }
 
+
+
+section {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 1rem;
+  background: #f9f9f9;
+  border-radius: 0.2rem;
+  border: 1px solid #ddd;
+  max-width: 1300px;
+  margin: 20px auto;
+}
+
+section label {
+  display: flex;
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: #333;
+  margin-bottom: 0.25rem;
+}
+
+section select {
+  font-size: 1rem;
+  padding: 0.4rem 0.6rem;
+  border: 1px solid #ccc;
+  border-radius: 0.4rem;
+
+
 	</style>
   </section>
   <section>
@@ -133,7 +160,9 @@
 	<h2 data-i18n="headings.summary"></h2>
 	<div id="summaryText" class="scrollbox"></div>
 	<button onclick="copyToClipboard()" id="copyButton" data-i18n="buttons.copy"></button>
+	<button onclick="downloadSummary()" data-i18n="buttons.download"></button>
 	<button id="resetButton" data-i18n="buttons.reset"></button>
+
   </section>
 <div id="textblockToggles" style="display: none"></div>
 <span style="white-space: normal; overflow-wrap: break-word; margin-top:1em; font-size:0.8em; color:#666" data-i18n="privacy_notice"></span>
