@@ -11,14 +11,14 @@ const risksUrl = 'https://raw.githubusercontent.com/maxkayser/NarkoSafe/main/dat
 let risksData = {};
 let allRisks = [];
 
-function htmlToFormattedText(html) { 
+function htmlToFormattedText(html) {
   const tempDiv = document.createElement("div");
   tempDiv.innerHTML = html;
 
-  // Zeilenumbrüche für <br>
+  // <br> wird zu \n
   tempDiv.querySelectorAll("br").forEach(br => br.replaceWith("\n"));
 
-  // Blockelemente mit Zeilenumbruch vor und nach
+  // Block-Elemente
   const blockTags = ['p', 'div', 'section', 'article', 'header', 'footer', 'table', 'tr'];
   blockTags.forEach(tag => {
     tempDiv.querySelectorAll(tag).forEach(el => {
@@ -27,7 +27,7 @@ function htmlToFormattedText(html) {
     });
   });
 
-  // Listenpunkte formatieren
+  // Listenpunkte
   tempDiv.querySelectorAll("li").forEach(li => {
     li.insertAdjacentText("beforebegin", "\n- ");
     li.insertAdjacentText("afterend", "\n");
@@ -56,6 +56,7 @@ function copyToClipboard() {
 
   alert("Text copied to clipboard.");
 }
+
 
 
 /**
