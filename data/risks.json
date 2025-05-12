@@ -95,33 +95,6 @@
           "position": "intro",
           "default": true
         },
-        "closing": {
-          "label": {
-            "de": "Schlussbemerkung",
-            "en": "Concluding remarks",
-            "fr": "Remarques finales"
-          },
-          "text": {
-            "de": "Auf Nachfrage wurde bestätigt, dass alle Inhalte der anästhesiologischen Aufklärung verstanden wurden und keine offenen Fragen bestehen. Die Durchführung der Maßnahmen unter Berücksichtigung der erläuterten Risiken wird ausdrücklich gewünscht. Eine Kopie der schriftlichen Aufklärungsunterlagen wurde angeboten.",
-            "en": "It was confirmed upon request that all aspects of the anesthesiology-related information were understood and no further questions remain. The procedures, with awareness of the explained risks, are expressly requested. A copy of the written consent materials was offered.",
-            "fr": "Il a été confirmé, sur demande, que tous les éléments de l'information anesthésique ont été compris et qu’aucune question ne restait en suspens. La réalisation des mesures, en connaissance des risques expliqués, est expressément souhaitée. Une copie des documents écrits d'information a été proposée."
-          },
-          "position": "closing",
-          "default": true
-        },
-        "teleconsent": {
-          "label": {
-            "de": "Online-Aufklärung",
-            "en": "Online consent",
-            "fr": "Consentement en ligne"
-          },
-          "text": {
-            "de": "Die Aufklärung fand online über die Plattform Doctolib statt.",
-            "en": "The informed consent discussion took place online via the Doctolib platform.",
-            "fr": "L’information a été donnée en ligne via la plateforme Doctolib."
-          },
-          "position": "after"
-        },
         "refused_information": {
           "label": {
             "de": "Aufklärung verzichtet",
@@ -147,6 +120,19 @@
             "fr": "Consentement élargi: le consentement s’applique à l’intervention prévue ainsi qu’aux interventions complémentaires immédiatement programmées."
           },
           "position": "intro"
+        },
+        "teleconsent": {
+          "label": {
+            "de": "Online-Aufklärung",
+            "en": "Online consent",
+            "fr": "Consentement en ligne"
+          },
+          "text": {
+            "de": "Die Aufklärung fand online über die Plattform Doctolib statt.",
+            "en": "The informed consent discussion took place online via the Doctolib platform.",
+            "fr": "L’information a été donnée en ligne via la plateforme Doctolib."
+          },
+          "position": "after"
         },
         "outgoing_patient": {
           "label": {
@@ -199,6 +185,20 @@
             "fr": "En raison d'une barrière linguistique, l'explication complète a été réalisée en présence d’un interprète qualifié. Celui-ci a confirmé avoir traduit fidèlement et entièrement tous les contenus. Le patient a été interrogé à plusieurs reprises pour vérifier sa compréhension."
           },
           "position": "after"
+        },
+        "closing": {
+          "label": {
+            "de": "Schlussbemerkung",
+            "en": "Concluding remarks",
+            "fr": "Remarques finales"
+          },
+          "text": {
+            "de": "Auf Nachfrage wurde bestätigt, dass alle Inhalte der anästhesiologischen Aufklärung verstanden wurden und keine offenen Fragen bestehen. Die Durchführung der Maßnahmen unter Berücksichtigung der erläuterten Risiken wird ausdrücklich gewünscht. Eine Kopie der schriftlichen Aufklärungsunterlagen wurde angeboten.",
+            "en": "It was confirmed upon request that all aspects of the anesthesiology-related information were understood and no further questions remain. The procedures, with awareness of the explained risks, are expressly requested. A copy of the written consent materials was offered.",
+            "fr": "Il a été confirmé, sur demande, que tous les éléments de l'information anesthésique ont été compris et qu’aucune question ne restait en suspens. La réalisation des mesures, en connaissance des risques expliqués, est expressément souhaitée. Une copie des documents écrits d'information a été proposée."
+          },
+          "position": "closing",
+          "default": true
         }
       }
     },
