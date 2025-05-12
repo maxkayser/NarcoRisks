@@ -74,11 +74,11 @@
     }
   },
   "textblocks": {
-    "organizational": {
+    "consultation_framework": {
       "label": {
-        "de": "Organisatorisch",
-        "en": "Organizational",
-        "fr": "Organisation"
+        "de": "Aufklärungsrahmen",
+        "en": "Consultation framework",
+        "fr": "Cadre de la consultation"
       },
       "items": {
         "intro": {
@@ -95,19 +95,6 @@
           "position": "intro",
           "default": true
         },
-        "refused_information": {
-          "label": {
-            "de": "Aufklärung verzichtet",
-            "en": "Waiver of detailed information",
-            "fr": "Renonciation à l'information détaillée"
-          },
-          "text": {
-            "de": "Eine ausführliche Aufklärung über die geplanten Verfahren und damit verbundenen Risiken wurde angeboten, jedoch vom Patienten/der Patientin ausdrücklich und unmissverständlich abgelehnt. Es bestanden keine Zweifel an der rechtmäßigen und uneingeschränkten Entscheidungsfähigkeit. Der Wille des Patienten/der Patientin wurde respektiert.",
-            "en": "Detailed information about the planned procedures and associated risks was offered, but was explicitly and unequivocally declined by the patient. There were no doubts regarding the patient's legal capacity and decision-making ability. The patient's will was respected.",
-            "fr": "Des informations détaillées sur les procédures prévues et les risques associés ont été proposées, mais ont été expressément et sans équivoque refusées par le/la patient·e. Aucune incertitude quant à la capacité juridique et à la faculté de décision n’a été constatée. La volonté du/de la patient·e a été respectée."
-          },
-          "position": "before"
-        },
         "combined_consent_anesthesia": {
           "label": {
             "de": "Daueraufklärung",
@@ -120,60 +107,6 @@
             "fr": "Consentement élargi: le consentement s’applique à l’intervention prévue ainsi qu’aux interventions complémentaires immédiatement programmées."
           },
           "position": "intro"
-        },
-        "emergency_surgery": {
-          "label": {
-            "de": "Notfalloperation",
-            "en": "Emergency surgery",
-            "fr": "Chirurgie en urgence"
-          },
-          "text": {
-            "de": "Es handelt sich um eine Notfalloperation mit erhöhtem Risiko für intra- und perioperative Komplikationen.",
-            "en": "This is an emergency surgery with increased risk of intra- and perioperative complications.",
-            "fr": "Il s'agit d'une chirurgie en urgence avec un risque accru de complications per- et peropératoires."
-          },
-          "position": "after"
-        },
-        "time_pressure_consent": {
-          "label": {
-            "de": "Einwilligung unter Zeitdruck",
-            "en": "Consent under time pressure",
-            "fr": "Consentement sous contrainte de temps"
-          },
-          "text": {
-            "de": "Die Aufklärung fand unter zeitkritischen Bedingungen statt, da eine notfallmäßige Durchführung erforderlich war. Es wurde dennoch bestmöglich über die Risiken informiert.",
-            "en": "The consent was obtained under time-critical conditions due to emergency circumstances. Efforts were made to inform the patient as comprehensively as possible.",
-            "fr": "Le consentement a été obtenu dans un contexte d’urgence. Les efforts ont été faits pour fournir une information aussi complète que possible."
-          },
-          "position": "before"
-        },
-        "urgency_justified": {
-          "label": {
-            "de": "Mutmaßlicher Wille",
-            "en": "Presumed will",
-            "fr": "Volonté présumée"
-          },
-          "text": {
-            "de": "Die Durchführung der Maßnahme erfolgte im mutmaßlichen Willen bei fehlender Einwilligungsfähigkeit und medizinischer Dringlichkeit.",
-            "en": "The intervention was carried out based on presumed will in the absence of decision-making capacity and due to medical urgency.",
-            "fr": "L'intervention a été réalisée sur la base de la volonté présumée, en l'absence de capacité à consentir et en raison d'une urgence médicale."
-          },
-          "position": "before",
-          "default": false
-        },
-        "proxy_consent": {
-          "label": {
-            "de": "Stellvertretende Einwilligung",
-            "en": "Representative consent",
-            "fr": "Consentement par représentant"
-          },
-          "text": {
-            "de": "Die Aufklärung und Einwilligung erfolgten durch eine rechtlich vertretungsberechtigte Person. Die Entscheidungsbefugnis wurde nachvollziehbar dargelegt.",
-            "en": "Consent was obtained from a legally authorized representative. The authority to decide was credibly presented.",
-            "fr": "Le consentement a été obtenu auprès d’une personne habilitée à représenter. La légitimité de la représentation a été démontrée de manière compréhensible."
-          },
-          "position": "closing",
-          "default": false
         },
         "teleconsent": {
           "label": {
@@ -214,6 +147,19 @@
           },
           "position": "after"
         },
+        "refusal_blood_products": {
+          "label": {
+            "de": "Ablehnung von Blutprodukten",
+            "en": "Refusal of blood products",
+            "fr": "Refus des produits sanguins"
+          },
+          "text": {
+            "de": "Die Gabe von Blutprodukten wurde aus persönlichen oder religiösen Gründen abgelehnt. Die potenziellen Konsequenzen wurden im Detail besprochen.",
+            "en": "The administration of blood products was declined due to personal or religious beliefs. The potential consequences were discussed in detail.",
+            "fr": "L'administration de produits sanguins a été refusée pour des raisons personnelles ou religieuses. Les conséquences possibles ont été expliquées en détail."
+          },
+          "position": "before"
+        },
         "closing": {
           "label": {
             "de": "Schlussbemerkung",
@@ -244,11 +190,100 @@
         }
       }
     },
-    "medical_conditions": {
+    "consent_context": {
       "label": {
-        "de": "Vorerkrankungen",
-        "en": "Pre-existing Conditions",
-        "fr": "Antécédents médicaux"
+        "de": "Einwilligungssituation",
+        "en": "Consent context",
+        "fr": "Contexte du consentement"
+      },
+      "items": {
+        "refused_information": {
+          "label": {
+            "de": "Aufklärung verzichtet",
+            "en": "Waiver of detailed information",
+            "fr": "Renonciation à l'information détaillée"
+          },
+          "text": {
+            "de": "Eine ausführliche Aufklärung über die geplanten Verfahren und damit verbundenen Risiken wurde angeboten, jedoch vom Patienten/der Patientin ausdrücklich und unmissverständlich abgelehnt. Es bestanden keine Zweifel an der rechtmäßigen und uneingeschränkten Entscheidungsfähigkeit. Der Wille des Patienten/der Patientin wurde respektiert.",
+            "en": "Detailed information about the planned procedures and associated risks was offered, but was explicitly and unequivocally declined by the patient. There were no doubts regarding the patient's legal capacity and decision-making ability. The patient's will was respected.",
+            "fr": "Des informations détaillées sur les procédures prévues et les risques associés ont été proposées, mais ont été expressément et sans équivoque refusées par le/la patient·e. Aucune incertitude quant à la capacité juridique et à la faculté de décision n’a été constatée. La volonté du/de la patient·e a été respectée."
+          },
+          "position": "before"
+        },
+        "time_pressure_consent": {
+          "label": {
+            "de": "Einwilligung unter Zeitdruck",
+            "en": "Consent under time pressure",
+            "fr": "Consentement sous contrainte de temps"
+          },
+          "text": {
+            "de": "Die Aufklärung fand unter zeitkritischen Bedingungen statt, da eine notfallmäßige Durchführung erforderlich war. Es wurde dennoch bestmöglich über die Risiken informiert.",
+            "en": "The consent was obtained under time-critical conditions due to emergency circumstances. Efforts were made to inform the patient as comprehensively as possible.",
+            "fr": "Le consentement a été obtenu dans un contexte d’urgence. Les efforts ont été faits pour fournir une information aussi complète que possible."
+          },
+          "position": "before"
+        },
+        "emergency_surgery": {
+          "label": {
+            "de": "Notfalloperation",
+            "en": "Emergency surgery",
+            "fr": "Chirurgie en urgence"
+          },
+          "text": {
+            "de": "Es handelt sich um eine Notfalloperation mit erhöhtem Risiko für intra- und perioperative Komplikationen.",
+            "en": "This is an emergency surgery with increased risk of intra- and perioperative complications.",
+            "fr": "Il s'agit d'une chirurgie en urgence avec un risque accru de complications per- et peropératoires."
+          },
+          "position": "after"
+        },
+        "urgency_justified": {
+          "label": {
+            "de": "Mutmaßlicher Wille",
+            "en": "Presumed will",
+            "fr": "Volonté présumée"
+          },
+          "text": {
+            "de": "Die Durchführung der Maßnahme erfolgte im mutmaßlichen Willen bei fehlender Einwilligungsfähigkeit und medizinischer Dringlichkeit.",
+            "en": "The intervention was carried out based on presumed will in the absence of decision-making capacity and due to medical urgency.",
+            "fr": "L'intervention a été réalisée sur la base de la volonté présumée, en l'absence de capacité à consentir et en raison d'une urgence médicale."
+          },
+          "position": "before",
+          "default": false
+        },
+        "proxy_consent": {
+          "label": {
+            "de": "Stellvertretende Einwilligung",
+            "en": "Representative consent",
+            "fr": "Consentement par représentant"
+          },
+          "text": {
+            "de": "Die Aufklärung und Einwilligung erfolgten durch eine rechtlich vertretungsberechtigte Person. Die Entscheidungsbefugnis wurde nachvollziehbar dargelegt.",
+            "en": "Consent was obtained from a legally authorized representative. The authority to decide was credibly presented.",
+            "fr": "Le consentement a été obtenu auprès d’une personne habilitée à représenter. La légitimité de la représentation a été démontrée de manière compréhensible."
+          },
+          "position": "closing",
+          "default": false
+        },
+        "minor_guardian_consent": {
+          "label": {
+            "de": "Minderjährig",
+            "en": "Minor",
+            "fr": "Mineur"
+          },
+          "text": {
+            "de": "Da der/die Patient*in minderjährig ist, wurde die Aufklärung im Beisein einer/eines Sorgeberechtigten durchgeführt. Die Zustimmung erfolgte durch eine vertretungsberechtigte Person.",
+            "en": "As the patient is a minor, the informed consent discussion was held in the presence of a legal guardian. Consent was provided by an authorized representative.",
+            "fr": "Le/la patient·e étant mineur·e, l’information a été donnée en présence d’un représentant légal. Le consentement a été obtenu auprès de la personne autorisée."
+          },
+          "position": "before"
+        }
+      }
+    },
+    "medical_context": {
+      "label": {
+        "de": "Medizinischer Kontext",
+        "en": "Medical context",
+        "fr": "Contexte médical"
       },
       "items": {
         "known_allergy": {
@@ -510,41 +545,6 @@
             "fr": "Une insuffisance hépatique ou rénale augmente le risque d’altération du métabolisme des médicaments, de déséquilibres électrolytiques et de complications liées aux liquides."
           },
           "position": "after"
-        }
-      }
-    },
-    "legal_ethical": {
-      "label": {
-        "de": "Medikolegale Besonderheiten",
-        "en": "Medico-legal particularities",
-        "fr": "Particularités médico-légales"
-      },
-      "items": {
-        "refusal_blood_products": {
-          "label": {
-            "de": "Ablehnung von Blutprodukten",
-            "en": "Refusal of blood products",
-            "fr": "Refus des produits sanguins"
-          },
-          "text": {
-            "de": "Die Gabe von Blutprodukten wurde aus persönlichen oder religiösen Gründen abgelehnt. Die potenziellen Konsequenzen wurden im Detail besprochen.",
-            "en": "The administration of blood products was declined due to personal or religious beliefs. The potential consequences were discussed in detail.",
-            "fr": "L'administration de produits sanguins a été refusée pour des raisons personnelles ou religieuses. Les conséquences possibles ont été expliquées en détail."
-          },
-          "position": "before"
-        },
-        "minor_guardian_consent": {
-          "label": {
-            "de": "Minderjährig",
-            "en": "Minor",
-            "fr": "Mineur"
-          },
-          "text": {
-            "de": "Da der/die Patient*in minderjährig ist, wurde die Aufklärung im Beisein einer/eines Sorgeberechtigten durchgeführt. Die Zustimmung erfolgte durch eine vertretungsberechtigte Person.",
-            "en": "As the patient is a minor, the informed consent discussion was held in the presence of a legal guardian. Consent was provided by an authorized representative.",
-            "fr": "Le/la patient·e étant mineur·e, l’information a été donnée en présence d’un représentant légal. Le consentement a été obtenu auprès de la personne autorisée."
-          },
-          "position": "before"
         }
       }
     }
