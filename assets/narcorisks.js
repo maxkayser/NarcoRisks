@@ -55,59 +55,17 @@ async function loadRisks() {
 
     risksData = data;
 
-    const defaults = risksData.defaults || {};
+    const defaults = data.defaults || {};
     renderRiskGroups(defaults);
     validatePresets();
     renderProcedureSelectors();
     renderPresetOptions();
-    if (risksData.defaults) {
-      applyDefaults(risksData.defaults);
-    }
-
-    
-    setTimeout(() => {
-      console.log('[Init] Generating summary');
-      generateSummary();
-    }, 100);
 
   } catch (error) {
     document.getElementById('risksOutput').innerText = 'Error loading risk data.';
     console.error(error);
   }
 }
-
-
-function applyDefaults() {
-  if (!risksData || !risksData.defaults) {
-    console.log("[applyDefaults] No defaults found in risk data.");
-    return;
-  }
-
-  // === 1. Apply default RISKS ===
-  if (Array.isArray(risksData.defaults.risks)) {
-    console.log(`[applyDefaults] Activating ${risksData.defaults.risks.length} default risk groups...`);
-    risksData.defaults.risks.forEach(riskPath => {
-      console.log(`[applyDefaults] Activating default risk: ${riskPath}`);
-      activateRiskAndChildren(riskPath);
-    });
-  }
-
-  // === 2. Apply default TEXTBLOCKS ===
-  if (Array.isArray(risksData.defaults.textblocks)) {
-    console.log(`[applyDefaults] Activating ${risksData.defaults.textblocks.length} default textblocks...`);
-    risksData.defaults.textblocks.forEach(textblockPath => {
-      const checkbox = document.querySelector(`input[name="textblock"][value="${textblockPath}"]`);
-      if (checkbox) {
-        checkbox.checked = true;
-        checkbox.dispatchEvent(new Event("change", { bubbles: true }));
-        console.log(`[applyDefaults] Activated default textblock: ${textblockPath}`);
-      } else {
-        console.warn(`[applyDefaults] WARNING: Default textblock not found in DOM: ${textblockPath}`);
-      }
-    });
-  }
-}
-
 
 /**
  * Ensures all "common" checkboxes in a group are checked if not already.
@@ -848,7 +806,6 @@ document.getElementById('language').addEventListener('change', () => {
   renderTextblockToggles();
   renderProcedureSelectors();
   renderPresetOptions();
-  applyDefaults();
 });
 
 document.getElementById('additionalText').addEventListener('input', generateSummary);
