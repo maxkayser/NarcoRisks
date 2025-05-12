@@ -575,9 +575,104 @@ function getRiskText(riskKey, lang = 'de') {
 }
 
 
-
-
 function generateSummary() {
+  const lang = currentLang || 'de';
+
+  const summaryParts = {
+    beginning: [],
+    before_measures: [],
+    after_measures: [],
+    end: []
+  };
+
+  const positionMap = {
+    "intro": "beginning",
+    "before": "before_measures",
+    "after": "after_measures",
+    "closing": "end"
+  };
+
+  // TEXTBLOCKS sammeln
+  Object.entries(textblocks).forEach(([groupKey, group]) => {
+    Object.entries(group.items || {}).forEach(([itemKey, item]) => {
+      const checkbox = document.querySelector(
+        `input[name="textblock"][value="${groupKey}.${itemKey}"]`
+      );
+      if (checkbox?.checked) {
+        const text = item.text?.[lang];
+        const mapped = positionMap[item.position] || "before_measures";
+        if (text && summaryParts[mapped]) {
+          summaryParts[mapped].push(text);
+        }
+      }
+    });
+  });
+
+  // RISIKEN gruppieren
+  const grouped = {};
+  document.querySelectorAll('input[name="riskSubgroups"]:checked').forEach(input => {
+    const pathParts = input.value.split(".");
+    if (pathParts.length < 2) return;
+
+    const [group, subgroup, leaf] = pathParts;
+    let node = risksData.risks.children[0];
+    for (const part of pathParts) {
+      node = node?.[part];
+      if (!node) return;
+    }
+
+    const label = node?.label?.[lang];
+    if (!label) return;
+
+    if (!grouped[group]) grouped[group] = {};
+    const sub = subgroup || "default";
+    if (!grouped[group][sub]) grouped[group][sub] = [];
+    grouped[group][sub].push(label);
+  });
+
+  // Freitext
+  const additionalText = document.getElementById("additionalText")?.value?.trim();
+  if (additionalText) {
+    summaryParts.after_measures.push(additionalText);
+  }
+
+  // === HTML Formatierung ===
+
+  const htmlParts = [];
+
+  // Textblöcke als <p>
+  Object.values(summaryParts.beginning).forEach(txt => htmlParts.push(`<p>${txt}</p>`));
+  Object.values(summaryParts.before_measures).forEach(txt => htmlParts.push(`<p>${txt}</p>`));
+
+  // Risiken als strukturierte Liste
+  for (const [groupKey, subgroups] of Object.entries(grouped)) {
+    const groupLabel = allRisks.find(g => g.key === groupKey)?.label?.[lang] || groupKey;
+    const riskItems = [];
+
+    for (const [subKey, labels] of Object.entries(subgroups)) {
+      let subLabel = subKey;
+      if (subKey === "common") {
+        subLabel = translations?.[lang]?.headings?.general_risks || "Allgemeine Risiken";
+      } else {
+        const subgroup = risksData.risks.children[0]?.[groupKey]?.[subKey];
+        subLabel = subgroup?.label?.[lang] || subKey;
+      }
+      riskItems.push(`<li><b>${subLabel}:</b> ${labels.join(', ')}</li>`);
+    }
+
+    htmlParts.push(`<p><b>${groupLabel}</b><ul>${riskItems.join('')}</ul></p>`);
+  }
+
+  Object.values(summaryParts.after_measures).forEach(txt => htmlParts.push(`<p>${txt}</p>`));
+  Object.values(summaryParts.end).forEach(txt => htmlParts.push(`<p>${txt}</p>`));
+
+  // In HTML-DIV schreiben
+  const output = document.getElementById("summaryText");
+  if (output) output.innerHTML = htmlParts.join("\n");
+}
+
+
+function OLD__generateSummary() {
   const lang = currentLang || 'de';
 
   const summaryParts = {
