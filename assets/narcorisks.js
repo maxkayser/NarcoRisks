@@ -779,9 +779,14 @@ function OLD__generateSummary() {
 
     for (const [subKey, labels] of Object.entries(subgroups)) {
       let subgroupLabel = subKey;
+      //if (subKey === "common") {
+      //  subgroupLabel = translations?.[lang]?.headings?.general_risks || "Allgemeine Risiken";
+      //} 
       if (subKey === "common") {
-        subgroupLabel = translations?.[lang]?.headings?.general_risks || "Allgemeine Risiken";
-      } else {
+        const commonNode = risksData.risks.children[0]?.[groupKey]?.[subKey];
+        subgroupLabel = commonNode?.label?.[lang] || "General risks";
+      }
+      else {
         const subgroup = risksData.risks.children[0]?.[groupKey]?.[subKey];
         if (subgroup?.label?.[lang]) {
           subgroupLabel = subgroup.label[lang];
