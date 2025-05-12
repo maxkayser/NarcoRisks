@@ -57,6 +57,21 @@ function copyToClipboard() {
   alert("Text copied to clipboard.");
 }
 
+function downloadSummary() {
+  const html = document.getElementById("summaryText")?.innerHTML || "";
+  const text = htmlToFormattedText(html);
+
+  const blob = new Blob([text], { type: "text/plain;charset=utf-8" });
+  const url = URL.createObjectURL(blob);
+
+  const link = document.createElement("a");
+  link.href = url;
+  link.download = "aufklaerung.txt";
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
+  URL.revokeObjectURL(url);
+}
 
 
 /**
