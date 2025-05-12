@@ -704,7 +704,7 @@ function generateSummary() {
     for (const [subKey, labels] of Object.entries(subgroups)) {
       const subgroupNode = risksData.risks.children[0]?.[groupKey]?.[subKey];
       const subLabel = subgroupNode?.label?.[lang] || subKey;
-      riskItems.push(`<li><b>${subLabel}:</b> ${labels.join(', ')}</li>`);
+      riskItems.push(`<li><b>${subLabel}:</b> ${labels.join('; ')}</li>`);
     }
 
     htmlParts.push(`<p><b>${groupLabel}</b><ul>${riskItems.join('')}</ul></p>`);
