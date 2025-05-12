@@ -272,9 +272,6 @@
           },
           "position": "after"
         },
-
-
-        
         "coagulation_disorder": {
           "label": {
             "de": "Gerinnungsstörung",
@@ -479,19 +476,6 @@
         "fr": "Particularités médico-légales"
       },
       "items": {
-        "refused_information": {
-          "label": {
-            "de": "Aufklärung verzichtet",
-            "en": "Waiver of detailed information",
-            "fr": "Renonciation à l'information détaillée"
-          },
-          "text": {
-            "de": "Eine ausführliche Aufklärung wurde angeboten, jedoch vom Patienten abgelehnt...",
-            "en": "Detailed information was offered, but declined by the patient...",
-            "fr": "Des informations détaillées ont été proposées, mais refusées par le patient..."
-          },
-          "position": "before"
-        },
         "refusal_blood_products": {
           "label": {
             "de": "Ablehnung von Blutprodukten",
