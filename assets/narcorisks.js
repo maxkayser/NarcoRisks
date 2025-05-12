@@ -11,7 +11,7 @@ const risksUrl = 'https://raw.githubusercontent.com/maxkayser/NarkoSafe/main/dat
 let risksData = {};
 let allRisks = [];
 
-function htmlToFormattedText(html) {
+function htmlToFormattedText(html) { 
   const tempDiv = document.createElement("div");
   tempDiv.innerHTML = html;
 
