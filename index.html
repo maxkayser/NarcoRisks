@@ -33,7 +33,6 @@
     <h2 data-i18n="headings.context_associated_risks"></h2>
 	<div id="staticTextblockCheckboxes" class="checkbox-grid" style="margin-top:1em;"></div>
 	<style>
-		/* === Contextual Risk Groups (Textblocks) === */
 .category {
   font-weight: bold;
   margin-top: 1em;
@@ -100,9 +99,19 @@
     </label>
   </section>
   <section>
-    <h2 data-i18n="headings.summary"></h2>
-    <textarea id="summaryText" readonly></textarea>
-    	<button onclick="copyToClipboard()" id="copyButton" data-i18n="buttons.copy"></button>
+	<h2 data-i18n="headings.summary"></h2>
+	<div id="summaryText" class="scrollbox"></div>
+	  <style>
+		  .scrollbox {
+			  max-height: 300px;
+			  overflow-y: auto;
+			  border: 1px solid #ccc;
+			  padding: 1em;
+			  white-space: pre-wrap;
+		}
+	  </style>
+	<!--<textarea id="OLD_summaryText" readonly></textarea>-->
+	<button onclick="copyToClipboard()" id="copyButton" data-i18n="buttons.copy"></button>
 	<button id="resetButton" data-i18n="buttons.reset"></button>
 
   </section>
