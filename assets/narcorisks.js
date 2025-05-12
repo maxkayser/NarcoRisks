@@ -11,16 +11,52 @@ const risksUrl = 'https://raw.githubusercontent.com/maxkayser/NarkoSafe/main/dat
 let risksData = {};
 let allRisks = [];
 
-/**
- * Copies the generated summary text to the clipboard.
- */
+function htmlToFormattedText(html) {
+  const tempDiv = document.createElement("div");
+  tempDiv.innerHTML = html;
+
+  // Zeilenumbrüche für <br>
+  tempDiv.querySelectorAll("br").forEach(br => br.replaceWith("\n"));
+
+  // Blockelemente mit Zeilenumbruch vor und nach
+  const blockTags = ['p', 'div', 'section', 'article', 'header', 'footer', 'table', 'tr'];
+  blockTags.forEach(tag => {
+    tempDiv.querySelectorAll(tag).forEach(el => {
+      el.insertAdjacentText("beforebegin", "\n");
+      el.insertAdjacentText("afterend", "\n");
+    });
+  });
+
+  // Listenpunkte formatieren
+  tempDiv.querySelectorAll("li").forEach(li => {
+    li.insertAdjacentText("beforebegin", "\n- ");
+    li.insertAdjacentText("afterend", "\n");
+  });
+
+  tempDiv.querySelectorAll("ul, ol").forEach(list => {
+    list.insertAdjacentText("beforebegin", "\n");
+    list.insertAdjacentText("afterend", "\n");
+  });
+
+  return tempDiv.textContent.replace(/\n\s*\n/g, "\n\n").trim();
+}
+
 function copyToClipboard() {
-  const summary = document.getElementById("summaryText");
-  summary.select();
-  summary.setSelectionRange(0, 99999);
+  const html = document.getElementById("summaryText")?.innerHTML || "";
+  const text = htmlToFormattedText(html);
+
+  const tempTextarea = document.createElement("textarea");
+  tempTextarea.style.position = "fixed";
+  tempTextarea.style.opacity = "0";
+  tempTextarea.value = text;
+  document.body.appendChild(tempTextarea);
+  tempTextarea.select();
   document.execCommand("copy");
+  document.body.removeChild(tempTextarea);
+
   alert("Text copied to clipboard.");
 }
+
 
 /**
  * Loads risk data from the external JSON file.
