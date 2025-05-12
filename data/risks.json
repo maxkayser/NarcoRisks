@@ -911,9 +911,16 @@
           },
           "rsi": {
             "label": {
-              "de": "Rapid Sequence Induction (RSI / mRSI)",
-              "en": "Rapid Sequence Induction (RSI / mRSI)",
-              "fr": "Induction à séquence rapide (RSI / mRSI)"
+              "de": "Blitzeinleitung",
+              "en": "Rapid Sequence Induction",
+              "fr": "Induction en séquence rapide"
+            },
+            "m_rsi": {
+              "label": {
+                "de": "RSI / mRSI",
+                "en": "RSI / mRSI",
+                "fr": "RSI / mRSI"
+              }
             },
             "aspiration": {
               "label": {
