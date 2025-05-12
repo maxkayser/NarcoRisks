@@ -5117,6 +5117,8 @@
             "fr": "N0 – immédiate"
           },
           "associated_risks": [
+            "organizational.intro",
+            "organizational.closing",
             "contextual_risks.emergency_surgery",
             "contextual_risks.time_pressure_consent",
             "contextual_risks.aspiration_risk",
