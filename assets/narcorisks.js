@@ -23,7 +23,7 @@ function htmlToFormattedText(html) {
   blockTags.forEach(tag => {
     tempDiv.querySelectorAll(tag).forEach(el => {
       el.insertAdjacentText("beforebegin", "\n");
-      el.insertAdjacentText("afterend", "\n");
+      el.insertAdjacentText("afterend", "");
     });
   });
 
