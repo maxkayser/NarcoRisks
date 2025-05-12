@@ -61,6 +61,11 @@ async function loadRisks() {
     renderProcedureSelectors();
     renderPresetOptions();
 
+    setTimeout(() => {
+      console.log('[Init] Generating summary');
+      generateSummary();
+    }, 100);
+
   } catch (error) {
     document.getElementById('risksOutput').innerText = 'Error loading risk data.';
     console.error(error);
