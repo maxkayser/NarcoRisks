@@ -5145,212 +5145,214 @@
     }
   },
   "presets": {
-    "surgical_urgency": {
-      "label": {
-        "de": "Operative-Dringlichkeitsstufe",
-        "en": "Surgical priority level",
-        "fr": "Niveau de priorité chirurgicale"
-      },
-      "options": {
-        "n0": {
-          "label": {
-            "de": "N0 – sofort",
-            "en": "N0 – immediate",
-            "fr": "N0 – immédiate"
-          },
-          "associated_risks": [
-            "organizational.intro",
-            "organizational.closing",
-            "contextual_risks.emergency_surgery",
-            "contextual_risks.time_pressure_consent",
-            "contextual_risks.aspiration_risk",
-            "general_anesthesia.common",
-            "general_anesthesia.full",
-            "general_anesthesia.rsi",
-            "lines_catheters.common",            
-            "lines_catheters.peripheral_iv",
-            "lines_catheters.arterial_catheter",
-            "lines_catheters.shaldon_catheter",
-            "lines_catheters.intraosseous_access",
-            "lines_catheters.central_venous_catheter",
-            "lines_catheters.bladder_catheter",
-            "lines_catheters.gastric_tube",
-            "blood_management.transfusion"
-          ]
+    "presets": {
+      "surgical_urgency": {
+        "label": {
+          "de": "Operative-Dringlichkeitsstufe",
+          "en": "Surgical priority level",
+          "fr": "Niveau de priorité chirurgicale"
         },
-        "n1": {
-          "label": {
-            "de": "N1 – Notfall, innerhalb von 1 Stunde",
-            "en": "N1 – emergency, within 1 hour",
-            "fr": "N1 – urgence, dans moins d'une heure"
+        "options": {
+          "n0": {
+            "label": {
+              "de": "N0 – sofort",
+              "en": "N0 – immediate",
+              "fr": "N0 – immédiate"
+            },
+            "associated_risks": [
+              "consultation_framework.intro",
+              "consultation_framework.closing",
+              "consent_context.emergency_surgery",
+              "consent_context.time_pressure_consent",
+              "medical_context.aspiration_risk",
+              "general_anesthesia.common",
+              "general_anesthesia.full",
+              "general_anesthesia.rsi",
+              "lines_catheters.common",
+              "lines_catheters.peripheral_iv",
+              "lines_catheters.arterial_catheter",
+              "lines_catheters.shaldon_catheter",
+              "lines_catheters.intraosseous_access",
+              "lines_catheters.central_venous_catheter",
+              "lines_catheters.bladder_catheter",
+              "lines_catheters.gastric_tube",
+              "blood_management.transfusion"
+            ]
           },
-          "associated_risks": [
-            "contextual_risks.emergency_surgery",
-            "contextual_risks.time_pressure_consent",
-            "contextual_risks.aspiration_risk",
-            "general_anesthesia.common",
-            "general_anesthesia.full",
-            "general_anesthesia.rsi",
-            "lines_catheters.common",            
-            "lines_catheters.peripheral_iv",
-            "lines_catheters.arterial_catheter",
-            "lines_catheters.shaldon_catheter",
-            "lines_catheters.central_venous_catheter",
-            "lines_catheters.bladder_catheter",
-            "lines_catheters.gastric_tube",
-            "blood_management.transfusion"
-          ]
-        },
-        "n2": {
-          "label": {
-            "de": "N2 – innerhalb von 6 Stunden",
-            "en": "N2 – within 6 hours",
-            "fr": "N2 – dans les 6 heures"
+          "n1": {
+            "label": {
+              "de": "N1 – Notfall, innerhalb von 1 Stunde",
+              "en": "N1 – emergency, within 1 hour",
+              "fr": "N1 – urgence, dans moins d'une heure"
+            },
+            "associated_risks": [
+              "consent_context.emergency_surgery",
+              "consent_context.time_pressure_consent",
+              "medical_context.aspiration_risk",
+              "general_anesthesia.common",
+              "general_anesthesia.full",
+              "general_anesthesia.rsi",
+              "lines_catheters.common",
+              "lines_catheters.peripheral_iv",
+              "lines_catheters.arterial_catheter",
+              "lines_catheters.shaldon_catheter",
+              "lines_catheters.central_venous_catheter",
+              "lines_catheters.bladder_catheter",
+              "lines_catheters.gastric_tube",
+              "blood_management.transfusion"
+            ]
           },
-          "associated_risks": [
-            "contextual_risks.emergency_surgery",
-            "contextual_risks.time_pressure_consent",
-            "general_anesthesia.common",
-            "general_anesthesia.full",
-            "general_anesthesia.rsi",
-            "lines_catheters.common",            
-            "lines_catheters.peripheral_iv",
-            "lines_catheters.arterial_catheter",
-            "lines_catheters.central_venous_catheter",
-            "lines_catheters.gastric_tube",
-            "blood_management.transfusion"
-          ]
-        },
-        "n3": {
-          "label": {
-            "de": "N3 – innerhalb von 12 Stunden",
-            "en": "N3 – within 12 hours",
-            "fr": "N3 – dans les 12 heures"
+          "n2": {
+            "label": {
+              "de": "N2 – innerhalb von 6 Stunden",
+              "en": "N2 – within 6 hours",
+              "fr": "N2 – dans les 6 heures"
+            },
+            "associated_risks": [
+              "consent_context.emergency_surgery",
+              "consent_context.time_pressure_consent",
+              "general_anesthesia.common",
+              "general_anesthesia.full",
+              "general_anesthesia.rsi",
+              "lines_catheters.common",
+              "lines_catheters.peripheral_iv",
+              "lines_catheters.arterial_catheter",
+              "lines_catheters.central_venous_catheter",
+              "lines_catheters.gastric_tube",
+              "blood_management.transfusion"
+            ]
           },
-          "associated_risks": [
-            "contextual_risks.emergency_surgery",
-            "contextual_risks.time_pressure_consent",
-            "general_anesthesia.common",
-            "general_anesthesia.full",
-            "general_anesthesia.rsi",
-            "lines_catheters.common",            
-            "lines_catheters.peripheral_iv"
-          ]
-        },
-        "n4": {
-          "label": {
-            "de": "N4 – innerhalb von 24 Stunden",
-            "en": "N4 – within 24 hours",
-            "fr": "N4 – dans les 24 heures"
+          "n3": {
+            "label": {
+              "de": "N3 – innerhalb von 12 Stunden",
+              "en": "N3 – within 12 hours",
+              "fr": "N3 – dans les 12 heures"
+            },
+            "associated_risks": [
+              "consent_context.emergency_surgery",
+              "consent_context.time_pressure_consent",
+              "general_anesthesia.common",
+              "general_anesthesia.full",
+              "general_anesthesia.rsi",
+              "lines_catheters.common",
+              "lines_catheters.peripheral_iv"
+            ]
           },
-          "associated_risks": [
-            "contextual_risks.emergency_surgery",
-            "general_anesthesia.common",
-            "general_anesthesia.full",
-            "general_anesthesia.rsi",
-            "lines_catheters.common",            
-            "lines_catheters.peripheral_iv"
-          ]
-        },
-        "n5": {
-          "label": {
-            "de": "N5 – elektiv",
-            "en": "N5 – elective",
-            "fr": "N5 – élective"
+          "n4": {
+            "label": {
+              "de": "N4 – innerhalb von 24 Stunden",
+              "en": "N4 – within 24 hours",
+              "fr": "N4 – dans les 24 heures"
+            },
+            "associated_risks": [
+              "consent_context.emergency_surgery",
+              "general_anesthesia.common",
+              "general_anesthesia.full",
+              "general_anesthesia.rsi",
+              "lines_catheters.common",
+              "lines_catheters.peripheral_iv"
+            ]
           },
-          "associated_risks": [
-            "lines_catheters.common",            
-            "lines_catheters.peripheral_iv"
-          ]
+          "n5": {
+            "label": {
+              "de": "N5 – elektiv",
+              "en": "N5 – elective",
+              "fr": "N5 – élective"
+            },
+            "associated_risks": [
+              "lines_catheters.common",
+              "lines_catheters.peripheral_iv"
+            ]
+          }
         }
-      }
-    },
-    "asa_status": {
-      "label": {
-        "de": "ASA-Status",
-        "en": "ASA Status",
-        "fr": "Statut ASA"
       },
-      "options": {
-        "asa1": {
-          "label": {
-            "de": "I – gesunder Patient",
-            "en": "I – healthy patient",
-            "fr": "I – patient en bonne santé"
-          },
-          "associated_risks": [
-            "lines_catheters.common",   
-            "lines_catheters.peripheral_iv"
-          ]
+      "asa_status": {
+        "label": {
+          "de": "ASA-Status",
+          "en": "ASA Status",
+          "fr": "Statut ASA"
         },
-        "asa2": {
-          "label": {
-            "de": "II – geringfügige Erkrankung ohne Einschränkungen",
-            "en": "II – mild disease without limitations",
-            "fr": "II – maladie mineure sans limitations"
+        "options": {
+          "asa1": {
+            "label": {
+              "de": "I – gesunder Patient",
+              "en": "I – healthy patient",
+              "fr": "I – patient en bonne santé"
+            },
+            "associated_risks": [
+              "lines_catheters.common",
+              "lines_catheters.peripheral_iv"
+            ]
           },
-          "associated_risks": []
-        },
-        "asa3": {
-          "label": {
-            "de": "III – Erkrankung mit deutlicher Beeinträchtigung",
-            "en": "III – disease with significant limitation",
-            "fr": "III – maladie avec limitation significative"
+          "asa2": {
+            "label": {
+              "de": "II – geringfügige Erkrankung ohne Einschränkungen",
+              "en": "II – mild disease without limitations",
+              "fr": "II – maladie mineure sans limitations"
+            },
+            "associated_risks": []
           },
-          "associated_risks": [
-            "lines_catheters.common",       
-            "lines_catheters.peripheral_iv",     
-            "lines_catheters.arterial_catheter",
-            "lines_catheters.central_venous_catheter"
-          ]
-        },
-        "asa4": {
-          "label": {
-            "de": "IV – lebensbedrohliche Erkrankung",
-            "en": "IV – life-threatening disease",
-            "fr": "IV – maladie menaçant la vie"
+          "asa3": {
+            "label": {
+              "de": "III – Erkrankung mit deutlicher Beeinträchtigung",
+              "en": "III – disease with significant limitation",
+              "fr": "III – maladie avec limitation significative"
+            },
+            "associated_risks": [
+              "lines_catheters.common",
+              "lines_catheters.peripheral_iv",
+              "lines_catheters.arterial_catheter",
+              "lines_catheters.central_venous_catheter"
+            ]
           },
-          "associated_risks": [
-            "general_anesthesia.common",
-            "general_anesthesia.full",
-            "general_anesthesia.rsi",
-            "lines_catheters.common",            
-            "lines_catheters.peripheral_iv",
-            "lines_catheters.arterial_catheter",
-            "lines_catheters.bladder_catheter",
-            "lines_catheters.central_venous_catheter",
-            "lines_catheters.shaldon_catheter",
-            "lines_catheters.gastric_tube"
-          ]
-        },
-        "asa5": {
-          "label": {
-            "de": "V – moribunder Patient",
-            "en": "V – moribund patient",
-            "fr": "V – patient moribond"
+          "asa4": {
+            "label": {
+              "de": "IV – lebensbedrohliche Erkrankung",
+              "en": "IV – life-threatening disease",
+              "fr": "IV – maladie menaçant la vie"
+            },
+            "associated_risks": [
+              "general_anesthesia.common",
+              "general_anesthesia.full",
+              "general_anesthesia.rsi",
+              "lines_catheters.common",
+              "lines_catheters.peripheral_iv",
+              "lines_catheters.arterial_catheter",
+              "lines_catheters.bladder_catheter",
+              "lines_catheters.central_venous_catheter",
+              "lines_catheters.shaldon_catheter",
+              "lines_catheters.gastric_tube"
+            ]
           },
-          "associated_risks": [
-            "general_anesthesia.common",
-            "general_anesthesia.full",
-            "general_anesthesia.rsi",
-            "lines_catheters.common",
-            "lines_catheters.peripheral_iv",
-            "lines_catheters.arterial_catheter",
-            "lines_catheters.central_venous_catheter",
-            "lines_catheters.shaldon_catheter",
-            "lines_catheters.intraosseous_access",
-            "lines_catheters.bladder_catheter",
-            "lines_catheters.gastric_tube",
-            "blood_management.transfusion"
-          ]
-        },
-        "asa6": {
-          "label": {
-            "de": "VI – hirntoter Organspender",
-            "en": "VI – brain-dead organ donor",
-            "fr": "VI – donneur en mort cérébrale"
+          "asa5": {
+            "label": {
+              "de": "V – moribunder Patient",
+              "en": "V – moribund patient",
+              "fr": "V – patient moribond"
+            },
+            "associated_risks": [
+              "general_anesthesia.common",
+              "general_anesthesia.full",
+              "general_anesthesia.rsi",
+              "lines_catheters.common",
+              "lines_catheters.peripheral_iv",
+              "lines_catheters.arterial_catheter",
+              "lines_catheters.central_venous_catheter",
+              "lines_catheters.shaldon_catheter",
+              "lines_catheters.intraosseous_access",
+              "lines_catheters.bladder_catheter",
+              "lines_catheters.gastric_tube",
+              "blood_management.transfusion"
+            ]
           },
-          "associated_risks": []
+          "asa6": {
+            "label": {
+              "de": "VI – hirntoter Organspender",
+              "en": "VI – brain-dead organ donor",
+              "fr": "VI – donneur en mort cérébrale"
+            },
+            "associated_risks": []
+          }
         }
       }
     }
