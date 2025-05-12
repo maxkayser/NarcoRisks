@@ -1377,6 +1377,13 @@
               "en": "Difficult airway",
               "fr": "Voies aériennes difficiles"
             },
+            "videolaryngoscopy": {
+                "label": {
+                  "de": "Videolaryngoskopie",
+                  "en": "Videolaryngoscopy",
+                  "fr": "Vidéo-laryngoscopie"
+                }
+            },
             "failed_intubation": {
               "label": {
                 "de": "Erschwerte / fehlgeschlagene Intubation",
