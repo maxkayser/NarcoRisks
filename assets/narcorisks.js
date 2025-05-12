@@ -349,7 +349,11 @@ function findRiskCheckbox(path) {
   return all.find(cb => cb.value.startsWith(path + "."));
 }
 
+
+
 function handlePresetSelection(key, value) {
+  console.log(`[Preset] Handling selection for key: ${key}, value: ${value}`);
+
   const preset = risksData?.presets?.[key];
   const lang = currentLang || 'de';
   if (!preset) {
@@ -371,6 +375,7 @@ function handlePresetSelection(key, value) {
 
     if (input) {
       input.checked = true;
+      console.log(`[Preset] Found risk checkbox for ${path}`);
 
       // Also activate children (sub-risks)
       const children = document.querySelectorAll(`input[name="riskSubgroups"][value^="${input.value}."]`);
@@ -386,27 +391,24 @@ function handlePresetSelection(key, value) {
         activateCommonItems(groupKey, entriesContainer);
       }
 
-      console.log(`[PresetSelection] Directly activated: ${input.value}`);
       children.forEach(cb => {
-        console.log(`[PresetSelection]   → Sub-risk activated: ${cb.value}`);
+        console.log(`[Preset]   → Sub-risk activated: ${cb.value}`);
       });
 
     } else if (path.startsWith("contextual_risks.")) {
-      // Handle context-associated risks (e.g., emergency_surgery, aspiration_risk)
-      const textblockKey = path.replace("contextual_risks.", "");
-      const textblockCheckbox = document.querySelector(`input[name="textblock"][value="${textblockKey}"]`);
-      if (textblockCheckbox) {
-        textblockCheckbox.checked = true;
-        console.log(`[PresetSelection] Contextual textblock activated: ${textblockKey}`);
+      const rawKey = path.replace("contextual_risks.", "");
+      const checkbox = document.querySelector(`input[name="textblock"][value*="${rawKey}"]`);
+      if (checkbox) {
+        checkbox.checked = true;
+        console.log(`[Preset] Contextual textblock activated for: ${rawKey}`);
       } else {
-        console.warn(`[PresetSelection] No contextual textblock found for: ${textblockKey}`);
+        console.warn(`[Preset] No textblock checkbox found matching: ${rawKey}`);
       }
 
     } else {
-      // Attempt fallback activation if no exact checkbox match
-      console.warn(`[PresetSelection] No direct input field for: ${path}`);
+      console.warn(`[Preset] No direct input field for: ${path}`);
       activateRiskAndChildren(path);
-      console.log(`[PresetSelection] activateRiskAndChildren() fallback triggered for: ${path}`);
+      console.log(`[Preset] activateRiskAndChildren() fallback triggered for: ${path}`);
     }
   });
 
