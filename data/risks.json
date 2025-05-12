@@ -45,6 +45,11 @@
         "de": "Zurücksetzen",
         "en": "Reset",
         "fr": "Réinitialiser"
+      },
+      "download": {
+        "de": "Herunterladen",
+        "en": "Download",
+        "fr": "Télécharger"
       }
     },
     "language_selection": {
