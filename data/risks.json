@@ -92,7 +92,8 @@
             "en": "As part of the preoperative anesthesiology consultation, the following risks were thoroughly discussed, taking into account the individual context:",
             "fr": "Dans le cadre de la visite préopératoire en anesthésie, les risques suivants ont été discutés en détail en tenant compte du contexte individuel :"
           },
-          "position": "intro"
+          "position": "intro",
+          "default": true
         },
         "closing": {
           "label": {
