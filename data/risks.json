@@ -506,8 +506,8 @@
     }
   },
   "defaults": {
-    "organizational.intro": true,
-    "organizational.closing": true,
+    "textblock.organizational.intro": true,
+    "textblock.organizational.closing": true,
     "risks.general_anesthesia.full": true,
     "risks.lines_catheters.peripheral_iv": true
   },
