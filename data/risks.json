@@ -1114,9 +1114,9 @@
           },
           "flow_controlled_ventilation": {
             "label": {
-              "de": "Flow-Controlled Ventilation (FCV)",
-              "en": "Flow-Controlled Ventilation (FCV)",
-              "fr": "Ventilation à débit contrôlé (FCV)"
+              "de": "Flow-kontrollierte Beatmung",
+              "en": "Flow-Controlled Ventilation",
+              "fr": "Ventilation à débit contrôlé"
             },
             "mucus_obstruction": {
               "label": {
@@ -1149,9 +1149,9 @@
           },
           "non_invasive_ventilation": {
             "label": {
-              "de": "Nicht-invasive Beatmung (NIV)",
-              "en": "Non-invasive ventilation (NIV)",
-              "fr": "Ventilation non invasive (VNI)"
+              "de": "Nicht-invasive Beatmung",
+              "en": "Non-invasive ventilation",
+              "fr": "Ventilation non invasive"
             },
             "CPAP": {
               "label": {
