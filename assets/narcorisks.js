@@ -778,20 +778,18 @@ function OLD__generateSummary() {
     formattedRiskText.push(groupLabel);
 
     for (const [subKey, labels] of Object.entries(subgroups)) {
-      let subgroupLabel = subKey;
-      //if (subKey === "common") {
-      //  subgroupLabel = translations?.[lang]?.headings?.general_risks || "Allgemeine Risiken";
-      //} 
+      let subgroupLabel;
       if (subKey === "common") {
-        const commonNode = risksData.risks.children[0]?.[groupKey]?.[subKey];
-        subgroupLabel = commonNode?.label?.[lang] || "General risks";
-      }
-      else {
+        subgroupLabel = translations?.[lang]?.headings?.general_risks || "Allgemeine Risiken";
+      } else {
         const subgroup = risksData.risks.children[0]?.[groupKey]?.[subKey];
         if (subgroup?.label?.[lang]) {
           subgroupLabel = subgroup.label[lang];
+        } else {
+          subgroupLabel = subKey;
         }
       }
+
       formattedRiskText.push(`${subgroupLabel}: ${labels.join(', ')}`);
     }
 
