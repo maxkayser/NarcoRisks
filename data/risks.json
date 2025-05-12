@@ -2397,8 +2397,8 @@
           },
           "peripheral_iv": {
             "label": {
-              "de": "Peripher-venöser Zugang (PVK)",
-              "en": "Peripheral venous catheter (PVC)",
+              "de": "Peripher-venöser Zugang",
+              "en": "Peripheral venous catheter",
               "fr": "Cathéter veineux périphérique"
             },
             "hematoma": {
@@ -2446,9 +2446,9 @@
           },
           "central_venous_catheter": {
             "label": {
-              "de": "Zentral-venöser Zugang (ZVK)",
-              "en": "Central venous catheter (CVC)",
-              "fr": "Cathéter veineux central (CVC)"
+              "de": "Zentral-venöser Zugang",
+              "en": "Central venous catheter",
+              "fr": "Cathéter veineux central"
             },
             "pneumothorax": {
               "label": {
