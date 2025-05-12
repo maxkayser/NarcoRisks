@@ -347,7 +347,7 @@ function renderProcedureSelectors() {
   const procSelect = document.getElementById("procedureSelect");
 
   // Reset
-  deptSelect.innerHTML = '<option value="">–-</option>';
+  deptSelect.innerHTML = '<option value="">––</option>';
   procSelect.innerHTML = '<option value="">––</option>';
   procSelect.disabled = true;
 
