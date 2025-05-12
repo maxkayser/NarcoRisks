@@ -585,7 +585,7 @@ function generateSummary() {
   // Freitext
   const additionalText = document.getElementById("additionalText")?.value?.trim();
   if (additionalText) {
-    summaryParts.end.push(additionalText);
+    summaryParts.after_measures.push(additionalText);
   }
 
   // Alles zusammenfügen
