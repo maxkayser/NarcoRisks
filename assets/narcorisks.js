@@ -639,18 +639,17 @@ function renderTextblockToggles() {
 
     Object.entries(groupContent).forEach(([key, value]) => {
       if (key === 'label') return;
-    
       const checkbox = document.createElement('input');
       checkbox.type = 'checkbox';
       checkbox.name = 'textblock';
       checkbox.value = `${groupKey}.${key}`;
       checkbox.addEventListener('change', generateSummary);
-    
-      // <-- PATCH: activate defaults if specified
+
       if (risksData?.defaults?.[`textblock.${groupKey}.${key}`]) {
         checkbox.checked = true;
+        console.log(`[Defaults] Activated default textblock: textblock.${groupKey}.${key}`);
       }
-    
+
       const label = document.createElement('label');
       label.appendChild(checkbox);
       const checkboxLabel = value.label?.[lang] || key;
@@ -659,6 +658,7 @@ function renderTextblockToggles() {
     });
   });
 }
+
 
 /**
  * Renders static checkboxes for predefined text blocks (non-dynamic).
@@ -691,18 +691,18 @@ function renderStaticTextblockCheckboxes() {
     if (group.items) {
       Object.entries(group.items).forEach(([itemKey, itemData]) => {
         const label = itemData.label?.[lang] || itemKey;
-      
         const checkbox = document.createElement('input');
         checkbox.type = 'checkbox';
         checkbox.name = 'textblock';
         checkbox.value = `${groupKey}.${itemKey}`;
         checkbox.addEventListener('change', generateSummary);
-      
-        // <-- PATCH: activate defaults if specified
+
+        
         if (risksData?.defaults?.[`textblock.${groupKey}.${itemKey}`]) {
           checkbox.checked = true;
+          console.log(`[Defaults] Activated default textblock: textblock.${groupKey}.${itemKey}`);
         }
-      
+
         const wrapper = document.createElement('label');
         wrapper.appendChild(checkbox);
         wrapper.appendChild(document.createTextNode(' ' + label));
@@ -711,6 +711,8 @@ function renderStaticTextblockCheckboxes() {
     }
   });
 }
+
+
 
 document.getElementById('language').addEventListener('change', () => {
   currentLang = document.getElementById('language').value;
