@@ -147,6 +147,34 @@
           },
           "position": "before"
         },
+        "urgency_justified": {
+          "label": {
+            "de": "Maßnahme nach mutmaßlichem Willen",
+            "en": "Intervention based on presumed will",
+            "fr": "Intervention selon la volonté présumée"
+          },
+          "text": {
+            "de": "Die Durchführung der Maßnahme erfolgte im mutmaßlichen Willen bei fehlender Einwilligungsfähigkeit und medizinischer Dringlichkeit.",
+            "en": "The intervention was carried out based on presumed will in the absence of decision-making capacity and due to medical urgency.",
+            "fr": "L'intervention a été réalisée sur la base de la volonté présumée, en l'absence de capacité à consentir et en raison d'une urgence médicale."
+          },
+          "position": "before",
+          "default": false
+        },
+        "proxy_consent": {
+          "label": {
+            "de": "Stellvertretende Einwilligung",
+            "en": "Representative consent",
+            "fr": "Consentement par représentant"
+          },
+          "text": {
+            "de": "Die Aufklärung und Einwilligung erfolgten durch eine rechtlich vertretungsberechtigte Person. Die Entscheidungsbefugnis wurde nachvollziehbar dargelegt.",
+            "en": "Consent was obtained from a legally authorized representative. The authority to decide was credibly presented.",
+            "fr": "Le consentement a été obtenu auprès d’une personne habilitée à représenter. La légitimité de la représentation a été démontrée de manière compréhensible."
+          },
+          "position": "closing",
+          "default": false
+        },
         "teleconsent": {
           "label": {
             "de": "Online-Aufklärung",
