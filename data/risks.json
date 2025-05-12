@@ -107,6 +107,73 @@
           },
           "position": "after"
         },
+        "refused_information": {
+          "label": {
+            "de": "Aufklärung verzichtet",
+            "en": "Waiver of detailed information",
+            "fr": "Renonciation à l'information détaillée"
+          },
+          "text": {
+            "de": "Eine ausführliche Aufklärung über die geplanten Verfahren und damit verbundenen Risiken wurde angeboten, jedoch vom Patienten/der Patientin ausdrücklich und unmissverständlich abgelehnt. Es bestanden keine Zweifel an der rechtmäßigen und uneingeschränkten Entscheidungsfähigkeit. Der Wille des Patienten/der Patientin wurde respektiert.",
+            "en": "Detailed information about the planned procedures and associated risks was offered, but was explicitly and unequivocally declined by the patient. There were no doubts regarding the patient's legal capacity and decision-making ability. The patient's will was respected.",
+            "fr": "Des informations détaillées sur les procédures prévues et les risques associés ont été proposées, mais ont été expressément et sans équivoque refusées par le/la patient·e. Aucune incertitude quant à la capacité juridique et à la faculté de décision n’a été constatée. La volonté du/de la patient·e a été respectée."
+          },
+          "position": "before"
+        },
+        "combined_consent_anesthesia": {
+          "label": {
+            "de": "Daueraufklärung",
+            "en": "Extended consent",
+            "fr": "Consentement élargi"
+          },
+          "text": {
+            "de": "Daueraufklärung: die Aufklärung erfolgt für den geplanten Eingriff sowie für unmittelbar geplante Folgeeingriffe.",
+            "en": "Extended consent: the consent applies to the planned procedure as well as directly scheduled follow-up procedures.",
+            "fr": "Consentement élargi: le consentement s’applique à l’intervention prévue ainsi qu’aux interventions complémentaires immédiatement programmées."
+          },
+          "position": "intro"
+        },
+        "outgoing_patient": {
+          "label": {
+            "de": "Ambulante OP",
+            "en": "Outpatient care",
+            "fr": "Opération ambulatoire"
+          },
+          "text": {
+            "de": "Für die ambulante Versorgung wurde eine volljährige Begleitperson zur Abholung und Betreuung in den ersten 24 Stunden nach dem Eingriff benannt und deren Kontaktdaten dokumentiert. Die Verfügbarkeit einer medizinischen Notfallversorgung am postoperativen Aufenthaltsort (< 30 Minuten erreichbar) wurde bestätigt. Ein Merkblatt mit detaillierten Informationen zu den Besonderheiten ambulanter Eingriffe sowie verbindlichen Verhaltensregeln wurde übergeben. Es wurde insbesondere hingewiesen auf: keine aktive Teilnahme am Straßenverkehr, keine Einnahme von Alkohol oder anderen bewusstseinsverändernden Substanzen, keine rechtsverbindlichen Entscheidungen. Verhalten im Falle von Komplikationen wurde erläutert, eine Notfallnummer und eine erreichbare Anschrift wurden übermittelt. **Bei Komplikationen oder nicht erfüllten Voraussetzungen (z. B. fehlende Begleitperson, unzureichende häusliche Betreuung) kann eine stationäre Aufnahme erforderlich werden.**",
+            "en": "For outpatient care, an adult escort was designated for pickup and supervision during the first 24 hours postoperatively, with contact details documented. The availability of medical emergency services at the recovery location (reachable within < 30 minutes) was confirmed. An information leaflet was handed out, detailing the specifics of ambulatory procedures and required behavioral restrictions. Particular emphasis was placed on: no operation of vehicles, no consumption of alcohol or mind-altering substances, and no legal or contractual decisions. Instructions for the event of complications were explained, along with provision of an emergency contact number and address. **In the event of complications or unmet requirements (e.g. no escort or insufficient home supervision), inpatient admission may become necessary.**",
+            "fr": "Pour une prise en charge ambulatoire, une personne majeure a été désignée pour l’accompagnement et la surveillance durant les 24 premières heures postopératoires ; ses coordonnées ont été enregistrées. La disponibilité d’une prise en charge médicale d’urgence (< 30 minutes) sur le lieu de convalescence a été confirmée. Une fiche d’information a été remise, incluant les particularités de la chirurgie ambulatoire et les consignes à respecter. Il a notamment été précisé : ne pas conduire, ne pas consommer d’alcool ni de substances psychoactives, ne pas prendre de décisions juridiques ou contractuelles. Les conduites à tenir en cas de complication ont été expliquées et un numéro d’urgence ainsi qu’une adresse de contact ont été communiqués. **En cas de complication ou si les conditions requises ne sont pas remplies (par ex. absence d’accompagnant, surveillance insuffisante), une hospitalisation peut s’avérer nécessaire.**"
+          },
+          "position": "after"
+        },
+        "emergency_surgery": {
+          "label": {
+            "de": "Notfalloperation",
+            "en": "Emergency surgery",
+            "fr": "Chirurgie en urgence"
+          },
+          "text": {
+            "de": "Es handelt sich um eine Notfalloperation mit erhöhtem Risiko für intra- und perioperative Komplikationen.",
+            "en": "This is an emergency surgery with increased risk of intra- and perioperative complications.",
+            "fr": "Il s'agit d'une chirurgie en urgence avec un risque accru de complications per- et peropératoires."
+          },
+          "position": "after"
+        },
+        "time_pressure_consent": {
+          "label": {
+            "de": "Einwilligung unter Zeitdruck",
+            "en": "Consent under time pressure",
+            "fr": "Consentement sous contrainte de temps"
+          },
+          "text": {
+            "de": "Die Aufklärung fand unter zeitkritischen Bedingungen statt, da eine notfallmäßige Durchführung erforderlich war. Es wurde dennoch bestmöglich über die Risiken informiert.",
+            "en": "The consent was obtained under time-critical conditions due to emergency circumstances. Efforts were made to inform the patient as comprehensively as possible.",
+            "fr": "Le consentement a été obtenu dans un contexte d’urgence. Les efforts ont été faits pour fournir une information aussi complète que possible."
+          },
+          "position": "before"
+        },
+        
+        
         "interpreter": {
           "label": {
             "de": "Dolmetscher",
@@ -220,16 +287,6 @@
     }
   },
   "textblocks_OLD": {
-    "intro": {
-      "de": "Im Rahmen der präoperativen anästhesiologischen Visite wurden die folgenden Risiken unter Berücksichtigung des individuellen Kontextes ausführlich besprochen:",
-      "en": "As part of the preoperative anesthesiology consultation, the following risks were thoroughly discussed, taking into account the individual context:",
-      "fr": "Dans le cadre de la visite préopératoire en anesthésie, les risques suivants ont été discutés en détail en tenant compte du contexte individuel :"
-    },
-    "closing": {
-      "de": "Auf Nachfrage wurde bestätigt, dass alle Inhalte der anästhesiologischen Aufklärung verstanden wurden und keine offenen Fragen bestehen. Die Durchführung der Maßnahmen unter Berücksichtigung der erläuterten Risiken wird ausdrücklich gewünscht. Eine Kopie der schriftlichen Aufklärungsunterlagen wurde angeboten.",
-      "en": "It was confirmed upon request that all aspects of the anesthesiology-related information were understood and no further questions remain. The procedures, with awareness of the explained risks, are expressly requested. A copy of the written consent materials was offered.",
-      "fr": "Il a été confirmé, sur demande, que tous les éléments de l'information anesthésique ont été compris et qu’aucune question ne restait en suspens. La réalisation des mesures, en connaissance des risques expliqués, est expressément souhaitée. Une copie des documents écrits d'information a été proposée."
-    },
     "teleconsent": {
       "label": {
         "de": "Online-Aufklärung",
