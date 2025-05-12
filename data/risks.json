@@ -149,9 +149,9 @@
         },
         "urgency_justified": {
           "label": {
-            "de": "Maßnahme nach mutmaßlichem Willen",
-            "en": "Intervention based on presumed will",
-            "fr": "Intervention selon la volonté présumée"
+            "de": "Mutmaßlicher Wille",
+            "en": "Presumed will",
+            "fr": "Volonté présumée"
           },
           "text": {
             "de": "Die Durchführung der Maßnahme erfolgte im mutmaßlichen Willen bei fehlender Einwilligungsfähigkeit und medizinischer Dringlichkeit.",
