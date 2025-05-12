@@ -483,9 +483,9 @@
             "fr": "Refus des produits sanguins"
           },
           "text": {
-            "de": "Die Gabe von Blutprodukten wurde abgelehnt. Die Konsequenzen wurden erklärt.",
-            "en": "The use of blood products was refused. Consequences were explained.",
-            "fr": "L'utilisation de produits sanguins a été refusée. Les conséquences ont été expliquées."
+            "de": "Die Gabe von Blutprodukten wurde aus persönlichen oder religiösen Gründen abgelehnt. Die potenziellen Konsequenzen wurden im Detail besprochen.",
+            "en": "The administration of blood products was declined due to personal or religious beliefs. The potential consequences were discussed in detail.",
+            "fr": "L'administration de produits sanguins a été refusée pour des raisons personnelles ou religieuses. Les conséquences possibles ont été expliquées en détail."
           },
           "position": "before"
         },
@@ -496,45 +496,13 @@
             "fr": "Mineur"
           },
           "text": {
-            "de": "Aufklärung im Beisein eines Sorgeberechtigten durchgeführt...",
-            "en": "Informed consent conducted in presence of a guardian...",
-            "fr": "Information réalisée en présence d’un représentant légal..."
+            "de": "Da der/die Patient*in minderjährig ist, wurde die Aufklärung im Beisein einer/eines Sorgeberechtigten durchgeführt. Die Zustimmung erfolgte durch eine vertretungsberechtigte Person.",
+            "en": "As the patient is a minor, the informed consent discussion was held in the presence of a legal guardian. Consent was provided by an authorized representative.",
+            "fr": "Le/la patient·e étant mineur·e, l’information a été donnée en présence d’un représentant légal. Le consentement a été obtenu auprès de la personne autorisée."
           },
           "position": "before"
         }
       }
-    }
-  },
-  "textblocks_OLD": {
-    "interpreter": {
-      "label": {
-        "de": "Dolmetscher",
-        "en": "Interpreter",
-        "fr": "Interprète"
-      },
-      "de": "Aufgrund einer bestehenden Sprachbarriere erfolgte die vollständige Aufklärung im Beisein eines geeigneten Dolmetschers. Dieser versicherte auf Nachfrage, alle Inhalte vollständig und exakt übersetzt zu haben. Es erfolgten mehrfach Rückfragen an die Patientin / den Patienten, ob die Inhalte wirklich richtig verstanden wurden.",
-      "en": "Due to an existing language barrier, full information was provided in the presence of a qualified interpreter. The interpreter confirmed on request that all content was translated completely and accurately. The patient was repeatedly asked whether everything was truly understood.",
-      "fr": "En raison d'une barrière linguistique, l'explication complète a été réalisée en présence d’un interprète qualifié. Celui-ci a confirmé avoir traduit fidèlement et entièrement tous les contenus. Le patient a été interrogé à plusieurs reprises pour vérifier sa compréhension."
-    },
-    "refusal_blood_products": {
-      "label": {
-        "de": "Ablehnung von Blutprodukten",
-        "en": "Refusal of blood products",
-        "fr": "Refus des produits sanguins"
-      },
-      "de": "Die Gabe von Blutprodukten wurde aus persönlichen oder religiösen Gründen abgelehnt. Die potenziellen Konsequenzen wurden im Detail besprochen.",
-      "en": "The administration of blood products was declined due to personal or religious beliefs. The potential consequences were discussed in detail.",
-      "fr": "L'administration de produits sanguins a été refusée pour des raisons personnelles ou religieuses. Les conséquences possibles ont été expliquées en détail."
-    },
-    "minor_guardian_consent": {
-      "label": {
-        "de": "Minderjährig",
-        "en": "Minor",
-        "fr": "Mineur"
-      },
-      "de": "Da der/die Patient*in minderjährig ist, wurde die Aufklärung im Beisein einer/eines Sorgeberechtigten durchgeführt. Die Zustimmung erfolgte durch eine vertretungsberechtigte Person.",
-      "en": "As the patient is a minor, the informed consent discussion was held in the presence of a legal guardian. Consent was provided by an authorized representative.",
-      "fr": "Le/la patient·e étant mineur·e, l’information a été donnée en présence d’un représentant légal. Le consentement a été obtenu auprès de la personne autorisée."
     }
   },
   "defaults": {
