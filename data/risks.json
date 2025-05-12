@@ -649,11 +649,18 @@
                 "fr": "Défaillance d'organe"
               }
             },
-            "icu_or_death": {
+            "icu": {
               "label": {
-                "de": "Intensivpflichtigkeit / Tod",
-                "en": "ICU admission / death",
-                "fr": "Soins intensifs / décès"
+                "de": "Intensivpflichtigkeit",
+                "en": "ICU admission",
+                "fr": "Soins intensifs"
+              }
+            },
+            "death": {
+              "label": {
+                "de": "Tod",
+                "en": "Death",
+                "fr": "Décès"
               }
             },
             "thromboembolism": {
@@ -684,11 +691,18 @@
                 "fr": "Hyperthermie maligne"
               }
             },
-            "postoperative_nausea_vomiting": {
+            "nausea": {
               "label": {
-                "de": "Übelkeit / Erbrechen (PONV)",
-                "en": "Post-operative nausea and vomiting (PONV)",
-                "fr": "Nausées / vomissements post-op."
+                "de": "Übelkeit",
+                "en": "Nausea",
+                "fr": "Nausées"
+              }
+            },
+            "vomiting": {
+              "label": {
+                "de": "Erbrechen",
+                "en": "Vomiting",
+                "fr": "Vomissements"
               }
             },
             "postoperative_delirium": {
