@@ -505,7 +505,7 @@
       }
     }
   },
-  "defaults": {
+  "NEW_defaults": {
     "risks": [
       "general_anesthesia.full",
       "lines_catheters.peripheral_iv"
@@ -516,7 +516,7 @@
       "contextual_risks.emergency_surgery"
     ]
   },
-  "OLD_defaults": {
+  "defaults": {
     "textblock.organizational.intro": true,
     "textblock.organizational.closing": true,
     "risks.general_anesthesia.full": true,
