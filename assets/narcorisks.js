@@ -779,7 +779,10 @@ function renderStaticTextblockCheckboxes() {
         const fullKey = `${groupKey}.${itemKey}`;
         const altKey = `textblock.${groupKey}.${itemKey}`;
 
-        const isDefault =
+        //const isDefault =
+        //  risksData?.defaults?.[fullKey] ||
+        //  risksData?.defaults?.[altKey];
+        const isDefault = (itemData.default === true) ||
           risksData?.defaults?.[fullKey] ||
           risksData?.defaults?.[altKey];
 
@@ -787,6 +790,9 @@ function renderStaticTextblockCheckboxes() {
           checkbox.checked = true;
           console.log(`[Defaults] Activated textblock default: ${altKey}`);
         }
+
+
+
 
         const wrapper = document.createElement('label');
         wrapper.appendChild(checkbox);
