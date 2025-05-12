@@ -106,7 +106,8 @@
             "en": "It was confirmed upon request that all aspects of the anesthesiology-related information were understood and no further questions remain. The procedures, with awareness of the explained risks, are expressly requested. A copy of the written consent materials was offered.",
             "fr": "Il a été confirmé, sur demande, que tous les éléments de l'information anesthésique ont été compris et qu’aucune question ne restait en suspens. La réalisation des mesures, en connaissance des risques expliqués, est expressément souhaitée. Une copie des documents écrits d'information a été proposée."
           },
-          "position": "closing"
+          "position": "closing",
+          "default": true
         },
         "teleconsent": {
           "label": {
@@ -506,20 +507,7 @@
       }
     }
   },
-  "NEW_defaults": {
-    "risks": [
-      "general_anesthesia.full",
-      "lines_catheters.peripheral_iv"
-    ],
-    "textblocks": [
-      "organizational.intro",
-      "organizational.closing",
-      "contextual_risks.emergency_surgery"
-    ]
-  },
   "defaults": {
-    "textblock.organizational.intro": true,
-    "textblock.organizational.closing": true,
     "risks.general_anesthesia.full": true,
     "risks.lines_catheters.peripheral_iv": true
   },
