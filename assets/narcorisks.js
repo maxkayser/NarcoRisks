@@ -57,6 +57,7 @@ async function loadRisks() {
 
     const defaults = data.defaults || {};
     renderRiskGroups(defaults);
+    validatePresets();
     renderProcedureSelectors();
     renderPresetOptions();
 
@@ -349,13 +350,50 @@ function findRiskCheckbox(path) {
   return all.find(cb => cb.value.startsWith(path + "."));
 }
 
+function validatePresets() {
+  const presets = risksData?.presets;
+  if (!presets) {
+    console.warn("[Validator] No presets found in risksData.");
+    return;
+  }
+
+  console.log("[Validator] Validating presets...");
+
+  Object.entries(presets).forEach(([presetKey, config]) => {
+    Object.entries(config.options || {}).forEach(([optKey, option]) => {
+      const label = option.label?.[currentLang] || optKey;
+      const riskList = option.associated_risks || [];
+
+      riskList.forEach(path => {
+        if (path.startsWith("risks.")) {
+          // try navigating
+          const parts = path.split(".").slice(1); // remove "risks"
+          let node = risksData.risks?.children?.[0];
+          for (const part of parts) {
+            node = node?.[part];
+            if (!node) break;
+          }
+          if (!node) {
+            console.warn(`[Validator] ❌ Invalid risk path: ${path} in ${presetKey} → ${optKey} (${label})`);
+          }
+        } else if (path.startsWith("textblock.") || path.startsWith("contextual_risks.")) {
+          // just log OK
+          console.log(`[Validator] ✅ Textblock path assumed valid: ${path}`);
+        } else {
+          console.warn(`[Validator] ❓ Unknown risk path format: ${path} in ${presetKey} → ${optKey}`);
+        }
+      });
+    });
+  });
+
+  console.log("[Validator] Finished.");
+}
 
 
 function handlePresetSelection(key, value) {
-  console.log(`[Preset] Handling selection for key: ${key}, value: ${value}`);
-
   const preset = risksData?.presets?.[key];
   const lang = currentLang || 'de';
+
   if (!preset) {
     console.warn(`[Preset] No preset found for key: ${key}`);
     return;
@@ -367,21 +405,23 @@ function handlePresetSelection(key, value) {
     return;
   }
 
+  console.log(`[Preset] Handling selection for key: ${key}, value: ${value}`);
   console.log(`[Preset] ${key} selected: ${selected.label?.[lang] || value}`);
+
   const riskPaths = selected.associated_risks || [];
 
   riskPaths.forEach(path => {
     const input = findRiskCheckbox(path);
 
+    // 1. Normal risks (via checkbox)
     if (input) {
       input.checked = true;
-      console.log(`[Preset] Found risk checkbox for ${path}`);
 
       // Also activate children (sub-risks)
       const children = document.querySelectorAll(`input[name="riskSubgroups"][value^="${input.value}."]`);
       children.forEach(cb => cb.checked = true);
 
-      // Activate .common items as needed
+      // Activate .common if applicable
       const groupKey = input.value.split('.')[0];
       const groupDiv = Array.from(document.querySelectorAll('.category.toggle')).find(div =>
         div.textContent.toLowerCase().includes(groupKey.toLowerCase())
@@ -391,21 +431,38 @@ function handlePresetSelection(key, value) {
         activateCommonItems(groupKey, entriesContainer);
       }
 
+      console.log(`[Preset] Directly activated: ${input.value}`);
       children.forEach(cb => {
         console.log(`[Preset]   → Sub-risk activated: ${cb.value}`);
       });
+    }
 
-    } else if (path.startsWith("contextual_risks.")) {
-      const rawKey = path.replace("contextual_risks.", "");
-      const checkbox = document.querySelector(`input[name="textblock"][value*="${rawKey}"]`);
+    // 2. Textblock paths (new supported format)
+    else if (path.startsWith("textblock.")) {
+      const key = path.replace("textblock.", "");
+      const checkbox = document.querySelector(`input[name="textblock"][value="${key}"]`);
       if (checkbox) {
         checkbox.checked = true;
-        console.log(`[Preset] Contextual textblock activated for: ${rawKey}`);
+        console.log(`[Preset] Textblock activated for: ${key}`);
       } else {
-        console.warn(`[Preset] No textblock checkbox found matching: ${rawKey}`);
+        console.warn(`[Preset] No checkbox found for textblock: ${key}`);
       }
+    }
 
-    } else {
+    // 3. Contextual risks legacy
+    else if (path.startsWith("contextual_risks.")) {
+      const key = path.replace("contextual_risks.", "");
+      const checkbox = document.querySelector(`input[name="textblock"][value="${key}"]`);
+      if (checkbox) {
+        checkbox.checked = true;
+        console.log(`[Preset] Contextual textblock activated for: ${key}`);
+      } else {
+        console.warn(`[Preset] No contextual textblock found for: ${key}`);
+      }
+    }
+
+    // 4. Fallback for risks without checkboxes
+    else {
       console.warn(`[Preset] No direct input field for: ${path}`);
       activateRiskAndChildren(path);
       console.log(`[Preset] activateRiskAndChildren() fallback triggered for: ${path}`);
@@ -414,6 +471,7 @@ function handlePresetSelection(key, value) {
 
   generateSummary();
 }
+
 
 
 
