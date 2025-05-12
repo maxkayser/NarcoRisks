@@ -687,13 +687,8 @@ function generateSummary() {
     const riskItems = [];
 
     for (const [subKey, labels] of Object.entries(subgroups)) {
-      let subLabel = subKey;
-      if (subKey === "common") {
-        subLabel = translations?.[lang]?.headings?.general_risks || "Allgemeine Risiken";
-      } else {
-        const subgroup = risksData.risks.children[0]?.[groupKey]?.[subKey];
-        subLabel = subgroup?.label?.[lang] || subKey;
-      }
+      const subgroupNode = risksData.risks.children[0]?.[groupKey]?.[subKey];
+      const subLabel = subgroupNode?.label?.[lang] || subKey;
       riskItems.push(`<li><b>${subLabel}:</b> ${labels.join(', ')}</li>`);
     }
 
@@ -708,102 +703,6 @@ function generateSummary() {
   if (output) output.innerHTML = htmlParts.join("\n");
 }
 
-
-function OLD__generateSummary() {
-  const lang = currentLang || 'de';
-
-  const summaryParts = {
-    beginning: [],
-    before_measures: [],
-    after_measures: [],
-    end: []
-  };
-
-  // Mapping der JSON-Positionen zu internen Abschnitten
-  const positionMap = {
-    "intro": "beginning",
-    "before": "before_measures",
-    "after": "after_measures",
-    "closing": "end"
-  };
-
-  // TEXTBLOCKS sammeln nach Position
-  Object.entries(textblocks).forEach(([groupKey, group]) => {
-    Object.entries(group.items || {}).forEach(([itemKey, item]) => {
-      const checkbox = document.querySelector(
-        `input[name="textblock"][value="${groupKey}.${itemKey}"]`
-      );
-      if (checkbox?.checked) {
-        const text = item.text?.[lang];
-        const mapped = positionMap[item.position] || "before_measures";
-        if (text && summaryParts[mapped]) {
-          summaryParts[mapped].push(text);
-        }
-      }
-    });
-  });
-
-  // RISIKEN gruppieren
-  const grouped = {};
-
-  document.querySelectorAll('input[name="riskSubgroups"]:checked').forEach(input => {
-    const pathParts = input.value.split(".");
-    if (pathParts.length < 2) return;
-
-    const [group, subgroup, leaf] = pathParts;
-    let node = risksData.risks.children[0];
-
-    for (const part of pathParts) {
-      if (!node?.[part]) {
-        node = null;
-        break;
-      }
-      node = node[part];
-    }
-
-    const label = node?.label?.[lang];
-    if (!label) return;
-
-    if (!grouped[group]) grouped[group] = {};
-    const sub = subgroup || "default";
-    if (!grouped[group][sub]) grouped[group][sub] = [];
-    grouped[group][sub].push(label);
-  });
-
-  // RISIKEN-Abschnitt formatieren
-  const formattedRiskText = [];
-
-  for (const [groupKey, subgroups] of Object.entries(grouped)) {
-    const groupLabel = allRisks.find(g => g.key === groupKey)?.label?.[lang] || groupKey;
-    formattedRiskText.push(groupLabel);
-
-    for (const [subKey, labels] of Object.entries(subgroups)) {
-      const subgroup = risksData.risks.children[0]?.[groupKey]?.[subKey];
-      const subgroupLabel = subgroup?.label?.[lang] || subKey;
-
-      formattedRiskText.push(`${subgroupLabel}: ${labels.join(', ')}`);
-    }
-
-    formattedRiskText.push("");
-  }
-
-  // Freitext
-  const additionalText = document.getElementById("additionalText")?.value?.trim();
-  if (additionalText) {
-    summaryParts.after_measures.push(additionalText);
-  }
-
-  // Alles zusammenfügen
-  const fullSummary = [
-    ...summaryParts.beginning,
-    ...summaryParts.before_measures,
-    ...formattedRiskText,
-    ...summaryParts.after_measures,
-    ...summaryParts.end
-  ].join("\n").trim();
-
-  document.getElementById("summaryText").value = fullSummary;
-}
 
 
 /**
