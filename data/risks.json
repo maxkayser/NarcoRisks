@@ -248,9 +248,9 @@
             "fr": "Volonté présumée"
           },
           "text": {
-            "de": "Die Durchführung der Maßnahme erfolgte im mutmaßlichen Willen bei fehlender Einwilligungsfähigkeit und medizinischer Dringlichkeit.",
-            "en": "The intervention was carried out based on presumed will in the absence of decision-making capacity and due to medical urgency.",
-            "fr": "L'intervention a été réalisée sur la base de la volonté présumée, en l'absence de capacité à consentir et en raison d'une urgence médicale."
+            "de": "Die Durchführung der anästhesiologischen Maßnahmen erfolgt im mutmaßlichen Willen bei fehlender Einwilligungsfähigkeit und medizinischer Dringlichkeit.",
+            "en": "The anesthesiological interventions are carried out based on presumed will in the absence of decision-making capacity and due to medical urgency.",
+            "fr": "Les mesures anesthésiques sont réalisées sur la base de la volonté présumée, en l’absence de capacité à consentir et en raison d’une urgence médicale."
           },
           "position": "before",
           "default": false
