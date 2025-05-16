@@ -317,6 +317,19 @@
           },
           "position": "after"
         },
+        "glp1_agonists": {
+          "label": {
+            "de": "GLP-1-Rezeptoragonist",
+            "en": "GLP-1 receptor agonist",
+            "fr": "Agoniste du récepteur du GLP-1"
+          },
+          "text": {
+            "de": "Die Einnahme von GLP-1-Agonisten (z. B. Semaglutid, Liraglutid) kann zu einer verzögerten Magenentleerung und einem erhöhten Aspirationsrisiko führen. Eine rechtzeitige Pausierung vor anästhesiologischen Maßnahmen ist erforderlich und sollte eingehalten werden, sofern die Dringlichkeit des Eingriffs es zulässt. Dies wurde individuell besprochen und dokumentiert.",
+            "en": "Use of GLP-1 agonists (e.g., semaglutide, liraglutide) may delay gastric emptying and increase the risk of aspiration. Timely discontinuation prior to anesthetic procedures is required and should be implemented where surgical urgency permits. This was discussed and documented individually.",
+            "fr": "La prise d’agonistes du GLP-1 (par ex. sémaglutide, liraglutide) peut entraîner un retard de la vidange gastrique et un risque accru d’aspiration. Une interruption anticipée avant une procédure anesthésique est nécessaire et doit être respectée, si l’urgence de l’intervention le permet. Ceci a été discuté et documenté individuellement."
+          },
+          "position": "after"
+        },
         "known_difficult_airway": {
           "label": {
             "de": "Schwieriger Atemweg",
