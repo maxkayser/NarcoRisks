@@ -97,14 +97,16 @@ button:hover, #copyButton:hover {
   content: '\25BC';
 }
 
-/* Subcategory (e.g., Vollnarkose, Spinal) layout */
+.subcategory .checkbox-grid {
+	background-color: #f0f0f0;
+    	margin-top: 0px;
+}
+
 .subcategory.checkbox-grid {
   display: grid;
   grid-template-columns: 1fr;
   gap: 0.1rem;
   margin-left: 1rem;
-	background-color: #f0f0f0;
-    	margin-top: 0px;
 }
 
 @media (min-width: 600px) {
