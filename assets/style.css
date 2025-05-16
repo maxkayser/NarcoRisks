@@ -80,7 +80,6 @@ button:hover, #copyButton:hover {
   background: var(--accent-hover);
 }
 
-/* Risk categories like "General Anesthesia", "Regional Anesthesia" */
 .category {
   font-weight: bold;
   margin-top: 1rem;
@@ -100,6 +99,7 @@ button:hover, #copyButton:hover {
 .subcategory .checkbox-grid {
 	background-color: #f0f0f0;
     	margin-top: 0px;
+	padding-right: 20px;
 }
 
 .subcategory.checkbox-grid {
@@ -146,11 +146,11 @@ button:hover, #copyButton:hover {
 	margin-bottom: 0px;
 }
 
-.subgroup-toggle .expanded{
+.subgroup-toggle.expanded{
     	border-bottom-left-radius: 0px;
     	border-bottom-right-radius: 0px;
 }
-/* Nested subgroup (risks inside each block) */
+
 .subgroup-toggle + .subcategory {
   background: #fafafa;
   border-left: 3px solid #ddd;
@@ -160,12 +160,10 @@ button:hover, #copyButton:hover {
   display: none;
 }
 
-/* Make visible when needed */
 .subgroup-toggle + .subcategory:not(.hidden) {
   display: block;
 }
 
-/* Individual risk entry */
 .subcategory .checkbox-grid label {
   margin: 0;
   padding: 0.25rem 0.5rem;
@@ -177,7 +175,6 @@ button:hover, #copyButton:hover {
   display: none !important;
 }
 
-/* Responsive adjustments */
 @media (max-width: 600px) {
   body {
     padding: 0.5rem;
@@ -226,19 +223,6 @@ button:hover, #copyButton:hover {
   background: #f0f0f0;
 }
 
-.OLD__category.expanded::after {
-  content: '▼';
-  float: right;
-  font-size: 0.8em;
-  margin-left: 0.5em;
-}
-.OLD__category:not(.expanded)::after {
-  content: '▶';
-  float: right;
-  font-size: 0.8em;
-  margin-left: 0.5em;
-}
-
 .subcategory.checkbox-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
@@ -260,7 +244,6 @@ button:hover, #copyButton:hover {
 	padding: 0.15rem;
 }
 
-/* Optional: Responsive fallback for very narrow screens */
 @media (max-width: 480px) {
   .subcategory.checkbox-grid {
     grid-template-columns: 1fr;
