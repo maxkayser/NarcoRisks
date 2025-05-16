@@ -6,7 +6,7 @@
  */
 
 :root {
-  --bg: #b4cef4;
+  --bg: #dbe1e8;
   --card: #ffffff;
   --text: #222;
   --accent: #3c7dd9;
@@ -31,7 +31,7 @@ body {
 }
 
 h1 {
-  font-size: 1.75rem;
+  font-size: 2.8rem;
   text-align: center;
   font-family: 'Gugi', sans-serif;
 }
