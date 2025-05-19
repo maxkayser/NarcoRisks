@@ -133,7 +133,7 @@
             "fr": "Opération ambulatoire"
           },
           "text": {
-            "de": "Für die ambulante Versorgung wurde eine volljährige Begleitperson zur Abholung und Betreuung in den ersten 24 Stunden nach dem Eingriff benannt und deren Kontaktdaten dokumentiert. Die Verfügbarkeit einer medizinischen Notfallversorgung am postoperativen Aufenthaltsort (innerhalb von weniger als 30 Minuten erreichbar) wurde bestätigt. Ein Merkblatt mit detaillierten Informationen zu den Besonderheiten ambulanter Eingriffe sowie verbindlichen Verhaltensregeln wurde übergeben. Es wurde insbesondere hingewiesen auf: keine aktive Teilnahme am Straßenverkehr, keine Einnahme von Alkohol oder anderen bewusstseinsverändernden Substanzen, keine rechtsverbindlichen Entscheidungen. Verhalten im Falle von Komplikationen wurde erläutert, eine Notfallnummer und eine erreichbare Anschrift wurden übermittelt. Bei Komplikationen oder nicht erfüllten Voraussetzungen (z. B. fehlende Begleitperson, unzureichende häusliche Betreuung) kann eine stationäre Aufnahme erforderlich werden.",
+            "de": "Für die ambulante Versorgung wurde eine volljährige Begleitperson zur Abholung und Betreuung in den ersten 24 Stunden nach dem Eingriff benannt und deren Kontaktdaten dokumentiert. Die Verfügbarkeit einer medizinischen Notfallversorgung am postoperativen Aufenthaltsort (innerhalb von weniger als 30 Minuten erreichbar) wurde bestätigt. Ein Merkblatt mit detaillierten Informationen zu den Besonderheiten ambulanter Eingriffe sowie verbindlichen Verhaltensregeln wurde übergeben. Es wurde insbesondere hingewiesen auf: keine aktive Teilnahme am Straßenverkehr, keine Einnahme von Alkohol oder anderen bewusstseinsverändernden Substanzen, keine rechtsverbindlichen Entscheidungen. Verhalten im Falle von Komplikationen wurde erläutert, eine Notfallnummer und eine erreichbare Anschrift wurden übermittelt. Bei Komplikationen oder nicht erfüllten Voraussetzungen (z.B. fehlende Begleitperson, unzureichende häusliche Betreuung) kann eine stationäre Aufnahme erforderlich werden.",
             "en": "For outpatient care, an adult escort was designated for pickup and supervision during the first 24 hours postoperatively, with contact details documented. The availability of medical emergency services at the recovery location (reachable within less than 30 minutes) was confirmed. An information leaflet was handed out, detailing the specifics of ambulatory procedures and required behavioral restrictions. Particular emphasis was placed on: no operation of vehicles, no consumption of alcohol or mind-altering substances, and no legal or contractual decisions. Instructions for the event of complications were explained, along with provision of an emergency contact number and address. In the event of complications or unmet requirements (e.g. no escort or insufficient home supervision), inpatient admission may become necessary.",
             "fr": "Pour une prise en charge ambulatoire, une personne majeure a été désignée pour l'accompagnement et la surveillance durant les 24 premières heures postopératoires ; ses coordonnées ont été enregistrées. La disponibilité d'une prise en charge médicale d'urgence (en moins de 30 minutes) sur le lieu de convalescence a été confirmée. Une fiche d'information a été remise, incluant les particularités de la chirurgie ambulatoire et les consignes à respecter. Il a notamment été précisé : ne pas conduire, ne pas consommer d'alcool ni de substances psychoactives, ne pas prendre de décisions juridiques ou contractuelles. Les conduites à tenir en cas de complication ont été expliquées et un numéro d'urgence ainsi qu'une adresse de contact ont été communiqués. En cas de complication ou si les conditions requises ne sont pas remplies (par ex. absence d'accompagnant, surveillance insuffisante), une hospitalisation peut s'avérer nécessaire."
           },
@@ -211,7 +211,7 @@
           "text": {
             "de": "Eine ausführliche Aufklärung über die geplanten Verfahren und damit verbundenen Risiken wurde angeboten, jedoch vom Patienten/der Patientin ausdrücklich und unmissverständlich abgelehnt. Es bestanden keine Zweifel an der rechtmäßigen und uneingeschränkten Entscheidungsfähigkeit. Der Wille des Patienten/der Patientin wurde respektiert.",
             "en": "Detailed information about the planned procedures and associated risks was offered, but was explicitly and unequivocally declined by the patient. There were no doubts regarding the patient's legal capacity and decision-making ability. The patient's will was respected.",
-            "fr": "Des informations détaillées sur les procédures prévues et les risques associés ont été proposées, mais ont été expressément et sans équivoque refusées par le/la patient·e. Aucune incertitude quant à la capacité juridique et à la faculté de décision n'a été constatée. La volonté du/de la patient·e a été respectée."
+            "fr": "Des informations détaillées sur les procédures prévues et les risques associés ont été proposées, mais ont été expressément et sans équivoque refusées par le/la patiente. Aucune incertitude quant à la capacité juridique et à la faculté de décision n'a été constatée. La volonté du/de la patiente a été respectée."
           },
           "position": "before"
         },
@@ -278,7 +278,7 @@
           "text": {
             "de": "Da der/die Patient*in minderjährig ist, wurde die Aufklärung im Beisein einer/eines Sorgeberechtigten durchgeführt. Die Zustimmung erfolgte durch eine vertretungsberechtigte Person.",
             "en": "As the patient is a minor, the informed consent discussion was held in the presence of a legal guardian. Consent was provided by an authorized representative.",
-            "fr": "Le/la patient·e étant mineur·e, l'information a été donnée en présence d'un représentant légal. Le consentement a été obtenu auprès de la personne autorisée."
+            "fr": "Le/la patiente étant mineure, l'information a été donnée en présence d'un représentant légal. Le consentement a été obtenu auprès de la personne autorisée."
           },
           "position": "before"
         }
@@ -324,7 +324,7 @@
             "fr": "Agoniste du récepteur du GLP-1"
           },
           "text": {
-            "de": "Die Einnahme von GLP-1-Agonisten (z. B. Semaglutid, Liraglutid) kann zu einer verzögerten Magenentleerung und einem erhöhten Aspirationsrisiko führen. Eine rechtzeitige Pausierung vor anästhesiologischen Maßnahmen ist erforderlich und sollte eingehalten werden, sofern die Dringlichkeit des Eingriffs es zulässt. Dies wurde individuell besprochen und dokumentiert.",
+            "de": "Die Einnahme von GLP-1-Agonisten (z.B. Semaglutid, Liraglutid) kann zu einer verzögerten Magenentleerung und einem erhöhten Aspirationsrisiko führen. Eine rechtzeitige Pausierung vor anästhesiologischen Maßnahmen ist erforderlich und sollte eingehalten werden, sofern die Dringlichkeit des Eingriffs es zulässt. Dies wurde individuell besprochen und dokumentiert.",
             "en": "Use of GLP-1 agonists (e.g., semaglutide, liraglutide) may delay gastric emptying and increase the risk of aspiration. Timely discontinuation prior to anesthetic procedures is required and should be implemented where surgical urgency permits. This was discussed and documented individually.",
             "fr": "La prise d'agonistes du GLP-1 (par ex. sémaglutide, liraglutide) peut entraîner un retard de la vidange gastrique et un risque accru d'aspiration. Une interruption anticipée avant une procédure anesthésique est nécessaire et doit être respectée, si l'urgence de l'intervention le permet. Ceci a été discuté et documenté individuellement."
           },
@@ -402,7 +402,7 @@
             "fr": "Insuffisance rénale"
           },
           "text": {
-            "de": "Bei eingeschränkter Nierenfunktion bestehen zusätzliche Risiken: Flüssigkeitsüberlastung, Elektrolytstörungen (z. B. Hyperkaliämie), Azidose, fortschreitendes Organversagen sowie vorübergehende oder dauerhafte Dialysepflicht. Auswahl und Dosierung von Medikamenten können eingeschränkt sein und unterliegen einer individuellen Risiko-Nutzen-Abwägung.",
+            "de": "Bei eingeschränkter Nierenfunktion bestehen zusätzliche Risiken: Flüssigkeitsüberlastung, Elektrolytstörungen (z.B. Hyperkaliämie), Azidose, fortschreitendes Organversagen sowie vorübergehende oder dauerhafte Dialysepflicht. Auswahl und Dosierung von Medikamenten können eingeschränkt sein und unterliegen einer individuellen Risiko-Nutzen-Abwägung.",
             "en": "Renal impairment entails additional risks: fluid overload, electrolyte disturbances (e.g., hyperkalemia), acidosis, progressive organ failure, and possible temporary or permanent dialysis. Medication selection and dosage may be limited and require individual risk-benefit assessment.",
             "fr": "Une insuffisance rénale entraîne des risques supplémentaires : surcharge hydrique, troubles électrolytiques (p. ex. hyperkaliémie), acidose, défaillance organique progressive et éventuellement dialyse temporaire ou permanente. Le choix et le dosage des médicaments peuvent être limités et nécessitent une évaluation individuelle du rapport bénéfice-risque."
           },
@@ -430,7 +430,7 @@
           "text": {
             "de": "Gebrechliche Patient*innen haben ein erhöhtes Risiko für Kreislaufinstabilität, Delir, Ateminsuffizienz, verzögerte Mobilisation sowie prolongierte postoperativ-rehabilitative Verläufe.",
             "en": "Frail patients are at increased risk of circulatory instability, delirium, respiratory insufficiency, delayed mobilization, and prolonged postoperative recovery.",
-            "fr": "Les patient·es fragiles présentent un risque accru d'instabilité circulatoire, de délire, d'insuffisance respiratoire, de mobilisation retardée et de récupération postopératoire prolongée."
+            "fr": "Les patientes fragiles présentent un risque accru d'instabilité circulatoire, de délire, d'insuffisance respiratoire, de mobilisation retardée et de récupération postopératoire prolongée."
           },
           "position": "after"
         },
@@ -1133,9 +1133,9 @@
             },
             "difficulty_monitoring": {
               "label": {
-                "de": "Erschwerte CO₂-Messung und Beatmungskontrolle",
-                "en": "Limited CO₂ monitoring and ventilation control",
-                "fr": "Contrôle limité du CO₂ et de la ventilation"
+                "de": "Erschwerte CO-Messung und Beatmungskontrolle",
+                "en": "Limited CO monitoring and ventilation control",
+                "fr": "Contrôle limité du CO et de la ventilation"
               }
             }
           },
@@ -2064,7 +2064,7 @@
             },
             "nerve_injury": {
               "label": {
-                "de": "Nervenschädigung (z. B. N. femoralis, N. obturatorius)",
+                "de": "Nervenschädigung (z.B. N. femoralis, N. obturatorius)",
                 "en": "Nerve injury (e.g. femoral, obturator nerve)",
                 "fr": "Lésion nerveuse (ex. nerf fémoral, nerf obturateur)"
               }
@@ -2253,9 +2253,9 @@
             },
             "adductor_weakness": {
               "label": {
-                "de": "Adduktorenschwäche → Sturzrisiko",
-                "en": "Adductor weakness → fall risk",
-                "fr": "Faiblesse des adducteurs → risque de chute"
+                "de": "Adduktorenschwäche Sturzrisiko",
+                "en": "Adductor weakness fall risk",
+                "fr": "Faiblesse des adducteurs risque de chute"
               }
             }
           },
@@ -2267,9 +2267,9 @@
             },
             "quadriceps_weakness": {
               "label": {
-                "de": "Quadricepsparese → Sturzrisiko",
-                "en": "Quadriceps weakness → fall risk",
-                "fr": "Faiblesse du quadriceps → risque de chute"
+                "de": "Quadricepsparese Sturzrisiko",
+                "en": "Quadriceps weakness fall risk",
+                "fr": "Faiblesse du quadriceps risque de chute"
               }
             },
             "delayed_mobilization": {
@@ -2288,16 +2288,16 @@
             },
             "large_volume_required": {
               "label": {
-                "de": "Großes Injektionsvolumen nötig → Risiko systemischer Toxizität",
-                "en": "Large injection volume required → risk of systemic toxicity",
-                "fr": "Grand volume requis → risque de toxicité systémique"
+                "de": "Großes Injektionsvolumen nötig Risiko systemischer Toxizität",
+                "en": "Large injection volume required risk of systemic toxicity",
+                "fr": "Grand volume requis risque de toxicité systémique"
               }
             },
             "quadriceps_weakness": {
               "label": {
-                "de": "Schwäche des M. quadriceps → Sturzgefahr",
-                "en": "Quadriceps weakness → fall risk",
-                "fr": "Faiblesse du quadriceps → risque de chute"
+                "de": "Schwäche des M. quadriceps Sturzgefahr",
+                "en": "Quadriceps weakness fall risk",
+                "fr": "Faiblesse du quadriceps risque de chute"
               }
             }
           },
