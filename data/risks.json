@@ -75,7 +75,7 @@
     "legal_disclaimer": {
       "de": "Dieses Tool dient ausschließlich der Unterstützung bei der Vorbereitung auf ein ärztliches Aufklärungsgespräch. Es ist kein Medizinprodukt, keine medizinische Beratung und ersetzt keinesfalls eine persönliche ärztliche Untersuchung oder Risikokommunikation. Die Nutzung erfolgt in Eigenverantwortung, insbesondere durch medizinisches Fachpersonal. Der Autor übernimmt keine Gewähr für Richtigkeit, Vollständigkeit oder rechtliche Verwertbarkeit der Inhalte. Eine medizinische, rechtliche oder haftungsrechtliche Verwertung liegt allein im Ermessen der Nutzer. Die rechtliche Zulässigkeit und klinische Anwendbarkeit können je nach Land oder Gesundheitssystem variieren.",
       "en": "This tool is intended solely to support preparation for medical consent discussions. It is not a medical product, does not provide medical advice, and in no way replaces a personal consultation or risk disclosure by a physician. Use is at your own risk, particularly for healthcare professionals. The author assumes no liability for the accuracy, completeness, or legal applicability of the content. Medical, legal, and clinical use remains the sole responsibility of the user. Legal admissibility and clinical relevance may vary depending on jurisdiction or health system.",
-      "fr": "Cet outil est destiné uniquement à soutenir la préparation à un entretien médical d'information. Il ne constitue ni un dispositif médical, ni un avis médical, et ne remplace en aucun cas une consultation ou une explication des risques effectuée par un professionnel de santé. Son utilisation se fait sous la seule responsabilité de l'utilisateur, notamment pour les professionnels de santé. L’auteur décline toute responsabilité quant à l'exactitude, l'exhaustivité ou la validité juridique du contenu. L’applicabilité légale et clinique peut varier selon les pays ou les systèmes de santé."
+      "fr": "Cet outil est destiné uniquement à soutenir la préparation à un entretien médical d'information. Il ne constitue ni un dispositif médical, ni un avis médical, et ne remplace en aucun cas une consultation ou une explication des risques effectuée par un professionnel de santé. Son utilisation se fait sous la seule responsabilité de l'utilisateur, notamment pour les professionnels de santé. L'auteur décline toute responsabilité quant à l'exactitude, l'exhaustivité ou la validité juridique du contenu. L'applicabilité légale et clinique peut varier selon les pays ou les systèmes de santé."
     }
   },
   "textblocks": {
@@ -95,7 +95,7 @@
           "text": {
             "de": "Im Rahmen der präoperativen anästhesiologischen Visite wurden die folgenden Risiken unter Berücksichtigung des individuellen Kontextes ausführlich besprochen:",
             "en": "As part of the preoperative anesthesiology consultation, the following risks were thoroughly discussed, taking into account the individual context:",
-            "fr": "Dans le cadre de la visite préopératoire en anesthésie, les risques suivants ont été discutés en détail en tenant compte du contexte individuel :"
+            "fr": "Dans le cadre de la visite préopératoire en anesthésie, les risques suivants ont été discutés en détail en tenant compte du contexte individuel :"
           },
           "position": "intro",
           "default": true
@@ -109,7 +109,7 @@
           "text": {
             "de": "Daueraufklärung: die Aufklärung erfolgt für den geplanten Eingriff sowie für unmittelbar geplante Folgeeingriffe.",
             "en": "Extended consent: the consent applies to the planned procedure as well as directly scheduled follow-up procedures.",
-            "fr": "Consentement élargi: le consentement s’applique à l’intervention prévue ainsi qu’aux interventions complémentaires immédiatement programmées."
+            "fr": "Consentement élargi: le consentement s'applique à l'intervention prévue ainsi qu'aux interventions complémentaires immédiatement programmées."
           },
           "position": "intro"
         },
@@ -122,7 +122,7 @@
           "text": {
             "de": "Die Aufklärung fand online über die Plattform Doctolib statt.",
             "en": "The informed consent discussion took place online via the Doctolib platform.",
-            "fr": "L’information a été donnée en ligne via la plateforme Doctolib."
+            "fr": "L'information a été donnée en ligne via la plateforme Doctolib."
           },
           "position": "after"
         },
@@ -135,7 +135,7 @@
           "text": {
             "de": "Für die ambulante Versorgung wurde eine volljährige Begleitperson zur Abholung und Betreuung in den ersten 24 Stunden nach dem Eingriff benannt und deren Kontaktdaten dokumentiert. Die Verfügbarkeit einer medizinischen Notfallversorgung am postoperativen Aufenthaltsort (innerhalb von weniger als 30 Minuten erreichbar) wurde bestätigt. Ein Merkblatt mit detaillierten Informationen zu den Besonderheiten ambulanter Eingriffe sowie verbindlichen Verhaltensregeln wurde übergeben. Es wurde insbesondere hingewiesen auf: keine aktive Teilnahme am Straßenverkehr, keine Einnahme von Alkohol oder anderen bewusstseinsverändernden Substanzen, keine rechtsverbindlichen Entscheidungen. Verhalten im Falle von Komplikationen wurde erläutert, eine Notfallnummer und eine erreichbare Anschrift wurden übermittelt. Bei Komplikationen oder nicht erfüllten Voraussetzungen (z. B. fehlende Begleitperson, unzureichende häusliche Betreuung) kann eine stationäre Aufnahme erforderlich werden.",
             "en": "For outpatient care, an adult escort was designated for pickup and supervision during the first 24 hours postoperatively, with contact details documented. The availability of medical emergency services at the recovery location (reachable within less than 30 minutes) was confirmed. An information leaflet was handed out, detailing the specifics of ambulatory procedures and required behavioral restrictions. Particular emphasis was placed on: no operation of vehicles, no consumption of alcohol or mind-altering substances, and no legal or contractual decisions. Instructions for the event of complications were explained, along with provision of an emergency contact number and address. In the event of complications or unmet requirements (e.g. no escort or insufficient home supervision), inpatient admission may become necessary.",
-            "fr": "Pour une prise en charge ambulatoire, une personne majeure a été désignée pour l’accompagnement et la surveillance durant les 24 premières heures postopératoires ; ses coordonnées ont été enregistrées. La disponibilité d’une prise en charge médicale d’urgence (en moins de 30 minutes) sur le lieu de convalescence a été confirmée. Une fiche d’information a été remise, incluant les particularités de la chirurgie ambulatoire et les consignes à respecter. Il a notamment été précisé : ne pas conduire, ne pas consommer d’alcool ni de substances psychoactives, ne pas prendre de décisions juridiques ou contractuelles. Les conduites à tenir en cas de complication ont été expliquées et un numéro d’urgence ainsi qu’une adresse de contact ont été communiqués. En cas de complication ou si les conditions requises ne sont pas remplies (par ex. absence d’accompagnant, surveillance insuffisante), une hospitalisation peut s’avérer nécessaire."
+            "fr": "Pour une prise en charge ambulatoire, une personne majeure a été désignée pour l'accompagnement et la surveillance durant les 24 premières heures postopératoires ; ses coordonnées ont été enregistrées. La disponibilité d'une prise en charge médicale d'urgence (en moins de 30 minutes) sur le lieu de convalescence a été confirmée. Une fiche d'information a été remise, incluant les particularités de la chirurgie ambulatoire et les consignes à respecter. Il a notamment été précisé : ne pas conduire, ne pas consommer d'alcool ni de substances psychoactives, ne pas prendre de décisions juridiques ou contractuelles. Les conduites à tenir en cas de complication ont été expliquées et un numéro d'urgence ainsi qu'une adresse de contact ont été communiqués. En cas de complication ou si les conditions requises ne sont pas remplies (par ex. absence d'accompagnant, surveillance insuffisante), une hospitalisation peut s'avérer nécessaire."
           },
           "position": "after"
         },
@@ -148,7 +148,7 @@
           "text": {
             "de": "Aufgrund einer bestehenden Sprachbarriere erfolgte die vollständige Aufklärung im Beisein eines geeigneten Dolmetschers. Dieser versicherte auf Nachfrage, alle Inhalte vollständig und exakt übersetzt zu haben. Es erfolgten mehrfach Rückfragen an die Patientin / den Patienten, ob die Inhalte wirklich richtig verstanden wurden.",
             "en": "Due to an existing language barrier, full information was provided in the presence of a qualified interpreter. The interpreter confirmed on request that all content was translated completely and accurately. The patient was repeatedly asked whether everything was truly understood.",
-            "fr": "En raison d'une barrière linguistique, l'explication complète a été réalisée en présence d’un interprète qualifié. Celui-ci a confirmé avoir traduit fidèlement et entièrement tous les contenus. Le patient a été interrogé à plusieurs reprises pour vérifier sa compréhension."
+            "fr": "En raison d'une barrière linguistique, l'explication complète a été réalisée en présence d'un interprète qualifié. Celui-ci a confirmé avoir traduit fidèlement et entièrement tous les contenus. Le patient a été interrogé à plusieurs reprises pour vérifier sa compréhension."
           },
           "position": "after"
         },
@@ -174,7 +174,7 @@
           "text": {
             "de": "Auf Nachfrage wurde bestätigt, dass alle Inhalte der anästhesiologischen Aufklärung verstanden wurden und keine offenen Fragen bestehen. Die Durchführung der Maßnahmen unter Berücksichtigung der erläuterten Risiken wird ausdrücklich gewünscht.",
             "en": "It was confirmed upon request that all aspects of the anesthesiology-related information were understood and no further questions remain. The procedures, with awareness of the explained risks, are expressly requested.",
-            "fr": "Il a été confirmé, sur demande, que tous les éléments de l'information anesthésique ont été compris et qu’aucune question ne restait en suspens. La réalisation des mesures, en connaissance des risques expliqués, est expressément souhaitée. "
+            "fr": "Il a été confirmé, sur demande, que tous les éléments de l'information anesthésique ont été compris et qu'aucune question ne restait en suspens. La réalisation des mesures, en connaissance des risques expliqués, est expressément souhaitée. "
           },
           "position": "closing",
           "default": true
@@ -211,7 +211,7 @@
           "text": {
             "de": "Eine ausführliche Aufklärung über die geplanten Verfahren und damit verbundenen Risiken wurde angeboten, jedoch vom Patienten/der Patientin ausdrücklich und unmissverständlich abgelehnt. Es bestanden keine Zweifel an der rechtmäßigen und uneingeschränkten Entscheidungsfähigkeit. Der Wille des Patienten/der Patientin wurde respektiert.",
             "en": "Detailed information about the planned procedures and associated risks was offered, but was explicitly and unequivocally declined by the patient. There were no doubts regarding the patient's legal capacity and decision-making ability. The patient's will was respected.",
-            "fr": "Des informations détaillées sur les procédures prévues et les risques associés ont été proposées, mais ont été expressément et sans équivoque refusées par le/la patient·e. Aucune incertitude quant à la capacité juridique et à la faculté de décision n’a été constatée. La volonté du/de la patient·e a été respectée."
+            "fr": "Des informations détaillées sur les procédures prévues et les risques associés ont été proposées, mais ont été expressément et sans équivoque refusées par le/la patient·e. Aucune incertitude quant à la capacité juridique et à la faculté de décision n'a été constatée. La volonté du/de la patient·e a été respectée."
           },
           "position": "before"
         },
@@ -224,7 +224,7 @@
           "text": {
             "de": "Die Aufklärung fand unter zeitkritischen Bedingungen statt, da eine notfallmäßige Durchführung erforderlich war. Es wurde dennoch bestmöglich über die Risiken informiert.",
             "en": "The consent was obtained under time-critical conditions due to emergency circumstances. Efforts were made to inform the patient as comprehensively as possible.",
-            "fr": "Le consentement a été obtenu dans un contexte d’urgence. Les efforts ont été faits pour fournir une information aussi complète que possible."
+            "fr": "Le consentement a été obtenu dans un contexte d'urgence. Les efforts ont été faits pour fournir une information aussi complète que possible."
           },
           "position": "before"
         },
@@ -250,7 +250,7 @@
           "text": {
             "de": "Die Durchführung der anästhesiologischen Maßnahmen erfolgt im mutmaßlichen Willen bei fehlender Einwilligungsfähigkeit und medizinischer Dringlichkeit.",
             "en": "The anesthesiological interventions are carried out based on presumed will in the absence of decision-making capacity and due to medical urgency.",
-            "fr": "Les mesures anesthésiques sont réalisées sur la base de la volonté présumée, en l’absence de capacité à consentir et en raison d’une urgence médicale."
+            "fr": "Les mesures anesthésiques sont réalisées sur la base de la volonté présumée, en l'absence de capacité à consentir et en raison d'une urgence médicale."
           },
           "position": "before",
           "default": false
@@ -264,7 +264,7 @@
           "text": {
             "de": "Die Aufklärung und Einwilligung erfolgten durch eine rechtlich vertretungsberechtigte Person. Die Entscheidungsbefugnis wurde nachvollziehbar dargelegt.",
             "en": "Consent was obtained from a legally authorized representative. The authority to decide was credibly presented.",
-            "fr": "Le consentement a été obtenu auprès d’une personne habilitée à représenter. La légitimité de la représentation a été démontrée de manière compréhensible."
+            "fr": "Le consentement a été obtenu auprès d'une personne habilitée à représenter. La légitimité de la représentation a été démontrée de manière compréhensible."
           },
           "position": "closing",
           "default": false
@@ -278,7 +278,7 @@
           "text": {
             "de": "Da der/die Patient*in minderjährig ist, wurde die Aufklärung im Beisein einer/eines Sorgeberechtigten durchgeführt. Die Zustimmung erfolgte durch eine vertretungsberechtigte Person.",
             "en": "As the patient is a minor, the informed consent discussion was held in the presence of a legal guardian. Consent was provided by an authorized representative.",
-            "fr": "Le/la patient·e étant mineur·e, l’information a été donnée en présence d’un représentant légal. Le consentement a été obtenu auprès de la personne autorisée."
+            "fr": "Le/la patient·e étant mineur·e, l'information a été donnée en présence d'un représentant légal. Le consentement a été obtenu auprès de la personne autorisée."
           },
           "position": "before"
         }
@@ -308,12 +308,12 @@
           "label": {
             "de": "Erhöhtes Aspirationsrisiko",
             "en": "Aspiration risk",
-            "fr": "Risque d’aspiration"
+            "fr": "Risque d'aspiration"
           },
           "text": {
             "de": "Aufgrund vorbekannter Risikofaktoren besteht ein erhöhtes Risiko einer pulmonalen Aspiration mit potenziell schweren Komplikationen.",
             "en": "Due to existing risk factors, there is an increased risk of pulmonary aspiration with potentially serious complications.",
-            "fr": "En raison de facteurs de risque existants, il existe un risque accru d’aspiration pulmonaire avec des complications potentiellement graves."
+            "fr": "En raison de facteurs de risque existants, il existe un risque accru d'aspiration pulmonaire avec des complications potentiellement graves."
           },
           "position": "after"
         },
@@ -326,7 +326,7 @@
           "text": {
             "de": "Die Einnahme von GLP-1-Agonisten (z. B. Semaglutid, Liraglutid) kann zu einer verzögerten Magenentleerung und einem erhöhten Aspirationsrisiko führen. Eine rechtzeitige Pausierung vor anästhesiologischen Maßnahmen ist erforderlich und sollte eingehalten werden, sofern die Dringlichkeit des Eingriffs es zulässt. Dies wurde individuell besprochen und dokumentiert.",
             "en": "Use of GLP-1 agonists (e.g., semaglutide, liraglutide) may delay gastric emptying and increase the risk of aspiration. Timely discontinuation prior to anesthetic procedures is required and should be implemented where surgical urgency permits. This was discussed and documented individually.",
-            "fr": "La prise d’agonistes du GLP-1 (par ex. sémaglutide, liraglutide) peut entraîner un retard de la vidange gastrique et un risque accru d’aspiration. Une interruption anticipée avant une procédure anesthésique est nécessaire et doit être respectée, si l’urgence de l’intervention le permet. Ceci a été discuté et documenté individuellement."
+            "fr": "La prise d'agonistes du GLP-1 (par ex. sémaglutide, liraglutide) peut entraîner un retard de la vidange gastrique et un risque accru d'aspiration. Une interruption anticipée avant une procédure anesthésique est nécessaire et doit être respectée, si l'urgence de l'intervention le permet. Ceci a été discuté et documenté individuellement."
           },
           "position": "after"
         },
@@ -352,7 +352,7 @@
           "text": {
             "de": "Aufgrund der kardialen Vorerkrankung besteht ein erhöhtes Risiko für intraoperative Kreislaufinstabilität, Arrhythmien, Myokardischämie bis hin zum Herzstillstand. Es können Hypotonie und Minderperfusion mit Gefahr einer Hypoxie oder eines hypoxischen Hirnschadens auftreten. Eine intensivmedizinische Versorgung kann erforderlich werden.",
             "en": "Due to preexisting cardiac disease, there is an increased risk of intraoperative hemodynamic instability, arrhythmias, myocardial ischemia up to cardiac arrest. Hypotension and hypoperfusion may occur, carrying the risk of hypoxia or hypoxic brain injury. Intensive care may become necessary.",
-            "fr": "En raison d’une pathologie cardiaque préexistante, le risque d’instabilité hémodynamique peropératoire, d’arythmies, d’ischémie myocardique voire d’arrêt cardiaque est accru. Une hypotension ou une hypoperfusion peuvent survenir avec risque d’hypoxie ou de lésion cérébrale hypoxique. Une prise en charge en soins intensifs peut s’avérer nécessaire."
+            "fr": "En raison d'une pathologie cardiaque préexistante, le risque d'instabilité hémodynamique peropératoire, d'arythmies, d'ischémie myocardique voire d'arrêt cardiaque est accru. Une hypotension ou une hypoperfusion peuvent survenir avec risque d'hypoxie ou de lésion cérébrale hypoxique. Une prise en charge en soins intensifs peut s'avérer nécessaire."
           },
           "position": "after"
         },
@@ -365,7 +365,7 @@
           "text": {
             "de": "Erhöhtes Risiko durch elektromagnetische Störungen oder intraoperative Manipulation bei implantiertem Aggregat.",
             "en": "Increased risk due to electromagnetic interference or intraoperative manipulation with implanted device.",
-            "fr": "Risque accru d’interférences électromagnétiques ou de manipulation peropératoire avec dispositif implanté."
+            "fr": "Risque accru d'interférences électromagnétiques ou de manipulation peropératoire avec dispositif implanté."
           },
           "position": "after"
         },
@@ -378,7 +378,7 @@
           "text": {
             "de": "Bei bestehender Gerinnungsstörung ist das Risiko für intraoperative Blutungen, Nachblutungen, Hämatome und verzögerte Wundheilung erhöht. Gegebenenfalls ist eine Bluttransfusion oder die Einleitung spezieller gerinnungstherapeutischer Maßnahmen erforderlich.",
             "en": "In case of a coagulation disorder, there is an increased risk of intraoperative bleeding, rebleeding, hematomas, and impaired wound healing. If necessary, blood transfusion or targeted hemostatic treatment may be required.",
-            "fr": "En cas de trouble de la coagulation, le risque de saignement peropératoire, de récidive hémorragique, d’hématome ou de cicatrisation retardée est accru. Une transfusion ou la mise en place de mesures thérapeutiques hémostatiques ciblées peut être nécessaire."
+            "fr": "En cas de trouble de la coagulation, le risque de saignement peropératoire, de récidive hémorragique, d'hématome ou de cicatrisation retardée est accru. Une transfusion ou la mise en place de mesures thérapeutiques hémostatiques ciblées peut être nécessaire."
           },
           "position": "after"
         },
@@ -391,7 +391,7 @@
           "text": {
             "de": "Bei präoperativer Anämie bestehen erhöhte Risiken für Gewebehypoxie, Kreislaufinstabilität, kardiale Dekompensation sowie die Notwendigkeit einer Bluttransfusion.",
             "en": "Preoperative anemia increases the risks of tissue hypoxia, circulatory instability, cardiac decompensation, and the potential need for blood transfusion.",
-            "fr": "En cas d’anémie préopératoire, les risques d’hypoxie tissulaire, d’instabilité circulatoire, de décompensation cardiaque et de besoin transfusionnel sont accrus."
+            "fr": "En cas d'anémie préopératoire, les risques d'hypoxie tissulaire, d'instabilité circulatoire, de décompensation cardiaque et de besoin transfusionnel sont accrus."
           },
           "position": "after"
         },
@@ -417,7 +417,7 @@
           "text": {
             "de": "Bei Einnahme mehrerer Medikamente (Polypharmazie) besteht ein erhöhtes Risiko für Arzneimittelinteraktionen, veränderte Wirkspiegel oder unerwartete Nebenwirkungen unter Anästhesie.",
             "en": "Polypharmacy increases the risk of drug interactions, altered drug levels or unexpected side effects under anesthesia.",
-            "fr": "La polymédication augmente le risque d’interactions, de modifications des concentrations ou d’effets indésirables inattendus sous anesthésie."
+            "fr": "La polymédication augmente le risque d'interactions, de modifications des concentrations ou d'effets indésirables inattendus sous anesthésie."
           },
           "position": "after"
         },
@@ -430,7 +430,7 @@
           "text": {
             "de": "Gebrechliche Patient*innen haben ein erhöhtes Risiko für Kreislaufinstabilität, Delir, Ateminsuffizienz, verzögerte Mobilisation sowie prolongierte postoperativ-rehabilitative Verläufe.",
             "en": "Frail patients are at increased risk of circulatory instability, delirium, respiratory insufficiency, delayed mobilization, and prolonged postoperative recovery.",
-            "fr": "Les patient·es fragiles présentent un risque accru d’instabilité circulatoire, de délire, d’insuffisance respiratoire, de mobilisation retardée et de récupération postopératoire prolongée."
+            "fr": "Les patient·es fragiles présentent un risque accru d'instabilité circulatoire, de délire, d'insuffisance respiratoire, de mobilisation retardée et de récupération postopératoire prolongée."
           },
           "position": "after"
         },
@@ -456,7 +456,7 @@
           "text": {
             "de": "Die Auswirkungen der Anästhesie und Medikation auf Mutter und ungeborenes Kind wurden ausführlich besprochen. Es bestehen erhöhte Risiken für fetale Hypoxie, Frühgeburt oder Fehlgeburt. Auch das Risiko für mütterliche Komplikationen wie schwieriger Atemweg, Aspiration oder Kreislaufinstabilität ist erhöht. Die Auswahl von Verfahren und Medikamenten erfolgte unter besonderer Risiko-Nutzen-Abwägung.",
             "en": "The effects of anesthesia and medication on both mother and unborn child were thoroughly discussed. There is an increased risk of fetal hypoxia, preterm birth, or miscarriage. Maternal risks such as difficult airway, aspiration, or circulatory instability are also elevated. The choice of procedure and drugs was made with careful risk-benefit consideration.",
-            "fr": "Les effets de l’anesthésie et des médicaments sur la mère et l’enfant à naître ont été discutés en détail. Les risques de souffrance fœtale, d’accouchement prématuré ou de fausse couche sont accrus. Les risques maternels tels que des voies aériennes difficiles, une aspiration ou une instabilité circulatoire sont également augmentés. Le choix des procédures et des médicaments a été fait après une évaluation rigoureuse du rapport bénéfice-risque."
+            "fr": "Les effets de l'anesthésie et des médicaments sur la mère et l'enfant à naître ont été discutés en détail. Les risques de souffrance fœtale, d'accouchement prématuré ou de fausse couche sont accrus. Les risques maternels tels que des voies aériennes difficiles, une aspiration ou une instabilité circulatoire sont également augmentés. Le choix des procédures et des médicaments a été fait après une évaluation rigoureuse du rapport bénéfice-risque."
           },
           "position": "after"
         },
@@ -467,9 +467,9 @@
             "fr": "Apnée du sommeil"
           },
           "text": {
-            "de": "Bei vorliegender obstruktiver Schlafapnoe besteht ein erhöhtes Risiko für Atemdepression, schwieriges Atemwegsmanagement und postoperative Hypoventilation – insbesondere bei Gabe opioidhaltiger Medikamente.",
+            "de": "Bei vorliegender obstruktiver Schlafapnoe besteht ein erhöhtes Risiko für Atemdepression, schwieriges Atemwegsmanagement und postoperative Hypoventilation - insbesondere bei Gabe opioidhaltiger Medikamente.",
             "en": "In patients with obstructive sleep apnea, there is an increased risk of respiratory depression, difficult airway control, and postoperative hypoventilation, especially when opioids are used.",
-            "fr": "En cas d’apnée obstructive du sommeil, le risque de dépression respiratoire, de gestion difficile des voies respiratoires et d’hypoventilation postopératoire est accru, notamment en cas d’opioïdes."
+            "fr": "En cas d'apnée obstructive du sommeil, le risque de dépression respiratoire, de gestion difficile des voies respiratoires et d'hypoventilation postopératoire est accru, notamment en cas d'opioïdes."
           },
           "position": "after"
         },
@@ -482,7 +482,7 @@
           "text": {
             "de": "Bei neurologischen Vorerkrankungen besteht ein erhöhtes Risiko für kognitive Verschlechterung, postoperatives Delir oder Wechselwirkungen mit Narkosemitteln.",
             "en": "Neurological conditions increase the risk of cognitive deterioration, postoperative delirium, or interactions with anesthetic agents.",
-            "fr": "Les pathologies neurologiques augmentent le risque de détérioration cognitive, de délire postopératoire ou d’interactions médicamenteuses."
+            "fr": "Les pathologies neurologiques augmentent le risque de détérioration cognitive, de délire postopératoire ou d'interactions médicamenteuses."
           },
           "position": "after"
         },
@@ -495,7 +495,7 @@
           "text": {
             "de": "Bei Adipositas bestehen erhöhte Risiken für einen schwierigen Atemweg, erschwerte Gefäßpunktionen, Atemdepression und kardiopulmonale Komplikationen.",
             "en": "Obesity increases the risk of difficult airway, challenging vascular access, respiratory depression, and cardiopulmonary complications.",
-            "fr": "L’obésité accroît le risque de voie respiratoire difficile, d’accès vasculaire compliqué, de dépression respiratoire et de complications cardiopulmonaires."
+            "fr": "L'obésité accroît le risque de voie respiratoire difficile, d'accès vasculaire compliqué, de dépression respiratoire et de complications cardiopulmonaires."
           },
           "position": "after"
         },
@@ -508,7 +508,7 @@
           "text": {
             "de": "Bei Diabetes mellitus bestehen erhöhte Risiken für Hypo-/Hyperglykämien, Infektionen, Wundheilungsstörungen und perioperative Stoffwechselentgleisungen.",
             "en": "Diabetes mellitus increases the risks of hypo-/hyperglycemia, infection, impaired wound healing, and perioperative metabolic imbalance.",
-            "fr": "Le diabète augmente le risque d’hypo-/hyperglycémie, d’infections, de troubles de cicatrisation et de déséquilibre métabolique en périopératoire."
+            "fr": "Le diabète augmente le risque d'hypo-/hyperglycémie, d'infections, de troubles de cicatrisation et de déséquilibre métabolique en périopératoire."
           },
           "position": "after"
         },
@@ -521,7 +521,7 @@
           "text": {
             "de": "Bei bestehender Immunsuppression oder Chemotherapie ist das Risiko für Infektionen, verzögerte Wundheilung und atypische Komplikationsverläufe erhöht.",
             "en": "Immunosuppression or chemotherapy increases the risk of infections, impaired wound healing, and atypical complication patterns.",
-            "fr": "L’immunosuppression ou la chimiothérapie augmente le risque d’infections, de retard de cicatrisation et de complications atypiques."
+            "fr": "L'immunosuppression ou la chimiothérapie augmente le risque d'infections, de retard de cicatrisation et de complications atypiques."
           },
           "position": "after"
         },
@@ -560,7 +560,7 @@
           "text": {
             "de": "Bei Leber- oder Nierenfunktionsstörungen besteht ein erhöhtes Risiko für veränderte Arzneimittelwirkung, Elektrolytstörungen und Komplikationen im Flüssigkeitshaushalt.",
             "en": "Liver or kidney dysfunction increases the risk of altered drug metabolism, electrolyte imbalances, and fluid-related complications.",
-            "fr": "Une insuffisance hépatique ou rénale augmente le risque d’altération du métabolisme des médicaments, de déséquilibres électrolytiques et de complications liées aux liquides."
+            "fr": "Une insuffisance hépatique ou rénale augmente le risque d'altération du métabolisme des médicaments, de déséquilibres électrolytiques et de complications liées aux liquides."
           },
           "position": "after"
         }
@@ -640,7 +640,7 @@
                 "en": "Heart failure",
                 "fr": "Insuffisance cardiaque"
               }
-            },  
+            },
             "respiratory_failure": {
               "label": {
                 "de": "Lungenversagen",
@@ -932,7 +932,7 @@
               "label": {
                 "de": "Wachheit unter Narkose (Awareness)",
                 "en": "Awareness under general anaesthesia",
-                "fr": "Conscience pendant l’anesthésie générale"
+                "fr": "Conscience pendant l'anesthésie générale"
               }
             }
           },
@@ -953,21 +953,21 @@
               "label": {
                 "de": "Erhöhte Aspirationsgefahr",
                 "en": "Elevated risk of aspiration",
-                "fr": "Risque d’aspiration élevé"
+                "fr": "Risque d'aspiration élevé"
               }
             },
             "traumatic_intubation": {
               "label": {
                 "de": "Trauma durch Intubation",
                 "en": "Trauma during intubation",
-                "fr": "Traumatisme à l’intubation"
+                "fr": "Traumatisme à l'intubation"
               }
             },
             "apnea_hypoxia": {
               "label": {
                 "de": "Hypoxie bei Apnoe",
                 "en": "Hypoxia during apnoea",
-                "fr": "Hypoxie liée à l’apnée"
+                "fr": "Hypoxie liée à l'apnée"
               }
             },
             "hemodynamic_instability": {
@@ -1114,7 +1114,7 @@
               "label": {
                 "de": "Sauerstofftoxizität",
                 "en": "Oxygen toxicity",
-                "fr": "Toxicité de l’oxygène"
+                "fr": "Toxicité de l'oxygène"
               }
             }
           },
@@ -1128,7 +1128,7 @@
               "label": {
                 "de": "Luftleck",
                 "en": "Air leak",
-                "fr": "Fuite d’air"
+                "fr": "Fuite d'air"
               }
             },
             "difficulty_monitoring": {
@@ -1163,7 +1163,7 @@
               "label": {
                 "de": "Aspirationsrisiko",
                 "en": "Aspiration risk",
-                "fr": "Risque d’aspiration"
+                "fr": "Risque d'aspiration"
               }
             },
             "ineffective_oxygenation": {
@@ -1226,7 +1226,7 @@
               "label": {
                 "de": "Unangenehmes Empfinden trotz Betäubung",
                 "en": "Discomfort despite local anaesthesia",
-                "fr": "Inconfort malgré l’anesthésie locale"
+                "fr": "Inconfort malgré l'anesthésie locale"
               }
             },
             "cough": {
@@ -1325,7 +1325,7 @@
             "label": {
               "de": "Koniotomie / Notfalltracheotomie",
               "en": "Cricothyrotomy / emergency tracheotomy",
-              "fr": "Cricothyrotomie / trachéotomie d’urgence"
+              "fr": "Cricothyrotomie / trachéotomie d'urgence"
             },
             "bleeding": {
               "label": {
@@ -1405,11 +1405,11 @@
               "fr": "Voies aériennes difficiles"
             },
             "videolaryngoscopy": {
-                "label": {
-                  "de": "Videolaryngoskopie",
-                  "en": "Videolaryngoscopy",
-                  "fr": "Vidéo-laryngoscopie"
-                }
+              "label": {
+                "de": "Videolaryngoskopie",
+                "en": "Videolaryngoscopy",
+                "fr": "Vidéo-laryngoscopie"
+              }
             },
             "failed_intubation": {
               "label": {
@@ -1436,16 +1436,16 @@
               "label": {
                 "de": "Mehrfache Intubationsversuche",
                 "en": "Multiple intubation attempts",
-                "fr": "Tentatives d’intubation multiples"
+                "fr": "Tentatives d'intubation multiples"
               }
             },
             "cicv_situation": {
               "label": {
                 "de": "CICV-Situation (kein Intubations- / Beatmungserfolg möglich)",
                 "en": "CICV situation (cannot intubate, cannot ventilate)",
-                "fr": "Situation CICV (impossible d’intuber ou de ventiler)"
+                "fr": "Situation CICV (impossible d'intuber ou de ventiler)"
               }
-            },  
+            },
             "suffocation": {
               "label": {
                 "de": "Ersticken",
@@ -1464,7 +1464,7 @@
               "label": {
                 "de": "Erforderlichkeit eines Notfallzugangs",
                 "en": "Need for emergency airway access",
-                "fr": "Nécessité d’un accès d’urgence"
+                "fr": "Nécessité d'un accès d'urgence"
               }
             }
           },
@@ -1472,7 +1472,7 @@
             "label": {
               "de": "HNO-bezogene Anästhesierisiken",
               "en": "ENT-related anesthesia risks",
-              "fr": "Risques anesthésiques liés à l’ORL"
+              "fr": "Risques anesthésiques liés à l'ORL"
             },
             "airway_fire": {
               "label": {
@@ -2156,7 +2156,7 @@
             "horner_syndrome": {
               "label": {
                 "de": "Horner-Syndrom",
-                "en": "Horner’s syndrome",
+                "en": "Horner's syndrome",
                 "fr": "Syndrome de Horner"
               }
             },
@@ -2220,7 +2220,7 @@
               "label": {
                 "de": "Organverletzung",
                 "en": "Organ injury",
-                "fr": "Lésion d’organe"
+                "fr": "Lésion d'organe"
               }
             }
           },
@@ -3245,7 +3245,7 @@
         "label": {
           "de": "Dünndarmteilresektion",
           "en": "Small bowel resection",
-          "fr": "Résection de l’intestin grêle"
+          "fr": "Résection de l'intestin grêle"
         },
         "risks": [
           "general_anesthesia.common",
@@ -3469,9 +3469,9 @@
       },
       "bariatric_surgery_banding": {
         "label": {
-          "de": "Bariatrische Chirurgie – Banding",
-          "en": "Bariatric surgery – banding",
-          "fr": "Chirurgie bariatrique – banding"
+          "de": "Bariatrische Chirurgie - Banding",
+          "en": "Bariatric surgery - banding",
+          "fr": "Chirurgie bariatrique - banding"
         },
         "risks": [
           "general_anesthesia.full",
@@ -3686,7 +3686,7 @@
         "label": {
           "de": "Offene Operation bei Bauchaortenaneurysma",
           "en": "Open abdominal aortic aneurysm repair",
-          "fr": "Réparation ouverte d’anévrisme de l’aorte abdominale"
+          "fr": "Réparation ouverte d'anévrisme de l'aorte abdominale"
         },
         "risks": [
           "general_anesthesia.full",
@@ -3706,7 +3706,7 @@
         "label": {
           "de": "Endovaskuläres Aneurysma-Repair (EVAR)",
           "en": "Endovascular aneurysm repair (EVAR)",
-          "fr": "Réparation endovasculaire d’anévrisme (EVAR)"
+          "fr": "Réparation endovasculaire d'anévrisme (EVAR)"
         },
         "risks": [
           "general_anesthesia.full",
@@ -3765,7 +3765,7 @@
         "label": {
           "de": "Implantation eines Barorezeptor-Stimulators",
           "en": "Baroreceptor stimulator implantation",
-          "fr": "Implantation d’un stimulateur barorécepteur"
+          "fr": "Implantation d'un stimulateur barorécepteur"
         },
         "risks": [
           "general_anesthesia.full",
@@ -5200,9 +5200,9 @@
       "options": {
         "n0": {
           "label": {
-            "de": "N0 – sofort",
-            "en": "N0 – immediate",
-            "fr": "N0 – immédiate"
+            "de": "N0 - sofort",
+            "en": "N0 - immediate",
+            "fr": "N0 - immédiate"
           },
           "associated_risks": [
             "consultation_framework.intro",
@@ -5226,9 +5226,9 @@
         },
         "n1": {
           "label": {
-            "de": "N1 – Notfall, innerhalb von 1 Stunde",
-            "en": "N1 – emergency, within 1 hour",
-            "fr": "N1 – urgence, dans moins d'une heure"
+            "de": "N1 - Notfall, innerhalb von 1 Stunde",
+            "en": "N1 - emergency, within 1 hour",
+            "fr": "N1 - urgence, dans moins d'une heure"
           },
           "associated_risks": [
             "consent_context.emergency_surgery",
@@ -5249,9 +5249,9 @@
         },
         "n2": {
           "label": {
-            "de": "N2 – innerhalb von 6 Stunden",
-            "en": "N2 – within 6 hours",
-            "fr": "N2 – dans les 6 heures"
+            "de": "N2 - innerhalb von 6 Stunden",
+            "en": "N2 - within 6 hours",
+            "fr": "N2 - dans les 6 heures"
           },
           "associated_risks": [
             "consent_context.emergency_surgery",
@@ -5269,9 +5269,9 @@
         },
         "n3": {
           "label": {
-            "de": "N3 – innerhalb von 12 Stunden",
-            "en": "N3 – within 12 hours",
-            "fr": "N3 – dans les 12 heures"
+            "de": "N3 - innerhalb von 12 Stunden",
+            "en": "N3 - within 12 hours",
+            "fr": "N3 - dans les 12 heures"
           },
           "associated_risks": [
             "consent_context.emergency_surgery",
@@ -5285,9 +5285,9 @@
         },
         "n4": {
           "label": {
-            "de": "N4 – innerhalb von 24 Stunden",
-            "en": "N4 – within 24 hours",
-            "fr": "N4 – dans les 24 heures"
+            "de": "N4 - innerhalb von 24 Stunden",
+            "en": "N4 - within 24 hours",
+            "fr": "N4 - dans les 24 heures"
           },
           "associated_risks": [
             "consent_context.emergency_surgery",
@@ -5300,9 +5300,9 @@
         },
         "n5": {
           "label": {
-            "de": "N5 – elektiv",
-            "en": "N5 – elective",
-            "fr": "N5 – élective"
+            "de": "N5 - elektiv",
+            "en": "N5 - elective",
+            "fr": "N5 - élective"
           },
           "associated_risks": [
             "lines_catheters.common",
@@ -5320,9 +5320,9 @@
       "options": {
         "asa1": {
           "label": {
-            "de": "I – gesunder Patient",
-            "en": "I – healthy patient",
-            "fr": "I – patient en bonne santé"
+            "de": "I - gesunder Patient",
+            "en": "I - healthy patient",
+            "fr": "I - patient en bonne santé"
           },
           "associated_risks": [
             "lines_catheters.common",
@@ -5331,17 +5331,19 @@
         },
         "asa2": {
           "label": {
-            "de": "II – geringfügige Erkrankung ohne Einschränkungen",
-            "en": "II – mild disease without limitations",
-            "fr": "II – maladie mineure sans limitations"
+            "de": "II - geringfügige Erkrankung ohne Einschränkungen",
+            "en": "II - mild disease without limitations",
+            "fr": "II - maladie mineure sans limitations"
           },
-          "associated_risks": []
+          "associated_risks": [
+            
+          ]
         },
         "asa3": {
           "label": {
-            "de": "III – Erkrankung mit deutlicher Beeinträchtigung",
-            "en": "III – disease with significant limitation",
-            "fr": "III – maladie avec limitation significative"
+            "de": "III - Erkrankung mit deutlicher Beeinträchtigung",
+            "en": "III - disease with significant limitation",
+            "fr": "III - maladie avec limitation significative"
           },
           "associated_risks": [
             "lines_catheters.common",
@@ -5352,9 +5354,9 @@
         },
         "asa4": {
           "label": {
-            "de": "IV – lebensbedrohliche Erkrankung",
-            "en": "IV – life-threatening disease",
-            "fr": "IV – maladie menaçant la vie"
+            "de": "IV - lebensbedrohliche Erkrankung",
+            "en": "IV - life-threatening disease",
+            "fr": "IV - maladie menaçant la vie"
           },
           "associated_risks": [
             "general_anesthesia.common",
@@ -5371,9 +5373,9 @@
         },
         "asa5": {
           "label": {
-            "de": "V – moribunder Patient",
-            "en": "V – moribund patient",
-            "fr": "V – patient moribond"
+            "de": "V - moribunder Patient",
+            "en": "V - moribund patient",
+            "fr": "V - patient moribond"
           },
           "associated_risks": [
             "general_anesthesia.common",
@@ -5392,11 +5394,13 @@
         },
         "asa6": {
           "label": {
-            "de": "VI – hirntoter Organspender",
-            "en": "VI – brain-dead organ donor",
-            "fr": "VI – donneur en mort cérébrale"
+            "de": "VI - hirntoter Organspender",
+            "en": "VI - brain-dead organ donor",
+            "fr": "VI - donneur en mort cérébrale"
           },
-          "associated_risks": []
+          "associated_risks": [
+            
+          ]
         }
       }
     }
