@@ -825,9 +825,9 @@
             },
             "tiva": {
               "label": {
-                "de": "Totale intravenöse Anästhesie (TIVA)",
-                "fr": "Anesthésie intraveineuse totale (TIVA)",
-                "en": "Total intravenous anesthesia (TIVA)"
+                "de": "Totale intravenöse Anästhesie",
+                "fr": "Anesthésie intraveineuse totale",
+                "en": "Total intravenous anesthesia"
               }
             },
             "balanced_anesthesia": {
