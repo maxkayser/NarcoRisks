@@ -23,6 +23,33 @@
         "fr": "Résumé"
       }
     },
+    "user_guides": {
+      "introduction": {
+        "de": "Nutzen Sie diese Toolbox, um Risiken im Umfeld geplanter anästhesiologischer Maßnahmen individuell und strukturiert zu erfassen. Wählen Sie zunächst die gewünschte Sprache aus, um zu beginnen.",
+        "en": "Use this toolbox to systematically identify and document risks related to planned anesthesiological procedures. Start by selecting your preferred language.",
+        "fr": "Utilisez cet outil pour identifier et documenter de manière structurée les risques liés aux interventions anesthésiques prévues. Commencez par choisir votre langue."
+      },
+      "context_associated_risks": {
+        "de": "Wählen Sie alle Risikofaktoren aus, die im individuellen medizinischen, sozialen oder organisatorischen Umfeld der Maßnahme relevant sein könnten – z. B. bestehende Grunderkrankungen, besondere Aufklärungssituationen oder patientenspezifische Besonderheiten.",
+        "en": "Select all risk factors that may be relevant in the specific medical, social, or organizational context of the procedure—such as pre-existing conditions, special consent situations, or patient-specific factors.",
+        "fr": "Sélectionnez tous les facteurs de risque pertinents dans le contexte médical, social ou organisationnel spécifique de l'intervention, comme des pathologies préexistantes, des situations d'information particulières ou des caractéristiques propres au patient."
+      },
+      "measures_associated_risks": {
+        "de": "Wählen Sie alle Risiken aus, die sich direkt aus der geplanten Maßnahme oder eingesetzten Technik ergeben können – z. B. durch das Anästhesieverfahren, spezielle Blocktechniken, Zugänge oder zusätzliche Eingriffe.",
+        "en": "Select all risks that may arise directly from the planned procedure or technique—such as the type of anesthesia, specific block techniques, access routes, or additional interventions.",
+        "fr": "Sélectionnez tous les risques pouvant découler directement de l'intervention ou de la technique prévue, comme le type d'anesthésie, les techniques de bloc spécifiques, les voies d'abord ou les interventions complémentaires."
+      },
+      "additional_text": {
+        "de": "Fügen Sie bei Bedarf hier zusätzliche Ergänzungen hinzu.",
+        "en": "Add additional notes here if needed.",
+        "fr": "Ajoutez ici des compléments si nécessaire."
+      },
+      "summary": {
+        "de": "Die Zusammenfassung fasst Ihre Eingaben automatisch zusammen. Sie können den Text bei Bedarf anpassen, kopieren oder – je nach Funktion – als Datei herunterladen.",
+        "en": "The summary automatically compiles your inputs. You can edit the text if needed, copy it, or download it as a file—depending on the available functions.",
+        "fr": "Le résumé compile automatiquement vos saisies. Vous pouvez modifier le texte si nécessaire, le copier ou le télécharger sous forme de fichier, selon les fonctionnalités disponibles."
+      }
+    },
     "placeholders": {
       "additional_text": {
         "de": "Zusätzlicher Text...",
