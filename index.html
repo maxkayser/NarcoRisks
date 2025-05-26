@@ -15,7 +15,7 @@
 <body>
   <h1 data-i18n="headings.title">NarcoRisks</h1>
   <section>
-	<p data-i18n="user_guides.introduction"></p>
+	<p data-i18n="user_guides.introduction" class="user_guide"></p>
 	<label for="language" data-i18n="language_selection"></label>
 	<select id="language">
 		<option value="de">Deutsch</option>
@@ -32,7 +32,7 @@
   </section>
   <section>
 	<h2 data-i18n="headings.context_associated_risks"></h2>
-  	<p data-i18n="user_guides.context_associated_risks"></p>
+  	<p data-i18n="user_guides.context_associated_risks" class="user_guide"></p>
 	<div id="staticTextblockCheckboxes" class="checkbox-grid" style="margin-top:1em;"></div>
   </section>
   <section>
@@ -40,14 +40,14 @@
   	<p data-i18n="user_guides.measures_associated_risks"></p>
     <div id="risksOutput" data-i18n="placeholders.loading_risks"></div>
     <br>
-  	<p data-i18n="user_guides.additional_text"></p>
+  	<p data-i18n="user_guides.additional_text" class="user_guide"></p>
     <label>
 	    <textarea id="additionalText" style="min-height: 30px; height: 30px;" data-i18n-attr="placeholder:placeholders.additional_text"></textarea>
     </label>
   </section>
   <section>
 	<h2 data-i18n="headings.summary"></h2>
-  	<p data-i18n="user_guides.summary"></p>
+  	<p data-i18n="user_guides.summary" class="user_guide"></p>
 	<div id="summaryText" class="scrollbox"></div>
 	<button onclick="copyToClipboard()" id="copyButton" data-i18n="buttons.copy"></button>
 	<button onclick="downloadSummary()" data-i18n="buttons.download"></button>
