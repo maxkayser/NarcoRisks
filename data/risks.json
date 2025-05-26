@@ -30,7 +30,7 @@
         "fr": "Utilisez cet outil pour identifier et documenter de manière structurée les risques liés aux interventions anesthésiques prévues. Commencez par choisir votre langue."
       },
       "context_associated_risks": {
-        "de": "Wählen Sie alle Risikofaktoren aus, die im individuellen medizinischen, sozialen oder organisatorischen Umfeld der Maßnahme relevant sein könnten – z. B. bestehende Grunderkrankungen, besondere Aufklärungssituationen oder patientenspezifische Besonderheiten.",
+        "de": "Wählen Sie alle Risikofaktoren aus, die im individuellen medizinischen, sozialen oder organisatorischen Rahmen der Maßnahme relevant sein könnten – z. B. bestehende Grunderkrankungen, besondere Aufklärungssituationen oder patientenspezifische Besonderheiten.",
         "en": "Select all risk factors that may be relevant in the specific medical, social, or organizational context of the procedure—such as pre-existing conditions, special consent situations, or patient-specific factors.",
         "fr": "Sélectionnez tous les facteurs de risque pertinents dans le contexte médical, social ou organisationnel spécifique de l'intervention, comme des pathologies préexistantes, des situations d'information particulières ou des caractéristiques propres au patient."
       },
