@@ -290,7 +290,7 @@ button:hover, #copyButton:hover {
 section {
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  gap: 0rem;
   padding: 1rem;
   background: #f9f9f9;
   border-radius: 0.6rem;
