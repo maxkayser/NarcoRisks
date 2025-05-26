@@ -59,6 +59,7 @@ p {
 	padding: 4px 12px 4px 12px;
 	border-radius: 4px;
 	font-size: 13px;
+	margin: 0px;
 }
 
 textarea {
