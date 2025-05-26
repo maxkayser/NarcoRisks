@@ -276,11 +276,14 @@ button:hover, #copyButton:hover {
   font-size: 1rem;
   white-space: normal;
   font-family: 'Comic Neue', sans-serif;
+	margin-top: 10px;
+	margin-bottom: 10px;
 }
 
 #summaryText p {
   margin: 0 0 0.5em 0; /* nur minimaler Abstand unten */
   padding: 0;
+	background-color: white;
 }
 
 #summaryText ul {
