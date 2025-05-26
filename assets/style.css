@@ -54,6 +54,13 @@ label, select, textarea {
   margin-bottom: 1rem;
 }
 
+p {
+	background-color: #efefef;
+	padding: 4px 12px 4px 12px;
+	border-radius: 4px;
+	font-size: 13px;
+}
+
 textarea {
   width: -webkit-fill-available;
   min-height: 300px;
