@@ -54,7 +54,7 @@ label, select, textarea {
   margin-bottom: 1rem;
 }
 
-p {
+p .user_guides{
 	background-color: #efefef;
 	padding: 4px 12px 4px 12px;
 	border-radius: 4px;
