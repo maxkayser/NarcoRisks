@@ -65,6 +65,11 @@ textarea {
   background-color: #fffefa;
 }
 
+button {
+    max-width: 400px;
+    margin: 8px;
+}
+
 button, #copyButton {
   background: var(--accent);
   color: white;
