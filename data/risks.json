@@ -45,9 +45,9 @@
         "fr": "Ajoutez ici des compléments si nécessaire."
       },
       "summary": {
-        "de": "Die Zusammenfassung fasst Ihre Eingaben automatisch zusammen. Sie können den Text bei Bedarf anpassen, kopieren oder – je nach Funktion – als Datei herunterladen.",
-        "en": "The summary automatically compiles your inputs. You can edit the text if needed, copy it, or download it as a file—depending on the available functions.",
-        "fr": "Le résumé compile automatiquement vos saisies. Vous pouvez modifier le texte si nécessaire, le copier ou le télécharger sous forme de fichier, selon les fonctionnalités disponibles."
+        "de": "Die Toolbox fasst Ihre Eingaben automatisch zusammen. Sie können den Text bei Bedarf kopieren oder als Datei herunterladen.",
+        "en": "This toolbox automatically compiles your inputs. You can copy the text or download it as a file.",
+        "fr": "Cet outil compile automatiquement vos saisies. Vous pouvez copier le texte ou le télécharger sous forme de fichier."
       }
     },
     "placeholders": {
