@@ -192,6 +192,17 @@
           },
           "position": "before"
         },
+        "postop_monitoring_context": {
+          "label": {
+            "de": "Postoperative Versorgung",
+            "en": "Postoperative care",
+            "fr": "Prise en charge postopératoire"
+          },
+          "text": {
+            "de": "Die postoperative Versorgung erfolgt abhängig von der Situation im Aufwachraum, in der Überwachungseinheit (PACU) oder auf der Intensivstation. Schutzmaßnahmen wie Bettgitter können bei Bedarf zur Sicherheit erforderlich sein.",
+            "en": "Postoperative care will take place depending on the situation in the recovery room, the post-anesthesia care unit (PACU), or the intensive care unit. Safety measures such as bed rails may be necessary if required.",
+            "fr": "La prise en charge postopératoire se fait selon la situation en salle de réveil, en unité de surveillance continue (PACU) ou en soins intensifs. Des mesures de protection comme les barrières de lit peuvent être nécessaires si la situation l’exige."
+          },
         "measures_explained": {
           "label": {
             "de": "Erklärung der Maßnahmen",
@@ -206,17 +217,6 @@
           "position": "after",
           "default": true
         },
-        "postop_monitoring_context": {
-          "label": {
-            "de": "Postoperative Versorgung",
-            "en": "Postoperative care",
-            "fr": "Prise en charge postopératoire"
-          },
-          "text": {
-            "de": "Die postoperative Versorgung erfolgt abhängig von der Situation im Aufwachraum, in der Überwachungseinheit (PACU) oder auf der Intensivstation. Schutzmaßnahmen wie Bettgitter können bei Bedarf zur Sicherheit erforderlich sein.",
-            "en": "Postoperative care will take place depending on the situation in the recovery room, the post-anesthesia care unit (PACU), or the intensive care unit. Safety measures such as bed rails may be necessary if required.",
-            "fr": "La prise en charge postopératoire se fait selon la situation en salle de réveil, en unité de surveillance continue (PACU) ou en soins intensifs. Des mesures de protection comme les barrières de lit peuvent être nécessaires si la situation l’exige."
-          },
           "position": "after",
           "default": true
         },
