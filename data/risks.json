@@ -192,6 +192,34 @@
           },
           "position": "before"
         },
+        "measures_explained": {
+          "label": {
+            "de": "Erklärung der Maßnahmen",
+            "en": "Explanation of measures",
+            "fr": "Explication des mesures"
+          },
+          "text": {
+            "de": "Alle geplanten Maßnahmen wurden erklärt sowie nachvollziehbar und gut verständlich kommuniziert.",
+            "en": "All planned measures were explained and communicated clearly and comprehensibly.",
+            "fr": "Toutes les mesures prévues ont été expliquées et communiquées de manière claire et compréhensible."
+          },
+          "position": "after",
+          "default": true
+        },
+        "postop_monitoring_context": {
+          "label": {
+            "de": "Postoperative Versorgung",
+            "en": "Postoperative care",
+            "fr": "Prise en charge postopératoire"
+          },
+          "text": {
+            "de": "Die postoperative Versorgung erfolgt abhängig von der Situation im Aufwachraum, in der Überwachungseinheit (PACU) oder auf der Intensivstation. Schutzmaßnahmen wie Bettgitter können bei Bedarf zur Sicherheit erforderlich sein.",
+            "en": "Postoperative care will take place depending on the situation in the recovery room, the post-anesthesia care unit (PACU), or the intensive care unit. Safety measures such as bed rails may be necessary if required.",
+            "fr": "La prise en charge postopératoire se fait selon la situation en salle de réveil, en unité de surveillance continue (PACU) ou en soins intensifs. Des mesures de protection comme les barrières de lit peuvent être nécessaires si la situation l’exige."
+          },
+          "position": "after",
+          "default": true
+        },
         "closing": {
           "label": {
             "de": "Schlussbemerkung",
@@ -367,6 +395,19 @@
             "de": "Bekannter schwieriger Atemweg mit erhöhtem Risiko für Atemwegskomplikationen.",
             "en": "Known difficult airway with increased risk of airway complications.",
             "fr": "Voies respiratoires difficiles connues avec risque accru de complications respiratoires."
+          },
+          "position": "after"
+        },
+        "ponv_risk": {
+          "label": {
+            "de": "Erhöhtes PONV-Risiko",
+            "en": "Increased PONV risk",
+            "fr": "Risque accru de PONV"
+          },
+          "text": {
+            "de": "Es besteht ein erhöhtes Risiko für postoperative Übelkeit und Erbrechen (PONV).",
+            "en": "There is an increased risk of postoperative nausea and vomiting (PONV).",
+            "fr": "Il existe un risque accru de nausées et vomissements postopératoires (PONV)."
           },
           "position": "after"
         },
