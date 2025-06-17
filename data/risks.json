@@ -385,6 +385,19 @@
           },
           "position": "after"
         },
+        "regular_medication": {
+          "label": {
+            "de": "Dauermedikation",
+            "en": "Regular medication",
+            "fr": "Médication habituelle"
+          },
+          "text": {
+            "de": "Der perioperative Umgang mit der Dauermedikation wurde individuell geprüft. Absetzfristen, Wechselwirkungen und Risiken im Zusammenhang mit den geplanten Narkoseverfahren wurden ausführlich besprochen.",
+            "en": "The perioperative management of chronic medication was individually reviewed. Discontinuation periods, interactions, and risks associated with the planned anesthetic procedures were thoroughly discussed.",
+            "fr": "La gestion périopératoire de la médication chronique a été évaluée de manière individualisée. Les délais d'arrêt, les interactions et les risques liés aux procédures anesthésiques prévues ont été discutés en détail."
+          },
+          "position": "after"
+        },
         "known_difficult_airway": {
           "label": {
             "de": "Schwieriger Atemweg",
