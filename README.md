@@ -7,7 +7,7 @@
 # NarcoRisks
 ## Interactive Platform for Anesthesia-Associated Risks
 
-NarcoRisks is an interactive, multilingual platform designed to visualize risks associated with various anesthesia techniques. It allows researchers, medical professionals and trainees to explore and customize risk summaries for educational or resaerch purposes.
+NarcoRisks is an interactive, multilingual platform designed to visualize risks associated with various anesthesia techniques. It allows researchers, medical professionals and trainees to explore and customize risk summaries for educational or research purposes.
 
 👉 [Open Visualization](https://maxkayser.github.io/NarcoRisks/)
 
