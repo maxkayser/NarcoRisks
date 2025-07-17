@@ -310,6 +310,19 @@
           "position": "before",
           "default": false
         },
+        "advanced_care_planning": {
+          "label": {
+            "de": "Vorausschauende Versorgungsplanung",
+            "en": "Advanced Care Planning",
+            "fr": "Planification anticipée"
+          },
+          "text": {
+            "de": "Ausgehend von den vorbestehenden Erkrankungen und des Risikos der Notwendigkeit einer intensivmedizinischen Behandlung im Falle schwerer postoperativer Komplikationen haben wir uns zu dem von dem/der Patient:in gewünschten Behandlungsziel sowie dem Patient:innenwillen bezüglich der Inanspruchnahme von intensivmedizinischen Maßnahmen wie: Reanimation, Tracheotomie (Luftröhrenschnitt), Dialyse, u.a. ausgetauscht. Dabei haben wir folgendes Konzept vereinbart:",
+            "en": "Based on the patient’s preexisting conditions and the potential need for intensive care treatment in the event of severe postoperative complications, we discussed the patient's preferred treatment goals and their wishes regarding the use of intensive care measures such as resuscitation, tracheotomy, dialysis, and others. In this context, we agreed on the following plan:",
+            "fr": "Compte tenu des pathologies préexistantes et du risque potentiel de recours à des soins intensifs en cas de complications postopératoires graves, nous avons échangé sur les objectifs thérapeutiques souhaités par le/la patient·e ainsi que sur sa volonté concernant des mesures de soins intensifs telles que : réanimation, trachéotomie, dialyse, etc. Nous avons alors convenu du plan suivant :"
+          },
+          "position": "before"
+        },
         "proxy_consent": {
           "label": {
             "de": "Stellvertretende Einwilligung",
