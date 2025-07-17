@@ -272,14 +272,14 @@
         },
         "time_pressure_consent": {
           "label": {
-            "de": "Einwilligung unter Zeitdruck",
-            "en": "Consent under time pressure",
-            "fr": "Consentement sous contrainte de temps"
+            "de": "Zeitnahe Aufklärung",
+            "en": "Timely Consent",
+            "fr": "Consentement opportun"
           },
           "text": {
-            "de": "Die Aufklärung fand unter zeitkritischen Bedingungen statt, da eine notfallmäßige Durchführung erforderlich war. Es wurde dennoch bestmöglich über die Risiken informiert.",
-            "en": "The consent was obtained under time-critical conditions due to emergency circumstances. Efforts were made to inform the patient as comprehensively as possible.",
-            "fr": "Le consentement a été obtenu dans un contexte d'urgence. Les efforts ont été faits pour fournir une information aussi complète que possible."
+            "de": "Die Aufklärung fand mit geringem zeitlichen Vorlauf (≤ 12 Sunden) zur geplanten Maßnahme statt, da diese nach interdisziplinärem Austausch zeitnah indiziert war.",
+            "en": "The informed consent was obtained on short notice (≤ 12 hours) prior to the planned procedure, as it was promptly indicated following interdisciplinary discussion.",
+            "fr": "Le consentement éclairé a été obtenu peu de temps (≤ 12 heures) avant la procédure prévue, celle-ci ayant été rapidement indiquée à la suite d’une discussion interdisciplinaire."
           },
           "position": "before"
         },
