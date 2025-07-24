@@ -217,9 +217,6 @@
           "position": "after",
           "default": true
         },
-          "position": "after",
-          "default": true
-        },
         "medical_terms_clarified": {
           "label": {
             "de": "Medizinische Fachbegriffe",
