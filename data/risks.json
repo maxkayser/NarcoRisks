@@ -216,7 +216,7 @@
           },
           "position": "after",
           "default": true
-        },
+        },		
         "medical_terms_clarified": {
           "label": {
             "de": "Medizinische Fachbegriffe",
@@ -228,6 +228,9 @@
             "en": "It was ensured that all medical terms, where used, were understood. Technical content was explained in plain language when needed. Questions were encouraged and discussed in detail.",
             "fr": "Il a été vérifié que tous les termes médicaux, lorsqu’ils étaient utilisés, ont été compris. Les contenus ont été expliqués en langage simple si nécessaire. Les questions ont été encouragées et discutées en détail."
           },
+          "position": "after",
+          "default": true
+        },
           "position": "after",
           "default": true
         },
