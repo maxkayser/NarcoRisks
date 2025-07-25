@@ -203,9 +203,6 @@
             "en": "Postoperative care will take place depending on the situation in the recovery room, the post-anesthesia care unit (PACU), or the intensive care unit. Safety measures such as bed rails may be necessary if required.",
             "fr": "La prise en charge postopératoire se fait selon la situation en salle de réveil, en unité de surveillance continue (PACU) ou en soins intensifs. Des mesures de protection comme les barrières de lit peuvent être nécessaires si la situation l’exige."
           },
-          "position": "after",
-          "default": true
-        },
         "measures_explained": {
           "label": {
             "de": "Erklärung der Maßnahmen",
