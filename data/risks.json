@@ -911,13 +911,6 @@
                 "fr": "Interactions médicamenteuses"
               }
             },
-            "off_label_use": {
-              "label": {
-                "de": "Off-Label Medikamentengabe",
-                "en": "Off-label use",
-                "fr": "Utilisation hors indication autorisée"
-              }
-            },
             "postop_monitoring": {
               "label": {
                 "de": "Postoperative Überwachung",
