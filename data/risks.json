@@ -3206,9 +3206,9 @@
             },
             "agranulocytosis": {
               "label": {
-                "de": "Agranulozytose (Risiko 1:10.000)",
-                "en": "Agranulocytosis (risk 1:10,000)",
-                "fr": "Agranulocytose (risque 1:10 000)"
+                "de": "Agranulozytose",
+                "en": "Agranulocytosis",
+                "fr": "Agranulocytose"
               }
             },
             "nausea": {
