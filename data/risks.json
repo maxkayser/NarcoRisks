@@ -3239,11 +3239,11 @@
                 "fr": "Maux de gorge"
               }
             },
-            "painful_mucosal_changes": {
+            "mucosal_changes": {
               "label": {
-                "de": "Schmerzhafte Schleimhautveränderungen",
-                "en": "Painful mucosal changes",
-                "fr": "Lésions douloureuses des muqueuses"
+                "de": "Schleimhautveränderungen",
+                "en": "Mucosal changes",
+                "fr": "Lésions des muqueuses"
               }
             },
             "label": {
