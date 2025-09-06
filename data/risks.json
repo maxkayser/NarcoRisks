@@ -677,7 +677,8 @@
   },
   "defaults": {
     "risks.general_anesthesia.full": true,
-    "risks.lines_catheters.peripheral_iv": true
+    "risks.lines_catheters.peripheral_iv": true,
+    "risks.analgesia_pain_therapy.metamizole": true
   },
   "risks": {
     "label": {
