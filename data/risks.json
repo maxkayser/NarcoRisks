@@ -3160,6 +3160,97 @@
           }
         },
         "analgesia_pain_therapy": {
+          "metamizole": {
+            "agranulocytosis": {
+              "label": {
+                "de": "Agranulozytose (Risiko 1:10.000)",
+                "en": "Agranulocytosis (risk 1:10,000)",
+                "fr": "Agranulocytose (risque 1:10 000)"
+              }
+            },
+            "leukopenia": {
+              "label": {
+                "de": "Leukopenie",
+                "en": "Leukopenia",
+                "fr": "Leucopénie"
+              }
+            },
+            "asthma_attack": {
+              "label": {
+                "de": "Asthmaanfall",
+                "en": "Asthma attack",
+                "fr": "Crise d’asthme"
+              }
+            },
+            "hypotension_shock": {
+              "label": {
+                "de": "Blutdruckabfall / Schock",
+                "en": "Hypotension / Shock",
+                "fr": "Chute de tension / Choc"
+              }
+            },
+            "exanthema": {
+              "label": {
+                "de": "Exanthem",
+                "en": "Exanthema",
+                "fr": "Exanthème"
+              }
+            },
+            "early_symptoms": {
+              "label": {
+                "de": "Frühsymptome",
+                "en": "Early symptoms",
+                "fr": "Symptômes précoces"
+              }
+            },
+            "nausea": {
+              "label": {
+                "de": "Übelkeit",
+                "en": "Nausea",
+                "fr": "Nausées"
+              }
+            },
+            "vomiting": {
+              "label": {
+                "de": "Erbrechen",
+                "en": "Vomiting",
+                "fr": "Vomissements"
+              }
+            },
+            "fever": {
+              "label": {
+                "de": "Fieber",
+                "en": "Fever",
+                "fr": "Fièvre"
+              }
+            },
+            "chills": {
+              "label": {
+                "de": "Schüttelfrost",
+                "en": "Chills",
+                "fr": "Frissons"
+              }
+            },
+            "sore_throat": {
+              "label": {
+                "de": "Halsschmerzen",
+                "en": "Sore throat",
+                "fr": "Maux de gorge"
+              }
+            },
+            "painful_mucosal_changes": {
+              "label": {
+                "de": "Schmerzhafte Schleimhautveränderungen",
+                "en": "Painful mucosal changes",
+                "fr": "Lésions douloureuses des muqueuses"
+              }
+            },
+            "label": {
+              "de": "Metamizol",
+              "en": "Metamizole",
+              "fr": "Méta­mizole"
+            }
+          },
           "pca_iv": {
             "respiratory_depression": {
               "label": {
