@@ -3164,9 +3164,16 @@
           "metamizole": {
             "hypotension_shock": {
               "label": {
-                "de": "Blutdruckabfall / Schock",
-                "en": "Hypotension / Shock",
-                "fr": "Chute de tension / Choc"
+                "de": "Blutdruckabfall",
+                "en": "Hypotension",
+                "fr": "Chute de tension"
+              }
+            },
+            "shock": {
+              "label": {
+                "de": "Schock",
+                "en": "Circulatory shock",
+                "fr": "Choc circulatoire"
               }
             },
             "exanthema": {
