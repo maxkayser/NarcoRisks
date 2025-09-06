@@ -3164,9 +3164,9 @@
           "metamizole": {
             "hypotension_shock": {
               "label": {
-                "de": "Blutdruckabfall",
+                "de": "Hypotension",
                 "en": "Hypotension",
-                "fr": "Chute de tension"
+                "fr": "Hypotension"
               }
             },
             "shock": {
