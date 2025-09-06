@@ -3197,6 +3197,20 @@
                 "fr": "Exanthème"
               }
             },
+            "allergy": {
+              "label": {
+                "de": "Allergische Reaktionen",
+                "en": "Allergic reactions",
+                "fr": "Réactions allergiques"
+              },
+            },
+            "anaphylactic_shock": {
+              "label": {
+                "de": "Anaphylaktischer Schock",
+                "en": "Anaphylactic shock",
+                "fr": "Choc anaphylactique"
+              }
+            },
             "early_symptoms": {
               "label": {
                 "de": "Frühsymptome",
