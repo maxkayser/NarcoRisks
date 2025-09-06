@@ -3185,9 +3185,9 @@
             },
             "allergy": {
               "label": {
-                "de": "Allergische Reaktionen",
-                "en": "Allergic reactions",
-                "fr": "Réactions allergiques"
+                "de": "Allergische Reaktion",
+                "en": "Allergic reaction",
+                "fr": "Réaction allergique"
               }
             },
             "anaphylactic_shock": {
