@@ -5,16 +5,16 @@
 [![GitHub Repo stars](https://img.shields.io/github/stars/maxkayser/NarcoRisks)](https://github.com/maxkayser/NarcoRisks/stargazers)
 
 # NarcoRisks
-## Interactive Platform for Anesthesia-Associated Risks
+## Interactive Reference for Anesthesia-Associated Risk Topics
 
-NarcoRisks is an interactive, multilingual platform designed to visualize risks associated with various anesthesia techniques. It allows researchers, medical professionals and trainees to explore and customize risk summaries for educational or research purposes.
+NarcoRisks is an interactive, multilingual reference for selecting and organizing general anesthesia-related risk topics. Manual topic selection, procedure/preset navigation, summaries, copying and TXT downloads are retained. The output is not an individual risk assessment, complete consent checklist or proof of an informed-consent discussion. Historical text blocks, including default-selected statements, remain unchanged in this maintenance patch.
 
 👉 [Open Visualization](https://maxkayser.github.io/NarcoRisks/)
 
 ## Available Languages
 **Deutsch | Français | English**
 
-## Covered Topics
+## Covered Topics (non-exhaustive)
 
 **General Anesthesia**: General anesthesia, Analgosedation, Rapid Sequence Induction, Awake fiberoptic intubation, Tracheostomy, Evone ventilation, Jet ventilation, High-flow oxygen therapy, Non-invasive ventilation, Cricothyrotomy
 
@@ -39,19 +39,23 @@ If you find this project useful, you can support independent development here:
 ☕ [Buy me a coffee](https://buymeacoffee.com/maxkayser)
 
 ## License
-See the LICENSE file for full details.
+See the LICENSE file for full details. CC BY-NC 4.0 has a non-commercial restriction (source-available, not an OSI-approved open-source software license).
 
-## Privacy notice
-This tool does not store any data. No personal or health-related information is transmitted to any server. Please do not enter names or sensitive data.
+## Intended use and legal limits
 
-## Legal & Disclaimer
+NarcoRisks is a general professional and educational **topic reference**. It is not intended for individual medical risk assessment, treatment recommendations, patient-specific disclosure requirements, proof of a real patient consultation or consent, or legal consent documentation. Clinical decisions and legally required patient information remain with the relevant professionals. The publisher does not claim a specific medical intended purpose under Regulation (EU) 2017/745; this does not constitute an official or binding regulatory qualification. The complete actual functionality, including legacy presets and defaults, must be considered. See [REGULATORY.md](REGULATORY.md).
 
-This project is a non-commercial, educational tool to support medical risk communication. It is **not classified as a medical device**, and **does not replace** formal physician-patient discussions or legal consent procedures.
+## Privacy
 
-> Legal and regulatory requirements may vary by country or healthcare system.  
-> **No liability** is assumed for medical, legal, or practical decisions based on this tool.
+The current application processes form entries in the browser; copying or downloading can store them locally. Visiting the website and loading technical resources (GitHub Pages, the GitHub raw JSON catalogue and Google Fonts) creates network connections and may involve processing IP addresses and other technical information. Never enter real patient or sensitive personal data. [Technical privacy information](privacy.html).
 
-Use is at your own responsibility.
+## Publisher information
+
+Project author and publicly named publisher: **Max Kayser**. [Publicly verified provider/project information](anbieter.html). A full legal provider notice may require a service address and direct email address; these details have not been verified for publication and must not be invented.
+
+## Accuracy and liability
+
+The catalogue is not guaranteed complete, continuously current or suitable for a clinical or legal case. This notice does not exclude liability that applicable mandatory law does not permit to be excluded, including for injury to life, body or health.
 
 ---
 

@@ -1,19 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<meta name="description" content="Interactive risk disclosure for anesthesia procedures with customizable summaries. Multilingual support." />
-	<meta name="keywords" content="anesthesia, informed consent, risks, anesthesia types, patient education, outpatient, general anesthesia, regional anesthesia, medicine, medical law" />
+	<meta name="description" content="Interactive multilingual reference for general anesthesia-related risk topics, not individual risk assessment or consent documentation." />
+	<meta name="keywords" content="anesthesia, anesthesiology, risk topics, professional reference, general anesthesia, regional anesthesia, medical education" />
 	<meta name="author" content="Max Kayser" />
 	<meta name="robots" content="noindex, nofollow" />
-	<title>NarcoRisks – Anesthesia Risk Disclosure Tool</title>
+	<title>NarcoRisks – Anesthesia Risk Topics | Interactive Reference</title>
 	<link href="https://fonts.googleapis.com/css2?family=Comic+Neue&display=swap" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css2?family=Gugi&family=Quicksand&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://maxkayser.github.io/NarcoRisks/assets/style.css">
 </head>
 <body>
   <h1 data-i18n="headings.title">NarcoRisks</h1>
+  <p id="purposeNotice" class="user_guide" role="note" data-i18n="purpose_notice" style="max-width:1300px;box-sizing:border-box;font-size:1rem;line-height:1.5;padding:0.75rem 1rem;margin:0 auto 1rem;">NarcoRisks ist eine interaktive Fachübersicht zur Auswahl und Zusammenstellung allgemeiner anästhesiologischer Risikothemen. Die Auswahl ist weder eine patientenindividuelle Risikobewertung noch eine vollständige Liste aufklärungspflichtiger Risiken oder ein Nachweis einer erfolgten Aufklärung oder Einwilligung. Medizinische Entscheidungen und die gesetzlich erforderliche Patientenaufklärung erfolgen unabhängig davon durch die verantwortlichen Fachpersonen.</p>
   <section>
 	<p data-i18n="user_guides.introduction" class="user_guide"></p>
 	<label for="language" data-i18n="language_selection"></label>
@@ -56,10 +57,12 @@
 
   </section>
 <div id="textblockToggles" style="display: none"></div>
-<span style="white-space: normal; overflow-wrap: break-word; margin-top:1em; font-size:0.8em; color:#666" data-i18n="privacy_notice"></span>
-<span style="white-space: normal; overflow-wrap: break-word; margin-top:1em; font-size:0.8em; color:#666" data-i18n="legal_disclaimer"></span>
-</br>
-<span>&copy; 2025 Max Kayser</span>
+<footer style="max-width:1300px;margin:1rem auto;padding:0 0.5rem;font-size:0.9rem;color:#444;overflow-wrap:anywhere;">
+<p data-i18n="privacy_notice">Beim Seitenabruf können technische Verbindungsdaten verarbeitet werden. Bitte keine Patientendaten eingeben.</p>
+<p data-i18n="legal_disclaimer">Allgemeine Fachthemen, keine individuelle Risikobewertung oder Einwilligungsdokumentation. Gesetzliche Haftung bleibt unberührt.</p>
+<nav aria-label="Projekt- und Rechtshinweise"><a href="privacy.html">Datenschutz / Privacy / Confidentialité</a> · <a href="anbieter.html">Anbieterinformation / Provider information</a> · <a href="https://github.com/maxkayser/NarcoRisks">Projekt / Repository</a></nav>
+<p>&copy; 2026 Max Kayser</p>
+</footer>
 <script src="https://maxkayser.github.io/NarcoRisks/assets/narcorisks.js"></script>
 </body>
 </html>

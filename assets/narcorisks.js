@@ -1,19 +1,19 @@
 /*!
  * NarcoRisks.js 
- * Interactive Risk Disclosure for Anesthesia Procedures
+ * Interactive Reference for Anesthesia Risk Topics
  * 
  * Author: Max Kayser
  * GitHub: https://github.com/maxkayser/NarcoRisks
- * Version: 1.0
+ * Version: 1.0.1 (legacy legal/security maintenance)
  */
 
 const risksUrl = 'https://raw.githubusercontent.com/maxkayser/NarcoRisks/main/data/risks.json';
 let risksData = {};
 let allRisks = [];
 
-function htmlToFormattedText(html) {
-  const tempDiv = document.createElement("div");
-  tempDiv.innerHTML = html;
+function htmlToFormattedText(summaryElement) {
+  // Use the previously generated safe DOM; do not reparse HTML text.
+  const tempDiv = summaryElement.cloneNode(true);
 
   // <br> wird zu \n
   tempDiv.querySelectorAll("br").forEach(br => br.replaceWith("\n"));
@@ -42,8 +42,8 @@ function htmlToFormattedText(html) {
 }
 
 function copyToClipboard() {
-  const html = document.getElementById("summaryText")?.innerHTML || "";
-  const text = htmlToFormattedText(html);
+  const summaryElement = document.getElementById("summaryText");
+  const text = summaryElement ? htmlToFormattedText(summaryElement) : "";
 
   const tempTextarea = document.createElement("textarea");
   tempTextarea.style.position = "fixed";
@@ -58,15 +58,15 @@ function copyToClipboard() {
 }
 
 function downloadSummary() {
-  const html = document.getElementById("summaryText")?.innerHTML || "";
-  const text = htmlToFormattedText(html);
+  const summaryElement = document.getElementById("summaryText");
+  const text = summaryElement ? htmlToFormattedText(summaryElement) : "";
 
   const blob = new Blob([text], { type: "text/plain;charset=utf-8" });
   const url = URL.createObjectURL(blob);
 
   const link = document.createElement("a");
   link.href = url;
-  link.download = "aufklaerung.txt";
+  link.download = "narcorisks-fachthemen.txt";
   document.body.appendChild(link);
   link.click();
   document.body.removeChild(link);
@@ -688,34 +688,46 @@ function generateSummary() {
     summaryParts.after_measures.push(additionalText);
   }
 
-  // === HTML Formatierung ===
+  // Safe DOM construction: even user-supplied HTML-looking content is only text.
+  // All historic selection, default and preset semantics stay unchanged.
+  const output = document.getElementById("summaryText");
+  if (!output) return;
+  const fragment = document.createDocumentFragment();
+  const appendParagraph = (value) => {
+    const paragraph = document.createElement("p");
+    paragraph.textContent = value;
+    fragment.appendChild(paragraph);
+  };
 
-  const htmlParts = [];
+  Object.values(summaryParts.beginning).forEach(appendParagraph);
+  Object.values(summaryParts.before_measures).forEach(appendParagraph);
 
-  // Textblöcke als <p>
-  Object.values(summaryParts.beginning).forEach(txt => htmlParts.push(`<p>${txt}</p>`));
-  Object.values(summaryParts.before_measures).forEach(txt => htmlParts.push(`<p>${txt}</p>`));
-
-  // Risiken als strukturierte Liste
   for (const [groupKey, subgroups] of Object.entries(grouped)) {
     const groupLabel = allRisks.find(g => g.key === groupKey)?.label?.[lang] || groupKey;
-    const riskItems = [];
+    const heading = document.createElement("p");
+    const title = document.createElement("b");
+    title.textContent = groupLabel;
+    heading.appendChild(title);
+    fragment.appendChild(heading);
 
+    const list = document.createElement("ul");
     for (const [subKey, labels] of Object.entries(subgroups)) {
       const subgroupNode = risksData.risks.children[0]?.[groupKey]?.[subKey];
       const subLabel = subgroupNode?.label?.[lang] || subKey;
-      riskItems.push(`<li><b>${subLabel}:</b> ${labels.join('; ')}</li>`);
+      const item = document.createElement("li");
+      const label = document.createElement("b");
+      label.textContent = `${subLabel}:`;
+      item.appendChild(label);
+      item.appendChild(document.createTextNode(` ${labels.join('; ')}`));
+      list.appendChild(item);
     }
-
-    htmlParts.push(`<p><b>${groupLabel}</b><ul>${riskItems.join('')}</ul></p>`);
+    fragment.appendChild(list);
   }
 
-  Object.values(summaryParts.after_measures).forEach(txt => htmlParts.push(`<p>${txt}</p>`));
-  Object.values(summaryParts.end).forEach(txt => htmlParts.push(`<p>${txt}</p>`));
-
-  // In HTML-DIV schreiben
-  const output = document.getElementById("summaryText");
-  if (output) output.innerHTML = htmlParts.join("\n");
+  Object.values(summaryParts.after_measures).forEach(appendParagraph);
+  Object.values(summaryParts.end).forEach(appendParagraph);
+  output.textContent = "";
+  output.appendChild(fragment);
 }
 
 

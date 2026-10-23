@@ -25,29 +25,29 @@
     },
     "user_guides": {
       "introduction": {
-        "de": "Nutzen Sie diese Toolbox, um Risiken im Umfeld geplanter anästhesiologischer Maßnahmen individuell und strukturiert zu erfassen. Wählen Sie zunächst die gewünschte Sprache aus, um zu beginnen.",
-        "en": "Use this toolbox to systematically identify and document risks related to planned anesthesiological procedures. Start by selecting your preferred language.",
-        "fr": "Utilisez cet outil pour identifier et documenter de manière structurée les risques liés aux interventions anesthésiques prévues. Commencez par choisir votre langue."
+        "de": "Diese Toolbox bietet eine interaktive Übersicht allgemeiner anästhesiologischer Risikothemen. Wählen Sie eine Sprache und stellen Sie Themen zusammen; die Auswahl ist keine patientenbezogene Aufklärungsdokumentation.",
+        "en": "This toolbox provides an interactive overview of general anesthesia-related risk topics. Select a language and compile topics; the selection is not patient-specific informed-consent documentation.",
+        "fr": "Cet outil présente une vue interactive de thèmes généraux relatifs aux risques anesthésiques. Choisissez une langue et regroupez des thèmes ; la sélection ne constitue pas un document d’information ou de consentement individuel."
       },
       "context_associated_risks": {
-        "de": "Wählen Sie alle Risikofaktoren aus, die im individuellen medizinischen, sozialen oder organisatorischen Rahmen der Maßnahme relevant sein könnten – z. B. bestehende Grunderkrankungen, besondere Aufklärungssituationen oder patientenspezifische Besonderheiten.",
-        "en": "Select all risk factors that may be relevant in the specific medical, social, or organizational context of the procedure—such as pre-existing conditions, special consent situations, or patient-specific factors.",
-        "fr": "Sélectionnez tous les facteurs de risque pertinents dans le contexte médical, social ou organisationnel spécifique de l'intervention, comme des pathologies préexistantes, des situations d'information particulières ou des caractéristiques propres au patient."
+        "de": "Wählen Sie allgemeine Themen zu medizinischen, sozialen oder organisatorischen Rahmenbedingungen aus. Diese Auswahl stellt keine Feststellung individueller Risiken bei einem bestimmten Menschen dar.",
+        "en": "Select general topics concerning medical, social or organizational circumstances. This is not a determination of individual risk factors for a particular person.",
+        "fr": "Sélectionnez des thèmes généraux liés aux circonstances médicales, sociales ou organisationnelles. Ce choix ne détermine pas les risques individuels d’une personne donnée."
       },
       "measures_associated_risks": {
-        "de": "Wählen Sie alle Risiken aus, die sich direkt aus der geplanten Maßnahme oder eingesetzten Technik ergeben können – z. B. durch das Anästhesieverfahren, spezielle Blocktechniken, Zugänge oder zusätzliche Eingriffe.",
-        "en": "Select all risks that may arise directly from the planned procedure or technique—such as the type of anesthesia, specific block techniques, access routes, or additional interventions.",
-        "fr": "Sélectionnez tous les risques pouvant découler directement de l'intervention ou de la technique prévue, comme le type d'anesthésie, les techniques de bloc spécifiques, les voies d'abord ou les interventions complémentaires."
+        "de": "Wählen Sie allgemeine Risikothemen zu Anästhesieverfahren, Techniken, Zugängen und weiteren Maßnahmen aus. Die Zuordnung ist keine vollständige oder verbindliche Aufklärungsliste.",
+        "en": "Select general risk topics associated with anesthesia procedures, techniques, access routes and related measures. These associations are not a complete or authoritative informed-consent checklist.",
+        "fr": "Sélectionnez des thèmes généraux relatifs aux techniques anesthésiques, voies d’abord et autres mesures. Ces associations ne constituent pas une liste exhaustive ou obligatoire pour l’information du patient."
       },
       "additional_text": {
-        "de": "Fügen Sie bei Bedarf hier zusätzliche Ergänzungen hinzu.",
-        "en": "Add additional notes here if needed.",
-        "fr": "Ajoutez ici des compléments si nécessaire."
+        "de": "Ergänzen Sie bei Bedarf allgemeine Themen oder Notizen. Geben Sie keine identifizierenden Patienten- oder Gesundheitsdaten ein.",
+        "en": "Add general topics or notes if needed. Do not enter identifiable patient or health information.",
+        "fr": "Ajoutez, si nécessaire, des thèmes ou des notes générales. Ne saisissez pas de données permettant d’identifier un patient ni de données de santé personnelles."
       },
       "summary": {
-        "de": "Die Toolbox fasst Ihre Eingaben automatisch zusammen. Sie können den Text je nach Bedarf in die Zwischenablage kopieren oder als Datei herunterladen.",
-        "en": "This toolbox automatically compiles your inputs. You can copy the text or download it as a file.",
-        "fr": "Cet outil compile automatiquement vos saisies. Vous pouvez copier le texte ou le télécharger sous forme de fichier."
+        "de": "Die Toolbox stellt die ausgewählten Themen automatisch als Text zusammen. Sie können ihn kopieren oder als TXT-Datei herunterladen. Dies ist kein Nachweis einer erfolgten Aufklärung oder Einwilligung.",
+        "en": "The toolbox compiles selected topics into text that you can copy or download as a TXT file. This does not document that an informed-consent discussion or consent took place.",
+        "fr": "L’outil regroupe les thèmes choisis dans un texte que vous pouvez copier ou télécharger au format TXT. Ce texte ne prouve pas qu’une information ou un consentement a eu lieu."
       }
     },
     "placeholders": {
@@ -95,14 +95,19 @@
       "fr": "Procédure"
     },
     "privacy_notice": {
-      "de": "Hinweis zum Datenschutz: Dieses Tool speichert keine Daten. Es findet keine Übertragung personenbezogener oder gesundheitsbezogener Informationen an Server statt. Geben Sie keine Namen oder sensiblen Daten ein.",
-      "en": "Privacy notice: This tool does not store any data. No personal or health-related information is transmitted to any server. Please do not enter names or sensitive data.",
-      "fr": "Avis de confidentialité : Cet outil ne stocke aucune donnée. Aucune information personnelle ou de santé n'est transmise à un serveur. Veuillez ne pas saisir de noms ni de données sensibles."
+      "de": "Datenschutzhinweis: Die Eingaben werden in dieser Anwendung im Browser verarbeitet. Kopierte oder heruntergeladene Inhalte können lokal gespeichert werden. Beim Abruf der Website und externer Ressourcen (GitHub Pages, JSON-Katalog, Google Fonts) können IP-Adressen und andere technische Verbindungsdaten verarbeitet werden. Bitte keine echten Patientendaten eingeben; weitere Angaben unter „Datenschutz“.",
+      "en": "Privacy notice: Inputs are processed within the browser. Copied or downloaded content may be stored locally. Visiting the website and retrieving external resources (GitHub Pages, JSON catalogue, Google Fonts) may involve processing IP addresses and other connection data. Do not enter real patient data; see the privacy information for details.",
+      "fr": "Confidentialité : les saisies sont traitées dans le navigateur. Les contenus copiés ou téléchargés peuvent être conservés localement. L’accès au site et aux ressources externes (GitHub Pages, catalogue JSON, Google Fonts) peut entraîner le traitement d’adresses IP et de données techniques de connexion. Ne saisissez aucune donnée réelle de patient ; consultez les informations de confidentialité."
     },
     "legal_disclaimer": {
-      "de": "Dieses Tool dient ausschließlich der Unterstützung bei der Vorbereitung auf ein ärztliches Aufklärungsgespräch. Es ist kein Medizinprodukt, keine medizinische Beratung und ersetzt keinesfalls eine persönliche ärztliche Untersuchung oder Risikokommunikation. Die Nutzung erfolgt in Eigenverantwortung, insbesondere durch medizinisches Fachpersonal. Der Autor übernimmt keine Gewähr für Richtigkeit, Vollständigkeit oder rechtliche Verwertbarkeit der Inhalte. Eine medizinische, rechtliche oder haftungsrechtliche Verwertung liegt allein im Ermessen der Nutzer. Die rechtliche Zulässigkeit und klinische Anwendbarkeit können je nach Land oder Gesundheitssystem variieren.",
-      "en": "This tool is intended solely to support preparation for medical consent discussions. It is not a medical product, does not provide medical advice, and in no way replaces a personal consultation or risk disclosure by a physician. Use is at your own risk, particularly for healthcare professionals. The author assumes no liability for the accuracy, completeness, or legal applicability of the content. Medical, legal, and clinical use remains the sole responsibility of the user. Legal admissibility and clinical relevance may vary depending on jurisdiction or health system.",
-      "fr": "Cet outil est destiné uniquement à soutenir la préparation à un entretien médical d'information. Il ne constitue ni un dispositif médical, ni un avis médical, et ne remplace en aucun cas une consultation ou une explication des risques effectuée par un professionnel de santé. Son utilisation se fait sous la seule responsabilité de l'utilisateur, notamment pour les professionnels de santé. L'auteur décline toute responsabilité quant à l'exactitude, l'exhaustivité ou la validité juridique du contenu. L'applicabilité légale et clinique peut varier selon les pays ou les systèmes de santé."
+      "de": "NarcoRisks dient der allgemeinen Fachinformation und thematischen Orientierung; die angezeigten Inhalte sind weder vollständig noch eine individuelle Risikobewertung, medizinische Empfehlung oder Dokumentation tatsächlicher Patientenaufklärung und Einwilligung. Der Herausgeber beansprucht keine spezifische medizinische Zweckbestimmung im Sinne der Verordnung (EU) 2017/745; dies ist keine amtliche regulatorische Einstufung. Für Aktualität, Vollständigkeit und Eignung im Einzelfall wird keine Garantie übernommen; gesetzlich zwingende Haftung bleibt unberührt.",
+      "en": "NarcoRisks provides general professional information and topic navigation. The material is not comprehensive and is not an individual risk assessment, medical recommendation or record of an actual consent discussion or consent. The publisher does not claim a specific medical intended purpose under Regulation (EU) 2017/745; this is not an official regulatory determination. No guarantee of currentness, completeness or suitability for an individual case is given; liability required by applicable law remains unaffected.",
+      "fr": "NarcoRisks fournit des informations professionnelles générales et une sélection de thèmes. Les contenus ne sont pas exhaustifs et ne constituent ni une évaluation individuelle, ni une recommandation médicale, ni une trace d’un entretien d’information ou d’un consentement réel. L’éditeur ne revendique pas de finalité médicale spécifique au sens du règlement (UE) 2017/745 ; il ne s’agit pas d’une qualification réglementaire officielle. Aucune garantie d’actualité, d’exhaustivité ou d’adéquation à un cas individuel n’est donnée ; les responsabilités légales impératives demeurent."
+    },
+    "purpose_notice": {
+      "de": "NarcoRisks ist eine interaktive Fachübersicht zur Auswahl und Zusammenstellung allgemeiner anästhesiologischer Risikothemen. Die Auswahl ist weder eine patientenindividuelle Risikobewertung noch eine vollständige Liste aufklärungspflichtiger Risiken oder ein Nachweis einer erfolgten Aufklärung oder Einwilligung. Medizinische Entscheidungen und die gesetzlich erforderliche Patientenaufklärung erfolgen unabhängig davon durch die verantwortlichen Fachpersonen.",
+      "en": "NarcoRisks is an interactive reference for selecting and organizing general anesthesia-related risk topics. The selection is not an individual risk assessment, a complete list of disclosure requirements, or evidence that a consent discussion or consent has occurred. Medical decisions and legally required patient information remain the responsibility of the relevant healthcare professionals.",
+      "fr": "NarcoRisks est une référence interactive permettant de sélectionner et de regrouper des thèmes généraux relatifs aux risques anesthésiques. La sélection ne constitue ni une évaluation individuelle des risques, ni une liste exhaustive des informations à fournir, ni une preuve d’information ou de consentement. Les décisions médicales et l’information légalement requise relèvent des professionnels de santé responsables."
     }
   },
   "textblocks": {
